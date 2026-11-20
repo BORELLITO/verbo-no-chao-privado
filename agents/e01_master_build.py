@@ -72,7 +72,7 @@ def main():
     audio_link = os.environ.get("VNC_E01_AUDIO_URL", "").strip()
     if not audio_link.startswith("https://elevenlabsusercontent.com/"):
         print("VNC_MASTER_ABORT no_audio_secret"); sys.exit(4)
-    sel = json.loads(Path("contracts/e01_v3_scene_clip_selection_v1.json").read_text())["clips"]
+    sel = json.loads(Path(os.environ.get("VNC_SELECTION","contracts/e01_v3_scene_clip_selection_v1.json")).read_text())["clips"]
     refit = {s["id"][-3:]: s for s in json.loads(Path("contracts/e01_v3_12_scene_refit_v1.json").read_text())["scenes"]}
     report = {"scenes": [], "errors": []}
     audio = get(audio_link); (WORK / "voice.mp3").write_bytes(audio)
