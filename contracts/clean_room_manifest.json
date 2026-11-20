@@ -1,0 +1,43 @@
+{
+  "project": "verbo-no-chao",
+  "contract_id": "VNC-CLEANROOM-CONTRACT-002",
+  "state": "INTERNAL_VALIDATED",
+  "operational_source": "clean-room",
+  "legacy_operational_reuse": false,
+  "external_publication": false,
+  "secrets_configured": false,
+  "phase": "0.9",
+  "architecture": "CLOUD_ONLY",
+  "validation": {
+    "clean_room_gate": "PASS",
+    "unit_tests": {"passed": 40, "failed": 0},
+    "contract_json_files": {"validated": 12, "invalid": 0},
+    "runtime_dependencies": 0,
+    "dry_run": "PASS",
+    "pilot_fixture": "PASS_FIXTURE_ONLY",
+    "release_gate": "IMPLEMENTED_FIXTURE_NO_GO",
+    "source_audit": "PARAPHRASE_ONLY_PENDING_LICENSE",
+    "script_draft": "APPROVED_FOR_AUDIO",
+    "script_approval": "APPROVED_BY_CHANNEL_OWNER",
+    "voice_direction": "APPROVED_KOKORO_PM_ALEX_CLOUD_BROWSER",
+    "voice_smoke_test": "SEGMENTED_CANONICAL_PASS_WITH_PRONUNCIATION_LAYER",
+    "local_runtime": "NOT_REQUIRED",
+    "automated_editorial_review": "PASS_AUTOMATED_REVIEW"
+  },
+  "gates": [
+    "clean-room",
+    "contracts",
+    "biblical-safety",
+    "source-provenance",
+    "rights",
+    "original-script",
+    "editorial-review",
+    "audiovisual",
+    "orchestrator",
+    "fixture-isolation",
+    "release-candidate",
+    "no-publication",
+    "security",
+    "rollback"
+  ]
+}
