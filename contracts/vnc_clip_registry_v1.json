@@ -5,7 +5,7 @@
  "visual_standard_pt": "Padrão do motor (aprovado pelo dono em 2026-11-20): só paisagem — chuva/névoa/mar agitado → nuvens abrindo → nascer do sol/vale/montanhas/lago; mãos só como toque humano pontual.",
  "episodes": {
   "E01": {
-   "final_version": "v5",
+   "final_version": "v6_logo_trilha_final_cinema",
    "used": [
     {
      "source": "coverr",
@@ -187,5 +187,19 @@
    "publication": "NAO_PUBLICADO",
    "master_sha256_v5_preview": null
   }
- }
+ },
+ "music_used": [
+  {
+   "episode": "E01",
+   "title": "A New Life",
+   "artist": "Eugenio Mininni",
+   "provider": "mixkit",
+   "mixkit_id": "543",
+   "page": "https://mixkit.co/free-stock-music/a-new-life/",
+   "sha256": "bad126a1306f9488914ea240fa0d1f984b89dc988691b1fd0b509e6f33438273",
+   "license": "Mixkit Music Free License",
+   "content_id_checked": false,
+   "rule_pt": "não repetir a mesma trilha em outro episódio"
+  }
+ ]
 }
