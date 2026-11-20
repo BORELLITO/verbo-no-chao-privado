@@ -69,7 +69,7 @@ def motion_center(p, dur):
 
 
 MUSIC_PAGE = os.environ.get("VNC_MUSIC_PAGE", "https://mixkit.co/free-stock-music/a-new-life/")
-TAIL_HOLD, TAIL_BLACK = 3.0, 4.0
+TAIL_HOLD, TAIL_BLACK = 3.0, 6.5
 CAP_LEAD = 0.07  # legenda 70 ms antes: checagem independente (Whisper) mostrou destaque ~100 ms atrasado em mediana
 
 
@@ -117,8 +117,9 @@ def main():
     adur = probe(WORK / "voice.mp3")["dur"]; report["audio_seconds"] = round(adur, 2)
     caps = WORK / "caps"; build_captions(caps)
     segs = []
-    for c in sel:
-        sc = c["scene"]; sd = refit[sc]["duration_seconds"]; r = {"scene": sc, "source": c["source"], "id": c["id"], "need_s": sd}
+    XF = 0.5  # dissolve entre cenas, centrada na fronteira da narração
+    for i, c in enumerate(sel):
+        sc = c["scene"]; sd0 = refit[sc]["duration_seconds"]; sd = sd0 + (XF / 2 if i == 0 else XF if i < len(sel) - 1 else XF / 2) + (TAIL_HOLD if sc == "S12" else 0); r = {"scene": sc, "source": c["source"], "id": c["id"], "need_s": sd0}
         try:
             src = WORK / f"{sc}.src.mp4"; r.update(fetch_clip(c, src)); pr = probe(src); r.update({"src_w": pr["w"], "src_h": pr["h"], "src_s": round(pr["dur"], 2)})
             start = min(max(0.4, pr["dur"] * 0.08), max(0.0, pr["dur"] - sd - 0.2)); r["start"] = round(start, 2)
@@ -128,8 +129,9 @@ def main():
             else:
                 vf = f"scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},setsar=1,fps=30"
             out = WORK / f"{sc}.seg.mp4"
+            vf += ",unsharp=5:5:0.45:5:5:0.0"
+            if sc == "S02": vf += ",eq=saturation=0.6:brightness=-0.03"
             if sc == "S12":
-                sd += TAIL_HOLD; start = min(start, max(0.0, pr["dur"] - sd - 0.2))
                 vf += f",scale=2160:3840:flags=lanczos,zoompan=z='min(1+0.00028*on,1.12)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps=30"
             subprocess.run([FF, "-v", "error", "-y", "-ss", f"{start:.2f}", "-i", str(src), "-t", f"{sd:.3f}", "-an", "-vf", vf, "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", str(out)], check=True)
             r["seg_s"] = round(probe(out)["dur"], 2); segs.append(out)
@@ -138,8 +140,13 @@ def main():
         report["scenes"].append(r)
     if report["errors"]:
         print("VNC_MASTER_ABORT scenes_failed", report["errors"]); print("VNC_MASTER_REPORT", json.dumps(report, ensure_ascii=False)); sys.exit(3)
-    (WORK / "list.txt").write_text("".join(f"file '{p}'\n" for p in segs))
-    subprocess.run([FF, "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(WORK / "list.txt"), "-c", "copy", str(WORK / "video.mp4")], check=True)
+    lens = [probe(p)["dur"] for p in segs]
+    ins = []; fcx = []; Lc = lens[0]; prev = "[0:v]"
+    for k, p in enumerate(segs): ins += ["-i", str(p)]
+    for k in range(1, len(segs)):
+        lab = f"[x{k}]"; fcx.append(f"{prev}[{k}:v]xfade=transition=fade:duration={XF}:offset={Lc - XF:.3f}{lab}"); prev = lab; Lc += lens[k] - XF
+    subprocess.run([FF, "-v", "error", "-y"] + ins + ["-filter_complex", ";".join(fcx), "-map", prev, "-c:v", "libx264", "-preset", "veryfast", "-crf", "14", "-pix_fmt", "yuv420p", str(WORK / "video.mp4")], check=True)
+    report["video_seconds"] = round(probe(WORK / "video.mp4")["dur"], 2)
     final = WORK / "e01_master_preview_720.mp4"
     T = adur + TAIL_HOLD + TAIL_BLACK
     music = fetch_music(WORK / "music.mp3"); mp = probe(WORK / "music.mp3"); music["seconds"] = round(mp["dur"], 2); report["music"] = music
@@ -149,9 +156,9 @@ def main():
     fam = re.search(r"Style: Caption,([^,]+),", at)[1]
     at = at.replace(",8,90,90,118,1", ",2,90,90,40,1")
     at = re.sub(r"(Dialogue: 1,0:00:00\.00,)(\S+?)(,QA)", lambda m: m[1] + f"0:01:{T-60:05.2f}" + m[3], at, count=1)
-    at = at.replace("[Events]", f"Style: Credit,{fam},46,&H00E6E6E6,&H00E6E6E6,&H00141210,&H00000000,0,0,0,0,100,100,2,0,1,2,0,8,90,90,1215,1\n\n[Events]", 1) if "[Events]" in at else at
+    at = at.replace("[Events]", f"Style: Credit,{fam},40,&H00D8D8E6,&H00D8D8E6,&H00141210,&H00000000,0,0,0,0,100,100,2,0,1,0,0,8,90,90,1090,1\nStyle: CTA1,{fam},60,&H00EEF1F2,&H00EEF1F2,&H00141210,&H00000000,-1,0,0,0,100,100,0.6,0,1,0,0,8,90,90,1205,1\nStyle: CTA2,{fam},50,&H00F2B0C4,&H00F2B0C4,&H00141210,&H00000000,-1,0,0,0,100,100,0.6,0,1,0,0,8,90,90,1330,1\n\n[Events]", 1) if "[Events]" in at else at
     def ts(x): return f"0:{int(x // 60):02d}:{x % 60:05.2f}"
-    at = at.rstrip("\n") + f"\nDialogue: 2,{ts(adur + 3.4)},{ts(T - 0.9)},Credit,,0,0,0,,{{\\fad(800,900)}}Habacuque 1:2–4\n"
+    at = at.rstrip("\n") + f"\nDialogue: 2,{ts(adur + 3.4)},{ts(T - 0.9)},Credit,,0,0,0,,{{\\fad(800,900)}}Habacuque 1:2–4\nDialogue: 2,{ts(adur + 4.5)},{ts(T - 1.0)},CTA1,,0,0,0,,{{\\fad(700,800)}}Curta, compartilhe\\Ne inscreva-se no canal\nDialogue: 2,{ts(adur + 6.0)},{ts(T - 1.0)},CTA2,,0,0,0,,{{\\fad(700,800)}}E você, já se sentiu assim?\\NConte nos comentários.\n"
     def _sec(x):
         h, mi, se = x.split(":"); return int(h) * 3600 + int(mi) * 60 + float(se)
     def _shift(m):
@@ -162,18 +169,18 @@ def main():
     t0, d = adur + 0.5, 2.4
     E = f"(pow(clip((t-{t0:.2f})/{d},0,1),2)*(3-2*clip((t-{t0:.2f})/{d},0,1)))"
     fc = (f"[0:v]fade=t=out:st={adur + 0.6:.2f}:d=2.4:color=black,tpad=stop_mode=add:stop_duration={TAIL_BLACK}:color=black[bv];"
-          f"[2:v]format=rgba,colorchannelmixer=aa=0.8,fade=t=in:st=0.5:d=1.0:alpha=1,scale=w='trunc((210+510*{E})/2)*2':h=-1:eval=frame:flags=lanczos[lg];"
-          f"[bv][lg]overlay=x='(W-w)/2':y='105+((H*0.42-h/2)-105)*{E}':eof_action=pass:format=auto[o1];"
-          f"[4:v]format=rgba,fade=t=in:st={adur + 1.6:.2f}:d=1.0:alpha=1,scale=w='trunc((210+510*{E})/2)*2':h=-1:eval=frame:flags=lanczos[lg2];"
-          f"[o1][lg2]overlay=x='(W-w)/2':y='105+((H*0.42-h/2)-105)*{E}':eof_action=pass:format=auto[ov];"
-          f"[ov]ass={ass_path}:original_size={W}x{H}:fontsdir=assets/fonts,fade=t=out:st={T - 1.2:.2f}:d=1.2,scale=720:1280:flags=lanczos,format=yuv420p[v];"
+          f"[2:v]format=rgba,colorchannelmixer=aa=0.8,fade=t=in:st=0.5:d=1.0:alpha=1,fade=t=out:st={adur + 1.5:.2f}:d=0.9:alpha=1,scale=w='trunc((210+390*{E})/2)*2':h=-1:eval=frame:flags=lanczos[lg];"
+          f"[bv][lg]overlay=x='(W-w)/2':y='105+((H*0.39-h/2)-105)*{E}':eof_action=pass:format=auto[o1];"
+          f"[4:v]format=rgba,fade=t=in:st={adur + 1.6:.2f}:d=1.0:alpha=1,scale=w='trunc((210+390*{E})/2)*2':h=-1:eval=frame:flags=lanczos[lg2];"
+          f"[o1][lg2]overlay=x='(W-w)/2':y='105+((H*0.39-h/2)-105)*{E}':eof_action=pass:format=auto[ov];"
+          f"[ov]ass={ass_path}:original_size={W}x{H}:fontsdir=assets/fonts,fade=t=out:st={T - 1.2:.2f}:d=1.2,format=yuv420p[v];"
           f"[1:a]loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000,apad,atrim=0:{T:.2f},asplit=2[vo][vk];"
           f"[3:a]aresample=48000,loudnorm=I=-26:TP=-3:LRA=7,aresample=48000,atrim=0:{T:.2f},afade=t=in:st=0:d=2.5,volume='1+1.2*clip((t-{adur:.2f})/2.5,0,1)':eval=frame[m];"
           f"[m][vk]sidechaincompress=threshold=0.02:ratio=6:attack=15:release=500[md];"
           f"[md]afade=t=out:st={T - 3.5:.2f}:d=3.5[mf];"
           f"[vo][mf]amix=inputs=2:normalize=0:duration=longest,alimiter=limit=0.95[a]")
     subprocess.run([FF, "-v", "error", "-y", "-i", str(WORK / "video.mp4"), "-i", str(WORK / "voice.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo.png"), "-i", str(WORK / "music.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo_light.png"),
-        "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "27", "-c:a", "aac", "-b:a", "160k", "-t", f"{T:.2f}", "-movflags", "+faststart", str(final)], check=True)
+        "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-maxrate", "14M", "-bufsize", "28M", "-c:a", "aac", "-b:a", "192k", "-t", f"{T:.2f}", "-movflags", "+faststart", str(final)], check=True)
     fp = probe(final); report["final"] = {"w": fp["w"], "h": fp["h"], "seconds": round(fp["dur"], 2), "bytes": final.stat().st_size, "sha256": hashlib.sha256(final.read_bytes()).hexdigest()}
     tiles = []
     for sc, s in refit.items():
