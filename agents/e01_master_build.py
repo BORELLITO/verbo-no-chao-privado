@@ -97,6 +97,9 @@ def make_logo(dest):
     a = lg.split()[3]
     glow = Image.new("RGBA", lg.size, (255, 255, 255, 0)); glow.putalpha(a.filter(ImageFilter.GaussianBlur(16)).point(lambda v: int(v * 0.55)))
     out = Image.new("RGBA", lg.size, (0, 0, 0, 0)); out = Image.alpha_composite(out, glow); out = Image.alpha_composite(out, lg); out.save(dest)
+    import numpy as _np
+    arr = _np.asarray(lg).copy(); dark = arr[..., :3].max(axis=2) < 110; arr[dark, :3] = (236, 232, 250)
+    Image.fromarray(arr, "RGBA").save(str(dest).replace("logo.png", "logo_light.png"))
 
 
 def main():
@@ -153,14 +156,16 @@ def main():
     E = f"(pow(clip((t-{t0:.2f})/{d},0,1),2)*(3-2*clip((t-{t0:.2f})/{d},0,1)))"
     fc = (f"[0:v]fade=t=out:st={adur + 0.6:.2f}:d=2.4:color=black,tpad=stop_mode=add:stop_duration={TAIL_BLACK}:color=black[bv];"
           f"[2:v]format=rgba,fade=t=in:st=0.5:d=1.0:alpha=1,scale=w='trunc((300+420*{E})/2)*2':h=-1:eval=frame:flags=lanczos[lg];"
-          f"[bv][lg]overlay=x='(W-w)/2':y='90+((H*0.42-h/2)-90)*{E}':eof_action=pass:format=auto[ov];"
+          f"[bv][lg]overlay=x='(W-w)/2':y='90+((H*0.42-h/2)-90)*{E}':eof_action=pass:format=auto[o1];"
+          f"[4:v]format=rgba,fade=t=in:st={adur + 1.6:.2f}:d=1.0:alpha=1,scale=w='trunc((300+420*{E})/2)*2':h=-1:eval=frame:flags=lanczos[lg2];"
+          f"[o1][lg2]overlay=x='(W-w)/2':y='90+((H*0.42-h/2)-90)*{E}':eof_action=pass:format=auto[ov];"
           f"[ov]ass={ass_path}:original_size={W}x{H}:fontsdir=assets/fonts,fade=t=out:st={T - 1.2:.2f}:d=1.2,scale=720:1280:flags=lanczos,format=yuv420p[v];"
           f"[1:a]loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000,apad,atrim=0:{T:.2f},asplit=2[vo][vk];"
           f"[3:a]aresample=48000,loudnorm=I=-26:TP=-3:LRA=7,aresample=48000,atrim=0:{T:.2f},afade=t=in:st=0:d=2.5,volume='1+1.2*clip((t-{adur:.2f})/2.5,0,1)':eval=frame[m];"
           f"[m][vk]sidechaincompress=threshold=0.02:ratio=6:attack=15:release=500[md];"
           f"[md]afade=t=out:st={T - 3.5:.2f}:d=3.5[mf];"
           f"[vo][mf]amix=inputs=2:normalize=0:duration=longest,alimiter=limit=0.95[a]")
-    subprocess.run([FF, "-v", "error", "-y", "-i", str(WORK / "video.mp4"), "-i", str(WORK / "voice.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo.png"), "-i", str(WORK / "music.mp3"),
+    subprocess.run([FF, "-v", "error", "-y", "-i", str(WORK / "video.mp4"), "-i", str(WORK / "voice.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo.png"), "-i", str(WORK / "music.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo_light.png"),
         "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "27", "-c:a", "aac", "-b:a", "160k", "-t", f"{T:.2f}", "-movflags", "+faststart", str(final)], check=True)
     fp = probe(final); report["final"] = {"w": fp["w"], "h": fp["h"], "seconds": round(fp["dur"], 2), "bytes": final.stat().st_size, "sha256": hashlib.sha256(final.read_bytes()).hexdigest()}
     tiles = []
