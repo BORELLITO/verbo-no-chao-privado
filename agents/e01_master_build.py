@@ -70,6 +70,7 @@ def motion_center(p, dur):
 
 MUSIC_PAGE = os.environ.get("VNC_MUSIC_PAGE", "https://mixkit.co/free-stock-music/a-new-life/")
 TAIL_HOLD, TAIL_BLACK = 3.0, 4.0
+CAP_LEAD = 0.07  # legenda 70 ms antes: checagem independente (Whisper) mostrou destaque ~100 ms atrasado em mediana
 
 
 def fetch_music(dest):
@@ -151,6 +152,12 @@ def main():
     at = at.replace("[Events]", f"Style: Credit,{fam},46,&H00E6E6E6,&H00E6E6E6,&H00141210,&H00000000,0,0,0,0,100,100,2,0,1,2,0,8,90,90,1215,1\n\n[Events]", 1) if "[Events]" in at else at
     def ts(x): return f"0:{int(x // 60):02d}:{x % 60:05.2f}"
     at = at.rstrip("\n") + f"\nDialogue: 2,{ts(adur + 3.4)},{ts(T - 0.9)},Credit,,0,0,0,,{{\\fad(800,900)}}Habacuque 1:2–4\n"
+    def _sec(x):
+        h, mi, se = x.split(":"); return int(h) * 3600 + int(mi) * 60 + float(se)
+    def _shift(m):
+        a, b = max(0.0, _sec(m[2]) - CAP_LEAD), max(0.0, _sec(m[3]) - CAP_LEAD)
+        return f"Dialogue: 0,{ts(a)},{ts(b)},Caption,"
+    at = re.sub(r"Dialogue: 0,(\d+:\d+:\d+\.\d+),(\d+:\d+:\d+\.\d+),Caption,", lambda m: _shift([None, None, m[1], m[2]]), at)
     ass_path.write_text(at, encoding="utf8")
     t0, d = adur + 0.5, 2.4
     E = f"(pow(clip((t-{t0:.2f})/{d},0,1),2)*(3-2*clip((t-{t0:.2f})/{d},0,1)))"
