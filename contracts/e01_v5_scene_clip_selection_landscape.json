@@ -1,0 +1,110 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E01",
+ "kind": "SCENE_CLIP_SELECTION_12_PAISAGEM_V5",
+ "selected_on": "2026-11-20",
+ "approved_by": "CLAUDE_SOB_AUTONOMIA_PERMANENTE_DO_DONO",
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "criteria_pt": "arco paisagem: chuva/névoa/mar agitado (S01-S07), abertura (S08-S09), libertação (S10-S12); só as mãos S04/S10 como toque humano",
+ "evidence_pt": "quadros vistos em planilhas de contato geradas no GitHub Actions (prévias 360p do Coverr; Pexels e Mixkit já revistos antes)",
+ "not_verified_pt": [
+  "qualidade em resolução cheia dos clipes Coverr (só prévia 360p vista)",
+  "recorte vertical 9:16 dos clipes horizontais",
+  "sincronia por ouvido",
+  "encaixe em aparelho"
+ ],
+ "all_scenes_have_approved_clip": true,
+ "scenes_total": 12,
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "coverr",
+   "id": "coverr-raindrops-on-the-window-7102",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "gotas de chuva na janela (substitui clipe invertido 1854)"
+  },
+  {
+   "scene": "S02",
+   "source": "coverr",
+   "id": "coverr-rain-in-the-city-430",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "prédios escuros na chuva"
+  },
+  {
+   "scene": "S03",
+   "source": "coverr",
+   "id": "coverr-stormy-sea-waves-crashing-on-pier",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "mar agitado, céu pesado"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "41739",
+   "preview_seconds": 12,
+   "license": "Mixkit Stock Video Free License",
+   "note_pt": "mãos com vela",
+   "page": "https://mixkit.co/free-stock-video/hands-of-a-girl-holding-a-candle-in-the-dark-41739/"
+  },
+  {
+   "scene": "S05",
+   "source": "coverr",
+   "id": "coverr-tree-in-the-mist-4598",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "árvore na névoa"
+  },
+  {
+   "scene": "S06",
+   "source": "coverr",
+   "id": "coverr-foggy-forest-8688",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "floresta nebulosa"
+  },
+  {
+   "scene": "S07",
+   "source": "coverr",
+   "id": "coverr-cross-on-a-mountain-1957",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "cruz na montanha em meio à névoa"
+  },
+  {
+   "scene": "S08",
+   "source": "coverr",
+   "id": "coverr-cloudy-beach-2120",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "nuvens começam a abrir"
+  },
+  {
+   "scene": "S09",
+   "source": "coverr",
+   "id": "coverr-sunrise-on-the-beach-9704",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "nascer do sol no mar"
+  },
+  {
+   "scene": "S10",
+   "source": "pexels",
+   "id": "5493833",
+   "preview_seconds": 27.12,
+   "license": "Pexels License",
+   "note_pt": "mãos dadas sem rostos"
+  },
+  {
+   "scene": "S11",
+   "source": "coverr",
+   "id": "coverr-mountain-top-trail-9791",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "trilha no alto da montanha, luz dourada"
+  },
+  {
+   "scene": "S12",
+   "source": "coverr",
+   "id": "coverr-mountains-in-lake-tekapo-new-zealand-5006",
+   "license": "Coverr (gratuito comercial, site)",
+   "note_pt": "lago turquesa e montanhas abertos, libertação"
+  }
+ ],
+ "publication_authorized": false,
+ "master_approved": false
+}

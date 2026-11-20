@@ -1,0 +1,187 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "rule_pt": "Nunca repetir clipe usado em outro episódio. Registrar todo clipe de cada vídeo (incluindo versões descartadas) antes de montar o próximo.",
+ "visual_standard_pt": "Padrão do motor (aprovado pelo dono em 2026-11-20): só paisagem — chuva/névoa/mar agitado → nuvens abrindo → nascer do sol/vale/montanhas/lago; mãos só como toque humano pontual.",
+ "episodes": {
+  "E01": {
+   "final_version": "v5",
+   "used": [
+    {
+     "source": "coverr",
+     "id": "coverr-raindrops-on-the-window-7102",
+     "scene": "S01",
+     "version": "v5"
+    },
+    {
+     "source": "coverr",
+     "id": "coverr-rain-in-the-city-430",
+     "scene": "S02",
+     "version": "v5"
+    },
+    {
+     "source": "coverr",
+     "id": "coverr-stormy-sea-waves-crashing-on-pier",
+     "scene": "S03",
+     "version": "v5"
+    },
+    {
+     "source": "mixkit",
+     "id": "41739",
+     "scene": "S04",
+     "version": "v5"
+    },
+    {
+     "source": "coverr",
+     "id": "coverr-tree-in-the-mist-4598",
+     "scene": "S05",
+     "version": "v5"
+    },
+    {
+     "source": "coverr",
+     "id": "coverr-foggy-forest-8688",
+     "scene": "S06",
+     "version": "v5"
+    },
+    {
+     "source": "coverr",
+     "id": "coverr-cross-on-a-mountain-1957",
+     "scene": "S07",
+     "version": "v5"
+    },
+    {
+     "source": "coverr",
+     "id": "coverr-cloudy-beach-2120",
+     "scene": "S08",
+     "version": "v5"
+    },
+    {
+     "source": "coverr",
+     "id": "coverr-sunrise-on-the-beach-9704",
+     "scene": "S09",
+     "version": "v5"
+    },
+    {
+     "source": "pexels",
+     "id": "5493833",
+     "scene": "S10",
+     "version": "v5"
+    },
+    {
+     "source": "coverr",
+     "id": "coverr-mountain-top-trail-9791",
+     "scene": "S11",
+     "version": "v5"
+    },
+    {
+     "source": "coverr",
+     "id": "coverr-mountains-in-lake-tekapo-new-zealand-5006",
+     "scene": "S12",
+     "version": "v5"
+    }
+   ],
+   "discarded_versions": {
+    "v3_pessoas": [
+     {
+      "source": "pexels",
+      "id": "19967985"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-mystery-in-the-shadows"
+     },
+     {
+      "source": "mixkit",
+      "id": "4331"
+     },
+     {
+      "source": "mixkit",
+      "id": "41739"
+     },
+     {
+      "source": "pexels",
+      "id": "30635115"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-a-religious-woman-places-a-lit-candle-and-prays-6910"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-a-religious-woman-reads-a-bible-near-a-church-3407"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-a-religious-woman-walks-in-a-garden-2105"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-natures-desk-outdoor-writing-session"
+     },
+     {
+      "source": "pexels",
+      "id": "5493833"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-a-smiling-woman-prays-near-a-church-3359"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-sunrise-on-the-beach-9704"
+     }
+    ],
+    "v4": [
+     {
+      "source": "coverr",
+      "id": "coverr-raindrops-on-the-window-7102"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-rain-in-the-city-430"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-stormy-sea-waves-crashing-on-pier"
+     },
+     {
+      "source": "mixkit",
+      "id": "41739"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-tree-in-the-mist-4598"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-foggy-forest-8688"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-stone-building-3905"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-cloudy-beach-2120"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-sunrise-on-the-beach-9704"
+     },
+     {
+      "source": "pexels",
+      "id": "5493833"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-beautiful-valley-at-golden-hour-3055"
+     },
+     {
+      "source": "coverr",
+      "id": "coverr-scenic-mountains-and-sea-3027"
+     }
+    ]
+   }
+  }
+ }
+}
