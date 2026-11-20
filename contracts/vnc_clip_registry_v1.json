@@ -181,7 +181,11 @@
       "id": "coverr-scenic-mountains-and-sea-3027"
      }
     ]
-   }
+   },
+   "status": "V5_APROVADA_PELO_DONO_2026-11-20",
+   "owner_approved_preview": true,
+   "publication": "NAO_PUBLICADO",
+   "master_sha256_v5_preview": null
   }
  }
 }
