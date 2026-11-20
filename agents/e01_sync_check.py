@@ -9,7 +9,10 @@ assert hashlib.sha256(data).hexdigest().startswith("35f43519")
 Path("/tmp/voice.mp3").write_bytes(data)
 from faster_whisper import WhisperModel
 m = WhisperModel("small", device="cpu", compute_type="int8")
-segs, _ = m.transcribe("/tmp/voice.mp3", language="pt", word_timestamps=True, vad_filter=False, beam_size=5)
+import imageio_ffmpeg, numpy as np
+raw = subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-v", "error", "-i", "/tmp/voice.mp3", "-f", "f32le", "-ac", "1", "-ar", "16000", "-"], capture_output=True, check=True).stdout
+audio = np.frombuffer(raw, dtype=np.float32)
+segs, _ = m.transcribe(audio, language="pt", word_timestamps=True, vad_filter=False, beam_size=5)
 ws = [(w.word.strip(), w.start, w.end) for s in segs for w in s.words]
 norm = lambda t: re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFD", t.lower()).encode("ascii", "ignore").decode())
 ref = json.loads(Path("contracts/e01_v3_voice_johnes_word_timing_v1.json").read_text())["words"]
