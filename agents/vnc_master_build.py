@@ -11,6 +11,7 @@ from PIL import Image
 
 from agents.e01_v3_voice_captions import build as build_captions
 from agents import vnc_align
+from agents import vnc_style as ST
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"}
@@ -74,7 +75,7 @@ MUSIC_PAGE = "https://mixkit.co/free-stock-music/a-new-life/"
 
 def load_cfg(ep):
     return json.loads(Path(f"episodes/{ep}.json").read_text(encoding="utf8"))
-TAIL_HOLD, TAIL_BLACK = 3.0, 6.5
+TAIL_HOLD, TAIL_BLACK = ST.TAIL_HOLD, ST.TAIL_BLACK
 CAP_LEAD_CONTRACT = 0.07  # (timing por contrato/Scribe) # legenda 70 ms antes: checagem independente (Whisper) mostrou destaque ~100 ms atrasado em mediana
 
 
@@ -130,12 +131,12 @@ def make_logo_layers(adur, T, t0, outdir):
     sp_of = lambda s: int(round(s * (1 + 2 * PADF) / 2)) * 2
     def put(c, im, s, y):
         sp = im.width; c.alpha_composite(im, ((W - sp) // 2, int(round(y - (sp - s) / 2))))
-    c0 = Image.new("RGBA", (W, H), (0, 0, 0, 0)); put(c0, _scale_alpha(_logo_dark(src, sp_of(210)), 0.8), 210, 105); c0.save(outdir / "static.png")
+    c0 = Image.new("RGBA", (W, H), (0, 0, 0, 0)); put(c0, _scale_alpha(_logo_dark(src, sp_of(ST.LOGO_TOP_SIZE)), ST.LOGO_TOP_ALPHA), ST.LOGO_TOP_SIZE, ST.LOGO_TOP_Y); c0.save(outdir / "static.png")
     n = int((T - t0) * 30) + 2
     for k in range(n):
-        t = t0 + k / 30; p = min(max((t - t0) / 2.4, 0), 1); e = p * p * (3 - 2 * p)
-        s = int(round((210 + 390 * e) / 2)) * 2; y = 105 + ((H * 0.39 - s / 2) - 105) * e
-        wd = 0.8 * (1 - min(max((t - (adur + 1.5)) / 0.9, 0), 1)); wl = min(max((t - (adur + 1.6)) / 1.0, 0), 1)
+        t = t0 + k / 30; p = min(max((t - t0) / ST.LOGO_GROW_DUR, 0), 1); e = p * p * (3 - 2 * p)
+        s = int(round((ST.LOGO_TOP_SIZE + (ST.LOGO_END_SIZE - ST.LOGO_TOP_SIZE) * e) / 2)) * 2; y = ST.LOGO_TOP_Y + ((H * ST.LOGO_END_CENTER_Y - s / 2) - ST.LOGO_TOP_Y) * e
+        wd = ST.LOGO_TOP_ALPHA * (1 - min(max((t - (adur + ST.LOGO_DARK_FADE_START)) / ST.LOGO_DARK_FADE_DUR, 0), 1)); wl = min(max((t - (adur + ST.LOGO_LIGHT_FADE_START)) / ST.LOGO_LIGHT_FADE_DUR, 0), 1)
         c = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         if wd > 0: put(c, _scale_alpha(_logo_dark(src, sp_of(s)), wd), s, y)
         if wl > 0: put(c, _scale_alpha(_hq(light, sp_of(s)), wl), s, y)
@@ -199,38 +200,23 @@ def main(ep=None):
     music = fetch_music(WORK / "music.mp3", cfg["music_page"]); mp = probe(WORK / "music.mp3"); music["seconds"] = round(mp["dur"], 2); report["music"] = music
     if mp["dur"] < T + 0.5: print("VNC_MASTER_ABORT music_too_short", mp["dur"]); sys.exit(5)
     at = ass_path.read_text(encoding="utf8")
-    fam = re.search(r"Style: Caption,([^,]+),", at)[1]
-    at = at.replace(",8,90,90,118,1", ",2,90,90,40,1")
-    at = re.sub(r"(Dialogue: 1,0:00:00\.00,)(\S+?)(,QA)", lambda m: m[1] + f"0:01:{T-60:05.2f}" + m[3], at, count=1)
-    at = at.replace("[Events]", f"Style: Credit,{fam},40,&H00D8D8E6,&H00D8D8E6,&H00141210,&H00000000,0,0,0,0,100,100,2,0,1,0,0,8,90,90,1090,1\nStyle: CTA1,{fam},60,&H00EEF1F2,&H00EEF1F2,&H00141210,&H00000000,-1,0,0,0,100,100,0.6,0,1,0,0,8,90,90,1205,1\nStyle: CTA2,{fam},50,&H00F2B0C4,&H00F2B0C4,&H00141210,&H00000000,-1,0,0,0,100,100,0.6,0,1,0,0,8,90,90,1330,1\n\n[Events]", 1) if "[Events]" in at else at
-    def ts(x): return f"0:{int(x // 60):02d}:{x % 60:05.2f}"
-    at = at.rstrip("\n") + f"\nDialogue: 2,{ts(adur + 3.4)},{ts(T - 0.9)},Credit,,0,0,0,,{{\\fad(800,900)}}{cfg["reference"]}\nDialogue: 2,{ts(adur + 4.5)},{ts(T - 1.0)},CTA1,,0,0,0,,{{\\fad(700,800)}}{cfg["cta"][0]}\nDialogue: 2,{ts(adur + 6.0)},{ts(T - 1.0)},CTA2,,0,0,0,,{{\\fad(700,800)}}{cfg["cta"][1]}\n"
-    def _sec(x):
-        h, mi, se = x.split(":"); return int(h) * 3600 + int(mi) * 60 + float(se)
-    def _shift(m):
-        a, b = max(0.0, _sec(m[2]) - CAP_LEAD), max(0.0, _sec(m[3]) - CAP_LEAD)
-        return f"Dialogue: 0,{ts(a)},{ts(b)},Caption,"
-    at = re.sub(r"Dialogue: 0,(\d+:\d+:\d+\.\d+),(\d+:\d+:\d+\.\d+),Caption,", lambda m: _shift([None, None, m[1], m[2]]), at)
-    if os.environ.get("VNC_FINAL") == "1":
-        at = re.sub(r"Dialogue: 1,[^\n]*,QA,[^\n]*\n?", "", at)
-        report["final_mode"] = True
+    at = ST.finalize_ass(at, adur, T, cfg["reference"], cfg["cta"], CAP_LEAD, os.environ.get("VNC_FINAL") == "1")
+    report["final_mode"] = os.environ.get("VNC_FINAL") == "1"
+    lock_errs = ST.check_constants() + ST.check_final_ass(at, adur, T)
     ass_path.write_text(at, encoding="utf8")
     t0 = adur + 0.5
     make_logo_layers(adur, T, t0, WORK / "logo_frames")
-    fc = (f"[0:v]fade=t=out:st={adur + 0.6:.2f}:d=2.4:color=black,tpad=stop_mode=add:stop_duration={TAIL_BLACK}:color=black[bv];"
-          f"[2:v]format=rgba,fade=t=in:st=0.5:d=1.0:alpha=1[ls];"
-          f"[4:v]format=rgba,setpts=PTS+{t0:.3f}/TB[lq];"
-          f"[bv][ls]overlay=eof_action=pass:format=gbrp:enable='lt(t,{t0:.3f})'[o1];"
-          f"[o1][lq]overlay=eof_action=pass:format=gbrp[ov];"
-          f"[ov]ass={ass_path}:original_size={W}x{H}:fontsdir=assets/fonts,fade=t=out:st={T - 1.2:.2f}:d=1.2,format=yuv420p[v];"
-          f"[1:a]loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000,apad,atrim=0:{T:.2f},asplit=2[vo][vk];"
-          f"[3:a]aresample=48000,loudnorm=I=-26:TP=-3:LRA=7,aresample=48000,atrim=0:{T:.2f},afade=t=in:st=0:d=2.5,volume='1+1.2*clip((t-{adur:.2f})/2.5,0,1)':eval=frame[m];"
-          f"[m][vk]sidechaincompress=threshold=0.02:ratio=6:attack=15:release=500[md];"
-          f"[md]afade=t=out:st={T - 3.5:.2f}:d=3.5[mf];"
-          f"[vo][mf]amix=inputs=2:normalize=0:duration=longest,alimiter=limit=0.95[a]")
+    fc = ST.final_filter(adur, T, t0, ass_path)
+    lock_errs += ST.check_filter(fc, ass_path, adur, T, t0) + ST.check_logo(WORK / "logo_frames", adur, T)
+    report["logo_hashes"] = ST.hash_logo_dir(WORK / "logo_frames"); report["style_lock_errors"] = lock_errs
+    if lock_errs:
+        print("VNC_MASTER_ABORT style_lock", json.dumps(lock_errs, ensure_ascii=False)); sys.exit(8)
     subprocess.run([FF, "-v", "error", "-y", "-i", str(WORK / "video.mp4"), "-i", str(WORK / "voice.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo_frames" / "static.png"), "-i", str(WORK / "music.mp3"), "-framerate", "30", "-i", str(WORK / "logo_frames" / "f_%04d.png"),
         "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-maxrate", "14M", "-bufsize", "28M", "-c:a", "aac", "-b:a", "192k", "-t", f"{T:.2f}", "-movflags", "+faststart", str(final)], check=True)
-    fp = probe(final); report["final"] = {"w": fp["w"], "h": fp["h"], "seconds": round(fp["dur"], 2), "bytes": final.stat().st_size, "sha256": hashlib.sha256(final.read_bytes()).hexdigest()}
+    fp = probe(final)
+    if (fp["w"], fp["h"]) != (ST.W, ST.H) or abs(fp["dur"] - T) > 0.1:
+        print("VNC_MASTER_ABORT style_lock formato_final", fp, T); sys.exit(8)
+    report["final"] = {"w": fp["w"], "h": fp["h"], "seconds": round(fp["dur"], 2), "bytes": final.stat().st_size, "sha256": hashlib.sha256(final.read_bytes()).hexdigest()}
     tiles = []
     for sc, s in refit.items():
         t = (s["start_seconds"] + s["end_seconds"]) / 2

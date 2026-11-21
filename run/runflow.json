@@ -2,6 +2,6 @@
   "episode": "E01",
   "selection": "contracts/e01_v5_scene_clip_selection_landscape.json",
   "music": "543",
-  "stages": ["gates"],
-  "nonce": "estado-seguro-pos-generalizacao"
+  "stages": ["gates", "build"],
+  "nonce": "regressao-contrato-e-style-lock"
 }

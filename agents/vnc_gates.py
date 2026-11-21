@@ -104,6 +104,12 @@ def check_episode_config(ep, sel, root=ROOT):
     return errs
 
 
+def check_style_lock():
+    """Identidade fixa (logo, final de cinema, legenda, karaoke, audio): codigo == lock aprovado."""
+    from agents import vnc_style
+    return vnc_style.check_constants() if vnc_style.LOCK_PATH.exists() else ["falta contracts/vnc_style_lock_v1.json"]
+
+
 def check_music(music_id, episode, reg):
     errs = []
     for m in reg.get("music_used", []):
@@ -171,7 +177,7 @@ def main(argv):
         if cmd == "register":
             REGISTRY.write_text(json.dumps(register(ep, sel, reg, music, title), ensure_ascii=False, indent=1) + "\n", encoding="utf8")
             print("VNC_GATES_REGISTERED", ep); return 0
-        errs = check_selection(sel, ep, reg) + check_episode_config(ep, sel) + (check_music(music, ep, reg) if music else []) + check_workflows() + scan_forbidden()
+        errs = check_selection(sel, ep, reg) + check_episode_config(ep, sel) + check_style_lock() + (check_music(music, ep, reg) if music else []) + check_workflows() + scan_forbidden()
     else:
         print(__doc__); return 2
     for e in errs:
