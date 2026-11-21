@@ -27,3 +27,8 @@ Etapas: `gates` (sempre) -> `build` -> `sync` -> `cover`. Qualquer falha em `gat
 - `agents/vnc_style.py` (constantes e funcoes do estilo) + `contracts/vnc_style_lock_v1.json` (valores aprovados no E01). Logo (posicao/tamanho/opacidade/animacao), final de cinema (tempos), legenda (estilo/posicao/karaoke lilas), credito/CTA, cadeia de audio/video e formato final sao conferidos: testes -> gates -> build (aborta com exit 8 `style_lock`).
 - Regressao E01 (contrato) no GitHub, run 44888717691: style_lock_errors [], 1080x1920, 86,17 s, folha de quadros igual ao aprovado. O sha do mp4 difere do v2 (reencode), a estrutura nao.
 - Voz: `vnc-ingest-voice.yml` (unico com escrita) grava `assets/voice/<EP>.mp3` com sha conferido e apaga o link assinado; o build usa o arquivo. Gate `check_voice_source`.
+
+## Curadoria automática (stage `curate`)
+- Runflow: `{"episode":"E02","stages":["curate"]}` → job `curate` lista o Mixkit (licença livre, robots OK), filtra (vertical, curto, estático, frenético, cortes, brilho fora do clima da cena, pessoas/cidade), remove quase-duplicatas (dHash) e devolve contact sheet + JSON em base64 nos logs. NADA é escolhido automaticamente: a aprovação é do Claude.
+- Limites: só Mixkit (Coverr bloqueia busca por robots; Pexels exige chave). Listagem serial com backoff (o Mixkit dá 429 sob paralelismo). Licença é do site, não por clipe (NÃO VERIFICADO por clipe).
+- Teste real (E02, run 44891661241): 12 cenas com candidatos; fracos: S01 (chuva noturna: só chuva diurna/bokeh), S04 (1 vela), S11 (3).
