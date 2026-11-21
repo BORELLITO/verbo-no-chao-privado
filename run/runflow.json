@@ -1,9 +1,11 @@
 {
- "episode": "E01",
- "selection": "contracts/e01_v5_scene_clip_selection_landscape.json",
- "music": "543",
+ "episode": "E02",
+ "selection": "contracts/e02_scene_clip_selection.json",
+ "music": "614",
  "stages": [
-  "gates"
+  "gates",
+  "build",
+  "cover"
  ],
- "nonce": "estado-seguro-3"
+ "nonce": "e02-prod-1"
 }
