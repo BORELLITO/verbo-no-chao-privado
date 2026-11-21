@@ -90,3 +90,28 @@ def coverr_deep():
     print("VNC_PROBE_COVERR", json.dumps(out, ensure_ascii=False))
     import pathlib; pathlib.Path("/tmp/curate_out").mkdir(exist_ok=True); pathlib.Path("/tmp/curate_out/probe_coverr.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
     return 0
+
+
+def coverr_api():
+    """Sonda da API oficial do Coverr (https://api.coverr.co, Authorization: Bearer). Nunca imprime a chave. So estrutura/campos."""
+    import os, urllib.request, urllib.parse
+    key = os.environ.get("COVERR_API_KEY", "")
+    out = {"chave_presente": bool(key)}
+    if not key:
+        print("VNC_PROBE_COVERR_API", json.dumps(out)); return 1
+    def call(path):
+        req = urllib.request.Request("https://api.coverr.co" + path, headers={"Authorization": "Bearer " + key, "User-Agent": "vnc-curadoria"})
+        try:
+            r = urllib.request.urlopen(req, timeout=40); body = r.read()
+            return r.status, {k: v for k, v in r.headers.items() if k.lower().startswith(("x-ratelimit", "ratelimit", "retry"))}, json.loads(body)
+        except Exception as e:  # noqa
+            return getattr(e, "code", 0), {}, {"erro": repr(e)[:120]}
+    for name, path in (("busca_chuva", "/videos?query=" + urllib.parse.quote("rain") + "&page_size=5"), ("busca_montanha", "/videos?query=mountain+fog&page_size=3")):
+        st, hd, j = call(path)
+        hit = (j.get("hits") or [None])[0] if isinstance(j, dict) else None
+        def red(o):  # remove tokens das urls
+            return json.loads(re.sub(r"token=[^&\"]+", "token=<oculto>", json.dumps(o)))
+        out[name] = {"status": st, "headers": hd, "topo": sorted(j.keys()) if isinstance(j, dict) else None, "page": j.get("page"), "total": j.get("total"), "n_hits": len(j.get("hits") or []),
+                     "campos_hit": sorted(hit.keys()) if hit else None, "exemplo": red(hit) if hit else j}
+    print("VNC_PROBE_COVERR_API", json.dumps(out, ensure_ascii=False))
+    return 0

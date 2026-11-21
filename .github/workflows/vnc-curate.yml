@@ -45,6 +45,7 @@ jobs:
           VNC_CURATE_AS: ${{ steps.cfg.outputs.as_ep }}
           VNC_FORCE_RESELECT: ${{ steps.cfg.outputs.force }}
           VNC_RELEASE_RUN: ${{ steps.cfg.outputs.release_run }}
+          COVERR_API_KEY: ${{ secrets.COVERR_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
