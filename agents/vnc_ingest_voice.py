@@ -11,6 +11,8 @@ def main(ep):
         print("VNC_INGEST_ABORT link_invalido"); return 4
     data = urllib.request.urlopen(urllib.request.Request(link, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read()
     sha = hashlib.sha256(data).hexdigest()
+    if str(cfg.get("audio_sha256", "")).startswith("PREENCHER"):   # 1a persistencia da voz gerada pelo proprio Claude (uma unica geracao): grava o sha calculado no config
+        cfg["audio_sha256"] = sha; Path(f"episodes/{ep}.json").write_text(json.dumps(cfg, ensure_ascii=False, indent=1), encoding="utf8"); print("VNC_INGEST_SHA_REGISTRADO", sha)
     ok = sha == cfg["audio_sha256"] if cfg.get("audio_sha256") else (sha.startswith(cfg["audio_sha256_prefix"]) and sha.endswith(cfg["audio_sha256_suffix"]))
     if not ok:
         print("VNC_INGEST_ABORT sha_diferente", sha); return 2
