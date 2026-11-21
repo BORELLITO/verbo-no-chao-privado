@@ -10,7 +10,9 @@
     "raindrops",
     "rainy-day",
     "night",
-    "water-drops"
+    "water-drops",
+    "rain-on-window",
+    "dark-clouds"
    ],
    "prefer": [
     "window",
@@ -18,7 +20,8 @@
     "drops",
     "night",
     "dark"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S02",
@@ -27,14 +30,17 @@
    "queries": [
     "storm",
     "thunderstorm",
-    "clouds"
+    "clouds",
+    "dark-clouds",
+    "stormy-sky"
    ],
    "prefer": [
     "storm",
     "dark",
     "clouds",
     "rain"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S03",
@@ -50,7 +56,8 @@
     "stormy",
     "crashing",
     "sea"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S04",
@@ -58,8 +65,13 @@
    "min_seconds": 8,
    "queries": [
     "candle",
+    "candles",
     "fire",
-    "fireplace"
+    "fireplace",
+    "flame",
+    "campfire",
+    "bonfire",
+    "lantern"
    ],
    "prefer": [
     "candle",
@@ -68,7 +80,8 @@
    ],
    "allow": [
     "hands"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S05",
@@ -77,13 +90,15 @@
    "queries": [
     "fog",
     "mist",
-    "foggy-forest"
+    "foggy-forest",
+    "morning-fog"
    ],
    "prefer": [
     "fog",
     "mist",
     "tree"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S06",
@@ -98,7 +113,8 @@
     "forest",
     "mist",
     "fog"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S07",
@@ -113,7 +129,8 @@
     "mountain",
     "cliff",
     "peak"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S08",
@@ -128,7 +145,8 @@
     "clouds",
     "sky",
     "beach"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S09",
@@ -139,14 +157,16 @@
     "sunset",
     "sun",
     "dawn",
-    "sunlight"
+    "sunlight",
+    "sunbeams"
    ],
    "prefer": [
     "sunrise",
     "sunlight",
     "sun",
     "dawn"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S10",
@@ -167,7 +187,8 @@
    ],
    "allow": [
     "hands"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S11",
@@ -176,13 +197,19 @@
    "queries": [
     "trail",
     "path",
-    "hills"
+    "hills",
+    "road",
+    "meadow",
+    "field",
+    "nature",
+    "countryside"
    ],
    "prefer": [
     "trail",
     "path",
     "hills"
-   ]
+   ],
+   "keep": 6
   },
   {
    "id": "S12",
@@ -191,13 +218,17 @@
    "queries": [
     "lake",
     "valley",
-    "river"
+    "river",
+    "mountain-lake",
+    "lagoon",
+    "reflection"
    ],
    "prefer": [
     "lake",
     "mountain",
     "valley"
-   ]
+   ],
+   "keep": 6
   }
  ]
 }

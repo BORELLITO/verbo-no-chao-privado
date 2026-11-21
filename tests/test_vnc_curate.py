@@ -65,3 +65,10 @@ class Curate(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_global_exclude_blocks_rosary_and_green_screen():
+    from agents import vnc_curate as C
+    assert not C.title_ok("hands holding rosary", allow=["hands"])[0]
+    assert not C.title_ok("hand on green background", allow=["hands"])[0]
+    assert C.title_ok("hands at sunset", allow=["hands"])[0]

@@ -18,6 +18,7 @@ PEOPLE = {"woman", "women", "man", "men", "girl", "boy", "people", "person", "ch
           "selfie", "portrait", "face", "dancing", "dance", "walking", "running", "friends", "student", "worker", "businessman", "businesswoman", "tourist"}
 URBAN = {"car", "cars", "traffic", "city", "building", "buildings", "street", "phone", "computer", "laptop", "office", "restaurant", "food", "drink", "beer", "party",
          "club", "shop", "mall", "airport", "train", "bus", "road", "highway", "skyscraper", "times", "square", "neon", "screen", "tv", "machine", "factory", "drone"}
+GLOBAL_EXCLUDE = {"green", "chroma", "greenscreen", "cross", "rosary", "church", "bikini", "wine", "alcohol", "cocktail", "latte", "coffee", "cartoon", "animation", "logo"}
 HAND_OK = {"hand", "hands"}
 MOODS = {"dark": (35, 105), "mid": (70, 150), "bright": (115, 210)}  # faixa de brilho medio (0-255) aceita por clima
 
@@ -56,7 +57,7 @@ def parse_listing(html):
 def title_ok(title, allow=(), extra_exclude=()):
     """Titulo sem pessoas/cidade/maquinas (e sem maos, salvo cena que as permite via allow=['hands'])."""
     words = set(re.findall(r"[a-z]+", title.lower()))
-    hit = words & ((PEOPLE | URBAN | HAND_OK | set(extra_exclude)) - set(allow))
+    hit = words & ((PEOPLE | URBAN | HAND_OK | set(extra_exclude)) - set(allow)) | (words & GLOBAL_EXCLUDE)
     return (not hit), sorted(hit)
 
 
@@ -116,6 +117,7 @@ def score(m, mood, kw_hit):
     s += min(m["sharp"], 12) / 40.0
     s += 0.25 * kw_hit
     s -= 0.25 * max(0, m["cut_ratio"] - 4) / 5
+    s -= 0.4 * max(0.0, m["saturation"] - 110) / 80          # tom sobrio: penaliza cor saturada demais
     return round(s, 3)
 
 
@@ -183,7 +185,7 @@ def run(ep):
     def list_kw(kw):
         slug = re.sub(r"[^a-z0-9]+", "-", kw.lower()).strip("-")
         out = []
-        for page in (1, 2):
+        for page in (1, 2, 3):
             try:
                 out += parse_listing(get(f"https://mixkit.co/free-stock-video/{slug}/" + (f"?page={page}" if page > 1 else ""), False))
             except Exception as e:  # noqa
@@ -193,7 +195,7 @@ def run(ep):
     for k in kws:  # serial e espacado: o Mixkit devolve 429 sob paralelismo
         listing[k] = list_kw(k)
         time.sleep(1.5)
-    result, cache, rejected = {}, {}, {}
+    result, cache, rejected, allc, stats = {}, {}, {}, {}, {}
     for sid in sorted(plan):
         s = plan[sid]; pool = {}
         for k in s["queries"]:
@@ -203,7 +205,7 @@ def run(ep):
                     continue
                 kw_hit = sum(w in e["title"] for w in s.get("prefer", []))
                 pool[e["id"]] = dict(e, kw_hit=kw_hit)
-        top = sorted(pool.values(), key=lambda e: -e["kw_hit"])[: s.get("max_downloads", 14)]
+        top = sorted(pool.values(), key=lambda e: -e["kw_hit"])[: s.get("max_downloads", 30)]
         with ThreadPoolExecutor(8) as ex:
             res = list(ex.map(lambda e: cache.get(e["id"]) or analyse(e, s["mood"], s["min_seconds"], work), top))
         cands, rej = [], []
@@ -215,12 +217,17 @@ def run(ep):
             if why:
                 rej.append([e["id"], why]); continue
             cands.append({"id": e["id"], "title": e["title"], "page": e["page"], "dur": round(a["dur"], 1), "score": score(a["m"], s["mood"], e["kw_hit"]), "m": a["m"], "phash": a["phash"], "file": a["file"]})
-        result[sid] = pick_top(cands, s.get("keep", 4)); rejected[sid] = rej
-        taken_scene = {c["id"] for c in result[sid]}
-        print("VNC_CURATE_SCENE", sid, s["mood"], "pool", len(pool), "analisados", len(top), "aprovados", len(cands), "top", [c["id"] for c in result[sid]], "rejeicoes", rej[:6])
+        allc[sid] = cands; rejected[sid] = rej; stats[sid] = (len(pool), len(top))
+    # atribuicao global: um clipe so aparece em UMA cena (cenas com menos opcoes escolhem primeiro)
+    claimed = set()
+    for sid in sorted(allc, key=lambda x: (len(allc[x]), x)):
+        avail = [c for c in allc[sid] if c["id"] not in claimed]
+        result[sid] = pick_top(avail, plan[sid].get("keep", 6))
+        claimed |= {c["id"] for c in result[sid]}
+        print("VNC_CURATE_SCENE", sid, plan[sid]["mood"], "pool", stats[sid][0], "analisados", stats[sid][1], "aprovados", len(allc[sid]), "top", [c["id"] for c in result[sid]], "rejeicoes", rejected[sid][:6])
     # planilha de contato
     from PIL import Image, ImageDraw
-    cols, tw, th = 4, 240, 135
+    cols, tw, th = 6, 240, 135
     sheet = Image.new("RGB", (cols * tw + 70, 12 * th), (12, 12, 14)); d = ImageDraw.Draw(sheet)
     for r, sid in enumerate(sorted(result)):
         d.text((6, r * th + 6), sid, fill=(240, 240, 240))
