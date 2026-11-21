@@ -92,15 +92,50 @@ def fetch_music(dest):
     raise RuntimeError(f"music_download_failed:{last}")
 
 
-def make_logo(dest):
+PADF = 0.10  # margem transparente: evita cortar o brilho/borda da arte que encosta na borda do PNG
+
+
+def _pad(im):
+    n = int(round(im.width * PADF)); c = Image.new("RGBA", (im.width + 2 * n, im.height + 2 * n), (0, 0, 0, 0)); c.alpha_composite(im, (n, n)); return c
+
+
+def _hq(img, size):
+    """Redimensiona RGBA com alfa pré-multiplicado (sem franja escura) e Lanczos."""
+    return img.convert("RGBa").resize((size, size), Image.LANCZOS).convert("RGBA")
+
+
+def _logo_dark(src, s):
     from PIL import ImageFilter
-    lg = Image.open("assets/vnc_logo.png").convert("RGBA").resize((1000, 1000), Image.LANCZOS)
-    a = lg.split()[3]
-    glow = Image.new("RGBA", lg.size, (255, 255, 255, 0)); glow.putalpha(a.filter(ImageFilter.GaussianBlur(16)).point(lambda v: int(v * 0.55)))
-    out = Image.new("RGBA", lg.size, (0, 0, 0, 0)); out = Image.alpha_composite(out, glow); out = Image.alpha_composite(out, lg); out.save(dest)
+    lg = _hq(src, s); glow = Image.new("RGBA", lg.size, (255, 255, 255, 0))
+    glow.putalpha(lg.split()[3].filter(ImageFilter.GaussianBlur(0.016 * s)).point(lambda v: int(v * 0.55)))
+    return Image.alpha_composite(glow, lg)
+
+
+def _scale_alpha(im, k):
+    r, g, b, a = im.split(); return Image.merge("RGBA", (r, g, b, a.point(lambda v: int(v * k))))
+
+
+def make_logo_layers(adur, T, t0, outdir):
+    """Camada estática (topo) + sequência de quadros (descida/crescimento até o centro), tudo renderizado em alta qualidade."""
     import numpy as _np
-    arr = _np.asarray(lg).copy(); dark = arr[..., :3].max(axis=2) < 110; arr[dark, :3] = (236, 232, 250)
-    Image.fromarray(arr, "RGBA").save(str(dest).replace("logo.png", "logo_light.png"))
+    src = _pad(Image.open("assets/vnc_logo.png").convert("RGBA"))
+    arr = _np.asarray(src).copy(); dark = arr[..., :3].max(axis=2) < 110; arr[dark, :3] = (236, 232, 250)
+    light = Image.fromarray(arr, "RGBA")
+    outdir.mkdir(exist_ok=True)
+    sp_of = lambda s: int(round(s * (1 + 2 * PADF) / 2)) * 2
+    def put(c, im, s, y):
+        sp = im.width; c.alpha_composite(im, ((W - sp) // 2, int(round(y - (sp - s) / 2))))
+    c0 = Image.new("RGBA", (W, H), (0, 0, 0, 0)); put(c0, _scale_alpha(_logo_dark(src, sp_of(210)), 0.8), 210, 105); c0.save(outdir / "static.png")
+    n = int((T - t0) * 30) + 2
+    for k in range(n):
+        t = t0 + k / 30; p = min(max((t - t0) / 2.4, 0), 1); e = p * p * (3 - 2 * p)
+        s = int(round((210 + 390 * e) / 2)) * 2; y = 105 + ((H * 0.39 - s / 2) - 105) * e
+        wd = 0.8 * (1 - min(max((t - (adur + 1.5)) / 0.9, 0), 1)); wl = min(max((t - (adur + 1.6)) / 1.0, 0), 1)
+        c = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        if wd > 0: put(c, _scale_alpha(_logo_dark(src, sp_of(s)), wd), s, y)
+        if wl > 0: put(c, _scale_alpha(_hq(light, sp_of(s)), wl), s, y)
+        c.save(outdir / f"f_{k:04d}.png", compress_level=1)
+    return n
 
 
 def main():
@@ -151,7 +186,6 @@ def main():
     T = adur + TAIL_HOLD + TAIL_BLACK
     music = fetch_music(WORK / "music.mp3"); mp = probe(WORK / "music.mp3"); music["seconds"] = round(mp["dur"], 2); report["music"] = music
     if mp["dur"] < T + 0.5: print("VNC_MASTER_ABORT music_too_short", mp["dur"]); sys.exit(5)
-    make_logo(WORK / "logo.png")
     ass_path = caps / "e01-v3-johnes-karaoke-qa.ass"; at = ass_path.read_text(encoding="utf8")
     fam = re.search(r"Style: Caption,([^,]+),", at)[1]
     at = at.replace(",8,90,90,118,1", ",2,90,90,40,1")
@@ -169,20 +203,20 @@ def main():
         at = re.sub(r"Dialogue: 1,[^\n]*,QA,[^\n]*\n?", "", at)
         report["final_mode"] = True
     ass_path.write_text(at, encoding="utf8")
-    t0, d = adur + 0.5, 2.4
-    E = f"(pow(clip((t-{t0:.2f})/{d},0,1),2)*(3-2*clip((t-{t0:.2f})/{d},0,1)))"
+    t0 = adur + 0.5
+    make_logo_layers(adur, T, t0, WORK / "logo_frames")
     fc = (f"[0:v]fade=t=out:st={adur + 0.6:.2f}:d=2.4:color=black,tpad=stop_mode=add:stop_duration={TAIL_BLACK}:color=black[bv];"
-          f"[2:v]format=rgba,colorchannelmixer=aa=0.8,fade=t=in:st=0.5:d=1.0:alpha=1,fade=t=out:st={adur + 1.5:.2f}:d=0.9:alpha=1,scale=w='trunc((210+390*{E})/2)*2':h=-1:eval=frame:flags=lanczos[lg];"
-          f"[bv][lg]overlay=x='(W-w)/2':y='105+((H*0.39-h/2)-105)*{E}':eof_action=pass:format=auto[o1];"
-          f"[4:v]format=rgba,fade=t=in:st={adur + 1.6:.2f}:d=1.0:alpha=1,scale=w='trunc((210+390*{E})/2)*2':h=-1:eval=frame:flags=lanczos[lg2];"
-          f"[o1][lg2]overlay=x='(W-w)/2':y='105+((H*0.39-h/2)-105)*{E}':eof_action=pass:format=auto[ov];"
+          f"[2:v]format=rgba,fade=t=in:st=0.5:d=1.0:alpha=1[ls];"
+          f"[4:v]format=rgba,setpts=PTS+{t0:.3f}/TB[lq];"
+          f"[bv][ls]overlay=eof_action=pass:format=gbrp:enable='lt(t,{t0:.3f})'[o1];"
+          f"[o1][lq]overlay=eof_action=pass:format=gbrp[ov];"
           f"[ov]ass={ass_path}:original_size={W}x{H}:fontsdir=assets/fonts,fade=t=out:st={T - 1.2:.2f}:d=1.2,format=yuv420p[v];"
           f"[1:a]loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000,apad,atrim=0:{T:.2f},asplit=2[vo][vk];"
           f"[3:a]aresample=48000,loudnorm=I=-26:TP=-3:LRA=7,aresample=48000,atrim=0:{T:.2f},afade=t=in:st=0:d=2.5,volume='1+1.2*clip((t-{adur:.2f})/2.5,0,1)':eval=frame[m];"
           f"[m][vk]sidechaincompress=threshold=0.02:ratio=6:attack=15:release=500[md];"
           f"[md]afade=t=out:st={T - 3.5:.2f}:d=3.5[mf];"
           f"[vo][mf]amix=inputs=2:normalize=0:duration=longest,alimiter=limit=0.95[a]")
-    subprocess.run([FF, "-v", "error", "-y", "-i", str(WORK / "video.mp4"), "-i", str(WORK / "voice.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo.png"), "-i", str(WORK / "music.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo_light.png"),
+    subprocess.run([FF, "-v", "error", "-y", "-i", str(WORK / "video.mp4"), "-i", str(WORK / "voice.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo_frames" / "static.png"), "-i", str(WORK / "music.mp3"), "-framerate", "30", "-i", str(WORK / "logo_frames" / "f_%04d.png"),
         "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-maxrate", "14M", "-bufsize", "28M", "-c:a", "aac", "-b:a", "192k", "-t", f"{T:.2f}", "-movflags", "+faststart", str(final)], check=True)
     fp = probe(final); report["final"] = {"w": fp["w"], "h": fp["h"], "seconds": round(fp["dur"], 2), "bytes": final.stat().st_size, "sha256": hashlib.sha256(final.read_bytes()).hexdigest()}
     tiles = []
