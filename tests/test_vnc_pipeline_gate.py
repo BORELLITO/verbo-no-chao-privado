@@ -48,7 +48,9 @@ class T(unittest.TestCase):
         d, _ = mk(2); self.assertEqual(G.post("E02", {**REP, "ending": {"variant": "A"}, "final": {"w": 1080, "h": 1920, "seconds": 91}}, d), [])
 
     def test_pre_blocks_without_voice_then_checks_sha_and_duration(self):
-        d, c = mk(); e = G.pre("E03", d, review=self.ok_review); self.assertTrue(any("VOZ" in x for x in e))
+        d, c = mk(); self.assertTrue(any("TEOLOGIA" in x for x in G.pre("E03", d, review=self.ok_review, verses=lambda v: "x")))   # sem dossie: bloqueia
+        self._p = mock.patch.object(G, "_teologia", return_value=[]); self._p.start(); self.addCleanup(self._p.stop)
+        e = G.pre("E03", d, review=self.ok_review); self.assertTrue(any("VOZ" in x for x in e))
         (d / "assets/voice/E03.mp3").write_bytes(b"abc"); e = G.pre("E03", d, review=self.ok_review, seconds=lambda p: 58.0); self.assertTrue(any("sha256" in x for x in e))
         import hashlib; c["audio_sha256"] = hashlib.sha256(b"abc").hexdigest(); (d / "episodes/E03.json").write_text(json.dumps(c))
         self.assertEqual(G.pre("E03", d, review=self.ok_review, seconds=lambda p: 58.0), [])

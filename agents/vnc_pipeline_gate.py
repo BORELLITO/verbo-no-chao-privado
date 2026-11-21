@@ -57,7 +57,18 @@ def render_posting_file(ep, cfg):
             f'=== YOUTUBE SHORTS ===\nTítulo ({len(t["youtube_titulo"])} caracteres):\n{t["youtube_titulo"]}\n\nDescrição:\n{t["youtube_descricao"]}\n')
 
 
-def pre_voice(ep, root=ROOT, review=None):
+def _teologia(ep, root, fn):
+    """Parecer teologico do agente (dossie pesquisado, lacrado ao hash do roteiro). Obrigatorio em episodios estritos, ANTES de gastar voz e de montar."""
+    from agents import vnc_theology_gate as TH
+    if not TH.strict(ep): return []
+    if fn is None:
+        from agents import vnc_script_review as R
+        fn = lambda v: (lambda r: R.fetch_verses(r) if r else None)(R.parse_ref(v))
+    st, errs, _ = TH.check_theology(ep, root, verses=fn)
+    return [] if st == "APROVADO_TEOLOGICO" else [f"TEOLOGIA({st}): {e}" for e in errs]
+
+
+def pre_voice(ep, root=ROOT, review=None, verses=None):
     """Nada de gastar credito antes de provar que o resto da linha fecha: roteiro, postagem e 12 clipes ja selecionados/registrados."""
     from agents import vnc_gates as GT
     cfg, errs = _cfg(ep, root), []
@@ -66,6 +77,7 @@ def pre_voice(ep, root=ROOT, review=None):
     rep = review(ep)
     if rep["status"] == "REPROVADO": errs += [f"ROTEIRO: {i['code']} {i['msg']}" for i in rep["issues"]]
     errs += bloco_postagem(cfg)
+    errs += _teologia(ep, root, verses)
     if strict(cfg):
         sp = root / (cfg.get("selection") or f"contracts/{ep.lower()}_scene_clip_selection.json")
         if not sp.exists(): errs.append("CLIPES: selecao de 12 clipes ausente (rode a curadoria antes da voz)")
@@ -73,9 +85,10 @@ def pre_voice(ep, root=ROOT, review=None):
     return errs
 
 
-def pre(ep, root=ROOT, review=None, seconds=None):
+def pre(ep, root=ROOT, review=None, seconds=None, verses=None):
     import hashlib
     errs, cfg = [], _cfg(ep, root)
+    errs += _teologia(ep, root, verses)
     # BLOCO 1 roteiro
     if review is None:
         from agents import vnc_script_review as R; review = R.review

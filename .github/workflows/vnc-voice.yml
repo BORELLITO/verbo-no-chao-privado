@@ -24,6 +24,10 @@ jobs:
         run: |
           EP="$(python3 -c 'import json;print(json.load(open("run/voice.json"))["episode"])')"
           python3 -m agents.vnc_script_review "$EP"
+      - name: Parecer teologico do agente (dossie pesquisado, lacrado ao roteiro)
+        run: |
+          EP="$(python3 -c 'import json;print(json.load(open("run/voice.json"))["episode"])')"
+          python3 -m agents.vnc_theology_gate theology "$EP"
       - name: Voz
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}

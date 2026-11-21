@@ -1,0 +1,392 @@
+{
+ "episode": "E03",
+ "referencia": "Lamentações 3:21–26",
+ "pesquisado_em": "2026-11-21",
+ "revisor": "agente-teologico (Claude), pesquisa na web com fontes comentario/enciclopedia/academicas; texto biblico conferido em ACF",
+ "posicoes_adotadas": {
+  "autoria": "O roteiro NAO nomeia o autor: usa 'o autor' (o livro e anonimo; tradicao atribui a Jeremias, debatido).",
+  "data": "Fala apenas 'Jerusalem havia caido' (586 a.C. consta nas fontes; datas numericas retiradas do roteiro por precisao).",
+  "traducao": "Texto biblico base: Almeida Corrigida Fiel; paraphrases mantem palavras-chave do texto."
+ },
+ "alegacoes": [
+  {
+   "id": "T01",
+   "cenas": [
+    "S02"
+   ],
+   "tipo": "interpretativa",
+   "texto": "Lamentacoes e um dos textos mais honestos da Biblia (nao esconde a dor).",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Lamentações 3:1-20"
+   ],
+   "palavras_chave_no_texto": [
+    "aflição"
+   ],
+   "fontes": [
+    {
+     "titulo": "ESV Global Study Bible, Introduction to Lamentations",
+     "url": "https://esv.org/resources/esv-global-study-bible/introduction-to-lamentations",
+     "tipo": "comentario",
+     "nota": "autor desconhecido; testemunho ocular da destruicao de Jerusalem em 586 a.C.; esperanca e tema central; cap. 3:19-24 e passagem-chave"
+    },
+    {
+     "titulo": "The Gospel Coalition, Commentary on Lamentations",
+     "url": "https://www.thegospelcoalition.org/commentary/lamentations/",
+     "tipo": "comentario",
+     "nota": "cinco poemas sobre a destruicao de Jerusalem em 586 a.C.; cap. 3 ensina esperanca na fidelidade de Yahweh (3:21-39)"
+    },
+    {
+     "titulo": "Tyndale, The Way Bible: Lamentations",
+     "url": "https://www.tyndale.com/sites/thewaybible/?p=650",
+     "tipo": "comentario",
+     "nota": "livro nao identifica o autor; cap. 3 descreve sofrimento e, de repente, esperanca ao perceber que a ira nao dura para sempre"
+    }
+   ],
+   "risco": "'mais honestos' e juizo de valor, nao dado textual; pode soar hiperbolico.",
+   "mitigacao": "Formula 'um dos' (nao 'o mais'); sustentada pelo carater de lamento comunitario e pelo realismo do cap. 3 (3:1-20) descritos nas fontes."
+  },
+  {
+   "id": "T02",
+   "cenas": [
+    "S03"
+   ],
+   "tipo": "historica",
+   "texto": "Jerusalem havia caido e restavam ruinas.",
+   "veredito": "SUPORTADO",
+   "versiculos": [],
+   "fontes": [
+    {
+     "titulo": "The Gospel Coalition, Commentary on Lamentations",
+     "url": "https://www.thegospelcoalition.org/commentary/lamentations/",
+     "tipo": "comentario",
+     "nota": "cinco poemas sobre a destruicao de Jerusalem em 586 a.C.; cap. 3 ensina esperanca na fidelidade de Yahweh (3:21-39)"
+    },
+    {
+     "titulo": "ESV Global Study Bible, Introduction to Lamentations",
+     "url": "https://esv.org/resources/esv-global-study-bible/introduction-to-lamentations",
+     "tipo": "comentario",
+     "nota": "autor desconhecido; testemunho ocular da destruicao de Jerusalem em 586 a.C.; esperanca e tema central; cap. 3:19-24 e passagem-chave"
+    },
+    {
+     "titulo": "Encyclopedia of the Bible (BibleGateway), Lamentations",
+     "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Book-Lamentations",
+     "tipo": "enciclopedia",
+     "nota": "correlacoes com 2 Reis/Jeremias: cerco, fome (Lam 2:11-12; 4:4-5,9-10), queima do templo, exilio"
+    },
+    {
+     "titulo": "Cambridge University Press (excerto), estudos sobre Lamentacoes",
+     "url": "https://assets.cambridge.org/97811084/24417/excerpt/9781108424417_excerpt.pdf",
+     "tipo": "academico",
+     "nota": "queda de Jerusalem em 586 a.C. como evento cataclismico; Lamentacoes como memorializacao do trauma"
+    }
+   ],
+   "risco": "baixo: consenso de que o pano de fundo e a destruicao de Jerusalem pelos babilonios em 586 a.C.",
+   "mitigacao": ""
+  },
+  {
+   "id": "T03",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "textual",
+   "texto": "O livro fala de fome, luto e perguntas sem resposta. ('luto' = parafrase de 'pranto' (3:19) e 'lamentação' (5:15), termos do texto ACF)",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Lamentações 4:9",
+    "Lamentações 5:15",
+    "Lamentações 5:20"
+   ],
+   "palavras_chave_no_texto": [
+    "fome",
+    "lamentação",
+    "por que"
+   ],
+   "fontes": [
+    {
+     "titulo": "Encyclopedia of the Bible (BibleGateway), Lamentations",
+     "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Book-Lamentations",
+     "tipo": "enciclopedia",
+     "nota": "correlacoes com 2 Reis/Jeremias: cerco, fome (Lam 2:11-12; 4:4-5,9-10), queima do templo, exilio"
+    },
+    {
+     "titulo": "BibleHub, Lamentations 5:22 (comentarios)",
+     "url": "https://biblehub.com/commentaries/lamentations/5-22.htm",
+     "tipo": "comentario",
+     "nota": "livro termina em tensao; leitura sinagogal repete 5:21 para nao encerrar com a ira; traducao de 5:22 e disputada"
+    }
+   ],
+   "risco": "'sem resposta' e leitura: o fim do livro (5:20-22) e tensionado e debatido.",
+   "mitigacao": "A frase afirma que o livro formula perguntas (5:20 'Por que...?'), sem dizer que Deus nao responde."
+  },
+  {
+   "id": "T04",
+   "cenas": [
+    "S05"
+   ],
+   "tipo": "interpretativa",
+   "texto": "No cap. 3 o autor chega ao fundo do sofrimento e decide lembrar.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Lamentações 3:17-21"
+   ],
+   "palavras_chave_no_texto": [
+    "recordarei",
+    "esperança"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (pt), Lamentacoes 3",
+     "url": "https://enduringword.com/bible-commentary/pt/lamentations-3/",
+     "tipo": "comentario",
+     "nota": "tendo afundado na alma (3:20), o autor lembra algo que inicia a esperanca (3:21-23)"
+    },
+    {
+     "titulo": "Desiring God, When Darkness Veils His Lovely Face",
+     "url": "https://www.desiringgod.org/articles/when-darkness-veils-his-lovely-face",
+     "tipo": "comentario",
+     "nota": "3:17-18 (esperanca perecida) precede 3:22-23 (misericordias novas a cada manha)"
+    },
+    {
+     "titulo": "Leslie Allen, Lamentacoes sessao 7 (BiblicalElearning, pt)",
+     "url": "https://biblicalelearning.org/allen_lam_por_session07_portuguese",
+     "tipo": "academico",
+     "nota": "o testemunho de 3:17-23 relembra a aflicao antes da esperanca; relevante a quem vivia a tragedia de 586"
+    },
+    {
+     "titulo": "Tyndale, The Way Bible: Lamentations",
+     "url": "https://www.tyndale.com/sites/thewaybible/?p=650",
+     "tipo": "comentario",
+     "nota": "livro nao identifica o autor; cap. 3 descreve sofrimento e, de repente, esperanca ao perceber que a ira nao dura para sempre"
+    }
+   ],
+   "risco": "'decide' e leve interpretacao de 3:21 ('disto me recordarei... por isso esperarei' = ato deliberado).",
+   "mitigacao": ""
+  },
+  {
+   "id": "T05",
+   "cenas": [
+    "S06"
+   ],
+   "tipo": "textual",
+   "texto": "A bondade de Deus nao se acaba e as misericordias se renovam a cada manha.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Lamentações 3:22-23"
+   ],
+   "palavras_chave_no_texto": [
+    "misericórdias",
+    "manhã"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleHub, What does Lamentations 3:22-23 mean?",
+     "url": "https://biblehub.com/q/what_does_lamentations_3_22-23_mean.htm",
+     "tipo": "comentario",
+     "nota": "3:22-23: a transicao do luto bruto a esperanca ancorada na misericordia; sofrimento nao tem a ultima palavra"
+    },
+    {
+     "titulo": "Bible Commentary (UCG) citando Nelson Study Bible",
+     "url": "https://ucg.org/node/631056",
+     "tipo": "comentario",
+     "nota": "a existencia de um remanescente deve-se as misericordias de Deus; 'grande e a tua fidelidade' e o coracao do livro"
+    },
+    {
+     "titulo": "Desiring God, When Darkness Veils His Lovely Face",
+     "url": "https://www.desiringgod.org/articles/when-darkness-veils-his-lovely-face",
+     "tipo": "comentario",
+     "nota": "3:17-18 (esperanca perecida) precede 3:22-23 (misericordias novas a cada manha)"
+    }
+   ],
+   "risco": "'bondade' e parafrase de hesed/misericordia; nao pode virar promessa de resultado.",
+   "mitigacao": "Roteiro usa 'misericordias' literal e fala de manha como imagem do texto; S09 afirma que o texto nao promete pressa."
+  },
+  {
+   "id": "T06",
+   "cenas": [
+    "S07"
+   ],
+   "tipo": "textual",
+   "texto": "Mais adiante, diz que e bom esperar em silencio.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Lamentações 3:26"
+   ],
+   "palavras_chave_no_texto": [
+    "silêncio",
+    "bom"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleHub, What does Lamentations 3:22-23 mean?",
+     "url": "https://biblehub.com/q/what_does_lamentations_3_22-23_mean.htm",
+     "tipo": "comentario",
+     "nota": "3:22-23: a transicao do luto bruto a esperanca ancorada na misericordia; sofrimento nao tem a ultima palavra"
+    }
+   ],
+   "risco": "o verso pode soar como passividade.",
+   "mitigacao": "S11 e S12 ligam o esperar a lembrar, sem negar a dor."
+  },
+  {
+   "id": "T07",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "interpretativa",
+   "texto": "A esperanca nasce de lembrar; o texto nao apaga a dor.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Lamentações 3:19-21"
+   ],
+   "palavras_chave_no_texto": [
+    "recordarei",
+    "esperarei"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (pt), Lamentacoes 3",
+     "url": "https://enduringword.com/bible-commentary/pt/lamentations-3/",
+     "tipo": "comentario",
+     "nota": "tendo afundado na alma (3:20), o autor lembra algo que inicia a esperanca (3:21-23)"
+    },
+    {
+     "titulo": "Desiring God, When Darkness Veils His Lovely Face",
+     "url": "https://www.desiringgod.org/articles/when-darkness-veils-his-lovely-face",
+     "tipo": "comentario",
+     "nota": "3:17-18 (esperanca perecida) precede 3:22-23 (misericordias novas a cada manha)"
+    },
+    {
+     "titulo": "The Gospel Coalition, Commentary on Lamentations",
+     "url": "https://www.thegospelcoalition.org/commentary/lamentations/",
+     "tipo": "comentario",
+     "nota": "cinco poemas sobre a destruicao de Jerusalem em 586 a.C.; cap. 3 ensina esperanca na fidelidade de Yahweh (3:21-39)"
+    }
+   ],
+   "risco": "baixo: ACF 3:20-21 liga memoria e esperanca ('disto me recordarei... por isso esperarei').",
+   "mitigacao": ""
+  },
+  {
+   "id": "T08",
+   "cenas": [
+    "S09"
+   ],
+   "tipo": "interpretativa",
+   "texto": "Nem sempre a manha chega quando pedimos; o texto nao promete pressa.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Lamentações 3:26",
+    "Lamentações 5:20"
+   ],
+   "palavras_chave_no_texto": [
+    "aguardar",
+    "por que"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleHub, Lamentations 5:22 (comentarios)",
+     "url": "https://biblehub.com/commentaries/lamentations/5-22.htm",
+     "tipo": "comentario",
+     "nota": "livro termina em tensao; leitura sinagogal repete 5:21 para nao encerrar com a ira; traducao de 5:22 e disputada"
+    },
+    {
+     "titulo": "Brewer (RTS), Hope in Concession: A traducao de ki im em Lam 5:22",
+     "url": "https://cdn.rts.edu/wp-content/uploads/2019/01/Brewer-Lamentations-Poets-Paper.pdf",
+     "tipo": "academico",
+     "nota": "o final do livro (5:22) e traduzido de formas distintas (adversativa/concessiva/condicional)"
+    }
+   ],
+   "risco": "ler o silencio do fim do livro como 'sem pressa' e inferencia (5:22 tem traducoes concorrentes).",
+   "mitigacao": "Formula negativa e prudente ('nao promete'), que evita promessa; ancorada no verbo aguardar (3:26) e no clamor 'ate quando' do livro."
+  },
+  {
+   "id": "T09",
+   "cenas": [
+    "S01",
+    "S10",
+    "S11"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Convite pessoal a lembrar uma manha em que a ajuda chegou; dizer isso em voz baixa tambem e esperar.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Lamentações 3:21"
+   ],
+   "palavras_chave_no_texto": [
+    "recordarei"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleHub, What does Lamentations 3:22-23 mean?",
+     "url": "https://biblehub.com/q/what_does_lamentations_3_22-23_mean.htm",
+     "tipo": "comentario",
+     "nota": "3:22-23: a transicao do luto bruto a esperanca ancorada na misericordia; sofrimento nao tem a ultima palavra"
+    }
+   ],
+   "risco": "aplicacao pessoal nao e afirmacao do texto; nao pode prometer resultado.",
+   "mitigacao": "Linguagem de convite ('talvez hoje', 'tambem'), sem promessa de intervencao; coerente com a ressalva 'sem negar o que ainda doi'."
+  },
+  {
+   "id": "T10",
+   "cenas": [
+    "S12"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Esperanca nao e ignorar as ruinas; e lembrar que ainda existe chao para recomecar.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Lamentações 3:22"
+   ],
+   "palavras_chave_no_texto": [
+    "consumidos"
+   ],
+   "fontes": [
+    {
+     "titulo": "Bible Commentary (UCG) citando Nelson Study Bible",
+     "url": "https://ucg.org/node/631056",
+     "tipo": "comentario",
+     "nota": "a existencia de um remanescente deve-se as misericordias de Deus; 'grande e a tua fidelidade' e o coracao do livro"
+    },
+    {
+     "titulo": "BibleHub, What does Lamentations 3:22-23 mean?",
+     "url": "https://biblehub.com/q/what_does_lamentations_3_22-23_mean.htm",
+     "tipo": "comentario",
+     "nota": "3:22-23: a transicao do luto bruto a esperanca ancorada na misericordia; sofrimento nao tem a ultima palavra"
+    }
+   ],
+   "risco": "'recomecar' pode soar como promessa de restauracao; o texto celebra 'nao sermos consumidos'.",
+   "mitigacao": "'ainda existe chao' = sobreviver/permanecer (3:22), nao garantia de reconstrucao; o remanescente e atribuido a misericordia."
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "Lamentacoes enquadra a queda como juizo pelo pecado do povo (1:18; 3:39-42)",
+   "decisao": "aceitavel",
+   "justificativa": "O recorte 3:21-26 e declarado na referencia; o roteiro nao culpabiliza o ouvinte nem afirma inocencia, e fala de sofrimento sem atribuir causa individual."
+  },
+  {
+   "item": "Autoria (anonima; tradicao atribui a Jeremias; debatido)",
+   "decisao": "aceitavel",
+   "justificativa": "O roteiro usa 'o autor' e 'alguem', sem afirmar Jeremias, evitando posicao contestada."
+  },
+  {
+   "item": "O cap. 3 continua (3:27-39) com jugo, silencio e confissao",
+   "decisao": "aceitavel",
+   "justificativa": "Cita-se 3:26 como 'mais adiante' e nao se afirma que o capitulo termina em esperanca; 3:21-26 e unidade reconhecida pelas fontes."
+  }
+ ],
+ "parecer": "APROVADO",
+ "cenas_hash": {
+  "S01": "ff92f758cfe9953c",
+  "S02": "51efb83f29df799e",
+  "S03": "8a38ec5c4d2d68f1",
+  "S04": "a011a17318de2635",
+  "S05": "6c36e8afd26044bb",
+  "S06": "d1986c8e6f44d9c1",
+  "S07": "f0ed7e1868f156b5",
+  "S08": "2698f4e111de9e47",
+  "S09": "15cc585d9c65263c",
+  "S10": "2fac701cb44fc78e",
+  "S11": "eb77904a33a63849",
+  "S12": "6c61b0d74101333d"
+ }
+}
