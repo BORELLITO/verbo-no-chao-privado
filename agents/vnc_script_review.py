@@ -189,7 +189,7 @@ def review(ep, cfg=None, getter=None, others=None, offline=False):
         v = s.get("visual") or {}
         if not v.get("queries") or not v.get("mood"): bad("VISUAL", "cena sem plano visual (queries/mood)", s.get("id"))
         if s.get("block") != "conclusion" and "pessoa" in norm(v.get("meaning", "")): bad("VISUAL", "plano pede pessoa (nao ha banco confiavel)", s.get("id"))
-    warn = WARN | ({"DURACAO", "GANCHO"} if cfg.get("number") == 1 else set())   # E01 (postado) e legado: so aviso
+    warn = WARN | ({"DURACAO", "GANCHO"} if (cfg.get("number") or 99) <= 2 else set())   # E01 e E02 (anteriores a regra, valida a partir do E03): so aviso
     avisos = [i for i in issues if i["code"] in warn]; issues = [i for i in issues if i["code"] not in warn]   # VISUAL ausente: o motor cai no lexico (aviso, nao bloqueio)
     status = "REPROVADO" if issues else "APROVADO_AUTOMATICO"
     return {"episode": ep, "status": status, "issues": issues, "avisos": avisos, "checks": checks,

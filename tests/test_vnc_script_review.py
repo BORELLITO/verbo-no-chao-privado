@@ -73,7 +73,7 @@ class Review(unittest.TestCase):
             c = cfg(); c["scenes"][0]["text"] = t; self.assertIn("GANCHO", self.codes(self.rv(c)), t)
 
     def test_legacy_e01_only_warns(self):
-        c = cfg(); c["number"] = 1; c["scenes"][0]["text"] = "Em Habacuque, o profeta decide ficar de vigia?"
+        c = cfg(); c["number"] = 2; c["scenes"][0]["text"] = "Em Habacuque, o profeta decide ficar de vigia?"
         r = self.rv(c); self.assertNotIn("GANCHO", self.codes(r)); self.assertTrue(any(a["code"] == "GANCHO" for a in r["avisos"]))
 
     def test_tone_exclamation_and_no_hook(self):
