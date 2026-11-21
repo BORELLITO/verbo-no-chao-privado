@@ -1,1 +1,7 @@
-{"episode":"E01","mode":"select","dry_run":true,"as_episode":"E99SIM","nonce":"visao-direitos-2"}
+{
+ "episode": "E01",
+ "mode": "select",
+ "dry_run": true,
+ "as_episode": "E99SIM",
+ "nonce": "visao-calibrada-3"
+}

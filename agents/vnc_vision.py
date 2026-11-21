@@ -12,7 +12,10 @@ NEG = {  # classe -> prompts (limiar de eliminacao em THRESH)
     "text": ["a screen with text, a logo or a watermark", "a title card with words"],
     "cgi": ["a computer-generated 3D render", "a cartoon or digital illustration", "an AI-generated artificial image"],
 }
-THRESH = {"people": 0.45, "city": 0.5, "indoor": 0.5, "text": 0.45, "cgi": 0.5}
+# Veto duro so em valores extremos (softmax conjunto dilui; limiares baixos eliminavam quase tudo). "cgi" nao e confiavel
+# em video fotorrealista: vira penalidade de ranking (SOFT), nao veto.
+THRESH = {"people": 0.7, "city": 0.8, "indoor": 0.8, "text": 0.7}
+SOFT = {"cgi": 0.6}
 GENERIC_POS = "a cinematic nature video frame"
 
 

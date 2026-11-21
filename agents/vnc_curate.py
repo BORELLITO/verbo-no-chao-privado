@@ -378,7 +378,9 @@ def run(ep, mode=None):
                     if why:
                         rejected.append([f"{c['source']}:{c['id']}", why]); continue
                     c["clip_sem"] = res["sem"]; c["vision"] = res
+                    c["clip_sem"] = max(0.0, c["clip_sem"] - 0.5 * max(0.0, res["neg"].get("cgi", 0) - VIS.SOFT["cgi"]))
                 kept.append(c)
+            print("VNC_CURATE_VISREJ", unit["scene"], "avaliados", min(len(cands), 14), "vetados", len([r for r in rejected if str(r[1]).startswith("visual:")]), [r for r in rejected if str(r[1]).startswith("visual:")][:4])
             cands = kept
         return pick_top([dict(c, score=SEL.unary(c, unit, SEL.weights())) for c in cands], 8), rejected
     backfill(led, reg, cache, work, dry)

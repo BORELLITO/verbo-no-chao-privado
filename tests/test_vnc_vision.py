@@ -34,7 +34,7 @@ class Vision(unittest.TestCase):
 
     def test_vetoed_classes_eliminate(self):
         a = self.ann()
-        for img, cls in (("city", "city"), ("person", "people"), ("cgi", "cgi"), ("text", "text"), ("indoor", "indoor")):
+        for img, cls in (("city", "city"), ("person", "people"), ("text", "text"), ("indoor", "indoor")):
             r = a.annotate({"key": img}, self.unit, lambda img=img: [img]); self.assertIn(cls, V.verdict(r) or "", img)
         r = a.annotate({"key": "person"}, self.unit, lambda: ["person"]); self.assertIsNone(V.verdict(r, allow=("people",)))
 
