@@ -8,7 +8,7 @@ Fluxo por episodio (episodes/<ID>.json -> "curation" opcional; senao arco padrao
 Nada e escolhido sozinho: o Claude revisa a planilha, grava a selecao e registra no registro (travas em vnc_gates).
 Funcoes puras (parse/score/filtros) testadas offline em tests/test_vnc_curate.py.
 """
-import base64, io, json, os, re, subprocess, sys, urllib.request
+import base64, io, json, os, re, subprocess, sys, time, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -22,9 +22,16 @@ HAND_OK = {"hand", "hands"}
 MOODS = {"dark": (35, 105), "mid": (70, 150), "bright": (115, 210)}  # faixa de brilho medio (0-255) aceita por clima
 
 
-def get(url, binary=True, timeout=60, limit=25_000_000):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
-        data = r.read(limit + 1)
+def get(url, binary=True, timeout=60, limit=25_000_000, retries=4):
+    for i in range(retries + 1):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
+                data = r.read(limit + 1)
+            break
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 503) or i == retries:
+                raise
+            time.sleep(4 * (2 ** i))  # backoff: 4, 8, 16, 32 s
     if len(data) > limit:
         raise RuntimeError("too_large")
     return data if binary else data.decode("utf8", "ignore")
@@ -183,9 +190,9 @@ def run(ep):
                 print("VNC_CURATE_WARN listagem", slug, page, repr(e)[:60])
         return out
     kws = sorted({k for s in plan.values() for k in s["queries"]})
-    with ThreadPoolExecutor(6) as ex:
-        for k, r in zip(kws, ex.map(list_kw, kws)):
-            listing[k] = r
+    for k in kws:  # serial e espacado: o Mixkit devolve 429 sob paralelismo
+        listing[k] = list_kw(k)
+        time.sleep(1.5)
     result, cache, rejected = {}, {}, {}
     for sid in sorted(plan):
         s = plan[sid]; pool = {}

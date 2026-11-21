@@ -1,17 +1,203 @@
 {
-  "_doc": "Arco visual padrao de 12 cenas (paisagem filmada real; mesmo arco do E01: tristeza/perguntas -> abertura -> libertacao). Clima: dark/mid/bright = faixa de brilho medio aceita. 'queries' = listagens Mixkit; 'prefer' = palavras que sobem a nota; 'allow' libera maos; 'exclude' = palavras extras vetadas. Um episodio pode sobrescrever cenas em episodes/<ID>.json -> curation.",
-  "scenes": [
-    {"id": "S01", "mood": "dark",   "min_seconds": 9,  "queries": ["rain", "raindrops", "rainy-day"], "prefer": ["window", "rain", "drops"]},
-    {"id": "S02", "mood": "dark",   "min_seconds": 8,  "queries": ["storm", "thunderstorm", "clouds"], "prefer": ["storm", "dark", "clouds", "rain"]},
-    {"id": "S03", "mood": "dark",   "min_seconds": 9,  "queries": ["waves", "sea", "ocean"], "prefer": ["waves", "stormy", "crashing", "sea"]},
-    {"id": "S04", "mood": "mid",    "min_seconds": 8,  "queries": ["candle", "fire", "fireplace"], "prefer": ["candle", "flame", "fire"], "allow": ["hands"]},
-    {"id": "S05", "mood": "mid",    "min_seconds": 9,  "queries": ["fog", "mist", "foggy-forest"], "prefer": ["fog", "mist", "tree"]},
-    {"id": "S06", "mood": "mid",    "min_seconds": 9,  "queries": ["forest", "trees", "fog"], "prefer": ["forest", "mist", "fog"]},
-    {"id": "S07", "mood": "mid",    "min_seconds": 10, "queries": ["mountains", "mountain", "hills"], "prefer": ["mountain", "cliff", "peak"]},
-    {"id": "S08", "mood": "mid",    "min_seconds": 9,  "queries": ["clouds", "sky", "beach"], "prefer": ["clouds", "sky", "beach"]},
-    {"id": "S09", "mood": "bright", "min_seconds": 8,  "queries": ["sunrise", "sunset", "sun"], "prefer": ["sunrise", "sunlight", "sun", "dawn"]},
-    {"id": "S10", "mood": "mid",    "min_seconds": 9,  "queries": ["hands"], "prefer": ["hands", "holding"], "allow": ["hands"]},
-    {"id": "S11", "mood": "bright", "min_seconds": 8,  "queries": ["trail", "path", "hills"], "prefer": ["trail", "path", "hills"]},
-    {"id": "S12", "mood": "bright", "min_seconds": 14, "queries": ["lake", "valley", "river"], "prefer": ["lake", "mountain", "valley"]}
-  ]
+ "_doc": "Arco visual padrao de 12 cenas (paisagem filmada real; mesmo arco do E01: tristeza/perguntas -> abertura -> libertacao). Clima: dark/mid/bright = faixa de brilho medio aceita. 'queries' = listagens Mixkit; 'prefer' = palavras que sobem a nota; 'allow' libera maos; 'exclude' = palavras extras vetadas. Um episodio pode sobrescrever cenas em episodes/<ID>.json -> curation.",
+ "scenes": [
+  {
+   "id": "S01",
+   "mood": "dark",
+   "min_seconds": 9,
+   "queries": [
+    "rain",
+    "raindrops",
+    "rainy-day",
+    "night",
+    "water-drops"
+   ],
+   "prefer": [
+    "window",
+    "rain",
+    "drops",
+    "night",
+    "dark"
+   ]
+  },
+  {
+   "id": "S02",
+   "mood": "dark",
+   "min_seconds": 8,
+   "queries": [
+    "storm",
+    "thunderstorm",
+    "clouds"
+   ],
+   "prefer": [
+    "storm",
+    "dark",
+    "clouds",
+    "rain"
+   ]
+  },
+  {
+   "id": "S03",
+   "mood": "dark",
+   "min_seconds": 9,
+   "queries": [
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "waves",
+    "stormy",
+    "crashing",
+    "sea"
+   ]
+  },
+  {
+   "id": "S04",
+   "mood": "mid",
+   "min_seconds": 8,
+   "queries": [
+    "candle",
+    "fire",
+    "fireplace"
+   ],
+   "prefer": [
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "allow": [
+    "hands"
+   ]
+  },
+  {
+   "id": "S05",
+   "mood": "mid",
+   "min_seconds": 9,
+   "queries": [
+    "fog",
+    "mist",
+    "foggy-forest"
+   ],
+   "prefer": [
+    "fog",
+    "mist",
+    "tree"
+   ]
+  },
+  {
+   "id": "S06",
+   "mood": "mid",
+   "min_seconds": 9,
+   "queries": [
+    "forest",
+    "trees",
+    "fog"
+   ],
+   "prefer": [
+    "forest",
+    "mist",
+    "fog"
+   ]
+  },
+  {
+   "id": "S07",
+   "mood": "mid",
+   "min_seconds": 10,
+   "queries": [
+    "mountains",
+    "mountain",
+    "hills"
+   ],
+   "prefer": [
+    "mountain",
+    "cliff",
+    "peak"
+   ]
+  },
+  {
+   "id": "S08",
+   "mood": "mid",
+   "min_seconds": 9,
+   "queries": [
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "prefer": [
+    "clouds",
+    "sky",
+    "beach"
+   ]
+  },
+  {
+   "id": "S09",
+   "mood": "mid",
+   "min_seconds": 8,
+   "queries": [
+    "sunrise",
+    "sunset",
+    "sun",
+    "dawn",
+    "sunlight"
+   ],
+   "prefer": [
+    "sunrise",
+    "sunlight",
+    "sun",
+    "dawn"
+   ]
+  },
+  {
+   "id": "S10",
+   "mood": "mid",
+   "min_seconds": 9,
+   "queries": [
+    "hands",
+    "hand",
+    "praying",
+    "holding"
+   ],
+   "prefer": [
+    "hands",
+    "holding",
+    "hand",
+    "glass",
+    "water"
+   ],
+   "allow": [
+    "hands"
+   ]
+  },
+  {
+   "id": "S11",
+   "mood": "bright",
+   "min_seconds": 8,
+   "queries": [
+    "trail",
+    "path",
+    "hills"
+   ],
+   "prefer": [
+    "trail",
+    "path",
+    "hills"
+   ]
+  },
+  {
+   "id": "S12",
+   "mood": "bright",
+   "min_seconds": 14,
+   "queries": [
+    "lake",
+    "valley",
+    "river"
+   ],
+   "prefer": [
+    "lake",
+    "mountain",
+    "valley"
+   ]
+  }
+ ]
 }
