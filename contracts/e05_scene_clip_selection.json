@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E05",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "44963369129",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "34999",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/landscape-with-illuminated-clouds-at-night-34999/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 27.4,
+   "note_pt": "clima dark (brilho 85.1), movimento 5.39, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "9590",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-over-the-hills-9590/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 20.8,
+   "note_pt": "clima dark (brilho 95.0), movimento 9.42, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "1925",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/waves-reaching-the-shore-1925/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 30.0,
+   "note_pt": "clima dark (brilho 89.2), movimento 16.72, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "18303",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/tower-of-100-dollars-being-burned-with-a-flame-18303/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 11.7,
+   "note_pt": "clima dark (brilho 87.7), movimento 14.68, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "22729",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/gloomy-forest-full-of-trees-during-a-rainy-afternoon-22729/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 11.3,
+   "note_pt": "clima mid (brilho 59.0), movimento 2.6, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "35513",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/foggy-autumnal-sunrise-in-the-mountains-35513/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 13.2,
+   "note_pt": "clima mid (brilho 114.4), movimento 6.85, palavras-chave 3, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "28333",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/mountain-covered-by-a-large-forest-seen-from-above-28333/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 15.1,
+   "note_pt": "clima mid (brilho 121.0), movimento 4.59, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "15317",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/river-flowing-between-giant-rocks-15317/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 27.5,
+   "note_pt": "clima mid (brilho 101.9), movimento 4.76, palavras-chave 3, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "9839",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/valley-in-the-mountains-with-a-cloudy-sky-9839/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 13.8,
+   "note_pt": "clima mid (brilho 110.6), movimento 10.43, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "10993",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/dreamlike-waterfalls-in-the-forest-10993/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 27.4,
+   "note_pt": "clima bright (brilho 106.1), movimento 3.28, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "35063",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/snowy-path-in-a-winter-mountain-35063/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 30.0,
+   "note_pt": "clima bright (brilho 116.1), movimento 5.33, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "9929",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-the-ocean-lakes-and-mountains-9929/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 48.0,
+   "note_pt": "clima bright (brilho 110.8), movimento 3.68, palavras-chave 3, interpretacao=claude"
+  }
+ ]
+}
