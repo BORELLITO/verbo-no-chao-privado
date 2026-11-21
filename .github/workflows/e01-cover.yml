@@ -17,4 +17,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy
-      - run: python -m agents.e01_cover_cands
+      - run: python -m agents.e01_cover

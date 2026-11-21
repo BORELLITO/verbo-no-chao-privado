@@ -8,7 +8,7 @@ FF = imageio_ffmpeg.get_ffmpeg_exe()
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"}
 FONT = "assets/fonts/AtkinsonHyperlegibleNext-Bold.ttf"
 TOP = ("coverr-raindrops-on-the-window-7102", 3.0)   # tristeza / pergunta sem resposta
-BOT = ("coverr-sunrise-on-the-beach-9704", 7.0)      # luz / esperança
+BOT = ("coverr-mountain-top-trail-9791", 10.0)      # luz / esperança
 TITLE = ["Quando você", "pergunta e", "nada muda"]
 REF = "Habacuque 1:2–4"
 
@@ -24,9 +24,9 @@ def frame(slug, t):
     return Image.open(io.BytesIO(png)).convert("RGB")
 
 
-def fill(img, W, H):
+def fill(img, W, H, cx=0.5):
     r = max(W / img.width, H / img.height); im = img.resize((int(img.width * r + .5), int(img.height * r + .5)), Image.LANCZOS)
-    x, y = (im.width - W) // 2, (im.height - H) // 2
+    x, y = int(min(max(cx * im.width - W / 2, 0), im.width - W)), (im.height - H) // 2
     return im.crop((x, y, x + W, y + H))
 
 
@@ -42,18 +42,12 @@ def text_block(W, H, lines, size, y0, accent_last=True):
 
 
 def build(W, H, logo_w, title_size, vertical):
-    a, b = fill(frame(*TOP), W, H), fill(frame(*BOT), W, H)
-    yy = np.linspace(0, 1, H)[:, None]; s = np.clip((yy - 0.30) / 0.40, 0, 1); s = s * s * (3 - 2 * s)
+    a, b = fill(frame(*TOP), W, H), fill(frame(*BOT), W, H, 0.56)
+    yy = np.linspace(0, 1, H)[:, None]; s = np.clip((yy - 0.36) / 0.34, 0, 1); s = s * s * (3 - 2 * s)
     arr = np.asarray(a, dtype=float) * (1 - s[..., None]) + np.asarray(b, dtype=float) * s[..., None]
-    arr[:int(H * .5)] *= 0.78  # escurece a parte da tristeza
-    img = Image.fromarray(arr.clip(0, 255).astype("uint8")).convert("RGBA")
-    # faixa escura suave atrás do título
-    band = Image.new("RGBA", (W, H), (0, 0, 0, 0)); bd = ImageDraw.Draw(band)
-    cy = int(H * (0.50 if vertical else 0.55)); hh = int(H * (0.28 if vertical else 0.50))
-    for k in range(hh):
-        bd.line([(0, cy - hh + k), (W, cy - hh + k)], fill=(0, 0, 0, int(110 * (k / hh))))
-        bd.line([(0, cy + hh - k), (W, cy + hh - k)], fill=(0, 0, 0, int(110 * (k / hh))))
-    img = Image.alpha_composite(img, band)
+    arr = arr * (1 - 0.30 * (1 - s[..., None]))  # escurece suavemente a parte da tristeza
+    cyy = 0.50 if vertical else 0.55; arr = arr * (1 - 0.28 * np.exp(-((yy - cyy) / 0.16) ** 2)[..., None])  # suaviza atrás do título
+    img = Image.fromarray(arr.clip(0, 255).astype('uint8')).convert('RGBA')
     # logo
     lg = Image.open("assets/vnc_logo.png").convert("RGBA").resize((logo_w, logo_w), Image.LANCZOS)
     al = lg.split()[3]; glow = Image.new("RGBA", lg.size, (255, 255, 255, 0)); glow.putalpha(al.filter(ImageFilter.GaussianBlur(logo_w * .014)).point(lambda v: int(v * .55)))
