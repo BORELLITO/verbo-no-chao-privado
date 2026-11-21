@@ -43,9 +43,13 @@ def run(ep, mode="check", root=ROOT, api=_api, left=credits_left, seconds=mp3_se
         print("VNC_VOICE_ABORT voz_ja_existe (nunca regenerar: economia de creditos)", out); return 5
     need = int(len(text) * CFG["credit_margin"]) + 1
     try:
-        have = left(key); api(f"/v1/voices/{CFG['voice_id']}", key)
+        have = left(key)
     except urllib.error.HTTPError as e:
-        print("VNC_VOICE_ABORT api_http", e.code); return 6
+        print("VNC_VOICE_ABORT api_http subscription (permissao User)", e.code, e.read()[:200]); return 6
+    try:
+        api(f"/v1/voices/{CFG['voice_id']}", key)
+    except urllib.error.HTTPError as e:
+        print("VNC_VOICE_ABORT api_http voz (permissao Voices ou voz fora do workspace)", e.code, e.read()[:200]); return 6
     print("VNC_VOICE_CHECK", json.dumps({"episodio": ep, "caracteres": len(text), "creditos_necessarios": need, "creditos_disponiveis": have, "voz_ok": True, "voz_ja_existe": out.exists()}))
     if have < need:
         print("VNC_VOICE_ABORT creditos_insuficientes"); return 7
