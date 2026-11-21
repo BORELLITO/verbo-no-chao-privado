@@ -186,6 +186,83 @@
    "owner_approved_preview": true,
    "publication": "NAO_PUBLICADO",
    "master_sha256_v5_preview": null
+  },
+  "E99SIM": {
+   "used": [
+    {
+     "source": "mixkit",
+     "id": "28085",
+     "scene": "S01",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "9606",
+     "scene": "S02",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "1954",
+     "scene": "S03",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "17426",
+     "scene": "S04",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "15937",
+     "scene": "S05",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "35013",
+     "scene": "S06",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "27196",
+     "scene": "S07",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "9810",
+     "scene": "S08",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "21143",
+     "scene": "S09",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "144",
+     "scene": "S10",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "46110",
+     "scene": "S11",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "17805",
+     "scene": "S12",
+     "version": "v1"
+    }
+   ],
+   "discarded_versions": {}
   }
  },
  "music_used": [
