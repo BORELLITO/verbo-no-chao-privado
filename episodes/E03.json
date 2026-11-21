@@ -10,7 +10,7 @@
  "reference": "Lamentações 3:21–26",
  "timing": "whisper",
  "audio_link_file": "run/audio_link_E03.txt",
- "audio_sha256": "b7b1d01875aa066c8a32542e95bb85a504674576c45eaaadf3e44ef630435465",
+ "audio_sha256": "PREENCHER_SHA256_COMPLETO",
  "music_page": "https://mixkit.co/free-stock-music/forest-mist-whispers/",
  "cta": [
   "Curta, compartilhe\\Ne inscreva-se no canal",
@@ -59,7 +59,7 @@
   {
    "id": "S02",
    "block": "connection",
-   "text": "Foi ali que alguém escreveu um dos textos mais honestos da Bíblia.",
+   "text": "Foi ali que nasceu um dos textos mais honestos da Bíblia.",
    "visual": {
     "meaning": "tempestade sobre o mar",
     "meaning_en": "a stormy sea",
@@ -86,7 +86,7 @@
   {
    "id": "S03",
    "block": "connection",
-   "text": "Jerusalém havia caído, no século seis antes de Cristo, e restavam ruínas.",
+   "text": "Jerusalém havia caído, e restavam só ruínas.",
    "visual": {
     "meaning": "neblina sobre o vazio",
     "meaning_en": "fog over an empty valley",
@@ -113,7 +113,7 @@
   {
    "id": "S04",
    "block": "connection",
-   "text": "Lamentações não esconde a dor. Fala de fome, de luto e de perguntas sem resposta.",
+   "text": "Lamentações não esconde a dor: fome, luto e perguntas sem resposta.",
    "visual": {
     "meaning": "chuva cinzenta",
     "meaning_en": "grey rain falling",
@@ -139,7 +139,7 @@
   {
    "id": "S05",
    "block": "biblical_reference",
-   "text": "No capítulo três, o autor chega ao fundo do sofrimento e decide lembrar.",
+   "text": "No capítulo três, o autor chega ao fundo e decide lembrar.",
    "visual": {
     "meaning": "floresta densa na neblina",
     "meaning_en": "a dark forest in fog",
@@ -220,7 +220,7 @@
   {
    "id": "S08",
    "block": "reflection",
-   "text": "O texto não apaga a dor. A esperança nasce de lembrar, não de não haver ruínas.",
+   "text": "O texto não apaga a dor. A esperança nasce de lembrar.",
    "visual": {
     "meaning": "rio que segue",
     "meaning_en": "a river flowing",
@@ -274,7 +274,7 @@
   {
    "id": "S10",
    "block": "application",
-   "text": "Talvez hoje você precise lembrar de uma manhã em que a ajuda chegou, mesmo pequena.",
+   "text": "Talvez hoje você precise lembrar de uma manhã em que a ajuda chegou.",
    "visual": {
     "meaning": "amanhecer nas montanhas",
     "meaning_en": "sunrise over mountains",

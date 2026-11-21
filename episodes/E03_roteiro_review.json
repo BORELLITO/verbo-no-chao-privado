@@ -5,16 +5,16 @@
  "avisos": [],
  "checks": {
   "cenas": 12,
-  "duracao_estimada_s": 73.2,
-  "palavras": 159,
-  "duracao_final_estimada_s": 69.8,
+  "duracao_estimada_s": 65.8,
+  "palavras": 140,
+  "duracao_final_estimada_s": 62.6,
   "gancho": "Onde você acharia esperança no meio de uma cidade destruída?",
   "cautela_presente": true,
   "referencia": "Lamentações 3:21–26",
   "texto_biblico_verificado": true,
-  "sobreposicao_lexical_biblia": 0.35,
-  "similaridade_E01": 0.1,
-  "similaridade_E02": 0.13
+  "sobreposicao_lexical_biblia": 0.37,
+  "similaridade_E01": 0.09,
+  "similaridade_E02": 0.14
  },
  "limitacoes": [
   "validacao AUTOMATICA de regras do canal + vinculo lexical com o texto biblico; NAO e revisao teologica independente",
