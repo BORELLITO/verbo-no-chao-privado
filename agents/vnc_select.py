@@ -85,14 +85,14 @@ def select_sequence(plan, cands_by_scene, beam=400, W=None):
         nxt = []
         for seq, u, used in states:
             for c in cs:
-                if c["id"] in used:
+                if (c.get("source", "m"), c["id"]) in used:
                     continue
                 g = u + unary(c, unit, W) + (pair(seq[-1], c, W) if seq else 0.0)
                 # variedade global: tema usado >2 vezes na sequencia
                 th = theme(c["title"])
                 if th and sum(theme(x["title"]) == th for x in seq) >= 2:
                     g -= W["variety"] * (0.6 + 0.8 * (sum(theme(x['title']) == th for x in seq) - 1))
-                nxt.append((seq + [c], g, used | {c["id"]}))
+                nxt.append((seq + [c], g, used | {(c.get("source", "m"), c["id"])}))
         nxt.sort(key=lambda s: -s[1]); states = nxt[:beam]
         if not states:
             return None, 0.0, {"bloqueio": f"{unit['scene']}: candidatos esgotados pela regra anti-repeticao"}

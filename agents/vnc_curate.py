@@ -11,7 +11,7 @@ Funcoes puras (parse/score/filtros) testadas offline em tests/test_vnc_curate.py
 import base64, hashlib, io, json, os, re, subprocess, sys, time, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from agents import vnc_memory as MEM, vnc_plan as PLAN, vnc_select as SEL
+from agents import vnc_memory as MEM, vnc_plan as PLAN, vnc_select as SEL, vnc_sources as SRC
 
 ROOT = Path(__file__).resolve().parents[1]
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"}
@@ -160,7 +160,7 @@ def thumb(path, dur):
 
 def analyse(entry, work):
     """Baixa a previa 360p (so se nao ha cache) e extrai metricas + sha256 + dHash de 3 quadros. Sem opiniao estetica: so medidas."""
-    f = work / f"{entry['id']}.mp4"
+    f = work / f"{entry.get('source', 'mixkit')}_{entry['id']}.mp4"
     try:
         if not f.exists():
             f.write_bytes(get(entry["preview"]))
@@ -224,6 +224,38 @@ def validate_manifest(m):
 ENGINE_VERSION = "vnc-curadoria-2.0"
 
 
+def backfill(led, reg, cache, work, dry):
+    """Impressao digital (sha256 + dHash) dos clipes LEGADOS do registro (Coverr/Mixkit com previa acessivel) para o ledger: protege contra o mesmo material em outra fonte/URL."""
+    todo = []
+    for ep, d in reg.get("episodes", {}).items():
+        for c in d.get("used", []) + [x for l in d.get("discarded_versions", {}).values() for x in l]:
+            k = MEM.key(c["source"], c["id"])
+            if k in led["entries"] or any(t[0] == k for t in todo):
+                continue
+            src, cid = str(c["source"]).lower(), str(c["id"])
+            if src == "coverr":
+                prev, title = f"https://cdn.coverr.co/videos/{cid}/360p.mp4", " ".join(re.sub(r"^coverr-|-\d+$", "", cid).split("-"))
+            elif src == "mixkit" and cid.isdigit():
+                prev, title = f"https://assets.mixkit.co/videos/{cid}/{cid}-360.mp4", ""
+            else:
+                continue
+            todo.append((k, ep, src, cid, prev, title))
+    done = skipped = 0
+    for k, ep, src, cid, prev, title in todo:
+        a = analyse({"source": src, "id": cid, "preview": prev}, work)
+        if "error" in a:
+            skipped += 1; continue
+        led["entries"][k] = {"source": src, "id": cid, "episode": ep, "scene": None, "interval": None, "title": title, "page": "", "license": None, "sha256": a["sha256"], "phashes": a["phashes"],
+                             "origin_id": None, "dur": round(a["dur"], 1), "state": "legacy", "run_id": "backfill", "reserved_at": MEM.now(), "updated_at": MEM.now()}
+        done += 1
+    print("VNC_CURATE_BACKFILL legados impressos", done, "sem previa acessivel", skipped)
+    if done:  # impressoes legadas sao fatos (nao reservas): gravadas tambem em dry-run
+        with MEM.transaction() as L:
+            for k, e in led["entries"].items():
+                if e["state"] == "legacy":
+                    L["entries"].setdefault(k, e)
+
+
 def run(ep, mode=None):
     mode = mode or os.environ.get("VNC_CURATE_MODE", "select")
     dry = os.environ.get("VNC_CURATE_DRY") == "1"
@@ -256,53 +288,62 @@ def run(ep, mode=None):
         return _finish(manifest, mf_path, None, dry, 3)
     work = Path("/tmp/curate"); work.mkdir(exist_ok=True)
     cache = cache_load(); t0 = time.time()
-    def list_kw(kw):
-        slug = re.sub(r"[^a-z0-9]+", "-", kw.lower()).strip("-")
-        hit = cache["listing"].get(slug)
+    sources = SRC.enabled()
+    print("VNC_CURATE_FONTES", sources, "(pexels/pixabay so com segredo; ausentes = desativadas)")
+    ctx = {"get": get, "cache": cache, "env": os.environ, "ua": UA, "sleep": time.sleep, "budget": {"coverr": 160}}
+    def list_kw(src, kw):
+        key = f"{src}:{re.sub(r'[^a-z0-9]+', '-', kw.lower()).strip('-')}"
+        hit = cache["listing"].get(key) or (cache["listing"].get(key.split(":", 1)[1]) if src == "mixkit" else None)  # compat com cache antigo (so mixkit)
         if hit and time.time() - hit["ts"] < LIST_TTL:
-            return hit["entries"]
-        out = []
-        for page in (1, 2):
-            try:
-                out += parse_listing(get(f"https://mixkit.co/free-stock-video/{slug}/" + (f"?page={page}" if page > 1 else ""), False))
-            except Exception as e:  # noqa
-                print("VNC_CURATE_WARN listagem", slug, page, repr(e)[:60])
+            return [dict(e, source=src, license=SRC.LICENSES[src]) for e in hit["entries"]]
+        out = SRC.discover(src, kw, ctx)
         if out:
-            cache["listing"][slug] = {"ts": time.time(), "entries": out}
-        time.sleep(2.0)
+            cache["listing"][key] = {"ts": time.time(), "entries": out}
+        time.sleep(1.0 if src != "mixkit" else 2.0)
         return out
     def pool_for(unit, extra_q=()):
         pool = {}
         for k in list(unit["queries"]) + list(extra_q):
-            if time.time() - t0 > 600:
+            if time.time() - t0 > 900:
                 break
-            for e in list_kw(k):
-                ok, hit = title_ok(e["title"], unit.get("allow", ()), unit.get("avoid", ()))
-                if ok and e["id"] not in pool:
-                    pool[e["id"]] = dict(e, kw_hit=sum(w in e["title"] for w in unit["prefer"]))
+            for src in sources:
+                for e in list_kw(src, k):
+                    ok, hit = title_ok(e["title"], unit.get("allow", ()), unit.get("avoid", ()))
+                    pk = f"{e['source']}:{e['id']}"
+                    if ok and pk not in pool:
+                        pool[pk] = dict(e, kw_hit=sum(w in e["title"] for w in unit["prefer"]))
         return pool
+    CAP = {"mixkit": 30, "coverr": 24, "wikimedia": 6, "pexels": 24, "pixabay": 24}
+    def mkey(e):
+        return e["id"] if e["source"] == "mixkit" else f"{e['source']}:{e['id']}"
     def evaluate(unit, pool, n):
-        top = sorted(pool.values(), key=lambda e: -e["kw_hit"])[:n]; need = unit["min_seconds"]; mood = unit["mood"]
+        ranked = sorted(pool.values(), key=lambda e: -e["kw_hit"]); cnt, top = {}, []
+        for e in ranked:  # cota por fonte: nenhuma fonte monopoliza nem sobrecarrega o runner
+            if cnt.get(e["source"], 0) < CAP[e["source"]] * n // 30 and len(top) < n * 2:
+                top.append(e); cnt[e["source"]] = cnt.get(e["source"], 0) + 1
+        need = unit["min_seconds"]; mood = unit["mood"]
         rejected, cands = [], []
         unit_themes = SEL.themes_of(list(unit['queries']) + list(unit['prefer']))
         with ThreadPoolExecutor(8) as ex:
-            res = list(ex.map(lambda e: (cache["metrics"].get(e["id"]) if e["id"] in cache["metrics"] and "phashes" in cache["metrics"][e["id"]] else None) or analyse(e, work), top))
+            res = list(ex.map(lambda e: (cache["metrics"].get(mkey(e)) if "phashes" in (cache["metrics"].get(mkey(e)) or {}) else None) or analyse(e, work), top))
         for e, a in zip(top, res):
+            tag = f"{e['source']}:{e['id']}"
             if not a or "error" in a:
-                rejected.append([e["id"], "erro/inacessivel"]); continue
-            cache["metrics"][e["id"]] = a
+                rejected.append([tag, "erro/inacessivel"]); continue
+            cache["metrics"][mkey(e)] = a
             why = reject_reason(a["m"], mood, need, a["dur"], a["w"], a["h"])
             th = SEL.theme(e["title"])
             if not why and th and unit_themes and th not in unit_themes and not (unit_themes & {"sky", "cloud"} and th in {"cloud", "sky"}):
                 why = f"sem correspondencia narrativa minima (tema '{th}' fora de {sorted(unit_themes)})"
             if not why:
-                why = "; ".join(MEM.conflicts({"source": "mixkit", "id": e["id"], "title": e["title"], "sha256": a["sha256"], "phashes": a["phashes"]}, as_ep, led, reg)) or None
+                why = "; ".join(MEM.conflicts({"source": e["source"], "id": e["id"], "title": e["title"], "sha256": a["sha256"], "phashes": a["phashes"]}, as_ep, led, reg)) or None
                 if why: why = "antirrepeticao: " + why
             if why:
-                rejected.append([e["id"], why]); continue
-            cands.append({"id": e["id"], "source": "mixkit", "title": e["title"], "page": e["page"], "dur": round(a["dur"], 1), "m": a["m"], "phash": a["phash"], "phashes": a["phashes"],
+                rejected.append([tag, why]); continue
+            cands.append({"id": e["id"], "source": e["source"], "title": e["title"], "page": e["page"], "dur": round(a["dur"], 1), "m": a["m"], "phash": a["phash"], "phashes": a["phashes"], "entry": e,
                           "sha256": a["sha256"], "kw_hit": e["kw_hit"], "mood_range": MOODS[mood], "mood_ok": True, "preview": e["preview"]})
         return pick_top([dict(c, score=SEL.unary(c, unit, SEL.weights())) for c in cands], 8), rejected
+    backfill(led, reg, cache, work, dry)
     by_scene, rej_all, extra = {}, {}, {}
     for unit in plan:
         sid = unit["scene"]
@@ -314,8 +355,7 @@ def run(ep, mode=None):
             print("VNC_CURATE_REFORMULA", sid, "candidatos agora", len(cands))
         by_scene[sid] = cands; rej_all[sid] = rej
         print("VNC_CURATE_SCENE", sid, unit["mood"], unit["interpretation"], "pool", len(pool), "candidatos", len(cands), [c["id"] for c in cands[:6]], "rej", rej[:3], flush=True)
-    if not dry:
-        cache_save(cache)
+    cache_save(cache)  # so medidas (sem midia): util tambem em dry-run
     # selecao global + direitos + reserva (com recuperacao: remove so o invalido e reseleciona)
     chosen, util, trace, license_info = None, 0, {}, {}
     for attempt in range(1, 7):
@@ -325,38 +365,35 @@ def run(ep, mode=None):
             return _finish(manifest, mf_path, None, dry, 4)
         bad = {}
         for c in chosen:
-            if c["id"] in license_info and license_info[c["id"]][0]:
+            u = f"{c['source']}:{c['id']}"
+            if u in license_info and license_info[u][0]:
                 continue
-            try:
-                ok, ev = license_check(get(c["page"], False)); hd = hd_url(c["id"]) if ok else None
-                license_info[c["id"]] = (ok and bool(hd), ev + ("" if hd else "; arquivo HD inacessivel"), hd)
-            except Exception as e:  # noqa
-                license_info[c["id"]] = (False, "pagina inacessivel " + repr(e)[:40], None)
-            if not license_info[c["id"]][0]:
-                bad[c["id"]] = license_info[c["id"]][1]
+            license_info[u] = SRC.rights(c["entry"], ctx)
+            if not license_info[u][0]:
+                bad[u] = license_info[u][1]
         if not bad and not dry:
-            ok, blocked = MEM.try_reserve(as_ep, run_id, [{"source": "mixkit", "id": c["id"], "scene": u["scene"], "interval": [0, round(min(c["dur"], u["min_seconds"]), 2)], "title": c["title"],
-                                                           "page": c["page"], "license": "Mixkit Stock Video Free License", "sha256": c["sha256"], "phashes": c["phashes"], "dur": c["dur"]}
+            ok, blocked = MEM.try_reserve(as_ep, run_id, [{"source": c["source"], "id": c["id"], "scene": u["scene"], "interval": [0, round(min(c["dur"], u["min_seconds"]), 2)], "title": c["title"],
+                                                           "page": c["page"], "license": SRC.LICENSES[c["source"]], "sha256": c["sha256"], "phashes": c["phashes"], "dur": c["dur"]}
                                                           for c, u in zip(chosen, plan)], reg=reg)
-            bad = {k.split(":", 1)[1]: "reserva recusada: " + "; ".join(v) for k, v in blocked.items()}
+            bad = {k: "reserva recusada: " + "; ".join(v) for k, v in blocked.items()}
             manifest["reservation_state"] = "reserved" if ok else "recusada"
         if not bad:
             break
         print("VNC_CURATE_RECUPERA", attempt, "removendo", bad)
         for sid in by_scene:
-            by_scene[sid] = [c for c in by_scene[sid] if c["id"] not in bad]
+            by_scene[sid] = [c for c in by_scene[sid] if f"{c['source']}:{c['id']}" not in bad]
     else:
         manifest["qa"]["bloqueio"] = "limite de tentativas de recuperacao"; return _finish(manifest, mf_path, None, dry, 4)
     clips = []
     for c, u in zip(chosen, plan):
-        ok, ev, hd = license_info[c["id"]]
-        clips.append({"scene": u["scene"], "source": "mixkit", "id": c["id"], "title": c["title"], "page": c["page"], "preview_url": c["preview"], "hd_url": hd,
-                      "license": "Mixkit Stock Video Free License", "license_ok": ok, "license_evidence": ev, "interval": [0, round(min(c["dur"], u["min_seconds"]), 2)], "clip_seconds": c["dur"],
+        ok, ev, hd = license_info[f"{c['source']}:{c['id']}"]
+        clips.append({"scene": u["scene"], "source": c["source"], "id": c["id"], "title": c["title"], "page": c["page"], "preview_url": c["preview"], "hd_url": hd,
+                      "license": SRC.LICENSES[c["source"]], "license_ok": ok, "license_evidence": ev, "interval": [0, round(min(c["dur"], u["min_seconds"]), 2)], "clip_seconds": c["dur"],
                       "sha256": c["sha256"], "phashes": c["phashes"], "segment": {"start": u["start"], "end": u["end"], "emotion": u["emotion"], "interpretation": u["interpretation"]},
                       "justification": f"clima {u['mood']} (brilho {c['m']['brightness']}), movimento {c['m']['motion']}, palavras-chave {c['kw_hit']}, interpretacao={u['interpretation']}",
-                      "scores": {"unary": round(c["score"], 3)}, "metrics": c["m"], "alternatives": [a["id"] for a in by_scene[u["scene"]] if a["id"] != c["id"]][:4]})
+                      "scores": {"unary": round(c["score"], 3)}, "metrics": c["m"], "alternatives": [f"{a['source']}:{a['id']}" for a in by_scene[u["scene"]] if a["id"] != c["id"] or a["source"] != c["source"]][:4]})
     manifest.update({"status": "OK", "clips": clips, "sequence_utility": util, "trace": trace})
-    manifest["qa"].update({"clips": len(clips), "distinct": len({c["id"] for c in clips}), "license_all_ok": all(c["license_ok"] for c in clips),
+    manifest["qa"].update({"clips": len(clips), "distinct": len({(c["source"], c["id"]) for c in clips}), "sources": sorted({c["source"] for c in clips}), "license_all_ok": all(c["license_ok"] for c in clips),
                            "duracao_total_estimada": plan[-1]["end"], "aprovacao_estetica_humana": "NAO_VERIFICADA"})
     errs = validate_manifest(manifest); manifest["qa"]["manifest_errors"] = errs
     if errs:
@@ -383,7 +420,7 @@ def _finish(manifest, mf_path, chosen, dry, code):
         sheet = Image.new("RGB", (cols * tw, 2 * th), (12, 12, 14)); d = ImageDraw.Draw(sheet)
         for i, c in enumerate(chosen):
             try:
-                f = Path("/tmp/curate") / f"{c['id']}.mp4"
+                f = Path("/tmp/curate") / f"{c['source']}_{c['id']}.mp4"
                 if not f.exists(): f.write_bytes(get(c["preview"]))
                 sheet.paste(thumb(f, c["dur"]), ((i % cols) * tw, (i // cols) * th)); d.text(((i % cols) * tw + 4, (i // cols) * th + 4), f"S{i + 1:02d} {c['id']}", fill=(255, 220, 90))
             except Exception:  # noqa

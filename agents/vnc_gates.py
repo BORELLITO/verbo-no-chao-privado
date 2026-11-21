@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "contracts" / "vnc_clip_registry_v1.json"
-ALLOWED_SOURCES = {"coverr", "mixkit", "pexels"}
+ALLOWED_SOURCES = {"coverr", "mixkit", "pexels", "pixabay", "wikimedia"}
 SCENES = [f"S{i:02d}" for i in range(1, 13)]
 # chamadas que nunca podem existir no motor (R3/R4 e publicacao sao do dono)
 FORBIDDEN_PATTERNS = {

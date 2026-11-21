@@ -32,7 +32,7 @@ jobs:
           print("as_ep=" + c.get("as_episode", "")); print("force=" + ("1" if c.get("force_reselect") else "0")); print("release_run=" + c.get("release_run", ""))
           PY
       - name: Testes (travas, memoria, selecao, curadoria)
-        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_style.py tests/test_vnc_curate.py tests/test_vnc_memory.py tests/test_vnc_select.py tests/test_vnc_plan.py
+        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_style.py tests/test_vnc_curate.py tests/test_vnc_memory.py tests/test_vnc_select.py tests/test_vnc_plan.py tests/test_vnc_sources.py
       - name: Preflight
         run: python -m agents.vnc_gates curate-preflight "${{ steps.cfg.outputs.episode }}"
       - name: Curadoria
@@ -43,6 +43,8 @@ jobs:
           VNC_CURATE_AS: ${{ steps.cfg.outputs.as_ep }}
           VNC_FORCE_RESELECT: ${{ steps.cfg.outputs.force }}
           VNC_RELEASE_RUN: ${{ steps.cfg.outputs.release_run }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           set +e
           python -m agents.vnc_curate "${{ steps.cfg.outputs.episode }}"
@@ -55,6 +57,15 @@ jobs:
           git add contracts episodes data
           if git diff --cached --quiet; then echo "nada a persistir"; exit 0; fi
           git commit -q -m "curadoria ${{ steps.cfg.outputs.episode }} (${{ steps.cfg.outputs.mode }}): memoria/manifesto run ${{ github.run_id }}"
+          git push -q origin HEAD:main
+      - name: Persistir so cache de medidas e impressoes legadas (dry-run)
+        if: steps.cfg.outputs.dry == '1'
+        run: |
+          rm -f contracts/*.lock
+          git config user.name "vnc-curate"; git config user.email "vnc-curate@users.noreply.github.com"
+          git add data contracts/vnc_media_ledger_v1.json
+          if git diff --cached --quiet; then echo "nada a persistir"; exit 0; fi
+          git commit -q -m "curadoria (dry-run): cache de medidas e impressoes digitais legadas run ${{ github.run_id }}"
           git push -q origin HEAD:main
       - uses: actions/upload-artifact@v4
         if: always()
