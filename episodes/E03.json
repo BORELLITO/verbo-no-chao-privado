@@ -279,7 +279,7 @@
     "meaning": "amanhecer nas montanhas",
     "meaning_en": "sunrise over mountains",
     "emotion": "memória",
-    "mood": "light",
+    "mood": "bright",
     "queries": [
      "sunrise mountains",
      "dawn sky",
@@ -306,7 +306,7 @@
     "meaning": "luz dourada entre árvores",
     "meaning_en": "golden light through trees",
     "emotion": "acolhimento",
-    "mood": "light",
+    "mood": "bright",
     "queries": [
      "golden light trees",
      "sunlight forest",
@@ -333,7 +333,7 @@
     "meaning": "sol nascendo no horizonte",
     "meaning_en": "sunrise on the horizon",
     "emotion": "esperança",
-    "mood": "light",
+    "mood": "bright",
     "queries": [
      "sunrise horizon",
      "sunrise sea",
