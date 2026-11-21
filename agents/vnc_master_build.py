@@ -235,7 +235,7 @@ def main(ep=None):
     b = io.BytesIO(); sheet.save(b, "JPEG", quality=80); sb = base64.b64encode(b.getvalue()).decode()
     print("VNC_MASTER_SHEET", len(sb))
     for n in range(0, len(sb), 1800): print("VNC_MASTER_SHEETB64", n // 1800, sb[n:n + 1800])
-    print("VNC_MASTER_REPORT", json.dumps(report, ensure_ascii=False))
+    print("VNC_MASTER_REPORT", json.dumps(report, ensure_ascii=False)); (WORK / "report.json").write_text(json.dumps(report, ensure_ascii=False), encoding="utf8")
     if srt.exists(): print("VNC_SRT", base64.b64encode(srt.read_bytes()).decode())
     vb = base64.b64encode(final.read_bytes()).decode(); print("VNC_MASTER_VIDEO", len(vb))
     for n in range(0, len(vb), 1800): print("VNC_MASTER_B64", n // 1800, vb[n:n + 1800])

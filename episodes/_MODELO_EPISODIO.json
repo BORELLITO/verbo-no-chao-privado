@@ -1,18 +1,54 @@
 {
-  "_instrucoes": "Copie para episodes/E02.json. Roteiro em 12 cenas (S01..S12) = texto exato da narracao, na ordem. 'block' agrupa cenas que pertencem ao mesmo bloco do roteiro (legenda nao cruza bloco). Preencha audio_sha256 (completo) depois da voz aprovada. NAO gerar voz nova sem pedido do dono (R4).",
-  "id": "E02",
-  "number": 2,
-  "title_lines": ["Linha 1", "Linha 2", "Linha 3"],
-  "reference": "Livro 0:0–0",
-  "timing": "whisper",
-  "audio_link_file": "run/audio_link_E02.txt",
-  "audio_sha256": "PREENCHER_SHA256_COMPLETO",
-  "music_page": "https://mixkit.co/free-stock-music/PREENCHER/",
-  "cta": ["Curta, compartilhe\\Ne inscreva-se no canal", "E você, já se sentiu assim?\\NConte nos comentários."],
-  "selection": "contracts/e02_scene_clip_selection.json",
-  "cover": {"top": ["SLUG-COVERR-TRISTEZA", 3.0], "bottom": ["SLUG-COVERR-LUZ", 10.0]},
-  "scenes": [
-    {"id": "S01", "block": "opening", "text": "..."},
-    {"id": "S02", "block": "opening", "text": "..."}
+ "_instrucoes": "Copie para episodes/E02.json. Roteiro em 12 cenas (S01..S12) = texto exato da narracao, na ordem. 'block' agrupa cenas que pertencem ao mesmo bloco do roteiro (legenda nao cruza bloco). Preencha audio_sha256 (completo) depois da voz aprovada. NAO gerar voz nova sem pedido do dono (R4).",
+ "id": "E02",
+ "number": 2,
+ "title_lines": [
+  "Linha 1",
+  "Linha 2",
+  "Linha 3"
+ ],
+ "reference": "Livro 0:0–0",
+ "timing": "whisper",
+ "audio_link_file": "run/audio_link_E02.txt",
+ "audio_sha256": "PREENCHER_SHA256_COMPLETO",
+ "music_page": "https://mixkit.co/free-stock-music/PREENCHER/",
+ "cta": [
+  "Curta, compartilhe\\Ne inscreva-se no canal",
+  "E você, já se sentiu assim?\\NConte nos comentários."
+ ],
+ "selection": "contracts/e02_scene_clip_selection.json",
+ "cover": {
+  "top": [
+   "SLUG-COVERR-TRISTEZA",
+   3.0
+  ],
+  "bottom": [
+   "SLUG-COVERR-LUZ",
+   10.0
   ]
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "block": "opening",
+   "text": "..."
+  },
+  {
+   "id": "S02",
+   "block": "opening",
+   "text": "..."
+  }
+ ],
+ "posting": {
+  "hook": "PREENCHER: gancho (igual a 1a frase da S01)",
+  "resumo": "PREENCHER: 1-2 frases, sem promessa milagrosa",
+  "pergunta": "PREENCHER: pergunta de engajamento",
+  "hashtags": [
+   "#fé",
+   "#palavradedeus",
+   "#oração",
+   "#reflexão"
+  ],
+  "titulo_curto": "PREENCHER: titulo YouTube sem a referencia"
+ }
 }

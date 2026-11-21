@@ -1,0 +1,39 @@
+name: VNC voz do episodio (privado)
+# Entrada: run/voice.json {"episode":"E03","mode":"check|generate"}. Unico workflow que chama o ElevenLabs.
+# check = valida chave, voz e creditos sem gastar. generate = gera UMA vez (se ja existir a voz, aborta) e grava no repo.
+on:
+  push:
+    branches: ["main"]
+    paths: ["run/voice.json"]
+permissions:
+  contents: write
+concurrency:
+  group: vnc-voice
+  cancel-in-progress: false
+jobs:
+  voice:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0"
+      - name: Roteiro precisa estar aprovado pelo agente
+        run: |
+          EP="$(python3 -c 'import json;print(json.load(open("run/voice.json"))["episode"])')"
+          python3 -m agents.vnc_script_review "$EP"
+      - name: Voz
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          EP="$(python3 -c 'import json;print(json.load(open("run/voice.json"))["episode"])')"
+          MODE="$(python3 -c 'import json;print(json.load(open("run/voice.json")).get("mode","check"))')"
+          python3 -m agents.vnc_voice "$EP" "$MODE"
+          if [ "$MODE" = "generate" ]; then
+            git config user.name "vnc-voice"; git config user.email "vnc-voice@users.noreply.github.com"
+            git add "assets/voice/${EP}.mp3" "episodes/${EP}.json"
+            git commit -q -m "voz ${EP} gerada (Johnes Bittar) e persistida"
+            for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+          fi
