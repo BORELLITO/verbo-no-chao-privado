@@ -172,9 +172,9 @@ LEAD=1.0; T=9.5
 # cronograma de cada final: camadas (a,subida,descida_ini,fim,pico) e tempos do logo
 VAR={
  'D':{'name':'CHUVA_DE_OURO','dim':0.55,'tail':(2.7,2.9,3.2,3.6),
-      'L':{'rain':(0.6,1.6,4.6,6.0,0.95),'sparks':(2.2,2.8,3.4,4.4,0.85),'glitter':(3.0,4.2,8.0,9.5,0.45)}},
+      'L':{'rain':(0.6,1.6,3.0,4.4,0.6),'sparks':(2.2,2.8,3.4,4.4,0.85),'glitter':(2.6,4.0,8.0,9.5,0.5)}},
  'E':{'name':'FEIXE_DE_LUZ','dim':0.6,'tail':(2.6,2.8,3.1,3.6),
-      'L':{'beam':(0.4,1.6,3.6,5.5,0.95),'flare':(2.2,2.7,3.2,4.2,0.8),'dust':(1.8,3.0,8.0,9.5,0.8)}},
+      'L':{'beam':(0.4,1.6,3.2,5.0,0.9),'flare':(2.2,2.7,3.2,4.2,0.8),'dust':(1.8,3.0,8.0,9.5,0.8)}},
 }
 for which,V in VAR.items():
     if which not in OVV: continue
