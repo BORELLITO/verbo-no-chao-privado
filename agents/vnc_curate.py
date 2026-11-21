@@ -278,6 +278,22 @@ def run(ep, mode=None):
     if mode == "probe_coverr":
         from agents import vnc_probe_sources as PR
         return PR.coverr_deep()
+    if mode == "music":   # resolve o id da trilha da pagina Mixkit do episodio e a registra (antirrepeticao de trilha); nao baixa nem gasta
+        cfg = json.loads((ROOT / "episodes" / f"{ep}.json").read_text(encoding="utf8"))
+        page = get(cfg["music_page"], binary=False)
+        m = re.search(r"assets\.mixkit\.co/music/(?:preview/)?mixkit-[a-z0-9-]*?-(\d+)\.mp3", page) or re.search(r"assets\.mixkit\.co/music/(\d+)/\d+\.mp3", page)
+        if not m:
+            print("VNC_MUSIC_ERRO id_nao_encontrado"); return 4
+        mid = m.group(1)
+        title = (re.search(r"<h1[^>]*>(.*?)</h1>", page, re.S) or re.search(r"<title>(.*?)</title>", page, re.S)).group(1).strip()[:80]
+        regp = ROOT / "contracts" / "vnc_clip_registry_v1.json"; reg = json.loads(regp.read_text(encoding="utf8"))
+        for u in reg.get("music_used", []):
+            if str(u.get("mixkit_id") or u.get("id")) == mid and u.get("episode") != ep:
+                print("VNC_MUSIC_ERRO ja_usada_em", u.get("episode")); return 3
+        if not any(str(u.get("mixkit_id") or u.get("id")) == mid for u in reg.get("music_used", [])):
+            reg.setdefault("music_used", []).append({"episode": ep, "title": title, "provider": "mixkit", "mixkit_id": mid, "page": cfg["music_page"], "license": "Mixkit Music Free License", "content_id_checked": False, "rule_pt": "não repetir a mesma trilha em outro episódio"})
+            regp.write_text(json.dumps(reg, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
+        print("VNC_MUSIC_OK", ep, mid, title); return 0
     if mode == "review":
         from agents import vnc_script_review as RV
         return RV.main(ep)
