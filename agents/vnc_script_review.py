@@ -9,6 +9,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WPS, PAUSE = 2.6, 1.0
+SEC_PER_WORD = 0.379      # calibrado no E02: 214 palavras = 81,16 s de voz (inclui pausas entre cenas)
+TAIL_S = 9.5              # final de cinema fixo (voz + 9,5 s)
+TOTAL_MIN, TOTAL_MAX = 62.0, 72.0   # regra do dono (2026-11-21): video final entre 65 e 70 s (tolerancia 62-72)
+HOOK_MAX_WORDS = 12       # gancho: primeira frase fala-se em <= ~4,5 s
 BLOCKS = ["opening", "connection", "biblical_reference", "reflection", "application", "conclusion"]
 BOOKS = {"genesis": 50, "exodo": 40, "levitico": 27, "numeros": 36, "deuteronomio": 34, "josue": 24, "juizes": 21, "rute": 4, "1 samuel": 31, "2 samuel": 24, "1 reis": 22, "2 reis": 25,
          "1 cronicas": 29, "2 cronicas": 36, "esdras": 10, "neemias": 13, "ester": 10, "jo": 42, "salmos": 150, "proverbios": 31, "eclesiastes": 12, "cantares": 8, "isaias": 66,
@@ -123,8 +127,20 @@ def review(ep, cfg=None, getter=None, others=None, offline=False):
         if d < 2.0: bad("RITMO", f"cena curta ({d:.1f}s)", s.get("id"))
         if len(t.split()) > 40: bad("RITMO", f"cena longa ({len(t.split())} palavras): quebre em duas frases/cenas", s.get("id"))
     checks["duracao_estimada_s"] = round(total, 1)
-    if sc and not (60 <= total <= 100): bad("DURACAO", f"duracao estimada {total:.0f}s fora de 60-100s")
-    if sc and total / len(sc) < 4.0: bad("DURACAO", "media <4s por cena (inviavel para 12 clipes)")
+    nwords = sum(len((s_.get("text") or "").split()) for s_ in sc)
+    total_final = nwords * SEC_PER_WORD + TAIL_S
+    checks["palavras"] = nwords; checks["duracao_final_estimada_s"] = round(total_final, 1)
+    if sc and not (TOTAL_MIN <= total_final <= TOTAL_MAX):
+        bad("DURACAO", f"video final estimado {total_final:.0f}s ({nwords} palavras); regra do dono: 65-70 s (aceita {TOTAL_MIN:.0f}-{TOTAL_MAX:.0f}) = ~{int((65 - TAIL_S) / SEC_PER_WORD)}-{int((70 - TAIL_S) / SEC_PER_WORD)} palavras")
+    if sc and total / len(sc) < 4.0 and total_final > TOTAL_MAX: bad("DURACAO", "media <4s por cena (inviavel para 12 clipes)")
+    # 2b gancho inicial (regra do dono): trava a pessoa nos primeiros segundos
+    if sc:
+        first = re.split(r"(?<=[.?!])\s+", (sc[0].get("text") or "").strip())[0]
+        fw = first.split(); checks["gancho"] = first
+        if len(fw) > HOOK_MAX_WORDS: bad("GANCHO", f"gancho longo ({len(fw)} palavras > {HOOK_MAX_WORDS}): deve caber em ~4 s", "S01")
+        if not re.search(r"\b(voc[eê]|seu|sua|te|teu|tua)\b", first.lower()): bad("GANCHO", "gancho sem segunda pessoa (voce): nao conecta com quem assiste", "S01")
+        if not (first.endswith("?") or re.match(r"^(e se|e quando|nem|ninguem|nunca|sempre|talvez)\b", norm(first))): bad("GANCHO", "gancho precisa ser pergunta ou afirmacao de choque (e se/nunca/ninguem...)", "S01")
+        if re.match(r"^(em|no|na|neste|nesta|hoje|bem-vind|ola|oi)\b", norm(first)): bad("GANCHO", "abertura fraca (contexto/saudacao): comece pela dor do espectador", "S01")
     # 3 tom: proibicoes e cautela
     for s in sc:
         n = norm(s.get("text", ""))
@@ -173,7 +189,8 @@ def review(ep, cfg=None, getter=None, others=None, offline=False):
         v = s.get("visual") or {}
         if not v.get("queries") or not v.get("mood"): bad("VISUAL", "cena sem plano visual (queries/mood)", s.get("id"))
         if s.get("block") != "conclusion" and "pessoa" in norm(v.get("meaning", "")): bad("VISUAL", "plano pede pessoa (nao ha banco confiavel)", s.get("id"))
-    avisos = [i for i in issues if i["code"] in WARN]; issues = [i for i in issues if i["code"] not in WARN]   # VISUAL ausente: o motor cai no lexico (aviso, nao bloqueio)
+    warn = WARN | ({"DURACAO", "GANCHO"} if cfg.get("number") == 1 else set())   # E01 (postado) e legado: so aviso
+    avisos = [i for i in issues if i["code"] in warn]; issues = [i for i in issues if i["code"] not in warn]   # VISUAL ausente: o motor cai no lexico (aviso, nao bloqueio)
     status = "REPROVADO" if issues else "APROVADO_AUTOMATICO"
     return {"episode": ep, "status": status, "issues": issues, "avisos": avisos, "checks": checks,
             "limitacoes": ["validacao AUTOMATICA de regras do canal + vinculo lexical com o texto biblico; NAO e revisao teologica independente",

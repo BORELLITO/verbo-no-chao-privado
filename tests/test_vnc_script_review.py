@@ -2,11 +2,11 @@ import copy, json, unittest
 from agents import vnc_script_review as R
 
 BLK = ["opening", "connection", "connection", "connection", "biblical_reference", "biblical_reference", "biblical_reference", "reflection", "reflection", "application", "application", "conclusion"]
-TXT = ["Você já fez a sua pergunta e continua esperando uma resposta?", "Esperar cansa, e cansa mais quando nada parece se mover no tempo.", "Há dias em que a gente olha o horizonte em silêncio, sem entender nada.",
-       "E a resposta nem sempre vem no ritmo da nossa pressa interior.", "No capítulo dois de Habacuque, o profeta decide ficar de vigia depois de clamar contra a injustiça.",
-       "Ele diz que vai esperar para ver o que Deus lhe dirá, sem fugir da pergunta.", "A visão deve ser escrita com clareza e tem um tempo determinado; se parecer demorar, deve ser aguardada.",
+TXT = ["Você já esperou tanto por uma resposta que quase parou de perguntar?", "Esperar cansa, e cansa mais quando nada parece se mover no tempo.", "Há dias em que a gente olha o horizonte em silêncio.",
+       "E a resposta nem sempre vem no ritmo da nossa pressa.", "No capítulo dois de Habacuque, o profeta decide ficar de vigia depois de clamar contra a injustiça.",
+       "Ele diz que vai esperar para ver o que Deus lhe dirá, sem fugir da pergunta.", "A visão deve ser escrita com clareza e tem tempo determinado; se demorar, deve ser aguardada.",
        "O texto não promete que tudo se resolve depressa; esperar também é confiança.", "A injustiça ao redor continua real, e a fé do profeta não depende de ela sumir hoje.",
-       "Talvez hoje você precise colocar em palavras o que carrega, para enxergar com clareza.", "E seguir fazendo o que é justo, no passo pequeno que está ao seu alcance.", "Esperar não é desistir; é permanecer de pé com a verdade e a esperança."]
+       "Talvez hoje você precise colocar em palavras o que carrega.", "E seguir fazendo o que é justo, no passo pequeno ao seu alcance.", "Esperar não é desistir; é permanecer de pé com a verdade e a esperança."]
 
 
 def cfg():
@@ -63,6 +63,18 @@ class Review(unittest.TestCase):
     def test_missing_visual_plan_and_placeholder(self):
         c = cfg(); c["scenes"][2]["visual"] = {}; c["scenes"][3]["text"] = "..."
         r = self.rv(c); self.assertIn("TEXTO", self.codes(r)); self.assertTrue(any(a["code"] == "VISUAL" for a in r["avisos"]))
+
+    def test_duration_rule_65_70s(self):
+        c = cfg(); c["scenes"][8]["text"] += " " + " ".join(["palavra"] * 60)
+        self.assertIn("DURACAO", self.codes(self.rv(c)))
+
+    def test_hook_rules(self):
+        for t in ("No capítulo dois de Habacuque, o profeta decide ficar de vigia depois de clamar por justiça?", "Esperar cansa muita gente e todo mundo sabe disso hoje em dia, não é mesmo, pessoal?", "O profeta esperou."):
+            c = cfg(); c["scenes"][0]["text"] = t; self.assertIn("GANCHO", self.codes(self.rv(c)), t)
+
+    def test_legacy_e01_only_warns(self):
+        c = cfg(); c["number"] = 1; c["scenes"][0]["text"] = "Em Habacuque, o profeta decide ficar de vigia?"
+        r = self.rv(c); self.assertNotIn("GANCHO", self.codes(r)); self.assertTrue(any(a["code"] == "GANCHO" for a in r["avisos"]))
 
     def test_tone_exclamation_and_no_hook(self):
         c = cfg(); c["scenes"][0]["text"] = "Pare de esperar!"
