@@ -19,7 +19,7 @@ PEOPLE = {"woman", "women", "man", "men", "girl", "boy", "people", "person", "ch
           "selfie", "portrait", "face", "dancing", "dance", "walking", "running", "friends", "student", "worker", "businessman", "businesswoman", "tourist"}
 URBAN = {"car", "cars", "traffic", "city", "building", "buildings", "street", "phone", "computer", "laptop", "office", "restaurant", "food", "drink", "beer", "party",
          "club", "shop", "mall", "airport", "train", "bus", "road", "highway", "skyscraper", "times", "square", "neon", "screen", "tv", "machine", "factory", "drone", "smartphone", "texting", "mobile", "cellphone", "tablet", "keyboard", "typing", "money", "cash"}
-GLOBAL_EXCLUDE = {"altar", "priest", "nun", "saint", "jesus", "mary", "idol", "buddha", "buddhist", "temple", "mosque", "pilgrim", "lady", "gentleman", "elderly", "grandmother", "grandfather", "mother", "father", "green", "chroma", "greenscreen", "cross", "rosary", "church", "bikini", "wine", "alcohol", "cocktail", "latte", "coffee", "cartoon", "animation", "logo", "pumpkin", "halloween", "birthday", "cake", "wedding", "romantic", "petals", "resort", "hotel", "statue", "contract", "document", "signing", "paper", "celebration", "christmas", "festive"}
+GLOBAL_EXCLUDE = {"incense", "ritual", "shrine", "houston", "downtown", "skyline", "urban", "cityscape", "suburb", "neighborhood", "altar", "priest", "nun", "saint", "jesus", "mary", "idol", "buddha", "buddhist", "temple", "mosque", "pilgrim", "lady", "gentleman", "elderly", "grandmother", "grandfather", "mother", "father", "green", "chroma", "greenscreen", "cross", "rosary", "church", "bikini", "wine", "alcohol", "cocktail", "latte", "coffee", "cartoon", "animation", "logo", "pumpkin", "halloween", "birthday", "cake", "wedding", "romantic", "petals", "resort", "hotel", "statue", "contract", "document", "signing", "paper", "celebration", "christmas", "festive"}
 HAND_OK = {"hand", "hands"}
 MOODS = {"dark": (35, 105), "mid": (70, 150), "bright": (115, 210)}  # faixa de brilho medio (0-255) aceita por clima
 
@@ -58,7 +58,9 @@ def parse_listing(html):
 def title_ok(title, allow=(), extra_exclude=()):
     """Titulo sem pessoas/cidade/maquinas (e sem maos, salvo cena que as permite via allow=['hands'])."""
     words = set(re.findall(r"[a-z]+", title.lower()))
-    hit = words & ((PEOPLE | URBAN | HAND_OK | set(extra_exclude)) - set(allow)) | (words & GLOBAL_EXCLUDE)
+    words |= {w[:-1] for w in words if len(w) > 4 and w.endswith("s")} | {w[:-2] for w in words if len(w) > 5 and w.endswith("es")}   # plural: skyscrapers -> skyscraper
+    ok_words = set(allow) | {a[:-1] for a in allow if a.endswith('s')}
+    hit = words & ((PEOPLE | URBAN | HAND_OK | set(extra_exclude)) - ok_words) | (words & GLOBAL_EXCLUDE)
     return (not hit), sorted(hit)
 
 
@@ -333,8 +335,10 @@ def run(ep, mode=None):
             cache["metrics"][mkey(e)] = a
             why = reject_reason(a["m"], mood, need, a["dur"], a["w"], a["h"])
             th = SEL.theme(e["title"])
-            if not why and th and unit_themes and th not in unit_themes and not (unit_themes & {"sky", "cloud"} and th in {"cloud", "sky"}):
-                why = f"sem correspondencia narrativa minima (tema '{th}' fora de {sorted(unit_themes)})"
+            if not why and unit_themes:   # trava eliminatoria: evidencia textual minima de que o clipe pertence a esta unidade
+                same = th in unit_themes or (th in {"cloud", "sky"} and unit_themes & {"sky", "cloud"})
+                if (th and not same) or (not th and not e["kw_hit"]):
+                    why = f"sem correspondencia narrativa minima (tema '{th}' fora de {sorted(unit_themes)})"
             if not why:
                 why = "; ".join(MEM.conflicts({"source": e["source"], "id": e["id"], "title": e["title"], "sha256": a["sha256"], "phashes": a["phashes"]}, as_ep, led, reg)) or None
                 if why: why = "antirrepeticao: " + why

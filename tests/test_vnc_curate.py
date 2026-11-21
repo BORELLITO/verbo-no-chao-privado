@@ -89,3 +89,11 @@ class Manifest(unittest.TestCase):
     def test_license_check(self):
         self.assertTrue(C.license_check('<a href="https://mixkit.co/license/#videoFree">Mixkit Stock Video Free License</a>')[0])
         self.assertFalse(C.license_check("<html>nada</html>")[0])
+
+
+class Vetos(unittest.TestCase):
+    def test_plural_and_religious_or_urban_vetos(self):
+        for t in ("houston skyscrapers", "burning incenses inside of a pot", "lady praying in front of a large altar", "aerial city skyline"):
+            self.assertFalse(C.title_ok(t, allow=["hands"])[0], t)
+        for t in ("heavy rain from an open window", "wheat field at sunrise", "mountains fog"):
+            self.assertTrue(C.title_ok(t)[0], t)
