@@ -18,7 +18,7 @@ FORBIDDEN_PATTERNS = {
     "R3_visual_ia": [r"api\.elevenlabs\.io/v\d+/(image|video)", r"creative_generate_(image|video)"],
     "publicacao": [r"googleapis\.com/upload/youtube", r"open\.tiktokapis\.com", r"graph\.facebook\.com", r"graph\.instagram\.com"],
 }
-WRITE_WORKFLOWS = {"vnc-ingest-voice.yml"}  # unico com escrita: grava a voz aprovada
+WRITE_WORKFLOWS = {"vnc-ingest-voice.yml", "vnc-curate.yml"}  # unico com escrita: grava a voz aprovada
 SKIP_SCAN = {"vnc_gates.py", "test_vnc_gates.py"}
 
 
@@ -163,6 +163,21 @@ def scan_forbidden(root=ROOT):
     return errs
 
 
+def check_curate_config(root=ROOT):
+    """run/curate.json: modo valido; dry-run nunca persiste; simulacao exige dry_run; episodio real nao pode ser 'as_episode' de outro."""
+    errs, p = [], root / "run" / "curate.json"
+    if not p.exists():
+        return ["falta run/curate.json"]
+    c = json.loads(p.read_text(encoding="utf8"))
+    if c.get("mode", "select") not in ("select", "confirm", "release"):
+        errs.append("curate.json: mode invalido")
+    if c.get("as_episode") and not c.get("dry_run"):
+        errs.append("curate.json: as_episode (simulacao) exige dry_run=true")
+    if c.get("mode") == "release" and not c.get("release_run"):
+        errs.append("curate.json: release exige release_run")
+    return errs
+
+
 def register(episode, sel, reg, music=None, music_title=None):
     ep = reg.setdefault("episodes", {}).setdefault(episode, {"used": [], "discarded_versions": {}})
     have = {_key(c["source"], c["id"]) for c in ep["used"]}
@@ -180,7 +195,7 @@ def main(argv):
         errs = check_workflows() + scan_forbidden()
     elif cmd == "curate-preflight":
         ep = argv[1]
-        errs = check_workflows() + scan_forbidden() + check_style_lock() + ([] if (ROOT / "episodes" / f"{ep}.json").exists() else [f"falta episodes/{ep}.json"])
+        errs = check_workflows() + scan_forbidden() + check_style_lock() + ([] if (ROOT / "episodes" / f"{ep}.json").exists() else [f"falta episodes/{ep}.json"]) + check_curate_config()
     elif cmd in ("preflight", "register"):
         ep, selp = argv[1], argv[2]
         music = argv[argv.index("--music") + 1] if "--music" in argv else None

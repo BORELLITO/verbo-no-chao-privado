@@ -72,3 +72,20 @@ def test_global_exclude_blocks_rosary_and_green_screen():
     assert not C.title_ok("hands holding rosary", allow=["hands"])[0]
     assert not C.title_ok("hand on green background", allow=["hands"])[0]
     assert C.title_ok("hands at sunset", allow=["hands"])[0]
+
+
+class Manifest(unittest.TestCase):
+    def _m(self):
+        cl = [{"scene": f"S{i:02d}", "source": "mixkit", "id": str(i), "page": "p", "license": "L", "license_ok": True, "license_evidence": "e", "interval": [0, 5], "sha256": "s", "phashes": [1],
+               "justification": "j", "scores": {}, "segment": {}} for i in range(1, 13)]
+        return {"episode": "E02", "run_id": "1", "engine_version": "v", "status": "OK", "segments": [], "clips": cl, "reservation_state": "reserved", "qa": {}}
+
+    def test_manifest_contract(self):
+        m = self._m(); self.assertEqual(C.validate_manifest(m), [])
+        m["clips"][3]["license_ok"] = False; self.assertTrue(C.validate_manifest(m))
+        m = self._m(); m["clips"].pop(); self.assertIn("menos de 12 clipes", C.validate_manifest(m))
+        m = self._m(); m["clips"][1]["id"] = "1"; self.assertIn("clipe repetido", C.validate_manifest(m))
+
+    def test_license_check(self):
+        self.assertTrue(C.license_check('<a href="https://mixkit.co/license/#videoFree">Mixkit Stock Video Free License</a>')[0])
+        self.assertFalse(C.license_check("<html>nada</html>")[0])

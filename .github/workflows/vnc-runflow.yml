@@ -36,10 +36,9 @@ jobs:
           print("episode=" + c["episode"]); print("selection=" + c.get("selection", "")); print("stages=" + ",".join(c["stages"])); print("timing_override=" + c.get("timing_override", ""))
           PY
       - name: Testes das travas
-        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py tests/test_vnc_curate.py
+        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py
       - name: Preflight (clipes, trilha, workflows, proibicoes)
         run: |
-          if [ "${{ steps.cfg.outputs.stages }}" = "curate" ]; then python -m agents.vnc_gates curate-preflight "${{ steps.cfg.outputs.episode }}"; exit $?; fi
           MUSIC="$(python -c 'import json;print(json.load(open("run/runflow.json")).get("music",""))')"
           python -m agents.vnc_gates preflight "${{ steps.cfg.outputs.episode }}" "${{ steps.cfg.outputs.selection }}" ${MUSIC:+--music "$MUSIC"}
   build:
@@ -90,18 +89,3 @@ jobs:
       - run: |
           if [ "${{ needs.gates.outputs.episode }}" != "E01" ]; then echo "VNC_SYNC_NA: episodios novos usam Whisper small x base (conferencia dentro do build); checagem independente do contrato so existe para o E01"; exit 0; fi
           python -m agents.e01_sync_check
-  curate:
-    needs: gates
-    if: contains(needs.gates.outputs.stages, 'curate')
-    runs-on: ubuntu-24.04
-    timeout-minutes: 40
-    steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        with:
-          persist-credentials: false
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy
-      - name: Curadoria (Mixkit, gratuita, sem chave)
-        run: python -m agents.vnc_curate "${{ needs.gates.outputs.episode }}"

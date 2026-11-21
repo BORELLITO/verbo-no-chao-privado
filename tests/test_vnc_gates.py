@@ -74,9 +74,8 @@ class Gates(unittest.TestCase):
 
     def test_runflow_config_is_consistent(self):
         c = json.loads((ROOT / "run/runflow.json").read_text())
-        if set(c["stages"]) != {"curate"}:  # curadoria roda antes de existir a selecao
-            self.assertTrue((ROOT / c["selection"]).exists())
-        self.assertTrue(set(c["stages"]) <= {"gates", "build", "sync", "cover", "curate"})
+        self.assertTrue((ROOT / c["selection"]).exists())
+        self.assertTrue(set(c["stages"]) <= {"gates", "build", "sync", "cover"})
         self.assertTrue((ROOT / "episodes" / f"{c['episode']}.json").exists())
 
 
