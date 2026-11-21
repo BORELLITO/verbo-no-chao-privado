@@ -60,7 +60,7 @@ jobs:
           git add contracts episodes data
           if git diff --cached --quiet; then echo "nada a persistir"; exit 0; fi
           git commit -q -m "curadoria ${{ steps.cfg.outputs.episode }} (${{ steps.cfg.outputs.mode }}): memoria/manifesto run ${{ github.run_id }}"
-          git push -q origin HEAD:main
+          for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; echo "push tentativa $i falhou (corrida com outro commit); repetindo"; sleep 5; done; git status -sb | head -1; git log origin/main --oneline -1 | cat
       - name: Persistir so cache de medidas e impressoes legadas (dry-run)
         if: steps.cfg.outputs.dry == '1'
         run: |
@@ -69,7 +69,7 @@ jobs:
           git add data contracts/vnc_media_ledger_v1.json
           if git diff --cached --quiet; then echo "nada a persistir"; exit 0; fi
           git commit -q -m "curadoria (dry-run): cache de medidas e impressoes digitais legadas run ${{ github.run_id }}"
-          git push -q origin HEAD:main
+          for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; echo "push tentativa $i falhou (corrida com outro commit); repetindo"; sleep 5; done; git status -sb | head -1; git log origin/main --oneline -1 | cat
       - uses: actions/upload-artifact@v4
         if: always()
         with:
