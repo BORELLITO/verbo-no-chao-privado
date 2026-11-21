@@ -74,6 +74,36 @@ def check_selection(sel, episode, reg):
     return errs
 
 
+def check_episode_config(ep, sel, root=ROOT):
+    """episodes/<ID>.json completo e coerente com a selecao."""
+    f = root / "episodes" / f"{ep}.json"
+    if not f.exists():
+        return [f"falta episodes/{ep}.json"]
+    c = json.loads(f.read_text(encoding="utf8")); errs = []
+    for k in ("id", "number", "title_lines", "reference", "timing", "audio_link_file", "music_page", "cta", "selection", "cover"):
+        if k not in c:
+            errs.append(f"config: falta '{k}'")
+    if errs:
+        return errs
+    if c["id"] != ep: errs.append("config: id difere do episodio")
+    if c["timing"] not in ("contract", "whisper"): errs.append("config: timing invalido")
+    if len(c["title_lines"]) != 3: errs.append("config: title_lines precisa de 3 linhas")
+    if len(c["cta"]) != 2: errs.append("config: cta precisa de 2 textos")
+    sha = c.get("audio_sha256", "")
+    if c["timing"] == "whisper":
+        if not re.fullmatch(r"[0-9a-f]{64}", sha): errs.append("config: audio_sha256 completo (64 hex) obrigatorio")
+        sc = c.get("scenes", [])
+        if [x.get("id") for x in sc] != SCENES: errs.append("config: scenes S01..S12 obrigatorias")
+        elif any(not str(x.get("text", "")).strip() or "..." == str(x.get("text")).strip() for x in sc): errs.append("config: cena sem texto")
+    elif not (c.get("audio_sha256_prefix") and c.get("audio_sha256_suffix")) and not sha:
+        errs.append("config: falta sha da voz")
+    ids = {c_["id"] for c_ in sel.get("clips", [])}
+    for pos in ("top", "bottom"):
+        if c["cover"].get(pos, [None])[0] not in ids:
+            errs.append(f"config: quadro da capa '{pos}' precisa ser clipe da selecao (registrado, sem repeticao)")
+    return errs
+
+
 def check_music(music_id, episode, reg):
     errs = []
     for m in reg.get("music_used", []):
@@ -141,7 +171,7 @@ def main(argv):
         if cmd == "register":
             REGISTRY.write_text(json.dumps(register(ep, sel, reg, music, title), ensure_ascii=False, indent=1) + "\n", encoding="utf8")
             print("VNC_GATES_REGISTERED", ep); return 0
-        errs = check_selection(sel, ep, reg) + (check_music(music, ep, reg) if music else []) + check_workflows() + scan_forbidden()
+        errs = check_selection(sel, ep, reg) + check_episode_config(ep, sel) + (check_music(music, ep, reg) if music else []) + check_workflows() + scan_forbidden()
     else:
         print(__doc__); return 2
     for e in errs:

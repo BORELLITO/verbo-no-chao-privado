@@ -63,6 +63,15 @@ class Gates(unittest.TestCase):
             e = " ".join(g.scan_forbidden(Path(d)))
             self.assertIn("R4_voz_nova", e); self.assertIn("publicacao", e)
 
+    def test_episode_config_e01_ok_and_template_rejected(self):
+        self.assertEqual(g.check_episode_config("E01", SEL), [])
+        import shutil, tempfile
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "episodes").mkdir(); shutil.copy(ROOT / "episodes/_MODELO_EPISODIO.json", Path(d) / "episodes/E02.json")
+            e = " ".join(g.check_episode_config("E02", SEL, Path(d)))
+            self.assertIn("audio_sha256 completo", e); self.assertIn("scenes S01..S12", e); self.assertIn("capa", e)
+        self.assertEqual(g.check_episode_config("E77", SEL), ["falta episodes/E77.json"])
+
     def test_runflow_config_is_consistent(self):
         c = json.loads((ROOT / "run/runflow.json").read_text())
         self.assertTrue((ROOT / c["selection"]).exists())
