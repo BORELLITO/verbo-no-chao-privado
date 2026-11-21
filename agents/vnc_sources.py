@@ -123,7 +123,7 @@ def _discover(source, kw, ctx):
             if cid is None and fetched < 14 and ctx["budget"]["coverr"] > 0:
                 ctx["budget"]["coverr"] -= 1; fetched += 1
                 try:
-                    cid = coverr_resolve(get(f"https://coverr.co/videos/{sl}", False, limit=900_000), sl) or ""
+                    cid = coverr_resolve(get(f"https://coverr.co/videos/{sl}", False, limit=6_000_000), sl) or ""
                 except Exception as e:  # noqa
                     cid = None; print("VNC_CURATE_WARN coverr", sl, repr(e)[:50])
                 if cid is not None:
@@ -163,7 +163,7 @@ def rights(entry, ctx):
             ok, ev = license_check(get(entry["page"], False)); hd = hd_url(entry["id"]) if ok else None
             return ok and bool(hd), ev + ("" if hd else "; HD inacessivel"), hd
         if s == "coverr":
-            html = get(entry["page"], False, limit=900_000)
+            html = get(entry["page"], False, limit=6_000_000)
             own = coverr_resolve(html, entry["page"].rsplit("/", 1)[-1]) == entry["id"]
             req = urllib.request.Request(entry["hd"], headers=dict(ctx.get("ua", {}), Range="bytes=0-1")); urllib.request.urlopen(req, timeout=30).close()
             return own, ("pagina do clipe confere com o id do CDN (catalogo legado 'coverr-<slug>-<n>', sem marcador de IA); licenca Coverr royalty-free comercial (site)" if own else "id do CDN nao confere com a pagina"), entry["hd"]

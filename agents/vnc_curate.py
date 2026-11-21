@@ -19,7 +19,7 @@ PEOPLE = {"woman", "women", "man", "men", "girl", "boy", "people", "person", "ch
           "selfie", "portrait", "face", "dancing", "dance", "walking", "running", "friends", "student", "worker", "businessman", "businesswoman", "tourist"}
 URBAN = {"car", "cars", "traffic", "city", "building", "buildings", "street", "phone", "computer", "laptop", "office", "restaurant", "food", "drink", "beer", "party",
          "club", "shop", "mall", "airport", "train", "bus", "road", "highway", "skyscraper", "times", "square", "neon", "screen", "tv", "machine", "factory", "drone", "smartphone", "texting", "mobile", "cellphone", "tablet", "keyboard", "typing", "money", "cash"}
-GLOBAL_EXCLUDE = {"green", "chroma", "greenscreen", "cross", "rosary", "church", "bikini", "wine", "alcohol", "cocktail", "latte", "coffee", "cartoon", "animation", "logo", "pumpkin", "halloween", "birthday", "cake", "wedding", "romantic", "petals", "resort", "hotel", "statue", "contract", "document", "signing", "paper", "celebration", "christmas", "festive"}
+GLOBAL_EXCLUDE = {"altar", "priest", "nun", "saint", "jesus", "mary", "idol", "buddha", "buddhist", "temple", "mosque", "pilgrim", "lady", "gentleman", "elderly", "grandmother", "grandfather", "mother", "father", "green", "chroma", "greenscreen", "cross", "rosary", "church", "bikini", "wine", "alcohol", "cocktail", "latte", "coffee", "cartoon", "animation", "logo", "pumpkin", "halloween", "birthday", "cake", "wedding", "romantic", "petals", "resort", "hotel", "statue", "contract", "document", "signing", "paper", "celebration", "christmas", "festive"}
 HAND_OK = {"hand", "hands"}
 MOODS = {"dark": (35, 105), "mid": (70, 150), "bright": (115, 210)}  # faixa de brilho medio (0-255) aceita por clima
 
