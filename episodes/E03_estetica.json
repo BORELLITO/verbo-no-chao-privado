@@ -1,0 +1,156 @@
+{
+ "episode": "E03",
+ "video_sha256": "8ee9e6c5c48e876172608cb5b87c650c077f03a9f4988f09e94e44b5d44119b6",
+ "revisor": "agente-estetico (Claude), revisao de quadros reais do mp4 entregue (12 cenas no ponto medio, final, capa 1080x1920)",
+ "data": "2026-11-21",
+ "cenas": [
+  {
+   "cena": "S01",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "tempestade sobre lago congelado: abre sombrio, legenda nitida"
+  },
+  {
+   "cena": "S02",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens escuras pesadas; combina com 'honestos'"
+  },
+  {
+   "cena": "S03",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "costa rochosa desolada; nao mostra ruinas literais (aceitavel: desolacao natural). Preferir ruina/pedra em curadorias futuras"
+  },
+  {
+   "cena": "S04",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "agua parada sobre grama, tom de luto contido"
+  },
+  {
+   "cena": "S05",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "clip de floresta com nevoa tem simetria/espelhamento visivel no alto (aspecto artificial leve); legenda legivel. Evitar clips 'mirror' nas proximas"
+  },
+  {
+   "cena": "S06",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens abrindo sobre montanha: 'manha' coerente"
+  },
+  {
+   "cena": "S07",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "(nao amostrado individualmente; sequencia calma vista nos quadros 36 s)"
+  },
+  {
+   "cena": "S08",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "cachoeira: vigor, sem negar a dor; transicao de luz ok"
+  },
+  {
+   "cena": "S09",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "campo de trigo ao nascer do sol: ponto alto de 'manha'"
+  },
+  {
+   "cena": "S10",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "pinheiros e neve ao nascer do sol; luz quente"
+  },
+  {
+   "cena": "S11",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "sol sobre floresta nevoenta; legenda sobre fundo claro, contraste ok"
+  },
+  {
+   "cena": "S12",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "vila alpina aerea: pessoas minimas no cais e construcoes modernas; coerente com 'recomecar', mas menos 'ruina'. Sem rosto identificavel"
+  }
+ ],
+ "final": {
+  "veredito": "APROVADO",
+  "nota": "Final C 'Sol que nasce': bokeh e flare reais, logo centralizado, CTA legivel, ultimo quadro preto; QA numerico ok (contrastes 10.89/6.56/6.02)"
+ },
+ "capa": {
+  "veredito": "APROVADO_COM_RESSALVA",
+  "nota": "titulo e logo fortes, hierarquia boa; referencia 'Lamentacoes 3:21-26' sobre arvores tem contraste um pouco menor (leitura ok no celular)"
+ },
+ "ritmo_e_transicoes": {
+  "veredito": "APROVADO",
+  "nota": "12 cenas de 3.9-5.5 s, cortes alinhados a voz; arco escuro->claro cumprido"
+ },
+ "audio_voz_e_trilha": {
+  "veredito": "APROVADO_COM_RESSALVA",
+  "nota": "verificado so por gates numericos (alinhamento whisper mediana 0.02 s, nivel/duracao da trilha); audicao completa do audio nao foi feita pelo agente"
+ }
+}
