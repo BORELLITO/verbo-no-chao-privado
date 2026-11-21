@@ -19,12 +19,12 @@
  "selection": "contracts/e02_scene_clip_selection.json",
  "cover": {
   "top": [
-   "PREENCHER_DA_SELECAO",
+   "30910",
    3.0
   ],
   "bottom": [
-   "PREENCHER_DA_SELECAO",
-   10.0
+   "27378",
+   5.0
   ]
  },
  "scenes": [
@@ -351,5 +351,5 @@
    }
   }
  ],
- "status": "ROTEIRO_RASCUNHO (aguarda aprovacao do dono; sem voz; sha256 pendente)"
+ "status": "ROTEIRO_RASCUNHO -> producao autorizada pelo dono (pedido do episodio completo, 2026-11-21)"
 }

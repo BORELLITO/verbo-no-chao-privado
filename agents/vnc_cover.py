@@ -14,11 +14,34 @@ TITLE, REF = CFG["title_lines"], CFG["reference"]
 KICKER = f"EPISÓDIO {CFG['number']:02d}"
 
 
+def _selection_clip(cid):
+    try:
+        sel = json.loads(Path(CFG["selection"]).read_text(encoding="utf8"))
+        return next((c for c in sel.get("clips", []) if str(c.get("id")) == str(cid)), None)
+    except Exception:  # noqa
+        return None
+
+
+def _urls(cid):
+    """URLs candidatas do clipe do quadro da capa, conforme a fonte registrada na selecao do episodio (Coverr so p/ legado do E01)."""
+    c = _selection_clip(cid)
+    src = (c or {}).get("source", "coverr")
+    if src == "mixkit":
+        import re
+        page = urllib.request.urlopen(urllib.request.Request(c["page"], headers=UA), timeout=60).read().decode("utf8", "ignore")
+        us = sorted(set(re.findall(r'https://assets\.mixkit\.co/[^"\'\s<>]+?\.mp4', page)), key=lambda u: -int(re.search(r"-(\d{3,4})\.mp4", u)[1]) if re.search(r"-(\d{3,4})\.mp4", u) else 0)
+        return us
+    if src == "pexels":
+        return [f"https://www.pexels.com/download/video/{cid}/"]
+    return [f"https://cdn.coverr.co/videos/{cid}/{q}.mp4" for q in ("1080p", "720p")]
+
+
 def frame(slug, t):
     data = None
-    for q in ("1080p", "720p"):
+    for u in _urls(slug):
         try:
-            data = urllib.request.urlopen(urllib.request.Request(f"https://cdn.coverr.co/videos/{slug}/{q}.mp4", headers=UA), timeout=180).read(); break
+            data = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=180).read()
+            if len(data) > 100_000: break
         except Exception: pass
     Path("/tmp/c.mp4").write_bytes(data)
     png = subprocess.run([FF, "-v", "error", "-ss", str(t), "-i", "/tmp/c.mp4", "-frames:v", "1", "-f", "image2pipe", "-vcodec", "png", "-"], capture_output=True).stdout
