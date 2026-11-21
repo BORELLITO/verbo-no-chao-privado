@@ -54,6 +54,7 @@ def fill(img, W, H, cx=0.5):
     return im.crop((x, y, x + W, y + H))
 
 
+METRICS = {}
 GOLD = (252, 196, 72, 255); WHITE = (244, 243, 240, 255)
 
 
@@ -90,6 +91,7 @@ def build(W, H, L):
     ga = (np.exp(-r2 * 1.6) * 0.34 * 255).astype("uint8")
     glow = Image.new("RGBA", (W, H), (206, 212, 238, 0)); glow.putalpha(Image.fromarray(ga)); img = Image.alpha_composite(img, glow)
     img.alpha_composite(logo_layer(lw), ((W - lw) // 2, L["logo_y"]))
+    base_rgba = img.copy()
     # texto
     ts = L["ts"]; ft = ImageFont.truetype(FONT, ts); fk = ImageFont.truetype(FONT, int(ts * 0.27)); fr = ImageFont.truetype(FONT, int(ts * 0.40))
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0)); mn = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ds, dm = ImageDraw.Draw(sh), ImageDraw.Draw(mn)
@@ -102,6 +104,10 @@ def build(W, H, L):
         ds.text((x, y + ts * 0.05), ln, font=ft, fill=(0, 0, 0, 205)); dm.text((x, y), ln, font=ft, fill=col); y += lh
     w = ds.textlength(REF, font=fr); ry = y + ts * 0.10
     ds.text(((W - w) / 2, ry + 2), REF, font=fr, fill=(0, 0, 0, 190)); dm.text(((W - w) / 2, ry), REF, font=fr, fill=(236, 232, 250, 240))
+    ys = L["ty"] - 6; ye = int(ry + fr.size * 1.25)
+    from agents.vnc_cover_gate import rel_lum
+    METRICS.update({"y_top": ky, "y_bottom": ye, "widths": [ds.textlength(l, font=ft) for l in TITLE] + [kw, w], "kicker": KICKER, "lines": len(TITLE),
+                    "band_lum": rel_lum(np.asarray(base_rgba.convert("RGB"), dtype=float)[ys:ye, int(W * 0.08):int(W * 0.92)]), "cover_ids": [str(TOP[0]), str(BOT[0])]})
     img = Image.alpha_composite(img, Image.alpha_composite(sh.filter(ImageFilter.GaussianBlur(ts * 0.07)), mn))
     out = img.convert("RGB")
     g = np.random.default_rng(7).normal(0, 2.0, (H, W, 1)); return Image.fromarray((np.asarray(out, dtype=float) + g).clip(0, 255).astype("uint8"))
@@ -115,7 +121,14 @@ LAYOUT = {
 FORMATS = CFG.get("cover_formats", ["vertical"])   # decisao do dono (2026-11-21): so capa vertical (Shorts/TikTok/Instagram); "wide" so se pedido
 for name, (W, H, L) in LAYOUT.items():
     if name not in FORMATS: continue
-    im = build(W, H, L); b = io.BytesIO(); im.save(b, "JPEG", quality=95, subsampling=0); sb = base64.b64encode(b.getvalue()).decode()
+    im = build(W, H, L)
+    if name == "vertical":   # PORTAO NUMERICO: capa reprovada nao e impressa (nao entregar)
+        from agents import vnc_cover_gate as CG
+        errs = CG.check(CFG, im, METRICS, strict=CFG["number"] >= 3)
+        for e in errs: print("VNC_COVER_GATE_FAIL", e)
+        print("VNC_COVER_GATE", "OK" if not errs else f"BLOQUEADA {len(errs)}", json.dumps({k: (round(v, 3) if isinstance(v, float) else v) for k, v in METRICS.items() if k != "widths"}, ensure_ascii=False))
+        if errs: sys.exit(9)
+    b = io.BytesIO(); im.save(b, "JPEG", quality=95, subsampling=0); sb = base64.b64encode(b.getvalue()).decode()
     print("VNC_COVER", name, len(sb))
     for n in range(0, len(sb), 1800): print("VNC_COVERB64", name, n // 1800, sb[n:n + 1800])
 print("VNC_COVER_END")

@@ -11,7 +11,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "contracts" / "vnc_clip_registry_v1.json"
 ALLOWED_SOURCES = {"coverr", "mixkit", "pexels", "pixabay", "wikimedia"}
+NEW_EPISODE_SOURCES = {"mixkit", "wikimedia"}   # E03 em diante (decisao do dono 21/11: sem Coverr/Pexels/Pixabay)
 SCENES = [f"S{i:02d}" for i in range(1, 13)]
+
+
+def _num(ep):
+    m = re.search(r"(\d+)", str(ep)); return int(m.group(1)) if m else 0
 # chamadas que nunca podem existir no motor (R3/R4 e publicacao sao do dono)
 FORBIDDEN_PATTERNS = {
     "R4_voz_nova": [r"api\.elevenlabs\.io/v\d+/text-to-speech", r"creative_generate_speech"],
@@ -60,7 +65,7 @@ def check_selection(sel, episode, reg):
         src, cid = c.get("source"), c.get("id")
         if not src or not cid:
             errs.append(f"{c.get('scene')}: sem source/id"); continue
-        if str(src).lower() not in ALLOWED_SOURCES:
+        if str(src).lower() not in ALLOWED_SOURCES or (_num(episode) >= 3 and str(src).lower() not in NEW_EPISODE_SOURCES):
             errs.append(f"{c['scene']}: fonte nao permitida {src}")
         low = str(cid).lower()
         if "premium" in low or "-ai-" in low or low.startswith("ai-"):
