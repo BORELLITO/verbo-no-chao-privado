@@ -1,0 +1,156 @@
+{
+ "episode": "E04",
+ "video_sha256": "2a001e9279e05e1dfa0adf725c49cb5dc1e8e247db9c0d45b06a9332c5414078",
+ "revisor": "agente-estetico (Claude), quadros reais do mp4 entregue (12 cenas, final D em 6 pontos, capa 1080x1920)",
+ "data": "2026-11-21",
+ "cenas": [
+  {
+   "cena": "S01",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "telhado de barro sob chuva: abre escuro e legenda legivel; metafora de 'peso' e fraca (aceitavel); folhas verdes no canto"
+  },
+  {
+   "cena": "S02",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens de tempestade; cansaco/solidao coerente"
+  },
+  {
+   "cena": "S03",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "mar vazio e praia escura; nao mostra aridez/exigencia (planejado terra seca); coerente com vazio, legenda ok"
+  },
+  {
+   "cena": "S04",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "fogueira em close, chama muito saturada e brilhante frente ao arco escuro; legenda ok mas fogo chama mais atencao que o texto; trocar por vento/campo em curadorias futuras"
+  },
+  {
+   "cena": "S05",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "floresta com nevoa matinal: convite, luz abrindo"
+  },
+  {
+   "cena": "S06",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "vale e floresta verdes, calmos: 'descanso'"
+  },
+  {
+   "cena": "S07",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "colinas verdes/voo sobre montanhas; texto fala de arado e nao ha campo arado (planejado); imagem neutra"
+  },
+  {
+   "cena": "S08",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "rio correndo (movimento forte): caminhada, nao 'sem peso'"
+  },
+  {
+   "cena": "S09",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "luz do sol entre montanhas, nuvens e sol: mansidao"
+  },
+  {
+   "cena": "S10",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "arvores contra o sol: alivio, pico do arco de luz"
+  },
+  {
+   "cena": "S11",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "trilha vazia entre campos, sem pessoas; coerente com 'eu nao dou conta' (caminho)"
+  },
+  {
+   "cena": "S12",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "lago na montanha ao por do sol, tom azul/roxo, menos luminoso que o planejado (bright); coerente com 'venha como esta'"
+  }
+ ],
+ "final": {
+  "veredito": "APROVADO_COM_RESSALVA",
+  "nota": "Final D 'Chuva de ouro': chuva e faiscas reais, logo centralizado, CTA legivel, ultimo quadro preto, contrastes 11.22/11.11/8.03; ressalva: no pico da chuva (~59 s) o quadro fica esbranquicado/lavado por ~1 s, como ja anotado na fase de ensaio"
+ },
+ "capa": {
+  "veredito": "APROVADO",
+  "nota": "nuvem escura no topo e luz entre arvores embaixo (tristeza -> luz); titulo e referencia legiveis"
+ },
+ "ritmo_e_transicoes": {
+  "veredito": "APROVADO",
+  "nota": "12 cenas, cortes alinhados a voz, arco escuro->claro cumprido; pequena defasagem (<1 s) entre troca de clipe e frase em S06/S07 pelo meio da pausa"
+ },
+ "audio_voz_e_trilha": {
+  "veredito": "APROVADO_COM_RESSALVA",
+  "nota": "so gates numericos (alinhamento whisper, duracao 56.69 s de voz, trilha); audicao completa nao feita pelo agente; Content ID da trilha nao verificado"
+ }
+}
