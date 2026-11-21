@@ -47,6 +47,12 @@ class Align(unittest.TestCase):
         with self.assertRaises(A.AlignError):
             A.cross_check(a, c)
 
+    def test_check_model_tolerates_unrecognized_words(self):
+        a, _ = A.align(self.canon, asr(), DUR)
+        b, s = A.align(self.canon, asr(drop=tuple(range(15, 25))), DUR, strict=False)
+        self.assertEqual(s["unmatched"], 10)
+        self.assertEqual(A.cross_check(a, b)["compared"], 172)
+
     def test_scenes_must_be_twelve_in_order(self):
         with self.assertRaises(A.AlignError):
             A.words_from_scenes(SCENES[:11])

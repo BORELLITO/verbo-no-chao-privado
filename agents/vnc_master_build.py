@@ -256,7 +256,7 @@ def build_whisper_timing(cfg, adur, caps, report):
     from agents.e01_v2_caption_pipeline import make_cues, export_ass, export_srt
     canon, first = vnc_align.words_from_scenes(cfg["scenes"])
     small = vnc_align.transcribe(WORK / "voice.mp3", "small"); base = vnc_align.transcribe(WORK / "voice.mp3", "base")
-    ws, sm = vnc_align.align(canon, small, adur); wb, _ = vnc_align.align(canon, base, adur)
+    ws, sm = vnc_align.align(canon, small, adur); wb, _ = vnc_align.align(canon, base, adur, strict=False)
     report["align"] = {**sm, "cross_check": vnc_align.cross_check(ws, wb)}
     scenes = vnc_align.scenes_from_words(ws, first, adur)
     cues = make_cues(ws, adur); bad = [c for c in cues if c.get("rule_violations")]

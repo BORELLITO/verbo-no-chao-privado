@@ -36,7 +36,7 @@ def words_from_scenes(scenes):
     return words, first
 
 
-def align(canon, asr, duration):
+def align(canon, asr, duration, strict=True):
     """canon: palavras do roteiro; asr: [{"text","key","start","end"}]. Retorna (palavras com tempo, resumo)."""
     asr = [dict(w, key=w.get("key") or norm(w["text"])) for w in asr if norm(w["text"])]
     got = align_once(canon, asr)
@@ -48,6 +48,8 @@ def align(canon, asr, duration):
             out.append({**c, "index": i, "start": None, "end": None, "alignment": "INTERPOLATED"})
         else:
             out.append({**c, "index": i, "start": round(max(0.0, g["start"]), 3), "end": round(min(duration, g["end"]), 3), "alignment": g["alignment"]})
+    if not strict:  # modelo de conferencia: palavras nao reconhecidas ficam sem tempo e saem da comparacao
+        return out, {"words": len(out), "unmatched": missing}
     if missing > max(2, int(MAX_UNMATCHED_RATIO * len(canon))):
         raise AlignError(f"muitas palavras sem correspondencia no ASR: {missing}/{len(canon)}")
     for i, w in enumerate(out):
@@ -69,9 +71,11 @@ def align(canon, asr, duration):
 
 def cross_check(a, b):
     """Diferenca de inicio por palavra entre dois alinhamentos do mesmo roteiro. Bloqueia se a mediana passar do limite."""
-    d = [abs(x["start"] - y["start"]) for x, y in zip(a, b)]
+    d = [abs(x["start"] - y["start"]) for x, y in zip(a, b) if x["start"] is not None and y["start"] is not None]
+    if len(d) < 0.8 * len(a):
+        raise AlignError(f"conferencia cobre so {len(d)}/{len(a)} palavras")
     med = statistics.median(d)
-    res = {"median_abs_start_diff": round(med, 3), "p90": round(sorted(d)[int(len(d) * .9)], 3), "n_gt_300ms": sum(x > 0.3 for x in d)}
+    res = {"median_abs_start_diff": round(med, 3), "p90": round(sorted(d)[int(len(d) * .9)], 3), "n_gt_300ms": sum(x > 0.3 for x in d), "compared": len(d), "total": len(a)}
     if med > MAX_MODEL_DISAGREE_MEDIAN:
         raise AlignError(f"modelos divergem: mediana {med:.3f}s > {MAX_MODEL_DISAGREE_MEDIAN}s")
     return res
