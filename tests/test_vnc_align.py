@@ -19,6 +19,15 @@ class Align(unittest.TestCase):
     def setUp(self):
         self.canon, self.first = A.words_from_scenes(SCENES)
 
+    def test_word_before_long_pause_is_anchored_not_blocked(self):
+        # palavra omitida pelo ASR antes de uma pausa longa (narracao com pausas dramaticas) deve ser ancorada na vizinha anterior
+        a = asr(); i = 10
+        a[i + 1] = dict(a[i + 1], start=a[i]["end"] + 2.5, end=a[i]["end"] + 2.9)
+        for k in range(i + 2, len(a)): a[k] = dict(a[k], start=a[k]["start"] + 2.5, end=a[k]["end"] + 2.5)
+        w, s = A.align(self.canon, [x for j, x in enumerate(a) if j != i], DUR + 3)
+        self.assertEqual(s["edge_interpolated"], 1); self.assertEqual(w[i]["alignment"], "INTERPOLATED_EDGE")
+        self.assertLessEqual(w[i]["end"], w[i + 1]["start"])
+
     def test_scene_split_matches_e01(self):
         self.assertEqual(len(self.canon), 182)
         self.assertEqual(self.first[:4], [0, 16, 20, 34])
