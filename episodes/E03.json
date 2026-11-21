@@ -1,5 +1,5 @@
 {
- "_instrucoes": "Roteiro E03 escrito pelo Claude em 2026-11-21 (RASCUNHO para aprovacao do dono; formato C: quem escreveu e em que contexto). Voz so apos curadoria + pre-voz + pedido do dono (R4). Trilha: escolher uma ainda nao usada (E02 usou 'silent-descent').",
+ "_instrucoes": "Roteiro E03 escrito pelo Claude em 2026-11-21 (RASCUNHO para aprovacao do dono; formato C: quem escreveu e em que contexto). Voz so apos curadoria + pre-voz + pedido do dono (R4). Trilha: Forest Mist Whispers (Mixkit, A. M., 2:31).",
  "id": "E03",
  "number": 3,
  "title_lines": [
@@ -11,7 +11,7 @@
  "timing": "whisper",
  "audio_link_file": "run/audio_link_E03.txt",
  "audio_sha256": "PREENCHER_SHA256_COMPLETO",
- "music_page": "https://mixkit.co/free-stock-music/PREENCHER/",
+ "music_page": "https://mixkit.co/free-stock-music/forest-mist-whispers/",
  "cta": [
   "Curta, compartilhe\\Ne inscreva-se no canal",
   "E você, já se sentiu assim?\\NConte nos comentários."
