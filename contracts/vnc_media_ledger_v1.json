@@ -418,6 +418,31 @@
    "title": "tree in the mist",
    "updated_at": "2026-11-21T12:33:56Z"
   },
+  "mixkit:1082": {
+   "dur": 19.9,
+   "episode": "E03",
+   "id": "1082",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/natural-seashore-landscape-1082/",
+   "phashes": [
+    10344557151529674631,
+    1089659917285402499,
+    2242722159380345641
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S03",
+   "sha256": "273c41d53a890ef57838dc866b78a4091058d37aab45b8e71ae7b7f3ff7a8d40",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "natural seashore landscape",
+   "updated_at": "2026-11-21T21:29:32Z"
+  },
   "mixkit:11291": {
    "dur": 15.0,
    "episode": "E02",
@@ -467,6 +492,31 @@
    "state": "confirmed",
    "title": "mist and rain over a forest",
    "updated_at": "2026-11-21T16:13:07Z"
+  },
+  "mixkit:17547": {
+   "dur": 11.4,
+   "episode": "E03",
+   "id": "17547",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/wheat-field-at-sunrise-17547/",
+   "phashes": [
+    10419350589346694663,
+    10437365056742302533,
+    9284443827329565702
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S09",
+   "sha256": "b8e9a1e4eb784c1b6fa654e187c81776a7bfbdf616a17434280813c421dd61da",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "wheat field at sunrise",
+   "updated_at": "2026-11-21T21:29:32Z"
   },
   "mixkit:18009": {
    "dur": 21.6,
@@ -518,6 +568,31 @@
    "title": "sea waves in a little bay",
    "updated_at": "2026-11-21T16:13:07Z"
   },
+  "mixkit:20230": {
+   "dur": 13.0,
+   "episode": "E03",
+   "id": "20230",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/dark-clouds-in-the-tropics-20230/",
+   "phashes": [
+    8319587897280758535,
+    13816910646048392449,
+    2251585654050194179
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S02",
+   "sha256": "87dd5304ef2b12174eaa22fdd2ea3ef62e7f2fac7702f64fe19a5a24d44b155b",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "dark clouds in the tropics",
+   "updated_at": "2026-11-21T21:29:32Z"
+  },
   "mixkit:21575": {
    "dur": 12.0,
    "episode": "E02",
@@ -542,6 +617,31 @@
    "state": "confirmed",
    "title": "clouds in the sky traveling slowly with the wind",
    "updated_at": "2026-11-21T16:13:07Z"
+  },
+  "mixkit:2362": {
+   "dur": 11.0,
+   "episode": "E03",
+   "id": "2362",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/mirror-foggy-forest-2362/",
+   "phashes": [
+    17361632616056942768,
+    15341759456076163284,
+    16782920132927219944
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S05",
+   "sha256": "944b7e7f22e8fb0c672971cc817bf5771b8fa1da5013da54c9bd393a1b17a03f",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "mirror foggy forest",
+   "updated_at": "2026-11-21T21:29:32Z"
   },
   "mixkit:27196": {
    "dur": 30.0,
@@ -618,6 +718,81 @@
    "title": "foggy sky during a starry night in the forest",
    "updated_at": "2026-11-21T16:13:07Z"
   },
+  "mixkit:30935": {
+   "dur": 26.0,
+   "episode": "E03",
+   "id": "30935",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/snowy-mountains-with-pine-trees-during-sunrise-30935/",
+   "phashes": [
+    16210971820002316384,
+    17363902112648991792,
+    16210980609126378532
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S10",
+   "sha256": "f6e49d5109dfd8fba6bf37c9ba4208763a74ffe9a4b300af235384bbfd635743",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "snowy mountains with pine trees during sunrise",
+   "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:32309": {
+   "dur": 21.3,
+   "episode": "E03",
+   "id": "32309",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-a-mountain-village-by-the-lake-32309/",
+   "phashes": [
+    14114740544519439235,
+    14114742734885602051,
+    9503056849482629891
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S12",
+   "sha256": "3a5e375a8a495e20c058c99ec292865e54c1526cf72f5db362408e1ec6f8d519",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "aerial view of a mountain village by the lake",
+   "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:35532": {
+   "dur": 28.1,
+   "episode": "E03",
+   "id": "35532",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sun-flare-on-the-top-of-a-foggy-winter-forest-35532/",
+   "phashes": [
+    18229723555160928384,
+    18229719157114417280,
+    18229718864888868992
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S11",
+   "sha256": "98ea368d65b690ff587f9508059c967768a297a751391edc140144cd6d6a716c",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sun flare on the top of a foggy winter forest",
+   "updated_at": "2026-11-21T21:29:32Z"
+  },
   "mixkit:41739": {
    "dur": 12.1,
    "episode": "E01",
@@ -661,6 +836,81 @@
    "state": "legacy",
    "title": "",
    "updated_at": "2026-11-21T12:33:59Z"
+  },
+  "mixkit:45263": {
+   "dur": 25.2,
+   "episode": "E03",
+   "id": "45263",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/rain-drops-in-a-puddle-in-slow-motion-45263/",
+   "phashes": [
+    2057806311269582790,
+    6669492329428535238,
+    2057841495507453894
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S04",
+   "sha256": "ba2a2e704b4e54e39df89224cd3bd0e5f817408eed5fb06d09b45644dc4ae045",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "rain drops in a puddle in slow motion",
+   "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:45633": {
+   "dur": 15.8,
+   "episode": "E03",
+   "id": "45633",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/waterfall-into-a-flowing-river-45633/",
+   "phashes": [
+    12003668826876407016,
+    12003668758156922088,
+    12003668826876398788
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S08",
+   "sha256": "7c591098ec35f29fca827d4ee94ccd27cc00d404534727700a9ad9a652fcac8e",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "waterfall into a flowing river",
+   "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:51433": {
+   "dur": 11.7,
+   "episode": "E03",
+   "id": "51433",
+   "interval": [
+    0,
+    10.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/beautiful-calm-lake-between-trees-during-the-day-51433/",
+   "phashes": [
+    17920069621955883760,
+    17343608869652460272,
+    17920069621955883248
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S07",
+   "sha256": "f7ed2f3ee1afde313472234e36b6410aebd4af4e293c02eda3d088529fe70c22",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "beautiful calm lake between trees during the day",
+   "updated_at": "2026-11-21T21:29:32Z"
   },
   "mixkit:51573": {
    "dur": 11.9,
@@ -737,6 +987,31 @@
    "title": "lake in the morrning with mist",
    "updated_at": "2026-11-21T16:13:07Z"
   },
+  "mixkit:8331": {
+   "dur": 11.1,
+   "episode": "E03",
+   "id": "8331",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sun-shining-through-clouds-8331/",
+   "phashes": [
+    6343540943590672100,
+    10125429934580844132,
+    10417548181701676260
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S06",
+   "sha256": "f30867d20f08073bb43abf7ed1d7d93c1557ee194701ac8917d3fd633108ee14",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sun shining through clouds",
+   "updated_at": "2026-11-21T21:29:32Z"
+  },
   "mixkit:9810": {
    "dur": 12.4,
    "episode": "E02",
@@ -761,6 +1036,31 @@
    "state": "confirmed",
    "title": "storm clouds approaching the valley",
    "updated_at": "2026-11-21T16:13:07Z"
+  },
+  "mixkit:9917": {
+   "dur": 13.4,
+   "episode": "E03",
+   "id": "9917",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-approaching-a-frozen-lake-9917/",
+   "phashes": [
+    18266582289445024240,
+    18225935543585203192,
+    17506494299222569456
+   ],
+   "reserved_at": "2026-11-21T21:29:32Z",
+   "run_id": "44951049567",
+   "scene": "S01",
+   "sha256": "5f290535a91852408bd562a219474941804e9a114cdbf483494a71a00d5315fb",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "storm clouds approaching a frozen lake",
+   "updated_at": "2026-11-21T21:29:32Z"
   }
  },
  "project": "verbo-no-chao",

@@ -1,0 +1,1244 @@
+{
+ "episode": "E03",
+ "run_id": "44951049567",
+ "engine_version": "vnc-curadoria-2.0",
+ "dry_run": false,
+ "status": "OK",
+ "segments": [
+  {
+   "scene": "S01",
+   "block": "opening",
+   "text": "Onde você acharia esperança no meio de uma cidade destruída?",
+   "start": 0.0,
+   "end": 4.85,
+   "duration": 4.85,
+   "duration_source": "estimativa_palavras",
+   "meaning": "a ruína e a pergunta",
+   "emotion": "solidão",
+   "mood": "dark",
+   "queries": [
+    "storm clouds",
+    "heavy rain",
+    "fog mountains",
+    "rain",
+    "raindrops",
+    "rainy-day",
+    "night",
+    "water-drops",
+    "rain-on-window",
+    "dark-clouds"
+   ],
+   "prefer": [
+    "storm",
+    "clouds",
+    "rain",
+    "fog",
+    "window",
+    "drops",
+    "night",
+    "dark"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S02",
+   "block": "connection",
+   "text": "Foi ali que alguém escreveu um dos textos mais honestos da Bíblia.",
+   "start": 4.85,
+   "end": 10.47,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "tempestade sobre o mar",
+   "emotion": "perda",
+   "mood": "dark",
+   "queries": [
+    "stormy sea",
+    "dark ocean waves",
+    "rough sea",
+    "storm",
+    "thunderstorm",
+    "clouds",
+    "dark-clouds",
+    "stormy-sky"
+   ],
+   "prefer": [
+    "sea",
+    "waves",
+    "storm",
+    "dark",
+    "clouds",
+    "rain"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S03",
+   "block": "connection",
+   "text": "Jerusalém havia caído, no século seis antes de Cristo, e restavam ruínas.",
+   "start": 10.47,
+   "end": 16.09,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "neblina sobre o vazio",
+   "emotion": "luto",
+   "mood": "dark",
+   "queries": [
+    "fog valley",
+    "mist field",
+    "foggy hills",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "fog",
+    "mist",
+    "valley",
+    "waves",
+    "stormy",
+    "crashing",
+    "sea"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S04",
+   "block": "connection",
+   "text": "Lamentações não esconde a dor. Fala de fome, de luto e de perguntas sem resposta.",
+   "start": 16.09,
+   "end": 22.86,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "chuva cinzenta",
+   "emotion": "tristeza",
+   "mood": "dark",
+   "queries": [
+    "rain drops",
+    "grey clouds rain",
+    "rain window",
+    "candle",
+    "candles",
+    "fire",
+    "fireplace",
+    "flame",
+    "campfire",
+    "bonfire",
+    "lantern"
+   ],
+   "prefer": [
+    "rain",
+    "clouds",
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S05",
+   "block": "biblical_reference",
+   "text": "No capítulo três, o autor chega ao fundo do sofrimento e decide lembrar.",
+   "start": 22.86,
+   "end": 28.86,
+   "duration": 6.0,
+   "duration_source": "estimativa_palavras",
+   "meaning": "floresta densa na neblina",
+   "emotion": "reflexão",
+   "mood": "mid",
+   "queries": [
+    "forest fog",
+    "dark forest mist",
+    "foggy forest",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "morning-fog"
+   ],
+   "prefer": [
+    "forest",
+    "fog",
+    "mist",
+    "tree"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S06",
+   "block": "biblical_reference",
+   "text": "A bondade de Deus não se acaba e as misericórdias se renovam a cada manhã.",
+   "start": 28.86,
+   "end": 35.63,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "nuvens se abrindo",
+   "emotion": "abertura",
+   "mood": "mid",
+   "queries": [
+    "clouds breaking",
+    "sun through clouds",
+    "sun rays clouds",
+    "forest",
+    "trees",
+    "fog",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "clouds",
+    "sun",
+    "rays",
+    "forest",
+    "mist",
+    "fog",
+    "waves",
+    "stormy",
+    "sea"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S07",
+   "block": "biblical_reference",
+   "text": "Mais adiante, diz que é bom esperar em silêncio.",
+   "start": 35.63,
+   "end": 40.09,
+   "duration": 4.46,
+   "duration_source": "estimativa_palavras",
+   "meaning": "água parada ao amanhecer",
+   "emotion": "silêncio",
+   "mood": "mid",
+   "queries": [
+    "calm lake",
+    "still water",
+    "lake mist",
+    "mountains",
+    "mountain",
+    "hills",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "clouds"
+   ],
+   "prefer": [
+    "lake",
+    "water",
+    "mist",
+    "mountain",
+    "cliff",
+    "peak",
+    "fog",
+    "clouds"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 10.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S08",
+   "block": "reflection",
+   "text": "O texto não apaga a dor. A esperança nasce de lembrar, não de não haver ruínas.",
+   "start": 40.09,
+   "end": 47.24,
+   "duration": 7.15,
+   "duration_source": "estimativa_palavras",
+   "meaning": "rio que segue",
+   "emotion": "continuidade",
+   "mood": "mid",
+   "queries": [
+    "river flowing",
+    "stream forest",
+    "river mist",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "prefer": [
+    "river",
+    "stream",
+    "water",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S09",
+   "block": "reflection",
+   "text": "Nem sempre a manhã chega quando pedimos, e o texto não promete pressa.",
+   "start": 47.24,
+   "end": 53.24,
+   "duration": 6.0,
+   "duration_source": "estimativa_palavras",
+   "meaning": "neblina e primeira luz",
+   "emotion": "espera",
+   "mood": "mid",
+   "queries": [
+    "morning fog",
+    "mist sunrise",
+    "fog sun",
+    "sunrise",
+    "sunset",
+    "sun",
+    "dawn",
+    "sunlight",
+    "sunbeams"
+   ],
+   "prefer": [
+    "fog",
+    "mist",
+    "sun",
+    "sunrise",
+    "sunlight",
+    "dawn"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S10",
+   "block": "application",
+   "text": "Talvez hoje você precise lembrar de uma manhã em que a ajuda chegou, mesmo pequena.",
+   "start": 53.24,
+   "end": 60.01,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "amanhecer nas montanhas",
+   "emotion": "memória",
+   "mood": "bright",
+   "queries": [
+    "sunrise mountains",
+    "dawn sky",
+    "mountain sunrise",
+    "hands",
+    "hand",
+    "praying",
+    "holding"
+   ],
+   "prefer": [
+    "sunrise",
+    "mountains",
+    "dawn",
+    "hands",
+    "holding",
+    "hand",
+    "glass",
+    "water"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S11",
+   "block": "application",
+   "text": "Dizer isso em voz baixa também é esperar, sem negar o que ainda dói.",
+   "start": 60.01,
+   "end": 66.39,
+   "duration": 6.38,
+   "duration_source": "estimativa_palavras",
+   "meaning": "luz dourada entre árvores",
+   "emotion": "acolhimento",
+   "mood": "bright",
+   "queries": [
+    "golden light trees",
+    "sunlight forest",
+    "sun rays trees",
+    "trail",
+    "path",
+    "hills",
+    "road",
+    "meadow",
+    "field",
+    "nature",
+    "countryside",
+    "fog",
+    "mist",
+    "foggy-forest"
+   ],
+   "prefer": [
+    "sun",
+    "trees",
+    "light",
+    "trail",
+    "path",
+    "hills",
+    "fog",
+    "mist",
+    "clouds"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S12",
+   "block": "conclusion",
+   "text": "Esperança, aqui, não é ignorar as ruínas. É lembrar que ainda existe chão para recomeçar.",
+   "start": 66.39,
+   "end": 73.16,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "sol nascendo no horizonte",
+   "emotion": "esperança",
+   "mood": "bright",
+   "queries": [
+    "sunrise horizon",
+    "sunrise sea",
+    "sunrise clouds",
+    "lake",
+    "valley",
+    "river",
+    "mountain-lake",
+    "lagoon",
+    "reflection"
+   ],
+   "prefer": [
+    "sunrise",
+    "horizon",
+    "sea",
+    "lake",
+    "mountain",
+    "valley"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 14.0,
+   "interpretation": "claude"
+  }
+ ],
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "9917",
+   "title": "storm clouds approaching a frozen lake",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-approaching-a-frozen-lake-9917/",
+   "preview_url": "https://assets.mixkit.co/videos/9917/9917-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/9917/9917-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 13.4,
+   "sha256": "5f290535a91852408bd562a219474941804e9a114cdbf483494a71a00d5315fb",
+   "phashes": [
+    18266582289445024240,
+    18225935543585203192,
+    17506494299222569456
+   ],
+   "segment": {
+    "start": 0.0,
+    "end": 4.85,
+    "emotion": "solidão",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 85.4), movimento 2.52, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.243,
+    "clip_sem": 0.0186
+   },
+   "vision": {
+    "sem": 0.0186,
+    "neg": {
+     "people": 0.34,
+     "city": 0.0645,
+     "indoor": 0.5295,
+     "text": 0.0022,
+     "cgi": 0.0452
+    }
+   },
+   "metrics": {
+    "brightness": 85.4,
+    "saturation": 73.0,
+    "motion": 2.52,
+    "cut_ratio": 1.12,
+    "sharp": 7.75
+   },
+   "alternatives": [
+    "mixkit:9606",
+    "mixkit:9624",
+    "mixkit:20228",
+    "mixkit:9590"
+   ]
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "20230",
+   "title": "dark clouds in the tropics",
+   "page": "https://mixkit.co/free-stock-video/dark-clouds-in-the-tropics-20230/",
+   "preview_url": "https://assets.mixkit.co/videos/20230/20230-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/20230/20230-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 13.0,
+   "sha256": "87dd5304ef2b12174eaa22fdd2ea3ef62e7f2fac7702f64fe19a5a24d44b155b",
+   "phashes": [
+    8319587897280758535,
+    13816910646048392449,
+    2251585654050194179
+   ],
+   "segment": {
+    "start": 4.85,
+    "end": 10.47,
+    "emotion": "perda",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 84.0), movimento 7.64, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.099,
+    "clip_sem": 0.0013
+   },
+   "vision": {
+    "sem": 0.0013,
+    "neg": {
+     "people": 0.1221,
+     "city": 0.0168,
+     "indoor": 0.7684,
+     "text": 0.0003,
+     "cgi": 0.0911
+    }
+   },
+   "metrics": {
+    "brightness": 84.0,
+    "cut_ratio": 1.14,
+    "motion": 7.64,
+    "saturation": 58.2,
+    "sharp": 5.28
+   },
+   "alternatives": [
+    "mixkit:3520",
+    "mixkit:9606",
+    "mixkit:9624",
+    "mixkit:9590"
+   ]
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "1082",
+   "title": "natural seashore landscape",
+   "page": "https://mixkit.co/free-stock-video/natural-seashore-landscape-1082/",
+   "preview_url": "https://assets.mixkit.co/videos/1082/1082-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/1082/1082-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 19.9,
+   "sha256": "273c41d53a890ef57838dc866b78a4091058d37aab45b8e71ae7b7f3ff7a8d40",
+   "phashes": [
+    10344557151529674631,
+    1089659917285402499,
+    2242722159380345641
+   ],
+   "segment": {
+    "start": 10.47,
+    "end": 16.09,
+    "emotion": "luto",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 77.2), movimento 4.94, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.562,
+    "clip_sem": 0.2654
+   },
+   "vision": {
+    "sem": 0.2654,
+    "neg": {
+     "people": 0.1982,
+     "city": 0.0294,
+     "indoor": 0.4195,
+     "text": 0.0007,
+     "cgi": 0.0869
+    }
+   },
+   "metrics": {
+    "brightness": 77.2,
+    "saturation": 46.9,
+    "motion": 4.94,
+    "cut_ratio": 1.24,
+    "sharp": 12.15
+   },
+   "alternatives": [
+    "mixkit:1934",
+    "mixkit:1925",
+    "mixkit:9294",
+    "mixkit:7194"
+   ]
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "45263",
+   "title": "rain drops in a puddle in slow motion",
+   "page": "https://mixkit.co/free-stock-video/rain-drops-in-a-puddle-in-slow-motion-45263/",
+   "preview_url": "https://assets.mixkit.co/videos/45263/45263-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/45263/45263-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 25.2,
+   "sha256": "ba2a2e704b4e54e39df89224cd3bd0e5f817408eed5fb06d09b45644dc4ae045",
+   "phashes": [
+    2057806311269582790,
+    6669492329428535238,
+    2057841495507453894
+   ],
+   "segment": {
+    "start": 16.09,
+    "end": 22.86,
+    "emotion": "tristeza",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 79.8), movimento 3.55, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.441,
+    "clip_sem": 0.0028
+   },
+   "vision": {
+    "sem": 0.0028,
+    "neg": {
+     "people": 0.1265,
+     "city": 0.087,
+     "indoor": 0.5591,
+     "text": 0.0005,
+     "cgi": 0.224
+    }
+   },
+   "metrics": {
+    "brightness": 79.8,
+    "cut_ratio": 1.27,
+    "motion": 3.55,
+    "saturation": 102.6,
+    "sharp": 24.89
+   },
+   "alternatives": [
+    "mixkit:6887",
+    "mixkit:1243"
+   ]
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "2362",
+   "title": "mirror foggy forest",
+   "page": "https://mixkit.co/free-stock-video/mirror-foggy-forest-2362/",
+   "preview_url": "https://assets.mixkit.co/videos/2362/2362-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/2362/2362-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 11.0,
+   "sha256": "944b7e7f22e8fb0c672971cc817bf5771b8fa1da5013da54c9bd393a1b17a03f",
+   "phashes": [
+    17361632616056942768,
+    15341759456076163284,
+    16782920132927219944
+   ],
+   "segment": {
+    "start": 22.86,
+    "end": 28.86,
+    "emotion": "reflexão",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 95.2), movimento 5.08, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.375,
+    "clip_sem": 0.0025
+   },
+   "vision": {
+    "sem": 0.0025,
+    "neg": {
+     "people": 0.3159,
+     "city": 0.0054,
+     "indoor": 0.2408,
+     "text": 0.0364,
+     "cgi": 0.399
+    }
+   },
+   "metrics": {
+    "brightness": 95.2,
+    "cut_ratio": 1.14,
+    "motion": 5.08,
+    "saturation": 86.6,
+    "sharp": 7.52
+   },
+   "alternatives": [
+    "mixkit:35532",
+    "mixkit:22729",
+    "mixkit:34795",
+    "mixkit:34893"
+   ]
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "8331",
+   "title": "sun shining through clouds",
+   "page": "https://mixkit.co/free-stock-video/sun-shining-through-clouds-8331/",
+   "preview_url": "https://assets.mixkit.co/videos/8331/8331-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/8331/8331-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 11.1,
+   "sha256": "f30867d20f08073bb43abf7ed1d7d93c1557ee194701ac8917d3fd633108ee14",
+   "phashes": [
+    6343540943590672100,
+    10125429934580844132,
+    10417548181701676260
+   ],
+   "segment": {
+    "start": 28.86,
+    "end": 35.63,
+    "emotion": "abertura",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 87.9), movimento 4.63, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.532,
+    "clip_sem": 0.002
+   },
+   "vision": {
+    "sem": 0.002,
+    "neg": {
+     "people": 0.1175,
+     "city": 0.0159,
+     "indoor": 0.7193,
+     "text": 0.0,
+     "cgi": 0.1453
+    }
+   },
+   "metrics": {
+    "brightness": 87.9,
+    "saturation": 103.8,
+    "motion": 4.63,
+    "cut_ratio": 1.28,
+    "sharp": 12.12
+   },
+   "alternatives": [
+    "mixkit:18721",
+    "mixkit:50867",
+    "mixkit:6741",
+    "mixkit:28339"
+   ]
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "51433",
+   "title": "beautiful calm lake between trees during the day",
+   "page": "https://mixkit.co/free-stock-video/beautiful-calm-lake-between-trees-during-the-day-51433/",
+   "preview_url": "https://assets.mixkit.co/videos/51433/51433-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/51433/51433-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    10.0
+   ],
+   "clip_seconds": 11.7,
+   "sha256": "f7ed2f3ee1afde313472234e36b6410aebd4af4e293c02eda3d088529fe70c22",
+   "phashes": [
+    17920069621955883760,
+    17343608869652460272,
+    17920069621955883248
+   ],
+   "segment": {
+    "start": 35.63,
+    "end": 40.09,
+    "emotion": "silêncio",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 94.9), movimento 2.48, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.407,
+    "clip_sem": 0.2209
+   },
+   "vision": {
+    "sem": 0.2209,
+    "neg": {
+     "people": 0.2626,
+     "city": 0.1774,
+     "indoor": 0.2278,
+     "text": 0.0089,
+     "cgi": 0.1025
+    }
+   },
+   "metrics": {
+    "brightness": 94.9,
+    "saturation": 87.4,
+    "motion": 2.48,
+    "cut_ratio": 1.66,
+    "sharp": 15.73
+   },
+   "alternatives": [
+    "mixkit:4994",
+    "mixkit:35513",
+    "mixkit:19449",
+    "mixkit:7207"
+   ]
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "45633",
+   "title": "waterfall into a flowing river",
+   "page": "https://mixkit.co/free-stock-video/waterfall-into-a-flowing-river-45633/",
+   "preview_url": "https://assets.mixkit.co/videos/45633/45633-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/45633/45633-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 15.8,
+   "sha256": "7c591098ec35f29fca827d4ee94ccd27cc00d404534727700a9ad9a652fcac8e",
+   "phashes": [
+    12003668826876407016,
+    12003668758156922088,
+    12003668826876398788
+   ],
+   "segment": {
+    "start": 40.09,
+    "end": 47.24,
+    "emotion": "continuidade",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 118.2), movimento 3.57, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.784,
+    "clip_sem": 0.1898
+   },
+   "vision": {
+    "sem": 0.1898,
+    "neg": {
+     "people": 0.1028,
+     "city": 0.1492,
+     "indoor": 0.4182,
+     "text": 0.0008,
+     "cgi": 0.1394
+    }
+   },
+   "metrics": {
+    "brightness": 118.2,
+    "saturation": 103.7,
+    "motion": 3.57,
+    "cut_ratio": 1.22,
+    "sharp": 34.4
+   },
+   "alternatives": [
+    "mixkit:15323",
+    "mixkit:3315",
+    "mixkit:51598",
+    "mixkit:32420"
+   ]
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "17547",
+   "title": "wheat field at sunrise",
+   "page": "https://mixkit.co/free-stock-video/wheat-field-at-sunrise-17547/",
+   "preview_url": "https://assets.mixkit.co/videos/17547/17547-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/17547/17547-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 11.4,
+   "sha256": "b8e9a1e4eb784c1b6fa654e187c81776a7bfbdf616a17434280813c421dd61da",
+   "phashes": [
+    10419350589346694663,
+    10437365056742302533,
+    9284443827329565702
+   ],
+   "segment": {
+    "start": 47.24,
+    "end": 53.24,
+    "emotion": "espera",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 124.4), movimento 5.94, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.442,
+    "clip_sem": 0.0036
+   },
+   "vision": {
+    "sem": 0.0036,
+    "neg": {
+     "people": 0.6208,
+     "city": 0.0103,
+     "indoor": 0.2351,
+     "text": 0.0024,
+     "cgi": 0.1278
+    }
+   },
+   "metrics": {
+    "brightness": 124.4,
+    "cut_ratio": 1.02,
+    "motion": 5.94,
+    "saturation": 131.5,
+    "sharp": 12.01
+   },
+   "alternatives": [
+    "mixkit:1709",
+    "mixkit:26936",
+    "mixkit:3871",
+    "mixkit:28339"
+   ]
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "30935",
+   "title": "snowy mountains with pine trees during sunrise",
+   "page": "https://mixkit.co/free-stock-video/snowy-mountains-with-pine-trees-during-sunrise-30935/",
+   "preview_url": "https://assets.mixkit.co/videos/30935/30935-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/30935/30935-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 26.0,
+   "sha256": "f6e49d5109dfd8fba6bf37c9ba4208763a74ffe9a4b300af235384bbfd635743",
+   "phashes": [
+    16210971820002316384,
+    17363902112648991792,
+    16210980609126378532
+   ],
+   "segment": {
+    "start": 53.24,
+    "end": 60.01,
+    "emotion": "memória",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 126.2), movimento 7.81, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.228,
+    "clip_sem": 0.0155
+   },
+   "vision": {
+    "sem": 0.0155,
+    "neg": {
+     "people": 0.0191,
+     "city": 0.0244,
+     "indoor": 0.664,
+     "text": 0.0,
+     "cgi": 0.277
+    }
+   },
+   "metrics": {
+    "brightness": 126.2,
+    "saturation": 92.6,
+    "motion": 7.81,
+    "cut_ratio": 1.43,
+    "sharp": 14.02
+   },
+   "alternatives": [
+    "mixkit:34899",
+    "mixkit:14427",
+    "mixkit:35513",
+    "mixkit:28335"
+   ]
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "35532",
+   "title": "sun flare on the top of a foggy winter forest",
+   "page": "https://mixkit.co/free-stock-video/sun-flare-on-the-top-of-a-foggy-winter-forest-35532/",
+   "preview_url": "https://assets.mixkit.co/videos/35532/35532-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/35532/35532-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 28.1,
+   "sha256": "98ea368d65b690ff587f9508059c967768a297a751391edc140144cd6d6a716c",
+   "phashes": [
+    18229723555160928384,
+    18229719157114417280,
+    18229718864888868992
+   ],
+   "segment": {
+    "start": 60.01,
+    "end": 66.39,
+    "emotion": "acolhimento",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 135.9), movimento 5.72, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.4,
+    "clip_sem": 0.0023
+   },
+   "vision": {
+    "sem": 0.0023,
+    "neg": {
+     "people": 0.2197,
+     "city": 0.0093,
+     "indoor": 0.5023,
+     "text": 0.002,
+     "cgi": 0.2643
+    }
+   },
+   "metrics": {
+    "brightness": 135.9,
+    "cut_ratio": 1.57,
+    "motion": 5.72,
+    "saturation": 63.2,
+    "sharp": 14.3
+   },
+   "alternatives": [
+    "mixkit:2625",
+    "mixkit:45268",
+    "mixkit:35070",
+    "mixkit:28336"
+   ]
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "32309",
+   "title": "aerial view of a mountain village by the lake",
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-a-mountain-village-by-the-lake-32309/",
+   "preview_url": "https://assets.mixkit.co/videos/32309/32309-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/32309/32309-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    14.0
+   ],
+   "clip_seconds": 21.3,
+   "sha256": "3a5e375a8a495e20c058c99ec292865e54c1526cf72f5db362408e1ec6f8d519",
+   "phashes": [
+    14114740544519439235,
+    14114742734885602051,
+    9503056849482629891
+   ],
+   "segment": {
+    "start": 66.39,
+    "end": 73.16,
+    "emotion": "esperança",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 123.6), movimento 6.77, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.462,
+    "clip_sem": 0.4191
+   },
+   "vision": {
+    "sem": 0.4191,
+    "neg": {
+     "people": 0.0659,
+     "city": 0.0071,
+     "indoor": 0.4391,
+     "text": 0.001,
+     "cgi": 0.0677
+    }
+   },
+   "metrics": {
+    "brightness": 123.6,
+    "cut_ratio": 1.31,
+    "motion": 6.77,
+    "saturation": 71.2,
+    "sharp": 25.43
+   },
+   "alternatives": [
+    "mixkit:9968",
+    "mixkit:9969",
+    "mixkit:17805",
+    "mixkit:34891"
+   ]
+  }
+ ],
+ "reservation_state": "reserved",
+ "qa": {
+  "diagnostico": [],
+  "limitacoes_pt": [
+   "sem analise visual multimodal: so metricas objetivas (movimento, brilho, saturacao, nitidez, cortes) + titulo/tags; compreensao do roteiro = plano `visual` escrito pelo Claude",
+   "fonte automatica unica: Mixkit (Coverr bloqueia busca por robots; Pexels exige chave)",
+   "ids legados Coverr/Pexels do E01 sem impressao digital: protegidos so por ID e titulo"
+  ],
+  "roteiro_review": {
+   "status": "APROVADO_AUTOMATICO",
+   "issues": [],
+   "checks": {
+    "cenas": 12,
+    "duracao_estimada_s": 73.2,
+    "palavras": 159,
+    "duracao_final_estimada_s": 69.8,
+    "gancho": "Onde você acharia esperança no meio de uma cidade destruída?",
+    "cautela_presente": true,
+    "referencia": "Lamentações 3:21–26",
+    "texto_biblico_verificado": true,
+    "sobreposicao_lexical_biblia": 0.35,
+    "similaridade_E01": 0.1,
+    "similaridade_E02": 0.13
+   }
+  },
+  "vision": "clip-vit-base-patch32 (local, CPU)",
+  "fontes_ativas": [
+   "mixkit",
+   "wikimedia"
+  ],
+  "fontes_com_chave_ausente": [
+   "pexels",
+   "pixabay"
+  ],
+  "clips": 12,
+  "distinct": 12,
+  "sources": [
+   "mixkit"
+  ],
+  "license_all_ok": true,
+  "duracao_total_estimada": 73.16,
+  "aprovacao_estetica_humana": "NAO_VERIFICADA",
+  "manifest_errors": []
+ },
+ "sequence_utility": 39.95,
+ "trace": {
+  "beam": 400,
+  "weights": {
+   "semantic": 1.0,
+   "technical": 0.6,
+   "motion": 0.5,
+   "mood_fit": 0.8,
+   "duration_fit": 0.5,
+   "continuity": 0.7,
+   "variety": 0.9,
+   "clip": 1.2,
+   "originality": 0.3
+  }
+ }
+}

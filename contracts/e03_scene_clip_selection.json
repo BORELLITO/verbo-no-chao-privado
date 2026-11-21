@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E03",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "44951049567",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "9917",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-approaching-a-frozen-lake-9917/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 13.4,
+   "note_pt": "clima dark (brilho 85.4), movimento 2.52, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "20230",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/dark-clouds-in-the-tropics-20230/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 13.0,
+   "note_pt": "clima dark (brilho 84.0), movimento 7.64, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "1082",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/natural-seashore-landscape-1082/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 19.9,
+   "note_pt": "clima dark (brilho 77.2), movimento 4.94, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "45263",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/rain-drops-in-a-puddle-in-slow-motion-45263/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 25.2,
+   "note_pt": "clima dark (brilho 79.8), movimento 3.55, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "2362",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/mirror-foggy-forest-2362/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 11.0,
+   "note_pt": "clima mid (brilho 95.2), movimento 5.08, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "8331",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sun-shining-through-clouds-8331/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 11.1,
+   "note_pt": "clima mid (brilho 87.9), movimento 4.63, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "51433",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/beautiful-calm-lake-between-trees-during-the-day-51433/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 11.7,
+   "note_pt": "clima mid (brilho 94.9), movimento 2.48, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "45633",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/waterfall-into-a-flowing-river-45633/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 15.8,
+   "note_pt": "clima mid (brilho 118.2), movimento 3.57, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "17547",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/wheat-field-at-sunrise-17547/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 11.4,
+   "note_pt": "clima mid (brilho 124.4), movimento 5.94, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "30935",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/snowy-mountains-with-pine-trees-during-sunrise-30935/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 26.0,
+   "note_pt": "clima bright (brilho 126.2), movimento 7.81, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "35532",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sun-flare-on-the-top-of-a-foggy-winter-forest-35532/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 28.1,
+   "note_pt": "clima bright (brilho 135.9), movimento 5.72, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "32309",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-a-mountain-village-by-the-lake-32309/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 21.3,
+   "note_pt": "clima bright (brilho 123.6), movimento 6.77, palavras-chave 2, interpretacao=claude"
+  }
+ ]
+}
