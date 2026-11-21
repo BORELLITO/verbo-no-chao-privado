@@ -278,6 +278,9 @@ def run(ep, mode=None):
     if mode == "probe_coverr":
         from agents import vnc_probe_sources as PR
         return PR.coverr_deep()
+    if mode == "review":
+        from agents import vnc_script_review as RV
+        return RV.main(ep)
     if mode == "probe_coverr_api":
         from agents import vnc_probe_sources as PR
         return PR.coverr_api()
@@ -295,12 +298,20 @@ def run(ep, mode=None):
         if m.get("status") == "OK" and {(c["source"], str(c["id"])) for c in m["clips"]} <= {(e["source"], e["id"]) for e in own}:
             print("VNC_CURATE_IDEMPOTENT reutilizando selecao reservada", as_ep); return 0
     scene_seconds = None
+    from agents import vnc_script_review as RV   # trava automatica: roteiro reprovado nao chega aos clipes
+    rrep = RV.review(ep, cfg)
+    print("VNC_ROTEIRO_STATUS", rrep["status"], "issues", len(rrep["issues"]), [f"{x['cena']}:{x['code']}" for x in rrep["issues"]][:8])
+    (ROOT / "episodes" / f"{ep}_roteiro_review.json").write_text(json.dumps(rrep, ensure_ascii=False, indent=1), encoding="utf8")
     plan, diag = PLAN.build_plan(cfg, tpl, scene_seconds)
     manifest = {"episode": as_ep, "run_id": run_id, "engine_version": ENGINE_VERSION, "dry_run": dry, "status": "BLOQUEADO", "segments": plan, "clips": [],
                 "reservation_state": "none", "qa": {"diagnostico": diag, "limitacoes_pt": [
                     "sem analise visual multimodal: so metricas objetivas (movimento, brilho, saturacao, nitidez, cortes) + titulo/tags; compreensao do roteiro = plano `visual` escrito pelo Claude",
                     "fonte automatica unica: Mixkit (Coverr bloqueia busca por robots; Pexels exige chave)",
                     "ids legados Coverr/Pexels do E01 sem impressao digital: protegidos so por ID e titulo"]}}
+    manifest["qa"]["roteiro_review"] = {"status": rrep["status"], "issues": rrep["issues"], "checks": rrep["checks"]}
+    if rrep["status"] == "REPROVADO":
+        manifest["qa"]["bloqueio"] = "roteiro reprovado pelo agente de validacao: " + "; ".join(f"{x['cena']}:{x['code']}" for x in rrep["issues"][:6])
+        return _finish(manifest, mf_path, None, dry, 3)
     if diag:
         return _finish(manifest, mf_path, None, dry, 3)
     work = Path("/tmp/curate"); work.mkdir(exist_ok=True)
