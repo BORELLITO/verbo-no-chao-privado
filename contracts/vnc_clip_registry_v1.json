@@ -277,6 +277,16 @@
    "license": "Mixkit Music Free License",
    "content_id_checked": false,
    "rule_pt": "não repetir a mesma trilha em outro episódio"
+  },
+  {
+   "episode": "E02",
+   "title": "Free Silent Descent Stock Music",
+   "provider": "mixkit",
+   "mixkit_id": "614",
+   "page": "https://mixkit.co/free-stock-music/silent-descent/",
+   "license": "Mixkit Music Free License",
+   "content_id_checked": false,
+   "rule_pt": "não repetir a mesma trilha em outro episódio"
   }
  ]
 }
