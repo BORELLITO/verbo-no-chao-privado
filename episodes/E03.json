@@ -1,0 +1,369 @@
+{
+ "_instrucoes": "Roteiro E03 escrito pelo Claude em 2026-11-21 (RASCUNHO para aprovacao do dono; formato C: quem escreveu e em que contexto). Voz so apos curadoria + pre-voz + pedido do dono (R4). Trilha: escolher uma ainda nao usada (E02 usou 'silent-descent').",
+ "id": "E03",
+ "number": 3,
+ "title_lines": [
+  "Esperança",
+  "entre",
+  "ruínas"
+ ],
+ "reference": "Lamentações 3:21–26",
+ "timing": "whisper",
+ "audio_link_file": "run/audio_link_E03.txt",
+ "audio_sha256": "PREENCHER_SHA256_COMPLETO",
+ "music_page": "https://mixkit.co/free-stock-music/PREENCHER/",
+ "cta": [
+  "Curta, compartilhe\\Ne inscreva-se no canal",
+  "E você, já se sentiu assim?\\NConte nos comentários."
+ ],
+ "selection": "contracts/e03_scene_clip_selection.json",
+ "cover": {
+  "top": [
+   "PREENCHER_ID_TRISTEZA",
+   3.0
+  ],
+  "bottom": [
+   "PREENCHER_ID_LUZ",
+   5.0
+  ]
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "block": "opening",
+   "text": "Onde você acharia esperança no meio de uma cidade destruída?",
+   "visual": {
+    "meaning": "a ruína e a pergunta",
+    "meaning_en": "a dark storm over land",
+    "emotion": "solidão",
+    "mood": "dark",
+    "queries": [
+     "storm clouds",
+     "heavy rain",
+     "fog mountains"
+    ],
+    "prefer": [
+     "storm",
+     "clouds",
+     "rain",
+     "fog"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S02",
+   "block": "connection",
+   "text": "Foi ali que alguém escreveu um dos textos mais honestos da Bíblia.",
+   "visual": {
+    "meaning": "tempestade sobre o mar",
+    "meaning_en": "a stormy sea",
+    "emotion": "perda",
+    "mood": "dark",
+    "queries": [
+     "stormy sea",
+     "dark ocean waves",
+     "rough sea"
+    ],
+    "prefer": [
+     "sea",
+     "waves",
+     "storm"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S03",
+   "block": "connection",
+   "text": "Jerusalém havia caído, no século seis antes de Cristo, e restavam ruínas.",
+   "visual": {
+    "meaning": "neblina sobre o vazio",
+    "meaning_en": "fog over an empty valley",
+    "emotion": "luto",
+    "mood": "dark",
+    "queries": [
+     "fog valley",
+     "mist field",
+     "foggy hills"
+    ],
+    "prefer": [
+     "fog",
+     "mist",
+     "valley"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S04",
+   "block": "connection",
+   "text": "Lamentações não esconde a dor. Fala de fome, de luto e de perguntas sem resposta.",
+   "visual": {
+    "meaning": "chuva cinzenta",
+    "meaning_en": "grey rain falling",
+    "emotion": "tristeza",
+    "mood": "dark",
+    "queries": [
+     "rain drops",
+     "grey clouds rain",
+     "rain window"
+    ],
+    "prefer": [
+     "rain",
+     "clouds"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S05",
+   "block": "biblical_reference",
+   "text": "No capítulo três, o autor chega ao fundo do sofrimento e decide lembrar.",
+   "visual": {
+    "meaning": "floresta densa na neblina",
+    "meaning_en": "a dark forest in fog",
+    "emotion": "reflexão",
+    "mood": "mid",
+    "queries": [
+     "forest fog",
+     "dark forest mist",
+     "foggy forest"
+    ],
+    "prefer": [
+     "forest",
+     "fog",
+     "mist"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S06",
+   "block": "biblical_reference",
+   "text": "A bondade de Deus não se acaba e as misericórdias se renovam a cada manhã.",
+   "visual": {
+    "meaning": "nuvens se abrindo",
+    "meaning_en": "clouds opening to light",
+    "emotion": "abertura",
+    "mood": "mid",
+    "queries": [
+     "clouds breaking",
+     "sun through clouds",
+     "sun rays clouds"
+    ],
+    "prefer": [
+     "clouds",
+     "sun",
+     "rays"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S07",
+   "block": "biblical_reference",
+   "text": "Mais adiante, diz que é bom esperar em silêncio.",
+   "visual": {
+    "meaning": "água parada ao amanhecer",
+    "meaning_en": "still lake water",
+    "emotion": "silêncio",
+    "mood": "mid",
+    "queries": [
+     "calm lake",
+     "still water",
+     "lake mist"
+    ],
+    "prefer": [
+     "lake",
+     "water",
+     "mist"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S08",
+   "block": "reflection",
+   "text": "O texto não apaga a dor. A esperança nasce de lembrar, não de não haver ruínas.",
+   "visual": {
+    "meaning": "rio que segue",
+    "meaning_en": "a river flowing",
+    "emotion": "continuidade",
+    "mood": "mid",
+    "queries": [
+     "river flowing",
+     "stream forest",
+     "river mist"
+    ],
+    "prefer": [
+     "river",
+     "stream",
+     "water"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S09",
+   "block": "reflection",
+   "text": "Nem sempre a manhã chega quando pedimos, e o texto não promete pressa.",
+   "visual": {
+    "meaning": "neblina e primeira luz",
+    "meaning_en": "mist with first light",
+    "emotion": "espera",
+    "mood": "mid",
+    "queries": [
+     "morning fog",
+     "mist sunrise",
+     "fog sun"
+    ],
+    "prefer": [
+     "fog",
+     "mist",
+     "sun"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S10",
+   "block": "application",
+   "text": "Talvez hoje você precise lembrar de uma manhã em que a ajuda chegou, mesmo pequena.",
+   "visual": {
+    "meaning": "amanhecer nas montanhas",
+    "meaning_en": "sunrise over mountains",
+    "emotion": "memória",
+    "mood": "light",
+    "queries": [
+     "sunrise mountains",
+     "dawn sky",
+     "mountain sunrise"
+    ],
+    "prefer": [
+     "sunrise",
+     "mountains",
+     "dawn"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S11",
+   "block": "application",
+   "text": "Dizer isso em voz baixa também é esperar, sem negar o que ainda dói.",
+   "visual": {
+    "meaning": "luz dourada entre árvores",
+    "meaning_en": "golden light through trees",
+    "emotion": "acolhimento",
+    "mood": "light",
+    "queries": [
+     "golden light trees",
+     "sunlight forest",
+     "sun rays trees"
+    ],
+    "prefer": [
+     "sun",
+     "trees",
+     "light"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S12",
+   "block": "conclusion",
+   "text": "Esperança, aqui, não é ignorar as ruínas. É lembrar que ainda existe chão para recomeçar.",
+   "visual": {
+    "meaning": "sol nascendo no horizonte",
+    "meaning_en": "sunrise on the horizon",
+    "emotion": "esperança",
+    "mood": "light",
+    "queries": [
+     "sunrise horizon",
+     "sunrise sea",
+     "sunrise clouds"
+    ],
+    "prefer": [
+     "sunrise",
+     "horizon",
+     "sea"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  }
+ ],
+ "posting": {
+  "hook": "Onde você acharia esperança no meio de uma cidade destruída?",
+  "resumo": "Lamentações 3 nasceu entre as ruínas de Jerusalém. Um texto antigo que ensina a esperar lembrando, sem negar a dor.",
+  "pergunta": "Qual lembrança te ajuda a esperar quando o dia está difícil?",
+  "hashtags": [
+   "#fé",
+   "#palavradedeus",
+   "#lamentações",
+   "#esperança",
+   "#reflexão"
+  ],
+  "titulo_curto": "Esperança entre ruínas"
+ }
+}
