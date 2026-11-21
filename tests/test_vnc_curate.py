@@ -97,3 +97,14 @@ class Vetos(unittest.TestCase):
             self.assertFalse(C.title_ok(t, allow=["hands"])[0], t)
         for t in ("heavy rain from an open window", "wheat field at sunrise", "mountains fog"):
             self.assertTrue(C.title_ok(t)[0], t)
+
+
+class Narrativa(unittest.TestCase):
+    def test_gate_needs_theme_not_loose_keyword(self):
+        from agents import vnc_select as S
+        ut = S.themes_of(["candle", "fire", "flame"])
+        self.assertTrue(C.narrative_ok(S.title_themes("candles in the dark"), ut))
+        self.assertFalse(C.narrative_ok(S.title_themes("houston buildings"), ut))
+        self.assertFalse(C.narrative_ok(S.title_themes("handwriting a note"), S.themes_of(["hands", "holding"])))
+        self.assertTrue(C.narrative_ok(S.title_themes("hands holding a candle"), S.themes_of(["hands"])))
+        self.assertFalse(C.title_ok("scrabble by fire")[0])

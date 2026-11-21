@@ -19,7 +19,7 @@ PEOPLE = {"woman", "women", "man", "men", "girl", "boy", "people", "person", "ch
           "selfie", "portrait", "face", "dancing", "dance", "walking", "running", "friends", "student", "worker", "businessman", "businesswoman", "tourist"}
 URBAN = {"car", "cars", "traffic", "city", "building", "buildings", "street", "phone", "computer", "laptop", "office", "restaurant", "food", "drink", "beer", "party",
          "club", "shop", "mall", "airport", "train", "bus", "road", "highway", "skyscraper", "times", "square", "neon", "screen", "tv", "machine", "factory", "drone", "smartphone", "texting", "mobile", "cellphone", "tablet", "keyboard", "typing", "money", "cash"}
-GLOBAL_EXCLUDE = {"incense", "ritual", "shrine", "houston", "downtown", "skyline", "urban", "cityscape", "suburb", "neighborhood", "altar", "priest", "nun", "saint", "jesus", "mary", "idol", "buddha", "buddhist", "temple", "mosque", "pilgrim", "lady", "gentleman", "elderly", "grandmother", "grandfather", "mother", "father", "green", "chroma", "greenscreen", "cross", "rosary", "church", "bikini", "wine", "alcohol", "cocktail", "latte", "coffee", "cartoon", "animation", "logo", "pumpkin", "halloween", "birthday", "cake", "wedding", "romantic", "petals", "resort", "hotel", "statue", "contract", "document", "signing", "paper", "celebration", "christmas", "festive"}
+GLOBAL_EXCLUDE = {"scrabble", "reading", "book", "writing", "handwriting", "note", "notebook", "desk", "kitchen", "bedroom", "board", "game", "incense", "ritual", "shrine", "houston", "downtown", "skyline", "urban", "cityscape", "suburb", "neighborhood", "altar", "priest", "nun", "saint", "jesus", "mary", "idol", "buddha", "buddhist", "temple", "mosque", "pilgrim", "lady", "gentleman", "elderly", "grandmother", "grandfather", "mother", "father", "green", "chroma", "greenscreen", "cross", "rosary", "church", "bikini", "wine", "alcohol", "cocktail", "latte", "coffee", "cartoon", "animation", "logo", "pumpkin", "halloween", "birthday", "cake", "wedding", "romantic", "petals", "resort", "hotel", "statue", "contract", "document", "signing", "paper", "celebration", "christmas", "festive"}
 HAND_OK = {"hand", "hands"}
 MOODS = {"dark": (35, 105), "mid": (70, 150), "bright": (115, 210)}  # faixa de brilho medio (0-255) aceita por clima
 
@@ -53,6 +53,15 @@ def parse_listing(html):
         out.append({"id": vid, "slug": slug, "title": slug.replace("-", " "), "page": f"https://mixkit.co/free-stock-video/{slug}-{vid}/",
                     "preview": f"https://assets.mixkit.co/videos/{vid}/{vid}-360.mp4"})
     return out
+
+
+def narrative_ok(title_th, unit_themes):
+    """Trava eliminatoria: o titulo precisa ter ao menos um TEMA do vocabulario de paisagem/elemento que pertenca a esta unidade (padrao visual do projeto: paisagem; maos so onde o plano pede).
+    So coincidir com uma palavra-chave solta (ex.: 'fire' em 'scrabble by fire') nao basta."""
+    if not unit_themes:
+        return True
+    t = set(title_th)
+    return bool(t) and bool(t & unit_themes or (t & {"cloud", "sky"} and unit_themes & {"sky", "cloud"}))
 
 
 def title_ok(title, allow=(), extra_exclude=()):
@@ -335,10 +344,8 @@ def run(ep, mode=None):
             cache["metrics"][mkey(e)] = a
             why = reject_reason(a["m"], mood, need, a["dur"], a["w"], a["h"])
             th = SEL.theme(e["title"])
-            if not why and unit_themes:   # trava eliminatoria: evidencia textual minima de que o clipe pertence a esta unidade
-                same = th in unit_themes or (th in {"cloud", "sky"} and unit_themes & {"sky", "cloud"})
-                if (th and not same) or (not th and not e["kw_hit"]):
-                    why = f"sem correspondencia narrativa minima (tema '{th}' fora de {sorted(unit_themes)})"
+            if not why and not narrative_ok(SEL.title_themes(e["title"]), unit_themes):
+                why = f"sem correspondencia narrativa minima (tema '{th}' fora de {sorted(unit_themes)})"
             if not why:
                 why = "; ".join(MEM.conflicts({"source": e["source"], "id": e["id"], "title": e["title"], "sha256": a["sha256"], "phashes": a["phashes"]}, as_ep, led, reg)) or None
                 if why: why = "antirrepeticao: " + why

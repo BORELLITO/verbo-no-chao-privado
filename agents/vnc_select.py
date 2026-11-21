@@ -38,10 +38,15 @@ def themes_of(words):
     return {t for t in THEMES if any(t in w for w in toks)}
 
 
+def title_themes(title):
+    ws = set(title.lower().split())
+    return {t for t in THEMES if any((w in ("hand", "hands") if t == "hand" else t in w) for w in ws)}
+
+
 def theme(title):
     ws = set(title.lower().split())
     for t in THEMES:
-        if any(t in w for w in ws):
+        if any((w in ("hand", "hands") if t == "hand" else t in w) for w in ws):
             return t
     return None
 
