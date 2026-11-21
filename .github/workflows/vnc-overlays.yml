@@ -1,0 +1,30 @@
+name: VNC Sondagem de camadas de luz (privado, somente leitura)
+# Entrada: edite run/overlays.json {"queries":[...],"per_query":8,"nonce":"x"} e faça push.
+# Somente leitura: NAO grava no repositorio, NAO registra clipes, NAO gasta, NAO publica. Fontes: Mixkit e Wikimedia (CC0) com a trava de direitos do motor.
+on:
+  push:
+    branches: ["main"]
+    paths: ["run/overlays.json"]
+permissions:
+  contents: read
+concurrency:
+  group: vnc-overlays
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy
+      - name: Sondagem
+        run: python -m agents.vnc_overlay_probe
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: overlays-${{ github.run_id }}
+          path: /tmp/overlay_out/
+          retention-days: 14
