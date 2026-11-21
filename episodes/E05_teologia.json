@@ -1,0 +1,374 @@
+{
+ "episode": "E05",
+ "referencia": "Isaías 41:10–13",
+ "pesquisado_em": "2026-11-21",
+ "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "posicoes_adotadas": {
+  "autoria": "Roteiro diz 'Isaías 41' (titulo do livro), sem afirmar autoria nem data; as duas leituras (profecia de Isaias ou voz do exilio) concordam que o destinatario e Israel em cativeiro.",
+  "destinatario": "Palavra dita a Israel, 'servo' escolhido (41:8-9); aplicacao hoje e declarada como leitura cuidadosa (S09).",
+  "limite": "Sem promessa de ausencia de perigo, de livramento especifico ou de cura; ajuda de pessoas proximas e incentivada."
+ },
+ "alegacoes": [
+  {
+   "id": "I01",
+   "cenas": [
+    "S02"
+   ],
+   "tipo": "interpretativa",
+   "texto": "As palavras foram ditas a um povo com medo.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Isaías 41:10",
+    "Isaías 41:13",
+    "Isaías 41:14"
+   ],
+   "palavras_chave_no_texto": [
+    "temas"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleProject, What Does Isaiah 41:10 Mean?",
+     "url": "https://bibleproject.com/articles/what-does-isaiah-4110-do-not-fear-i-am-you-mean/",
+     "tipo": "academico",
+     "nota": "41:10 tranquiliza israelitas no exilio; e mensagem direta a um povo em dificuldade especifica; 'nao temas' repetido tres vezes em 41:10-14; pergunta se e promessa direta a mim"
+    },
+    {
+     "titulo": "UBS Translation Handbook, Isaiah 41:10",
+     "url": "https://tips.translation.bible/?p=38127",
+     "tipo": "academico",
+     "nota": "Yahweh consola israelitas que sentem que foram abandonados; 'sustentarei' = apoiar; 'mao direita' e metafora significativa"
+    },
+    {
+     "titulo": "BibleHub, Isaiah 41:10's historical context",
+     "url": "https://biblehub.com/q/Isaiah_41_10_s_historical_context.htm",
+     "tipo": "comentario",
+     "nota": "Is 41 no 'Livro da Consolacao' (Is 40-55); fala a cativos; contexto de convulsao internacional e restauracao prometida"
+    }
+   ],
+   "risco": "baixo: 'nao temas' repete-se em 41:10,13,14 a um povo em cativeiro.",
+   "mitigacao": ""
+  },
+  {
+   "id": "I02",
+   "cenas": [
+    "S03"
+   ],
+   "tipo": "historica",
+   "texto": "O texto se dirige a um povo no exilio, longe de casa e sob o poder de outro imperio.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "BibleProject, What Does Isaiah 41:10 Mean?",
+     "url": "https://bibleproject.com/articles/what-does-isaiah-4110-do-not-fear-i-am-you-mean/",
+     "tipo": "academico",
+     "nota": "41:10 tranquiliza israelitas no exilio; e mensagem direta a um povo em dificuldade especifica; 'nao temas' repetido tres vezes em 41:10-14; pergunta se e promessa direta a mim"
+    },
+    {
+     "titulo": "BibleHub, Isaiah 41:10's historical context",
+     "url": "https://biblehub.com/q/Isaiah_41_10_s_historical_context.htm",
+     "tipo": "comentario",
+     "nota": "Is 41 no 'Livro da Consolacao' (Is 40-55); fala a cativos; contexto de convulsao internacional e restauracao prometida"
+    },
+    {
+     "titulo": "Wikipedia, Isaiah 41",
+     "url": "https://wikipedia.com/wiki/Isaiah_41",
+     "tipo": "enciclopedia",
+     "nota": "capitulo 41 e parte de Isaias 40-55, 'Deutero-Isaias', datado do tempo do exilio; secoes da Consolacao (40-66)"
+    },
+    {
+     "titulo": "Teed Commentaries, Isaiah 41",
+     "url": "https://biblehub.com/commentaries/teed/old/isaiah/41.htm",
+     "tipo": "comentario",
+     "nota": "o servo e a nacao de Israel; os cativos nao precisavam temer Ciro nem Babilonia; o medo e emocao universal"
+    }
+   ],
+   "risco": "a data/autoria de Is 40-55 e debatida (voz do exilio vs. profecia anterior); ambas leem os destinatarios como cativos sob a Babilonia.",
+   "mitigacao": "Roteiro nao afirma autor nem data; diz 'o texto se dirige a', consenso entre as duas leituras."
+  },
+  {
+   "id": "I03",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "historica",
+   "texto": "Isaias 41 esta num trecho conhecido como livro da consolacao.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "BibleHub, Isaiah 41:10's historical context",
+     "url": "https://biblehub.com/q/Isaiah_41_10_s_historical_context.htm",
+     "tipo": "comentario",
+     "nota": "Is 41 no 'Livro da Consolacao' (Is 40-55); fala a cativos; contexto de convulsao internacional e restauracao prometida"
+    },
+    {
+     "titulo": "Wikipedia, Isaiah 41",
+     "url": "https://wikipedia.com/wiki/Isaiah_41",
+     "tipo": "enciclopedia",
+     "nota": "capitulo 41 e parte de Isaias 40-55, 'Deutero-Isaias', datado do tempo do exilio; secoes da Consolacao (40-66)"
+    }
+   ],
+   "risco": "a extensao do 'Livro da Consolacao' varia (Is 40-55 ou 40-66).",
+   "mitigacao": "Roteiro nao delimita capitulos; usa 'trecho conhecido como'."
+  },
+  {
+   "id": "I04",
+   "cenas": [
+    "S05"
+   ],
+   "tipo": "textual",
+   "texto": "Ali, Deus diz: nao temas, porque eu sou contigo.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Isaías 41:10"
+   ],
+   "palavras_chave_no_texto": [
+    "temas",
+    "contigo"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleProject, What Does Isaiah 41:10 Mean?",
+     "url": "https://bibleproject.com/articles/what-does-isaiah-4110-do-not-fear-i-am-you-mean/",
+     "tipo": "academico",
+     "nota": "41:10 tranquiliza israelitas no exilio; e mensagem direta a um povo em dificuldade especifica; 'nao temas' repetido tres vezes em 41:10-14; pergunta se e promessa direta a mim"
+    },
+    {
+     "titulo": "BibleHub Commentaries, Isaiah 41:10",
+     "url": "https://biblehub.com/commentaries/isaiah/41-10.htm",
+     "tipo": "comentario",
+     "nota": "'tenho-te tomado' ao servo Israel; Deus fala com ternura: 'eu sou contigo'"
+    },
+    {
+     "titulo": "Matthew Henry (BibleGateway), Isaiah 41:10-20",
+     "url": "https://www.biblegateway.com/resources/matthew-henry/Isa.41.10-Isa.41.20",
+     "tipo": "comentario",
+     "nota": "'nao temas' repetido; 'eu sou contigo' = presente, nao so ao alcance da voz"
+    }
+   ],
+   "risco": "baixo.",
+   "mitigacao": ""
+  },
+  {
+   "id": "I05",
+   "cenas": [
+    "S06"
+   ],
+   "tipo": "textual",
+   "texto": "Diz tambem: eu te fortaleco, te ajudo e te sustento.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Isaías 41:10"
+   ],
+   "palavras_chave_no_texto": [
+    "fortaleço",
+    "ajudo",
+    "sustento"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleProject, What Does Isaiah 41:10 Mean?",
+     "url": "https://bibleproject.com/articles/what-does-isaiah-4110-do-not-fear-i-am-you-mean/",
+     "tipo": "academico",
+     "nota": "41:10 tranquiliza israelitas no exilio; e mensagem direta a um povo em dificuldade especifica; 'nao temas' repetido tres vezes em 41:10-14; pergunta se e promessa direta a mim"
+    },
+    {
+     "titulo": "UBS Translation Handbook, Isaiah 41:10",
+     "url": "https://tips.translation.bible/?p=38127",
+     "tipo": "academico",
+     "nota": "Yahweh consola israelitas que sentem que foram abandonados; 'sustentarei' = apoiar; 'mao direita' e metafora significativa"
+    },
+    {
+     "titulo": "Matthew Henry (BibleGateway), Isaiah 41:10-20",
+     "url": "https://www.biblegateway.com/resources/matthew-henry/Isa.41.10-Isa.41.20",
+     "tipo": "comentario",
+     "nota": "'nao temas' repetido; 'eu sou contigo' = presente, nao so ao alcance da voz"
+    }
+   ],
+   "risco": "baixo.",
+   "mitigacao": ""
+  },
+  {
+   "id": "I06",
+   "cenas": [
+    "S07"
+   ],
+   "tipo": "textual",
+   "texto": "No versiculo treze, a imagem e de uma mao que segura a sua.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Isaías 41:13"
+   ],
+   "palavras_chave_no_texto": [
+    "mão direita"
+   ],
+   "fontes": [
+    {
+     "titulo": "UBS Translation Handbook, Isaiah 41:10",
+     "url": "https://tips.translation.bible/?p=38127",
+     "tipo": "academico",
+     "nota": "Yahweh consola israelitas que sentem que foram abandonados; 'sustentarei' = apoiar; 'mao direita' e metafora significativa"
+    },
+    {
+     "titulo": "Matthew Henry (BibleGateway), Isaiah 41:10-20",
+     "url": "https://www.biblegateway.com/resources/matthew-henry/Isa.41.10-Isa.41.20",
+     "tipo": "comentario",
+     "nota": "'nao temas' repetido; 'eu sou contigo' = presente, nao so ao alcance da voz"
+    }
+   ],
+   "risco": "baixo: 41:13 diz 'te tomo pela tua mao direita'.",
+   "mitigacao": ""
+  },
+  {
+   "id": "I07",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "interpretativa",
+   "texto": "A promessa nasce de uma presenca, nao de uma vida sem perigo.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Isaías 41:10",
+    "Isaías 41:12"
+   ],
+   "palavras_chave_no_texto": [
+    "contigo",
+    "guerrearem"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleProject, What Does Isaiah 41:10 Mean?",
+     "url": "https://bibleproject.com/articles/what-does-isaiah-4110-do-not-fear-i-am-you-mean/",
+     "tipo": "academico",
+     "nota": "41:10 tranquiliza israelitas no exilio; e mensagem direta a um povo em dificuldade especifica; 'nao temas' repetido tres vezes em 41:10-14; pergunta se e promessa direta a mim"
+    },
+    {
+     "titulo": "Asbury Bible Commentary, Fear Not, O Israel (41:1-29)",
+     "url": "https://classic.biblegateway.com/resources/asbury-bible-commentary/3-fear-not-o-israel-41-1-29",
+     "tipo": "comentario",
+     "nota": "como servo escolhido, Israel sera fortalecido e protegido (vv. 8-10)"
+    },
+    {
+     "titulo": "NIV Application Commentary, Isaiah 41:8-20 (BibleGateway)",
+     "url": "https://www.biblegateway.com/resources/nivac-sample/Isa.41.8-Isa.41.20",
+     "tipo": "comentario",
+     "nota": "'Sem necessidade de o povo de Deus temer' (41:8-20)"
+    }
+   ],
+   "risco": "o texto tambem promete vitoria sobre inimigos (41:11-12) a Israel; 'nao de uma vida sem perigo' e leitura.",
+   "mitigacao": "A base declarada e 'eu sou contigo' (41:10); a existencia de perigo/inimigos e pressuposta pelo proprio texto; sem promessa de resultado ao ouvinte."
+  },
+  {
+   "id": "I08",
+   "cenas": [
+    "S09"
+   ],
+   "tipo": "interpretativa",
+   "texto": "Era uma palavra para Israel, e quem le hoje a aplica com cuidado.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Isaías 41:8"
+   ],
+   "palavras_chave_no_texto": [
+    "Israel",
+    "servo"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleProject, What Does Isaiah 41:10 Mean?",
+     "url": "https://bibleproject.com/articles/what-does-isaiah-4110-do-not-fear-i-am-you-mean/",
+     "tipo": "academico",
+     "nota": "41:10 tranquiliza israelitas no exilio; e mensagem direta a um povo em dificuldade especifica; 'nao temas' repetido tres vezes em 41:10-14; pergunta se e promessa direta a mim"
+    },
+    {
+     "titulo": "Teed Commentaries, Isaiah 41",
+     "url": "https://biblehub.com/commentaries/teed/old/isaiah/41.htm",
+     "tipo": "comentario",
+     "nota": "o servo e a nacao de Israel; os cativos nao precisavam temer Ciro nem Babilonia; o medo e emocao universal"
+    },
+    {
+     "titulo": "Asbury Bible Commentary, Fear Not, O Israel (41:1-29)",
+     "url": "https://classic.biblegateway.com/resources/asbury-bible-commentary/3-fear-not-o-israel-41-1-29",
+     "tipo": "comentario",
+     "nota": "como servo escolhido, Israel sera fortalecido e protegido (vv. 8-10)"
+    }
+   ],
+   "risco": "baixo: o servo e Israel; aplicar a individuos hoje e leitura de aplicacao, reconhecida pelas fontes.",
+   "mitigacao": ""
+  },
+  {
+   "id": "I09",
+   "cenas": [
+    "S01",
+    "S10",
+    "S11",
+    "S12"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Convite a dizer o medo em voz baixa, pedir ajuda a Deus e a quem esta perto, e nao enfrentar o medo sozinho.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Isaías 41:10"
+   ],
+   "palavras_chave_no_texto": [
+    "temas"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleProject, What Does Isaiah 41:10 Mean?",
+     "url": "https://bibleproject.com/articles/what-does-isaiah-4110-do-not-fear-i-am-you-mean/",
+     "tipo": "academico",
+     "nota": "41:10 tranquiliza israelitas no exilio; e mensagem direta a um povo em dificuldade especifica; 'nao temas' repetido tres vezes em 41:10-14; pergunta se e promessa direta a mim"
+    },
+    {
+     "titulo": "Matthew Henry (BibleGateway), Isaiah 41:10-20",
+     "url": "https://www.biblegateway.com/resources/matthew-henry/Isa.41.10-Isa.41.20",
+     "tipo": "comentario",
+     "nota": "'nao temas' repetido; 'eu sou contigo' = presente, nao so ao alcance da voz"
+    }
+   ],
+   "risco": "aplicacao nao e afirmacao do texto; medo pode ser clinico e exigir ajuda profissional.",
+   "mitigacao": "Linguagem de convite ('talvez'); incentiva ajuda de Deus E de pessoas proximas; nao diz que a fe substitui cuidado profissional nem promete fim do medo ('talvez o medo continue')."
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "A promessa e feita a Israel como servo escolhido e inclui derrota dos inimigos (41:11-12)",
+   "decisao": "ressalvar",
+   "justificativa": "S09 declara que a palavra foi dita a Israel e que a aplicacao hoje exige cuidado; o roteiro nao reivindica a vitoria sobre inimigos para o ouvinte."
+  },
+  {
+   "item": "Debate sobre autoria e data de Isaias 40-55 e identidade de quem e 'suscitado' (Abraao ou Ciro) em 41:2",
+   "decisao": "aceitavel",
+   "justificativa": "O roteiro nao afirma autor, data nem identidade; usa 'Isaias 41' e 'o texto'; o foco e 41:10-13 (referencia declarada)."
+  },
+  {
+   "item": "Medo cotidiano nao equivale a transtorno de ansiedade, que pode exigir tratamento",
+   "decisao": "ressalvar",
+   "justificativa": "S11/S12 incentivam pedir ajuda a quem esta perto e nao prometem fim do medo; nao ha afirmacao clinica nem substituicao de cuidado profissional."
+  },
+  {
+   "item": "Isaias 41 tambem polemiza contra idolos e nacoes (41:1-7, 21-29)",
+   "decisao": "aceitavel",
+   "justificativa": "Fora do recorte 41:10-13 declarado; o tema do vídeo e o consolo a quem teme."
+  }
+ ],
+ "parecer": "APROVADO",
+ "cenas_hash": {
+  "S01": "0310f6d4e05aeb37",
+  "S02": "8e86a81bb912a162",
+  "S03": "2926433ee098fe98",
+  "S04": "b14b9e5c4284bbfe",
+  "S05": "13889f1789297ac6",
+  "S06": "b7625c61136c7a76",
+  "S07": "96c89b5a9e5a3c28",
+  "S08": "e179db17b7c0f367",
+  "S09": "f7d87362dd5bcebb",
+  "S10": "66dc34a8db620142",
+  "S11": "fded915152706fae",
+  "S12": "5185b1fbb86a75b0"
+ }
+}

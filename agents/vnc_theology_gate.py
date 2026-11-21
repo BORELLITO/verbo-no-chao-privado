@@ -11,7 +11,7 @@ FIRST_STRICT = 3
 TIPOS = {"textual", "historica", "interpretativa", "aplicacao"}
 VEREDITOS = {"SUPORTADO", "SUPORTADO_COM_CAUTELA", "NAO_SUPORTADO"}
 HEDGE_AUTOR = ("tradicionalmente", "atribu", "segundo a tradicao", "alguem", "o autor", "o poeta")
-AUTORES = r"\b(jeremias|davi|paulo|moises|isaias|salomao|habacuque)\b"
+AUTORES = r"\b(jeremias|davi|paulo|moises|isaias|salomao|habacuque)\b(?!\s+\d)"   # 'Isaias 41' = titulo do livro, nao afirma autor
 SCAN_ABSOLUTO = (r"\b(sempre|nunca|todos|ninguem|tudo)\b", r"\b(prova que|significa exatamente|sem duvida)\b")
 
 

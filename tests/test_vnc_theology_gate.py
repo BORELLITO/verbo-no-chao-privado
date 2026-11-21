@@ -53,6 +53,10 @@ class T(unittest.TestCase):
         cfg, d = base(); cfg["scenes"][0]["text"] = "Em 586 Jeremias escreveu isto."; errs = self.run_(cfg, d)[1]
         self.assertTrue(any("data/periodo" in e for e in errs) and any("autor" in e for e in errs))
 
+    def test_book_title_is_not_author_claim(self):
+        cfg, d = base(); cfg["scenes"][0]["text"] = "Isaías 41 fala de medo."; errs = self.run_(cfg, d)[1]
+        self.assertFalse(any("autor" in e for e in errs))
+
     def test_cautela_requires_mitigation_and_omissions_and_parecer(self):
         cfg, d = base(); d["alegacoes"][0]["veredito"] = "SUPORTADO_COM_CAUTELA"; self.assertTrue(any("mitigacao" in e for e in self.run_(cfg, d)[1]))
         cfg, d = base(); d["omissoes_de_contexto"] = []; self.assertEqual(self.run_(cfg, d)[0], "REPROVADO")

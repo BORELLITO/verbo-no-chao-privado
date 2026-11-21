@@ -1,0 +1,369 @@
+{
+ "_instrucoes": "Roteiro E05 escrito pelo Claude em 2026-11-21 (formato C). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Trilha: Miss You (Mixkit).",
+ "id": "E05",
+ "number": 5,
+ "title_lines": [
+  "Medo",
+  "e uma",
+  "mão firme"
+ ],
+ "reference": "Isaías 41:10–13",
+ "timing": "whisper",
+ "audio_link_file": "run/audio_link_E05.txt",
+ "audio_sha256": "PREENCHER_SHA256_COMPLETO",
+ "music_page": "https://mixkit.co/free-stock-music/miss-you/",
+ "cta": [
+  "Curta, compartilhe\\Ne inscreva-se no canal",
+  "E você, já se sentiu assim?\\NConte nos comentários."
+ ],
+ "selection": "contracts/e05_scene_clip_selection.json",
+ "cover": {
+  "top": [
+   "PREENCHER_ID_TRISTEZA",
+   3.0
+  ],
+  "bottom": [
+   "PREENCHER_ID_LUZ",
+   5.0
+  ]
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "block": "opening",
+   "text": "Qual medo você nunca contou para ninguém?",
+   "visual": {
+    "meaning": "noite e nuvens pesadas",
+    "meaning_en": "dark night clouds",
+    "emotion": "medo",
+    "mood": "dark",
+    "queries": [
+     "night clouds",
+     "dark foggy forest",
+     "moonlight clouds"
+    ],
+    "prefer": [
+     "night",
+     "clouds",
+     "fog"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S02",
+   "block": "connection",
+   "text": "Foi a um povo com medo que essas palavras foram ditas.",
+   "visual": {
+    "meaning": "mar agitado e escuro",
+    "meaning_en": "dark rough sea waves",
+    "emotion": "ameaça",
+    "mood": "dark",
+    "queries": [
+     "dark sea waves",
+     "stormy ocean",
+     "rough sea clouds"
+    ],
+    "prefer": [
+     "sea",
+     "waves",
+     "storm"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S03",
+   "block": "connection",
+   "text": "O texto se dirige a um povo no exílio, longe de casa e sob o poder de outro império.",
+   "visual": {
+    "meaning": "deserto e distância",
+    "meaning_en": "lonely desert dunes wind",
+    "emotion": "exílio",
+    "mood": "dark",
+    "queries": [
+     "desert dunes wind",
+     "desert horizon",
+     "sand dunes"
+    ],
+    "prefer": [
+     "desert",
+     "dunes",
+     "horizon"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S04",
+   "block": "connection",
+   "text": "Isaías 41 está num trecho conhecido como livro da consolação.",
+   "visual": {
+    "meaning": "névoa sobre colinas ao amanhecer",
+    "meaning_en": "morning mist over hills",
+    "emotion": "consolo",
+    "mood": "dark",
+    "queries": [
+     "morning mist hills",
+     "fog valley dawn",
+     "misty hills"
+    ],
+    "prefer": [
+     "mist",
+     "hills",
+     "fog"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S05",
+   "block": "biblical_reference",
+   "text": "Ali, Deus diz: não temas, porque eu sou contigo.",
+   "visual": {
+    "meaning": "luz rompendo nuvens",
+    "meaning_en": "light breaking through clouds",
+    "emotion": "presença",
+    "mood": "mid",
+    "queries": [
+     "clouds breaking light",
+     "sun rays clouds",
+     "light through clouds"
+    ],
+    "prefer": [
+     "light",
+     "clouds",
+     "rays"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S06",
+   "block": "biblical_reference",
+   "text": "Diz também: eu te fortaleço, te ajudo e te sustento.",
+   "visual": {
+    "meaning": "montanha firme sob o sol",
+    "meaning_en": "mountain ridge in sunlight",
+    "emotion": "firmeza",
+    "mood": "mid",
+    "queries": [
+     "mountain ridge sunlight",
+     "rocky mountain sun",
+     "mountain peak clouds"
+    ],
+    "prefer": [
+     "mountain",
+     "ridge",
+     "sun"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S07",
+   "block": "biblical_reference",
+   "text": "No versículo treze, a imagem é de uma mão que segura a sua.",
+   "visual": {
+    "meaning": "caminho no campo",
+    "meaning_en": "path through meadow",
+    "emotion": "companhia",
+    "mood": "mid",
+    "queries": [
+     "path meadow",
+     "country path grass",
+     "trail field"
+    ],
+    "prefer": [
+     "path",
+     "meadow",
+     "grass"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S08",
+   "block": "reflection",
+   "text": "A promessa nasce de uma presença, não de uma vida sem perigo.",
+   "visual": {
+    "meaning": "rio firme entre pedras",
+    "meaning_en": "river flowing over rocks",
+    "emotion": "constância",
+    "mood": "mid",
+    "queries": [
+     "river rocks",
+     "stream flowing",
+     "river forest"
+    ],
+    "prefer": [
+     "river",
+     "rocks",
+     "flowing"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S09",
+   "block": "reflection",
+   "text": "Era uma palavra para Israel, e quem lê hoje a aplica com cuidado.",
+   "visual": {
+    "meaning": "vale amplo e calmo",
+    "meaning_en": "wide calm valley",
+    "emotion": "cuidado",
+    "mood": "mid",
+    "queries": [
+     "valley panorama",
+     "calm valley",
+     "green valley mist"
+    ],
+    "prefer": [
+     "valley",
+     "calm",
+     "panorama"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S10",
+   "block": "application",
+   "text": "Talvez hoje o seu medo precise ser dito em voz baixa.",
+   "visual": {
+    "meaning": "raios de sol na floresta",
+    "meaning_en": "sun rays in forest",
+    "emotion": "alívio",
+    "mood": "bright",
+    "queries": [
+     "sun rays forest",
+     "sunlight trees",
+     "forest light beams"
+    ],
+    "prefer": [
+     "sun",
+     "rays",
+     "forest"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S11",
+   "block": "application",
+   "text": "Pedir ajuda a Deus, e a quem está perto, também é coragem.",
+   "visual": {
+    "meaning": "lago calmo pela manhã",
+    "meaning_en": "calm lake morning",
+    "emotion": "coragem",
+    "mood": "bright",
+    "queries": [
+     "calm lake morning",
+     "still lake sunrise",
+     "lake mist sunrise"
+    ],
+    "prefer": [
+     "lake",
+     "calm",
+     "morning"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S12",
+   "block": "conclusion",
+   "text": "Talvez o medo continue, mas você não precisa enfrentá-lo sozinho.",
+   "visual": {
+    "meaning": "sol nascendo sobre montanhas",
+    "meaning_en": "sunrise over mountains",
+    "emotion": "esperança",
+    "mood": "bright",
+    "queries": [
+     "sunrise mountains",
+     "golden sunrise",
+     "sunrise clouds mountains"
+    ],
+    "prefer": [
+     "sunrise",
+     "mountains",
+     "golden"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  }
+ ],
+ "posting": {
+  "hook": "Qual medo você nunca contou para ninguém?",
+  "resumo": "Em Isaías 41:10–13, Deus diz a um povo no exílio: não temas, eu sou contigo. Uma palavra dita a Israel, lida hoje com cuidado, sem prometer uma vida sem perigo.",
+  "pergunta": "Qual medo você precisa parar de carregar em silêncio?",
+  "hashtags": [
+   "#fé",
+   "#palavradedeus",
+   "#isaías41",
+   "#medo",
+   "#reflexão"
+  ],
+  "titulo_curto": "Medo e uma mão firme"
+ }
+}
