@@ -18,7 +18,7 @@ CC0_OK = {"cc0", "cc0 1.0", "public domain", "pd", "pdm"}
 
 def enabled(env=None):
     env = os.environ if env is None else env
-    out = ["mixkit", "coverr", "wikimedia"]
+    out = ["mixkit", "wikimedia"]   # Coverr DESATIVADO (decisao do dono 2026-11-21: canal monetizado; termos da API gratuita vetam uso comercial). Codigo mantido so p/ protecao antirrepeticao dos clipes legados do E01
     if env.get("PEXELS_API_KEY"): out.append("pexels")
     if env.get("PIXABAY_API_KEY"): out.append("pixabay")
     return out

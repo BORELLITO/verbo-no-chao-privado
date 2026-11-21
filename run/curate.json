@@ -1,1 +1,1 @@
-{"episode": "E01", "mode": "probe_coverr_api", "dry_run": true, "nonce": "coverr-api-1"}
+{"episode": "E01", "mode": "select", "dry_run": true, "as_episode": "E99SIM", "nonce": "sem-coverr-1"}

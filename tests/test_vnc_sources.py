@@ -6,8 +6,8 @@ SLUGS = ["raindrops-on-the-window-amlapwfzyf", "a-retro-car-in-the-rain-nfstov1q
 
 class Sources(unittest.TestCase):
     def test_enabled_depends_on_secrets_only(self):
-        self.assertEqual(S.enabled({}), ["mixkit", "coverr", "wikimedia"])
-        self.assertEqual(S.enabled({"PEXELS_API_KEY": "k", "PIXABAY_API_KEY": ""}), ["mixkit", "coverr", "wikimedia", "pexels"])
+        self.assertEqual(S.enabled({}), ["mixkit", "wikimedia"])
+        self.assertEqual(S.enabled({"PEXELS_API_KEY": "k", "PIXABAY_API_KEY": ""}), ["mixkit", "wikimedia", "pexels"])
 
     def test_slug_words_strips_hash_only_when_hash(self):
         self.assertEqual(S.slug_words("raindrops-on-the-window-amlapwfzyf", True), ["raindrops", "window"])
