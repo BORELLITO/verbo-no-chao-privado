@@ -18,6 +18,7 @@ FORBIDDEN_PATTERNS = {
     "R3_visual_ia": [r"api\.elevenlabs\.io/v\d+/(image|video)", r"creative_generate_(image|video)"],
     "publicacao": [r"googleapis\.com/upload/youtube", r"open\.tiktokapis\.com", r"graph\.facebook\.com", r"graph\.instagram\.com"],
 }
+WRITE_WORKFLOWS = {"vnc-ingest-voice.yml"}  # unico com escrita: grava a voz aprovada
 SKIP_SCAN = {"vnc_gates.py", "test_vnc_gates.py"}
 
 
@@ -104,6 +105,13 @@ def check_episode_config(ep, sel, root=ROOT):
     return errs
 
 
+def check_voice_source(ep, root=ROOT):
+    """Producao precisa da voz persistida (assets/voice/<EP>.mp3) ou, enquanto nao ingerida, do link assinado."""
+    c = json.loads((root / "episodes" / f"{ep}.json").read_text(encoding="utf8"))
+    ok = (root / "assets" / "voice" / f"{ep}.mp3").exists() or (root / c["audio_link_file"]).exists()
+    return [] if ok else [f"voz do {ep}: nem assets/voice/{ep}.mp3 nem {c['audio_link_file']}"]
+
+
 def check_style_lock():
     """Identidade fixa (logo, final de cinema, legenda, karaoke, audio): codigo == lock aprovado."""
     from agents import vnc_style
@@ -128,8 +136,9 @@ def check_workflows(root=ROOT):
         t = p.read_text(encoding="utf8")
         if re.search(r"^\s*schedule:", t, re.M):
             errs.append(f"{p.name}: cron/schedule proibido")
-        if not re.search(r"^permissions:\s*\n\s+contents:\s*read", t, re.M):
-            errs.append(f"{p.name}: falta permissions contents: read")
+        want = "write" if p.name in WRITE_WORKFLOWS else "read"
+        if not re.search(rf"^permissions:\s*\n\s+contents:\s*{want}\s*$", t, re.M):
+            errs.append(f"{p.name}: falta permissions contents: {want}")
         if "timeout-minutes:" not in t:
             errs.append(f"{p.name}: falta timeout-minutes")
         for m in re.finditer(r"uses:\s*actions/checkout@(\S+)", t):
@@ -177,7 +186,7 @@ def main(argv):
         if cmd == "register":
             REGISTRY.write_text(json.dumps(register(ep, sel, reg, music, title), ensure_ascii=False, indent=1) + "\n", encoding="utf8")
             print("VNC_GATES_REGISTERED", ep); return 0
-        errs = check_selection(sel, ep, reg) + check_episode_config(ep, sel) + check_style_lock() + (check_music(music, ep, reg) if music else []) + check_workflows() + scan_forbidden()
+        errs = check_selection(sel, ep, reg) + check_episode_config(ep, sel) + check_style_lock() + check_voice_source(ep) + (check_music(music, ep, reg) if music else []) + check_workflows() + scan_forbidden()
     else:
         print(__doc__); return 2
     for e in errs:

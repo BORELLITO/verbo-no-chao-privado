@@ -147,12 +147,17 @@ def make_logo_layers(adur, T, t0, outdir):
 def main(ep=None):
     ep = ep or os.environ.get("VNC_EPISODE", "E01"); cfg = load_cfg(ep)
     mode = os.environ.get("VNC_TIMING_OVERRIDE") or cfg["timing"]  # override = autoteste de regressao (so muda o metodo de tempo)
-    audio_link = (os.environ.get("VNC_AUDIO_URL") or os.environ.get("VNC_E01_AUDIO_URL") or Path(cfg["audio_link_file"]).read_text()).strip()
-    if not audio_link.startswith("https://elevenlabsusercontent.com/"):
-        print("VNC_MASTER_ABORT no_audio_secret"); sys.exit(4)
+    vfile = Path(f"assets/voice/{ep}.mp3")
+    if vfile.exists():
+        audio = vfile.read_bytes()
+    else:
+        audio_link = (os.environ.get("VNC_AUDIO_URL") or os.environ.get("VNC_E01_AUDIO_URL") or Path(cfg["audio_link_file"]).read_text()).strip()
+        if not audio_link.startswith("https://elevenlabsusercontent.com/"):
+            print("VNC_MASTER_ABORT no_audio_secret"); sys.exit(4)
+        audio = get(audio_link)
     sel = json.loads(Path(os.environ["VNC_SELECTION"]).read_text())["clips"]
     report = {"episode": ep, "timing_mode": mode, "self_test": bool(os.environ.get("VNC_TIMING_OVERRIDE")), "scenes": [], "errors": []}
-    audio = get(audio_link); (WORK / "voice.mp3").write_bytes(audio)
+    (WORK / "voice.mp3").write_bytes(audio)
     sha = hashlib.sha256(audio).hexdigest(); report["audio_sha256"] = sha
     ok = sha == cfg["audio_sha256"] if cfg.get("audio_sha256") else (sha.startswith(cfg["audio_sha256_prefix"]) and sha.endswith(cfg["audio_sha256_suffix"]))
     if not ok:

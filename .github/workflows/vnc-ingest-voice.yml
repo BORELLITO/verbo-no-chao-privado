@@ -1,0 +1,26 @@
+name: VNC ingest da voz aprovada (privado)
+# Unico workflow com permissao de escrita: grava assets/voice/<EP>.mp3 (sha conferido) e apaga o link assinado. Nao publica, nao gasta.
+on:
+  push:
+    branches: ["main"]
+    paths: ["run/ingest_voice.json"]
+permissions:
+  contents: write
+concurrency:
+  group: vnc-ingest-voice
+  cancel-in-progress: false
+jobs:
+  ingest:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Baixa, confere sha e grava
+        run: |
+          EP="$(python3 -c 'import json;print(json.load(open("run/ingest_voice.json"))["episode"])')"
+          python3 -m agents.vnc_ingest_voice "$EP"
+          git rm -q --ignore-unmatch run/audio_link.txt "run/audio_link_${EP}.txt"
+          git config user.name "vnc-ingest"; git config user.email "vnc-ingest@users.noreply.github.com"
+          git add "assets/voice/${EP}.mp3"
+          git commit -q -m "voz ${EP} aprovada persistida (sha conferido); link assinado removido"
+          git push -q origin HEAD:main
