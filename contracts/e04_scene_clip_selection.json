@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E04",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "44955458077",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "20487",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/raindrops-on-a-clay-rooftop-20487/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 21.9,
+   "note_pt": "clima dark (brilho 76.2), movimento 6.31, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "9606",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/dark-storm-clouds-9606/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 20.0,
+   "note_pt": "clima dark (brilho 86.9), movimento 6.33, palavras-chave 3, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "1934",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/empty-sea-seen-from-the-beach-1934/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 10.0,
+   "note_pt": "clima dark (brilho 113.4), movimento 3.2, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "1243",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/wood-burning-in-an-outdoor-fire-1243/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 13.2,
+   "note_pt": "clima dark (brilho 67.2), movimento 10.53, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "17732",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/the-forest-and-mist-in-the-morning-17732/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 21.4,
+   "note_pt": "clima mid (brilho 114.0), movimento 4.36, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "34847",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/forest-full-of-trees-next-to-a-valley-34847/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 23.5,
+   "note_pt": "clima mid (brilho 101.6), movimento 5.54, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "41545",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/flying-over-tree-covered-mountains-41545/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 23.6,
+   "note_pt": "clima mid (brilho 114.2), movimento 5.54, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "34783",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/river-flowing-in-a-park-34783/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 30.0,
+   "note_pt": "clima mid (brilho 90.3), movimento 5.54, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "8335",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sunlight-moving-between-mountains-8335/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 16.0,
+   "note_pt": "clima mid (brilho 99.0), movimento 5.6, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "45268",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/trees-in-the-sunlight-at-the-top-of-a-forest-45268/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 17.6,
+   "note_pt": "clima bright (brilho 135.8), movimento 5.88, palavras-chave 3, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "46110",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/time-lapse-of-a-hiking-trail-46110/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 12.0,
+   "note_pt": "clima bright (brilho 132.1), movimento 3.93, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "17805",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/lake-in-the-mountain-at-sunset-17805/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 28.8,
+   "note_pt": "clima bright (brilho 127.6), movimento 3.71, palavras-chave 2, interpretacao=claude"
+  }
+ ]
+}

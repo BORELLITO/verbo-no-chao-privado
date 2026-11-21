@@ -468,6 +468,31 @@
    "title": "misty hills and rice fields",
    "updated_at": "2026-11-21T16:13:07Z"
   },
+  "mixkit:1243": {
+   "dur": 13.2,
+   "episode": "E04",
+   "id": "1243",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/wood-burning-in-an-outdoor-fire-1243/",
+   "phashes": [
+    14747221943593780424,
+    14748352447265295552,
+    14316006539846141120
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S04",
+   "sha256": "c2701016d1dad703bd5f9a9c3f2d269dbc9bc4e54fae32770ddd78f9e4a0bc78",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "wood burning in an outdoor fire",
+   "updated_at": "2026-11-21T22:21:36Z"
+  },
   "mixkit:15398": {
    "dur": 10.0,
    "episode": "E02",
@@ -518,6 +543,56 @@
    "title": "wheat field at sunrise",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:17732": {
+   "dur": 21.4,
+   "episode": "E04",
+   "id": "17732",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/the-forest-and-mist-in-the-morning-17732/",
+   "phashes": [
+    18446719883375393695,
+    18446719883373395871,
+    18446712184638226327
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S05",
+   "sha256": "4147c7b526968a7e9b97fb5f0e2b80adf4e1dea7be4cfe060bd1679c581a9d59",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "the forest and mist in the morning",
+   "updated_at": "2026-11-21T22:21:36Z"
+  },
+  "mixkit:17805": {
+   "dur": 28.8,
+   "episode": "E04",
+   "id": "17805",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/lake-in-the-mountain-at-sunset-17805/",
+   "phashes": [
+    16240152436986121372,
+    17321016347555040412,
+    17361548744335592604
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S12",
+   "sha256": "e1ce966b3a424de30d8b9bd0591907ab838a4c8e4b1eb83562a25f98399dfe26",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "lake in the mountain at sunset",
+   "updated_at": "2026-11-21T22:21:36Z"
+  },
   "mixkit:18009": {
    "dur": 21.6,
    "episode": "E02",
@@ -542,6 +617,31 @@
    "state": "confirmed",
    "title": "fenced path in the snowy mountains",
    "updated_at": "2026-11-21T16:13:07Z"
+  },
+  "mixkit:1934": {
+   "dur": 10.0,
+   "episode": "E04",
+   "id": "1934",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/empty-sea-seen-from-the-beach-1934/",
+   "phashes": [
+    506092038300768025,
+    506092038309416729,
+    506092038292119321
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S03",
+   "sha256": "d5ec2b72c5f3a214cd7caeb3b0588c33c0573f61d8667ffe1096531cb7f6e268",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "empty sea seen from the beach",
+   "updated_at": "2026-11-21T22:21:36Z"
   },
   "mixkit:1954": {
    "dur": 15.3,
@@ -592,6 +692,31 @@
    "state": "reserved",
    "title": "dark clouds in the tropics",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:20487": {
+   "dur": 21.9,
+   "episode": "E04",
+   "id": "20487",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/raindrops-on-a-clay-rooftop-20487/",
+   "phashes": [
+    17470726950629436476,
+    18049422185438399516,
+    18049421910560500796
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S01",
+   "sha256": "48d9d7c4ba5fa2f849998d2d2165b1f6cbdf92cdcce7ef0ceb4948ee8eb15c93",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "raindrops on a clay rooftop",
+   "updated_at": "2026-11-21T22:21:36Z"
   },
   "mixkit:21575": {
    "dur": 12.0,
@@ -768,6 +893,56 @@
    "title": "aerial view of a mountain village by the lake",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:34783": {
+   "dur": 30.0,
+   "episode": "E04",
+   "id": "34783",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/river-flowing-in-a-park-34783/",
+   "phashes": [
+    8277793007369150960,
+    8277793007369150945,
+    8277792457613341153
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S08",
+   "sha256": "08da4ede398bd2d02e09fa1bd32e1ae0199591ea359c690c72fe2c802ad0786e",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "river flowing in a park",
+   "updated_at": "2026-11-21T22:21:36Z"
+  },
+  "mixkit:34847": {
+   "dur": 23.5,
+   "episode": "E04",
+   "id": "34847",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/forest-full-of-trees-next-to-a-valley-34847/",
+   "phashes": [
+    16644827378276894221,
+    12032578409896232461,
+    11745193558159017743
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S06",
+   "sha256": "c71cba4f95f2983f35e44aadac615710c2d840ac5a241587b7eb09901ddf3cd1",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "forest full of trees next to a valley",
+   "updated_at": "2026-11-21T22:21:36Z"
+  },
   "mixkit:35532": {
    "dur": 28.1,
    "episode": "E03",
@@ -792,6 +967,31 @@
    "state": "reserved",
    "title": "sun flare on the top of a foggy winter forest",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:41545": {
+   "dur": 23.6,
+   "episode": "E04",
+   "id": "41545",
+   "interval": [
+    0,
+    10.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/flying-over-tree-covered-mountains-41545/",
+   "phashes": [
+    17922111001273893785,
+    17922146185925170204,
+    18210313958635391424
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S07",
+   "sha256": "251d4040b405eed915858913fa06d6dee40484f26071175a28fd8eb346baa9ad",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "flying over tree covered mountains",
+   "updated_at": "2026-11-21T22:21:36Z"
   },
   "mixkit:41739": {
    "dur": 12.1,
@@ -862,6 +1062,31 @@
    "title": "rain drops in a puddle in slow motion",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:45268": {
+   "dur": 17.6,
+   "episode": "E04",
+   "id": "45268",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/trees-in-the-sunlight-at-the-top-of-a-forest-45268/",
+   "phashes": [
+    7844879247631756526,
+    7844879247631756526,
+    7844879247363321070
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S10",
+   "sha256": "24d2bcaa5df80c0f2c6262f4c9530adf56e6574a369277b7a20a099b40b8f400",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "trees in the sunlight at the top of a forest",
+   "updated_at": "2026-11-21T22:21:36Z"
+  },
   "mixkit:45633": {
    "dur": 15.8,
    "episode": "E03",
@@ -886,6 +1111,31 @@
    "state": "reserved",
    "title": "waterfall into a flowing river",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:46110": {
+   "dur": 12.0,
+   "episode": "E04",
+   "id": "46110",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/time-lapse-of-a-hiking-trail-46110/",
+   "phashes": [
+    17361627328145315506,
+    6362631970141296306,
+    16725274013887157938
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S11",
+   "sha256": "338508a34a2af374aff8d3c366e677a2c5dd6e9509840db8955261e4d02abdc3",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "time lapse of a hiking trail",
+   "updated_at": "2026-11-21T22:21:36Z"
   },
   "mixkit:51433": {
    "dur": 11.7,
@@ -1011,6 +1261,56 @@
    "state": "reserved",
    "title": "sun shining through clouds",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:8335": {
+   "dur": 16.0,
+   "episode": "E04",
+   "id": "8335",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sunlight-moving-between-mountains-8335/",
+   "phashes": [
+    8361356986566084808,
+    14177825998107625664,
+    13889524291143256256
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S09",
+   "sha256": "4479ac53a97fea079f07167e3a15ad9bb66c6ab54b05b7db97cf5ff8d6b5b1a2",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sunlight moving between mountains",
+   "updated_at": "2026-11-21T22:21:36Z"
+  },
+  "mixkit:9606": {
+   "dur": 20.0,
+   "episode": "E04",
+   "id": "9606",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/dark-storm-clouds-9606/",
+   "phashes": [
+    3495006495328797376,
+    13889314285229738176,
+    14479266989694026944
+   ],
+   "reserved_at": "2026-11-21T22:21:36Z",
+   "run_id": "44955458077",
+   "scene": "S02",
+   "sha256": "1adfaea1cb2b55902be882047f0bec767fcbd886adaa9d7dbd88cb05b404a124",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "dark storm clouds",
+   "updated_at": "2026-11-21T22:21:36Z"
   },
   "mixkit:9810": {
    "dur": 12.4,

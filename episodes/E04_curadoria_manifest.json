@@ -1,0 +1,1241 @@
+{
+ "episode": "E04",
+ "run_id": "44955458077",
+ "engine_version": "vnc-curadoria-2.0",
+ "dry_run": false,
+ "status": "OK",
+ "segments": [
+  {
+   "scene": "S01",
+   "block": "opening",
+   "text": "Quanto peso você carrega sem contar para ninguém?",
+   "start": 0.0,
+   "end": 4.08,
+   "duration": 4.08,
+   "duration_source": "estimativa_palavras",
+   "meaning": "o peso carregado em silêncio",
+   "emotion": "cansaço",
+   "mood": "dark",
+   "queries": [
+    "heavy clouds",
+    "gray sky",
+    "fog field",
+    "rain",
+    "raindrops",
+    "rainy-day",
+    "night",
+    "water-drops",
+    "rain-on-window",
+    "dark-clouds"
+   ],
+   "prefer": [
+    "clouds",
+    "fog",
+    "gray",
+    "window",
+    "rain",
+    "drops",
+    "night",
+    "dark"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S02",
+   "block": "connection",
+   "text": "Foi para gente assim que Jesus falou.",
+   "start": 4.08,
+   "end": 7.77,
+   "duration": 3.69,
+   "duration_source": "estimativa_palavras",
+   "meaning": "estrada vazia ao entardecer",
+   "emotion": "solidão",
+   "mood": "dark",
+   "queries": [
+    "empty road dusk",
+    "country road fog",
+    "dusk road",
+    "storm",
+    "thunderstorm",
+    "clouds",
+    "dark-clouds",
+    "stormy-sky"
+   ],
+   "prefer": [
+    "road",
+    "dusk",
+    "fog",
+    "storm",
+    "dark",
+    "clouds",
+    "rain"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S03",
+   "block": "connection",
+   "text": "Muitos ali estavam esmagados por exigências religiosas que pareciam não ter fim.",
+   "start": 7.77,
+   "end": 13.39,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "terra seca, exigência árida",
+   "emotion": "aridez",
+   "mood": "dark",
+   "queries": [
+    "dry cracked earth",
+    "dry desert land",
+    "barren land",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "dry",
+    "cracked",
+    "desert",
+    "waves",
+    "stormy",
+    "crashing",
+    "sea"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S04",
+   "block": "connection",
+   "text": "Mateus registra o convite no capítulo onze, depois de muita resistência.",
+   "start": 13.39,
+   "end": 18.62,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "vento e nuvens pesadas sobre o campo",
+   "emotion": "resistência",
+   "mood": "dark",
+   "queries": [
+    "wind field clouds",
+    "stormy field",
+    "windy grass",
+    "candle",
+    "candles",
+    "fire",
+    "fireplace",
+    "flame",
+    "campfire",
+    "bonfire",
+    "lantern"
+   ],
+   "prefer": [
+    "wind",
+    "field",
+    "clouds",
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S05",
+   "block": "biblical_reference",
+   "text": "Ele diz: venham a mim, todos os cansados e sobrecarregados.",
+   "start": 18.62,
+   "end": 23.47,
+   "duration": 4.85,
+   "duration_source": "estimativa_palavras",
+   "meaning": "vale com névoa se abrindo",
+   "emotion": "convite",
+   "mood": "mid",
+   "queries": [
+    "misty valley",
+    "morning fog valley",
+    "fog lifting",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "morning-fog"
+   ],
+   "prefer": [
+    "fog",
+    "valley",
+    "morning",
+    "mist",
+    "tree"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S06",
+   "block": "biblical_reference",
+   "text": "E promete descanso para a alma, não uma vida sem esforço.",
+   "start": 23.47,
+   "end": 28.7,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "lago calmo ao amanhecer",
+   "emotion": "descanso",
+   "mood": "mid",
+   "queries": [
+    "calm lake dawn",
+    "still lake morning",
+    "lake reflection",
+    "forest",
+    "trees",
+    "fog",
+    "lake",
+    "valley",
+    "river",
+    "reflection"
+   ],
+   "prefer": [
+    "lake",
+    "calm",
+    "dawn",
+    "forest",
+    "mist",
+    "fog",
+    "valley",
+    "mountain"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S07",
+   "block": "biblical_reference",
+   "text": "Jugo era a peça do arado e também uma imagem para o ensino de um mestre.",
+   "start": 28.7,
+   "end": 35.85,
+   "duration": 7.15,
+   "duration_source": "estimativa_palavras",
+   "meaning": "campo arado, trabalho da terra",
+   "emotion": "trabalho",
+   "mood": "mid",
+   "queries": [
+    "plowed field",
+    "farm field furrows",
+    "farmland tractor",
+    "mountains",
+    "mountain",
+    "hills"
+   ],
+   "prefer": [
+    "field",
+    "farm",
+    "plowed",
+    "mountain",
+    "cliff",
+    "peak"
+   ],
+   "avoid": [
+    "city",
+    "indoor",
+    "face"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 10.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S08",
+   "block": "reflection",
+   "text": "Jesus não diz que a vida fica sem peso. Ele convida a aprender com ele.",
+   "start": 35.85,
+   "end": 42.62,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "rio que segue",
+   "emotion": "caminhada",
+   "mood": "mid",
+   "queries": [
+    "river flowing",
+    "calm river",
+    "stream forest",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "prefer": [
+    "river",
+    "stream",
+    "flowing",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S09",
+   "block": "reflection",
+   "text": "E se apresenta como manso e humilde de coração.",
+   "start": 42.62,
+   "end": 47.08,
+   "duration": 4.46,
+   "duration_source": "estimativa_palavras",
+   "meaning": "campo florido com brisa",
+   "emotion": "mansidão",
+   "mood": "mid",
+   "queries": [
+    "meadow flowers breeze",
+    "wildflowers field",
+    "grass breeze",
+    "sunrise",
+    "sunset",
+    "sun",
+    "dawn",
+    "sunlight",
+    "sunbeams"
+   ],
+   "prefer": [
+    "meadow",
+    "flowers",
+    "grass",
+    "sunrise",
+    "sunlight",
+    "sun",
+    "dawn"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S10",
+   "block": "application",
+   "text": "Talvez hoje você precise parar de fingir que aguenta tudo sozinho.",
+   "start": 47.08,
+   "end": 52.31,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "luz atravessando as árvores",
+   "emotion": "alívio",
+   "mood": "bright",
+   "queries": [
+    "sunlight trees",
+    "sun rays forest",
+    "golden light forest",
+    "hands",
+    "hand",
+    "praying",
+    "holding",
+    "night",
+    "dark-clouds",
+    "stormy-sky"
+   ],
+   "prefer": [
+    "sun",
+    "trees",
+    "light",
+    "hands",
+    "holding",
+    "hand",
+    "glass",
+    "water",
+    "night",
+    "dark",
+    "clouds"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S11",
+   "block": "application",
+   "text": "Dizer, em voz baixa, eu não dou conta, também pode ser uma oração.",
+   "start": 52.31,
+   "end": 58.31,
+   "duration": 6.0,
+   "duration_source": "estimativa_palavras",
+   "meaning": "mar calmo ao pôr do sol",
+   "emotion": "paz",
+   "mood": "bright",
+   "queries": [
+    "calm sea sunset",
+    "gentle waves sunset",
+    "sunset ocean",
+    "trail",
+    "path",
+    "hills",
+    "road",
+    "meadow",
+    "field",
+    "nature",
+    "countryside"
+   ],
+   "prefer": [
+    "sea",
+    "sunset",
+    "waves",
+    "trail",
+    "path",
+    "hills"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S12",
+   "block": "conclusion",
+   "text": "O convite continua simples: venha cansado, como está, e aprenda a caminhar com ele.",
+   "start": 58.31,
+   "end": 64.69,
+   "duration": 6.38,
+   "duration_source": "estimativa_palavras",
+   "meaning": "sol nascendo sobre colinas",
+   "emotion": "esperança",
+   "mood": "bright",
+   "queries": [
+    "sunrise hills",
+    "sunrise horizon",
+    "golden hour hills",
+    "lake",
+    "valley",
+    "river",
+    "mountain-lake",
+    "lagoon",
+    "reflection"
+   ],
+   "prefer": [
+    "sunrise",
+    "hills",
+    "horizon",
+    "lake",
+    "mountain",
+    "valley"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 14.0,
+   "interpretation": "claude"
+  }
+ ],
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "20487",
+   "title": "raindrops on a clay rooftop",
+   "page": "https://mixkit.co/free-stock-video/raindrops-on-a-clay-rooftop-20487/",
+   "preview_url": "https://assets.mixkit.co/videos/20487/20487-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/20487/20487-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 21.9,
+   "sha256": "48d9d7c4ba5fa2f849998d2d2165b1f6cbdf92cdcce7ef0ceb4948ee8eb15c93",
+   "phashes": [
+    17470726950629436476,
+    18049422185438399516,
+    18049421910560500796
+   ],
+   "segment": {
+    "start": 0.0,
+    "end": 4.08,
+    "emotion": "cansaço",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 76.2), movimento 6.31, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.286,
+    "clip_sem": 0.0041
+   },
+   "vision": {
+    "sem": 0.0041,
+    "neg": {
+     "people": 0.042,
+     "city": 0.0292,
+     "indoor": 0.7992,
+     "text": 0.0002,
+     "cgi": 0.1253
+    }
+   },
+   "metrics": {
+    "brightness": 76.2,
+    "cut_ratio": 1.38,
+    "motion": 6.31,
+    "saturation": 148.4,
+    "sharp": 30.11
+   },
+   "alternatives": [
+    "mixkit:6887",
+    "mixkit:9606",
+    "mixkit:7098",
+    "mixkit:20440"
+   ]
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "9606",
+   "title": "dark storm clouds",
+   "page": "https://mixkit.co/free-stock-video/dark-storm-clouds-9606/",
+   "preview_url": "https://assets.mixkit.co/videos/9606/9606-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/9606/9606-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 20.0,
+   "sha256": "1adfaea1cb2b55902be882047f0bec767fcbd886adaa9d7dbd88cb05b404a124",
+   "phashes": [
+    3495006495328797376,
+    13889314285229738176,
+    14479266989694026944
+   ],
+   "segment": {
+    "start": 4.08,
+    "end": 7.77,
+    "emotion": "solidão",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 86.9), movimento 6.33, palavras-chave 3, interpretacao=claude",
+   "scores": {
+    "unary": 3.217,
+    "clip_sem": 0.0194
+   },
+   "vision": {
+    "sem": 0.0194,
+    "neg": {
+     "people": 0.1552,
+     "city": 0.0152,
+     "indoor": 0.7636,
+     "text": 0.0005,
+     "cgi": 0.0461
+    }
+   },
+   "metrics": {
+    "brightness": 86.9,
+    "cut_ratio": 1.16,
+    "motion": 6.33,
+    "saturation": 58.3,
+    "sharp": 7.99
+   },
+   "alternatives": [
+    "mixkit:9624",
+    "mixkit:9590",
+    "mixkit:21148",
+    "mixkit:20749"
+   ]
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "1934",
+   "title": "empty sea seen from the beach",
+   "page": "https://mixkit.co/free-stock-video/empty-sea-seen-from-the-beach-1934/",
+   "preview_url": "https://assets.mixkit.co/videos/1934/1934-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/1934/1934-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 10.0,
+   "sha256": "d5ec2b72c5f3a214cd7caeb3b0588c33c0573f61d8667ffe1096531cb7f6e268",
+   "phashes": [
+    506092038300768025,
+    506092038309416729,
+    506092038292119321
+   ],
+   "segment": {
+    "start": 7.77,
+    "end": 13.39,
+    "emotion": "aridez",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 113.4), movimento 3.2, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.281,
+    "clip_sem": 0.0533
+   },
+   "vision": {
+    "sem": 0.0533,
+    "neg": {
+     "people": 0.3822,
+     "city": 0.0069,
+     "indoor": 0.408,
+     "text": 0.0024,
+     "cgi": 0.1472
+    }
+   },
+   "metrics": {
+    "brightness": 113.4,
+    "cut_ratio": 1.05,
+    "motion": 3.2,
+    "saturation": 82.3,
+    "sharp": 10.91
+   },
+   "alternatives": [
+    "mixkit:1925",
+    "mixkit:9294",
+    "mixkit:7194"
+   ]
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "1243",
+   "title": "wood burning in an outdoor fire",
+   "page": "https://mixkit.co/free-stock-video/wood-burning-in-an-outdoor-fire-1243/",
+   "preview_url": "https://assets.mixkit.co/videos/1243/1243-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/1243/1243-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 13.2,
+   "sha256": "c2701016d1dad703bd5f9a9c3f2d269dbc9bc4e54fae32770ddd78f9e4a0bc78",
+   "phashes": [
+    14747221943593780424,
+    14748352447265295552,
+    14316006539846141120
+   ],
+   "segment": {
+    "start": 13.39,
+    "end": 18.62,
+    "emotion": "resistência",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 67.2), movimento 10.53, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.335,
+    "clip_sem": 0.0007
+   },
+   "vision": {
+    "sem": 0.0007,
+    "neg": {
+     "people": 0.1142,
+     "city": 0.0118,
+     "indoor": 0.5794,
+     "text": 0.0067,
+     "cgi": 0.2872
+    }
+   },
+   "metrics": {
+    "brightness": 67.2,
+    "cut_ratio": 1.56,
+    "motion": 10.53,
+    "saturation": 88.5,
+    "sharp": 14.25
+   },
+   "alternatives": [
+    "mixkit:22167",
+    "mixkit:2709"
+   ]
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "17732",
+   "title": "the forest and mist in the morning",
+   "page": "https://mixkit.co/free-stock-video/the-forest-and-mist-in-the-morning-17732/",
+   "preview_url": "https://assets.mixkit.co/videos/17732/17732-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/17732/17732-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 21.4,
+   "sha256": "4147c7b526968a7e9b97fb5f0e2b80adf4e1dea7be4cfe060bd1679c581a9d59",
+   "phashes": [
+    18446719883375393695,
+    18446719883373395871,
+    18446712184638226327
+   ],
+   "segment": {
+    "start": 18.62,
+    "end": 23.47,
+    "emotion": "convite",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 114.0), movimento 4.36, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.46,
+    "clip_sem": 0.0116
+   },
+   "vision": {
+    "sem": 0.0116,
+    "neg": {
+     "people": 0.0611,
+     "city": 0.0119,
+     "indoor": 0.7525,
+     "text": 0.0002,
+     "cgi": 0.1628
+    }
+   },
+   "metrics": {
+    "brightness": 114.0,
+    "saturation": 99.2,
+    "motion": 4.36,
+    "cut_ratio": 0.93,
+    "sharp": 10.26
+   },
+   "alternatives": [
+    "mixkit:15536",
+    "mixkit:22729",
+    "mixkit:50867",
+    "mixkit:50864"
+   ]
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "34847",
+   "title": "forest full of trees next to a valley",
+   "page": "https://mixkit.co/free-stock-video/forest-full-of-trees-next-to-a-valley-34847/",
+   "preview_url": "https://assets.mixkit.co/videos/34847/34847-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/34847/34847-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 23.5,
+   "sha256": "c71cba4f95f2983f35e44aadac615710c2d840ac5a241587b7eb09901ddf3cd1",
+   "phashes": [
+    16644827378276894221,
+    12032578409896232461,
+    11745193558159017743
+   ],
+   "segment": {
+    "start": 23.47,
+    "end": 28.7,
+    "emotion": "descanso",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 101.6), movimento 5.54, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.512,
+    "clip_sem": 0.0017
+   },
+   "vision": {
+    "sem": 0.0017,
+    "neg": {
+     "people": 0.0945,
+     "city": 0.0612,
+     "indoor": 0.6974,
+     "text": 0.0013,
+     "cgi": 0.1439
+    }
+   },
+   "metrics": {
+    "brightness": 101.6,
+    "saturation": 109.1,
+    "motion": 5.54,
+    "cut_ratio": 1.37,
+    "sharp": 18.94
+   },
+   "alternatives": [
+    "mixkit:10219",
+    "mixkit:9839",
+    "mixkit:35513",
+    "mixkit:18289"
+   ]
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "41545",
+   "title": "flying over tree covered mountains",
+   "page": "https://mixkit.co/free-stock-video/flying-over-tree-covered-mountains-41545/",
+   "preview_url": "https://assets.mixkit.co/videos/41545/41545-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/41545/41545-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    10.0
+   ],
+   "clip_seconds": 23.6,
+   "sha256": "251d4040b405eed915858913fa06d6dee40484f26071175a28fd8eb346baa9ad",
+   "phashes": [
+    17922111001273893785,
+    17922146185925170204,
+    18210313958635391424
+   ],
+   "segment": {
+    "start": 28.7,
+    "end": 35.85,
+    "emotion": "trabalho",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 114.2), movimento 5.54, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.442,
+    "clip_sem": 0.0118
+   },
+   "vision": {
+    "sem": 0.0118,
+    "neg": {
+     "people": 0.2135,
+     "city": 0.029,
+     "indoor": 0.3939,
+     "text": 0.0011,
+     "cgi": 0.3507
+    }
+   },
+   "metrics": {
+    "brightness": 114.2,
+    "cut_ratio": 1.11,
+    "motion": 5.54,
+    "saturation": 81.6,
+    "sharp": 9.79
+   },
+   "alternatives": [
+    "mixkit:4366",
+    "mixkit:3128",
+    "mixkit:19471",
+    "mixkit:3378"
+   ]
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "34783",
+   "title": "river flowing in a park",
+   "page": "https://mixkit.co/free-stock-video/river-flowing-in-a-park-34783/",
+   "preview_url": "https://assets.mixkit.co/videos/34783/34783-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/34783/34783-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 30.0,
+   "sha256": "08da4ede398bd2d02e09fa1bd32e1ae0199591ea359c690c72fe2c802ad0786e",
+   "phashes": [
+    8277793007369150960,
+    8277793007369150945,
+    8277792457613341153
+   ],
+   "segment": {
+    "start": 35.85,
+    "end": 42.62,
+    "emotion": "caminhada",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 90.3), movimento 5.54, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.494,
+    "clip_sem": 0.0492
+   },
+   "vision": {
+    "sem": 0.0492,
+    "neg": {
+     "people": 0.2165,
+     "city": 0.1036,
+     "indoor": 0.5617,
+     "text": 0.0003,
+     "cgi": 0.0687
+    }
+   },
+   "metrics": {
+    "brightness": 90.3,
+    "saturation": 62.6,
+    "motion": 5.54,
+    "cut_ratio": 1.07,
+    "sharp": 23.31
+   },
+   "alternatives": [
+    "mixkit:3315",
+    "mixkit:15323",
+    "mixkit:32420",
+    "mixkit:51598"
+   ]
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "8335",
+   "title": "sunlight moving between mountains",
+   "page": "https://mixkit.co/free-stock-video/sunlight-moving-between-mountains-8335/",
+   "preview_url": "https://assets.mixkit.co/videos/8335/8335-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/8335/8335-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 16.0,
+   "sha256": "4479ac53a97fea079f07167e3a15ad9bb66c6ab54b05b7db97cf5ff8d6b5b1a2",
+   "phashes": [
+    8361356986566084808,
+    14177825998107625664,
+    13889524291143256256
+   ],
+   "segment": {
+    "start": 42.62,
+    "end": 47.08,
+    "emotion": "mansidão",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 99.0), movimento 5.6, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.492,
+    "clip_sem": 0.0272
+   },
+   "vision": {
+    "sem": 0.0272,
+    "neg": {
+     "people": 0.3056,
+     "city": 0.0232,
+     "indoor": 0.4801,
+     "text": 0.0003,
+     "cgi": 0.1635
+    }
+   },
+   "metrics": {
+    "brightness": 99.0,
+    "cut_ratio": 1.3,
+    "motion": 5.6,
+    "saturation": 89.5,
+    "sharp": 11.4
+   },
+   "alternatives": [
+    "mixkit:3871",
+    "mixkit:16399",
+    "mixkit:28339",
+    "mixkit:30976"
+   ]
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "45268",
+   "title": "trees in the sunlight at the top of a forest",
+   "page": "https://mixkit.co/free-stock-video/trees-in-the-sunlight-at-the-top-of-a-forest-45268/",
+   "preview_url": "https://assets.mixkit.co/videos/45268/45268-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/45268/45268-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 17.6,
+   "sha256": "24d2bcaa5df80c0f2c6262f4c9530adf56e6574a369277b7a20a099b40b8f400",
+   "phashes": [
+    7844879247631756526,
+    7844879247631756526,
+    7844879247363321070
+   ],
+   "segment": {
+    "start": 47.08,
+    "end": 52.31,
+    "emotion": "alívio",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 135.8), movimento 5.88, palavras-chave 3, interpretacao=claude",
+   "scores": {
+    "unary": 3.173,
+    "clip_sem": 0.0002
+   },
+   "vision": {
+    "sem": 0.0002,
+    "neg": {
+     "people": 0.1287,
+     "city": 0.0161,
+     "indoor": 0.5867,
+     "text": 0.0053,
+     "cgi": 0.2629
+    }
+   },
+   "metrics": {
+    "brightness": 135.8,
+    "cut_ratio": 1.84,
+    "motion": 5.88,
+    "saturation": 152.9,
+    "sharp": 38.14
+   },
+   "alternatives": [
+    "mixkit:20233",
+    "mixkit:18736",
+    "mixkit:20749"
+   ]
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "46110",
+   "title": "time lapse of a hiking trail",
+   "page": "https://mixkit.co/free-stock-video/time-lapse-of-a-hiking-trail-46110/",
+   "preview_url": "https://assets.mixkit.co/videos/46110/46110-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/46110/46110-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 12.0,
+   "sha256": "338508a34a2af374aff8d3c366e677a2c5dd6e9509840db8955261e4d02abdc3",
+   "phashes": [
+    17361627328145315506,
+    6362631970141296306,
+    16725274013887157938
+   ],
+   "segment": {
+    "start": 52.31,
+    "end": 58.31,
+    "emotion": "paz",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 132.1), movimento 3.93, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.408,
+    "clip_sem": 0.0011
+   },
+   "vision": {
+    "sem": 0.0011,
+    "neg": {
+     "people": 0.5197,
+     "city": 0.009,
+     "indoor": 0.0197,
+     "text": 0.0012,
+     "cgi": 0.4493
+    }
+   },
+   "metrics": {
+    "brightness": 132.1,
+    "cut_ratio": 1.98,
+    "motion": 3.93,
+    "saturation": 103.5,
+    "sharp": 11.07
+   },
+   "alternatives": [
+    "mixkit:25273",
+    "mixkit:19437",
+    "mixkit:33922",
+    "mixkit:29413"
+   ]
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "17805",
+   "title": "lake in the mountain at sunset",
+   "page": "https://mixkit.co/free-stock-video/lake-in-the-mountain-at-sunset-17805/",
+   "preview_url": "https://assets.mixkit.co/videos/17805/17805-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/17805/17805-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    14.0
+   ],
+   "clip_seconds": 28.8,
+   "sha256": "e1ce966b3a424de30d8b9bd0591907ab838a4c8e4b1eb83562a25f98399dfe26",
+   "phashes": [
+    16240152436986121372,
+    17321016347555040412,
+    17361548744335592604
+   ],
+   "segment": {
+    "start": 58.31,
+    "end": 64.69,
+    "emotion": "esperança",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 127.6), movimento 3.71, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.394,
+    "clip_sem": 0.0678
+   },
+   "vision": {
+    "sem": 0.0678,
+    "neg": {
+     "people": 0.202,
+     "city": 0.0709,
+     "indoor": 0.3763,
+     "text": 0.0005,
+     "cgi": 0.2825
+    }
+   },
+   "metrics": {
+    "brightness": 127.6,
+    "cut_ratio": 1.14,
+    "motion": 3.71,
+    "saturation": 106.0,
+    "sharp": 16.9
+   },
+   "alternatives": [
+    "mixkit:9968",
+    "mixkit:9969",
+    "mixkit:17728",
+    "mixkit:9929"
+   ]
+  }
+ ],
+ "reservation_state": "reserved",
+ "qa": {
+  "diagnostico": [],
+  "limitacoes_pt": [
+   "sem analise visual multimodal: so metricas objetivas (movimento, brilho, saturacao, nitidez, cortes) + titulo/tags; compreensao do roteiro = plano `visual` escrito pelo Claude",
+   "fonte automatica unica: Mixkit (Coverr bloqueia busca por robots; Pexels exige chave)",
+   "ids legados Coverr/Pexels do E01 sem impressao digital: protegidos so por ID e titulo"
+  ],
+  "roteiro_review": {
+   "status": "APROVADO_AUTOMATICO",
+   "issues": [],
+   "checks": {
+    "cenas": 12,
+    "duracao_estimada_s": 64.7,
+    "palavras": 137,
+    "duracao_final_estimada_s": 65.7,
+    "gancho": "Quanto peso você carrega sem contar para ninguém?",
+    "cautela_presente": true,
+    "referencia": "Mateus 11:28–30",
+    "texto_biblico_verificado": true,
+    "sobreposicao_lexical_biblia": 0.26,
+    "similaridade_E01": 0.07,
+    "similaridade_E02": 0.08,
+    "similaridade_E03": 0.09
+   }
+  },
+  "vision": "clip-vit-base-patch32 (local, CPU)",
+  "fontes_ativas": [
+   "mixkit",
+   "wikimedia"
+  ],
+  "fontes_com_chave_ausente": [
+   "pexels",
+   "pixabay"
+  ],
+  "clips": 12,
+  "distinct": 12,
+  "sources": [
+   "mixkit"
+  ],
+  "license_all_ok": true,
+  "duracao_total_estimada": 64.69,
+  "aprovacao_estetica_humana": "NAO_VERIFICADA",
+  "manifest_errors": []
+ },
+ "sequence_utility": 38.638,
+ "trace": {
+  "beam": 400,
+  "weights": {
+   "semantic": 1.0,
+   "technical": 0.6,
+   "motion": 0.5,
+   "mood_fit": 0.8,
+   "duration_fit": 0.5,
+   "continuity": 0.7,
+   "variety": 0.9,
+   "clip": 1.2,
+   "originality": 0.3
+  }
+ }
+}
