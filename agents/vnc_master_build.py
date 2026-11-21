@@ -4,7 +4,7 @@ Downloads the 12 selected free clips (Pexels, Mixkit, Coverr), crops each to 9:1
 cuts them to the scene timings, burns the approved karaoke captions and muxes the existing Johnes Bittar narration
 (downloaded from the already generated take; no new voice, no spend). Output is printed as base64 chunks for the
 owner's private copy; nothing is uploaded, committed or published."""
-import base64, hashlib, io, json, os, re, subprocess, sys, urllib.request
+import base64, hashlib, io, json, os, re, subprocess, sys, time, urllib.request
 from pathlib import Path
 import imageio_ffmpeg, numpy as np
 from PIL import Image
@@ -12,6 +12,7 @@ from PIL import Image
 from agents.e01_v3_voice_captions import build as build_captions
 from agents import vnc_align
 from agents import vnc_style as ST
+from agents import vnc_endings as EN
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"}
@@ -221,6 +222,18 @@ def main(ep=None):
     fp = probe(final)
     if (fp["w"], fp["h"]) != (ST.W, ST.H) or abs(fp["dur"] - T) > 0.1:
         print("VNC_MASTER_ABORT style_lock formato_final", fp, T); sys.exit(8)
+    report["ending"] = {"variant": "A"}
+    forced = os.environ.get("VNC_ENDING_FORCE", "")   # ENSAIO: forca a variante num episodio legado para provar o caminho completo; o gate bloqueia forcado em E03+
+    variant = forced or EN.choose(ep)
+    if variant != "A":   # E03+: familia de finais aprovada (C/D/E); o master com final A acima ja passou pelo style lock e fica como base do audio
+        try:
+            report["ending"] = apply_ending(ep, variant, adur, T, final, at, report); report["ending"]["forced"] = bool(forced)
+        except Exception as e:  # noqa
+            print("VNC_MASTER_ABORT ending", repr(e)[:300]); report["ending"] = {"variant": variant, "error": repr(e)[:300]}
+            print("VNC_MASTER_REPORT", json.dumps(report, ensure_ascii=False)); sys.exit(8)
+        fp = probe(final)
+        if (fp["w"], fp["h"]) != (ST.W, ST.H) or abs(fp["dur"] - T) > 0.1:
+            print("VNC_MASTER_ABORT ending formato_final", fp, T); sys.exit(8)
     report["final"] = {"w": fp["w"], "h": fp["h"], "seconds": round(fp["dur"], 2), "bytes": final.stat().st_size, "sha256": hashlib.sha256(final.read_bytes()).hexdigest()}
     tiles = []
     for sc, s in refit.items():
@@ -240,6 +253,25 @@ def main(ep=None):
     vb = base64.b64encode(final.read_bytes()).decode(); print("VNC_MASTER_VIDEO", len(vb))
     for n in range(0, len(vb), 1800): print("VNC_MASTER_B64", n // 1800, vb[n:n + 1800])
     print("VNC_MASTER_END")
+
+
+def apply_ending(ep, variant, adur, T, final, final_ass_text, report):
+    """Troca o trecho [adur, T] do master por um final da familia aprovada (contrato vnc_endings_v1). Licenca de cada camada conferida aqui; QA objetivo; sem fallback silencioso."""
+    from agents import vnc_curate, vnc_sources
+    c = EN.load_contract(); errs = EN.check_contract(c)
+    if errs: raise RuntimeError("contrato de finais invalido: " + "; ".join(errs))
+    ctx = {"get": vnc_curate.get, "cache": {}, "env": os.environ, "ua": vnc_curate.UA, "sleep": time.sleep, "budget": {}}
+    paths, ev = EN.fetch_layers(variant, WORK, c, get, vnc_curate.hd_url, lambda ent: vnc_sources.rights(ent, ctx))
+    a_path = WORK / "master_A.mp4"; final.rename(a_path)
+    nt = WORK / "ending_notext.mp4"; info = EN.render(FF, WORK / "video.mp4", adur, variant, paths, nt, ST, sys.modules[__name__], c, WORK / "logo_frames" / "static.png")
+    ta, nlines = EN.tail_ass(final_ass_text, adur)
+    if nlines != 3: raise RuntimeError(f"ASS do final: esperados 3 dialogos de credito/CTA, achei {nlines}")
+    tass = WORK / "tail.ass"; tass.write_text(ta, encoding="utf8")
+    qerrs, qres = EN.qa_frame(FF, nt, tass, c)
+    if qerrs: raise RuntimeError("QA do final reprovou: " + "; ".join(qerrs))
+    et = WORK / "ending_text.mp4"; EN.burn_texts(FF, nt, tass, et)
+    EN.splice(FF, a_path, et, adur, T, final)
+    return {"variant": variant, "name": info["name"], "horizon_y": info["horizon_y"], "contract_sha256": EN.contract_sha(), "layers": ev, "qa": qres, "frames": info["frames"]}
 
 
 def build_whisper_timing(cfg, adur, caps, report):

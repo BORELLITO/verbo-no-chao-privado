@@ -5,7 +5,11 @@ from agents import vnc_pipeline_gate as G, vnc_voice as V
 
 POST = {"hook": "Você já esperou demais?", "resumo": "Resumo curto.", "pergunta": "E você?", "hashtags": ["#fé"], "titulo_curto": "Espera?"}
 REP = {"errors": [], "style_lock_errors": [], "final": {"w": 1080, "h": 1920, "seconds": 68.0},
-       "align": {"words": 150, "interpolated": 1, "cross_check": {"median_abs_start_diff": 0.02, "n_gt_300ms": 2, "total": 150}}, "music": {"seconds": 120}}
+       "align": {"words": 150, "interpolated": 1, "cross_check": {"median_abs_start_diff": 0.02, "n_gt_300ms": 2, "total": 150}}, "music": {"seconds": 120},
+       "ending": {"variant": "C", "contract_sha256": None, "layers": [{"id": "18111", "license": "Mixkit Stock Video Free License"}, {"id": "48494", "license": "Mixkit Stock Video Free License"}, {"id": "46316", "license": "Mixkit Stock Video Free License"}],
+                  "qa": {"contraste_credito": 9.0, "contraste_cta1": 11.0, "contraste_cta2": 6.0, "ultimo_quadro_max": 0}}}
+from agents import vnc_endings as _EN
+REP["ending"]["contract_sha256"] = _EN.contract_sha()
 
 
 def mk(number=3, scenes=None, posting=POST):
@@ -25,8 +29,23 @@ class T(unittest.TestCase):
                          ({"align": {}}, "LEGENDA"), ({"music": {"seconds": 30}}, "MUSICA")]:
             self.assertTrue(any(key in e for e in G.post("E03", {**REP, **mut}, d)), key)
 
+    def test_ending_family_gate(self):
+        d, _ = mk(); import copy
+        def rep(**kw):
+            r = copy.deepcopy(REP); r["ending"].update(kw); return r
+        self.assertTrue(any("FINAL" in e and "rotacao" in e for e in G.post("E03", rep(variant="D"), d)))
+        self.assertTrue(any("licenca" in e for e in G.post("E03", rep(layers=[]), d)))
+        self.assertTrue(any("contrato" in e for e in G.post("E03", rep(contract_sha256="x"), d)))
+        self.assertTrue(any("QA" in e for e in G.post("E03", rep(qa={"contraste_cta1": 2.0, "ultimo_quadro_max": 0}), d)))
+        self.assertTrue(any("falha" in e for e in G.post("E03", rep(error="boom"), d)))
+        d2, _ = mk(2); r2 = copy.deepcopy(REP); r2["ending"] = {"variant": "A"}
+        self.assertEqual(G.post("E02", r2, d2), [])
+        r2["ending"] = {"variant": "C"}; self.assertTrue(any("legado" in e for e in G.post("E02", r2, d2)))
+        r2["ending"] = {"variant": "C", "forced": True}; self.assertEqual(G.post("E02", r2, d2), [])      # ensaio em episodio legado
+        self.assertTrue(any("forcada" in e for e in G.post("E03", rep(forced=True), d)))
+
     def test_legacy_episode_not_strict_on_duration(self):
-        d, _ = mk(2); self.assertEqual(G.post("E02", {**REP, "final": {"w": 1080, "h": 1920, "seconds": 91}}, d), [])
+        d, _ = mk(2); self.assertEqual(G.post("E02", {**REP, "ending": {"variant": "A"}, "final": {"w": 1080, "h": 1920, "seconds": 91}}, d), [])
 
     def test_pre_blocks_without_voice_then_checks_sha_and_duration(self):
         d, c = mk(); e = G.pre("E03", d, review=self.ok_review); self.assertTrue(any("VOZ" in x for x in e))

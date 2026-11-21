@@ -1,0 +1,28 @@
+{
+  "_aviso": "Familia de finais de cinema do canal (aprovada pelo dono em 2026-11-21 por previas C, D, E). Valida a partir do E03; E01/E02 mantem o final A legado (style lock). Mudar so com pedido expresso do dono.",
+  "version": 1,
+  "first_episode": 3,
+  "order": ["C", "D", "E"],
+  "duration_s": 9.5,
+  "fps": 30,
+  "push_in": 0.045,
+  "horizon": {"y_min": 600, "y_max": 1100, "min_peak": 1.0, "min_ratio": 4.0},
+  "qa": {"min_contrast_white": 4.5, "min_contrast_color": 3.0, "max_bg_luminance_p90": 0.35, "max_last_frame_value": 10, "qa_time_s": 7.2},
+  "variants": {
+    "C": {"name": "SOL_QUE_NASCE", "mode": "horizon", "dim": 0.45, "tint": [30, 18, 40],
+          "tail": {"book": 2.2, "word": 2.8, "line": 3.4},
+          "layers": {"bokeh": {"id": 18111, "window": [0.3, 1.2, 2.4, 3.4, 0.5]},
+                     "flare": {"id": 48494, "window": [1.6, 2.4, 2.8, 3.8, 1.0]},
+                     "glitter": {"id": 46316, "window": [2.8, 4.0, 9.5, 9.5, 0.55]}}},
+    "D": {"name": "CHUVA_DE_OURO", "mode": "tail", "dim": 0.55, "tint": [12, 9, 22],
+          "tail": {"sun": 2.7, "book": 2.9, "word": 3.2, "line": 3.6},
+          "layers": {"rain": {"id": 30548, "window": [0.6, 1.6, 3.0, 4.4, 0.6]},
+                     "sparks": {"id": 30749, "window": [2.2, 2.8, 3.4, 4.4, 0.85]},
+                     "glitter": {"id": 46317, "window": [2.6, 4.0, 8.0, 9.5, 0.5]}}},
+    "E": {"name": "FEIXE_DE_LUZ", "mode": "tail", "dim": 0.6, "tint": [12, 9, 22],
+          "tail": {"sun": 2.6, "book": 2.8, "word": 3.1, "line": 3.6},
+          "layers": {"beam": {"id": 47532, "window": [0.4, 1.6, 3.2, 5.0, 0.9]},
+                     "flare": {"id": 48494, "window": [2.2, 2.7, 3.2, 4.2, 0.8]},
+                     "dust": {"id": 47285, "window": [1.8, 3.0, 8.0, 9.5, 0.8]}}}
+  }
+}

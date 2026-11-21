@@ -101,6 +101,25 @@ def pre(ep, root=ROOT, review=None, seconds=None):
     return errs
 
 
+def _ending_errors(ep, report, cfg):
+    """Final de cinema: E01/E02 = A (legado). E03+ = variante da rotacao do contrato, camadas com licenca conferida no build e QA de contraste aprovado."""
+    from agents import vnc_endings as EN
+    e = report.get("ending") or {}
+    if e.get("forced") and strict(cfg): return ["FINAL: variante forcada (ensaio) nao vale em episodio novo"]
+    if not strict(cfg):
+        return [] if (e.get("variant", "A") == "A" or e.get("forced")) else [f"FINAL: episodio legado deve manter o final A (veio {e.get('variant')})"]
+    errs, want = [], EN.choose(ep)
+    if e.get("error"): return [f"FINAL: falha na montagem do final {want}: {e['error'][:120]}"]
+    if e.get("variant") != want: errs.append(f"FINAL: variante {e.get('variant')} != {want} (rotacao do contrato)")
+    if e.get("contract_sha256") != EN.contract_sha(): errs.append("FINAL: contrato de finais diferente do aprovado")
+    need = set(str(i) for i in EN.layer_ids(want).values()); have = {str(x.get("id")) for x in e.get("layers", []) if "Free License" in str(x.get("license", ""))}
+    if need != have: errs.append(f"FINAL: licenca das camadas de luz nao conferida {sorted(need - have)}")
+    q = e.get("qa") or {}
+    if not q or q.get("ultimo_quadro_max") is None or any(k.startswith("contraste_") and v < (4.5 if k == "contraste_cta1" else 3.0) for k, v in q.items() if isinstance(v, (int, float))):
+        errs.append("FINAL: QA de contraste/preto ausente ou reprovado")
+    return errs
+
+
 def post(ep, report, root=ROOT):
     errs, cfg = [], _cfg(ep, root)
     if report.get("errors"): errs.append(f"MONTAGEM: cenas com erro {report['errors']}")
@@ -114,6 +133,7 @@ def post(ep, report, root=ROOT):
         if cc.get("median_abs_start_diff", 9) > 0.08: errs.append(f"LEGENDA: divergencia mediana {cc['median_abs_start_diff']}s > 0.08")
         if cc.get("n_gt_300ms", 99) > 0.05 * max(cc.get("total", 1), 1): errs.append(f"LEGENDA: {cc['n_gt_300ms']} palavras com divergencia > 300ms")
     if a.get("interpolated", 0) > 0.05 * max(a.get("words", 1), 1): errs.append(f"LEGENDA: {a['interpolated']} palavras interpoladas demais")
+    errs += _ending_errors(ep, report, cfg)
     m = report.get("music") or {}
     if f and m.get("seconds") and m["seconds"] < f.get("seconds", 0): errs.append("MUSICA: trilha mais curta que o video")
     return errs

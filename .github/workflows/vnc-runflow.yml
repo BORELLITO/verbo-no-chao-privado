@@ -19,6 +19,7 @@ jobs:
       selection: ${{ steps.cfg.outputs.selection }}
       stages: ${{ steps.cfg.outputs.stages }}
       timing_override: ${{ steps.cfg.outputs.timing_override }}
+      ending_force: ${{ steps.cfg.outputs.ending_force }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
@@ -26,17 +27,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install --disable-pip-version-check pytest pillow numpy
+      - run: python -m pip install --disable-pip-version-check pytest pillow numpy opencv-python-headless
       - name: Config
         id: cfg
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json
           c = json.load(open("run/runflow.json"))
-          print("episode=" + c["episode"]); print("selection=" + c.get("selection", "")); print("stages=" + ",".join(c["stages"])); print("timing_override=" + c.get("timing_override", ""))
+          print("episode=" + c["episode"]); print("selection=" + c.get("selection", "")); print("stages=" + ",".join(c["stages"])); print("timing_override=" + c.get("timing_override", "")); print("ending_force=" + c.get("ending_force", ""))
           PY
       - name: Testes das travas
-        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py tests/test_vnc_pipeline_gate.py tests/test_vnc_script_review.py tests/test_vnc_cover_gate.py
+        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py tests/test_vnc_pipeline_gate.py tests/test_vnc_script_review.py tests/test_vnc_cover_gate.py tests/test_vnc_endings.py
       - name: Preflight (clipes, trilha, workflows, proibicoes)
         run: |
           MUSIC="$(python -c 'import json;print(json.load(open("run/runflow.json")).get("music",""))')"
@@ -49,7 +50,7 @@ jobs:
     needs: gates
     if: contains(needs.gates.outputs.stages, 'build')
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
@@ -57,11 +58,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy
+      - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy opencv-python-headless
       - name: Montagem
         run: |
           python -m pip install --disable-pip-version-check faster-whisper
-          VNC_TIMING_OVERRIDE="${{ needs.gates.outputs.timing_override }}" VNC_EPISODE="${{ needs.gates.outputs.episode }}" VNC_FINAL=1 VNC_SELECTION="${{ needs.gates.outputs.selection }}" python -m agents.vnc_master_build
+          VNC_ENDING_FORCE="${{ needs.gates.outputs.ending_force }}" VNC_TIMING_OVERRIDE="${{ needs.gates.outputs.timing_override }}" VNC_EPISODE="${{ needs.gates.outputs.episode }}" VNC_FINAL=1 VNC_SELECTION="${{ needs.gates.outputs.selection }}" python -m agents.vnc_master_build
       - name: Agente-mestre (video, legenda, musica, postagem)
         run: python -m agents.vnc_pipeline_gate post "${{ needs.gates.outputs.episode }}" /tmp/master/report.json
   cover:
@@ -76,7 +77,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy
+      - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy opencv-python-headless
       - run: |
           VNC_EPISODE="${{ needs.gates.outputs.episode }}" python -m agents.vnc_cover
   sync:
