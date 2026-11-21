@@ -22,3 +22,8 @@ Etapas: `gates` (sempre) -> `build` -> `sync` -> `cover`. Qualquer falha em `gat
 - Gate novo `check_episode_config`: config completa, sha256 completo da voz, 12 cenas com texto, quadros da capa precisam ser clipes da selecao (registrados, sem repeticao).
 - Autoteste de regressao: `timing_override: whisper` em `run/runflow.json` roda o E01 pelo caminho novo (run 44852037830): 86,17 s, 182 palavras alinhadas (0 interpoladas), conferencia small x base mediana 0,02 s, 43 cues. Nao e video para publicar.
 - Sync independente (contrato) segue so para E01; episodios novos usam a conferencia small x base dentro do build.
+
+## Identidade fixa travada (2026-11-21)
+- `agents/vnc_style.py` (constantes e funcoes do estilo) + `contracts/vnc_style_lock_v1.json` (valores aprovados no E01). Logo (posicao/tamanho/opacidade/animacao), final de cinema (tempos), legenda (estilo/posicao/karaoke lilas), credito/CTA, cadeia de audio/video e formato final sao conferidos: testes -> gates -> build (aborta com exit 8 `style_lock`).
+- Regressao E01 (contrato) no GitHub, run 44888717691: style_lock_errors [], 1080x1920, 86,17 s, folha de quadros igual ao aprovado. O sha do mp4 difere do v2 (reencode), a estrutura nao.
+- Voz: `vnc-ingest-voice.yml` (unico com escrita) grava `assets/voice/<EP>.mp3` com sha conferido e apaga o link assinado; o build usa o arquivo. Gate `check_voice_source`.
