@@ -108,7 +108,7 @@ for _k,_v in OV.items():
 OVS={k:Ov(v) for k,v in OV.items()}
 OVT={'bokeh':0.3,'flare':1.6,'glitter':2.8}
 SEEN={k:0 for k in OVS}
-p=subprocess.Popen([FF,'-y','-loglevel','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-c:v','libx264','-preset','veryfast','-crf','30','-vf','scale=540:960','-pix_fmt','yuv420p','/tmp/preview_out/full.mp4'],stdin=subprocess.PIPE)
+p=subprocess.Popen([FF,'-y','-loglevel','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-c:v','libx264','-preset','veryfast','-crf','26','-vf','scale=720:1280','-pix_fmt','yuv420p','/tmp/preview_out/full.mp4'],stdin=subprocess.PIPE)
 for i in range(int((LEAD+T)*FPS)):
     t=i/FPS-LEAD
     if t<0:
@@ -124,7 +124,7 @@ for i in range(int((LEAD+T)*FPS)):
         img=push(base)*(1-k)+push(blur)*k
         img=img*(1-0.45*k)+np.array([30,18,40],np.float32)*0.45*k   # a cena escurece, mas continua visivel
         img=img*(1-0.45*vg*ss(t,1.0,3.5))                              # base mais escura p/ legibilidade do texto
-        for kk,(a,b,c,d,pk) in {'bokeh':(0.3,1.2,2.4,3.4,0.7),'flare':(1.6,2.4,2.8,3.8,0.85)}.items():
+        for kk,(a,b,c,d,pk) in {'bokeh':(0.3,1.2,2.4,3.4,0.5),'flare':(1.6,2.4,2.8,3.8,1.0)}.items():
             if kk in OVS and a<=t<=d:
                 fr=OVS[kk].next(); op=pk*min(ss(t,a,b),1-ss(t,c,d)); img=screen(img,fr,op)
         tl=0.8*(1-ss(t,0,0.9))

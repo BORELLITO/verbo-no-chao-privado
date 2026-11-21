@@ -1,1 +1,3 @@
-{"queries": [], "preview_layers": {"bokeh": 18111, "flare": 48494, "glitter": 46316}, "nonce": "overlays-4"}
+{"queries": [], "preview_layers": {"bokeh": 18111, "flare": 48494, "glitter": 46316},
+ "preview_variants": {"D": {"layers": {"rain": 30548, "sparks": 30749, "glitter": 46317}}, "E": {"layers": {"beam": 47532, "flare": 48494, "dust": 47285}}},
+ "nonce": "overlays-5"}

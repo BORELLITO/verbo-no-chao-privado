@@ -25,6 +25,7 @@ jobs:
       - name: Previa de final com camadas filmadas
         run: |
           if python -c "import json,sys;sys.exit(0 if json.load(open('run/overlays.json')).get('preview_layers') else 3)"; then python -m agents.vnc_final_preview; else echo sem preview_layers; fi
+          if python -c "import json,sys;sys.exit(0 if json.load(open('run/overlays.json')).get('preview_variants') else 3)"; then python -m agents.vnc_final_preview2; fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
