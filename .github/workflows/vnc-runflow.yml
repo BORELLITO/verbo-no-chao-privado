@@ -1,0 +1,92 @@
+name: VNC Runflow central (privado)
+# Entrada unica: edite run/runflow.json e faça push. Etapas: gates -> build -> sync -> cover.
+# Nada publica, nada gasta, nada gera voz. Falha em qualquer trava bloqueia as etapas seguintes.
+on:
+  push:
+    branches: ["main"]
+    paths: ["run/runflow.json"]
+permissions:
+  contents: read
+concurrency:
+  group: vnc-runflow
+  cancel-in-progress: false
+jobs:
+  gates:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    outputs:
+      episode: ${{ steps.cfg.outputs.episode }}
+      selection: ${{ steps.cfg.outputs.selection }}
+      stages: ${{ steps.cfg.outputs.stages }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check pytest
+      - name: Config
+        id: cfg
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          c = json.load(open("run/runflow.json"))
+          print("episode=" + c["episode"]); print("selection=" + c["selection"]); print("stages=" + ",".join(c["stages"]))
+          PY
+      - name: Testes das travas
+        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py
+      - name: Preflight (clipes, trilha, workflows, proibicoes)
+        run: |
+          MUSIC="$(python -c 'import json;print(json.load(open("run/runflow.json")).get("music",""))')"
+          python -m agents.vnc_gates preflight "${{ steps.cfg.outputs.episode }}" "${{ steps.cfg.outputs.selection }}" ${MUSIC:+--music "$MUSIC"}
+  build:
+    needs: gates
+    if: contains(needs.gates.outputs.stages, 'build')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy
+      - name: Montagem
+        run: |
+          if [ "${{ needs.gates.outputs.episode }}" != "E01" ]; then echo "VNC_RUNFLOW_BLOCKED ENGINE_NOT_GENERALIZED ${{ needs.gates.outputs.episode }}"; exit 6; fi
+          export VNC_E01_AUDIO_URL="$(cat run/audio_link.txt)"
+          VNC_FINAL=1 VNC_SELECTION="${{ needs.gates.outputs.selection }}" python -m agents.e01_master_build
+  cover:
+    needs: gates
+    if: contains(needs.gates.outputs.stages, 'cover')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy
+      - run: |
+          if [ "${{ needs.gates.outputs.episode }}" != "E01" ]; then echo "VNC_RUNFLOW_BLOCKED ENGINE_NOT_GENERALIZED"; exit 6; fi
+          python -m agents.e01_cover
+  sync:
+    needs: gates
+    if: contains(needs.gates.outputs.stages, 'sync')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check faster-whisper imageio-ffmpeg
+      - run: |
+          if [ "${{ needs.gates.outputs.episode }}" != "E01" ]; then echo "VNC_RUNFLOW_BLOCKED ENGINE_NOT_GENERALIZED"; exit 6; fi
+          python -m agents.e01_sync_check
