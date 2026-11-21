@@ -14,6 +14,13 @@
     "coverr-mountain-top-trail-9791"
    ],
    "_nota": "capa do E01 nao esta no repositorio: so ids protegidos; dhash NAO VERIFICADO"
+  },
+  "E03": {
+   "dhash": "11111100111010001111100011111000110110001111100011110000111110001100100001101000001110001001100011001000111000001111000011100100",
+   "ids": [
+    "20230",
+    "35532"
+   ]
   }
  }
 }
