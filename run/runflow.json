@@ -1,7 +1,7 @@
 {
-  "episode": "E02",
+  "episode": "E01",
   "selection": "contracts/e01_v5_scene_clip_selection_landscape.json",
   "music": "543",
-  "stages": ["gates", "build"],
-  "nonce": "teste-bloqueio-20261120"
+  "stages": ["gates"],
+  "nonce": "estado-seguro-pos-auditoria"
 }
