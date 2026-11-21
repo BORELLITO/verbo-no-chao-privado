@@ -23,7 +23,7 @@ HAND_OK = {"hand", "hands"}
 MOODS = {"dark": (35, 105), "mid": (70, 150), "bright": (115, 210)}  # faixa de brilho medio (0-255) aceita por clima
 
 
-def get(url, binary=True, timeout=60, limit=25_000_000, retries=4):
+def get(url, binary=True, timeout=60, limit=25_000_000, retries=2):
     for i in range(retries + 1):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
@@ -32,7 +32,7 @@ def get(url, binary=True, timeout=60, limit=25_000_000, retries=4):
         except urllib.error.HTTPError as e:
             if e.code not in (429, 503) or i == retries:
                 raise
-            time.sleep(4 * (2 ** i))  # backoff: 4, 8, 16, 32 s
+            time.sleep(6 * (2 ** i))  # backoff: 6, 12 s
     if len(data) > limit:
         raise RuntimeError("too_large")
     return data if binary else data.decode("utf8", "ignore")
@@ -185,16 +185,20 @@ def run(ep):
     def list_kw(kw):
         slug = re.sub(r"[^a-z0-9]+", "-", kw.lower()).strip("-")
         out = []
-        for page in (1, 2, 3):
+        for page in (1, 2):
             try:
                 out += parse_listing(get(f"https://mixkit.co/free-stock-video/{slug}/" + (f"?page={page}" if page > 1 else ""), False))
             except Exception as e:  # noqa
                 print("VNC_CURATE_WARN listagem", slug, page, repr(e)[:60])
         return out
     kws = sorted({k for s in plan.values() for k in s["queries"]})
-    for k in kws:  # serial e espacado: o Mixkit devolve 429 sob paralelismo
+    t0 = time.time()
+    for i, k in enumerate(kws):  # serial e espacado: o Mixkit devolve 429 sob paralelismo; teto de 9 min na fase de listagem
+        if time.time() - t0 > 540:
+            print("VNC_CURATE_WARN teto de tempo da listagem; restantes ignorados:", kws[i:]); break
         listing[k] = list_kw(k)
-        time.sleep(1.5)
+        print("VNC_CURATE_LIST", k, len(listing[k]), f"{time.time() - t0:.0f}s", flush=True)
+        time.sleep(2.0)
     result, cache, rejected, allc, stats = {}, {}, {}, {}, {}
     for sid in sorted(plan):
         s = plan[sid]; pool = {}
