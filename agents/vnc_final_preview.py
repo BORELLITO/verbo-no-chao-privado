@@ -108,7 +108,7 @@ for _k,_v in OV.items():
 OVS={k:Ov(v) for k,v in OV.items()}
 OVT={'bokeh':0.3,'flare':1.6,'glitter':2.8}
 SEEN={k:0 for k in OVS}
-p=subprocess.Popen(['ffmpeg','-y','-loglevel','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-c:v','libx264','-preset','veryfast','-crf','30','-vf','scale=540:960','-pix_fmt','yuv420p','/tmp/preview_out/full.mp4'],stdin=subprocess.PIPE)
+p=subprocess.Popen([FF,'-y','-loglevel','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-c:v','libx264','-preset','veryfast','-crf','30','-vf','scale=540:960','-pix_fmt','yuv420p','/tmp/preview_out/full.mp4'],stdin=subprocess.PIPE)
 for i in range(int((LEAD+T)*FPS)):
     t=i/FPS-LEAD
     if t<0:
