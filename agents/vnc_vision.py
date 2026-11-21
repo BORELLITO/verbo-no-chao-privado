@@ -60,6 +60,23 @@ def positives(unit):
 
 
 # ---------- backend real (so no runner) ----------
+def to_vec(out, proj_in, proj_out):
+    """Compat. de versoes do transformers: get_*_features pode devolver Tensor (<=4.x) ou ModelOutput (5.x). Retorna tensor [n, d] ja projetado.
+    proj_in = dimensao de entrada da projecao; proj_out = callable (Linear)."""
+    if hasattr(out, "shape"):
+        t = out
+    else:
+        t = getattr(out, "image_embeds", None)
+        if t is None: t = getattr(out, "text_embeds", None)
+        if t is None: t = getattr(out, "pooler_output", None)
+        if t is None: t = out[0]
+    if len(t.shape) == 3:          # last_hidden_state -> primeiro token
+        t = t[:, 0]
+    if t.shape[-1] == proj_in:     # ainda nao projetado
+        t = proj_out(t)
+    return t
+
+
 class Clip:
     def __init__(self):
         import torch
@@ -69,12 +86,12 @@ class Clip:
 
     def embed_images(self, imgs):
         with self.torch.no_grad():
-            f = self.m.get_image_features(**self.p(images=imgs, return_tensors="pt"))
+            f = to_vec(self.m.get_image_features(**self.p(images=imgs, return_tensors="pt")), self.m.visual_projection.in_features, self.m.visual_projection)
         return f.tolist()
 
     def embed_texts(self, texts):
         with self.torch.no_grad():
-            f = self.m.get_text_features(**self.p(text=texts, return_tensors="pt", padding=True))
+            f = to_vec(self.m.get_text_features(**self.p(text=texts, return_tensors="pt", padding=True)), self.m.text_projection.in_features, self.m.text_projection)
         return f.tolist()
 
 
@@ -84,7 +101,12 @@ _BACKEND = {"obj": None, "err": None}
 def backend():
     if _BACKEND["obj"] is None and _BACKEND["err"] is None:
         try:
-            _BACKEND["obj"] = Clip()
+            c = Clip()
+            from PIL import Image
+            t, i = c.embed_texts(["a test"]), c.embed_images([Image.new("RGB", (224, 224), (90, 90, 90))])   # autoteste: dimensoes e valores finitos
+            if len(t[0]) != len(i[0]) or not all(math.isfinite(x) for x in t[0] + i[0]):
+                raise RuntimeError(f"autoteste CLIP falhou: dims {len(t[0])}/{len(i[0])}")
+            _BACKEND["obj"] = c
         except Exception as e:  # noqa
             _BACKEND["err"] = repr(e)[:120]
     return _BACKEND["obj"]

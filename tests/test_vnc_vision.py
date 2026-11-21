@@ -46,3 +46,24 @@ class Vision(unittest.TestCase):
     def test_positives_use_plan_and_claude_meaning(self):
         self.assertEqual(V.positives({"meaning_en": "a lone traveller in fog", "queries": ["fog", "mist"], "prefer": ["valley"]})[0], "a cinematic video frame of a lone traveller in fog")
         self.assertEqual(V.positives({}), [V.GENERIC_POS])
+
+
+class Shape:
+    def __init__(self, *sh): self.shape = sh
+    def __getitem__(self, i): return Shape(self.shape[0], self.shape[2]) if isinstance(i, tuple) else self
+    def tolist(self): return []
+
+
+class Out:
+    def __init__(self, **kw): self.__dict__.update(kw)
+    def __getitem__(self, i): return self.pooler_output
+
+
+class Compat(unittest.TestCase):
+    def test_tensor_modeloutput_and_unprojected(self):
+        proj = lambda t: Shape(t.shape[0], 512)
+        self.assertEqual(V.to_vec(Shape(2, 512), 768, proj).shape, (2, 512))                       # tensor ja projetado
+        self.assertEqual(V.to_vec(Out(pooler_output=Shape(2, 512)), 768, proj).shape, (2, 512))   # ModelOutput (transformers 5.x)
+        self.assertEqual(V.to_vec(Out(pooler_output=Shape(2, 768)), 768, proj).shape, (2, 512))   # pooler sem projecao
+        self.assertEqual(V.to_vec(Out(image_embeds=Shape(3, 512)), 768, proj).shape, (3, 512))
+        self.assertEqual(V.to_vec(Shape(2, 50, 768), 768, proj).shape, (2, 512))                   # hidden states
