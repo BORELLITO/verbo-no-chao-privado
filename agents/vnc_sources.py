@@ -93,6 +93,14 @@ def pixabay_entries(api_json):
 
 # ---------- descoberta (rede) ----------
 def discover(source, kw, ctx):
+    """Falha de uma fonte nunca derruba a curadoria: registra aviso e segue com as demais."""
+    try:
+        return _discover(source, kw, ctx)
+    except Exception as e:  # noqa
+        print("VNC_CURATE_WARN fonte", source, kw, repr(e)[:80]); return []
+
+
+def _discover(source, kw, ctx):
     """ctx: {get(url,binary,..), cache(dict), env, sleep}. Retorna lista de entradas."""
     get, cache = ctx["get"], ctx["cache"]; env = ctx.get("env", os.environ); slug = re.sub(r"[^a-z0-9]+", "-", kw.lower()).strip("-")
     if source == "mixkit":
@@ -107,7 +115,7 @@ def discover(source, kw, ctx):
     if source == "coverr":
         idx = cache.setdefault("coverr_index", {})
         if not idx.get("slugs") or time.time() - idx.get("ts", 0) > 7 * 86400:
-            xml = get(COVERR_SITEMAP, False, limit=6_000_000)
+            xml = get(COVERR_SITEMAP, False, limit=60_000_000, timeout=120)
             idx["slugs"] = [u.rsplit("/", 1)[-1] for u in re.findall(r"<loc>([^<]+/videos/[^<]+)</loc>", xml)]; idx["ts"] = time.time()
         ids = cache.setdefault("coverr_ids", {}); out = []; fetched = 0
         for sl, sc in coverr_match(idx["slugs"], kw, 14):
