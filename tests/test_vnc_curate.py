@@ -108,3 +108,11 @@ class Narrativa(unittest.TestCase):
         self.assertFalse(C.narrative_ok(S.title_themes("handwriting a note"), S.themes_of(["hands", "holding"])))
         self.assertTrue(C.narrative_ok(S.title_themes("hands holding a candle"), S.themes_of(["hands"])))
         self.assertFalse(C.title_ok("scrabble by fire")[0])
+
+
+class MoneyVeto(unittest.TestCase):
+    def test_money_titles_are_vetoed(self):
+        from agents import vnc_curate as C
+        for t in ("Tower of 100 dollars being burned with a flame", "Coins falling on a table", "Cash in a wallet"):
+            self.assertFalse(C.title_ok(t)[0], t)
+        self.assertTrue(C.title_ok("Misty mountains at sunrise")[0])
