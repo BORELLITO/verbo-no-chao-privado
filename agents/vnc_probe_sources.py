@@ -66,3 +66,27 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+def coverr_deep():
+    """Sonda dirigida: como o Coverr marca IA / restricoes / licenca por clipe (estrutura real das paginas)."""
+    out = {}
+    s, h, sm = fetch("https://coverr.co/sitemap/sitemap_videos.xml", 60_000_000)
+    slugs = [u.rsplit("/", 1)[-1] for u in re.findall(r"<loc>([^<]+/videos/[^<]+)</loc>", sm)]
+    out["n_slugs"] = len(slugs)
+    pick = [x for x in slugs if x.startswith(("majestic-mechanical-dragon", "dramatic-mountain-peak-under-dark"))][:2] + ["raindrops-on-the-window-amlapwfzyf"] + slugs[300:303] + slugs[-3:]
+    pages = {}
+    for sl in pick:
+        s, h, p = fetch("https://coverr.co/videos/" + sl, 6_000_000)
+        keys = sorted(set(re.findall(r'"([A-Za-z_]{3,32})":', p)))
+        sd = re.findall(r'<script class="structured-data-([A-Za-z]+)" type="application/ld\+json">(.*?)</script>', p, re.S)
+        pages[sl] = {"status": s, "cdn": list(dict.fromkeys(re.findall(r"cdn\.coverr\.co/videos/([^/\"?\\ ]+)/", p)))[:3], "sd_types": [t for t, _ in sd],
+                     "videoobject": next((j[:1400] for t, j in sd if "Video" in t), None), "markers": snip(re.sub(r"<style.*?</style>", "", p, flags=re.S), r"(ai[- ]generated|generated with|created with ai|made with ai|premium|editorial use|model release|restricted|coverr\+|\bpro\b)", 160, 4),
+                     "meta": re.findall(r'<meta (?:property|name)="((?:og|twitter):(?:video|type)[^"]*)" content="([^"]{0,120})"', p)[:6], "keys_ai": [k for k in keys if re.search(r"ai|gener|premium|pro$|licen|type|source", k, re.I)][:30]}
+    out["pages"] = pages
+    s, h, lic = fetch("https://coverr.co/license", 3_000_000)
+    txt = re.sub(r"\s+", " ", re.sub(r"<(script|style).*?</\1>", "", lic, flags=re.S)); txt = re.sub(r"<[^>]+>", " ", txt)
+    out["license_page"] = [s, len(txt), re.sub(r"\s+", " ", txt)[:2500]]
+    print("VNC_PROBE_COVERR", json.dumps(out, ensure_ascii=False))
+    import pathlib; pathlib.Path("/tmp/curate_out").mkdir(exist_ok=True); pathlib.Path("/tmp/curate_out/probe_coverr.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    return 0

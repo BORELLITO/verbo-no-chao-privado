@@ -275,6 +275,9 @@ def run(ep, mode=None):
     if mode == "probe":
         from agents import vnc_probe_sources as PR
         return PR.main()
+    if mode == "probe_coverr":
+        from agents import vnc_probe_sources as PR
+        return PR.coverr_deep()
     if mode == "confirm":
         print("VNC_MEMORY_CONFIRMED", MEM.confirm(ep)); return 0
     if mode == "release":
