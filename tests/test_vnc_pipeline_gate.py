@@ -52,9 +52,24 @@ class VoiceT(unittest.TestCase):
         del os.environ["ELEVENLABS_API_KEY"]; self.assertEqual(V.run("E03", "check", d, api, lambda k: 9999, lambda p: 1), 4); os.environ["ELEVENLABS_API_KEY"] = "k"
         self.assertEqual(V.run("E03", "check", d, api, lambda k: 5, lambda p: 1), 7)
         self.assertEqual(V.run("E03", "check", d, api, lambda k: 9999, lambda p: 1), 0); self.assertFalse((d / "assets/voice/E03.mp3").exists())
-        self.assertEqual(V.run("E03", "generate", d, api, lambda k: 9999, lambda p: 58), 0)
+        
+        with mock.patch.object(G, "pre_voice", return_value=[]): self.assertEqual(V.run("E03", "generate", d, api, lambda k: 9999, lambda p: 58), 0)
         self.assertEqual((d / "assets/voice/E03.mp3").read_bytes(), b"MP3DATA"); self.assertEqual(len(json.loads((d / "episodes/E03.json").read_text())["audio_sha256"]), 64)
         self.assertEqual(V.run("E03", "generate", d, api, lambda k: 9999, lambda p: 58), 5)   # nunca regenera
 
 
 if __name__ == "__main__": unittest.main()
+
+
+class ExtraT(unittest.TestCase):
+    def test_youtube_title_60_and_hashtags(self):
+        d, c = mk(); c["posting"]["titulo_curto"] = "x" * 70; self.assertTrue(any("youtube_titulo" in e for e in G.bloco_postagem(c)))
+        d, c = mk(); c["posting"]["hashtags"] = ["#a"] * 6; self.assertTrue(any("hashtags" in e for e in G.bloco_postagem(c)))
+
+    def test_pre_voice_blocks_without_selection_and_voice_generate_spends_nothing(self):
+        d, c = mk(); ok = lambda ep: {"status": "APROVADO_AUTOMATICO", "issues": []}
+        e = G.pre_voice("E03", d, review=ok); self.assertTrue(any("CLIPES" in x for x in e))
+        os.environ["ELEVENLABS_API_KEY"] = "k"; api = mock.Mock(return_value=b"X")
+        with mock.patch.object(G, "pre_voice", return_value=["CLIPES: x"]):
+            self.assertEqual(V.run("E03", "generate", d, api, lambda k: 9999, lambda p: 58), 8)
+        api.assert_not_called(); self.assertFalse((d / "assets/voice/E03.mp3").exists())

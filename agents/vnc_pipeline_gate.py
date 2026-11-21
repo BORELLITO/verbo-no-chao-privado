@@ -8,7 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TAIL_S = 9.5
 BAND = (62.0, 72.0)
-PLAT_LIMITS = {"tiktok": 2200, "youtube_titulo": 100, "youtube_descricao": 5000, "instagram": 2200}
+PLAT_LIMITS = {"tiktok": 400, "youtube_titulo": 60, "youtube_descricao": 5000, "instagram": 2200}   # modelo E01 aprovado: TikTok ~340, titulo YouTube <=60
+MAX_HASHTAGS = 5
 
 
 def _cfg(ep, root=ROOT):
@@ -33,6 +34,8 @@ def bloco_postagem(cfg):
     for k, lim in PLAT_LIMITS.items():
         if len(t[k]) > lim:
             errs.append(f"POSTAGEM: {k} com {len(t[k])} > {lim} caracteres")
+    if len(p["hashtags"]) > MAX_HASHTAGS:
+        errs.append(f"POSTAGEM: {len(p['hashtags'])} hashtags > {MAX_HASHTAGS}")
     return errs
 
 
@@ -42,7 +45,7 @@ def render_posting(cfg):
     return {
         "tiktok": f"{hook} {p['resumo']} {p['pergunta']} {tags}",
         "instagram": f"{hook}\n\n{p['resumo']}\n\n{p['pergunta']} Conte nos comentários.\n\n💬 Comente\n📩 Envie para alguém que está esperando\n🔖 Salve para voltar depois\n\n{tags}",
-        "youtube_titulo": f"{p.get('titulo_curto') or hook.rstrip('?')} | {ref}"[:100],
+        "youtube_titulo": f"{p.get('titulo_curto') or hook.rstrip('?')} | {ref}",
         "youtube_descricao": f"{ref}: {p['resumo']}\n\n{p['pergunta']} Conte nos comentários e inscreva-se no canal.\n\n{tags} #Shorts",
     }
 
@@ -52,6 +55,22 @@ def render_posting_file(ep, cfg):
     return (f'VERBO NO CHÃO — {ep} "{" ".join(cfg["title_lines"])}" — {cfg["reference"]}\nLEGENDAS DE POSTAGEM POR PLATAFORMA (publicar é decisão do dono)\n\n'
             f'=== TIKTOK ({len(t["tiktok"])} caracteres) ===\n{t["tiktok"]}\n\n=== INSTAGRAM REELS ===\n{t["instagram"]}\n\n'
             f'=== YOUTUBE SHORTS ===\nTítulo ({len(t["youtube_titulo"])} caracteres):\n{t["youtube_titulo"]}\n\nDescrição:\n{t["youtube_descricao"]}\n')
+
+
+def pre_voice(ep, root=ROOT, review=None):
+    """Nada de gastar credito antes de provar que o resto da linha fecha: roteiro, postagem e 12 clipes ja selecionados/registrados."""
+    from agents import vnc_gates as GT
+    cfg, errs = _cfg(ep, root), []
+    if review is None:
+        from agents import vnc_script_review as R; review = R.review
+    rep = review(ep)
+    if rep["status"] == "REPROVADO": errs += [f"ROTEIRO: {i['code']} {i['msg']}" for i in rep["issues"]]
+    errs += bloco_postagem(cfg)
+    if strict(cfg):
+        sp = root / (cfg.get("selection") or f"contracts/{ep.lower()}_scene_clip_selection.json")
+        if not sp.exists(): errs.append("CLIPES: selecao de 12 clipes ausente (rode a curadoria antes da voz)")
+        else: errs += ["CLIPES: " + e for e in GT.check_selection(json.loads(sp.read_text(encoding="utf8")), ep, GT.load_registry(root / "contracts" / "vnc_clip_registry_v1.json"))]
+    return errs
 
 
 def pre(ep, root=ROOT, review=None, seconds=None):
@@ -102,7 +121,7 @@ def post(ep, report, root=ROOT):
 
 def main(argv):
     cmd, ep = argv[0], argv[1]
-    errs = pre(ep) if cmd == "pre" else post(ep, json.loads(Path(argv[2]).read_text(encoding="utf8")))
+    errs = pre(ep) if cmd == "pre" else pre_voice(ep) if cmd == "pre-voice" else post(ep, json.loads(Path(argv[2]).read_text(encoding="utf8")))
     for e in errs: print("VNC_PIPELINE_FAIL", e)
     if cmd == "post" and not errs and _cfg(ep).get("posting"):
         print("VNC_POSTING_BEGIN"); print(render_posting_file(ep, _cfg(ep))); print("VNC_POSTING_END")

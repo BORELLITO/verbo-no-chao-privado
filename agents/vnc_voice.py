@@ -49,6 +49,11 @@ def run(ep, mode="check", root=ROOT, api=_api, left=credits_left, seconds=mp3_se
     print("VNC_VOICE_CHECK", json.dumps({"episodio": ep, "caracteres": len(text), "creditos_necessarios": need, "creditos_disponiveis": have, "voz_checada": False, "voz_ja_existe": out.exists()}))
     if have < need:
         print("VNC_VOICE_ABORT creditos_insuficientes"); return 7
+    if mode == "generate":
+        from agents import vnc_pipeline_gate as G
+        pv = G.pre_voice(ep, root)
+        for e in pv: print("VNC_VOICE_PRE_FAIL", e)
+        if pv: print("VNC_VOICE_ABORT pre_voz_bloqueado (nada gasto)"); return 8
     if mode != "generate":
         print("VNC_VOICE_CHECK_OK (nada gerado, nada gasto)"); return 0
     try:

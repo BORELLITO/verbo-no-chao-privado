@@ -86,3 +86,15 @@ class Review(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HookVariationT(unittest.TestCase):
+    def test_hook_opening_must_differ_from_previous_episodes(self):
+        import copy
+        c = copy.deepcopy(cfg()); c["number"] = 3; c["id"] = "E03"
+        o = copy.deepcopy(cfg()); o["id"] = "E02"; o["number"] = 2; o["reference"] = "Salmos 13:1-3"
+        r = R.review("E03", cfg=c, others={"E02": o}, offline=True)
+        self.assertTrue(any(i["code"] == "GANCHO" and "abre igual" in i["msg"] for i in r["issues"]))
+        o["scenes"][0]["text"] = "Nem toda espera significa abandono, voce sabia?"
+        r = R.review("E03", cfg=c, others={"E02": o}, offline=True)
+        self.assertFalse(any("abre igual" in i["msg"] for i in r["issues"]))

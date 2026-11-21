@@ -141,6 +141,12 @@ def review(ep, cfg=None, getter=None, others=None, offline=False):
         if not re.search(r"\b(voc[eê]|seu|sua|te|teu|tua)\b", first.lower()): bad("GANCHO", "gancho sem segunda pessoa (voce): nao conecta com quem assiste", "S01")
         if not (first.endswith("?") or re.match(r"^(e se|e quando|nem|ninguem|nunca|sempre|talvez)\b", norm(first))): bad("GANCHO", "gancho precisa ser pergunta ou afirmacao de choque (e se/nunca/ninguem...)", "S01")
         if re.match(r"^(em|no|na|neste|nesta|hoje|bem-vind|ola|oi)\b", norm(first)): bad("GANCHO", "abertura fraca (contexto/saudacao): comece pela dor do espectador", "S01")
+    # 2c variacao do gancho: mesmas 2 primeiras palavras de gancho anterior = molde repetitivo (risco de monetizacao)
+    if sc and (cfg.get("number") or 99) >= 3:
+        mine = norm(first).split()[:2]
+        for oep, o in (others if others is not None else other_episodes(ep)).items():
+            osc = o.get("scenes") or [{}]; of = norm(re.split(r"(?<=[.?!])\s+", (osc[0].get("text") or "").strip())[0]).split()[:2]
+            if mine and mine == of: bad("GANCHO", f"gancho abre igual ao de {oep} ('{' '.join(mine)}...'): varie a abertura", "S01")
     # 3 tom: proibicoes e cautela
     for s in sc:
         n = norm(s.get("text", ""))
