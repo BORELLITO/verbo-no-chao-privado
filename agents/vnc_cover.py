@@ -112,7 +112,9 @@ LAYOUT = {
     "vertical": (1080, 1920, dict(logo=440, logo_y=300, ky=880, ty=950, ts=124, t0=0.40, tw=0.34, scrim=0.57)),
     "wide": (1280, 720, dict(logo=230, logo_y=14, ky=232, ty=272, ts=80, t0=0.30, tw=0.42, scrim=0.58)),
 }
+FORMATS = CFG.get("cover_formats", ["vertical"])   # decisao do dono (2026-11-21): so capa vertical (Shorts/TikTok/Instagram); "wide" so se pedido
 for name, (W, H, L) in LAYOUT.items():
+    if name not in FORMATS: continue
     im = build(W, H, L); b = io.BytesIO(); im.save(b, "JPEG", quality=95, subsampling=0); sb = base64.b64encode(b.getvalue()).decode()
     print("VNC_COVER", name, len(sb))
     for n in range(0, len(sb), 1800): print("VNC_COVERB64", name, n // 1800, sb[n:n + 1800])
