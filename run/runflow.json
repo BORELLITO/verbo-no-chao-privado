@@ -1,11 +1,1 @@
-{
- "episode": "E02",
- "selection": "contracts/e02_scene_clip_selection.json",
- "music": "614",
- "stages": [
-  "gates",
-  "build"
- ],
- "nonce": "e02-ensaio-final-E-1",
- "ending_force": "E"
-}
+{"episode":"E03","selection":"contracts/e03_scene_clip_selection.json","music":"148","stages":["gates","build","cover"],"nonce":"e03-run-1"}
