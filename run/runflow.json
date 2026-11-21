@@ -4,8 +4,8 @@
  "music": "614",
  "stages": [
   "gates",
-  "build",
-  "cover"
+  "build"
  ],
- "nonce": "e02-ensaio-agente-mestre-1"
+ "nonce": "e02-ensaio-final-C-1",
+ "ending_force": "C"
 }
