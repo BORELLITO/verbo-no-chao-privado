@@ -3,5 +3,5 @@
   "selection": "contracts/e01_v5_scene_clip_selection_landscape.json",
   "music": "543",
   "stages": ["gates", "build"],
-  "nonce": "regressao-contrato-e-style-lock"
+  "nonce": "regressao-contrato-style-lock-2"
 }
