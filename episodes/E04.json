@@ -1,0 +1,369 @@
+{
+ "_instrucoes": "Roteiro E04 escrito pelo Claude em 2026-11-21 (formato C: quem falou e em que contexto). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Trilha: Relaxation 05 (Mixkit).",
+ "id": "E04",
+ "number": 4,
+ "title_lines": [
+  "Descanso",
+  "para quem",
+  "está cansado"
+ ],
+ "reference": "Mateus 11:28–30",
+ "timing": "whisper",
+ "audio_link_file": "run/audio_link_E04.txt",
+ "audio_sha256": "PREENCHER_SHA256_COMPLETO",
+ "music_page": "https://mixkit.co/free-stock-music/relaxation-05/",
+ "cta": [
+  "Curta, compartilhe\\Ne inscreva-se no canal",
+  "E você, já se sentiu assim?\\NConte nos comentários."
+ ],
+ "selection": "contracts/e04_scene_clip_selection.json",
+ "cover": {
+  "top": [
+   "PREENCHER_ID_TRISTEZA",
+   3.0
+  ],
+  "bottom": [
+   "PREENCHER_ID_LUZ",
+   5.0
+  ]
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "block": "opening",
+   "text": "Quanto peso você carrega sem contar para ninguém?",
+   "visual": {
+    "meaning": "o peso carregado em silêncio",
+    "meaning_en": "a heavy gray sky over a quiet landscape",
+    "emotion": "cansaço",
+    "mood": "dark",
+    "queries": [
+     "heavy clouds",
+     "gray sky",
+     "fog field"
+    ],
+    "prefer": [
+     "clouds",
+     "fog",
+     "gray"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S02",
+   "block": "connection",
+   "text": "Foi para gente assim que Jesus falou.",
+   "visual": {
+    "meaning": "estrada vazia ao entardecer",
+    "meaning_en": "empty road at dusk",
+    "emotion": "solidão",
+    "mood": "dark",
+    "queries": [
+     "empty road dusk",
+     "country road fog",
+     "dusk road"
+    ],
+    "prefer": [
+     "road",
+     "dusk",
+     "fog"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S03",
+   "block": "connection",
+   "text": "Muitos ali estavam esmagados por exigências religiosas que pareciam não ter fim.",
+   "visual": {
+    "meaning": "terra seca, exigência árida",
+    "meaning_en": "dry cracked earth",
+    "emotion": "aridez",
+    "mood": "dark",
+    "queries": [
+     "dry cracked earth",
+     "dry desert land",
+     "barren land"
+    ],
+    "prefer": [
+     "dry",
+     "cracked",
+     "desert"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S04",
+   "block": "connection",
+   "text": "Mateus registra o convite no capítulo onze, depois de muita resistência.",
+   "visual": {
+    "meaning": "vento e nuvens pesadas sobre o campo",
+    "meaning_en": "wind and heavy clouds over a field",
+    "emotion": "resistência",
+    "mood": "dark",
+    "queries": [
+     "wind field clouds",
+     "stormy field",
+     "windy grass"
+    ],
+    "prefer": [
+     "wind",
+     "field",
+     "clouds"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S05",
+   "block": "biblical_reference",
+   "text": "Ele diz: venham a mim, todos os cansados e sobrecarregados.",
+   "visual": {
+    "meaning": "vale com névoa se abrindo",
+    "meaning_en": "misty valley opening in morning light",
+    "emotion": "convite",
+    "mood": "mid",
+    "queries": [
+     "misty valley",
+     "morning fog valley",
+     "fog lifting"
+    ],
+    "prefer": [
+     "fog",
+     "valley",
+     "morning"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S06",
+   "block": "biblical_reference",
+   "text": "E promete descanso para a alma, não uma vida sem esforço.",
+   "visual": {
+    "meaning": "lago calmo ao amanhecer",
+    "meaning_en": "calm lake at dawn",
+    "emotion": "descanso",
+    "mood": "mid",
+    "queries": [
+     "calm lake dawn",
+     "still lake morning",
+     "lake reflection"
+    ],
+    "prefer": [
+     "lake",
+     "calm",
+     "dawn"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S07",
+   "block": "biblical_reference",
+   "text": "Jugo era a peça do arado e também uma imagem para o ensino de um mestre.",
+   "visual": {
+    "meaning": "campo arado, trabalho da terra",
+    "meaning_en": "plowed farm field",
+    "emotion": "trabalho",
+    "mood": "mid",
+    "queries": [
+     "plowed field",
+     "farm field furrows",
+     "farmland tractor"
+    ],
+    "prefer": [
+     "field",
+     "farm",
+     "plowed"
+    ],
+    "avoid": [
+     "city",
+     "indoor",
+     "face"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S08",
+   "block": "reflection",
+   "text": "Jesus não diz que a vida fica sem peso. Ele convida a aprender com ele.",
+   "visual": {
+    "meaning": "rio que segue",
+    "meaning_en": "gentle river flowing",
+    "emotion": "caminhada",
+    "mood": "mid",
+    "queries": [
+     "river flowing",
+     "calm river",
+     "stream forest"
+    ],
+    "prefer": [
+     "river",
+     "stream",
+     "flowing"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S09",
+   "block": "reflection",
+   "text": "E se apresenta como manso e humilde de coração.",
+   "visual": {
+    "meaning": "campo florido com brisa",
+    "meaning_en": "meadow with flowers in gentle breeze",
+    "emotion": "mansidão",
+    "mood": "mid",
+    "queries": [
+     "meadow flowers breeze",
+     "wildflowers field",
+     "grass breeze"
+    ],
+    "prefer": [
+     "meadow",
+     "flowers",
+     "grass"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S10",
+   "block": "application",
+   "text": "Talvez hoje você precise parar de fingir que aguenta tudo sozinho.",
+   "visual": {
+    "meaning": "luz atravessando as árvores",
+    "meaning_en": "sunlight through trees",
+    "emotion": "alívio",
+    "mood": "bright",
+    "queries": [
+     "sunlight trees",
+     "sun rays forest",
+     "golden light forest"
+    ],
+    "prefer": [
+     "sun",
+     "trees",
+     "light"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S11",
+   "block": "application",
+   "text": "Dizer, em voz baixa, eu não dou conta, também pode ser uma oração.",
+   "visual": {
+    "meaning": "mar calmo ao pôr do sol",
+    "meaning_en": "calm sea at sunset",
+    "emotion": "paz",
+    "mood": "bright",
+    "queries": [
+     "calm sea sunset",
+     "gentle waves sunset",
+     "sunset ocean"
+    ],
+    "prefer": [
+     "sea",
+     "sunset",
+     "waves"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S12",
+   "block": "conclusion",
+   "text": "O convite continua simples: venha cansado, como está, e aprenda a caminhar com ele.",
+   "visual": {
+    "meaning": "sol nascendo sobre colinas",
+    "meaning_en": "sunrise over hills",
+    "emotion": "esperança",
+    "mood": "bright",
+    "queries": [
+     "sunrise hills",
+     "sunrise horizon",
+     "golden hour hills"
+    ],
+    "prefer": [
+     "sunrise",
+     "hills",
+     "horizon"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  }
+ ],
+ "posting": {
+  "hook": "Quanto peso você carrega sem contar para ninguém?",
+  "resumo": "Em Mateus 11:28–30, Jesus convida os cansados e sobrecarregados a aprender com ele. Um convite de descanso para a alma, sem prometer uma vida sem peso.",
+  "pergunta": "Que peso você precisa parar de carregar sozinho?",
+  "hashtags": [
+   "#fé",
+   "#palavradedeus",
+   "#mateus11",
+   "#descanso",
+   "#reflexão"
+  ],
+  "titulo_curto": "Descanso para os cansados"
+ }
+}

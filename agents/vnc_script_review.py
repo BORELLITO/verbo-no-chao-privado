@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WPS, PAUSE = 2.6, 1.0
-SEC_PER_WORD = 0.379      # calibrado no E02: 214 palavras = 81,16 s de voz (inclui pausas entre cenas)
+SEC_PER_WORD = 0.41       # calibrado no E03 (voz Johnes): 140 palavras = 57,47 s de voz (inclui pausas entre cenas); E02 (214 palavras, 81,16 s) dava 0,379 mas era mais corrido
 TAIL_S = 9.5              # final de cinema fixo (voz + 9,5 s)
 TOTAL_MIN, TOTAL_MAX = 62.0, 72.0   # regra do dono (2026-11-21): video final entre 65 e 70 s (tolerancia 62-72)
 HOOK_MAX_WORDS = 12       # gancho: primeira frase fala-se em <= ~4,5 s

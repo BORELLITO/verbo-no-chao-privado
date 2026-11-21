@@ -1,0 +1,25 @@
+{
+ "episode": "E04",
+ "status": "APROVADO_AUTOMATICO",
+ "issues": [],
+ "avisos": [],
+ "checks": {
+  "cenas": 12,
+  "duracao_estimada_s": 64.7,
+  "palavras": 137,
+  "duracao_final_estimada_s": 65.7,
+  "gancho": "Quanto peso você carrega sem contar para ninguém?",
+  "cautela_presente": true,
+  "referencia": "Mateus 11:28–30",
+  "texto_biblico_verificado": true,
+  "sobreposicao_lexical_biblia": 0.26,
+  "similaridade_E01": 0.07,
+  "similaridade_E02": 0.08,
+  "similaridade_E03": 0.09
+ },
+ "limitacoes": [
+  "validacao AUTOMATICA de regras do canal + vinculo lexical com o texto biblico; NAO e revisao teologica independente",
+  "parafrase fiel exige leitura humana/teologica: o agente so detecta ausencia de vinculo, promessas, tom e repeticao",
+  "voz e publicacao seguem dependendo do pedido/autorizacao do dono"
+ ]
+}

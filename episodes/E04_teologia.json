@@ -1,0 +1,403 @@
+{
+ "episode": "E04",
+ "referencia": "Mateus 11:28–30",
+ "pesquisado_em": "2026-11-21",
+ "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "posicoes_adotadas": {
+  "autoria": "Roteiro diz 'Mateus registra' (titulo do Evangelho), sem afirmar quem era o autor nem datas.",
+  "contexto": "Convite posto apos a resistencia das cidades (11:16-24); contraste com fardos religiosos tratado como leitura majoritaria ('muitos'), nao exclusiva.",
+  "limite": "Descanso e apresentado como descanso da alma, sem prometer alivio de problemas praticos, saude ou resultados."
+ },
+ "alegacoes": [
+  {
+   "id": "M01",
+   "cenas": [
+    "S02"
+   ],
+   "tipo": "interpretativa",
+   "texto": "Foi para gente assim (cansada e sobrecarregada) que Jesus falou.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 11:28"
+   ],
+   "palavras_chave_no_texto": [
+    "cansados"
+   ],
+   "fontes": [
+    {
+     "titulo": "Logos, My Yoke Is Easy and My Burden Is Light (Hall)",
+     "url": "https://www.logos.com/grow/hall-my-yoke-is-easy-burden-light/",
+     "tipo": "academico",
+     "nota": "contexto duplo: rejeicao de 'esta geracao' (11:16) e juizo sobre as cidades (11:20-24); tres imperativos: vem, toma, aprende; fardos dos fariseus em Mt 23:4"
+    },
+    {
+     "titulo": "NIV Application Commentary, Matthew 11:28-30 (BibleGateway)",
+     "url": "https://www.biblegateway.com/resources/nivac-sample/Matt.11.28-Matt.11.30",
+     "tipo": "comentario",
+     "nota": "convite aos cansados e sobrecarregados, em contraste com a casuistica legal dos fariseus"
+    },
+    {
+     "titulo": "Enduring Word (pt), O Jugo Suave e o Fardo Leve",
+     "url": "https://enduringword.com/blog-archive/weekly-devotionals/pt/o-jugo-suave-e-o-fardo-leve/",
+     "tipo": "comentario",
+     "nota": "convite a humanidade sobrecarregada; Mt 23:4 fala dos fardos impostos por lideres religiosos; o convite inclui tambem um jugo"
+    }
+   ],
+   "risco": "o convite e a 'todos os que estais cansados', ampliar para 'gente assim' e leitura geral.",
+   "mitigacao": "Texto diz 'todos'; o roteiro nao restringe a um grupo nem a um tipo de cansaco especifico."
+  },
+  {
+   "id": "M02",
+   "cenas": [
+    "S03"
+   ],
+   "tipo": "historica",
+   "texto": "Muitos ali estavam esmagados por exigencias religiosas que pareciam nao ter fim.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 23:4"
+   ],
+   "palavras_chave_no_texto": [
+    "fardos",
+    "ombros"
+   ],
+   "fontes": [
+    {
+     "titulo": "Logos, My Yoke Is Easy and My Burden Is Light (Hall)",
+     "url": "https://www.logos.com/grow/hall-my-yoke-is-easy-burden-light/",
+     "tipo": "academico",
+     "nota": "contexto duplo: rejeicao de 'esta geracao' (11:16) e juizo sobre as cidades (11:20-24); tres imperativos: vem, toma, aprende; fardos dos fariseus em Mt 23:4"
+    },
+    {
+     "titulo": "Reformation Study Bible, Matt 11:29-30 (BibleGateway)",
+     "url": "https://classic.biblegateway.com/resources/reformation-study-bible/Matt.11.29-Matt.11.30",
+     "tipo": "comentario",
+     "nota": "as tradicoes orais foram alem das exigencias de Deus e viraram fardo pesado"
+    },
+    {
+     "titulo": "BibleHub Study, Matthew 11:30",
+     "url": "https://biblehub.com/study/matthew/11-30.htm",
+     "tipo": "comentario",
+     "nota": "jugo era a peca de madeira que unia animais para arar; simboliza submissao e servico; contraste com fardos farisaicos (Mt 23:4)"
+    },
+    {
+     "titulo": "NIV Application Commentary, Matthew 11:28-30 (BibleGateway)",
+     "url": "https://www.biblegateway.com/resources/nivac-sample/Matt.11.28-Matt.11.30",
+     "tipo": "comentario",
+     "nota": "convite aos cansados e sobrecarregados, em contraste com a casuistica legal dos fariseus"
+    }
+   ],
+   "risco": "leitura majoritaria (fariseus, Mt 23:4), mas o contexto imediato e discutido e 'cansados' pode ser mais amplo.",
+   "mitigacao": "Usa 'muitos' (nao 'todos') e atribui a imagem as exigencias religiosas citadas por Jesus em Mt 23:4 e pelos comentarios."
+  },
+  {
+   "id": "M03",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "historica",
+   "texto": "Mateus registra o convite no capitulo onze, depois de muita resistencia.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 11:20"
+   ],
+   "palavras_chave_no_texto": [
+    "arrependido",
+    "cidades"
+   ],
+   "fontes": [
+    {
+     "titulo": "Logos, My Yoke Is Easy and My Burden Is Light (Hall)",
+     "url": "https://www.logos.com/grow/hall-my-yoke-is-easy-burden-light/",
+     "tipo": "academico",
+     "nota": "contexto duplo: rejeicao de 'esta geracao' (11:16) e juizo sobre as cidades (11:20-24); tres imperativos: vem, toma, aprende; fardos dos fariseus em Mt 23:4"
+    },
+    {
+     "titulo": "Jerusalem Perspective, Jesus' Yoke and Burden",
+     "url": "https://www.jerusalemperspective.com/4435",
+     "tipo": "academico",
+     "nota": "o contexto imediato e discutido: segue os ais sobre as cidades da Galileia (11:20-24) e a acao de gracas (11:25-27); ha debate sobre origem do dito"
+    }
+   ],
+   "risco": "baixo: o convite segue os ais sobre as cidades que nao se arrependeram (11:20-24) e a rejeicao de 'esta geracao' (11:16).",
+   "mitigacao": ""
+  },
+  {
+   "id": "M04",
+   "cenas": [
+    "S05"
+   ],
+   "tipo": "textual",
+   "texto": "Ele diz: venham a mim, todos os cansados e sobrecarregados.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 11:28"
+   ],
+   "palavras_chave_no_texto": [
+    "cansados",
+    "oprimidos"
+   ],
+   "fontes": [
+    {
+     "titulo": "Logos, My Yoke Is Easy and My Burden Is Light (Hall)",
+     "url": "https://www.logos.com/grow/hall-my-yoke-is-easy-burden-light/",
+     "tipo": "academico",
+     "nota": "contexto duplo: rejeicao de 'esta geracao' (11:16) e juizo sobre as cidades (11:20-24); tres imperativos: vem, toma, aprende; fardos dos fariseus em Mt 23:4"
+    },
+    {
+     "titulo": "NIV Application Commentary, Matthew 11:28-30 (BibleGateway)",
+     "url": "https://www.biblegateway.com/resources/nivac-sample/Matt.11.28-Matt.11.30",
+     "tipo": "comentario",
+     "nota": "convite aos cansados e sobrecarregados, em contraste com a casuistica legal dos fariseus"
+    }
+   ],
+   "risco": "'sobrecarregados' e parafrase de 'oprimidos/carregados' (ACF).",
+   "mitigacao": ""
+  },
+  {
+   "id": "M05",
+   "cenas": [
+    "S06"
+   ],
+   "tipo": "interpretativa",
+   "texto": "Promete descanso para a alma, nao uma vida sem esforco.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 11:29"
+   ],
+   "palavras_chave_no_texto": [
+    "descanso",
+    "almas"
+   ],
+   "fontes": [
+    {
+     "titulo": "Reading Acts, My Yoke is Light (Mt 11:28-30)",
+     "url": "https://readingacts.com/2021/04/28/my-yoke-is-light-matthew-1128-30/",
+     "tipo": "comentario",
+     "nota": "o jugo de Jesus e leve, mas nao e facil; ele nao promete que seguir seja sempre facil"
+    },
+    {
+     "titulo": "Enduring Word (pt), O Jugo Suave e o Fardo Leve",
+     "url": "https://enduringword.com/blog-archive/weekly-devotionals/pt/o-jugo-suave-e-o-fardo-leve/",
+     "tipo": "comentario",
+     "nota": "convite a humanidade sobrecarregada; Mt 23:4 fala dos fardos impostos por lideres religiosos; o convite inclui tambem um jugo"
+    },
+    {
+     "titulo": "BibleHub Commentaries, Matthew 11:29 (Gill, Ellicott e outros)",
+     "url": "https://biblehub.com/commentaries/matthew/11-29.htm",
+     "tipo": "comentario",
+     "nota": "a expressao 'tomar o jugo' e rabinica; 'descanso para as almas' cita Jeremias 6:16"
+    }
+   ],
+   "risco": "'promete' e do texto (descanso para as almas), mas 'nao uma vida sem esforco' e inferencia a partir do jugo.",
+   "mitigacao": "A frase afirma descanso da alma (texto) e nega isencao de esforco (o jugo e leve, nao facil, segundo comentarios); sem promessa de resultado."
+  },
+  {
+   "id": "M06",
+   "cenas": [
+    "S07"
+   ],
+   "tipo": "historica",
+   "texto": "Jugo era a peca do arado e tambem uma imagem para o ensino de um mestre.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "BibleHub Study, Matthew 11:30",
+     "url": "https://biblehub.com/study/matthew/11-30.htm",
+     "tipo": "comentario",
+     "nota": "jugo era a peca de madeira que unia animais para arar; simboliza submissao e servico; contraste com fardos farisaicos (Mt 23:4)"
+    },
+    {
+     "titulo": "BibleHub Commentaries, Matthew 11:29 (Gill, Ellicott e outros)",
+     "url": "https://biblehub.com/commentaries/matthew/11-29.htm",
+     "tipo": "comentario",
+     "nota": "a expressao 'tomar o jugo' e rabinica; 'descanso para as almas' cita Jeremias 6:16"
+    },
+    {
+     "titulo": "Logos, My Yoke Is Easy and My Burden Is Light (Hall)",
+     "url": "https://www.logos.com/grow/hall-my-yoke-is-easy-burden-light/",
+     "tipo": "academico",
+     "nota": "contexto duplo: rejeicao de 'esta geracao' (11:16) e juizo sobre as cidades (11:20-24); tres imperativos: vem, toma, aprende; fardos dos fariseus em Mt 23:4"
+    }
+   ],
+   "risco": "o sentido exato do jugo (parelha de bois vs. imagem de ensino) e discutido.",
+   "mitigacao": "Roteiro oferece as duas imagens sem decidir entre elas, ambas atestadas nas fontes."
+  },
+  {
+   "id": "M07",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "interpretativa",
+   "texto": "Jesus nao diz que a vida fica sem peso; convida a aprender com ele.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 11:29",
+    "Mateus 11:30"
+   ],
+   "palavras_chave_no_texto": [
+    "aprendei",
+    "fardo"
+   ],
+   "fontes": [
+    {
+     "titulo": "Reading Acts, My Yoke is Light (Mt 11:28-30)",
+     "url": "https://readingacts.com/2021/04/28/my-yoke-is-light-matthew-1128-30/",
+     "tipo": "comentario",
+     "nota": "o jugo de Jesus e leve, mas nao e facil; ele nao promete que seguir seja sempre facil"
+    },
+    {
+     "titulo": "Enduring Word (pt), O Jugo Suave e o Fardo Leve",
+     "url": "https://enduringword.com/blog-archive/weekly-devotionals/pt/o-jugo-suave-e-o-fardo-leve/",
+     "tipo": "comentario",
+     "nota": "convite a humanidade sobrecarregada; Mt 23:4 fala dos fardos impostos por lideres religiosos; o convite inclui tambem um jugo"
+    },
+    {
+     "titulo": "Logos, My Yoke Is Easy and My Burden Is Light (Hall)",
+     "url": "https://www.logos.com/grow/hall-my-yoke-is-easy-burden-light/",
+     "tipo": "academico",
+     "nota": "contexto duplo: rejeicao de 'esta geracao' (11:16) e juizo sobre as cidades (11:20-24); tres imperativos: vem, toma, aprende; fardos dos fariseus em Mt 23:4"
+    }
+   ],
+   "risco": "baixo: o convite inclui tomar o jugo e aprender; o fardo e dito leve, nao inexistente.",
+   "mitigacao": ""
+  },
+  {
+   "id": "M08",
+   "cenas": [
+    "S09"
+   ],
+   "tipo": "textual",
+   "texto": "Ele se apresenta como manso e humilde de coracao.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 11:29"
+   ],
+   "palavras_chave_no_texto": [
+    "manso",
+    "humilde"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleHub Q&A, What does Matthew 11:29 mean?",
+     "url": "https://biblehub.com/q/What_does_Matthew_11_29_mean.htm",
+     "tipo": "comentario",
+     "nota": "a promessa ecoa Jeremias 6:16: descanso para as almas"
+    },
+    {
+     "titulo": "Versebyverse / Mt 11 estudo (BibleHub Study 11-29)",
+     "url": "https://biblehub.com/study/matthew/11-29.htm",
+     "tipo": "comentario",
+     "nota": "convite a submeter-se ao ensino de Jesus, em contraste com o jugo do legalismo; descanso para a alma"
+    }
+   ],
+   "risco": "baixo.",
+   "mitigacao": ""
+  },
+  {
+   "id": "M09",
+   "cenas": [
+    "S01",
+    "S10",
+    "S11"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Convite pessoal a nao fingir que aguenta tudo sozinho; dizer 'eu nao dou conta' tambem pode ser oracao.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 11:28"
+   ],
+   "palavras_chave_no_texto": [
+    "cansados"
+   ],
+   "fontes": [
+    {
+     "titulo": "NIV Application Commentary, Matthew 11:28-30 (BibleGateway)",
+     "url": "https://www.biblegateway.com/resources/nivac-sample/Matt.11.28-Matt.11.30",
+     "tipo": "comentario",
+     "nota": "convite aos cansados e sobrecarregados, em contraste com a casuistica legal dos fariseus"
+    },
+    {
+     "titulo": "Enduring Word (pt), O Jugo Suave e o Fardo Leve",
+     "url": "https://enduringword.com/blog-archive/weekly-devotionals/pt/o-jugo-suave-e-o-fardo-leve/",
+     "tipo": "comentario",
+     "nota": "convite a humanidade sobrecarregada; Mt 23:4 fala dos fardos impostos por lideres religiosos; o convite inclui tambem um jugo"
+    }
+   ],
+   "risco": "aplicacao nao e afirmacao do texto; pode soar como substituto de ajuda pratica ou profissional.",
+   "mitigacao": "Linguagem de convite ('talvez', 'pode ser'); nao promete cura nem resultado; nao faz afirmacao clinica sobre cansaco, ansiedade ou saude."
+  },
+  {
+   "id": "M10",
+   "cenas": [
+    "S12"
+   ],
+   "tipo": "aplicacao",
+   "texto": "O convite continua simples: venha cansado, como esta, e aprenda a caminhar com ele.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 11:28",
+    "Mateus 11:29"
+   ],
+   "palavras_chave_no_texto": [
+    "cansados",
+    "aprendei"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (pt), O Jugo Suave e o Fardo Leve",
+     "url": "https://enduringword.com/blog-archive/weekly-devotionals/pt/o-jugo-suave-e-o-fardo-leve/",
+     "tipo": "comentario",
+     "nota": "convite a humanidade sobrecarregada; Mt 23:4 fala dos fardos impostos por lideres religiosos; o convite inclui tambem um jugo"
+    },
+    {
+     "titulo": "Logos, My Yoke Is Easy and My Burden Is Light (Hall)",
+     "url": "https://www.logos.com/grow/hall-my-yoke-is-easy-burden-light/",
+     "tipo": "academico",
+     "nota": "contexto duplo: rejeicao de 'esta geracao' (11:16) e juizo sobre as cidades (11:20-24); tres imperativos: vem, toma, aprende; fardos dos fariseus em Mt 23:4"
+    }
+   ],
+   "risco": "'como esta' e leitura do convite sem pre-condicao; 'caminhar' e imagem do discipulado.",
+   "mitigacao": "O texto inicia por 'Vinde a mim' sem requisito e segue com 'aprendei de mim'; a frase mantem os dois movimentos (vir e aprender)."
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "Contexto imediato: ais sobre as cidades (11:20-24) e acao de gracas (11:25-27)",
+   "decisao": "ressalvar",
+   "justificativa": "S04 cita a resistencia anterior ao convite; o juizo sobre as cidades nao e detalhado por foco e duracao."
+  },
+  {
+   "item": "Eco de Jeremias 6:16 e debate academico sobre a origem do dito (paralelo com Sirácida 51)",
+   "decisao": "aceitavel",
+   "justificativa": "O roteiro nao faz alegacao de origem; omitir o debate evita afirmar posicao contestada."
+  },
+  {
+   "item": "Descanso espiritual nao equivale a resolver cansaco fisico, emocional ou de saude",
+   "decisao": "ressalvar",
+   "justificativa": "O roteiro fala de 'descanso para a alma' e nega 'vida sem esforco'; a legenda de postagem repete 'sem prometer uma vida sem peso'."
+  },
+  {
+   "item": "Autoria e data do Evangelho de Mateus",
+   "decisao": "aceitavel",
+   "justificativa": "Usa so 'Mateus registra' (titulo do livro), sem afirmar autoria historica ou data, evitando posicao disputada."
+  }
+ ],
+ "parecer": "APROVADO",
+ "cenas_hash": {
+  "S01": "7b69423b3a0c08f8",
+  "S02": "88f09dfca667dbc4",
+  "S03": "4982817244c68764",
+  "S04": "a68a4959e6adfc92",
+  "S05": "35b93c8a6db1ae55",
+  "S06": "eb58844a106f044a",
+  "S07": "a59549759b373c89",
+  "S08": "234cf4847da5cb10",
+  "S09": "bc19bc8054a1eb99",
+  "S10": "5e433ad8fa56f5bd",
+  "S11": "a2f3573b9ca2b052",
+  "S12": "0fe2b1c85e678d8d"
+ }
+}

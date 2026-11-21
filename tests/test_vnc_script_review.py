@@ -2,11 +2,11 @@ import copy, json, unittest
 from agents import vnc_script_review as R
 
 BLK = ["opening", "connection", "connection", "connection", "biblical_reference", "biblical_reference", "biblical_reference", "reflection", "reflection", "application", "application", "conclusion"]
-TXT = ["Você já esperou tanto por uma resposta que quase parou de perguntar?", "Esperar cansa, e cansa mais quando nada parece se mover no tempo.", "Há dias em que a gente olha o horizonte em silêncio.",
-       "E a resposta nem sempre vem no ritmo da nossa pressa.", "No capítulo dois de Habacuque, o profeta decide ficar de vigia depois de clamar contra a injustiça.",
-       "Ele diz que vai esperar para ver o que Deus lhe dirá, sem fugir da pergunta.", "A visão deve ser escrita com clareza e tem tempo determinado; se demorar, deve ser aguardada.",
-       "O texto não promete que tudo se resolve depressa; esperar também é confiança.", "A injustiça ao redor continua real, e a fé do profeta não depende de ela sumir hoje.",
-       "Talvez hoje você precise colocar em palavras o que carrega.", "E seguir fazendo o que é justo, no passo pequeno ao seu alcance.", "Esperar não é desistir; é permanecer de pé com a verdade e a esperança."]
+TXT = ["Você já esperou tanto por uma resposta que quase parou de perguntar?", "Esperar cansa, e cansa mais quando nada parece se mover no tempo.", "Há dias em que olhamos o horizonte.",
+       "E a resposta nem sempre vem no ritmo da nossa pressa.", "No capítulo dois, o profeta decide ficar de vigia depois de clamar contra a injustiça.",
+       "Ele diz que vai esperar para ver o que Deus lhe dirá.", "A visão deve ser escrita com clareza; se demorar, deve ser aguardada.",
+       "O texto não promete que tudo se resolve depressa; esperar também é confiança.", "A injustiça continua real, e a fé do profeta não depende de ela sumir hoje.",
+       "Talvez hoje você precise colocar em palavras o que carrega.", "E seguir fazendo o que é justo, no passo pequeno ao seu alcance.", "Esperar não é desistir; é permanecer de pé com esperança."]
 
 
 def cfg():
