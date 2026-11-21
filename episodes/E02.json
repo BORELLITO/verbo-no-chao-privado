@@ -1,0 +1,43 @@
+{
+ "_instrucoes": "RASCUNHO do E02: preencher roteiro (12 cenas), voz (sha256), selecao e capa antes de montar. Curadoria automatica: stage 'curate'.",
+ "id": "E02",
+ "number": 2,
+ "title_lines": [
+  "Linha 1",
+  "Linha 2",
+  "Linha 3"
+ ],
+ "reference": "Livro 0:0–0",
+ "timing": "whisper",
+ "audio_link_file": "run/audio_link_E02.txt",
+ "audio_sha256": "PREENCHER_SHA256_COMPLETO",
+ "music_page": "https://mixkit.co/free-stock-music/PREENCHER/",
+ "cta": [
+  "Curta, compartilhe\\Ne inscreva-se no canal",
+  "E você, já se sentiu assim?\\NConte nos comentários."
+ ],
+ "selection": "contracts/e02_scene_clip_selection.json",
+ "cover": {
+  "top": [
+   "SLUG-COVERR-TRISTEZA",
+   3.0
+  ],
+  "bottom": [
+   "SLUG-COVERR-LUZ",
+   10.0
+  ]
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "block": "opening",
+   "text": "..."
+  },
+  {
+   "id": "S02",
+   "block": "opening",
+   "text": "..."
+  }
+ ],
+ "status": "RASCUNHO"
+}

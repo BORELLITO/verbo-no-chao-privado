@@ -178,6 +178,9 @@ def main(argv):
     cmd = argv[0] if argv else ""
     if cmd == "workflows":
         errs = check_workflows() + scan_forbidden()
+    elif cmd == "curate-preflight":
+        ep = argv[1]
+        errs = check_workflows() + scan_forbidden() + check_style_lock() + ([] if (ROOT / "episodes" / f"{ep}.json").exists() else [f"falta episodes/{ep}.json"])
     elif cmd in ("preflight", "register"):
         ep, selp = argv[1], argv[2]
         music = argv[argv.index("--music") + 1] if "--music" in argv else None
