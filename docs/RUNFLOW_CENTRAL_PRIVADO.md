@@ -14,3 +14,11 @@ Etapas: `gates` (sempre) -> `build` -> `sync` -> `cover`. Qualquer falha em `gat
 
 ## Suite legada
 `tests/` herdada do repo publico: 19 testes falham aqui so porque exigem workflows/previews que existem apenas no repo publico. Nao sao gate do privado.
+
+## Generalizacao por episodio (2026-11-20)
+- Config por episodio: `episodes/<ID>.json` (modelo: `episodes/_MODELO_EPISODIO.json`). `agents/vnc_master_build.py` e `agents/vnc_cover.py` leem essa config; `e01_master_build.py`/`e01_cover.py` sao apenas atalhos.
+- `timing: contract` (E01, legado) ou `timing: whisper` (episodios novos): `agents/vnc_align.py` alinha o roteiro das 12 cenas as palavras do Whisper small, confere com Whisper base (mediana de divergencia <= 0,15 s, cobertura >= 80%), calcula fronteiras de cena no meio das pausas, gera legendas karaoke automaticas (bloqueia se >2 cues com regra tipografica quebrada) e .srt.
+- Sem antecipacao de legenda no modo whisper (a de 70 ms corrigia o contrato Scribe do E01).
+- Gate novo `check_episode_config`: config completa, sha256 completo da voz, 12 cenas com texto, quadros da capa precisam ser clipes da selecao (registrados, sem repeticao).
+- Autoteste de regressao: `timing_override: whisper` em `run/runflow.json` roda o E01 pelo caminho novo (run 44852037830): 86,17 s, 182 palavras alinhadas (0 interpoladas), conferencia small x base mediana 0,02 s, 43 cues. Nao e video para publicar.
+- Sync independente (contrato) segue so para E01; episodios novos usam a conferencia small x base dentro do build.

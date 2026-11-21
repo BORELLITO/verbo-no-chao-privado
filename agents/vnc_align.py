@@ -82,8 +82,8 @@ def cross_check(a, b):
 
 
 def scenes_from_words(words, first_idx, adur):
-    """Fronteira = inicio da 1a palavra da cena seguinte (cena 1 comeca em 0; ultima termina na voz)."""
-    starts = [0.0] + [words[i]["start"] for i in first_idx[1:]]
+    """Fronteira = meio da pausa entre a ultima palavra de uma cena e a primeira da seguinte (como o refit aprovado do E01)."""
+    starts = [0.0] + [round((words[i - 1]["end"] + words[i]["start"]) / 2, 3) for i in first_idx[1:]]
     ends = starts[1:] + [adur]
     return [{"id": SCENE_IDS[k], "start_seconds": round(starts[k], 3), "end_seconds": round(ends[k], 3),
              "duration_seconds": round(ends[k] - starts[k], 3)} for k in range(len(SCENE_IDS))]
