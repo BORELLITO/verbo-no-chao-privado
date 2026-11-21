@@ -39,14 +39,14 @@ def run(ep, mode="check", root=ROOT, api=_api, left=credits_left, seconds=mp3_se
         print("VNC_VOICE_ABORT sem_segredo ELEVENLABS_API_KEY (Settings > Secrets and variables > Actions)"); return 4
     text, cfg = narration(ep, root)
     out = root / "assets" / "voice" / f"{ep}.mp3"
-    if out.exists():
+    if out.exists() and mode == "generate":
         print("VNC_VOICE_ABORT voz_ja_existe (nunca regenerar: economia de creditos)", out); return 5
     need = int(len(text) * CFG["credit_margin"]) + 1
     try:
         have = left(key); api(f"/v1/voices/{CFG['voice_id']}", key)
     except urllib.error.HTTPError as e:
         print("VNC_VOICE_ABORT api_http", e.code); return 6
-    print("VNC_VOICE_CHECK", json.dumps({"episodio": ep, "caracteres": len(text), "creditos_necessarios": need, "creditos_disponiveis": have, "voz_ok": True}))
+    print("VNC_VOICE_CHECK", json.dumps({"episodio": ep, "caracteres": len(text), "creditos_necessarios": need, "creditos_disponiveis": have, "voz_ok": True, "voz_ja_existe": out.exists()}))
     if have < need:
         print("VNC_VOICE_ABORT creditos_insuficientes"); return 7
     if mode != "generate":
