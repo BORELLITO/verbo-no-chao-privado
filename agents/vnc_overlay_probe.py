@@ -27,7 +27,12 @@ def main():
             if k in seen or len(rows) >= per:
                 continue
             seen.add(k)
-            ok, ev, hd = vnc_sources.rights(e, ctx)
+            for tent in range(4):
+                ok, ev, hd = vnc_sources.rights(e, ctx)
+                if "429" not in ev:
+                    break
+                time.sleep(6 * (tent + 1))
+            time.sleep(1.5)
             if not ok:
                 print("VNC_OVERLAY_SKIP", e["source"], e["id"], ev); continue
             f = OUT / "previews" / f"{e['source']}-{e['id']}.mp4"
@@ -46,8 +51,15 @@ def main():
                     im = Image.open(OUT / "previews" / r["thumb"]).convert("RGB"); im.thumbnail((w, 400)); sh.paste(im, ((i % 4) * w, (i // 4) * 440)); d.text(((i % 4) * w + 4, (i // 4) * 440 + 405), f"{r['id']} {r['title'][:34]}", fill=(255, 255, 255))
                 except Exception:  # noqa
                     pass
-            sh.save(OUT / f"sheet_{q.replace(' ', '-')}.jpg", quality=85)
+            sh.save(OUT / f"sheet_{q.replace(' ', '-')}.jpg", quality=70)
     json.dump(report, open(OUT / "report.json", "w"), ensure_ascii=False, indent=1)
+    import base64
+    for r in report:
+        print("VNC_OVERLAY_ROW", json.dumps({k: r[k] for k in ("query", "id", "title", "page")}, ensure_ascii=False))
+    for sh in sorted(OUT.glob("sheet_*.jpg")):   # o artefato nao e baixavel pelo ambiente do assistente: imagens vao no log em base64
+        b = base64.b64encode(sh.read_bytes()).decode()
+        for i in range(0, len(b), 3000):
+            print("VNC_OVERLAY_IMG", sh.name, i // 3000, b[i:i + 3000])
     print("VNC_OVERLAY_OK", len(report), "clipes com licenca confirmada")
 
 
