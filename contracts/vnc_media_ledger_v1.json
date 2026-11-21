@@ -439,9 +439,9 @@
    "scene": "S08",
    "sha256": "ac7e2082b50a3b9aa03036b5a68f75acfc95dd58b50db2af1f4a26e05bab706c",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "misty hills and rice fields",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:15398": {
    "dur": 10.0,
@@ -464,9 +464,9 @@
    "scene": "S06",
    "sha256": "808048ede037e1f1be528060d86ed1a2544e5d6f6ccc7a4e46dbdc0823ea8751",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "mist and rain over a forest",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:18009": {
    "dur": 21.6,
@@ -489,9 +489,9 @@
    "scene": "S11",
    "sha256": "3552bbc24e00d9fe921c5e80ca1c28e8a09cee2fbe6121927f825f33e577a7c8",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "fenced path in the snowy mountains",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:1954": {
    "dur": 15.3,
@@ -514,9 +514,9 @@
    "scene": "S03",
    "sha256": "a37cdacea23c6f3df9a700701f6ac8be19464759a7ae0e15bfe66234ce99a4a5",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "sea waves in a little bay",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:21575": {
    "dur": 12.0,
@@ -539,9 +539,9 @@
    "scene": "S07",
    "sha256": "80625437fb7cba2b918cc67601c755145be263633d031b39479775c6c6297d71",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "clouds in the sky traveling slowly with the wind",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:27196": {
    "dur": 30.0,
@@ -564,9 +564,9 @@
    "scene": "S05",
    "sha256": "e615e047e82a589fc6ce2b374a34e7900312af6aab312ff16d2068835a24c2ba",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "waves in the sea from a beach during a sunset",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:27378": {
    "dur": 14.2,
@@ -589,9 +589,9 @@
    "scene": "S12",
    "sha256": "da43ee6bc99375693e0b773a91b43ad3bd65fafb6b62636c26cb55ff9d660ccd",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "sunrise from a snow covered mountain",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:30910": {
    "dur": 19.9,
@@ -614,9 +614,9 @@
    "scene": "S01",
    "sha256": "19b9088937f58da325cb5c6ef1994957bc95b8d83b693c33da77456a33eff0d4",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "foggy sky during a starry night in the forest",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:41739": {
    "dur": 12.1,
@@ -683,9 +683,9 @@
    "scene": "S04",
    "sha256": "3b48c87356d761b711f9d7f146aa5d88241821df0d5698b388f3a643774c3552",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "a small river flowing freely in the wilderness of the",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:51586": {
    "dur": 18.4,
@@ -708,9 +708,9 @@
    "scene": "S02",
    "sha256": "48e1eec49eca31635ae6a4e6460b131e7cf55be11e0c43037c078c2b2fa00698",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "mesmerizing timelapse of clouds moving avobe the forest canopy",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:7277": {
    "dur": 20.0,
@@ -733,9 +733,9 @@
    "scene": "S10",
    "sha256": "9f54296ddfe437583c0e31202545dd896dfafd4b92369e142d94002eb299bfc9",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "lake in the morrning with mist",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   },
   "mixkit:9810": {
    "dur": 12.4,
@@ -758,9 +758,9 @@
    "scene": "S09",
    "sha256": "b99e1571541e1cb95eebe8c0c6ceaa331c419ba9494cd95b0d210f6679d9c28a",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "confirmed",
    "title": "storm clouds approaching the valley",
-   "updated_at": "2026-11-21T15:53:46Z"
+   "updated_at": "2026-11-21T16:13:07Z"
   }
  },
  "project": "verbo-no-chao",
