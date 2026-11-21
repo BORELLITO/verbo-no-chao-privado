@@ -19,7 +19,7 @@ def main():
     cfg = json.load(open("run/overlays.json")); per = int(cfg.get("per_query", 8))
     ctx = {"get": vnc_curate.get, "cache": {}, "env": os.environ, "ua": vnc_curate.UA, "sleep": time.sleep, "budget": {}}
     report, seen = [], set()
-    for q in cfg["queries"]:
+    for q in cfg.get("queries", []):
         ents = [e for s in ("mixkit", "wikimedia") for e in vnc_sources.discover(s, q, ctx)]
         rows = []
         for e in ents:
