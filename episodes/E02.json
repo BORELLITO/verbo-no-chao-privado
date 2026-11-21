@@ -1,13 +1,13 @@
 {
- "_instrucoes": "RASCUNHO do E02: preencher roteiro (12 cenas), voz (sha256), selecao e capa antes de montar. Curadoria automatica: stage 'curate'.",
+ "_instrucoes": "Roteiro E02 escrito pelo Claude em 2026-11-21 (rascunho). Voz so com pedido do dono (R4). Capa: quadros virao da selecao (Coverr desativado).",
  "id": "E02",
  "number": 2,
  "title_lines": [
-  "Linha 1",
-  "Linha 2",
-  "Linha 3"
+  "Quando a",
+  "resposta",
+  "demora"
  ],
- "reference": "Livro 0:0–0",
+ "reference": "Habacuque 2:1–3",
  "timing": "whisper",
  "audio_link_file": "run/audio_link_E02.txt",
  "audio_sha256": "PREENCHER_SHA256_COMPLETO",
@@ -19,11 +19,11 @@
  "selection": "contracts/e02_scene_clip_selection.json",
  "cover": {
   "top": [
-   "SLUG-COVERR-TRISTEZA",
+   "PREENCHER_DA_SELECAO",
    3.0
   ],
   "bottom": [
-   "SLUG-COVERR-LUZ",
+   "PREENCHER_DA_SELECAO",
    10.0
   ]
  },
@@ -31,13 +31,325 @@
   {
    "id": "S01",
    "block": "opening",
-   "text": "..."
+   "text": "Você já fez a sua pergunta, e agora está de pé, esperando uma resposta que não chega?",
+   "visual": {
+    "meaning": "espera noturna, sozinho",
+    "meaning_en": "a lone night sky waiting",
+    "emotion": "solidão",
+    "mood": "dark",
+    "queries": [
+     "night sky",
+     "dark clouds night",
+     "stars night"
+    ],
+    "prefer": [
+     "night",
+     "sky",
+     "clouds"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
   },
   {
    "id": "S02",
-   "block": "opening",
-   "text": "..."
+   "block": "connection",
+   "text": "Esperar cansa. Cansa mais quando o tempo passa e nada parece se mover.",
+   "visual": {
+    "meaning": "tempo lento",
+    "meaning_en": "slow passing of time",
+    "emotion": "cansaço",
+    "mood": "dark",
+    "queries": [
+     "time lapse clouds",
+     "clouds timelapse",
+     "slow clouds"
+    ],
+    "prefer": [
+     "clouds",
+     "timelapse"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S03",
+   "block": "connection",
+   "text": "Há dias em que a gente fica em silêncio, olhando para o horizonte, tentando entender o que Deus está fazendo.",
+   "visual": {
+    "meaning": "horizonte silencioso",
+    "meaning_en": "a quiet horizon in fog",
+    "emotion": "silêncio",
+    "mood": "dark",
+    "queries": [
+     "foggy mountains",
+     "fog horizon",
+     "misty hills"
+    ],
+    "prefer": [
+     "fog",
+     "mist",
+     "horizon"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S04",
+   "block": "connection",
+   "text": "E a resposta nem sempre vem no ritmo da nossa pressa.",
+   "visual": {
+    "meaning": "pressa interior",
+    "meaning_en": "restless waves",
+    "emotion": "inquietação",
+    "mood": "dark",
+    "queries": [
+     "ocean waves",
+     "river flowing",
+     "waves shore"
+    ],
+    "prefer": [
+     "waves",
+     "river"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S05",
+   "block": "biblical_reference",
+   "text": "No capítulo dois de Habacuque, depois de clamar por justiça, o profeta decide ficar de vigia.",
+   "visual": {
+    "meaning": "vigia",
+    "meaning_en": "a watchtower viewpoint over a valley",
+    "emotion": "vigilância",
+    "mood": "mid",
+    "queries": [
+     "mountain top view",
+     "hill overlook",
+     "valley view"
+    ],
+    "prefer": [
+     "mountain",
+     "valley",
+     "overlook"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S06",
+   "block": "biblical_reference",
+   "text": "Ele diz que vai esperar para ver o que Deus lhe dirá. Não foge da pergunta e também não a abandona.",
+   "visual": {
+    "meaning": "permanecer",
+    "meaning_en": "a path in a forest",
+    "emotion": "perseverança",
+    "mood": "mid",
+    "queries": [
+     "forest path",
+     "empty path",
+     "trail woods"
+    ],
+    "prefer": [
+     "path",
+     "forest",
+     "trail"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S07",
+   "block": "biblical_reference",
+   "text": "A resposta pede que a visão seja escrita com clareza e afirma que ela tem um tempo determinado. Se parecer demorar, deve ser aguardada.",
+   "visual": {
+    "meaning": "luz que chega",
+    "meaning_en": "sun rays through trees",
+    "emotion": "esperança contida",
+    "mood": "mid",
+    "queries": [
+     "sun rays trees",
+     "light through clouds",
+     "sunbeams forest"
+    ],
+    "prefer": [
+     "sun",
+     "rays",
+     "light"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S08",
+   "block": "reflection",
+   "text": "O texto não promete que tudo se resolve depressa. Ele mostra que esperar, na Bíblia, também é uma forma de confiança.",
+   "visual": {
+    "meaning": "confiança paciente",
+    "meaning_en": "grass field in the wind",
+    "emotion": "paciência",
+    "mood": "mid",
+    "queries": [
+     "grass field wind",
+     "meadow wind",
+     "wheat field"
+    ],
+    "prefer": [
+     "grass",
+     "field",
+     "meadow"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S09",
+   "block": "reflection",
+   "text": "A injustiça ao redor continua sendo real. A fé do profeta não depende de ela desaparecer hoje.",
+   "visual": {
+    "meaning": "realismo",
+    "meaning_en": "clearing storm clouds over a valley",
+    "emotion": "realismo esperançoso",
+    "mood": "mid",
+    "queries": [
+     "storm clouds valley",
+     "clouds clearing",
+     "mist valley"
+    ],
+    "prefer": [
+     "storm",
+     "clouds",
+     "valley"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S10",
+   "block": "application",
+   "text": "Talvez hoje você precise colocar em palavras o que está carregando, para enxergar com mais clareza o que leva a Deus.",
+   "visual": {
+    "meaning": "clareza",
+    "meaning_en": "a calm lake at dawn",
+    "emotion": "clareza",
+    "mood": "mid",
+    "queries": [
+     "calm lake dawn",
+     "sunrise lake",
+     "morning mist lake"
+    ],
+    "prefer": [
+     "lake",
+     "dawn",
+     "sunrise"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S11",
+   "block": "application",
+   "text": "E continuar fazendo o que é justo, no passo pequeno que está ao seu alcance, enquanto espera.",
+   "visual": {
+    "meaning": "passo a passo",
+    "meaning_en": "a trail in the mountains",
+    "emotion": "responsabilidade",
+    "mood": "bright",
+    "queries": [
+     "hiking trail",
+     "mountain trail",
+     "path mountains"
+    ],
+    "prefer": [
+     "trail",
+     "path",
+     "mountain"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S12",
+   "block": "conclusion",
+   "text": "Esperar não é desistir. É permanecer de pé, com a verdade, a responsabilidade e a esperança.",
+   "visual": {
+    "meaning": "amanhecer",
+    "meaning_en": "sunrise over mountains",
+    "emotion": "esperança sóbria",
+    "mood": "bright",
+    "queries": [
+     "sunrise mountains",
+     "sunlight mountains",
+     "sunset lake"
+    ],
+    "prefer": [
+     "sunrise",
+     "sunlight",
+     "mountain"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
   }
  ],
- "status": "RASCUNHO"
+ "status": "ROTEIRO_RASCUNHO (aguarda aprovacao do dono; sem voz; sha256 pendente)"
 }
