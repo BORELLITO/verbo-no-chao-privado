@@ -1,0 +1,19 @@
+{
+ "covers": {
+  "E02": {
+   "dhash": "11110000111110001111000011110000111100001111000011110000111100001111000011101000111010001101000011000100110110001111000011100000",
+   "ids": [
+    "30910",
+    "27378"
+   ]
+  },
+  "E01": {
+   "dhash": "",
+   "ids": [
+    "coverr-raindrops-on-the-window-7102",
+    "coverr-mountain-top-trail-9791"
+   ],
+   "_nota": "capa do E01 nao esta no repositorio: so ids protegidos; dhash NAO VERIFICADO"
+  }
+ }
+}
