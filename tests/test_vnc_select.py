@@ -25,3 +25,9 @@ class Select(unittest.TestCase):
     def test_block_when_scene_has_no_candidate_or_exhausted(self):
         self.assertIsNone(S.select_sequence(self.plan, {"S01": [cl(1, "a b")], "S02": [], "S03": [cl(2, "c d")]})[0])
         self.assertIsNone(S.select_sequence(self.plan, {"S01": [cl(1, "a b")], "S02": [cl(1, "a b")], "S03": [cl(2, "c d")]})[0])
+
+
+class Themes(unittest.TestCase):
+    def test_themes_of(self):
+        self.assertEqual(S.themes_of(["dark-clouds", "rain"]), {"dark", "cloud", "rain"})
+        self.assertIn("candle", S.themes_of(["candles"]))

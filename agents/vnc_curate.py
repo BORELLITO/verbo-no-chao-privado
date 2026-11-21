@@ -281,6 +281,7 @@ def run(ep, mode=None):
     def evaluate(unit, pool, n):
         top = sorted(pool.values(), key=lambda e: -e["kw_hit"])[:n]; need = unit["min_seconds"]; mood = unit["mood"]
         rejected, cands = [], []
+        unit_themes = SEL.themes_of(list(unit['queries']) + list(unit['prefer']))
         with ThreadPoolExecutor(8) as ex:
             res = list(ex.map(lambda e: (cache["metrics"].get(e["id"]) if e["id"] in cache["metrics"] and "phashes" in cache["metrics"][e["id"]] else None) or analyse(e, work), top))
         for e, a in zip(top, res):
@@ -288,6 +289,9 @@ def run(ep, mode=None):
                 rejected.append([e["id"], "erro/inacessivel"]); continue
             cache["metrics"][e["id"]] = a
             why = reject_reason(a["m"], mood, need, a["dur"], a["w"], a["h"])
+            th = SEL.theme(e["title"])
+            if not why and th and unit_themes and th not in unit_themes and not (unit_themes & {"sky", "cloud"} and th in {"cloud", "sky"}):
+                why = f"sem correspondencia narrativa minima (tema '{th}' fora de {sorted(unit_themes)})"
             if not why:
                 why = "; ".join(MEM.conflicts({"source": "mixkit", "id": e["id"], "title": e["title"], "sha256": a["sha256"], "phashes": a["phashes"]}, as_ep, led, reg)) or None
                 if why: why = "antirrepeticao: " + why

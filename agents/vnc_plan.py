@@ -18,15 +18,15 @@ PAUSE_S = 1.0
 # gatilho pt-BR -> (consultas Mixkit, preferencias, clima, emocao)
 LEX = [
     (("chuva", "chover", "molhad", "lagrim", "chorar", "choro"), ["rain", "raindrops", "rainy-day", "water-drops"], ["rain", "drops", "window"], "dark", "tristeza"),
-    (("noite", "escur", "trevas", "silencio", "silêncio", "sozinh", "solid"), ["night", "dark-clouds", "stormy-sky"], ["night", "dark", "clouds"], "dark", "solidao"),
-    (("tempestade", "injusti", "violenc", "ferid", "dor ", "doi", "dói", "machuc", "gritar", "clamor"), ["storm", "thunderstorm", "dark-clouds"], ["storm", "dark", "clouds"], "dark", "angustia"),
+    (("noite", "escur", "trevas", "sozinh", "solid"), ["night", "dark-clouds", "stormy-sky"], ["night", "dark", "clouds"], "dark", "solidao"),
+    (("tempestade", "injusti", "violenc", "ferid", "gritar", "clamor"), ["storm", "thunderstorm", "dark-clouds"], ["storm", "dark", "clouds"], "dark", "angustia"),
     (("mar ", "onda", "naufrag", "afog"), ["waves", "sea", "ocean"], ["waves", "stormy", "sea"], "dark", "agitacao"),
-    (("esper", "demora", "tempo", "ate quando", "até quando", "quando"), ["fog", "mist", "foggy-forest", "clouds"], ["fog", "mist", "clouds"], "mid", "espera"),
-    (("vela", "chama", "luz acesa", "oracao", "oração", "orar", "ora "), ["candle", "candles", "flame", "campfire"], ["candle", "flame", "fire"], "mid", "intimidade"),
+    (("esperar", "esperand", "demora", "ate quando", "até quando"), ["fog", "mist", "foggy-forest", "clouds"], ["fog", "mist", "clouds"], "mid", "espera"),
+    (("vela", "chama", "luz acesa"), ["candle", "candles", "flame", "campfire"], ["candle", "flame", "fire"], "mid", "intimidade"),
     (("maos", "mãos", "toque", "segur"), ["hands", "hand", "holding"], ["hands", "holding"], "mid", "toque_humano"),
     (("montanha", "caminho", "firme", "rocha", "forca", "força"), ["mountains", "mountain", "hills", "trail"], ["mountain", "trail", "peak"], "mid", "firmeza"),
-    (("amanhec", "nascer", "aurora", "esperanca", "esperança", "luz", "novo dia"), ["sunrise", "dawn", "sunbeams", "sunlight"], ["sunrise", "dawn", "sunlight"], "mid", "esperanca"),
-    (("paz", "descans", "lago", "rio", "repous", "confi", "alegr", "libert"), ["lake", "valley", "river", "reflection"], ["lake", "valley", "mountain", "calm"], "bright", "libertacao"),
+    (("amanhec", "nascer", "aurora", "novo dia"), ["sunrise", "dawn", "sunbeams", "sunlight"], ["sunrise", "dawn", "sunlight"], "mid", "esperanca"),
+    (("descans", "lago", "repous", "libert"), ["lake", "valley", "river", "reflection"], ["lake", "valley", "mountain", "calm"], "bright", "libertacao"),
 ]
 ARC_MOOD = ["dark", "dark", "dark", "mid", "mid", "mid", "mid", "mid", "mid", "mid", "bright", "bright"]  # padrao E01: tristeza -> abertura -> libertacao
 
@@ -72,8 +72,8 @@ def build_plan(cfg, arc_template, scene_seconds=None):
         base = arc.get(sc["id"], {})
         unit = {"scene": sc["id"], "block": sc.get("block"), "text": text, "start": round(t, 2), "end": round(t + dur, 2), "duration": round(dur, 2), "duration_source": src,
                 "meaning": v.get("meaning"), "emotion": v.get("emotion") or lex["emotion"], "mood": v.get("mood") or lex["mood"],
-                "queries": list(dict.fromkeys((v.get("queries") or []) + lex["queries"] + base.get("queries", [])))[:14],
-                "prefer": list(dict.fromkeys((v.get("prefer") or []) + lex["prefer"] + base.get("prefer", []))),
+                "queries": list(dict.fromkeys((v.get("queries") or []) + base.get("queries", []) + lex["queries"]))[:14],   # Claude > arco padrao vetado > lexico
+                "prefer": list(dict.fromkeys((v.get("prefer") or []) + base.get("prefer", []) + lex["prefer"])),
                 "avoid": v.get("avoid", []), "allow": base.get("allow", []) + v.get("allow", []), "shot": v.get("shot"),
                 "min_seconds": float(v.get("min_seconds") or max(base.get("min_seconds", 8), round(dur + 0.6, 1))),
                 "interpretation": "claude" if v else lex["interpretation"]}

@@ -71,3 +71,11 @@ class Memory(unittest.TestCase):
     def test_persistence_across_processes(self):
         M.try_reserve("E02", "r", [C(1)], self.p, REG)
         self.assertEqual(M.load(self.p)["entries"]["mixkit:1"]["episode"], "E02")
+
+
+class RealRegistry(unittest.TestCase):
+    def test_real_e01_registry_blocks_e01_clip_for_new_episode(self):
+        led = M.empty()
+        self.assertIn("id_ja_usado_em_E01", M.conflicts({"source": "mixkit", "id": "41739", "title": "x"}, "E02", led)[0])
+        self.assertIn("id_ja_usado_em_E01", M.conflicts({"source": "coverr", "id": "coverr-foggy-forest-8688", "title": "x"}, "E02", led)[0])
+        self.assertEqual(M.conflicts({"source": "mixkit", "id": "41739", "title": "x"}, "E01", led), [])  # o proprio episodio

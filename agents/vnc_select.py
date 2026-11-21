@@ -28,9 +28,19 @@ def hamming(a, b):
     return bin(int(a) ^ int(b)).count("1")
 
 
+THEMES = ("rain", "drop", "storm", "thunder", "sea", "wave", "ocean", "beach", "fog", "mist", "forest", "tree", "mountain", "hill", "cloud", "sky", "sun", "dawn", "lake", "river", "valley",
+          "snow", "candle", "flame", "fire", "hand", "trail", "path", "road", "field", "meadow", "night", "star", "reflection", "waterfall", "dark")
+
+
+def themes_of(words):
+    """Temas (vocabulario fechado) presentes numa lista de palavras/consultas (ex.: 'dark-clouds' -> dark, cloud)."""
+    toks = " ".join(w.replace("-", " ") for w in words).lower().split()
+    return {t for t in THEMES if any(t in w for w in toks)}
+
+
 def theme(title):
     ws = set(title.lower().split())
-    for t in ("rain", "storm", "sea", "wave", "ocean", "fog", "mist", "forest", "tree", "mountain", "cloud", "sun", "sunrise", "sunset", "lake", "river", "valley", "snow", "candle", "fire", "hand"):
+    for t in THEMES:
         if any(t in w for w in ws):
             return t
     return None
@@ -81,7 +91,7 @@ def select_sequence(plan, cands_by_scene, beam=400, W=None):
                 # variedade global: tema usado >2 vezes na sequencia
                 th = theme(c["title"])
                 if th and sum(theme(x["title"]) == th for x in seq) >= 2:
-                    g -= W["variety"] * 0.6
+                    g -= W["variety"] * (0.6 + 0.8 * (sum(theme(x['title']) == th for x in seq) - 1))
                 nxt.append((seq + [c], g, used | {c["id"]}))
         nxt.sort(key=lambda s: -s[1]); states = nxt[:beam]
         if not states:
