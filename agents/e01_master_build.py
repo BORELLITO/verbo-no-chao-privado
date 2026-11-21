@@ -165,6 +165,9 @@ def main():
         a, b = max(0.0, _sec(m[2]) - CAP_LEAD), max(0.0, _sec(m[3]) - CAP_LEAD)
         return f"Dialogue: 0,{ts(a)},{ts(b)},Caption,"
     at = re.sub(r"Dialogue: 0,(\d+:\d+:\d+\.\d+),(\d+:\d+:\d+\.\d+),Caption,", lambda m: _shift([None, None, m[1], m[2]]), at)
+    if os.environ.get("VNC_FINAL") == "1":
+        at = re.sub(r"Dialogue: 1,[^\n]*,QA,[^\n]*\n?", "", at)
+        report["final_mode"] = True
     ass_path.write_text(at, encoding="utf8")
     t0, d = adur + 0.5, 2.4
     E = f"(pow(clip((t-{t0:.2f})/{d},0,1),2)*(3-2*clip((t-{t0:.2f})/{d},0,1)))"
@@ -196,6 +199,8 @@ def main():
     print("VNC_MASTER_SHEET", len(sb))
     for n in range(0, len(sb), 1800): print("VNC_MASTER_SHEETB64", n // 1800, sb[n:n + 1800])
     print("VNC_MASTER_REPORT", json.dumps(report, ensure_ascii=False))
+    srt = caps / "e01-v3-johnes-captions.srt"
+    if srt.exists(): print("VNC_SRT", base64.b64encode(srt.read_bytes()).decode())
     vb = base64.b64encode(final.read_bytes()).decode(); print("VNC_MASTER_VIDEO", len(vb))
     for n in range(0, len(vb), 1800): print("VNC_MASTER_B64", n // 1800, vb[n:n + 1800])
     print("VNC_MASTER_END")

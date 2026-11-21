@@ -20,4 +20,4 @@ jobs:
       - name: Build E01 master preview
         run: |
           export VNC_E01_AUDIO_URL="$(cat run/audio_link.txt)"
-          VNC_SELECTION=contracts/e01_v5_scene_clip_selection_landscape.json python -m agents.e01_master_build
+          VNC_FINAL=1 VNC_SELECTION=contracts/e01_v5_scene_clip_selection_landscape.json python -m agents.e01_master_build
