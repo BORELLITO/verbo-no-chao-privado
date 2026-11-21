@@ -418,6 +418,206 @@
    "title": "tree in the mist",
    "updated_at": "2026-11-21T12:33:56Z"
   },
+  "mixkit:11291": {
+   "dur": 15.0,
+   "episode": "E02",
+   "id": "11291",
+   "interval": [
+    0,
+    9.7
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/misty-hills-and-rice-fields-11291/",
+   "phashes": [
+    211975099128925,
+    4611897959101504540,
+    211940531772620
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S08",
+   "sha256": "ac7e2082b50a3b9aa03036b5a68f75acfc95dd58b50db2af1f4a26e05bab706c",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "misty hills and rice fields",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:15398": {
+   "dur": 10.0,
+   "episode": "E02",
+   "id": "15398",
+   "interval": [
+    0,
+    9.7
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/mist-and-rain-over-a-forest-15398/",
+   "phashes": [
+    1080870536709859314,
+    7180216755186,
+    7174782903540
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S06",
+   "sha256": "808048ede037e1f1be528060d86ed1a2544e5d6f6ccc7a4e46dbdc0823ea8751",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "mist and rain over a forest",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:18009": {
+   "dur": 21.6,
+   "episode": "E02",
+   "id": "18009",
+   "interval": [
+    0,
+    8.1
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/fenced-path-in-the-snowy-mountains-18009/",
+   "phashes": [
+    7386748055223427779,
+    7422785648335447746,
+    7422803240522512193
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S11",
+   "sha256": "3552bbc24e00d9fe921c5e80ca1c28e8a09cee2fbe6121927f825f33e577a7c8",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "fenced path in the snowy mountains",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:1954": {
+   "dur": 15.3,
+   "episode": "E02",
+   "id": "1954",
+   "interval": [
+    0,
+    9.3
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sea-waves-in-a-little-bay-1954/",
+   "phashes": [
+    13970519612934976758,
+    9349861334426631414,
+    9350002179406346428
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S03",
+   "sha256": "a37cdacea23c6f3df9a700701f6ac8be19464759a7ae0e15bfe66234ce99a4a5",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sea waves in a little bay",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:21575": {
+   "dur": 12.0,
+   "episode": "E02",
+   "id": "21575",
+   "interval": [
+    0,
+    10.8
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/clouds-in-the-sky-traveling-slowly-with-the-wind-21575/",
+   "phashes": [
+    8246215620288430798,
+    11702168741966367710,
+    2767299764908625814
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S07",
+   "sha256": "80625437fb7cba2b918cc67601c755145be263633d031b39479775c6c6297d71",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "clouds in the sky traveling slowly with the wind",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:27196": {
+   "dur": 30.0,
+   "episode": "E02",
+   "id": "27196",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/waves-in-the-sea-from-a-beach-during-a-sunset-27196/",
+   "phashes": [
+    17940362868135885053,
+    17940362867616837884,
+    17940362868135885048
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S05",
+   "sha256": "e615e047e82a589fc6ce2b374a34e7900312af6aab312ff16d2068835a24c2ba",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "waves in the sea from a beach during a sunset",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:27378": {
+   "dur": 14.2,
+   "episode": "E02",
+   "id": "27378",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sunrise-from-a-snow-covered-mountain-27378/",
+   "phashes": [
+    293089435840,
+    865368727696,
+    4243408339600
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S12",
+   "sha256": "da43ee6bc99375693e0b773a91b43ad3bd65fafb6b62636c26cb55ff9d660ccd",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sunrise from a snow covered mountain",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:30910": {
+   "dur": 19.9,
+   "episode": "E02",
+   "id": "30910",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/foggy-sky-during-a-starry-night-in-the-forest-30910/",
+   "phashes": [
+    1016416628171207153,
+    12144388542498468337,
+    15042526064413897201
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S01",
+   "sha256": "19b9088937f58da325cb5c6ef1994957bc95b8d83b693c33da77456a33eff0d4",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "foggy sky during a starry night in the forest",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
   "mixkit:41739": {
    "dur": 12.1,
    "episode": "E01",
@@ -461,6 +661,106 @@
    "state": "legacy",
    "title": "",
    "updated_at": "2026-11-21T12:33:59Z"
+  },
+  "mixkit:51573": {
+   "dur": 11.9,
+   "episode": "E02",
+   "id": "51573",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/a-small-river-flowing-freely-in-the-wilderness-of-the-51573/",
+   "phashes": [
+    1808485628209699042,
+    1880561895591008425,
+    3761371217989490896
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S04",
+   "sha256": "3b48c87356d761b711f9d7f146aa5d88241821df0d5698b388f3a643774c3552",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "a small river flowing freely in the wilderness of the",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:51586": {
+   "dur": 18.4,
+   "episode": "E02",
+   "id": "51586",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/mesmerizing-timelapse-of-clouds-moving-avobe-the-forest-canopy-51586/",
+   "phashes": [
+    2319406999655187494,
+    6940311391752455334,
+    16730899212803277958
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S02",
+   "sha256": "48e1eec49eca31635ae6a4e6460b131e7cf55be11e0c43037c078c2b2fa00698",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "mesmerizing timelapse of clouds moving avobe the forest canopy",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:7277": {
+   "dur": 20.0,
+   "episode": "E02",
+   "id": "7277",
+   "interval": [
+    0,
+    9.7
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/lake-in-the-morrning-with-mist-7277/",
+   "phashes": [
+    11374894749083944,
+    1164577550868490496,
+    29669345787979776
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S10",
+   "sha256": "9f54296ddfe437583c0e31202545dd896dfafd4b92369e142d94002eb299bfc9",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "lake in the morrning with mist",
+   "updated_at": "2026-11-21T15:53:46Z"
+  },
+  "mixkit:9810": {
+   "dur": 12.4,
+   "episode": "E02",
+   "id": "9810",
+   "interval": [
+    0,
+    8.1
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-approaching-the-valley-9810/",
+   "phashes": [
+    17940120161230847230,
+    4341222779784068350,
+    12452205713913871615
+   ],
+   "reserved_at": "2026-11-21T15:53:46Z",
+   "run_id": "44920695962",
+   "scene": "S09",
+   "sha256": "b99e1571541e1cb95eebe8c0c6ceaa331c419ba9494cd95b0d210f6679d9c28a",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "storm clouds approaching the valley",
+   "updated_at": "2026-11-21T15:53:46Z"
   }
  },
  "project": "verbo-no-chao",

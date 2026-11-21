@@ -1,0 +1,20 @@
+{
+ "episode": "E02",
+ "status": "APROVADO_AUTOMATICO",
+ "issues": [],
+ "avisos": [],
+ "checks": {
+  "cenas": 12,
+  "duracao_estimada_s": 94.3,
+  "cautela_presente": true,
+  "referencia": "Habacuque 2:1–3",
+  "texto_biblico_verificado": false,
+  "nota_biblia": "NAO VERIFICADO: fonte biblica inacessivel (nao inventado)",
+  "similaridade_E01": 0.15
+ },
+ "limitacoes": [
+  "validacao AUTOMATICA de regras do canal + vinculo lexical com o texto biblico; NAO e revisao teologica independente",
+  "parafrase fiel exige leitura humana/teologica: o agente so detecta ausencia de vinculo, promessas, tom e repeticao",
+  "voz e publicacao seguem dependendo do pedido/autorizacao do dono"
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E02",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "44920695962",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "30910",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/foggy-sky-during-a-starry-night-in-the-forest-30910/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 19.9,
+   "note_pt": "clima dark (brilho 92.4), movimento 7.95, palavras-chave 3, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "51586",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/mesmerizing-timelapse-of-clouds-moving-avobe-the-forest-canopy-51586/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 18.4,
+   "note_pt": "clima dark (brilho 80.4), movimento 7.4, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "1954",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sea-waves-in-a-little-bay-1954/",
+   "interval": [
+    0,
+    9.3
+   ],
+   "preview_seconds": 15.3,
+   "note_pt": "clima dark (brilho 82.8), movimento 11.77, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "51573",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/a-small-river-flowing-freely-in-the-wilderness-of-the-51573/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 11.9,
+   "note_pt": "clima dark (brilho 74.2), movimento 8.78, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "27196",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/waves-in-the-sea-from-a-beach-during-a-sunset-27196/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 30.0,
+   "note_pt": "clima mid (brilho 117.1), movimento 8.45, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "15398",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/mist-and-rain-over-a-forest-15398/",
+   "interval": [
+    0,
+    9.7
+   ],
+   "preview_seconds": 10.0,
+   "note_pt": "clima mid (brilho 128.7), movimento 4.51, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "21575",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/clouds-in-the-sky-traveling-slowly-with-the-wind-21575/",
+   "interval": [
+    0,
+    10.8
+   ],
+   "preview_seconds": 12.0,
+   "note_pt": "clima mid (brilho 120.3), movimento 5.1, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "11291",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/misty-hills-and-rice-fields-11291/",
+   "interval": [
+    0,
+    9.7
+   ],
+   "preview_seconds": 15.0,
+   "note_pt": "clima mid (brilho 115.2), movimento 3.01, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "9810",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-approaching-the-valley-9810/",
+   "interval": [
+    0,
+    8.1
+   ],
+   "preview_seconds": 12.4,
+   "note_pt": "clima mid (brilho 118.9), movimento 6.24, palavras-chave 3, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "7277",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/lake-in-the-morrning-with-mist-7277/",
+   "interval": [
+    0,
+    9.7
+   ],
+   "preview_seconds": 20.0,
+   "note_pt": "clima mid (brilho 146.3), movimento 6.87, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "18009",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/fenced-path-in-the-snowy-mountains-18009/",
+   "interval": [
+    0,
+    8.1
+   ],
+   "preview_seconds": 21.6,
+   "note_pt": "clima bright (brilho 146.6), movimento 5.37, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "27378",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sunrise-from-a-snow-covered-mountain-27378/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 14.2,
+   "note_pt": "clima bright (brilho 171.9), movimento 4.16, palavras-chave 2, interpretacao=claude"
+  }
+ ]
+}

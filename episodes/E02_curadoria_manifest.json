@@ -1,0 +1,1265 @@
+{
+ "episode": "E02",
+ "run_id": "44920695962",
+ "engine_version": "vnc-curadoria-2.0",
+ "dry_run": false,
+ "status": "OK",
+ "segments": [
+  {
+   "scene": "S01",
+   "block": "opening",
+   "text": "Você já fez a sua pergunta, e agora está de pé, esperando uma resposta que não chega?",
+   "start": 0.0,
+   "end": 7.54,
+   "duration": 7.54,
+   "duration_source": "estimativa_palavras",
+   "meaning": "espera noturna, sozinho",
+   "emotion": "solidão",
+   "mood": "dark",
+   "queries": [
+    "night sky",
+    "dark clouds night",
+    "stars night",
+    "rain",
+    "raindrops",
+    "rainy-day",
+    "night",
+    "water-drops",
+    "rain-on-window",
+    "dark-clouds",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "clouds"
+   ],
+   "prefer": [
+    "night",
+    "sky",
+    "clouds",
+    "window",
+    "rain",
+    "drops",
+    "dark",
+    "fog",
+    "mist"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S02",
+   "block": "connection",
+   "text": "Esperar cansa. Cansa mais quando o tempo passa e nada parece se mover.",
+   "start": 7.54,
+   "end": 13.54,
+   "duration": 6.0,
+   "duration_source": "estimativa_palavras",
+   "meaning": "tempo lento",
+   "emotion": "cansaço",
+   "mood": "dark",
+   "queries": [
+    "time lapse clouds",
+    "clouds timelapse",
+    "slow clouds",
+    "storm",
+    "thunderstorm",
+    "clouds",
+    "dark-clouds",
+    "stormy-sky",
+    "fog",
+    "mist",
+    "foggy-forest"
+   ],
+   "prefer": [
+    "clouds",
+    "timelapse",
+    "storm",
+    "dark",
+    "rain",
+    "fog",
+    "mist"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S03",
+   "block": "connection",
+   "text": "Há dias em que a gente fica em silêncio, olhando para o horizonte, tentando entender o que Deus está fazendo.",
+   "start": 13.54,
+   "end": 22.23,
+   "duration": 8.69,
+   "duration_source": "estimativa_palavras",
+   "meaning": "horizonte silencioso",
+   "emotion": "silêncio",
+   "mood": "dark",
+   "queries": [
+    "foggy mountains",
+    "fog horizon",
+    "misty hills",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "fog",
+    "mist",
+    "horizon",
+    "waves",
+    "stormy",
+    "crashing",
+    "sea"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.3,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S04",
+   "block": "connection",
+   "text": "E a resposta nem sempre vem no ritmo da nossa pressa.",
+   "start": 22.23,
+   "end": 27.46,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "pressa interior",
+   "emotion": "inquietação",
+   "mood": "dark",
+   "queries": [
+    "ocean waves",
+    "river flowing",
+    "waves shore",
+    "candle",
+    "candles",
+    "fire",
+    "fireplace",
+    "flame",
+    "campfire",
+    "bonfire",
+    "lantern"
+   ],
+   "prefer": [
+    "waves",
+    "river",
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S05",
+   "block": "biblical_reference",
+   "text": "No capítulo dois de Habacuque, depois de clamar por justiça, o profeta decide ficar de vigia.",
+   "start": 27.46,
+   "end": 34.61,
+   "duration": 7.15,
+   "duration_source": "estimativa_palavras",
+   "meaning": "vigia",
+   "emotion": "vigilância",
+   "mood": "mid",
+   "queries": [
+    "mountain top view",
+    "hill overlook",
+    "valley view",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "morning-fog",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "mountain",
+    "valley",
+    "overlook",
+    "fog",
+    "mist",
+    "tree",
+    "waves",
+    "stormy",
+    "sea"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S06",
+   "block": "biblical_reference",
+   "text": "Ele diz que vai esperar para ver o que Deus lhe dirá. Não foge da pergunta e também não a abandona.",
+   "start": 34.61,
+   "end": 43.69,
+   "duration": 9.08,
+   "duration_source": "estimativa_palavras",
+   "meaning": "permanecer",
+   "emotion": "perseverança",
+   "mood": "mid",
+   "queries": [
+    "forest path",
+    "empty path",
+    "trail woods",
+    "forest",
+    "trees",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "clouds"
+   ],
+   "prefer": [
+    "path",
+    "forest",
+    "trail",
+    "mist",
+    "fog",
+    "clouds"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.7,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S07",
+   "block": "biblical_reference",
+   "text": "A resposta pede que a visão seja escrita com clareza e afirma que ela tem um tempo determinado. Se parecer demorar, deve ser aguardada.",
+   "start": 43.69,
+   "end": 53.92,
+   "duration": 10.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "luz que chega",
+   "emotion": "esperança contida",
+   "mood": "mid",
+   "queries": [
+    "sun rays trees",
+    "light through clouds",
+    "sunbeams forest",
+    "mountains",
+    "mountain",
+    "hills",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "clouds"
+   ],
+   "prefer": [
+    "sun",
+    "rays",
+    "light",
+    "mountain",
+    "cliff",
+    "peak",
+    "fog",
+    "mist",
+    "clouds"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 10.8,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S08",
+   "block": "reflection",
+   "text": "O texto não promete que tudo se resolve depressa. Ele mostra que esperar, na Bíblia, também é uma forma de confiança.",
+   "start": 53.92,
+   "end": 63.0,
+   "duration": 9.08,
+   "duration_source": "estimativa_palavras",
+   "meaning": "confiança paciente",
+   "emotion": "paciência",
+   "mood": "mid",
+   "queries": [
+    "grass field wind",
+    "meadow wind",
+    "wheat field",
+    "clouds",
+    "sky",
+    "beach",
+    "fog",
+    "mist",
+    "foggy-forest"
+   ],
+   "prefer": [
+    "grass",
+    "field",
+    "meadow",
+    "clouds",
+    "sky",
+    "beach",
+    "fog",
+    "mist"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.7,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S09",
+   "block": "reflection",
+   "text": "A injustiça ao redor continua sendo real. A fé do profeta não depende de ela desaparecer hoje.",
+   "start": 63.0,
+   "end": 70.54,
+   "duration": 7.54,
+   "duration_source": "estimativa_palavras",
+   "meaning": "realismo",
+   "emotion": "realismo esperançoso",
+   "mood": "mid",
+   "queries": [
+    "storm clouds valley",
+    "clouds clearing",
+    "mist valley",
+    "sunrise",
+    "sunset",
+    "sun",
+    "dawn",
+    "sunlight",
+    "sunbeams",
+    "storm",
+    "thunderstorm",
+    "dark-clouds"
+   ],
+   "prefer": [
+    "storm",
+    "clouds",
+    "valley",
+    "sunrise",
+    "sunlight",
+    "sun",
+    "dawn",
+    "dark"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.1,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S10",
+   "block": "application",
+   "text": "Talvez hoje você precise colocar em palavras o que está carregando, para enxergar com mais clareza o que leva a Deus.",
+   "start": 70.54,
+   "end": 79.62,
+   "duration": 9.08,
+   "duration_source": "estimativa_palavras",
+   "meaning": "clareza",
+   "emotion": "clareza",
+   "mood": "mid",
+   "queries": [
+    "calm lake dawn",
+    "sunrise lake",
+    "morning mist lake",
+    "hands",
+    "hand",
+    "praying",
+    "holding"
+   ],
+   "prefer": [
+    "lake",
+    "dawn",
+    "sunrise",
+    "hands",
+    "holding",
+    "hand",
+    "glass",
+    "water"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.7,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S11",
+   "block": "application",
+   "text": "E continuar fazendo o que é justo, no passo pequeno que está ao seu alcance, enquanto espera.",
+   "start": 79.62,
+   "end": 87.16,
+   "duration": 7.54,
+   "duration_source": "estimativa_palavras",
+   "meaning": "passo a passo",
+   "emotion": "responsabilidade",
+   "mood": "bright",
+   "queries": [
+    "hiking trail",
+    "mountain trail",
+    "path mountains",
+    "trail",
+    "path",
+    "hills",
+    "road",
+    "meadow",
+    "field",
+    "nature",
+    "countryside"
+   ],
+   "prefer": [
+    "trail",
+    "path",
+    "mountain",
+    "hills"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.1,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S12",
+   "block": "conclusion",
+   "text": "Esperar não é desistir. É permanecer de pé, com a verdade, a responsabilidade e a esperança.",
+   "start": 87.16,
+   "end": 94.31,
+   "duration": 7.15,
+   "duration_source": "estimativa_palavras",
+   "meaning": "amanhecer",
+   "emotion": "esperança sóbria",
+   "mood": "bright",
+   "queries": [
+    "sunrise mountains",
+    "sunlight mountains",
+    "sunset lake",
+    "lake",
+    "valley",
+    "river",
+    "mountain-lake",
+    "lagoon",
+    "reflection",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "clouds"
+   ],
+   "prefer": [
+    "sunrise",
+    "sunlight",
+    "mountain",
+    "lake",
+    "valley",
+    "fog",
+    "mist",
+    "clouds"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 14.0,
+   "interpretation": "claude"
+  }
+ ],
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "30910",
+   "title": "foggy sky during a starry night in the forest",
+   "page": "https://mixkit.co/free-stock-video/foggy-sky-during-a-starry-night-in-the-forest-30910/",
+   "preview_url": "https://assets.mixkit.co/videos/30910/30910-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/30910/30910-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 19.9,
+   "sha256": "19b9088937f58da325cb5c6ef1994957bc95b8d83b693c33da77456a33eff0d4",
+   "phashes": [
+    1016416628171207153,
+    12144388542498468337,
+    15042526064413897201
+   ],
+   "segment": {
+    "start": 0.0,
+    "end": 7.54,
+    "emotion": "solidão",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 92.4), movimento 7.95, palavras-chave 3, interpretacao=claude",
+   "scores": {
+    "unary": 3.098,
+    "clip_sem": 0.0048
+   },
+   "vision": {
+    "sem": 0.0048,
+    "neg": {
+     "people": 0.1976,
+     "city": 0.0034,
+     "indoor": 0.6883,
+     "text": 0.0006,
+     "cgi": 0.1053
+    }
+   },
+   "metrics": {
+    "brightness": 92.4,
+    "saturation": 67.5,
+    "motion": 7.95,
+    "cut_ratio": 1.9,
+    "sharp": 6.8
+   },
+   "alternatives": [
+    "mixkit:46203",
+    "mixkit:10149",
+    "mixkit:4124",
+    "mixkit:21130"
+   ]
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "51586",
+   "title": "mesmerizing timelapse of clouds moving avobe the forest canopy",
+   "page": "https://mixkit.co/free-stock-video/mesmerizing-timelapse-of-clouds-moving-avobe-the-forest-canopy-51586/",
+   "preview_url": "https://assets.mixkit.co/videos/51586/51586-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/51586/51586-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 18.4,
+   "sha256": "48e1eec49eca31635ae6a4e6460b131e7cf55be11e0c43037c078c2b2fa00698",
+   "phashes": [
+    2319406999655187494,
+    6940311391752455334,
+    16730899212803277958
+   ],
+   "segment": {
+    "start": 7.54,
+    "end": 13.54,
+    "emotion": "cansaço",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 80.4), movimento 7.4, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.387,
+    "clip_sem": 0.0104
+   },
+   "vision": {
+    "sem": 0.0104,
+    "neg": {
+     "people": 0.2987,
+     "city": 0.016,
+     "indoor": 0.4931,
+     "text": 0.0011,
+     "cgi": 0.1807
+    }
+   },
+   "metrics": {
+    "brightness": 80.4,
+    "saturation": 109.5,
+    "motion": 7.4,
+    "cut_ratio": 1.11,
+    "sharp": 12.07
+   },
+   "alternatives": [
+    "mixkit:29338",
+    "mixkit:9606",
+    "mixkit:9624",
+    "mixkit:9590"
+   ]
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "1954",
+   "title": "sea waves in a little bay",
+   "page": "https://mixkit.co/free-stock-video/sea-waves-in-a-little-bay-1954/",
+   "preview_url": "https://assets.mixkit.co/videos/1954/1954-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/1954/1954-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.3
+   ],
+   "clip_seconds": 15.3,
+   "sha256": "a37cdacea23c6f3df9a700701f6ac8be19464759a7ae0e15bfe66234ce99a4a5",
+   "phashes": [
+    13970519612934976758,
+    9349861334426631414,
+    9350002179406346428
+   ],
+   "segment": {
+    "start": 13.54,
+    "end": 22.23,
+    "emotion": "silêncio",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 82.8), movimento 11.77, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.65,
+    "clip_sem": 0.3888
+   },
+   "vision": {
+    "sem": 0.3888,
+    "neg": {
+     "people": 0.2981,
+     "city": 0.076,
+     "indoor": 0.1599,
+     "text": 0.0014,
+     "cgi": 0.0758
+    }
+   },
+   "metrics": {
+    "brightness": 82.8,
+    "cut_ratio": 1.03,
+    "motion": 11.77,
+    "saturation": 79.6,
+    "sharp": 19.31
+   },
+   "alternatives": [
+    "mixkit:2124",
+    "mixkit:28816",
+    "mixkit:35513",
+    "mixkit:9294"
+   ]
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "51573",
+   "title": "a small river flowing freely in the wilderness of the",
+   "page": "https://mixkit.co/free-stock-video/a-small-river-flowing-freely-in-the-wilderness-of-the-51573/",
+   "preview_url": "https://assets.mixkit.co/videos/51573/51573-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/51573/51573-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 11.9,
+   "sha256": "3b48c87356d761b711f9d7f146aa5d88241821df0d5698b388f3a643774c3552",
+   "phashes": [
+    1808485628209699042,
+    1880561895591008425,
+    3761371217989490896
+   ],
+   "segment": {
+    "start": 22.23,
+    "end": 27.46,
+    "emotion": "inquietação",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 74.2), movimento 8.78, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.441,
+    "clip_sem": 0.0062
+   },
+   "vision": {
+    "sem": 0.0062,
+    "neg": {
+     "people": 0.5549,
+     "city": 0.0185,
+     "indoor": 0.3743,
+     "text": 0.0002,
+     "cgi": 0.0458
+    }
+   },
+   "metrics": {
+    "brightness": 74.2,
+    "saturation": 54.4,
+    "motion": 8.78,
+    "cut_ratio": 1.05,
+    "sharp": 15.97
+   },
+   "alternatives": [
+    "mixkit:8139",
+    "mixkit:51599",
+    "mixkit:44637",
+    "mixkit:31789"
+   ]
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "27196",
+   "title": "waves in the sea from a beach during a sunset",
+   "page": "https://mixkit.co/free-stock-video/waves-in-the-sea-from-a-beach-during-a-sunset-27196/",
+   "preview_url": "https://assets.mixkit.co/videos/27196/27196-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/27196/27196-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 30.0,
+   "sha256": "e615e047e82a589fc6ce2b374a34e7900312af6aab312ff16d2068835a24c2ba",
+   "phashes": [
+    17940362868135885053,
+    17940362867616837884,
+    17940362868135885048
+   ],
+   "segment": {
+    "start": 27.46,
+    "end": 34.61,
+    "emotion": "vigilância",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 117.1), movimento 8.45, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.393,
+    "clip_sem": 0.0465
+   },
+   "vision": {
+    "sem": 0.0465,
+    "neg": {
+     "people": 0.2638,
+     "city": 0.0657,
+     "indoor": 0.5,
+     "text": 0.0015,
+     "cgi": 0.1226
+    }
+   },
+   "metrics": {
+    "brightness": 117.1,
+    "cut_ratio": 1.06,
+    "motion": 8.45,
+    "saturation": 70.1,
+    "sharp": 16.07
+   },
+   "alternatives": [
+    "mixkit:35513",
+    "mixkit:44616",
+    "mixkit:1954",
+    "mixkit:43135"
+   ]
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "15398",
+   "title": "mist and rain over a forest",
+   "page": "https://mixkit.co/free-stock-video/mist-and-rain-over-a-forest-15398/",
+   "preview_url": "https://assets.mixkit.co/videos/15398/15398-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/15398/15398-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.7
+   ],
+   "clip_seconds": 10.0,
+   "sha256": "808048ede037e1f1be528060d86ed1a2544e5d6f6ccc7a4e46dbdc0823ea8751",
+   "phashes": [
+    1080870536709859314,
+    7180216755186,
+    7174782903540
+   ],
+   "segment": {
+    "start": 34.61,
+    "end": 43.69,
+    "emotion": "perseverança",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 128.7), movimento 4.51, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.558,
+    "clip_sem": 0.0108
+   },
+   "vision": {
+    "sem": 0.0108,
+    "neg": {
+     "people": 0.0707,
+     "city": 0.1211,
+     "indoor": 0.7246,
+     "text": 0.0049,
+     "cgi": 0.068
+    }
+   },
+   "metrics": {
+    "brightness": 128.7,
+    "cut_ratio": 1.07,
+    "motion": 4.51,
+    "saturation": 103.6,
+    "sharp": 12.71
+   },
+   "alternatives": [
+    "mixkit:2362",
+    "mixkit:35532",
+    "mixkit:50867",
+    "mixkit:34893"
+   ]
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "21575",
+   "title": "clouds in the sky traveling slowly with the wind",
+   "page": "https://mixkit.co/free-stock-video/clouds-in-the-sky-traveling-slowly-with-the-wind-21575/",
+   "preview_url": "https://assets.mixkit.co/videos/21575/21575-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/21575/21575-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    10.8
+   ],
+   "clip_seconds": 12.0,
+   "sha256": "80625437fb7cba2b918cc67601c755145be263633d031b39479775c6c6297d71",
+   "phashes": [
+    8246215620288430798,
+    11702168741966367710,
+    2767299764908625814
+   ],
+   "segment": {
+    "start": 43.69,
+    "end": 53.92,
+    "emotion": "esperança contida",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 120.3), movimento 5.1, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.548,
+    "clip_sem": 0.0015
+   },
+   "vision": {
+    "sem": 0.0015,
+    "neg": {
+     "people": 0.1326,
+     "city": 0.0088,
+     "indoor": 0.7892,
+     "text": 0.0003,
+     "cgi": 0.0676
+    }
+   },
+   "metrics": {
+    "brightness": 120.3,
+    "saturation": 110.0,
+    "motion": 5.1,
+    "cut_ratio": 1.0,
+    "sharp": 10.42
+   },
+   "alternatives": [
+    "mixkit:35532",
+    "mixkit:3013",
+    "mixkit:35513",
+    "mixkit:44616"
+   ]
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "11291",
+   "title": "misty hills and rice fields",
+   "page": "https://mixkit.co/free-stock-video/misty-hills-and-rice-fields-11291/",
+   "preview_url": "https://assets.mixkit.co/videos/11291/11291-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/11291/11291-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.7
+   ],
+   "clip_seconds": 15.0,
+   "sha256": "ac7e2082b50a3b9aa03036b5a68f75acfc95dd58b50db2af1f4a26e05bab706c",
+   "phashes": [
+    211975099128925,
+    4611897959101504540,
+    211940531772620
+   ],
+   "segment": {
+    "start": 53.92,
+    "end": 63.0,
+    "emotion": "paciência",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 115.2), movimento 3.01, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.343,
+    "clip_sem": 0.0025
+   },
+   "vision": {
+    "sem": 0.0025,
+    "neg": {
+     "people": 0.2109,
+     "city": 0.0366,
+     "indoor": 0.6079,
+     "text": 0.0005,
+     "cgi": 0.1415
+    }
+   },
+   "metrics": {
+    "brightness": 115.2,
+    "saturation": 68.2,
+    "motion": 3.01,
+    "cut_ratio": 1.62,
+    "sharp": 7.99
+   },
+   "alternatives": [
+    "mixkit:2168",
+    "mixkit:17547",
+    "mixkit:8297",
+    "mixkit:25182"
+   ]
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "9810",
+   "title": "storm clouds approaching the valley",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-approaching-the-valley-9810/",
+   "preview_url": "https://assets.mixkit.co/videos/9810/9810-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/9810/9810-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.1
+   ],
+   "clip_seconds": 12.4,
+   "sha256": "b99e1571541e1cb95eebe8c0c6ceaa331c419ba9494cd95b0d210f6679d9c28a",
+   "phashes": [
+    17940120161230847230,
+    4341222779784068350,
+    12452205713913871615
+   ],
+   "segment": {
+    "start": 63.0,
+    "end": 70.54,
+    "emotion": "realismo esperançoso",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 118.9), movimento 6.24, palavras-chave 3, interpretacao=claude",
+   "scores": {
+    "unary": 3.513,
+    "clip_sem": 0.0227
+   },
+   "vision": {
+    "sem": 0.0227,
+    "neg": {
+     "people": 0.1521,
+     "city": 0.1384,
+     "indoor": 0.5861,
+     "text": 0.0002,
+     "cgi": 0.1005
+    }
+   },
+   "metrics": {
+    "brightness": 118.9,
+    "cut_ratio": 1.33,
+    "motion": 6.24,
+    "saturation": 40.6,
+    "sharp": 10.45
+   },
+   "alternatives": [
+    "mixkit:17547",
+    "mixkit:1709",
+    "mixkit:9606",
+    "mixkit:3296"
+   ]
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "7277",
+   "title": "lake in the morrning with mist",
+   "page": "https://mixkit.co/free-stock-video/lake-in-the-morrning-with-mist-7277/",
+   "preview_url": "https://assets.mixkit.co/videos/7277/7277-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/7277/7277-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.7
+   ],
+   "clip_seconds": 20.0,
+   "sha256": "9f54296ddfe437583c0e31202545dd896dfafd4b92369e142d94002eb299bfc9",
+   "phashes": [
+    11374894749083944,
+    1164577550868490496,
+    29669345787979776
+   ],
+   "segment": {
+    "start": 70.54,
+    "end": 79.62,
+    "emotion": "clareza",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 146.3), movimento 6.87, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.656,
+    "clip_sem": 0.2627
+   },
+   "vision": {
+    "sem": 0.2627,
+    "neg": {
+     "people": 0.5171,
+     "city": 0.0697,
+     "indoor": 0.1263,
+     "text": 0.0017,
+     "cgi": 0.0225
+    }
+   },
+   "metrics": {
+    "brightness": 146.3,
+    "saturation": 46.7,
+    "motion": 6.87,
+    "cut_ratio": 0.98,
+    "sharp": 14.86
+   },
+   "alternatives": [
+    "mixkit:31624",
+    "mixkit:7307",
+    "mixkit:34748",
+    "mixkit:27197"
+   ]
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "18009",
+   "title": "fenced path in the snowy mountains",
+   "page": "https://mixkit.co/free-stock-video/fenced-path-in-the-snowy-mountains-18009/",
+   "preview_url": "https://assets.mixkit.co/videos/18009/18009-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/18009/18009-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.1
+   ],
+   "clip_seconds": 21.6,
+   "sha256": "3552bbc24e00d9fe921c5e80ca1c28e8a09cee2fbe6121927f825f33e577a7c8",
+   "phashes": [
+    7386748055223427779,
+    7422785648335447746,
+    7422803240522512193
+   ],
+   "segment": {
+    "start": 79.62,
+    "end": 87.16,
+    "emotion": "responsabilidade",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 146.6), movimento 5.37, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.601,
+    "clip_sem": 0.0149
+   },
+   "vision": {
+    "sem": 0.0149,
+    "neg": {
+     "people": 0.2093,
+     "city": 0.0071,
+     "indoor": 0.4158,
+     "text": 0.0001,
+     "cgi": 0.3528
+    }
+   },
+   "metrics": {
+    "brightness": 146.6,
+    "saturation": 27.2,
+    "motion": 5.37,
+    "cut_ratio": 1.18,
+    "sharp": 18.09
+   },
+   "alternatives": [
+    "mixkit:46110",
+    "mixkit:35063",
+    "mixkit:28333",
+    "mixkit:3876"
+   ]
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "27378",
+   "title": "sunrise from a snow covered mountain",
+   "page": "https://mixkit.co/free-stock-video/sunrise-from-a-snow-covered-mountain-27378/",
+   "preview_url": "https://assets.mixkit.co/videos/27378/27378-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/27378/27378-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    14.0
+   ],
+   "clip_seconds": 14.2,
+   "sha256": "da43ee6bc99375693e0b773a91b43ad3bd65fafb6b62636c26cb55ff9d660ccd",
+   "phashes": [
+    293089435840,
+    865368727696,
+    4243408339600
+   ],
+   "segment": {
+    "start": 87.16,
+    "end": 94.31,
+    "emotion": "esperança sóbria",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 171.9), movimento 4.16, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.452,
+    "clip_sem": 0.0592
+   },
+   "vision": {
+    "sem": 0.0592,
+    "neg": {
+     "people": 0.2599,
+     "city": 0.0145,
+     "indoor": 0.4561,
+     "text": 0.0002,
+     "cgi": 0.21
+    }
+   },
+   "metrics": {
+    "brightness": 171.9,
+    "saturation": 31.5,
+    "motion": 4.16,
+    "cut_ratio": 1.09,
+    "sharp": 7.78
+   },
+   "alternatives": [
+    "mixkit:34899",
+    "mixkit:14427",
+    "mixkit:9779",
+    "mixkit:30342"
+   ]
+  }
+ ],
+ "reservation_state": "reserved",
+ "qa": {
+  "diagnostico": [],
+  "limitacoes_pt": [
+   "sem analise visual multimodal: so metricas objetivas (movimento, brilho, saturacao, nitidez, cortes) + titulo/tags; compreensao do roteiro = plano `visual` escrito pelo Claude",
+   "fonte automatica unica: Mixkit (Coverr bloqueia busca por robots; Pexels exige chave)",
+   "ids legados Coverr/Pexels do E01 sem impressao digital: protegidos so por ID e titulo"
+  ],
+  "roteiro_review": {
+   "status": "APROVADO_AUTOMATICO",
+   "issues": [],
+   "checks": {
+    "cenas": 12,
+    "duracao_estimada_s": 94.3,
+    "cautela_presente": true,
+    "referencia": "Habacuque 2:1–3",
+    "texto_biblico_verificado": false,
+    "nota_biblia": "NAO VERIFICADO: fonte biblica inacessivel (nao inventado)",
+    "similaridade_E01": 0.15
+   }
+  },
+  "vision": "clip-vit-base-patch32 (local, CPU)",
+  "fontes_ativas": [
+   "mixkit",
+   "wikimedia"
+  ],
+  "fontes_com_chave_ausente": [
+   "pexels",
+   "pixabay"
+  ],
+  "clips": 12,
+  "distinct": 12,
+  "sources": [
+   "mixkit"
+  ],
+  "license_all_ok": true,
+  "duracao_total_estimada": 94.31,
+  "aprovacao_estetica_humana": "NAO_VERIFICADA",
+  "manifest_errors": []
+ },
+ "sequence_utility": 39.913,
+ "trace": {
+  "beam": 400,
+  "weights": {
+   "semantic": 1.0,
+   "technical": 0.6,
+   "motion": 0.5,
+   "mood_fit": 0.8,
+   "duration_fit": 0.5,
+   "continuity": 0.7,
+   "variety": 0.9,
+   "clip": 1.2,
+   "originality": 0.3
+  }
+ }
+}
