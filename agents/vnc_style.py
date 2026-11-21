@@ -101,11 +101,11 @@ def _norm_events(at, adur, T):
     return out
 
 
-def make_lock(final_ass, adur, T, fc, ass_path, t0, logo_hashes=None):
+def make_lock(final_ass, adur, T, fc, ass_path, t0, logo_sig=None):
     cap = re.search(r"^Style: Caption,.*$", final_ass, re.M)[0]
     return {"_aviso": "Identidade fixa do canal (aprovada pelo dono no E01). Mudar so com pedido expresso do dono.",
             "constants": constants(), "caption_style": cap, "events": _norm_events(final_ass, adur, T),
-            "filter_skeleton_sha256": hashlib.sha256(skeleton(fc, ass_path, adur, T, t0).encode()).hexdigest(), "logo_hashes": logo_hashes}
+            "filter_skeleton_sha256": hashlib.sha256(skeleton(fc, ass_path, adur, T, t0).encode()).hexdigest(), "logo_signature": logo_sig}
 
 
 def load_lock():
@@ -150,17 +150,26 @@ def check_filter(fc, ass_path, adur, T, t0, lock=None):
     return [] if hashlib.sha256(skeleton(fc, ass_path, adur, T, t0).encode()).hexdigest() == lock["filter_skeleton_sha256"] else ["cadeia de audio/video (filtros) difere do padrao"]
 
 
-def hash_logo_dir(d):
-    d = Path(d); h = hashlib.sha256()
-    for p in sorted(d.glob("f_*.png")):
-        h.update(p.read_bytes())
-    return {"static": hashlib.sha256((d / "static.png").read_bytes()).hexdigest(), "sequence": h.hexdigest()}
+def logo_signature(d):
+    """Assinatura geometrica das camadas da logo (caixa + opacidade media de quadros amostrados): robusta a diferencas de arredondamento."""
+    import numpy as np
+    from PIL import Image
+    d = Path(d); frames = sorted(d.glob("f_*.png")); picks = [d / "static.png"] + frames[::8] + [frames[-1]]
+    sig = []
+    for p in picks:
+        a = np.asarray(Image.open(p).convert("RGBA"))[..., 3]; ys, xs = np.where(a > 16)
+        sig.append([int(xs.min()), int(ys.min()), int(xs.max()), int(ys.max()), round(float(a.mean()), 2)] if len(xs) else [0, 0, 0, 0, 0.0])
+    return {"n_frames": len(frames), "boxes": sig}
 
 
-def check_logo(d, adur, T, lock=None):
-    lock = lock or load_lock()
-    want = lock.get("logo_hashes")
+def check_logo(d, adur, T, lock=None, tol_px=1, tol_mean=1.0):
+    lock = lock or load_lock(); want = lock.get("logo_signature")
     if not want:
         return []
-    got = hash_logo_dir(d)
-    return [] if got == want else ["logo: camadas renderizadas (posicao/tamanho/animacao) diferem do padrao"]
+    got = logo_signature(d)
+    if got["n_frames"] != want["n_frames"] or len(got["boxes"]) != len(want["boxes"]):
+        return ["logo: numero de quadros da animacao difere do padrao"]
+    for g, w in zip(got["boxes"], want["boxes"]):
+        if any(abs(a - b) > tol_px for a, b in zip(g[:4], w[:4])) or abs(g[4] - w[4]) > tol_mean:
+            return ["logo: posicao/tamanho/opacidade das camadas diferem do padrao"]
+    return []

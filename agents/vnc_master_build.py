@@ -213,7 +213,7 @@ def main(ep=None):
     make_logo_layers(adur, T, t0, WORK / "logo_frames")
     fc = ST.final_filter(adur, T, t0, ass_path)
     lock_errs += ST.check_filter(fc, ass_path, adur, T, t0) + ST.check_logo(WORK / "logo_frames", adur, T)
-    report["logo_hashes"] = ST.hash_logo_dir(WORK / "logo_frames"); report["style_lock_errors"] = lock_errs
+    report["logo_signature_head"] = ST.logo_signature(WORK / "logo_frames")["boxes"][:3]; report["style_lock_errors"] = lock_errs
     if lock_errs:
         print("VNC_MASTER_ABORT style_lock", json.dumps(lock_errs, ensure_ascii=False)); sys.exit(8)
     subprocess.run([FF, "-v", "error", "-y", "-i", str(WORK / "video.mp4"), "-i", str(WORK / "voice.mp3"), "-loop", "1", "-framerate", "30", "-i", str(WORK / "logo_frames" / "static.png"), "-i", str(WORK / "music.mp3"), "-framerate", "30", "-i", str(WORK / "logo_frames" / "f_%04d.png"),

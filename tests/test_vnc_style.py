@@ -58,3 +58,21 @@ class StyleLock(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LogoLock(unittest.TestCase):
+    def test_logo_signature_detects_shift_and_resize(self):
+        import shutil, tempfile
+        from PIL import Image
+        src = Path("/tmp/lg_after")
+        if not src.exists():
+            try:
+                import agents.vnc_master_build as m
+            except ImportError:
+                self.skipTest("renderizacao da logo so no runner de build (o proprio build confere a assinatura)")
+            m.make_logo_layers(76.67, 86.17, 77.17, src)
+        self.assertEqual(ST.check_logo(src, 76.67, 86.17), [])
+        with tempfile.TemporaryDirectory() as d:
+            shutil.copytree(src, Path(d) / "x")
+            im = Image.open(Path(d) / "x/static.png"); sh = Image.new("RGBA", im.size, (0, 0, 0, 0)); sh.alpha_composite(im, (0, 12)); sh.save(Path(d) / "x/static.png")
+            self.assertTrue(ST.check_logo(Path(d) / "x", 76.67, 86.17))
