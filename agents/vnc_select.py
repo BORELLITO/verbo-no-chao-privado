@@ -13,6 +13,7 @@ DEFAULT_WEIGHTS = {
     "duration_fit": 0.5, # clipe cobre a unidade sem sobrar demais
     "continuity": 0.7,   # transicao suave entre vizinhos (brilho/saturacao)
     "variety": 0.9,      # penaliza enquadramento (hash) e tema repetidos entre vizinhos/sequencia
+    "clip": 1.2,         # alinhamento imagem<->cena medido por CLIP (unica medida do CONTEUDO visual real)
     "originality": 0.3,  # penaliza titulos genericos muito comuns
     "why_pt": {"semantic": "o sentido do trecho manda", "variety": "evita montagem redundante", "continuity": "evita salto de atmosfera sem motivo"},
 }
@@ -63,7 +64,8 @@ def unary(c, unit, W):
     if c["dur"] > need * 3:
         dur -= 0.2
     orig = 0.0 if (set(c["title"].lower().split()) & GENERIC) else 1.0
-    return (W["semantic"] * sem + W["technical"] * tech + W["motion"] * mot + W["mood_fit"] * mood + W["duration_fit"] * dur + W["originality"] * orig
+    clip = W.get("clip", 1.2) * c.get("clip_sem", 0.3)
+    return (clip + W["semantic"] * sem + W["technical"] * tech + W["motion"] * mot + W["mood_fit"] * mood + W["duration_fit"] * dur + W["originality"] * orig
             - 0.4 * max(0.0, m["saturation"] - 110) / 80 - 0.25 * max(0, m["cut_ratio"] - 4) / 5)
 
 

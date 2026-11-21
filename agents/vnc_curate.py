@@ -11,7 +11,7 @@ Funcoes puras (parse/score/filtros) testadas offline em tests/test_vnc_curate.py
 import base64, hashlib, io, json, os, re, subprocess, sys, time, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from agents import vnc_memory as MEM, vnc_plan as PLAN, vnc_select as SEL, vnc_sources as SRC
+from agents import vnc_vision as VIS, vnc_memory as MEM, vnc_plan as PLAN, vnc_select as SEL, vnc_sources as SRC
 
 ROOT = Path(__file__).resolve().parents[1]
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"}
@@ -302,9 +302,12 @@ def run(ep, mode=None):
         return _finish(manifest, mf_path, None, dry, 3)
     work = Path("/tmp/curate"); work.mkdir(exist_ok=True)
     cache = cache_load(); t0 = time.time()
+    ann = VIS.Annotator(cache) if VIS.backend() else None
+    vision_state = "clip-vit-base-patch32 (local, CPU)" if ann else "indisponivel: " + str(VIS.unavailable_reason())
+    print("VNC_CURATE_VISAO", vision_state)
     sources = SRC.enabled()
     print("VNC_CURATE_FONTES", sources, "(pexels/pixabay so com segredo; ausentes = desativadas)")
-    ctx = {"get": get, "cache": cache, "env": os.environ, "ua": UA, "sleep": time.sleep, "budget": {"coverr": 160}}
+    ctx = {"get": get, "cache": cache, "env": os.environ, "ua": UA, "sleep": time.sleep, "budget": {"coverr": 160, "pexels": 60, "pixabay": 40}}
     def list_kw(src, kw):
         key = f"{src}:{re.sub(r'[^a-z0-9]+', '-', kw.lower()).strip('-')}"
         hit = cache["listing"].get(key) or (cache["listing"].get(key.split(":", 1)[1]) if src == "mixkit" else None)  # compat com cache antigo (so mixkit)
@@ -356,6 +359,27 @@ def run(ep, mode=None):
                 rejected.append([tag, why]); continue
             cands.append({"id": e["id"], "source": e["source"], "title": e["title"], "page": e["page"], "dur": round(a["dur"], 1), "m": a["m"], "phash": a["phash"], "phashes": a["phashes"], "entry": e,
                           "sha256": a["sha256"], "kw_hit": e["kw_hit"], "mood_range": MOODS[mood], "mood_ok": True, "preview": e["preview"]})
+        if ann:  # analise visual real (CLIP) so nos melhores pre-ranqueados; embeddings em cache
+            cands.sort(key=lambda c: -SEL.unary(c, unit, SEL.weights())); kept = []
+            for i, c in enumerate(cands):
+                if i >= 14:
+                    break
+                f = work / f"{c['source']}_{c['id']}.mp4"; c["key"] = mkey(c["entry"])
+                def fr(c=c, f=f):
+                    if not f.exists():
+                        f.write_bytes(get(c["preview"]))
+                    return VIS.clip_frames(f, _ffmpeg(), c["dur"])
+                try:
+                    res = ann.annotate(c, unit, fr)
+                except Exception as e:  # noqa
+                    res = None; print("VNC_CURATE_WARN visao", c["id"], repr(e)[:60])
+                if res:
+                    why = VIS.verdict(res, allow=("people",) if "hands" in unit.get("allow", []) else ())
+                    if why:
+                        rejected.append([f"{c['source']}:{c['id']}", why]); continue
+                    c["clip_sem"] = res["sem"]; c["vision"] = res
+                kept.append(c)
+            cands = kept
         return pick_top([dict(c, score=SEL.unary(c, unit, SEL.weights())) for c in cands], 8), rejected
     backfill(led, reg, cache, work, dry)
     by_scene, rej_all, extra = {}, {}, {}
@@ -405,9 +429,9 @@ def run(ep, mode=None):
                       "license": SRC.LICENSES[c["source"]], "license_ok": ok, "license_evidence": ev, "interval": [0, round(min(c["dur"], u["min_seconds"]), 2)], "clip_seconds": c["dur"],
                       "sha256": c["sha256"], "phashes": c["phashes"], "segment": {"start": u["start"], "end": u["end"], "emotion": u["emotion"], "interpretation": u["interpretation"]},
                       "justification": f"clima {u['mood']} (brilho {c['m']['brightness']}), movimento {c['m']['motion']}, palavras-chave {c['kw_hit']}, interpretacao={u['interpretation']}",
-                      "scores": {"unary": round(c["score"], 3)}, "metrics": c["m"], "alternatives": [f"{a['source']}:{a['id']}" for a in by_scene[u["scene"]] if a["id"] != c["id"] or a["source"] != c["source"]][:4]})
+                      "scores": {"unary": round(c["score"], 3), "clip_sem": c.get("clip_sem")}, "vision": c.get("vision"), "metrics": c["m"], "alternatives": [f"{a['source']}:{a['id']}" for a in by_scene[u["scene"]] if a["id"] != c["id"] or a["source"] != c["source"]][:4]})
     manifest.update({"status": "OK", "clips": clips, "sequence_utility": util, "trace": trace})
-    manifest["qa"].update({"clips": len(clips), "distinct": len({(c["source"], c["id"]) for c in clips}), "sources": sorted({c["source"] for c in clips}), "license_all_ok": all(c["license_ok"] for c in clips),
+    manifest["qa"].update({"vision": vision_state, "fontes_ativas": sources, "fontes_com_chave_ausente": [x for x in ("pexels", "pixabay") if x not in sources], "clips": len(clips), "distinct": len({(c["source"], c["id"]) for c in clips}), "sources": sorted({c["source"] for c in clips}), "license_all_ok": all(c["license_ok"] for c in clips),
                            "duracao_total_estimada": plan[-1]["end"], "aprovacao_estetica_humana": "NAO_VERIFICADA"})
     errs = validate_manifest(manifest); manifest["qa"]["manifest_errors"] = errs
     if errs:

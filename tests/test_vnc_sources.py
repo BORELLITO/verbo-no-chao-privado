@@ -38,3 +38,26 @@ class Sources(unittest.TestCase):
         e = S.pexels_entries(v); self.assertEqual([(x["id"], x["preview"], x["hd"], x["title"]) for x in e], [("7", "sd", "hd", "foggy lake")])
         h = {"hits": [{"id": 1, "type": "film", "tags": "rain, window", "pageURL": "p", "videos": {"tiny": {"url": "t"}, "large": {"url": "l"}}}, {"id": 2, "type": "animation", "videos": {"tiny": {"url": "t"}, "large": {"url": "l"}}}]}
         self.assertEqual([x["id"] for x in S.pixabay_entries(h)], ["1"])
+
+
+class Contratos(unittest.TestCase):
+    def test_coverr_rejects_ai_temp_and_premium_player_ids(self):
+        slug = "dramatic-mountain-peak-under-dark-storm-clouds-epic-sky"
+        for cid in ("user-ai-generation-UYPbgQTIxKiA", "coverr-temp-mwdfcalifornia-wavesmp4-7991", "coverr-premium-stirring-coffee-1234"):
+            self.assertIsNone(S.coverr_resolve(f"cdn.coverr.co/videos/{cid}/1080p.mp4", slug), cid)
+        self.assertEqual(S.coverr_resolve("cdn.coverr.co/videos/coverr-raindrops-on-the-window-7102/1080p.mp4", "raindrops-on-the-window-amlapwfzyf"), "coverr-raindrops-on-the-window-7102")
+
+    def test_coverr_license_terms_check(self):
+        ok = S.coverr_license(lambda *a, **k: "<p>Everything Coverr publishes is free for commercial and personal projects. Premium Content ... Sponsored Content</p>")
+        self.assertTrue(ok["ok"]); self.assertEqual(len(ok["sha"]), 64)
+        self.assertFalse(S.coverr_license(lambda *a, **k: "<p>outra pagina</p>")["ok"])
+
+    def test_api_schema_contract_per_official_docs(self):
+        S.schema_check("pexels", {"videos": [{"id": 1, "width": 1, "height": 1, "url": "u", "video_files": []}], "page": 1, "per_page": 40})
+        S.schema_check("pixabay", {"hits": [{"id": 1, "pageURL": "p", "tags": "t", "videos": {}}], "total": 1})
+        with self.assertRaises(ValueError): S.schema_check("pexels", {"photos": []})
+        with self.assertRaises(ValueError): S.schema_check("pixabay", {"hits": [{"id": 1}], "total": 1})
+
+    def test_pixabay_large_empty_falls_back_to_medium(self):
+        e = S.pixabay_entries({"hits": [{"id": 1, "type": "film", "tags": "a", "pageURL": "p", "videos": {"large": {"url": ""}, "medium": {"url": "m"}, "tiny": {"url": "t"}}}]})
+        self.assertEqual((e[0]["preview"], e[0]["hd"]), ("t", "m"))
