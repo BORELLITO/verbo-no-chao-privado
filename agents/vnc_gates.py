@@ -169,8 +169,10 @@ def check_curate_config(root=ROOT):
     if not p.exists():
         return ["falta run/curate.json"]
     c = json.loads(p.read_text(encoding="utf8"))
-    if c.get("mode", "select") not in ("select", "confirm", "release"):
+    if c.get("mode", "select") not in ("select", "confirm", "release", "probe"):
         errs.append("curate.json: mode invalido")
+    if c.get("mode") == "probe" and not c.get("dry_run"):
+        errs.append("curate.json: probe exige dry_run=true")
     if c.get("as_episode") and not c.get("dry_run"):
         errs.append("curate.json: as_episode (simulacao) exige dry_run=true")
     if c.get("mode") == "release" and not c.get("release_run"):

@@ -1,6 +1,6 @@
 name: VNC Curadoria cinematografica (privado)
 # Caminho CANONICO da triagem de clipes. Entrada: edite run/curate.json e faça push.
-#   {"episode":"E02","mode":"select|confirm|release","dry_run":false,"as_episode":"","force_reselect":false,"release_run":"","nonce":"x"}
+#   {"episode":"E02","mode":"select|confirm|release|probe","dry_run":false,"as_episode":"","force_reselect":false,"release_run":"","nonce":"x"}
 # Unico workflow (junto da ingestao de voz) com escrita: grava memoria (ledger), registro, selecao, manifesto e cache de MEDIDAS (sem midia).
 # Nao publica, nao gasta, nao gera voz. Escritas concorrentes: concurrency exclusivo + push sem force (nao-fast-forward falha sem perder dados).
 on:

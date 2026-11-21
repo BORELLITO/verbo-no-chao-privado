@@ -229,6 +229,9 @@ def run(ep, mode=None):
     dry = os.environ.get("VNC_CURATE_DRY") == "1"
     as_ep = os.environ.get("VNC_CURATE_AS") or ep   # simulacao: roteiro de `ep` tratado como outro episodio (prova antirrepeticao real)
     run_id = os.environ.get("GITHUB_RUN_ID", "local")
+    if mode == "probe":
+        from agents import vnc_probe_sources as PR
+        return PR.main()
     if mode == "confirm":
         print("VNC_MEMORY_CONFIRMED", MEM.confirm(ep)); return 0
     if mode == "release":

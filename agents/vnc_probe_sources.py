@@ -1,0 +1,59 @@
+"""Sonda de fontes de clipes (roda no runner; so LEITURA publica, respeita robots; nada e baixado alem de poucos KB).
+Imprime a estrutura real de cada fonte para o projeto dos adaptadores. Nao persiste nada."""
+import json, re, sys, urllib.request, urllib.error
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"}
+
+
+def fetch(url, n=400_000, head=False, rng=False):
+    h = dict(UA)
+    if rng: h["Range"] = "bytes=0-1"
+    try:
+        req = urllib.request.Request(url, headers=h, method="HEAD" if head else "GET")
+        with urllib.request.urlopen(req, timeout=40) as r:
+            return r.status, dict(r.headers), ("" if head else r.read(n).decode("utf8", "ignore"))
+    except urllib.error.HTTPError as e:
+        return e.code, {}, ""
+    except Exception as e:  # noqa
+        return 0, {}, repr(e)[:80]
+
+
+def snip(t, pat, w=160, k=3):
+    return [t[max(0, m.start() - w // 2): m.end() + w // 2].replace("\n", " ") for m in list(re.finditer(pat, t, re.I))[:k]]
+
+
+def main():
+    out = {}
+    s, h, robots = fetch("https://coverr.co/robots.txt"); out["coverr_robots"] = [s, robots[:300]]
+    s, h, sm = fetch("https://coverr.co/sitemap.xml"); locs = re.findall(r"<loc>([^<]+)</loc>", sm)
+    out["coverr_sitemap"] = [s, len(locs), locs[:6]]
+    vids = []
+    for l in locs[:8]:
+        if "sitemap" in l or l.endswith(".xml"):
+            s2, _, t2 = fetch(l, 1_500_000); ls = re.findall(r"<loc>([^<]+)</loc>", t2); out.setdefault("coverr_sub", []).append([l, s2, len(ls), ls[:3]])
+            vids += [x for x in ls if "/videos/" in x or "/video/" in x]
+        elif "/video" in l:
+            vids.append(l)
+    out["coverr_video_urls"] = [len(vids), vids[:5]]
+    s, h, cat = fetch("https://coverr.co/stock-video-footage/rain"); out["coverr_category"] = {"status": s, "len": len(cat), "video_links": len(re.findall(r'href="(/videos/[^"]+)"', cat)),
+        "sample_links": re.findall(r'href="(/videos/[^"]+)"', cat)[:5], "next_data": "__NEXT_DATA__" in cat, "ai_markers": snip(cat, r'"(is_?ai|ai_?generated|isAI|generated)"', 200, 3), "cdn_urls": re.findall(r'https://cdn\.coverr\.co/[^"\\ ]+', cat)[:5]}
+    if vids:
+        s, h, vp = fetch(vids[0]); out["coverr_video_page"] = {"url": vids[0], "status": s, "len": len(vp), "ld_json": snip(vp, r'application/ld\+json', 400, 1), "cdn_urls": re.findall(r'https://cdn\.coverr\.co/[^"\\ ]+', vp)[:6],
+            "ai_markers": snip(vp, r'(ai[- _]?generated|isAI|"ai")', 200, 3), "license": snip(vp, r'licen[sc]e', 160, 2), "title": re.findall(r"<title>([^<]+)</title>", vp)[:1]}
+    for cid in ("coverr-raindrops-on-the-window-7102",):
+        for q in ("360p", "720p", "1080p"):
+            out.setdefault("coverr_cdn_probe", {})[q] = fetch(f"https://cdn.coverr.co/videos/{cid}/{q}.mp4", head=True)[0]
+    s, h, pr = fetch("https://www.pexels.com/robots.txt"); out["pexels_robots"] = [s, [l for l in pr.splitlines() if re.search(r"video|search|api|User-agent: \*", l, re.I)][:14]]
+    s, h, ps = fetch("https://www.pexels.com/search/videos/rain/"); out["pexels_search_html"] = [s, len(ps), len(re.findall(r'/video/[a-z0-9-]+-\d+/', ps))]
+    s, h, c = fetch("https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=20&gsrsearch=" + "rain+filetype:video&prop=imageinfo&iiprop=url|size|mime|extmetadata&iiextmetadatafilter=LicenseShortName|Artist")
+    try:
+        pages = json.loads(c)["query"]["pages"].values(); out["commons"] = [[p["title"][:60], p["imageinfo"][0].get("width"), p["imageinfo"][0]["extmetadata"].get("LicenseShortName", {}).get("value")] for p in pages][:10]
+    except Exception as e:  # noqa
+        out["commons"] = [s, repr(e)[:80], c[:120]]
+    s, h, a = fetch("https://pixabay.com/api/videos/?q=rain"); out["pixabay_nokey"] = [s, a[:100]]
+    print("VNC_PROBE", json.dumps(out, ensure_ascii=False))
+    import pathlib; pathlib.Path("/tmp/curate_out").mkdir(exist_ok=True); pathlib.Path("/tmp/curate_out/probe.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
