@@ -51,16 +51,35 @@ def parse_ref(ref):
     return {"book": norm(m.group(1)).strip(), "ch": int(m.group(2)), "v1": int(m.group(3)), "v2": int(m.group(4) or m.group(3))}
 
 
-def fetch_verses(r, getter=None):
-    """Texto biblico em fonte publica (bible-api.com, traducao Almeida/dominio publico). Falha => None (NAO VERIFICADO, nunca inventar)."""
+BIBLE_JSON = "https://raw.githubusercontent.com/thiagobodruk/biblia/master/json/acf.json"   # Almeida Corrigida Fiel (pt-BR); lista de 66 livros em ordem canonica
+
+
+def _get(u):
+    return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "vnc-roteiro"}), timeout=40).read()
+
+
+def fetch_verses(r, getter=None, errors=None):
+    """Texto biblico em fonte publica. Tentativas: bible-api.com (Almeida) e JSON ACF no GitHub. Falha => None (NAO VERIFICADO, nunca inventar)."""
+    g = getter or _get
+    errors = errors if errors is not None else []
     b = API_BOOK.get(r["book"], r["book"])
-    url = f"https://bible-api.com/{urllib.parse.quote(b)}+{r['ch']}:{r['v1']}-{r['v2']}?translation=almeida"
     try:
-        raw = (getter or (lambda u: urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "vnc-roteiro"}), timeout=30).read()))(url)
-        j = json.loads(raw)
-        return " ".join(v.get("text", "") for v in j.get("verses", [])) or None
-    except Exception:  # noqa
-        return None
+        j = json.loads(g(f"https://bible-api.com/{urllib.parse.quote(b)}+{r['ch']}:{r['v1']}-{r['v2']}?translation=almeida"))
+        t = " ".join(v.get("text", "") for v in j.get("verses", []))
+        if t.strip(): return t
+        errors.append("bible-api: vazio")
+    except Exception as e:  # noqa
+        errors.append("bible-api: " + repr(e)[:80])
+    try:
+        raw = g(BIBLE_JSON); data = json.loads(raw.decode("utf-8-sig") if isinstance(raw, bytes) else raw)
+        idx = list(BOOKS).index(r["book"])
+        ch = data[idx]["chapters"][r["ch"] - 1]
+        t = " ".join(ch[r["v1"] - 1:r["v2"]])
+        if t.strip(): return t
+        errors.append("acf: vazio")
+    except Exception as e:  # noqa
+        errors.append("acf: " + repr(e)[:80])
+    return None
 
 
 def other_episodes(ep):
@@ -129,7 +148,7 @@ def review(ep, cfg=None, getter=None, others=None, offline=False):
         nums = {1: "um", 2: "dois", 3: "tres", 4: "quatro", 5: "cinco", 6: "seis", 7: "sete", 8: "oito", 9: "nove", 10: "dez"}
         if ref_txt and mx and r["ch"] in nums and nums[r["ch"]] not in norm(" ".join(s["text"] for s in ref_txt)) and str(r["ch"]) not in " ".join(s["text"] for s in ref_txt):
             bad("BIBLIA", f"cenas biblicas nao citam o capitulo ({r['ch']}) da referencia")
-        verse = None if offline else fetch_verses(r, getter)
+        errs = []; verse = None if offline else fetch_verses(r, getter, errs)
         checks["texto_biblico_verificado"] = bool(verse)
         if verse:
             vw = set(words(verse)); sw = words(" ".join(s["text"] for s in ref_txt))
@@ -137,7 +156,7 @@ def review(ep, cfg=None, getter=None, others=None, offline=False):
             checks["sobreposicao_lexical_biblia"] = round(ov, 2)
             if ov < 0.12: bad("BIBLIA", f"cenas biblicas quase sem vinculo lexical com o texto ({ov:.2f}); risco de parafrase infiel")
         else:
-            checks["nota_biblia"] = "NAO VERIFICADO: fonte biblica inacessivel (nao inventado)"
+            checks["nota_biblia"] = "NAO VERIFICADO: fonte biblica inacessivel (nao inventado)"; checks["erros_fonte_biblica"] = errs
         if r["book"] == "habacuque" and "injusti" not in alltxt: bad("BIBLIA", "Habacuque exige o contexto de injustica coletiva")
     # 5 repeticao entre episodios
     for oep, o in (others if others is not None else other_episodes(ep)).items():

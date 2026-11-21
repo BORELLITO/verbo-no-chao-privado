@@ -49,6 +49,13 @@ class Review(unittest.TestCase):
         r = R.review("E09", cfg(), getter=lambda u: (_ for _ in ()).throw(OSError()), others={})
         self.assertFalse(r["checks"]["texto_biblico_verificado"]); self.assertIn("NAO VERIFICADO", r["checks"]["nota_biblia"])
 
+    def test_fallback_to_acf_json_when_api_down(self):
+        data = [{"chapters": []} for _ in range(66)]; data[list(R.BOOKS).index("habacuque")] = {"chapters": [["x"], [VERSE, "b", "c"]]}
+        def g(u):
+            if "bible-api" in u: raise OSError("down")
+            return json.dumps(data).encode()
+        r = R.review("E09", cfg(), getter=g, others={}); self.assertTrue(r["checks"]["texto_biblico_verificado"])
+
     def test_repetition_between_episodes(self):
         o = copy.deepcopy(cfg()); o["id"] = "E01"
         r = self.rv(cfg(), others={"E01": o}); self.assertIn("REPETICAO", self.codes(r))
