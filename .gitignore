@@ -3,7 +3,10 @@ __pycache__/
 .env
 *.pyc
 artifacts/
-media/
+media/*
+!media/__init__.py
+!media/probe.py
+!media/validators.py
 secrets/
 # Generated review-only editorial materials, never commit by accident.
 operations/
