@@ -12,15 +12,15 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "35548",
+   "id": "9809",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/house-in-the-middle-of-a-lake-on-a-rainy-35548/",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-over-the-green-valley-9809/",
    "interval": [
     0,
-    9.0
+    8.0
    ],
-   "preview_seconds": 15.0,
-   "note_pt": "clima dark (brilho 84.2), movimento 4.83, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 10.0,
+   "note_pt": "troca manual por direcao visual (nuvens de tempestade); NAO inspecionado antes da montagem"
   },
   {
    "scene": "S02",
@@ -129,15 +129,15 @@
   {
    "scene": "S10",
    "source": "mixkit",
-   "id": "10219",
+   "id": "10098",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/bull-grazing-in-a-valley-with-fog-10219/",
+   "page": "https://mixkit.co/free-stock-video/a-green-valley-in-the-top-of-a-mountain-10098/",
    "interval": [
     0,
-    9.0
+    8.0
    ],
-   "preview_seconds": 20.4,
-   "note_pt": "clima bright (brilho 138.3), movimento 5.46, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 10.0,
+   "note_pt": "troca manual por direcao visual (vale verde); NAO inspecionado antes da montagem"
   },
   {
    "scene": "S11",
@@ -165,5 +165,6 @@
    "preview_seconds": 29.9,
    "note_pt": "clima bright (brilho 124.2), movimento 4.15, palavras-chave 3, interpretacao=claude"
   }
- ]
+ ],
+ "ajuste_manual_pt": "S01 trocado de 35548 (casa sobre lago na chuva) para 9809; S10 trocado de 10219 (touro) para 10098; S02 mantido (20317) com ressalva: telhados pequenos no canto; demais cenas pela curadoria run 45054749202"
 }
