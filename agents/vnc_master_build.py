@@ -282,6 +282,9 @@ def build_whisper_timing(cfg, adur, caps, report):
     small = vnc_align.transcribe(WORK / "voice.mp3", "small"); base = vnc_align.transcribe(WORK / "voice.mp3", "base")
     ws, sm = vnc_align.align(canon, small, adur); wb, _ = vnc_align.align(canon, base, adur, strict=False)
     report["align"] = {**sm, "cross_check": vnc_align.cross_check(ws, wb)}
+    if sm.get("trailing_interpolated"):   # final omitido pelo ASR: tempo MEDIDO na energia da voz, nao estimado
+        smp, sr = vnc_align.decode_mono16k(WORK / "voice.mp3")
+        ws, tr = vnc_align.refine_trailing(ws, smp, sr, adur); report["align"].update(tr)
     scenes = vnc_align.scenes_from_words(ws, first, adur)
     cues = make_cues(ws, adur); bad = [c for c in cues if c.get("rule_violations")]
     report["align"]["cues"] = len(cues); report["align"]["typography_flags"] = len(bad)

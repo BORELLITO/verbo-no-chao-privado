@@ -85,7 +85,7 @@ def align(canon, asr, duration, strict=True):
         if not (0 <= w["start"] <= w["end"] <= duration + 0.05) or w["start"] + 0.15 < prev:
             raise AlignError(f"tempo invalido/nao monotonico na palavra {w['index']} ({w['text']})")
         prev = max(prev, w["start"])
-    return out, {"words": len(out), "interpolated": missing, "edge_interpolated": edge, "trailing_interpolated": trail, "aliases": sum(w["alignment"] not in ("EXACT", "INTERPOLATED", "INTERPOLATED_EDGE", "INTERPOLATED_TRAILING") for w in out)}
+    return out, {"words": len(out), "interpolated": missing, "edge_interpolated": edge, "trailing_interpolated": trail, "aliases": sum(w["alignment"] not in ("EXACT", "INTERPOLATED", "INTERPOLATED_EDGE", "INTERPOLATED_TRAILING", "TRAILING_MEASURED_ENERGY") for w in out)}
 
 
 def cross_check(a, b):
@@ -106,6 +106,58 @@ def scenes_from_words(words, first_idx, adur):
     ends = starts[1:] + [adur]
     return [{"id": SCENE_IDS[k], "start_seconds": round(starts[k], 3), "end_seconds": round(ends[k], 3),
              "duration_seconds": round(ends[k] - starts[k], 3)} for k in range(len(SCENE_IDS))]
+
+
+def voiced_spans(samples, sr, t_from, t_to, thresh_db=-38.0, win=0.01, merge_gap=0.06):
+    """Trechos com voz medidos na energia do audio (RMS de 10 ms) entre t_from e t_to. Sem modelo: so medicao."""
+    import math
+    n = int(win * sr); spans = []; cur = None
+    i0 = int(max(0.0, t_from) * sr); i1 = min(len(samples), int(t_to * sr))
+    for i in range(i0, i1 - n + 1, n):
+        seg = samples[i:i + n]
+        rms = math.sqrt(sum(float(x) * float(x) for x in seg) / n)
+        on = 20 * math.log10(max(rms, 1e-9)) > thresh_db
+        t = i / sr
+        if on and cur is None: cur = [t, t + win]
+        elif on: cur[1] = t + win
+        elif cur is not None:
+            spans.append(cur); cur = None
+    if cur is not None: spans.append(cur)
+    merged = []
+    for a, b in spans:
+        if merged and a - merged[-1][1] <= merge_gap: merged[-1][1] = b
+        else: merged.append([a, b])
+    return merged
+
+
+def refine_trailing(words, samples, sr, duration):
+    """Palavras finais omitidas pelo ASR (INTERPOLATED_TRAILING): troca o tempo estimado pelo MEDIDO na energia da voz.
+    Janela = trechos com voz depois da ultima palavra reconhecida; palavras repartidas por peso (letras+2) dentro dela.
+    Retorna (palavras, resumo). Sem voz medida na janela => AlignError (nao inventa tempo)."""
+    idx = [i for i, w in enumerate(words) if w.get("alignment") == "INTERPOLATED_TRAILING"]
+    if not idx: return words, {"trailing_measured": 0}
+    last = next((words[i] for i in range(idx[0] - 1, -1, -1) if words[i].get("end") is not None), None)
+    if last is None: raise AlignError("sem palavra reconhecida antes do final omitido")
+    spans = voiced_spans(samples, sr, last["end"] + 0.12, duration + 0.05)   # +0.12: fim da palavra anterior (Whisper pode errar ~0.1 s) nao conta como palavra nova
+    spans = [sp for sp in spans if sp[1] - sp[0] >= 0.08]
+    if not spans: raise AlignError("final omitido pelo ASR e sem voz medida depois da ultima palavra reconhecida")
+    n = len(idx)
+    if len(spans) >= n:
+        pick = spans[-n:] if len(spans) > n else spans
+        for k, i in enumerate(idx): words[i]["start"], words[i]["end"] = round(pick[k][0], 3), round(min(duration, pick[k][1]), 3)
+    else:
+        a, b = spans[0][0], spans[-1][1]; wt = [len(norm(words[i]["text"])) + 2 for i in idx]; tot = sum(wt); t = a
+        for k, i in enumerate(idx):
+            en = t + (b - a) * wt[k] / tot
+            words[i]["start"], words[i]["end"] = round(t, 3), round(min(duration, en), 3); t = en
+    for i in idx: words[i]["alignment"] = "TRAILING_MEASURED_ENERGY"
+    return words, {"trailing_measured": n, "voiced_spans": [[round(x, 3), round(y, 3)] for x, y in spans]}
+
+
+def decode_mono16k(audio_path):
+    import subprocess, numpy as np, imageio_ffmpeg
+    raw = subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-v", "error", "-i", str(audio_path), "-f", "s16le", "-ac", "1", "-ar", "16000", "-"], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0, 16000
 
 
 def transcribe(audio_path, model_size):

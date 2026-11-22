@@ -90,3 +90,37 @@ class Align(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TrailingMeasured(unittest.TestCase):
+    def _sig(self, sr=16000, dur=3.0, bursts=((1.0, 1.3), (2.0, 2.4))):
+        import math
+        n = int(sr * dur); s = [0.0] * n
+        for a, b in bursts:
+            for i in range(int(a * sr), int(b * sr)): s[i] = 0.2 * math.sin(2 * math.pi * 200 * i / sr)
+        return s, sr
+
+    def _words(self):
+        return [{"text": "fim", "start": 0.5, "end": 0.9, "alignment": "EXACT"},
+                {"text": "ou", "start": 0.92, "end": 1.2, "alignment": "INTERPOLATED_TRAILING"},
+                {"text": "B.", "start": 1.22, "end": 1.5, "alignment": "INTERPOLATED_TRAILING"}]
+
+    def test_two_bursts_give_one_word_each(self):
+        s, sr = self._sig(); w, r = A.refine_trailing(self._words(), s, sr, 3.0)
+        self.assertEqual(r["trailing_measured"], 2)
+        self.assertAlmostEqual(w[1]["start"], 1.0, delta=0.03); self.assertAlmostEqual(w[2]["start"], 2.0, delta=0.03)
+        self.assertEqual(w[2]["alignment"], "TRAILING_MEASURED_ENERGY")
+
+    def test_single_burst_split_by_weight(self):
+        s, sr = self._sig(bursts=((2.0, 2.4),)); w, _ = A.refine_trailing(self._words(), s, sr, 3.0)
+        self.assertAlmostEqual(w[1]["start"], 2.0, delta=0.03); self.assertAlmostEqual(w[2]["end"], 2.4, delta=0.03)
+        self.assertLessEqual(w[1]["end"], w[2]["start"] + 1e-6)
+
+    def test_silence_after_last_word_blocks(self):
+        s, sr = self._sig(bursts=())
+        with self.assertRaises(A.AlignError): A.refine_trailing(self._words(), s, sr, 3.0)
+
+    def test_previous_word_tail_is_not_a_new_word(self):
+        s, sr = self._sig(bursts=((0.5, 0.95), (2.0, 2.4)))
+        w, _ = A.refine_trailing(self._words(), s, sr, 3.0)
+        self.assertGreaterEqual(w[1]["start"], 1.9)

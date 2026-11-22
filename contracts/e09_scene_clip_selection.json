@@ -25,15 +25,15 @@
   {
    "scene": "S02",
    "source": "mixkit",
-   "id": "20317",
+   "id": "48109",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/low-fog-between-hills-20317/",
+   "page": "https://mixkit.co/free-stock-video/clouds-cover-mountain-ranges-and-valley-48109/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 8.7,
-   "note_pt": "clima dark (brilho 113.3), movimento 3.79, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 10.0,
+   "note_pt": "troca manual (v2): sem telhados; sera inspecionado no video final"
   },
   {
    "scene": "S03",
@@ -155,16 +155,16 @@
   {
    "scene": "S12",
    "source": "mixkit",
-   "id": "30342",
+   "id": "19446",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/beautiful-winter-mountains-landscape-at-sunrise-30342/",
+   "page": "https://mixkit.co/free-stock-video/mountainous-valley-with-fog-during-sunrise-19446/",
    "interval": [
     0,
-    14.0
+    8.0
    ],
-   "preview_seconds": 29.9,
-   "note_pt": "clima bright (brilho 124.2), movimento 4.15, palavras-chave 3, interpretacao=claude"
+   "preview_seconds": 10.0,
+   "note_pt": "troca manual (v2): amanhecer sem neve; sera inspecionado no video final"
   }
  ],
- "ajuste_manual_pt": "S01 trocado de 35548 (casa sobre lago na chuva) para 9809; S10 trocado de 10219 (touro) para 10098; S02 mantido (20317) com ressalva: telhados pequenos no canto; demais cenas pela curadoria run 45054749202"
+ "ajuste_manual_pt": "S01 trocado de 35548 (casa sobre lago na chuva) para 9809; S10 trocado de 10219 (touro) para 10098; S02 mantido (20317) com ressalva: telhados pequenos no canto; demais cenas pela curadoria run 45054749202 | v2: S02 20317->48109 (telhado) e S12 30342->19446 (neve)"
 }
