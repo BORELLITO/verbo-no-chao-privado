@@ -4,7 +4,7 @@
  "episode_id": "E06",
  "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
  "engine_version": "vnc-curadoria-2.0",
- "run_id": "44973703440",
+ "run_id": "45004465866",
  "publication_authorized": false,
  "master_approved": false,
  "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
@@ -38,28 +38,28 @@
   {
    "scene": "S03",
    "source": "mixkit",
-   "id": "44400",
+   "id": "3306",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/waves-on-the-sand-of-a-sunny-beach-44400/",
+   "page": "https://mixkit.co/free-stock-video/rocks-in-a-river-in-a-snowy-forest-3306/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 20.3,
-   "note_pt": "clima dark (brilho 111.9), movimento 9.52, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 12.7,
+   "note_pt": "clima dark (brilho 77.9), movimento 9.97, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S04",
    "source": "mixkit",
-   "id": "2709",
+   "id": "45481",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/closeup-view-of-a-fireplace-2709/",
+   "page": "https://mixkit.co/free-stock-video/young-group-of-friend-relaxing-and-laughing-around-a-campfire-45481/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 14.3,
-   "note_pt": "clima dark (brilho 55.7), movimento 16.21, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 9.5,
+   "note_pt": "clima dark (brilho 77.7), movimento 7.43, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S05",
@@ -77,15 +77,15 @@
   {
    "scene": "S06",
    "source": "mixkit",
-   "id": "34045",
+   "id": "50867",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/piano-under-a-tree-with-dry-leaves-falling-34045/",
+   "page": "https://mixkit.co/free-stock-video/a-tranquil-forest-amids-the-morning-mist-50867/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 15.0,
-   "note_pt": "clima mid (brilho 125.8), movimento 6.16, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 17.6,
+   "note_pt": "clima mid (brilho 97.2), movimento 10.46, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S07",
@@ -142,28 +142,28 @@
   {
    "scene": "S11",
    "source": "mixkit",
-   "id": "3319",
+   "id": "51451",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/snowy-path-in-the-forest-3319/",
+   "page": "https://mixkit.co/free-stock-video/aerial-shot-of-a-route-over-a-river-51451/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 10.7,
-   "note_pt": "clima bright (brilho 126.1), movimento 6.62, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 16.7,
+   "note_pt": "clima bright (brilho 103.7), movimento 5.05, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S12",
    "source": "mixkit",
-   "id": "26978",
+   "id": "31746",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/flying-over-the-seashore-over-the-beach-at-sunrise-26978/",
+   "page": "https://mixkit.co/free-stock-video/foamy-waves-of-the-sea-crashing-with-a-coastline-31746/",
    "interval": [
     0,
     14.0
    ],
    "preview_seconds": 30.0,
-   "note_pt": "clima bright (brilho 114.3), movimento 9.29, palavras-chave 2, interpretacao=claude"
+   "note_pt": "clima bright (brilho 111.4), movimento 9.55, palavras-chave 2, interpretacao=claude"
   }
  ]
 }

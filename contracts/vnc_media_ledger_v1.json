@@ -435,13 +435,13 @@
     13891055052656009412
    ],
    "reserved_at": "2026-11-22T02:06:11Z",
-   "run_id": "44973703440",
+   "run_id": "45004465866",
    "scene": "S09",
    "sha256": "d90ff9e8ff7af0b62fca2b96242f62e50a7aa45a5a6923991606cf4c7663f8e7",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "twilight before sunrise over the clouds landscape",
-   "updated_at": "2026-11-22T08:37:54Z"
+   "updated_at": "2026-11-22T08:57:01Z"
   },
   "mixkit:1082": {
    "dur": 19.9,
@@ -1060,13 +1060,13 @@
     16195160747324246208
    ],
    "reserved_at": "2026-11-22T02:06:11Z",
-   "run_id": "44973703440",
+   "run_id": "45004465866",
    "scene": "S10",
    "sha256": "8a027731d83e31c5909781180a414a6b07dfdf63260e83e7ec4179efd8e9ca3c",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "flying between mountain ranges",
-   "updated_at": "2026-11-22T08:37:54Z"
+   "updated_at": "2026-11-22T08:57:01Z"
   },
   "mixkit:30910": {
    "dur": 19.9,
@@ -1118,6 +1118,31 @@
    "title": "snowy mountains with pine trees during sunrise",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:31746": {
+   "dur": 30.0,
+   "episode": "E06",
+   "id": "31746",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/foamy-waves-of-the-sea-crashing-with-a-coastline-31746/",
+   "phashes": [
+    18374403832017776374,
+    18374403866444627695,
+    18374403900768583324
+   ],
+   "reserved_at": "2026-11-22T08:57:01Z",
+   "run_id": "45004465866",
+   "scene": "S12",
+   "sha256": "ac5cc3354c812370294650bf8a937553e40ab3f3ea285f100b4c4a754cfe5141",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "foamy waves of the sea crashing with a coastline",
+   "updated_at": "2026-11-22T08:57:01Z"
+  },
   "mixkit:32309": {
    "dur": 21.3,
    "episode": "E03",
@@ -1142,6 +1167,31 @@
    "state": "reserved",
    "title": "aerial view of a mountain village by the lake",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:3306": {
+   "dur": 12.7,
+   "episode": "E06",
+   "id": "3306",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/rocks-in-a-river-in-a-snowy-forest-3306/",
+   "phashes": [
+    7414744614779965389,
+    16493579054334070473,
+    14766437636480601752
+   ],
+   "reserved_at": "2026-11-22T08:57:01Z",
+   "run_id": "45004465866",
+   "scene": "S03",
+   "sha256": "4f2fe02fa0b6dc1bd05bdc48e1343651a0b2f5a318903a8bed35fa66f5329b93",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "rocks in a river in a snowy forest",
+   "updated_at": "2026-11-22T08:57:01Z"
   },
   "mixkit:3319": {
    "dur": 10.7,
@@ -1429,13 +1479,13 @@
     506516080313017390
    ],
    "reserved_at": "2026-11-22T02:06:11Z",
-   "run_id": "44973703440",
+   "run_id": "45004465866",
    "scene": "S07",
    "sha256": "92fbab999749536e83386d8167a62c3343064a04d942af64a00bfbb39c000110",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "landscape of a mountain range",
-   "updated_at": "2026-11-22T08:37:54Z"
+   "updated_at": "2026-11-22T08:57:01Z"
   },
   "mixkit:44392": {
    "dur": 25.7,
@@ -1454,13 +1504,13 @@
     536906093138231071
    ],
    "reserved_at": "2026-11-22T02:06:11Z",
-   "run_id": "44973703440",
+   "run_id": "45004465866",
    "scene": "S08",
    "sha256": "72ed9727285a8261f810a1a90b665b5ad9c56e4330d3103d74327fc834fc6f82",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "flying low over the sea of a beach",
-   "updated_at": "2026-11-22T08:37:54Z"
+   "updated_at": "2026-11-22T08:57:01Z"
   },
   "mixkit:44400": {
    "dur": 20.3,
@@ -1537,6 +1587,31 @@
    "title": "trees in the sunlight at the top of a forest",
    "updated_at": "2026-11-21T22:21:36Z"
   },
+  "mixkit:45481": {
+   "dur": 9.5,
+   "episode": "E06",
+   "id": "45481",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/young-group-of-friend-relaxing-and-laughing-around-a-campfire-45481/",
+   "phashes": [
+    16282190411416825149,
+    16282194809463597496,
+    16283815489603718008
+   ],
+   "reserved_at": "2026-11-22T08:57:01Z",
+   "run_id": "45004465866",
+   "scene": "S04",
+   "sha256": "90dc29916d04ac7faf957e33821ce4eada8725c953411e83fb82da728ce21de4",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "young group of friend relaxing and laughing around a campfire",
+   "updated_at": "2026-11-22T08:57:01Z"
+  },
   "mixkit:45633": {
    "dur": 15.8,
    "episode": "E03",
@@ -1612,6 +1687,31 @@
    "title": "panorama of a village between hills full of mist",
    "updated_at": "2026-11-22T00:04:59Z"
   },
+  "mixkit:50867": {
+   "dur": 17.6,
+   "episode": "E06",
+   "id": "50867",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/a-tranquil-forest-amids-the-morning-mist-50867/",
+   "phashes": [
+    15922740848296136988,
+    7847645978940772636,
+    7847777920069767318
+   ],
+   "reserved_at": "2026-11-22T08:57:01Z",
+   "run_id": "45004465866",
+   "scene": "S06",
+   "sha256": "54a363149cb1c545f107e3fe6fe3bd1007bbff274bb65ac4f119c5f0be67ad3d",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "a tranquil forest amids the morning mist",
+   "updated_at": "2026-11-22T08:57:01Z"
+  },
   "mixkit:50870": {
    "dur": 18.5,
    "episode": "E06",
@@ -1629,13 +1729,13 @@
     8667397661156470868
    ],
    "reserved_at": "2026-11-22T02:06:11Z",
-   "run_id": "44973703440",
+   "run_id": "45004465866",
    "scene": "S05",
    "sha256": "652fc6e64db704a937d0f10755027b2d9a5852e9cad7c264e26251cf25d4e58a",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "the wind gently moves the forests lush vegetation on a",
-   "updated_at": "2026-11-22T08:37:54Z"
+   "updated_at": "2026-11-22T08:57:01Z"
   },
   "mixkit:51433": {
    "dur": 11.7,
@@ -1661,6 +1761,31 @@
    "state": "reserved",
    "title": "beautiful calm lake between trees during the day",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:51451": {
+   "dur": 16.7,
+   "episode": "E06",
+   "id": "51451",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/aerial-shot-of-a-route-over-a-river-51451/",
+   "phashes": [
+    18410426040820429265,
+    18409863088694358489,
+    9187054003957166312
+   ],
+   "reserved_at": "2026-11-22T08:57:01Z",
+   "run_id": "45004465866",
+   "scene": "S11",
+   "sha256": "8cd35323b86358defeb581e6ae99013900308cc1ec51615b4658fecc0e691cd0",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "aerial shot of a route over a river",
+   "updated_at": "2026-11-22T08:57:01Z"
   },
   "mixkit:51573": {
    "dur": 11.9,
@@ -1729,13 +1854,13 @@
     8907784191373193958
    ],
    "reserved_at": "2026-11-22T02:06:11Z",
-   "run_id": "44973703440",
+   "run_id": "45004465866",
    "scene": "S01",
    "sha256": "fba1bb3706bac7e0128faf4cc41f6cf5a32c923d3b5c42537580b6b84fe74c13",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "forest under a tropical rain",
-   "updated_at": "2026-11-22T08:37:54Z"
+   "updated_at": "2026-11-22T08:57:01Z"
   },
   "mixkit:7277": {
    "dur": 20.0,
@@ -1879,13 +2004,13 @@
     2491249537308299712
    ],
    "reserved_at": "2026-11-22T02:06:11Z",
-   "run_id": "44973703440",
+   "run_id": "45004465866",
    "scene": "S02",
    "sha256": "f62c42d59f37c729042b7a36c905fc218c06f7f015326293a959a1fc72c0de6b",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "storm clouds moving in the sky",
-   "updated_at": "2026-11-22T08:37:54Z"
+   "updated_at": "2026-11-22T08:57:01Z"
   },
   "mixkit:9810": {
    "dur": 12.4,
