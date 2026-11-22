@@ -143,7 +143,16 @@
      "candle",
      "fireplace",
      "bonfire",
-     "beach"
+     "beach",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "relaxing",
+     "party",
+     "camp"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -202,7 +211,10 @@
      "autumn",
      "leaves",
      "tree",
-     "garden"
+     "garden",
+     "forest",
+     "morning",
+     "woods"
     ],
     "shot": "paisagem, movimento lento"
    }
