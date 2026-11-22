@@ -38,3 +38,9 @@ class CoverNumber(unittest.TestCase):
         self.assertFalse([e for e in errs if "kicker" in e])
         m["kicker"] = "EPISÓDIO 05"
         self.assertTrue([e for e in errs + CG.check(cfg, img, m, reg={"covers": {}}, strict=False) if "kicker" in e])
+
+
+def test_titulo_grande_encolhe_so_quando_precisa():
+    from agents import vnc_cover_quadro as Q
+    assert Q._fit_big(["PLANOS", "DE PAZ"]).size == 205
+    assert Q._fit_big(["NÃO", "JULGUEIS"]).size < 205

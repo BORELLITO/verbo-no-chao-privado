@@ -23,6 +23,13 @@ def _tracked(d, text, font, cx, y, fill, track):
     return tot
 
 
+def _fit_big(big, size=205, limite=0.88):
+    """Fonte do titulo grande: 205 px; encolhe so se a linha mais larga passar de 88% da capa (E06/E07 seguem em 205)."""
+    d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
+    while size > 120 and max(d.textlength(ln, font=ImageFont.truetype(FONT, size)) for ln in big) > W * limite: size -= 5
+    return ImageFont.truetype(FONT, size)
+
+
 def build(bg, logo, kicker, big, tagline, ref):
     """bg: PIL RGB (qualquer tamanho), logo: PIL RGBA ja no tamanho final. Retorna (imagem RGB 1080x1920, metricas)."""
     base = _fill(bg.convert("RGB")); x0, y0, x1, y1 = FRAME
@@ -41,7 +48,7 @@ def build(bg, logo, kicker, big, tagline, ref):
     glow = Image.new("RGBA", (W, H), (206, 212, 238, 0)); glow.putalpha(Image.fromarray(ga)); img = Image.alpha_composite(img, glow)
     img.alpha_composite(logo, ((W - lw) // 2, 300))
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0)); mn = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ds, dm = ImageDraw.Draw(sh), ImageDraw.Draw(mn)
-    fk = ImageFont.truetype(FONT, 40); fb = ImageFont.truetype(FONT, 205); ft = ImageFont.truetype(FONT, 62); fr = ImageFont.truetype(FONT, 46)
+    fk = ImageFont.truetype(FONT, 40); fb = _fit_big(big); ft = ImageFont.truetype(FONT, 62); fr = ImageFont.truetype(FONT, 46)
     ky = 735; _tracked(ds, kicker, fk, W / 2, ky + 3, (0, 0, 0, 210), 7); kw = _tracked(dm, kicker, fk, W / 2, ky, ORANGE, 7)
     # marcas de corte (cantos) do recorte
     L, T = 70, 9
