@@ -19,11 +19,11 @@
  "selection": "contracts/e05_scene_clip_selection.json",
  "cover": {
   "top": [
-   "PREENCHER_ID_TRISTEZA",
+   "9590",
    3.0
   ],
   "bottom": [
-   "PREENCHER_ID_LUZ",
+   "10993",
    5.0
   ]
  },
