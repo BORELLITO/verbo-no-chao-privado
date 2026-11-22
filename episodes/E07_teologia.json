@@ -1,0 +1,451 @@
+{
+ "episode": "E07",
+ "referencia": "Jeremias 29:11",
+ "pesquisado_em": "2026-11-22",
+ "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "posicoes_adotadas": {
+  "autoria": "Roteiro diz 'o profeta' sem nomear o autor; a carta e atribuida a Jeremias no proprio texto (29:1).",
+  "destinatario": "Exilados levados a Babilonia em 597 a.C. (29:1-4); aplicacao hoje e apresentada como reflexao.",
+  "quadro": "Quadro 'Fora do Contexto': mostra o uso popular e o contexto original; nao diz que o uso devocional seja pecado nem que o contexto esgote o sentido.",
+  "limite": "Sem promessa de exito, cura ou prosperidade; sem datar o exilio alem de 'setenta anos'; nao afirma que a espera seja desejada por Deus."
+ },
+ "alegacoes": [
+  {
+   "id": "F00",
+   "cenas": [
+    "S01"
+   ],
+   "tipo": "interpretativa",
+   "texto": "O versiculo de Jeremias 29:11 foi escrito a um destinatario especifico (exilados), diferente da leitura pessoal popular.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Jeremias 29:11"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Adventist Review",
+     "url": "https://adventistreview.org/?p=2765",
+     "tipo": "comentario",
+     "nota": "originalmente promessa aos israelitas exilados sobre os planos de longo prazo de Deus para a nacao"
+    },
+    {
+     "titulo": "The Rebelution",
+     "url": "https://therebelution.com/blog/2019/05/not-all-of-gods-promises-are-for-you/",
+     "tipo": "comentario",
+     "nota": "promessa a Israel de volta a terra; leitura completa de Jr 29 e uma carta aos exilados"
+    },
+    {
+     "titulo": "MBC, Correcting frequently misused passages",
+     "url": "https://www.mbcmi.org/wp-content/uploads/2018/06/5-Jeremiah-2911-and-Matthew-2534-46.pdf",
+     "tipo": "comentario",
+     "nota": "Jr 29:11 nao garante realizacao pessoal nem e promessa universal a cada crente hoje"
+    }
+   ],
+   "risco": "medio: o gancho pergunta, nao acusa; usar o versiculo como consolo pessoal nao e pecado.",
+   "mitigacao": "S01 e uma pergunta; S09 e S10 afirmam que o versiculo continua consolando."
+  },
+  {
+   "id": "F01",
+   "cenas": [
+    "S02"
+   ],
+   "tipo": "interpretativa",
+   "texto": "O versiculo aparece em cartoes de formatura e em quadros decorativos.",
+   "veredito": "SUPORTADO",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Christianity Today, Bad exegesis and back roads through Kansas",
+     "url": "https://christianitytoday.com/pastors/2014/june-online-only/bad-exegesis-and-back-roads-through-kansas.html",
+     "tipo": "comentario",
+     "nota": "cita Jr 29:11 no inicio da temporada de formaturas e casamentos"
+    },
+    {
+     "titulo": "Relevant Magazine, misused promise",
+     "url": "https://relevantmagazine.com/?p=21141",
+     "tipo": "comentario",
+     "nota": "autor recebeu a promessa de Jr 29 num cartao de formatura"
+    },
+    {
+     "titulo": "1517, I know the plans I have for you",
+     "url": "https://www.1517.org/articles/i-know-the-plans-i-have-for-you",
+     "tipo": "comentario",
+     "nota": "versiculo em almofadas, madeira e cartoes de formatura; o problema e o uso"
+    }
+   ],
+   "risco": "baixo: varias fontes citam cartoes de formatura, plaquinhas e quadros.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F02",
+   "cenas": [
+    "S03"
+   ],
+   "tipo": "interpretativa",
+   "texto": "Muita gente le o versiculo como promessa de sucesso pessoal e vitoria rapida.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Jeremias 29:11"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Adventist Review",
+     "url": "https://adventistreview.org/?p=2765",
+     "tipo": "comentario",
+     "nota": "originalmente promessa aos israelitas exilados sobre os planos de longo prazo de Deus para a nacao"
+    },
+    {
+     "titulo": "MBC, Correcting frequently misused passages",
+     "url": "https://www.mbcmi.org/wp-content/uploads/2018/06/5-Jeremiah-2911-and-Matthew-2534-46.pdf",
+     "tipo": "comentario",
+     "nota": "Jr 29:11 nao garante realizacao pessoal nem e promessa universal a cada crente hoje"
+    },
+    {
+     "titulo": "Prairie Grove, Hope in hardship",
+     "url": "https://prairiegrovecofc.blogspot.com/2026/03/jeremiah-2911-hope-in-hardship.html",
+     "tipo": "comentario",
+     "nota": "tratar como garantia de sucesso rapido leva a decepcao quando vem provas longas"
+    }
+   ],
+   "risco": "medio: 'muita gente' e generalizacao; nem toda leitura pessoal e de sucesso.",
+   "mitigacao": "Texto usa 'muita gente', nao 'todos'; S09-S10 preservam o sentido de esperanca e consolo."
+  },
+  {
+   "id": "F03",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "textual",
+   "texto": "O versiculo vem numa carta de Jeremias aos exilados na Babilonia.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Jeremias 29:1",
+    "Jeremias 29:4"
+   ],
+   "palavras_chave_no_texto": [
+    "babilônia"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word, Jeremiah 29",
+     "url": "https://enduringword.com/bible-commentary/jeremiah-29",
+     "tipo": "comentario",
+     "nota": "Jr 29 e uma carta de Jeremias aos exilados na Babilonia; cativeiro de setenta anos"
+    },
+    {
+     "titulo": "Biblehub, Jeremiah 29 study",
+     "url": "https://biblehub.com/study/chapters/jeremiah/29.htm",
+     "tipo": "comentario",
+     "nota": "carta aos exilados; construir casas, plantar jardins, buscar a paz da cidade; apos setenta anos, retorno"
+    },
+    {
+     "titulo": "Biblical Training, Seventy years",
+     "url": "https://www.biblicaltraining.org/library/seventy-years",
+     "tipo": "academico",
+     "nota": "setenta anos anunciados em 605 a.C. e repetidos na carta aos exilados de 597 a.C.; falsos profetas diziam que o fim seria breve"
+    }
+   ],
+   "risco": "baixo: Jr 29:1-4 identifica carta, remetente e destinatarios.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F04",
+   "cenas": [
+    "S05"
+   ],
+   "tipo": "textual",
+   "texto": "Na carta, o profeta manda construir casas, plantar e buscar a paz da cidade orando por ela.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Jeremias 29:5",
+    "Jeremias 29:7"
+   ],
+   "palavras_chave_no_texto": [
+    "casas",
+    "plantai"
+   ],
+   "fontes": [
+    {
+     "titulo": "Biblehub, Jeremiah 29 study",
+     "url": "https://biblehub.com/study/chapters/jeremiah/29.htm",
+     "tipo": "comentario",
+     "nota": "carta aos exilados; construir casas, plantar jardins, buscar a paz da cidade; apos setenta anos, retorno"
+    },
+    {
+     "titulo": "Enduring Word, Jeremiah 29",
+     "url": "https://enduringword.com/bible-commentary/jeremiah-29",
+     "tipo": "comentario",
+     "nota": "Jr 29 e uma carta de Jeremias aos exilados na Babilonia; cativeiro de setenta anos"
+    },
+    {
+     "titulo": "UCG, Jeremiah 29",
+     "url": "https://www.ucg.org/learn/bible-study-tools/bible-commentary/beyond-today-bible-commentary-jeremiah/jeremiah-29",
+     "tipo": "comentario",
+     "nota": "exilados ficariam muito tempo; como eles, podemos ter de esperar os planos de Deus darem fruto"
+    }
+   ],
+   "risco": "baixo: 29:5-7 traz construir, plantar e orar pela cidade.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F05",
+   "cenas": [
+    "S06"
+   ],
+   "tipo": "historica",
+   "texto": "A carta anuncia que o exilio duraria setenta anos.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Jeremias 29:10"
+   ],
+   "palavras_chave_no_texto": [
+    "setenta"
+   ],
+   "fontes": [
+    {
+     "titulo": "Biblical Training, Seventy years",
+     "url": "https://www.biblicaltraining.org/library/seventy-years",
+     "tipo": "academico",
+     "nota": "setenta anos anunciados em 605 a.C. e repetidos na carta aos exilados de 597 a.C.; falsos profetas diziam que o fim seria breve"
+    },
+    {
+     "titulo": "BJU Seminary, So was it 70 years or not?",
+     "url": "https://seminary.bju.edu/theology-in-3d/so-was-it-70-years-or-not/",
+     "tipo": "academico",
+     "nota": "debate sobre inicio e fim dos setenta anos (605-536 ou 586-516); numero pode ser redondo"
+    },
+    {
+     "titulo": "Journal of Biblical Literature 137, reception of the seventy-year exile",
+     "url": "https://muse.jhu.edu/article/690514/pdf",
+     "tipo": "academico",
+     "nota": "recepcao da profecia dos setenta anos em textos do Segundo Templo"
+    }
+   ],
+   "risco": "medio: se os setenta anos sao exatos ou simbolicos e debatido; ha marcos como 605-536 e 586-516.",
+   "mitigacao": "Roteiro diz 'duraria setenta anos' como no texto biblico e nao fixa datas nem resolve o debate."
+  },
+  {
+   "id": "F06",
+   "cenas": [
+    "S07"
+   ],
+   "tipo": "textual",
+   "texto": "O verso fala em pensamentos de paz e nao de mal, depois do aviso dos setenta anos.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Jeremias 29:10",
+    "Jeremias 29:11"
+   ],
+   "palavras_chave_no_texto": [
+    "pensamentos",
+    "paz"
+   ],
+   "fontes": [
+    {
+     "titulo": "Biblehub, Jeremiah 29 study",
+     "url": "https://biblehub.com/study/chapters/jeremiah/29.htm",
+     "tipo": "comentario",
+     "nota": "carta aos exilados; construir casas, plantar jardins, buscar a paz da cidade; apos setenta anos, retorno"
+    },
+    {
+     "titulo": "Crosswalk, most misunderstood verses",
+     "url": "https://www.crosswalk.com/faith/bible-study/bibles-most-misunderstood-verses.html",
+     "tipo": "comentario",
+     "nota": "dirigido aos hebreus exilados na Babilonia; promessa num tempo de prova"
+    },
+    {
+     "titulo": "Enduring Word, Jeremiah 29",
+     "url": "https://enduringword.com/bible-commentary/jeremiah-29",
+     "tipo": "comentario",
+     "nota": "Jr 29 e uma carta de Jeremias aos exilados na Babilonia; cativeiro de setenta anos"
+    }
+   ],
+   "risco": "baixo: ordem textual 29:10 antes de 29:11; 'pensamentos de paz, e nao de mal' confere com ACF.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F07",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "interpretativa",
+   "texto": "A palavra foi dirigida a um povo inteiro e voltada ao longo prazo.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Jeremias 29:11",
+    "Jeremias 29:14"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Adventist Review",
+     "url": "https://adventistreview.org/?p=2765",
+     "tipo": "comentario",
+     "nota": "originalmente promessa aos israelitas exilados sobre os planos de longo prazo de Deus para a nacao"
+    },
+    {
+     "titulo": "The Rebelution",
+     "url": "https://therebelution.com/blog/2019/05/not-all-of-gods-promises-are-for-you/",
+     "tipo": "comentario",
+     "nota": "promessa a Israel de volta a terra; leitura completa de Jr 29 e uma carta aos exilados"
+    },
+    {
+     "titulo": "Crosswalk, most misunderstood verses",
+     "url": "https://www.crosswalk.com/faith/bible-study/bibles-most-misunderstood-verses.html",
+     "tipo": "comentario",
+     "nota": "dirigido aos hebreus exilados na Babilonia; promessa num tempo de prova"
+    }
+   ],
+   "risco": "medio: comentaristas debatem a aplicacao pessoal; o destinatario original e coletivo.",
+   "mitigacao": "'Era uma palavra a um povo inteiro' descreve o destinatario original, sem negar aplicacao posterior (S09-S11)."
+  },
+  {
+   "id": "F08",
+   "cenas": [
+    "S09"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Entender o contexto nao apaga o versiculo e mostra uma esperanca paciente.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Jeremias 29:11"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Cross Examined, Jeremiah 29:11 properly interpreted",
+     "url": "https://crossexamined.org/?p=77837",
+     "tipo": "comentario",
+     "nota": "verso muito aplicado fora do contexto; lido bem, fica mais forte quando vem as dificuldades"
+    },
+    {
+     "titulo": "The Scripture Academy",
+     "url": "https://thescriptureacademy.substack.com/p/i-have-a-plan-jeremiah-2911",
+     "tipo": "comentario",
+     "nota": "uso comum pode gerar sensacao de direito; o texto promete presenca mesmo no exilio e na espera"
+    },
+    {
+     "titulo": "Relevant Magazine, misused promise",
+     "url": "https://relevantmagazine.com/?p=21141",
+     "tipo": "comentario",
+     "nota": "autor recebeu a promessa de Jr 29 num cartao de formatura"
+    }
+   ],
+   "risco": "baixo: varias fontes dizem que o contexto fortalece o sentido do versiculo.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F09",
+   "cenas": [
+    "S10"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Hoje o versiculo ainda consola, sem prometer o caminho mais curto.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Jeremias 29:11",
+    "Jeremias 29:12"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "UCG, Jeremiah 29",
+     "url": "https://www.ucg.org/learn/bible-study-tools/bible-commentary/beyond-today-bible-commentary-jeremiah/jeremiah-29",
+     "tipo": "comentario",
+     "nota": "exilados ficariam muito tempo; como eles, podemos ter de esperar os planos de Deus darem fruto"
+    },
+    {
+     "titulo": "Crosswalk, most misunderstood verses",
+     "url": "https://www.crosswalk.com/faith/bible-study/bibles-most-misunderstood-verses.html",
+     "tipo": "comentario",
+     "nota": "dirigido aos hebreus exilados na Babilonia; promessa num tempo de prova"
+    },
+    {
+     "titulo": "The Scripture Academy",
+     "url": "https://thescriptureacademy.substack.com/p/i-have-a-plan-jeremiah-2911",
+     "tipo": "comentario",
+     "nota": "uso comum pode gerar sensacao de direito; o texto promete presenca mesmo no exilio e na espera"
+    }
+   ],
+   "risco": "medio: aplicacao devocional, nao afirmacao historica.",
+   "mitigacao": "Marcada como aplicacao: 'ainda consola' sem prometer exito, cura ou atalho."
+  },
+  {
+   "id": "F10",
+   "cenas": [
+    "S11",
+    "S12"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Ha esperas que duram anos, e Deus pode estar presente nelas; a pergunta final convida a refletir sobre pressa ou espera.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Jeremias 29:7",
+    "Jeremias 29:13"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "UCG, Jeremiah 29",
+     "url": "https://www.ucg.org/learn/bible-study-tools/bible-commentary/beyond-today-bible-commentary-jeremiah/jeremiah-29",
+     "tipo": "comentario",
+     "nota": "exilados ficariam muito tempo; como eles, podemos ter de esperar os planos de Deus darem fruto"
+    },
+    {
+     "titulo": "The Scripture Academy",
+     "url": "https://thescriptureacademy.substack.com/p/i-have-a-plan-jeremiah-2911",
+     "tipo": "comentario",
+     "nota": "uso comum pode gerar sensacao de direito; o texto promete presenca mesmo no exilio e na espera"
+    },
+    {
+     "titulo": "Prairie Grove, Hope in hardship",
+     "url": "https://prairiegrovecofc.blogspot.com/2026/03/jeremiah-2911-hope-in-hardship.html",
+     "tipo": "comentario",
+     "nota": "tratar como garantia de sucesso rapido leva a decepcao quando vem provas longas"
+    }
+   ],
+   "risco": "medio: 'pode estar presente' e 'sempre' na pergunta sao aplicacao; nao prometem fim da espera.",
+   "mitigacao": "'pode' deixa claro que e aplicacao; 'sempre' na pergunta final e retorica e nao afirma doutrina."
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "Debate se os setenta anos sao literais ou simbolicos e quando comecam (605, 586)",
+   "decisao": "aceitavel",
+   "justificativa": "S06 repete 'setenta anos' como no texto, sem datas nem teoria."
+  },
+  {
+   "item": "Leitura de que a promessa tambem alcanca individuos e geracoes seguintes",
+   "decisao": "ressalvar",
+   "justificativa": "S08 descreve o destinatario original; S09-S11 mantem o consolo atual sem negar aplicacao."
+  },
+  {
+   "item": "Em 29:12-14 a promessa inclui buscar a Deus de todo o coracao e voltar",
+   "decisao": "aceitavel",
+   "justificativa": "O episodio de 60 s nao detalha 29:12-14; nada no roteiro contradiz esses versos."
+  },
+  {
+   "item": "Outros avisos da carta, como falsos profetas e juizo sobre os que ficaram em Jerusalem",
+   "decisao": "aceitavel",
+   "justificativa": "Fora do escopo do video; nenhuma cena diz que a carta so traz boas noticias."
+  }
+ ],
+ "parecer": "APROVADO",
+ "cenas_hash": {
+  "S01": "0cedde682ff96a80",
+  "S02": "cf692ea648d9ff85",
+  "S03": "c8cb2c2a15db659c",
+  "S04": "1d21a205088bc11f",
+  "S05": "17ab396ded01ddbf",
+  "S06": "354ce0e5b8425474",
+  "S07": "5ec60df764993083",
+  "S08": "125c0cce6b2a9f5b",
+  "S09": "0252b663be550e4d",
+  "S10": "b7ae260a975dc1d7",
+  "S11": "e97229927e04e234",
+  "S12": "cc2bdbc6d733069c"
+ }
+}
