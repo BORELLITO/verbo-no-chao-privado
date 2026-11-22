@@ -1,6 +1,6 @@
 {
  "episode": "E08",
- "run_id": "45039831224",
+ "run_id": "45043726532",
  "engine_version": "vnc-curadoria-2.0",
  "dry_run": false,
  "status": "OK",
@@ -18,7 +18,7 @@
    "mood": "dark",
    "queries": [
     "dark stormy sky",
-    "night clouds",
+    "storm clouds timelapse",
     "foggy forest night",
     "rain",
     "raindrops",
@@ -31,10 +31,11 @@
    "prefer": [
     "dark",
     "clouds",
-    "night",
+    "storm",
     "window",
     "rain",
-    "drops"
+    "drops",
+    "night"
    ],
    "avoid": [
     "people",
@@ -49,7 +50,27 @@
     "party",
     "camp",
     "fire",
-    "rain"
+    "rain",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -98,7 +119,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -117,21 +158,19 @@
    "emotion": "rigidez",
    "mood": "dark",
    "queries": [
-    "empty road field",
-    "long road evening",
-    "road through field dusk",
+    "calm sea water",
+    "ocean waves aerial",
+    "sea horizon gray",
     "waves",
     "sea",
     "ocean"
    ],
    "prefer": [
-    "road",
-    "field",
-    "dusk",
+    "sea",
+    "water",
     "waves",
     "stormy",
-    "crashing",
-    "sea"
+    "crashing"
    ],
    "avoid": [
     "people",
@@ -145,7 +184,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -196,7 +255,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [
     "hands"
@@ -245,7 +324,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -290,7 +389,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -336,7 +455,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -351,13 +490,13 @@
    "end": 44.52,
    "duration": 4.46,
    "duration_source": "estimativa_palavras",
-   "meaning": "nuvens carregadas passando",
+   "meaning": "nuvens carregadas no céu",
    "emotion": "severidade",
    "mood": "mid",
    "queries": [
-    "clouds moving timelapse",
     "dark clouds sky timelapse",
-    "sky timelapse clouds",
+    "storm clouds moving",
+    "clouds timelapse sky",
     "clouds",
     "sky",
     "beach"
@@ -380,7 +519,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -430,7 +589,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -479,7 +658,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [
     "hands"
@@ -503,6 +702,7 @@
     "calm lake reflection",
     "still water hills",
     "lake morning calm",
+    "pond reflection trees",
     "trail",
     "path",
     "hills",
@@ -516,6 +716,7 @@
     "lake",
     "calm",
     "reflection",
+    "water",
     "trail",
     "path",
     "hills"
@@ -532,7 +733,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -587,7 +808,27 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -599,11 +840,11 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "12025",
-   "title": "timelapse of clouds at night",
-   "page": "https://mixkit.co/free-stock-video/timelapse-of-clouds-at-night-12025/",
-   "preview_url": "https://assets.mixkit.co/videos/12025/12025-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/12025/12025-720.mp4",
+   "id": "2193",
+   "title": "drops of rainwater",
+   "page": "https://mixkit.co/free-stock-video/drops-of-rainwater-2193/",
+   "preview_url": "https://assets.mixkit.co/videos/2193/2193-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/2193/2193-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -611,12 +852,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 17.4,
-   "sha256": "f13b7cab4f59df785a40e4c9d3dddac31d1804495b0c474aa1df4132c26d3a5f",
+   "clip_seconds": 19.9,
+   "sha256": "89daab6a22c3ad3cdc013e2c2d4bae78e892d4f4cc0e4cdc062c2e41d1491f43",
    "phashes": [
-    8282243515486521416,
-    3545403945350023752,
-    9693733321306753608
+    2529636070893057686,
+    1376855303774566038,
+    2529785604474565270
    ],
    "segment": {
     "start": 0.0,
@@ -624,43 +865,42 @@
     "emotion": "dúvida",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 48.6), movimento 10.74, palavras-chave 2, interpretacao=claude",
+   "justification": "clima dark (brilho 110.9), movimento 1.23, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 2.894,
-    "clip_sem": 0.1005
+    "unary": 2.634,
+    "clip_sem": 0.0021
    },
    "vision": {
-    "sem": 0.1005,
+    "sem": 0.0021,
     "neg": {
-     "people": 0.2218,
-     "city": 0.0126,
-     "indoor": 0.4396,
-     "text": 0.0013,
-     "cgi": 0.2242
+     "people": 0.2233,
+     "city": 0.0032,
+     "indoor": 0.557,
+     "text": 0.0038,
+     "cgi": 0.2105
     }
    },
    "metrics": {
-    "brightness": 48.6,
-    "cut_ratio": 1.26,
-    "motion": 10.74,
-    "saturation": 172.5,
-    "sharp": 16.57
+    "brightness": 110.9,
+    "cut_ratio": 1.07,
+    "motion": 1.23,
+    "saturation": 34.0,
+    "sharp": 3.29
    },
    "alternatives": [
-    "mixkit:48000",
     "mixkit:7098",
-    "mixkit:30586",
-    "mixkit:2193"
+    "mixkit:21130",
+    "mixkit:20761"
    ]
   },
   {
    "scene": "S02",
    "source": "mixkit",
-   "id": "20440",
-   "title": "rain drops after a storm",
-   "page": "https://mixkit.co/free-stock-video/rain-drops-after-a-storm-20440/",
-   "preview_url": "https://assets.mixkit.co/videos/20440/20440-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/20440/20440-720.mp4",
+   "id": "20552",
+   "title": "storm clouds forming across the sky",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-forming-across-the-sky-20552/",
+   "preview_url": "https://assets.mixkit.co/videos/20552/20552-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/20552/20552-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -668,12 +908,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 23.6,
-   "sha256": "d123f919232e0cf0a48dfea913a16f82ca92037613d02b6538efb5d10b72507b",
+   "clip_seconds": 24.6,
+   "sha256": "8f25a3fd85ae3fcdd46ca7a7631334cfc3cef7b621abedaf0e144edabfd5cc3f",
    "phashes": [
-    17646174781398169526,
-    17646192373584213942,
-    17637167582143559606
+    7475869655778445769,
+    18121425204174701258,
+    15335306422059581650
    ],
    "segment": {
     "start": 5.23,
@@ -681,41 +921,41 @@
     "emotion": "tensão",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 97.7), movimento 0.8, palavras-chave 2, interpretacao=claude",
+   "justification": "clima dark (brilho 112.0), movimento 11.67, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 2.787,
-    "clip_sem": 0.0158
+    "unary": 2.674,
+    "clip_sem": 0.0387
    },
    "vision": {
-    "sem": 0.0158,
+    "sem": 0.0387,
     "neg": {
-     "people": 0.0757,
-     "city": 0.0364,
-     "indoor": 0.6267,
-     "text": 0.0013,
-     "cgi": 0.2441
+     "people": 0.1204,
+     "city": 0.025,
+     "indoor": 0.7275,
+     "text": 0.0006,
+     "cgi": 0.0878
     }
    },
    "metrics": {
-    "brightness": 97.7,
-    "cut_ratio": 1.11,
-    "motion": 0.8,
-    "saturation": 183.7,
-    "sharp": 18.23
+    "brightness": 112.0,
+    "cut_ratio": 1.13,
+    "motion": 11.67,
+    "saturation": 66.9,
+    "sharp": 6.99
    },
    "alternatives": [
-    "mixkit:20552",
+    "mixkit:20440",
     "mixkit:20761"
    ]
   },
   {
    "scene": "S03",
    "source": "mixkit",
-   "id": "44372",
-   "title": "sea water texture waving",
-   "page": "https://mixkit.co/free-stock-video/sea-water-texture-waving-44372/",
-   "preview_url": "https://assets.mixkit.co/videos/44372/44372-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/44372/44372-1080.mp4",
+   "id": "14739",
+   "title": "sea waves from above",
+   "page": "https://mixkit.co/free-stock-video/sea-waves-from-above-14739/",
+   "preview_url": "https://assets.mixkit.co/videos/14739/14739-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/14739/14739-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -723,12 +963,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 25.0,
-   "sha256": "3179eb810106aed2d9192fdad58fa3896e1e8b62b428efe478d209a10e9e37c2",
+   "clip_seconds": 20.4,
+   "sha256": "02e65e4d4ea77e4c727c39d38e44b502678301bba7f3c28fc3ee31a29114871b",
    "phashes": [
-    17937942932264448152,
-    7779639656003572617,
-    7388352911388553408
+    14692230042057312015,
+    14079203663361673035,
+    163012714056057667
    ],
    "segment": {
     "start": 9.69,
@@ -736,30 +976,32 @@
     "emotion": "rigidez",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 44.3), movimento 10.05, palavras-chave 1, interpretacao=claude",
+   "justification": "clima dark (brilho 96.0), movimento 12.93, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 2.889,
-    "clip_sem": 0.0254
+    "unary": 2.937,
+    "clip_sem": 0.0183
    },
    "vision": {
-    "sem": 0.0254,
+    "sem": 0.0183,
     "neg": {
-     "people": 0.1371,
-     "city": 0.0209,
-     "indoor": 0.7978,
-     "text": 0.0003,
-     "cgi": 0.0184
+     "people": 0.1898,
+     "city": 0.0386,
+     "indoor": 0.6798,
+     "text": 0.0051,
+     "cgi": 0.0684
     }
    },
    "metrics": {
-    "brightness": 44.3,
-    "cut_ratio": 1.17,
-    "motion": 10.05,
-    "saturation": 114.8,
-    "sharp": 7.7
+    "brightness": 96.0,
+    "saturation": 88.5,
+    "motion": 12.93,
+    "cut_ratio": 1.5,
+    "sharp": 17.23
    },
    "alternatives": [
-    "mixkit:7194"
+    "mixkit:1080",
+    "mixkit:50185",
+    "mixkit:50179"
    ]
   },
   {
@@ -807,9 +1049,9 @@
    },
    "metrics": {
     "brightness": 88.2,
-    "saturation": 88.8,
-    "motion": 1.67,
     "cut_ratio": 1.76,
+    "motion": 1.67,
+    "saturation": 88.8,
     "sharp": 13.36
    },
    "alternatives": [
@@ -861,9 +1103,9 @@
    },
    "metrics": {
     "brightness": 110.5,
-    "saturation": 72.8,
-    "motion": 13.78,
     "cut_ratio": 1.15,
+    "motion": 13.78,
+    "saturation": 72.8,
     "sharp": 14.81
    },
    "alternatives": [
@@ -990,11 +1232,11 @@
   {
    "scene": "S08",
    "source": "mixkit",
-   "id": "4107",
-   "title": "mayan ruins and the sky",
-   "page": "https://mixkit.co/free-stock-video/mayan-ruins-and-the-sky-4107/",
-   "preview_url": "https://assets.mixkit.co/videos/4107/4107-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/4107/4107-1080.mp4",
+   "id": "34945",
+   "title": "clouds from a storm moving away",
+   "page": "https://mixkit.co/free-stock-video/clouds-from-a-storm-moving-away-34945/",
+   "preview_url": "https://assets.mixkit.co/videos/34945/34945-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/34945/34945-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1002,12 +1244,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 9.4,
-   "sha256": "ba9f48b6556c79959d87099777c53a0e0a60cbdcd4942855bfed4cfdf4035233",
+   "clip_seconds": 29.3,
+   "sha256": "5ccfa5c4e79f87aca460a22b2a18d9acd424653881a065a1361fbbe4d432820a",
    "phashes": [
-    36240747427318860,
-    141306786270284,
-    72058163335842892
+    3549330220589041313,
+    6363798589860529315,
+    15625379751226295467
    ],
    "segment": {
     "start": 40.06,
@@ -1015,33 +1257,33 @@
     "emotion": "severidade",
     "interpretation": "claude"
    },
-   "justification": "clima mid (brilho 120.3), movimento 7.48, palavras-chave 1, interpretacao=claude",
+   "justification": "clima mid (brilho 119.8), movimento 8.74, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 3.485,
-    "clip_sem": 0.0069
+    "unary": 3.306,
+    "clip_sem": 0.004
    },
    "vision": {
-    "sem": 0.0069,
+    "sem": 0.004,
     "neg": {
-     "people": 0.2828,
-     "city": 0.0066,
-     "indoor": 0.3899,
-     "text": 0.0055,
-     "cgi": 0.3084
+     "people": 0.1254,
+     "city": 0.113,
+     "indoor": 0.6658,
+     "text": 0.0005,
+     "cgi": 0.0913
     }
    },
    "metrics": {
-    "brightness": 120.3,
-    "saturation": 100.3,
-    "motion": 7.48,
-    "cut_ratio": 2.82,
-    "sharp": 20.32
+    "brightness": 119.8,
+    "cut_ratio": 1.03,
+    "motion": 8.74,
+    "saturation": 53.5,
+    "sharp": 23.28
    },
    "alternatives": [
-    "mixkit:3129",
     "mixkit:1918",
-    "mixkit:3296",
-    "mixkit:2408"
+    "mixkit:9441",
+    "mixkit:2408",
+    "mixkit:21576"
    ]
   },
   {
@@ -1211,7 +1453,6 @@
    "alternatives": [
     "mixkit:29413",
     "mixkit:36186",
-    "mixkit:25096",
     "mixkit:49695"
    ]
   },
@@ -1322,7 +1563,7 @@
   "aprovacao_estetica_humana": "NAO_VERIFICADA",
   "manifest_errors": []
  },
- "sequence_utility": 35.343,
+ "sequence_utility": 35.615,
  "trace": {
   "beam": 400,
   "weights": {

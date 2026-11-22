@@ -539,9 +539,9 @@
    "scene": "S01",
    "sha256": "f13b7cab4f59df785a40e4c9d3dddac31d1804495b0c474aa1df4132c26d3a5f",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "timelapse of clouds at night",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:1243": {
    "dur": 13.2,
@@ -567,6 +567,31 @@
    "state": "reserved",
    "title": "wood burning in an outdoor fire",
    "updated_at": "2026-11-21T22:21:36Z"
+  },
+  "mixkit:14739": {
+   "dur": 20.4,
+   "episode": "E08",
+   "id": "14739",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sea-waves-from-above-14739/",
+   "phashes": [
+    14692230042057312015,
+    14079203663361673035,
+    163012714056057667
+   ],
+   "reserved_at": "2026-11-22T16:33:54Z",
+   "run_id": "45043726532",
+   "scene": "S03",
+   "sha256": "02e65e4d4ea77e4c727c39d38e44b502678301bba7f3c28fc3ee31a29114871b",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sea waves from above",
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:15317": {
    "dur": 27.5,
@@ -939,9 +964,9 @@
    "scene": "S02",
    "sha256": "d123f919232e0cf0a48dfea913a16f82ca92037613d02b6538efb5d10b72507b",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "rain drops after a storm",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:20487": {
    "dur": 21.9,
@@ -967,6 +992,31 @@
    "state": "reserved",
    "title": "raindrops on a clay rooftop",
    "updated_at": "2026-11-21T22:21:36Z"
+  },
+  "mixkit:20552": {
+   "dur": 24.6,
+   "episode": "E08",
+   "id": "20552",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-forming-across-the-sky-20552/",
+   "phashes": [
+    7475869655778445769,
+    18121425204174701258,
+    15335306422059581650
+   ],
+   "reserved_at": "2026-11-22T16:33:54Z",
+   "run_id": "45043726532",
+   "scene": "S02",
+   "sha256": "8f25a3fd85ae3fcdd46ca7a7631334cfc3cef7b621abedaf0e144edabfd5cc3f",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "storm clouds forming across the sky",
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:20749": {
    "dur": 25.9,
@@ -1017,6 +1067,31 @@
    "state": "confirmed",
    "title": "clouds in the sky traveling slowly with the wind",
    "updated_at": "2026-11-21T16:13:07Z"
+  },
+  "mixkit:2193": {
+   "dur": 19.9,
+   "episode": "E08",
+   "id": "2193",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/drops-of-rainwater-2193/",
+   "phashes": [
+    2529636070893057686,
+    1376855303774566038,
+    2529785604474565270
+   ],
+   "reserved_at": "2026-11-22T16:33:54Z",
+   "run_id": "45043726532",
+   "scene": "S01",
+   "sha256": "89daab6a22c3ad3cdc013e2c2d4bae78e892d4f4cc0e4cdc062c2e41d1491f43",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "drops of rainwater",
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:22023": {
    "dur": 18.0,
@@ -1310,13 +1385,13 @@
     22687351943893891
    ],
    "reserved_at": "2026-11-22T15:52:29Z",
-   "run_id": "45039831224",
+   "run_id": "45043726532",
    "scene": "S06",
    "sha256": "31c6ea01b497f13c690996df24b1be423bbac72a6eb5910e2743880b2df77df8",
    "source": "mixkit",
    "state": "reserved",
    "title": "forest covered by mist at sunrise from the heights",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:28816": {
    "dur": 30.3,
@@ -1643,6 +1718,31 @@
    "title": "forest full of trees next to a valley",
    "updated_at": "2026-11-21T22:21:36Z"
   },
+  "mixkit:34945": {
+   "dur": 29.3,
+   "episode": "E08",
+   "id": "34945",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/clouds-from-a-storm-moving-away-34945/",
+   "phashes": [
+    3549330220589041313,
+    6363798589860529315,
+    15625379751226295467
+   ],
+   "reserved_at": "2026-11-22T16:33:54Z",
+   "run_id": "45043726532",
+   "scene": "S08",
+   "sha256": "5ccfa5c4e79f87aca460a22b2a18d9acd424653881a065a1361fbbe4d432820a",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "clouds from a storm moving away",
+   "updated_at": "2026-11-22T16:33:54Z"
+  },
   "mixkit:34999": {
    "dur": 27.4,
    "episode": "E05",
@@ -1735,13 +1835,13 @@
     17652132349297610969
    ],
    "reserved_at": "2026-11-22T15:52:29Z",
-   "run_id": "45039831224",
+   "run_id": "45043726532",
    "scene": "S07",
    "sha256": "5047d730bb797126fba39f768a8374c70f863b7b5c730149139bf886ffaf9ce7",
    "source": "mixkit",
    "state": "reserved",
    "title": "sunset sunlight glaring in a wintry forest",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:35513": {
    "dur": 13.2,
@@ -1810,13 +1910,13 @@
     17361641481136793965
    ],
    "reserved_at": "2026-11-22T15:52:29Z",
-   "run_id": "45039831224",
+   "run_id": "45043726532",
    "scene": "S09",
    "sha256": "55828cccb52d7589aa57ca489192605aa4f6cbb71b9b7482afaa288afe5d0b28",
    "source": "mixkit",
    "state": "reserved",
    "title": "sunrise in the countryside aerial shot",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:3976": {
    "dur": 10.3,
@@ -1835,13 +1935,13 @@
     17361641480599540378
    ],
    "reserved_at": "2026-11-22T15:52:29Z",
-   "run_id": "45039831224",
+   "run_id": "45043726532",
    "scene": "S05",
    "sha256": "7a54d328be77b934dafc145c6b21ef7e5190ff1c128c6d2b51db4d10e898665c",
    "source": "mixkit",
    "state": "reserved",
    "title": "sun seen through the leaves of a tree",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:4028": {
    "dur": 16.6,
@@ -1889,9 +1989,9 @@
    "scene": "S08",
    "sha256": "ba9f48b6556c79959d87099777c53a0e0a60cbdcd4942855bfed4cfdf4035233",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "mayan ruins and the sky",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:41545": {
    "dur": 23.6,
@@ -1957,13 +2057,13 @@
     8462378516355992330
    ],
    "reserved_at": "2026-11-22T15:52:29Z",
-   "run_id": "45039831224",
+   "run_id": "45043726532",
    "scene": "S11",
    "sha256": "a8c1d58410763829e3a1571ec7c7b0962248592d330619c29f872049aeb7d107",
    "source": "mixkit",
    "state": "reserved",
    "title": "aerial walk along a path in a sunny park",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:4331": {
    "dur": 14.9,
@@ -2033,9 +2133,9 @@
    "scene": "S03",
    "sha256": "3179eb810106aed2d9192fdad58fa3896e1e8b62b428efe478d209a10e9e37c2",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "sea water texture waving",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:44392": {
    "dur": 25.7,
@@ -2279,13 +2379,13 @@
     14007183892771249564
    ],
    "reserved_at": "2026-11-22T15:52:29Z",
-   "run_id": "45039831224",
+   "run_id": "45043726532",
    "scene": "S10",
    "sha256": "d42c072c1091330436bea11ed973a3fb18a8bcb6eec89b616160553b75fb362a",
    "source": "mixkit",
    "state": "reserved",
    "title": "slow aerial tour between two mountains in the savannah",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:5044": {
    "dur": 13.2,
@@ -2704,13 +2804,13 @@
     16204216307949039856
    ],
    "reserved_at": "2026-11-22T15:52:29Z",
-   "run_id": "45039831224",
+   "run_id": "45043726532",
    "scene": "S12",
    "sha256": "c2843c116924c3af1ff5224e236bec2fa21ecd9365ac1ad8e8276aaee950bc20",
    "source": "mixkit",
    "state": "reserved",
    "title": "mountains and clouds in the sunrise",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:9810": {
    "dur": 12.4,
@@ -2779,13 +2879,13 @@
     11299193669230256066
    ],
    "reserved_at": "2026-11-22T15:52:29Z",
-   "run_id": "45039831224",
+   "run_id": "45043726532",
    "scene": "S04",
    "sha256": "6baa60c4778dabc4bf0e7a43537ef22d05bc07e5df396c21d2eb7c132ef013dd",
    "source": "mixkit",
    "state": "reserved",
    "title": "gorgeous forest and mountain and a meadow with yellow flowers",
-   "updated_at": "2026-11-22T15:52:29Z"
+   "updated_at": "2026-11-22T16:33:54Z"
   },
   "mixkit:9917": {
    "dur": 13.4,
