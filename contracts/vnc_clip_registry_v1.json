@@ -794,6 +794,16 @@
    "license": "Mixkit Music Free License",
    "content_id_checked": false,
    "rule_pt": "não repetir a mesma trilha em outro episódio"
+  },
+  {
+   "episode": "E08",
+   "title": "Free Piano Reflections Stock Music",
+   "provider": "mixkit",
+   "mixkit_id": "22",
+   "page": "https://mixkit.co/free-stock-music/piano-reflections/",
+   "license": "Mixkit Music Free License",
+   "content_id_checked": false,
+   "rule_pt": "não repetir a mesma trilha em outro episódio"
   }
  ]
 }
