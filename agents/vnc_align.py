@@ -11,6 +11,7 @@ from agents.e01_v2_caption_pipeline import align_once, norm
 SCENE_IDS = [f"S{i:02d}" for i in range(1, 13)]
 MAX_UNMATCHED_RATIO = 0.05      # palavras sem correspondencia exata/fonetica no ASR
 MAX_EDGE_WORDS = 3
+MAX_TRAILING_WORDS = 2
 MAX_GAP_INTERP = 0.9            # s: buraco maximo que pode ser interpolado
 MAX_MODEL_DISAGREE_MEDIAN = 0.15  # s
 
@@ -53,12 +54,20 @@ def align(canon, asr, duration, strict=True):
         return out, {"words": len(out), "unmatched": missing}
     if missing > max(2, int(MAX_UNMATCHED_RATIO * len(canon))):
         raise AlignError(f"muitas palavras sem correspondencia no ASR: {missing}/{len(canon)}")
-    edge = 0
+    edge = 0; trail = 0
     for i, w in enumerate(out):
         if w["start"] is not None:
             continue
         b = next((out[x] for x in range(i - 1, -1, -1) if out[x]["end"] is not None), None)
         a = next((out[x] for x in range(i + 1, len(out)) if out[x]["start"] is not None), None)
+        if b is not None and a is None:
+            # palavras finais que o ASR omitiu (ex.: "ou B" no fim da narracao): sem vizinha posterior; ancora logo apos a anterior, dentro da duracao da voz (limite: MAX_TRAILING_WORDS)
+            trail += 1
+            if trail > MAX_TRAILING_WORDS or b["end"] > duration - 0.15:
+                raise AlignError(f"palavra {i} ({w['text']}) sem vizinhas com tempo (final omitido pelo ASR)")
+            st = b["end"] + 0.02; en = min(duration, st + 0.3)
+            w["start"], w["end"], w["alignment"] = round(st, 3), round(en, 3), "INTERPOLATED_TRAILING"
+            continue
         if b is None or a is None:
             raise AlignError(f"palavra {i} ({w['text']}) sem vizinhas com tempo")
         if a["start"] - b["end"] > MAX_GAP_INTERP:
@@ -76,7 +85,7 @@ def align(canon, asr, duration, strict=True):
         if not (0 <= w["start"] <= w["end"] <= duration + 0.05) or w["start"] + 0.15 < prev:
             raise AlignError(f"tempo invalido/nao monotonico na palavra {w['index']} ({w['text']})")
         prev = max(prev, w["start"])
-    return out, {"words": len(out), "interpolated": missing, "edge_interpolated": edge, "aliases": sum(w["alignment"] not in ("EXACT", "INTERPOLATED", "INTERPOLATED_EDGE") for w in out)}
+    return out, {"words": len(out), "interpolated": missing, "edge_interpolated": edge, "trailing_interpolated": trail, "aliases": sum(w["alignment"] not in ("EXACT", "INTERPOLATED", "INTERPOLATED_EDGE", "INTERPOLATED_TRAILING") for w in out)}
 
 
 def cross_check(a, b):

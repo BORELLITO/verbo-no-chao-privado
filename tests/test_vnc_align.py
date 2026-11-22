@@ -19,6 +19,19 @@ class Align(unittest.TestCase):
     def setUp(self):
         self.canon, self.first = A.words_from_scenes(SCENES)
 
+    def test_final_words_omitted_by_asr_are_anchored_after_previous(self):
+        # E09: o ASR omitiu "ou B" no fim; ancorar apos a ultima palavra reconhecida (limite de 2) em vez de bloquear
+        a = asr(); n = len(a)
+        w, s = A.align(self.canon, a[:n - 2], DUR)
+        self.assertEqual(s["trailing_interpolated"], 2)
+        self.assertEqual(w[-1]["alignment"], "INTERPOLATED_TRAILING")
+        self.assertLessEqual(w[-2]["end"], w[-1]["start"] + 0.05)
+        self.assertLessEqual(w[-1]["end"], DUR)
+
+    def test_too_many_final_words_omitted_still_blocks(self):
+        a = asr(); n = len(a)
+        with self.assertRaises(A.AlignError): A.align(self.canon, a[:n - 3], DUR)
+
     def test_word_before_long_pause_is_anchored_not_blocked(self):
         # palavra omitida pelo ASR antes de uma pausa longa (narracao com pausas dramaticas) deve ser ancorada na vizinha anterior
         a = asr(); i = 10
