@@ -418,6 +418,31 @@
    "title": "tree in the mist",
    "updated_at": "2026-11-21T12:33:56Z"
   },
+  "mixkit:10219": {
+   "dur": 20.4,
+   "episode": "E09",
+   "id": "10219",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/bull-grazing-in-a-valley-with-fog-10219/",
+   "phashes": [
+    16177655071493865036,
+    17335361031960014532,
+    16155321241352611524
+   ],
+   "reserved_at": "2026-11-22T18:32:32Z",
+   "run_id": "45054749202",
+   "scene": "S10",
+   "sha256": "c70773d09213bc7f4bdc680352b3ac19bf588eb02d6aeb8357a1307f20b0df70",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "bull grazing in a valley with fog",
+   "updated_at": "2026-11-22T18:32:32Z"
+  },
   "mixkit:10266": {
    "dur": 20.0,
    "episode": "E06",
@@ -960,13 +985,13 @@
     271271659247436585
    ],
    "reserved_at": "2026-11-22T18:21:54Z",
-   "run_id": "45053721897",
+   "run_id": "45054749202",
    "scene": "S02",
    "sha256": "2626d81e9f109025640523dd6d97a8187b005a7e1591642f0511afe1ccac839d",
    "source": "mixkit",
    "state": "reserved",
    "title": "low fog between hills",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:20440": {
    "dur": 23.6,
@@ -1260,13 +1285,13 @@
     18224092659385893721
    ],
    "reserved_at": "2026-11-22T18:21:54Z",
-   "run_id": "45053721897",
+   "run_id": "45054749202",
    "scene": "S04",
    "sha256": "4e3bd998f766afe498222201793a736369e88cb4151a808d3c821a51b27e88c0",
    "source": "mixkit",
    "state": "reserved",
    "title": "landscape of a mountain range seen from the top of",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:26963": {
    "dur": 15.0,
@@ -1460,13 +1485,13 @@
     17361634875441872894
    ],
    "reserved_at": "2026-11-22T18:21:54Z",
-   "run_id": "45053721897",
+   "run_id": "45054749202",
    "scene": "S05",
    "sha256": "7f9e8a35be3e3ab15c7f72e08e31c8e3cc6b8bb13177182c735cc2cb1c3af95c",
    "source": "mixkit",
    "state": "reserved",
    "title": "tree at the center of a meadow in a cloud",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:28339": {
    "dur": 30.1,
@@ -1560,13 +1585,13 @@
     15634493361656741955
    ],
    "reserved_at": "2026-11-22T18:21:54Z",
-   "run_id": "45053721897",
+   "run_id": "45054749202",
    "scene": "S12",
    "sha256": "5708c7102c198b0db29e2633e90a077dbf8969b74b1f6b19ce875877f884cec8",
    "source": "mixkit",
    "state": "reserved",
    "title": "beautiful winter mountains landscape at sunrise",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:30910": {
    "dur": 19.9,
@@ -1660,13 +1685,13 @@
     5559193438281038093
    ],
    "reserved_at": "2026-11-22T18:21:54Z",
-   "run_id": "45053721897",
+   "run_id": "45054749202",
    "scene": "S03",
    "sha256": "229f1ba5fa942996cf14d421786b06152d7b457640c990d2e788286bc4080605",
    "source": "mixkit",
    "state": "reserved",
    "title": "aerial view of the waves in the ocean",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:32309": {
    "dur": 21.3,
@@ -1914,9 +1939,9 @@
    "scene": "S06",
    "sha256": "d333b7805f20359202ec642f0f05519bf4a5e35f4aaf26c55cef6b9fb1ab1659",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "fog covering an autumnal forest time lapse",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:34945": {
    "dur": 29.3,
@@ -2093,6 +2118,31 @@
    "title": "sun flare on the top of a foggy winter forest",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:35548": {
+   "dur": 15.0,
+   "episode": "E09",
+   "id": "35548",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/house-in-the-middle-of-a-lake-on-a-rainy-35548/",
+   "phashes": [
+    16204198637981847087,
+    13889347879757581839,
+    13893856431616445999
+   ],
+   "reserved_at": "2026-11-22T18:32:32Z",
+   "run_id": "45054749202",
+   "scene": "S01",
+   "sha256": "68d0041876fc902cfab6156723798d531d70f608ca2c4455339201b7ca0f021b",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "house in the middle of a lake on a rainy",
+   "updated_at": "2026-11-22T18:32:32Z"
+  },
   "mixkit:36186": {
    "dur": 58.3,
    "episode": "E09",
@@ -2114,9 +2164,9 @@
    "scene": "S11",
    "sha256": "81aeaccf22bd6d27df89651eb8fe3db2c9e8455ea45e8f26ec78b1d7b61b773c",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "path through a snowy forest of dry trees",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:3871": {
    "dur": 11.6,
@@ -2612,6 +2662,31 @@
    "title": "slow aerial tour between two mountains in the savannah",
    "updated_at": "2026-11-22T16:42:58Z"
   },
+  "mixkit:5030": {
+   "dur": 14.4,
+   "episode": "E09",
+   "id": "5030",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/lake-surrounded-by-dry-grass-in-the-savanna-5030/",
+   "phashes": [
+    17941474741814358176,
+    18229705119576651856,
+    18229713796480138472
+   ],
+   "reserved_at": "2026-11-22T18:32:32Z",
+   "run_id": "45054749202",
+   "scene": "S11",
+   "sha256": "99c4864f546c10d01e8ca56c3661915a425a814ab162bb0871cc58a9436f686a",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "lake surrounded by dry grass in the savanna",
+   "updated_at": "2026-11-22T18:32:32Z"
+  },
   "mixkit:5044": {
    "dur": 13.2,
    "episode": "E05",
@@ -2636,6 +2711,31 @@
    "state": "reserved",
    "title": "panorama of a village between hills full of mist",
    "updated_at": "2026-11-22T00:04:59Z"
+  },
+  "mixkit:50864": {
+   "dur": 14.3,
+   "episode": "E09",
+   "id": "50864",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/landscape-of-a-coniferous-forest-in-the-morning-mist-50864/",
+   "phashes": [
+    3707447636750237132,
+    12966839670772849096,
+    16426878226576964504
+   ],
+   "reserved_at": "2026-11-22T18:32:32Z",
+   "run_id": "45054749202",
+   "scene": "S06",
+   "sha256": "374fc377e72e9c1d6519d1af68f5c93e1d6d61a5be933357ea102131d5d3bdc9",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "landscape of a coniferous forest in the morning mist",
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:50867": {
    "dur": 17.6,
@@ -2754,13 +2854,13 @@
     14988253338280013375
    ],
    "reserved_at": "2026-11-22T18:21:54Z",
-   "run_id": "45053721897",
+   "run_id": "45054749202",
    "scene": "S07",
    "sha256": "0ad7e273857fb40da8b5cb7965144904c697a36f6bb69c464013cac8296a6039",
    "source": "mixkit",
    "state": "reserved",
    "title": "sun rays over forest treetops",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:51573": {
    "dur": 11.9,
@@ -2833,9 +2933,9 @@
    "scene": "S10",
    "sha256": "b3630289f2446134e23b58103a83cb60a2e1267c48f72017d6b87aa42bf6ce18",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "flying over a landscape of sun soaked desert land with",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:6887": {
    "dur": 16.0,
@@ -2908,9 +3008,9 @@
    "scene": "S01",
    "sha256": "60c23951ba40829b4c1775c36a2fa04c95728c2e1a9e1c6ce0d38fdc2c001ceb",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "raindrops on a leaf",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:7277": {
    "dur": 20.0,
@@ -2954,13 +3054,13 @@
     14070238644669513728
    ],
    "reserved_at": "2026-11-22T18:21:54Z",
-   "run_id": "45053721897",
+   "run_id": "45054749202",
    "scene": "S09",
    "sha256": "002e5a926b56876e80a14825df062f5046135089b6148d48b14dabca7a0983a3",
    "source": "mixkit",
    "state": "reserved",
    "title": "sunbeams through the clouds in the sunset",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:8331": {
    "dur": 11.1,
@@ -3104,13 +3204,13 @@
     9291120388481801464
    ],
    "reserved_at": "2026-11-22T18:21:54Z",
-   "run_id": "45053721897",
+   "run_id": "45054749202",
    "scene": "S08",
    "sha256": "4c18001416b5f0f4ca2d95ebd8bca2598a6e8a69ce9be6724059364847826507",
    "source": "mixkit",
    "state": "reserved",
    "title": "water flowing down the river between black rocks",
-   "updated_at": "2026-11-22T18:21:54Z"
+   "updated_at": "2026-11-22T18:32:32Z"
   },
   "mixkit:9624": {
    "dur": 35.0,

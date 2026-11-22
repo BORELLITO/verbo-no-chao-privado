@@ -4,7 +4,7 @@
  "episode_id": "E09",
  "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
  "engine_version": "vnc-curadoria-2.0",
- "run_id": "45053721897",
+ "run_id": "45054749202",
  "publication_authorized": false,
  "master_approved": false,
  "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
@@ -12,15 +12,15 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "7098",
+   "id": "35548",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/raindrops-on-a-leaf-7098/",
+   "page": "https://mixkit.co/free-stock-video/house-in-the-middle-of-a-lake-on-a-rainy-35548/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 18.0,
-   "note_pt": "clima dark (brilho 58.4), movimento 6.32, palavras-chave 2, interpretacao=claude"
+   "preview_seconds": 15.0,
+   "note_pt": "clima dark (brilho 84.2), movimento 4.83, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S02",
@@ -77,15 +77,15 @@
   {
    "scene": "S06",
    "source": "mixkit",
-   "id": "34856",
+   "id": "50864",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/fog-covering-an-autumnal-forest-time-lapse-34856/",
+   "page": "https://mixkit.co/free-stock-video/landscape-of-a-coniferous-forest-in-the-morning-mist-50864/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 20.1,
-   "note_pt": "clima mid (brilho 139.5), movimento 11.04, palavras-chave 2, interpretacao=claude"
+   "preview_seconds": 14.3,
+   "note_pt": "clima mid (brilho 102.6), movimento 15.56, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S07",
@@ -129,28 +129,28 @@
   {
    "scene": "S10",
    "source": "mixkit",
-   "id": "52012",
+   "id": "10219",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/flying-over-a-landscape-of-sun-soaked-desert-land-with-52012/",
+   "page": "https://mixkit.co/free-stock-video/bull-grazing-in-a-valley-with-fog-10219/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 13.7,
-   "note_pt": "clima bright (brilho 150.3), movimento 5.06, palavras-chave 0, interpretacao=claude"
+   "preview_seconds": 20.4,
+   "note_pt": "clima bright (brilho 138.3), movimento 5.46, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S11",
    "source": "mixkit",
-   "id": "36186",
+   "id": "5030",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/path-through-a-snowy-forest-of-dry-trees-36186/",
+   "page": "https://mixkit.co/free-stock-video/lake-surrounded-by-dry-grass-in-the-savanna-5030/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 58.3,
-   "note_pt": "clima bright (brilho 130.1), movimento 19.49, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 14.4,
+   "note_pt": "clima bright (brilho 114.5), movimento 6.5, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S12",

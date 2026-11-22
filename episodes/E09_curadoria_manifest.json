@@ -1,6 +1,6 @@
 {
  "episode": "E09",
- "run_id": "45053721897",
+ "run_id": "45054749202",
  "engine_version": "vnc-curadoria-2.0",
  "dry_run": false,
  "status": "OK",
@@ -38,38 +38,47 @@
     "night"
    ],
    "avoid": [
-    "people",
-    "city",
-    "indoor",
-    "friend",
-    "friends",
-    "group",
-    "young",
-    "couple",
-    "family",
-    "party",
-    "camp",
-    "fire",
-    "road",
-    "street",
-    "highway",
+    "barbed",
     "bicycle",
     "bike",
-    "cyclist",
     "building",
     "buildings",
-    "skyline",
-    "urban",
-    "ruins",
-    "temple",
-    "pyramid",
-    "castle",
-    "wire",
-    "fence",
-    "barbed",
+    "camp",
     "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "droplets",
+    "drops",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "green",
+    "group",
+    "highway",
+    "indoor",
+    "leaf",
+    "leaves",
+    "lights",
+    "party",
+    "people",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "rainwater",
+    "road",
+    "ruins",
+    "skyline",
+    "street",
+    "temple",
     "traffic",
-    "lights"
+    "urban",
+    "water",
+    "wire",
+    "young"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -107,38 +116,44 @@
     "rain"
    ],
    "avoid": [
-    "people",
+    "barbed",
+    "bicycle",
+    "bike",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "church",
     "city",
-    "indoor",
+    "couple",
+    "cyclist",
+    "family",
+    "fence",
+    "fire",
     "friend",
     "friends",
     "group",
-    "young",
-    "couple",
-    "family",
-    "party",
-    "camp",
-    "fire",
-    "road",
-    "street",
     "highway",
-    "bicycle",
-    "bike",
-    "cyclist",
-    "building",
-    "buildings",
-    "skyline",
-    "urban",
-    "ruins",
-    "temple",
+    "houses",
+    "indoor",
+    "lights",
+    "party",
+    "people",
     "pyramid",
-    "castle",
-    "wire",
-    "fence",
-    "barbed",
-    "car",
+    "road",
+    "roofs",
+    "rooftops",
+    "ruins",
+    "skyline",
+    "street",
+    "temple",
+    "town",
     "traffic",
-    "lights"
+    "urban",
+    "village",
+    "wire",
+    "young"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -628,17 +643,18 @@
    "emotion": "arco_padrao",
    "mood": "bright",
    "queries": [
-    "sunlight valley",
-    "mountains sunlight",
-    "green hills sunlight",
+    "green valley sunlight",
+    "meadow valley morning",
+    "hills sunlight clouds",
     "hands",
     "hand",
     "praying",
     "holding"
    ],
    "prefer": [
-    "sunlight",
     "valley",
+    "green",
+    "sunlight",
     "hills",
     "hands",
     "holding",
@@ -647,38 +663,45 @@
     "water"
    ],
    "avoid": [
-    "people",
+    "arid",
+    "barbed",
+    "bicycle",
+    "bike",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
     "city",
-    "indoor",
+    "couple",
+    "cyclist",
+    "desert",
+    "dry",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "flying",
     "friend",
     "friends",
     "group",
-    "young",
-    "couple",
-    "family",
-    "party",
-    "camp",
-    "fire",
-    "road",
-    "street",
     "highway",
-    "bicycle",
-    "bike",
-    "cyclist",
-    "building",
-    "buildings",
-    "skyline",
-    "urban",
-    "ruins",
-    "temple",
+    "indoor",
+    "lights",
+    "party",
+    "people",
     "pyramid",
-    "castle",
-    "wire",
-    "fence",
-    "barbed",
-    "car",
+    "road",
+    "ruins",
+    "sand",
+    "skyline",
+    "snow",
+    "street",
+    "temple",
     "traffic",
-    "lights"
+    "urban",
+    "wire",
+    "young"
    ],
    "allow": [
     "hands"
@@ -700,8 +723,8 @@
    "mood": "bright",
    "queries": [
     "calm lake reflection",
-    "still water hills",
     "lake mountains morning",
+    "still water reflection trees",
     "trail",
     "path",
     "hills",
@@ -715,43 +738,54 @@
     "lake",
     "calm",
     "reflection",
+    "water",
     "trail",
     "path",
     "hills"
    ],
    "avoid": [
-    "people",
-    "city",
-    "indoor",
-    "friend",
-    "friends",
-    "group",
-    "young",
-    "couple",
-    "family",
-    "party",
-    "camp",
-    "fire",
-    "road",
-    "street",
-    "highway",
+    "barbed",
+    "bare",
     "bicycle",
     "bike",
-    "cyclist",
     "building",
     "buildings",
-    "skyline",
-    "urban",
-    "ruins",
-    "temple",
-    "pyramid",
-    "castle",
-    "wire",
-    "fence",
-    "barbed",
+    "camp",
     "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "party",
+    "path",
+    "people",
+    "pyramid",
+    "road",
+    "ruins",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
     "traffic",
-    "lights"
+    "trail",
+    "urban",
+    "walk",
+    "walking",
+    "winter",
+    "wire",
+    "young"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -843,11 +877,11 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "7098",
-   "title": "raindrops on a leaf",
-   "page": "https://mixkit.co/free-stock-video/raindrops-on-a-leaf-7098/",
-   "preview_url": "https://assets.mixkit.co/videos/7098/7098-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/7098/7098-720.mp4",
+   "id": "35548",
+   "title": "house in the middle of a lake on a rainy",
+   "page": "https://mixkit.co/free-stock-video/house-in-the-middle-of-a-lake-on-a-rainy-35548/",
+   "preview_url": "https://assets.mixkit.co/videos/35548/35548-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/35548/35548-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -855,12 +889,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 18.0,
-   "sha256": "60c23951ba40829b4c1775c36a2fa04c95728c2e1a9e1c6ce0d38fdc2c001ceb",
+   "clip_seconds": 15.0,
+   "sha256": "68d0041876fc902cfab6156723798d531d70f608ca2c4455339201b7ca0f021b",
    "phashes": [
-    16701476832570058278,
-    16701476832572155430,
-    16701547201297458726
+    16204198637981847087,
+    13889347879757581839,
+    13893856431616445999
    ],
    "segment": {
     "start": 0.0,
@@ -868,30 +902,32 @@
     "emotion": "arco_padrao",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 58.4), movimento 6.32, palavras-chave 2, interpretacao=claude",
+   "justification": "clima dark (brilho 84.2), movimento 4.83, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 2.958,
-    "clip_sem": 0.0018
+    "unary": 3.204,
+    "clip_sem": 0.0574
    },
    "vision": {
-    "sem": 0.0018,
+    "sem": 0.0574,
     "neg": {
-     "people": 0.0279,
-     "city": 0.0319,
-     "indoor": 0.5478,
-     "text": 0.0021,
-     "cgi": 0.3884
+     "people": 0.3141,
+     "city": 0.0672,
+     "indoor": 0.0401,
+     "text": 0.0006,
+     "cgi": 0.5207
     }
    },
    "metrics": {
-    "brightness": 58.4,
-    "cut_ratio": 1.72,
-    "motion": 6.32,
-    "saturation": 175.8,
-    "sharp": 9.03
+    "brightness": 84.2,
+    "saturation": 39.6,
+    "motion": 4.83,
+    "cut_ratio": 1.1,
+    "sharp": 7.99
    },
    "alternatives": [
-    "mixkit:21130"
+    "mixkit:2207",
+    "mixkit:22728",
+    "mixkit:20761"
    ]
   },
   {
@@ -939,9 +975,9 @@
    },
    "metrics": {
     "brightness": 113.3,
-    "saturation": 74.4,
-    "motion": 3.79,
     "cut_ratio": 1.08,
+    "motion": 3.79,
+    "saturation": 74.4,
     "sharp": 6.81
    },
    "alternatives": [
@@ -996,9 +1032,9 @@
    },
    "metrics": {
     "brightness": 83.5,
-    "saturation": 76.0,
-    "motion": 4.85,
     "cut_ratio": 0.96,
+    "motion": 4.85,
+    "saturation": 76.0,
     "sharp": 12.41
    },
    "alternatives": [
@@ -1104,9 +1140,9 @@
    },
    "metrics": {
     "brightness": 123.0,
-    "saturation": 36.4,
-    "motion": 5.73,
     "cut_ratio": 2.16,
+    "motion": 5.73,
+    "saturation": 36.4,
     "sharp": 6.84
    },
    "alternatives": [
@@ -1119,11 +1155,11 @@
   {
    "scene": "S06",
    "source": "mixkit",
-   "id": "34856",
-   "title": "fog covering an autumnal forest time lapse",
-   "page": "https://mixkit.co/free-stock-video/fog-covering-an-autumnal-forest-time-lapse-34856/",
-   "preview_url": "https://assets.mixkit.co/videos/34856/34856-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/34856/34856-720.mp4",
+   "id": "50864",
+   "title": "landscape of a coniferous forest in the morning mist",
+   "page": "https://mixkit.co/free-stock-video/landscape-of-a-coniferous-forest-in-the-morning-mist-50864/",
+   "preview_url": "https://assets.mixkit.co/videos/50864/50864-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/50864/50864-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1131,12 +1167,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 20.1,
-   "sha256": "d333b7805f20359202ec642f0f05519bf4a5e35f4aaf26c55cef6b9fb1ab1659",
+   "clip_seconds": 14.3,
+   "sha256": "374fc377e72e9c1d6519d1af68f5c93e1d6d61a5be933357ea102131d5d3bdc9",
    "phashes": [
-    4307957412735100912,
-    7263427106058940400,
-    5687167215004428272
+    3707447636750237132,
+    12966839670772849096,
+    16426878226576964504
    ],
    "segment": {
     "start": 27.71,
@@ -1144,27 +1180,27 @@
     "emotion": "arco_padrao",
     "interpretation": "claude"
    },
-   "justification": "clima mid (brilho 139.5), movimento 11.04, palavras-chave 2, interpretacao=claude",
+   "justification": "clima mid (brilho 102.6), movimento 15.56, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 3.028,
-    "clip_sem": 0.0021
+    "unary": 2.876,
+    "clip_sem": 0.0208
    },
    "vision": {
-    "sem": 0.0021,
+    "sem": 0.0208,
     "neg": {
-     "people": 0.0683,
-     "city": 0.0325,
-     "indoor": 0.6019,
-     "text": 0.001,
-     "cgi": 0.2942
+     "people": 0.1411,
+     "city": 0.031,
+     "indoor": 0.2667,
+     "text": 0.0022,
+     "cgi": 0.5381
     }
    },
    "metrics": {
-    "brightness": 139.5,
-    "cut_ratio": 3.13,
-    "motion": 11.04,
-    "saturation": 81.0,
-    "sharp": 13.43
+    "brightness": 102.6,
+    "cut_ratio": 1.23,
+    "motion": 15.56,
+    "saturation": 43.9,
+    "sharp": 32.07
    },
    "alternatives": [
     "mixkit:2213",
@@ -1332,9 +1368,9 @@
    },
    "metrics": {
     "brightness": 132.6,
-    "saturation": 62.5,
-    "motion": 5.77,
     "cut_ratio": 1.63,
+    "motion": 5.77,
+    "saturation": 62.5,
     "sharp": 8.32
    },
    "alternatives": [
@@ -1345,11 +1381,11 @@
   {
    "scene": "S10",
    "source": "mixkit",
-   "id": "52012",
-   "title": "flying over a landscape of sun soaked desert land with",
-   "page": "https://mixkit.co/free-stock-video/flying-over-a-landscape-of-sun-soaked-desert-land-with-52012/",
-   "preview_url": "https://assets.mixkit.co/videos/52012/52012-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/52012/52012-1080.mp4",
+   "id": "10219",
+   "title": "bull grazing in a valley with fog",
+   "page": "https://mixkit.co/free-stock-video/bull-grazing-in-a-valley-with-fog-10219/",
+   "preview_url": "https://assets.mixkit.co/videos/10219/10219-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/10219/10219-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1357,12 +1393,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 13.7,
-   "sha256": "b3630289f2446134e23b58103a83cb60a2e1267c48f72017d6b87aa42bf6ce18",
+   "clip_seconds": 20.4,
+   "sha256": "c70773d09213bc7f4bdc680352b3ac19bf588eb02d6aeb8357a1307f20b0df70",
    "phashes": [
-    4574946771359513726,
-    9186632789791226998,
-    9186632514644899380
+    16177655071493865036,
+    17335361031960014532,
+    16155321241352611524
    ],
    "segment": {
     "start": 48.64,
@@ -1370,42 +1406,43 @@
     "emotion": "arco_padrao",
     "interpretation": "claude"
    },
-   "justification": "clima bright (brilho 150.3), movimento 5.06, palavras-chave 0, interpretacao=claude",
+   "justification": "clima bright (brilho 138.3), movimento 5.46, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 2.836,
-    "clip_sem": 0.0103
+    "unary": 3.26,
+    "clip_sem": 0.0681
    },
    "vision": {
-    "sem": 0.0103,
+    "sem": 0.0681,
     "neg": {
-     "people": 0.7408,
-     "city": 0.0399,
-     "indoor": 0.145,
-     "text": 0.0017,
-     "cgi": 0.0622
+     "people": 0.1182,
+     "city": 0.0304,
+     "indoor": 0.3976,
+     "text": 0.002,
+     "cgi": 0.3837
     }
    },
    "metrics": {
-    "brightness": 150.3,
-    "cut_ratio": 1.01,
-    "motion": 5.06,
-    "saturation": 84.3,
-    "sharp": 12.0
+    "brightness": 138.3,
+    "cut_ratio": 1.72,
+    "motion": 5.46,
+    "saturation": 79.2,
+    "sharp": 12.27
    },
    "alternatives": [
-    "mixkit:25064",
-    "mixkit:41386",
-    "mixkit:17723"
+    "mixkit:18289",
+    "mixkit:9980",
+    "mixkit:48483",
+    "mixkit:34833"
    ]
   },
   {
    "scene": "S11",
    "source": "mixkit",
-   "id": "36186",
-   "title": "path through a snowy forest of dry trees",
-   "page": "https://mixkit.co/free-stock-video/path-through-a-snowy-forest-of-dry-trees-36186/",
-   "preview_url": "https://assets.mixkit.co/videos/36186/36186-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/36186/36186-720.mp4",
+   "id": "5030",
+   "title": "lake surrounded by dry grass in the savanna",
+   "page": "https://mixkit.co/free-stock-video/lake-surrounded-by-dry-grass-in-the-savanna-5030/",
+   "preview_url": "https://assets.mixkit.co/videos/5030/5030-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/5030/5030-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1413,12 +1450,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 58.3,
-   "sha256": "81aeaccf22bd6d27df89651eb8fe3db2c9e8455ea45e8f26ec78b1d7b61b773c",
+   "clip_seconds": 14.4,
+   "sha256": "99c4864f546c10d01e8ca56c3661915a425a814ab162bb0871cc58a9436f686a",
    "phashes": [
-    8102106154367657925,
-    17505552636485445443,
-    18048230894041993763
+    17941474741814358176,
+    18229705119576651856,
+    18229713796480138472
    ],
    "segment": {
     "start": 54.64,
@@ -1426,32 +1463,32 @@
     "emotion": "arco_padrao",
     "interpretation": "claude"
    },
-   "justification": "clima bright (brilho 130.1), movimento 19.49, palavras-chave 1, interpretacao=claude",
+   "justification": "clima bright (brilho 114.5), movimento 6.5, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 2.738,
-    "clip_sem": 0.0668
+    "unary": 3.09,
+    "clip_sem": 0.015
    },
    "vision": {
-    "sem": 0.0668,
+    "sem": 0.015,
     "neg": {
-     "people": 0.5809,
-     "city": 0.0293,
-     "indoor": 0.1958,
-     "text": 0.0003,
-     "cgi": 0.1268
+     "people": 0.6991,
+     "city": 0.02,
+     "indoor": 0.2008,
+     "text": 0.0006,
+     "cgi": 0.0645
     }
    },
    "metrics": {
-    "brightness": 130.1,
-    "cut_ratio": 1.36,
-    "motion": 19.49,
-    "saturation": 45.1,
-    "sharp": 33.5
+    "brightness": 114.5,
+    "cut_ratio": 1.21,
+    "motion": 6.5,
+    "saturation": 86.2,
+    "sharp": 12.13
    },
    "alternatives": [
-    "mixkit:29413",
-    "mixkit:25096",
-    "mixkit:49695"
+    "mixkit:3378",
+    "mixkit:42490",
+    "mixkit:25096"
    ]
   },
   {
@@ -1562,7 +1599,7 @@
   "aprovacao_estetica_humana": "NAO_VERIFICADA",
   "manifest_errors": []
  },
- "sequence_utility": 34.22,
+ "sequence_utility": 35.619,
  "trace": {
   "beam": 400,
   "weights": {
