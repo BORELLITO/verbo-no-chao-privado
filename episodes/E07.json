@@ -48,7 +48,11 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "roof",
+     "window",
+     "house",
+     "rain"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -156,7 +160,16 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "campfire",
+     "bonfire",
+     "flame",
+     "burning",
+     "logs",
+     "candle",
+     "fireplace",
+     "wood",
+     "relaxing"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -166,19 +179,20 @@
    "block": "biblical_reference",
    "text": "No capítulo vinte e nove, o profeta manda construir casas, plantar e orar pela cidade.",
    "visual": {
-    "meaning": "brotos crescendo no campo",
-    "meaning_en": "seedlings growing field",
+    "meaning": "amanhecer brumoso, recomeço paciente",
+    "meaning_en": "foggy sunrise valley",
     "emotion": "construção paciente",
     "mood": "mid",
     "queries": [
-     "seedlings growing",
-     "green sprouts soil",
-     "young plants field"
+     "foggy sunrise valley",
+     "sunrise fog hills",
+     "misty mountain morning",
+     "seedlings growing"
     ],
     "prefer": [
-     "plants",
-     "growing",
-     "field"
+     "sunrise",
+     "fog",
+     "hills"
     ],
     "avoid": [
      "people",
