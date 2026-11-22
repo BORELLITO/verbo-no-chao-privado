@@ -28,13 +28,13 @@
     "mood": "dark",
     "queries": [
      "dark stormy sky",
-     "night clouds",
+     "storm clouds timelapse",
      "foggy forest night"
     ],
     "prefer": [
      "dark",
      "clouds",
-     "night"
+     "storm"
     ],
     "avoid": [
      "people",
@@ -49,7 +49,27 @@
      "party",
      "camp",
      "fire",
-     "rain"
+     "rain",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -85,7 +105,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -100,14 +140,14 @@
     "emotion": "rigidez",
     "mood": "dark",
     "queries": [
-     "empty road field",
-     "long road evening",
-     "road through field dusk"
+     "calm sea water",
+     "ocean waves aerial",
+     "sea horizon gray"
     ],
     "prefer": [
-     "road",
-     "field",
-     "dusk"
+     "sea",
+     "water",
+     "waves"
     ],
     "avoid": [
      "people",
@@ -121,7 +161,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -157,7 +217,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -193,7 +273,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -229,7 +329,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -265,7 +385,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -275,14 +415,14 @@
    "block": "reflection",
    "text": "O alerta é contra o juízo hipócrita e condenador.",
    "visual": {
-    "meaning": "nuvens carregadas passando",
+    "meaning": "nuvens carregadas no céu",
     "meaning_en": "heavy clouds moving",
     "emotion": "severidade",
     "mood": "mid",
     "queries": [
-     "clouds moving timelapse",
      "dark clouds sky timelapse",
-     "sky timelapse clouds"
+     "storm clouds moving",
+     "clouds timelapse sky"
     ],
     "prefer": [
      "clouds",
@@ -301,7 +441,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -337,7 +497,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -373,7 +553,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -390,12 +590,14 @@
     "queries": [
      "calm lake reflection",
      "still water hills",
-     "lake morning calm"
+     "lake morning calm",
+     "pond reflection trees"
     ],
     "prefer": [
      "lake",
      "calm",
-     "reflection"
+     "reflection",
+     "water"
     ],
     "avoid": [
      "people",
@@ -409,7 +611,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -445,7 +667,27 @@
      "family",
      "party",
      "camp",
-     "fire"
+     "fire",
+     "road",
+     "street",
+     "highway",
+     "bicycle",
+     "bike",
+     "cyclist",
+     "building",
+     "buildings",
+     "skyline",
+     "urban",
+     "ruins",
+     "temple",
+     "pyramid",
+     "castle",
+     "wire",
+     "fence",
+     "barbed",
+     "car",
+     "traffic",
+     "lights"
     ],
     "shot": "paisagem, movimento lento"
    }
