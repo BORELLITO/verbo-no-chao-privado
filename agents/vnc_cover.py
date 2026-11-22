@@ -121,6 +121,17 @@ LAYOUT = {
 FORMATS = CFG.get("cover_formats", ["vertical"])   # decisao do dono (2026-11-21): so capa vertical (Shorts/TikTok/Instagram); "wide" so se pedido
 for name, (W, H, L) in LAYOUT.items():
     if name not in FORMATS: continue
+    if CFG.get("cover_style") == "quadro" and name == "vertical":   # capa propria do quadro (Fora do Contexto); episodios sem esta chave seguem o padrao
+        from agents import vnc_cover_quadro as QD
+        q = CFG["cover_quadro"]; im, qm = QD.build(frame(*TOP), QD.load_logo(380), q["kicker"], q["big"], q["tagline"], REF)
+        errs = QD.check(im, qm)
+        for e in errs: print("VNC_COVER_GATE_FAIL", e)
+        print("VNC_COVER_GATE", "OK" if not errs else f"BLOQUEADA {len(errs)}", json.dumps({k: (round(v, 3) if isinstance(v, float) else v) for k, v in qm.items() if k != "widths"}, ensure_ascii=False))
+        if errs: sys.exit(9)
+        b = io.BytesIO(); im.save(b, "JPEG", quality=95, subsampling=0); sb = base64.b64encode(b.getvalue()).decode()
+        print("VNC_COVER", name, len(sb))
+        for n in range(0, len(sb), 1800): print("VNC_COVERB64", name, n // 1800, sb[n:n + 1800])
+        continue
     im = build(W, H, L)
     if name == "vertical":   # PORTAO NUMERICO: capa reprovada nao e impressa (nao entregar)
         from agents import vnc_cover_gate as CG

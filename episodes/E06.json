@@ -19,12 +19,12 @@
  "selection": "contracts/e06_scene_clip_selection.json",
  "cover": {
   "top": [
-   "6890",
+   "9624",
    3.0
   ],
   "bottom": [
-   "51451",
-   5.0
+   "9624",
+   3.0
   ]
  },
  "scenes": [
@@ -395,5 +395,14 @@
   ],
   "titulo_curto": "Fora do Contexto #1: o tudo posso"
  },
- "karaoke_color": "&H0066B3FF"
+ "karaoke_color": "&H0066B3FF",
+ "cover_style": "quadro",
+ "cover_quadro": {
+  "kicker": "FORA DO CONTEXTO #1",
+  "big": [
+   "TUDO",
+   "POSSO"
+  ],
+  "tagline": "…e o que vem antes?"
+ }
 }

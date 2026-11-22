@@ -1,0 +1,28 @@
+import unittest
+import numpy as np
+from PIL import Image
+from agents import vnc_cover_quadro as Q
+
+
+def _bg(v=120):
+    r = np.random.default_rng(1); a = (r.normal(v, 18, (540, 960, 1)) * np.ones((1, 1, 3))).clip(0, 255).astype("uint8")
+    return Image.fromarray(a)
+
+
+class CapaQuadro(unittest.TestCase):
+    def test_gera_1080x1920_e_passa(self):
+        img, met = Q.build(_bg(), Q.load_logo(380), "FORA DO CONTEXTO #1", ["TUDO", "POSSO"], "...e o que vem antes?", "Filipenses 4:10-13")
+        self.assertEqual(img.size, (1080, 1920)); self.assertEqual(Q.check(img, met), [])
+
+    def test_fundo_liso_reprova_por_nitidez(self):
+        img, met = Q.build(Image.new("RGB", (960, 540), (120, 120, 120)), Q.load_logo(380), "K", ["TUDO", "POSSO"], "t", "r")
+        met["frame_sharp"] = 0.1
+        self.assertTrue(any("nitidez" in e for e in Q.check(img, met)))
+
+    def test_texto_fora_da_area_segura(self):
+        img, met = Q.build(_bg(), Q.load_logo(380), "K", ["TUDO", "POSSO"], "t", "r"); met["y_bottom"] = 1700
+        self.assertTrue(any("area segura" in e for e in Q.check(img, met)))
+
+
+if __name__ == "__main__":
+    unittest.main()
