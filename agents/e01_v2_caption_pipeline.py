@@ -252,7 +252,9 @@ def text_width(text: str) -> float:
 def display(token: str, last: bool = False) -> str:
     """Token as shown on screen; `last` = final word of its caption."""
     out = token.strip(DISPLAY_STRIP if last else INNER_STRIP)
-    check(out and not any(ch in out for ch in FORBIDDEN_DISPLAY_CHARS),
+    # hifen entre letras faz parte da palavra (enfrentá-lo, diga-me): permitido; hifen decorativo/solto continua proibido
+    probe = re.sub(r"(?<=[^\W\d_])-(?=[^\W\d_])", "", out)
+    check(out and not any(ch in probe for ch in FORBIDDEN_DISPLAY_CHARS),
           "caption:invalid_display_token")
     return out
 

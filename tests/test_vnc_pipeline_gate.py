@@ -94,3 +94,11 @@ class ExtraT(unittest.TestCase):
         with mock.patch.object(G, "pre_voice", return_value=["CLIPES: x"]):
             self.assertEqual(V.run("E03", "generate", d, api, lambda k: 9999, lambda p: 58), 8)
         api.assert_not_called(); self.assertFalse((d / "assets/voice/E03.mp3").exists())
+
+
+class HyphenWord(unittest.TestCase):
+    def test_hyphen_between_letters_allowed_decorative_blocked(self):
+        from agents import e01_v2_caption_pipeline as P
+        self.assertEqual(P.display("enfrentá-lo", last=True), "enfrentá-lo")
+        for bad in ("-", "—", "a-", "-a"):
+            with self.assertRaises(Exception): P.display(bad)
