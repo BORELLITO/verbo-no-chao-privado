@@ -52,9 +52,18 @@ def render_posting(cfg):
 
 def render_posting_file(ep, cfg):
     t = render_posting(cfg)
-    return (f'VERBO NO CHÃO — {ep} "{" ".join(cfg["title_lines"])}" — {cfg["reference"]}\nLEGENDAS DE POSTAGEM POR PLATAFORMA (publicar é decisão do dono)\n\n'
+    from agents import vnc_naming as N
+    return (f'VERBO NO CHÃO — {N.label(ep)} — {cfg["reference"]}\nLEGENDAS DE POSTAGEM POR PLATAFORMA (publicar é decisão do dono)\n\n'
             f'=== TIKTOK ({len(t["tiktok"])} caracteres) ===\n{t["tiktok"]}\n\n=== INSTAGRAM REELS ===\n{t["instagram"]}\n\n'
             f'=== YOUTUBE SHORTS ===\nTítulo ({len(t["youtube_titulo"])} caracteres):\n{t["youtube_titulo"]}\n\nDescrição:\n{t["youtube_descricao"]}\n')
+
+
+def _naming(ep, root):
+    """Numeracao oficial (quadro + numero do quadro + titulo) confere com o registro unico; trava antes de gastar voz ou montar."""
+    from agents import vnc_naming as N
+    if not N.REG.relative_to(N.ROOT).as_posix() or not (Path(root) / "contracts" / "vnc_numeracao_v1.json").exists():
+        return [] if Path(root) != ROOT else ["NUMERACAO: contracts/vnc_numeracao_v1.json ausente"]   # raizes de teste sem registro nao travam; a raiz real exige
+    return N.check_episode(ep, root)
 
 
 def _teologia(ep, root, fn):
@@ -77,6 +86,7 @@ def pre_voice(ep, root=ROOT, review=None, verses=None):
     rep = review(ep)
     if rep["status"] == "REPROVADO": errs += [f"ROTEIRO: {i['code']} {i['msg']}" for i in rep["issues"]]
     errs += bloco_postagem(cfg)
+    errs += _naming(ep, root)
     errs += _teologia(ep, root, verses)
     if strict(cfg):
         sp = root / (cfg.get("selection") or f"contracts/{ep.lower()}_scene_clip_selection.json")
@@ -88,6 +98,7 @@ def pre_voice(ep, root=ROOT, review=None, verses=None):
 def pre(ep, root=ROOT, review=None, seconds=None, verses=None):
     import hashlib
     errs, cfg = [], _cfg(ep, root)
+    errs += _naming(ep, root)
     errs += _teologia(ep, root, verses)
     # BLOCO 1 roteiro
     if review is None:
@@ -154,6 +165,9 @@ def post(ep, report, root=ROOT):
 
 def main(argv):
     cmd, ep = argv[0], argv[1]
+    try:
+        from agents import vnc_naming as N; print("VNC_EPISODIO", N.label(ep), f"(id interno {ep})")
+    except KeyError as ex: print("VNC_EPISODIO", ep, "(sem registro de numeracao)")
     errs = pre(ep) if cmd == "pre" else pre_voice(ep) if cmd == "pre-voice" else post(ep, json.loads(Path(argv[2]).read_text(encoding="utf8")))
     for e in errs: print("VNC_PIPELINE_FAIL", e)
     if cmd == "post" and not errs and _cfg(ep).get("posting"):

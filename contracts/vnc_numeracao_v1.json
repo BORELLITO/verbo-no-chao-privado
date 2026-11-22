@@ -1,0 +1,17 @@
+{
+ "versao": 1,
+ "decisao": "Ordem de publicacao definida pelo dono em 2026-11-22. O id interno (E01..E0N) e so a chave estavel de arquivos, hashes e registros; tudo que o dono ve (pastas, arquivos, capas, legendas, logs, Drive) usa QUADRO + numero do quadro + titulo.",
+ "quadros": {
+  "DORES": {"nome": "QUADRO - DORES DA VIDA", "curto": "Dores da Vida"},
+  "FORA": {"nome": "QUADRO - FORA DO CONTEXTO", "curto": "Fora do Contexto"}
+ },
+ "episodios": [
+  {"id": "E01", "quadro": "DORES", "numero": 1, "titulo": "QUANDO VOCÊ PERGUNTA E NADA MUDA", "referencia": "Habacuque 1:2–4"},
+  {"id": "E02", "quadro": "DORES", "numero": 2, "titulo": "QUANDO A RESPOSTA DEMORA", "referencia": "Habacuque 2:1–3"},
+  {"id": "E05", "quadro": "DORES", "numero": 3, "titulo": "MEDO E UMA MÃO FIRME", "referencia": "Isaías 41:10–13"},
+  {"id": "E03", "quadro": "DORES", "numero": 4, "titulo": "ESPERANÇA ENTRE RUÍNAS", "referencia": "Lamentações 3:21–26"},
+  {"id": "E04", "quadro": "DORES", "numero": 5, "titulo": "DESCANSO PRA QUEM ESTÁ CANSADO", "referencia": "Mateus 11:28–30"},
+  {"id": "E06", "quadro": "FORA", "numero": 1, "titulo": "TUDO POSSO", "referencia": "Filipenses 4:10–13"},
+  {"id": "E07", "quadro": "FORA", "numero": 2, "titulo": "PLANO DE PAZ", "referencia": "Jeremias 29:11"}
+ ]
+}

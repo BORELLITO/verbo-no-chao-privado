@@ -37,7 +37,7 @@ jobs:
           print("episode=" + c["episode"]); print("selection=" + c.get("selection", "")); print("stages=" + ",".join(c["stages"])); print("timing_override=" + c.get("timing_override", "")); print("ending_force=" + c.get("ending_force", ""))
           PY
       - name: Testes das travas
-        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py tests/test_vnc_pipeline_gate.py tests/test_vnc_script_review.py tests/test_vnc_cover_gate.py tests/test_vnc_endings.py tests/test_vnc_theology_gate.py tests/test_vnc_drive.py
+        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py tests/test_vnc_pipeline_gate.py tests/test_vnc_script_review.py tests/test_vnc_cover_gate.py tests/test_vnc_endings.py tests/test_vnc_theology_gate.py tests/test_vnc_drive.py tests/test_vnc_naming.py
       - name: Preflight (clipes, trilha, workflows, proibicoes)
         run: |
           MUSIC="$(python -c 'import json;print(json.load(open("run/runflow.json")).get("music",""))')"

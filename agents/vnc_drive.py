@@ -7,7 +7,6 @@ import json, os, re, subprocess, sys
 from pathlib import Path
 
 ROOT_NAME = "VERBO NO CHÃO"
-QUADRO_DORES, QUADRO_FORA = "QUADRO - DORES DA VIDA", "QUADRO - FORA DO CONTEXTO"
 
 
 def _cap(t):
@@ -16,19 +15,11 @@ def _cap(t):
 
 
 def plan(cfg):
-    """Nomes de pasta/arquivos a partir do episodes/<EP>.json (funcao pura, testada).
+    """Nomes de pasta/arquivos vindos do registro unico (contracts/vnc_numeracao_v1.json via agents.vnc_naming). Funcao pura, testada.
     Padrao do dono: QUADRO - <NOME> / EPISÓDIO <N> - <TITULO EM MAIUSCULAS> / <mesmo nome>.mp4|.srt| - CAPA.jpg| - LEGENDAS DE POSTAGEM.txt"""
-    ref = cfg["reference"]
-    title = cfg.get("drive_titulo") or " ".join(cfg["title_lines"]).upper()
-    if cfg.get("cover_style") == "quadro":
-        n = int(re.search(r"(?:#|EPIS[ÓO]DIO)\s*(\d+)", cfg["cover_quadro"]["kicker"]).group(1))
-        quadro, label = QUADRO_FORA, f"EPISÓDIO {n}"
-    else:
-        n = int(cfg.get("cover_number", cfg["number"]))
-        quadro, label = QUADRO_DORES, f"EPISÓDIO {n}"
-    base = f"EPISÓDIO {n} - {title}"
-    return {"quadro": quadro, "folder": base, "base": base, "label": label, "title": title, "ref": ref,
-            "files": {"video": f"{base}.mp4", "srt": f"{base}.srt", "cover": f"{base} - CAPA.jpg", "posting": f"{base} - LEGENDAS DE POSTAGEM.txt"}}
+    from agents import vnc_naming as N
+    ep = cfg["id"]; e = N.entry(ep); b = N.base(ep)
+    return {"quadro": N.quadro_nome(ep), "folder": b, "base": b, "label": f"EPISÓDIO {e['numero']}", "title": e["titulo"], "ref": cfg["reference"], "files": N.files(ep)}
 
 
 def posting_text(cfg, p):
