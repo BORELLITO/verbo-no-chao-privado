@@ -747,5 +747,15 @@
   ],
   "tagline": "…só vale para oração?"
  },
- "audio_sha256": "d74b0b956be775f0fbc2e84794f36d1cabd99d467a8298aad08749d4ca811d71"
+ "audio_sha256": "d74b0b956be775f0fbc2e84794f36d1cabd99d467a8298aad08749d4ca811d71",
+ "cover": {
+  "top": [
+   "32173",
+   5.0
+  ],
+  "bottom": [
+   "7444",
+   5.0
+  ]
+ }
 }
