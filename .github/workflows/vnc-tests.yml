@@ -3,7 +3,7 @@ name: VNC Testes (suite completa)
 on:
   push:
     branches: ["main"]
-    paths: ["agents/**", "tests/**", "contracts/**", "episodes/**", ".github/workflows/**", "engine/**"]
+    paths: ["agents/**", "media/**", ".gitignore", "tests/**", "contracts/**", "episodes/**", ".github/workflows/**", "engine/**"]
 permissions:
   contents: read
 concurrency:
