@@ -1,7 +1,7 @@
 {
  "episode": "E06",
- "video_sha256": "5c234e4c4f42c2d14369dbb32046f2f183a396d78dd409baeb5fa7f427aa1191",
- "revisor": "agente-estetico (Claude), quadros reais do mp4 (folha de contato 17 quadros: 12 cenas, final C, capa 1080x1920); audio NAO ouvido, so metricas numericas",
+ "video_sha256": "1173142e0e03143c23d53b968c9ea24838977fa7566d79e15c1437b495d2036b",
+ "revisor": "agente-estetico (Claude), quadros reais do mp4 (folha de contato 17 quadros) e capa; audio NAO ouvido, so metricas numericas; 2a versao (S03, S04, S06 recuradas)",
  "data": "2026-11-22",
  "cenas": [
   {
@@ -30,23 +30,23 @@
    "cena": "S03",
    "veredito": "APROVADO_COM_RESSALVA",
    "criterios": {
-    "coerencia_texto_imagem": false,
+    "coerencia_texto_imagem": true,
     "luz_no_arco": true,
     "legenda_legivel": true,
     "sem_pessoas_ou_marcas": true
    },
-   "nota": "onda na praia em vez de parede de pedra; so passa vazio/distancia, nao 'preso'"
+   "nota": "rochas com neve num rio: isolamento e frio, sem pessoas; nao e 'prisao' literal, mas e coerente com preso/sem certeza"
   },
   {
    "cena": "S04",
    "veredito": "APROVADO_COM_RESSALVA",
    "criterios": {
-    "coerencia_texto_imagem": false,
+    "coerencia_texto_imagem": true,
     "luz_no_arco": true,
     "legenda_legivel": true,
     "sem_pessoas_ou_marcas": true
    },
-   "nota": "fogueira em close em vez de mar ao entardecer; calor/acolhimento, mas distante de 'ajuda enviada'"
+   "nota": "panela escura sobre fogo, quase em silhueta: alimento/ajuda; quadro escuro e pouco bonito, sem pessoas visiveis na folha"
   },
   {
    "cena": "S05",
@@ -63,12 +63,12 @@
    "cena": "S06",
    "veredito": "APROVADO_COM_RESSALVA",
    "criterios": {
-    "coerencia_texto_imagem": false,
+    "coerencia_texto_imagem": true,
     "luz_no_arco": true,
     "legenda_legivel": true,
     "sem_pessoas_ou_marcas": true
    },
-   "nota": "piano sob arvore com folhas caindo em vez de terra seca; bonito, mas dissonante de 'fome e falta'"
+   "nota": "penhasco com nevoa e vegetacao em vez de terra seca; coerente com 'suportar', sem piano"
   },
   {
    "cena": "S07",
@@ -123,7 +123,7 @@
     "legenda_legivel": true,
     "sem_pessoas_ou_marcas": true
    },
-   "nota": "trilha na neve entre pinheiros: frio e aguentar; luz clara"
+   "nota": "lago calmo ao dia: luz clara, aguentar com serenidade"
   },
   {
    "cena": "S12",
@@ -142,8 +142,8 @@
   "nota": "final C (Sol que nasce): logo, creditos e CTA legiveis (contraste 9,7/12,6/7,4), ultimo quadro preto"
  },
  "capa": {
-  "veredito": "APROVADO_COM_RESSALVA",
-  "nota": "topo e close de madeira escura (mais escuro que a base para passar o portao), titulo legivel; topo pouco expressivo"
+  "veredito": "APROVADO",
+  "nota": "folhagem com chuva no topo e lago claro na base: tristeza para luz, titulo legivel, logo nitido"
  },
  "ritmo_e_transicoes": {
   "veredito": "APROVADO",
