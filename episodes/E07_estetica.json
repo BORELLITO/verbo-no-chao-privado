@@ -1,0 +1,156 @@
+{
+ "episode": "E07",
+ "video_sha256": "4633536940c33d57c16a26ed13f7224a00a20ea27d7836121a25e889d70a7ca5",
+ "revisor": "agente-estetico (Claude), quadros reais do mp4 (folha de contato 17 quadros) e capa; audio NAO ouvido, so metricas numericas",
+ "data": "2026-11-22",
+ "cenas": [
+  {
+   "cena": "S01",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": false,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens douradas num ceu de fim de tarde: incerto, mas mais quente que o escuro previsto para a abertura (luz_no_arco falha: arco fica menos sombrio no inicio)"
+  },
+  {
+   "cena": "S02",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens de tempestade cinza: peso e expectativa; legenda legivel"
+  },
+  {
+   "cena": "S03",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "mar batendo em rocha: pressa/forca, nao e literal a 'sucesso rapido'; coerente como metafora e legenda legivel sobre a espuma"
+  },
+  {
+   "cena": "S04",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "ondas de chuva num lago esverdeado: agua/exilio de forma abstrata; nao mostra Babilonia nem rio literal; sem fogo e sem pessoas"
+  },
+  {
+   "cena": "S05",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "floresta e colinas ao amanhecer com cores de outono: recomeco paciente; nao mostra brotos plantados"
+  },
+  {
+   "cena": "S06",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "colinas com neve ao por do sol, ceu rosado: passagem do tempo sugerida, nao literal de setenta anos"
+  },
+  {
+   "cena": "S07",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "lago ao por do sol com silhueta de construcao antiga ao fundo (parece templo, possivelmente do Camboja); paz clara, mas a silhueta nao e biblica nem cristã; sem pessoas"
+  },
+  {
+   "cena": "S08",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "vale verde com arvores e montanha: longo prazo e amplitude, legenda legivel"
+  },
+  {
+   "cena": "S09",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "sol atras de galhos: esperanca paciente, luz crescente"
+  },
+  {
+   "cena": "S10",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "floresta nevada acima das nuvens: consolo calmo, claro no arco final"
+  },
+  {
+   "cena": "S11",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "pasto verde com casa e pinheiros ao dia: presenca na espera; uma construcao pequena ao longe, sem pessoas"
+  },
+  {
+   "cena": "S12",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "montanha com lagos vista de cima: horizonte aberto para a pergunta final"
+  }
+ ],
+ "final": {
+  "veredito": "APROVADO",
+  "nota": "final D (chuva/brilho dourado) com logo, creditos e CTA legiveis e ultimo quadro quase preto; contraste apenas inspecionado visualmente na folha"
+ },
+ "capa": {
+  "veredito": "APROVADO",
+  "nota": "capa do quadro: recorte nitido com marcas laranja em volta de PLANOS DE PAZ; fundo escuro e desfocado; logo, kicker FORA DO CONTEXTO #2, frase e referencia legiveis; coerente com o karaoke laranja"
+ },
+ "ritmo_e_transicoes": {
+  "veredito": "APROVADO",
+  "nota": "fades suaves, 12 cenas, 64,98 s; karaoke laranja legivel em todas as cenas da folha"
+ },
+ "audio_voz_e_trilha": {
+  "veredito": "APROVADO_COM_RESSALVA",
+  "nota": "voz Johnes 55,48 s e trilha Staring at the Night Sky passaram nas metricas; NAO VERIFICADO: escuta humana e Content ID da trilha"
+ }
+}
