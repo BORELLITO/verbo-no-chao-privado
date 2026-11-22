@@ -118,6 +118,7 @@ LAYOUT = {
     "vertical": (1080, 1920, dict(logo=440, logo_y=300, ky=880, ty=950, ts=124, t0=0.40, tw=0.34, scrim=0.57)),
     "wide": (1280, 720, dict(logo=230, logo_y=14, ky=232, ty=272, ts=80, t0=0.30, tw=0.42, scrim=0.58)),
 }
+COVER_OUT = Path("/tmp/cover_out"); COVER_OUT.mkdir(exist_ok=True)   # arquivo final da capa (usado pelo envio ao Drive)
 FORMATS = CFG.get("cover_formats", ["vertical"])   # decisao do dono (2026-11-21): so capa vertical (Shorts/TikTok/Instagram); "wide" so se pedido
 for name, (W, H, L) in LAYOUT.items():
     if name not in FORMATS: continue
@@ -128,7 +129,7 @@ for name, (W, H, L) in LAYOUT.items():
         for e in errs: print("VNC_COVER_GATE_FAIL", e)
         print("VNC_COVER_GATE", "OK" if not errs else f"BLOQUEADA {len(errs)}", json.dumps({k: (round(v, 3) if isinstance(v, float) else v) for k, v in qm.items() if k != "widths"}, ensure_ascii=False))
         if errs: sys.exit(9)
-        b = io.BytesIO(); im.save(b, "JPEG", quality=95, subsampling=0); sb = base64.b64encode(b.getvalue()).decode()
+        b = io.BytesIO(); im.save(b, "JPEG", quality=95, subsampling=0); sb = base64.b64encode(b.getvalue()).decode(); (COVER_OUT / f"{name}.jpg").write_bytes(b.getvalue())
         print("VNC_COVER", name, len(sb))
         for n in range(0, len(sb), 1800): print("VNC_COVERB64", name, n // 1800, sb[n:n + 1800])
         continue
@@ -139,7 +140,7 @@ for name, (W, H, L) in LAYOUT.items():
         for e in errs: print("VNC_COVER_GATE_FAIL", e)
         print("VNC_COVER_GATE", "OK" if not errs else f"BLOQUEADA {len(errs)}", json.dumps({k: (round(v, 3) if isinstance(v, float) else v) for k, v in METRICS.items() if k != "widths"}, ensure_ascii=False))
         if errs: sys.exit(9)
-    b = io.BytesIO(); im.save(b, "JPEG", quality=95, subsampling=0); sb = base64.b64encode(b.getvalue()).decode()
+    b = io.BytesIO(); im.save(b, "JPEG", quality=95, subsampling=0); sb = base64.b64encode(b.getvalue()).decode(); (COVER_OUT / f"{name}.jpg").write_bytes(b.getvalue())
     print("VNC_COVER", name, len(sb))
     for n in range(0, len(sb), 1800): print("VNC_COVERB64", name, n // 1800, sb[n:n + 1800])
 print("VNC_COVER_END")

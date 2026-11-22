@@ -37,7 +37,7 @@ jobs:
           print("episode=" + c["episode"]); print("selection=" + c.get("selection", "")); print("stages=" + ",".join(c["stages"])); print("timing_override=" + c.get("timing_override", "")); print("ending_force=" + c.get("ending_force", ""))
           PY
       - name: Testes das travas
-        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py tests/test_vnc_pipeline_gate.py tests/test_vnc_script_review.py tests/test_vnc_cover_gate.py tests/test_vnc_endings.py tests/test_vnc_theology_gate.py
+        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py tests/test_vnc_pipeline_gate.py tests/test_vnc_script_review.py tests/test_vnc_cover_gate.py tests/test_vnc_endings.py tests/test_vnc_theology_gate.py tests/test_vnc_drive.py
       - name: Preflight (clipes, trilha, workflows, proibicoes)
         run: |
           MUSIC="$(python -c 'import json;print(json.load(open("run/runflow.json")).get("music",""))')"
@@ -65,6 +65,20 @@ jobs:
           VNC_ENDING_FORCE="${{ needs.gates.outputs.ending_force }}" VNC_TIMING_OVERRIDE="${{ needs.gates.outputs.timing_override }}" VNC_EPISODE="${{ needs.gates.outputs.episode }}" VNC_FINAL=1 VNC_SELECTION="${{ needs.gates.outputs.selection }}" python -m agents.vnc_master_build
       - name: Agente-mestre (video, legenda, musica, postagem)
         run: python -m agents.vnc_pipeline_gate post "${{ needs.gates.outputs.episode }}" /tmp/master/report.json
+      - name: Guardar arquivos finais (artefato privado, 3 dias)
+        continue-on-error: true
+        run: |
+          mkdir -p /tmp/out_build
+          cp /tmp/master/master.mp4 /tmp/out_build/master.mp4
+          cp /tmp/master/caps/captions.srt /tmp/out_build/captions.srt
+          cp /tmp/master/report.json /tmp/out_build/report.json
+      - uses: actions/upload-artifact@v4
+        continue-on-error: true
+        with:
+          name: vnc-build
+          path: /tmp/out_build
+          retention-days: 3
+          if-no-files-found: warn
   cover:
     needs: gates
     if: contains(needs.gates.outputs.stages, 'cover')
@@ -80,6 +94,13 @@ jobs:
       - run: python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy opencv-python-headless
       - run: |
           VNC_EPISODE="${{ needs.gates.outputs.episode }}" python -m agents.vnc_cover
+      - uses: actions/upload-artifact@v4
+        continue-on-error: true
+        with:
+          name: vnc-cover
+          path: /tmp/cover_out
+          retention-days: 3
+          if-no-files-found: warn
   sync:
     needs: gates
     if: contains(needs.gates.outputs.stages, 'sync')
