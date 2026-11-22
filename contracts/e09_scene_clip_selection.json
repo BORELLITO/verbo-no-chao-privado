@@ -155,16 +155,16 @@
   {
    "scene": "S12",
    "source": "mixkit",
-   "id": "19446",
+   "id": "34746",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/mountainous-valley-with-fog-during-sunrise-19446/",
+   "page": "https://mixkit.co/free-stock-video/mountainous-valley-during-sunrise-time-lapse-34746/",
    "interval": [
     0,
     8.0
    ],
    "preview_seconds": 10.0,
-   "note_pt": "troca manual (v2): amanhecer sem neve; sera inspecionado no video final"
+   "note_pt": "troca manual (v3): 19446 mostrava cabana de telhado azul; sera inspecionado no video final"
   }
  ],
- "ajuste_manual_pt": "S01 trocado de 35548 (casa sobre lago na chuva) para 9809; S10 trocado de 10219 (touro) para 10098; S02 mantido (20317) com ressalva: telhados pequenos no canto; demais cenas pela curadoria run 45054749202 | v2: S02 20317->48109 (telhado) e S12 30342->19446 (neve)"
+ "ajuste_manual_pt": "S01 trocado de 35548 (casa sobre lago na chuva) para 9809; S10 trocado de 10219 (touro) para 10098; S02 mantido (20317) com ressalva: telhados pequenos no canto; demais cenas pela curadoria run 45054749202 | v2: S02 20317->48109 (telhado) e S12 30342->19446 (neve) | v3: S12 19446->34746 (cabana)"
 }
