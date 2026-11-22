@@ -23,10 +23,10 @@ def _tracked(d, text, font, cx, y, fill, track):
     return tot
 
 
-def _fit_big(big, size=205, limite=0.88):
-    """Fonte do titulo grande: 205 px; encolhe so se a linha mais larga passar de 88% da capa (E06/E07 seguem em 205)."""
+def _fit_big(big, size=205, limite=830):
+    """Fonte do titulo grande: 205 px; encolhe so se a linha mais larga passar de 830 px (moldura do recorte tem 860; E06/E07 seguem em 205)."""
     d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
-    while size > 120 and max(d.textlength(ln, font=ImageFont.truetype(FONT, size)) for ln in big) > W * limite: size -= 5
+    while size > 120 and max(d.textlength(ln, font=ImageFont.truetype(FONT, size)) for ln in big) > limite: size -= 5
     return ImageFont.truetype(FONT, size)
 
 

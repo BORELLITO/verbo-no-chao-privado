@@ -44,3 +44,12 @@ def test_titulo_grande_encolhe_so_quando_precisa():
     from agents import vnc_cover_quadro as Q
     assert Q._fit_big(["PLANOS", "DE PAZ"]).size == 205
     assert Q._fit_big(["NÃO", "JULGUEIS"]).size < 205
+
+
+def test_titulo_grande_cabe_na_moldura():
+    from agents import vnc_cover_quadro as Q
+    from PIL import Image, ImageDraw
+    d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
+    for big in (["NÃO", "JULGUEIS"], ["PLANOS", "DE PAZ"], ["TUDO", "POSSO"]):
+        f = Q._fit_big(big)
+        assert max(d.textlength(l, font=f) for l in big) <= Q.FRAME[2] - Q.FRAME[0]
