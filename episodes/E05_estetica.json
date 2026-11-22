@@ -1,0 +1,156 @@
+{
+ "episode": "E05",
+ "video_sha256": "56ee55474246e73d2ceafee9947adc1edb0e8275ae66da266617b2283f66eced",
+ "revisor": "agente-estetico (Claude), quadros reais do mp4 entregue (18 quadros do corpo, final E em 6 pontos, capa 1080x1920)",
+ "data": "2026-11-22",
+ "cenas": [
+  {
+   "cena": "S01",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "noite estrelada acima de nuvens iluminadas: medo/solidao, legenda legivel"
+  },
+  {
+   "cena": "S02",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "ondas douradas na areia: bonito, mas luz quente nao passa 'ameaca' (planejado mar escuro)"
+  },
+  {
+   "cena": "S03",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "ondas na praia em vez de deserto/distancia; coerente com 'longe de casa' apenas por vazio"
+  },
+  {
+   "cena": "S04",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "vale/vila em nevoa marrom-acinzentada (visual 'enfumacado'); baixo contraste de cor mas legenda legivel; nenhuma casa nitida"
+  },
+  {
+   "cena": "S05",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "floresta sombria sob chuva, troncos: presenca no escuro, coerente com 'nao temas'"
+  },
+  {
+   "cena": "S06",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nascer do sol nebuloso em montanhas outonais: firmeza e abertura de luz"
+  },
+  {
+   "cena": "S07",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "(amostra entre S06 e S08) floresta/montanha vista de cima, calma"
+  },
+  {
+   "cena": "S08",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "rio forte entre rochas gigantes: firmeza em meio ao movimento"
+  },
+  {
+   "cena": "S09",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "vale amplo com nuvens: 'cuidado/amplitude'; luz abrindo"
+  },
+  {
+   "cena": "S10",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "cachoeira em floresta, muito vigor; legenda legivel"
+  },
+  {
+   "cena": "S11",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "trilha na neve sob sol, caminho sem pessoas: coragem tranquila"
+  },
+  {
+   "cena": "S12",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "vista aerea de lago e montanha em nevoa; clima menos luminoso que 'bright' planejado, mas acalma o final"
+  }
+ ],
+ "final": {
+  "veredito": "APROVADO",
+  "nota": "Final E 'Feixe de luz': feixes reais atravessando nuvens escuras, poeira, logo centralizado, CTAs legiveis, ultimo quadro preto; contrastes 13.81/10.71/8.70"
+ },
+ "capa": {
+  "veredito": "APROVADO",
+  "nota": "nuvem pesada no topo e agua forte/arvores embaixo; titulo e referencia legiveis; ressalva: sem 'luz' evidente na base (tom mais frio)"
+ },
+ "ritmo_e_transicoes": {
+  "veredito": "APROVADO",
+  "nota": "12 cenas, cortes alinhados a voz; arco escuro->claro cumprido; video 63.63 s (dentro de 62-72, abaixo do alvo 65-70)"
+ },
+ "audio_voz_e_trilha": {
+  "veredito": "APROVADO_COM_RESSALVA",
+  "nota": "so gates numericos (alinhamento, 54.13 s de voz, trilha); audicao completa nao feita; Content ID de 'Miss You' nao verificado"
+ }
+}
