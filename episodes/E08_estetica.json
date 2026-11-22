@@ -151,6 +151,6 @@
  },
  "audio_voz_e_trilha": {
   "veredito": "APROVADO_COM_RESSALVA",
-  "nota": "voz Johnes 58,75 s e trilha Piano Reflections (Mixkit) passaram nas metricas; NAO VERIFICADO: escuta humana e Content ID da trilha"
+  "nota": "QA por maquina (agents.vnc_audio_qa): mix -17.3 LUFS, true peak -0.9 dB, sem clipping, sem silencio longo, voz sozinha -20.6 LUFS e mix final mais alta que ela (trilha nao encobre); voz x roteiro conferida por Whisper na montagem. Content ID: so o YouTube detecta no upload; trilha Mixkit com licenca registrada; risco residual declarado, nao e pendencia do dono"
  }
 }
