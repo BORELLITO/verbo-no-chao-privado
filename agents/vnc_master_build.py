@@ -133,7 +133,7 @@ def make_logo_layers(adur, T, t0, outdir):
     def put(c, im, s, y):
         sp = im.width; c.alpha_composite(im, ((W - sp) // 2, int(round(y - (sp - s) / 2))))
     c0 = Image.new("RGBA", (W, H), (0, 0, 0, 0)); put(c0, _scale_alpha(_logo_dark(src, sp_of(ST.LOGO_TOP_SIZE)), ST.LOGO_TOP_ALPHA), ST.LOGO_TOP_SIZE, ST.LOGO_TOP_Y); c0.save(outdir / "static.png")
-    n = int((T - t0) * 30) + 2
+    n = int(round((T - t0) * 30, 6)) + 2   # arredonda antes do int: evita perder 1 quadro por erro de ponto flutuante (ex.: voz 55.48 s)
     for k in range(n):
         t = t0 + k / 30; p = min(max((t - t0) / ST.LOGO_GROW_DUR, 0), 1); e = p * p * (3 - 2 * p)
         s = int(round((ST.LOGO_TOP_SIZE + (ST.LOGO_END_SIZE - ST.LOGO_TOP_SIZE) * e) / 2)) * 2; y = ST.LOGO_TOP_Y + ((H * ST.LOGO_END_CENTER_Y - s / 2) - ST.LOGO_TOP_Y) * e
