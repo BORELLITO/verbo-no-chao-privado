@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E07",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "45016035389",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "6887",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/closeup-of-raindrops-falling-from-the-roof-6887/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 16.0,
+   "note_pt": "clima dark (brilho 42.8), movimento 4.36, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "18229",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/dark-clouds-in-the-sky-18229/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 9.7,
+   "note_pt": "clima dark (brilho 26.4), movimento 6.66, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "9294",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sea-waves-breaking-on-the-rocks-front-view-9294/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 16.0,
+   "note_pt": "clima dark (brilho 115.5), movimento 8.52, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "22730",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/campfire-burning-wood-logs-in-the-dark-22730/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 10.2,
+   "note_pt": "clima dark (brilho 53.0), movimento 16.84, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "28816",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sunrise-in-a-foggy-mountain-28816/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 30.3,
+   "note_pt": "clima mid (brilho 93.0), movimento 6.56, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "3350",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/moon-in-the-sky-a-snowy-forest-3350/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 11.4,
+   "note_pt": "clima mid (brilho 95.1), movimento 8.67, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "46198",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/beautiful-sunset-on-a-calm-lake-46198/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 15.0,
+   "note_pt": "clima mid (brilho 79.8), movimento 0.58, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "4028",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/valley-time-lapse-4028/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 16.6,
+   "note_pt": "clima mid (brilho 102.2), movimento 5.07, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "16399",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sunlight-through-a-tree-16399/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 88.7,
+   "note_pt": "clima mid (brilho 91.3), movimento 4.47, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "3359",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/relief-on-top-of-a-snowy-mountain-in-canada-3359/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 12.2,
+   "note_pt": "clima bright (brilho 113.4), movimento 5.32, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "27198",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/meadow-grass-hills-and-pine-forests-27198/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 30.0,
+   "note_pt": "clima bright (brilho 127.9), movimento 4.56, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "9969",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/flight-in-the-rocky-mountains-and-a-valley-with-a-9969/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 16.3,
+   "note_pt": "clima bright (brilho 154.6), movimento 9.58, palavras-chave 3, interpretacao=claude"
+  }
+ ]
+}

@@ -1,0 +1,1346 @@
+{
+ "episode": "E07",
+ "run_id": "45016035389",
+ "engine_version": "vnc-curadoria-2.0",
+ "dry_run": false,
+ "status": "OK",
+ "segments": [
+  {
+   "scene": "S01",
+   "block": "opening",
+   "text": "Você sabe para quem esse plano de Deus foi escrito?",
+   "start": 0.0,
+   "end": 4.85,
+   "duration": 4.85,
+   "duration_source": "estimativa_palavras",
+   "meaning": "céu escuro e incerto",
+   "emotion": "dúvida",
+   "mood": "dark",
+   "queries": [
+    "dark stormy sky",
+    "night clouds",
+    "foggy forest night",
+    "rain",
+    "raindrops",
+    "rainy-day",
+    "night",
+    "water-drops",
+    "rain-on-window",
+    "dark-clouds"
+   ],
+   "prefer": [
+    "dark",
+    "clouds",
+    "night",
+    "window",
+    "rain",
+    "drops"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S02",
+   "block": "connection",
+   "text": "Está em cartões de formatura e em quadros de sala.",
+   "start": 4.85,
+   "end": 9.7,
+   "duration": 4.85,
+   "duration_source": "estimativa_palavras",
+   "meaning": "entardecer sobre colinas",
+   "emotion": "expectativa",
+   "mood": "dark",
+   "queries": [
+    "dusk hills clouds",
+    "sunset sky dusk",
+    "evening mountains gray",
+    "storm",
+    "thunderstorm",
+    "clouds",
+    "dark-clouds",
+    "stormy-sky"
+   ],
+   "prefer": [
+    "dusk",
+    "hills",
+    "clouds",
+    "storm",
+    "dark",
+    "rain"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S03",
+   "block": "connection",
+   "text": "Muita gente lê como uma promessa de sucesso pessoal e de vitória rápida.",
+   "start": 9.7,
+   "end": 15.7,
+   "duration": 6.0,
+   "duration_source": "estimativa_palavras",
+   "meaning": "estrada reta ao entardecer",
+   "emotion": "pressa",
+   "mood": "dark",
+   "queries": [
+    "empty highway dusk",
+    "road through field dusk",
+    "long road evening",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "road",
+    "dusk",
+    "field",
+    "waves",
+    "stormy",
+    "crashing",
+    "sea"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S04",
+   "block": "connection",
+   "text": "Mas o versículo vem numa carta a exilados na Babilônia.",
+   "start": 15.7,
+   "end": 20.55,
+   "duration": 4.85,
+   "duration_source": "estimativa_palavras",
+   "meaning": "rio escuro e distante",
+   "emotion": "exílio",
+   "mood": "dark",
+   "queries": [
+    "dark river dusk",
+    "river twilight",
+    "lake dusk mist",
+    "candle",
+    "candles",
+    "fire",
+    "fireplace",
+    "flame",
+    "campfire",
+    "bonfire",
+    "lantern"
+   ],
+   "prefer": [
+    "river",
+    "dusk",
+    "mist",
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S05",
+   "block": "biblical_reference",
+   "text": "No capítulo vinte e nove, o profeta manda construir casas, plantar e orar pela cidade.",
+   "start": 20.55,
+   "end": 27.32,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "brotos crescendo no campo",
+   "emotion": "construção paciente",
+   "mood": "mid",
+   "queries": [
+    "seedlings growing",
+    "green sprouts soil",
+    "young plants field",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "morning-fog"
+   ],
+   "prefer": [
+    "plants",
+    "growing",
+    "field",
+    "fog",
+    "mist",
+    "tree"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S06",
+   "block": "biblical_reference",
+   "text": "E diz que o exílio duraria setenta anos.",
+   "start": 27.32,
+   "end": 31.4,
+   "duration": 4.08,
+   "duration_source": "estimativa_palavras",
+   "meaning": "nuvens passando devagar",
+   "emotion": "longa espera",
+   "mood": "mid",
+   "queries": [
+    "clouds moving timelapse",
+    "shadows moving field",
+    "sky timelapse clouds",
+    "forest",
+    "trees",
+    "fog"
+   ],
+   "prefer": [
+    "clouds",
+    "timelapse",
+    "sky",
+    "forest",
+    "mist",
+    "fog"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S07",
+   "block": "biblical_reference",
+   "text": "Só depois vem o versículo: pensamentos de paz, e não de mal.",
+   "start": 31.4,
+   "end": 37.02,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "lago calmo",
+   "emotion": "paz",
+   "mood": "mid",
+   "queries": [
+    "calm lake reflection",
+    "still water hills",
+    "lake morning calm",
+    "mountains",
+    "mountain",
+    "hills"
+   ],
+   "prefer": [
+    "lake",
+    "calm",
+    "reflection",
+    "mountain",
+    "cliff",
+    "peak"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 10.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S08",
+   "block": "reflection",
+   "text": "Era uma palavra a um povo inteiro, dada para o longo prazo.",
+   "start": 37.02,
+   "end": 42.64,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "vale amplo",
+   "emotion": "longo prazo",
+   "mood": "mid",
+   "queries": [
+    "green valley landscape",
+    "wide valley mist",
+    "hills valley wind",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "prefer": [
+    "valley",
+    "hills",
+    "green",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S09",
+   "block": "reflection",
+   "text": "Isso não apaga o versículo. Mostra que a esperança dele é paciente.",
+   "start": 42.64,
+   "end": 48.26,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "campo de grama ao vento",
+   "emotion": "paciência",
+   "mood": "mid",
+   "queries": [
+    "grass field wind",
+    "meadow breeze",
+    "tall grass sunlight",
+    "sunrise",
+    "sunset",
+    "sun",
+    "dawn",
+    "sunlight",
+    "sunbeams"
+   ],
+   "prefer": [
+    "grass",
+    "field",
+    "wind",
+    "sunrise",
+    "sunlight",
+    "sun",
+    "dawn"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S10",
+   "block": "application",
+   "text": "Hoje ele ainda consola, mas sem prometer o caminho mais curto.",
+   "start": 48.26,
+   "end": 53.49,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "vale com luz do sol",
+   "emotion": "consolo",
+   "mood": "bright",
+   "queries": [
+    "sunlight valley",
+    "mountains sunlight",
+    "sun over hills",
+    "hands",
+    "hand",
+    "praying",
+    "holding",
+    "mountains",
+    "mountain",
+    "hills",
+    "trail"
+   ],
+   "prefer": [
+    "sunlight",
+    "mountains",
+    "valley",
+    "hands",
+    "holding",
+    "hand",
+    "glass",
+    "water",
+    "mountain",
+    "trail",
+    "peak"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S11",
+   "block": "application",
+   "text": "Há esperas que duram anos, e Deus pode estar presente nelas também.",
+   "start": 53.49,
+   "end": 59.11,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "cachoeira na floresta",
+   "emotion": "presença",
+   "mood": "bright",
+   "queries": [
+    "waterfall forest",
+    "stream sunlight forest",
+    "river rocks sunlight",
+    "trail",
+    "path",
+    "hills",
+    "road",
+    "meadow",
+    "field",
+    "nature",
+    "countryside"
+   ],
+   "prefer": [
+    "waterfall",
+    "forest",
+    "stream",
+    "trail",
+    "path",
+    "hills"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S12",
+   "block": "conclusion",
+   "text": "Para você, esse versículo sempre foi sobre pressa ou sobre espera? Responda A ou B.",
+   "start": 59.11,
+   "end": 65.88,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "amanhecer sobre montanhas",
+   "emotion": "esperança",
+   "mood": "bright",
+   "queries": [
+    "sunrise over mountains",
+    "golden hour mountains",
+    "sun rays mountains",
+    "lake",
+    "valley",
+    "river",
+    "mountain-lake",
+    "lagoon",
+    "reflection",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "sunrise",
+    "mountains",
+    "golden",
+    "lake",
+    "mountain",
+    "valley",
+    "waves",
+    "stormy",
+    "sea"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 14.0,
+   "interpretation": "claude"
+  }
+ ],
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "6887",
+   "title": "closeup of raindrops falling from the roof",
+   "page": "https://mixkit.co/free-stock-video/closeup-of-raindrops-falling-from-the-roof-6887/",
+   "preview_url": "https://assets.mixkit.co/videos/6887/6887-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/6887/6887-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 16.0,
+   "sha256": "ed99f1550adf41bc1dc1fa807a07c1af2c7ed97c8e520d3f2588b342a7eb4915",
+   "phashes": [
+    6223601867034303644,
+    6659958449612790426,
+    14766367410674545330
+   ],
+   "segment": {
+    "start": 0.0,
+    "end": 4.85,
+    "emotion": "dúvida",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 42.8), movimento 4.36, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.275,
+    "clip_sem": 0.0008
+   },
+   "vision": {
+    "sem": 0.0008,
+    "neg": {
+     "people": 0.0766,
+     "city": 0.0056,
+     "indoor": 0.6243,
+     "text": 0.0006,
+     "cgi": 0.2922
+    }
+   },
+   "metrics": {
+    "brightness": 42.8,
+    "cut_ratio": 1.28,
+    "motion": 4.36,
+    "saturation": 109.5,
+    "sharp": 10.23
+   },
+   "alternatives": [
+    "mixkit:48000",
+    "mixkit:26963",
+    "mixkit:7098",
+    "mixkit:12025"
+   ]
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "18229",
+   "title": "dark clouds in the sky",
+   "page": "https://mixkit.co/free-stock-video/dark-clouds-in-the-sky-18229/",
+   "preview_url": "https://assets.mixkit.co/videos/18229/18229-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/18229/18229-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 9.7,
+   "sha256": "c7a6f8d97f8a38f795df89588319f5287ca5b4a3fdce9f8a6a01786b8f87fdb4",
+   "phashes": [
+    5513979649058872071,
+    567306089135548199,
+    18181139326561093407
+   ],
+   "segment": {
+    "start": 4.85,
+    "end": 9.7,
+    "emotion": "expectativa",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 26.4), movimento 6.66, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 2.563,
+    "clip_sem": 0.001
+   },
+   "vision": {
+    "sem": 0.001,
+    "neg": {
+     "people": 0.1414,
+     "city": 0.0036,
+     "indoor": 0.7603,
+     "text": 0.0001,
+     "cgi": 0.0937
+    }
+   },
+   "metrics": {
+    "brightness": 26.4,
+    "cut_ratio": 1.24,
+    "motion": 6.66,
+    "saturation": 185.1,
+    "sharp": 5.16
+   },
+   "alternatives": [
+    "mixkit:20749",
+    "mixkit:20761"
+   ]
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "9294",
+   "title": "sea waves breaking on the rocks front view",
+   "page": "https://mixkit.co/free-stock-video/sea-waves-breaking-on-the-rocks-front-view-9294/",
+   "preview_url": "https://assets.mixkit.co/videos/9294/9294-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/9294/9294-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 16.0,
+   "sha256": "763c844c77b081ea01c6727f4d07360388c1ff53f44e575057e1cee3762b2d7b",
+   "phashes": [
+    17937961220856998368,
+    17933386974467713892,
+    17933439750774317552
+   ],
+   "segment": {
+    "start": 9.7,
+    "end": 15.7,
+    "emotion": "pressa",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 115.5), movimento 8.52, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 2.877,
+    "clip_sem": 0.0235
+   },
+   "vision": {
+    "sem": 0.0235,
+    "neg": {
+     "people": 0.1056,
+     "city": 0.0681,
+     "indoor": 0.7741,
+     "text": 0.0008,
+     "cgi": 0.0278
+    }
+   },
+   "metrics": {
+    "brightness": 115.5,
+    "cut_ratio": 2.19,
+    "motion": 8.52,
+    "saturation": 105.8,
+    "sharp": 16.4
+   },
+   "alternatives": [
+    "mixkit:7194"
+   ]
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "22730",
+   "title": "campfire burning wood logs in the dark",
+   "page": "https://mixkit.co/free-stock-video/campfire-burning-wood-logs-in-the-dark-22730/",
+   "preview_url": "https://assets.mixkit.co/videos/22730/22730-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/22730/22730-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 10.2,
+   "sha256": "0428b2d7f3ea99c97f9a7be5effd6dd60f322694dd3850112a7d456f8bf993a3",
+   "phashes": [
+    14325603848465596608,
+    14325639032837554368,
+    14620598385825071296
+   ],
+   "segment": {
+    "start": 15.7,
+    "end": 20.55,
+    "emotion": "exílio",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 53.0), movimento 16.84, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 2.851,
+    "clip_sem": 0.0369
+   },
+   "vision": {
+    "sem": 0.0369,
+    "neg": {
+     "people": 0.1574,
+     "city": 0.0125,
+     "indoor": 0.6809,
+     "text": 0.0004,
+     "cgi": 0.1119
+    }
+   },
+   "metrics": {
+    "brightness": 53.0,
+    "cut_ratio": 1.21,
+    "motion": 16.84,
+    "saturation": 136.7,
+    "sharp": 9.28
+   },
+   "alternatives": [
+    "mixkit:47818",
+    "mixkit:51633"
+   ]
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "28816",
+   "title": "sunrise in a foggy mountain",
+   "page": "https://mixkit.co/free-stock-video/sunrise-in-a-foggy-mountain-28816/",
+   "preview_url": "https://assets.mixkit.co/videos/28816/28816-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/28816/28816-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 30.3,
+   "sha256": "825b843cd488f7a7192746961eb5e73860328c046973d1442ecbbec6acb37df5",
+   "phashes": [
+    18373773475861378679,
+    13617989865704928887,
+    13617937084984992951
+   ],
+   "segment": {
+    "start": 20.55,
+    "end": 27.32,
+    "emotion": "construção paciente",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 93.0), movimento 6.56, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.153,
+    "clip_sem": 0.0008
+   },
+   "vision": {
+    "sem": 0.0008,
+    "neg": {
+     "people": 0.0327,
+     "city": 0.0197,
+     "indoor": 0.3535,
+     "text": 0.0043,
+     "cgi": 0.5891
+    }
+   },
+   "metrics": {
+    "brightness": 93.0,
+    "cut_ratio": 1.06,
+    "motion": 6.56,
+    "saturation": 157.5,
+    "sharp": 21.75
+   },
+   "alternatives": [
+    "mixkit:34856",
+    "mixkit:28339",
+    "mixkit:28342",
+    "mixkit:28343"
+   ]
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "3350",
+   "title": "moon in the sky a snowy forest",
+   "page": "https://mixkit.co/free-stock-video/moon-in-the-sky-a-snowy-forest-3350/",
+   "preview_url": "https://assets.mixkit.co/videos/3350/3350-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/3350/3350-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 11.4,
+   "sha256": "e7fa1cc23cf3aa9f8f0119e61409b21843e43907c1aed088f2489dc7331b41d1",
+   "phashes": [
+    7270191785051224280,
+    7274708544861305036,
+    7274708630760650956
+   ],
+   "segment": {
+    "start": 27.32,
+    "end": 31.4,
+    "emotion": "longa espera",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 95.1), movimento 8.67, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.376,
+    "clip_sem": 0.0037
+   },
+   "vision": {
+    "sem": 0.0037,
+    "neg": {
+     "people": 0.1052,
+     "city": 0.0108,
+     "indoor": 0.6072,
+     "text": 0.001,
+     "cgi": 0.2722
+    }
+   },
+   "metrics": {
+    "brightness": 95.1,
+    "cut_ratio": 1.35,
+    "motion": 8.67,
+    "saturation": 85.4,
+    "sharp": 21.49
+   },
+   "alternatives": [
+    "mixkit:3129",
+    "mixkit:1918",
+    "mixkit:28339",
+    "mixkit:34856"
+   ]
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "46198",
+   "title": "beautiful sunset on a calm lake",
+   "page": "https://mixkit.co/free-stock-video/beautiful-sunset-on-a-calm-lake-46198/",
+   "preview_url": "https://assets.mixkit.co/videos/46198/46198-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/46198/46198-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    10.0
+   ],
+   "clip_seconds": 15.0,
+   "sha256": "e1981268f63dacb991391dc3c8bc83842b91d2f6feaa7d236961918593415262",
+   "phashes": [
+    16195103519438586080,
+    16195173888182763744,
+    16195103519438586080
+   ],
+   "segment": {
+    "start": 31.4,
+    "end": 37.02,
+    "emotion": "paz",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 79.8), movimento 0.58, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 2.808,
+    "clip_sem": 0.0259
+   },
+   "vision": {
+    "sem": 0.0259,
+    "neg": {
+     "people": 0.5314,
+     "city": 0.0143,
+     "indoor": 0.2771,
+     "text": 0.0008,
+     "cgi": 0.1505
+    }
+   },
+   "metrics": {
+    "brightness": 79.8,
+    "cut_ratio": 0.71,
+    "motion": 0.58,
+    "saturation": 120.9,
+    "sharp": 10.18
+   },
+   "alternatives": [
+    "mixkit:3384",
+    "mixkit:3378",
+    "mixkit:4695",
+    "mixkit:51689"
+   ]
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "4028",
+   "title": "valley time lapse",
+   "page": "https://mixkit.co/free-stock-video/valley-time-lapse-4028/",
+   "preview_url": "https://assets.mixkit.co/videos/4028/4028-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/4028/4028-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 16.6,
+   "sha256": "bbeea652efe28f4a4b68fb59af5dc2e1fd97c15ac0d84c36b0617271b0517e35",
+   "phashes": [
+    16127081236013310156,
+    17932474930774991052,
+    14886915682765693132
+   ],
+   "segment": {
+    "start": 37.02,
+    "end": 42.64,
+    "emotion": "longo prazo",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 102.2), movimento 5.07, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.78,
+    "clip_sem": 0.1358
+   },
+   "vision": {
+    "sem": 0.1358,
+    "neg": {
+     "people": 0.2039,
+     "city": 0.0439,
+     "indoor": 0.4679,
+     "text": 0.0015,
+     "cgi": 0.147
+    }
+   },
+   "metrics": {
+    "brightness": 102.2,
+    "saturation": 115.4,
+    "motion": 5.07,
+    "cut_ratio": 1.4,
+    "sharp": 20.64
+   },
+   "alternatives": [
+    "mixkit:3350",
+    "mixkit:4368",
+    "mixkit:3296",
+    "mixkit:4303"
+   ]
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "16399",
+   "title": "sunlight through a tree",
+   "page": "https://mixkit.co/free-stock-video/sunlight-through-a-tree-16399/",
+   "preview_url": "https://assets.mixkit.co/videos/16399/16399-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/16399/16399-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 88.7,
+   "sha256": "c57279e4a7e4523ec5473fcc5c020fe71cba2899cc63e8a0c69d2078307406c3",
+   "phashes": [
+    15110513344604519418,
+    15110513344537410554,
+    15110513344537410490
+   ],
+   "segment": {
+    "start": 42.64,
+    "end": 48.26,
+    "emotion": "paciência",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 91.3), movimento 4.47, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.205,
+    "clip_sem": 0.001
+   },
+   "vision": {
+    "sem": 0.001,
+    "neg": {
+     "people": 0.1647,
+     "city": 0.0739,
+     "indoor": 0.6399,
+     "text": 0.003,
+     "cgi": 0.1176
+    }
+   },
+   "metrics": {
+    "brightness": 91.3,
+    "cut_ratio": 1.06,
+    "motion": 4.47,
+    "saturation": 157.7,
+    "sharp": 39.27
+   },
+   "alternatives": [
+    "mixkit:3871",
+    "mixkit:28339",
+    "mixkit:47816",
+    "mixkit:30976"
+   ]
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "3359",
+   "title": "relief on top of a snowy mountain in canada",
+   "page": "https://mixkit.co/free-stock-video/relief-on-top-of-a-snowy-mountain-in-canada-3359/",
+   "preview_url": "https://assets.mixkit.co/videos/3359/3359-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/3359/3359-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 12.2,
+   "sha256": "8140a3b50cb8c5a76c5a288fa64f176ad1124686494c69787315ab783f1540b6",
+   "phashes": [
+    18446741861648609183,
+    18446741861646479263,
+    18446741848728551327
+   ],
+   "segment": {
+    "start": 48.26,
+    "end": 53.49,
+    "emotion": "consolo",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 113.4), movimento 5.32, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.397,
+    "clip_sem": 0.0064
+   },
+   "vision": {
+    "sem": 0.0064,
+    "neg": {
+     "people": 0.0469,
+     "city": 0.0068,
+     "indoor": 0.5386,
+     "text": 0.0004,
+     "cgi": 0.4009
+    }
+   },
+   "metrics": {
+    "brightness": 113.4,
+    "saturation": 103.8,
+    "motion": 5.32,
+    "cut_ratio": 1.02,
+    "sharp": 16.0
+   },
+   "alternatives": [
+    "mixkit:25064",
+    "mixkit:49749",
+    "mixkit:3370",
+    "mixkit:51689"
+   ]
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "27198",
+   "title": "meadow grass hills and pine forests",
+   "page": "https://mixkit.co/free-stock-video/meadow-grass-hills-and-pine-forests-27198/",
+   "preview_url": "https://assets.mixkit.co/videos/27198/27198-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/27198/27198-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 30.0,
+   "sha256": "a15495644c37993e8890ebabdfa88248f52d6ca72aea1dfd4be37d79e22d0337",
+   "phashes": [
+    17361790925925482104,
+    17505976484899319512,
+    17325832224922379992
+   ],
+   "segment": {
+    "start": 53.49,
+    "end": 59.11,
+    "emotion": "presença",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 127.9), movimento 4.56, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.37,
+    "clip_sem": 0.0019
+   },
+   "vision": {
+    "sem": 0.0019,
+    "neg": {
+     "people": 0.0464,
+     "city": 0.0209,
+     "indoor": 0.6107,
+     "text": 0.0002,
+     "cgi": 0.3199
+    }
+   },
+   "metrics": {
+    "brightness": 127.9,
+    "saturation": 80.9,
+    "motion": 4.56,
+    "cut_ratio": 1.04,
+    "sharp": 12.4
+   },
+   "alternatives": [
+    "mixkit:29413",
+    "mixkit:36186"
+   ]
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "9969",
+   "title": "flight in the rocky mountains and a valley with a",
+   "page": "https://mixkit.co/free-stock-video/flight-in-the-rocky-mountains-and-a-valley-with-a-9969/",
+   "preview_url": "https://assets.mixkit.co/videos/9969/9969-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/9969/9969-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    14.0
+   ],
+   "clip_seconds": 16.3,
+   "sha256": "9d06c8c0583f79c868772165d3583d758847cca965e0186d435a8270391799ed",
+   "phashes": [
+    14526928830300384878,
+    14743252305770901487,
+    10131465796115201774
+   ],
+   "segment": {
+    "start": 59.11,
+    "end": 65.88,
+    "emotion": "esperança",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 154.6), movimento 9.58, palavras-chave 3, interpretacao=claude",
+   "scores": {
+    "unary": 3.425,
+    "clip_sem": 0.0488
+   },
+   "vision": {
+    "sem": 0.0488,
+    "neg": {
+     "people": 0.1599,
+     "city": 0.1255,
+     "indoor": 0.4914,
+     "text": 0.0003,
+     "cgi": 0.1741
+    }
+   },
+   "metrics": {
+    "brightness": 154.6,
+    "cut_ratio": 1.17,
+    "motion": 9.58,
+    "saturation": 34.8,
+    "sharp": 16.39
+   },
+   "alternatives": [
+    "mixkit:9779",
+    "mixkit:17825",
+    "mixkit:42490",
+    "mixkit:30342"
+   ]
+  }
+ ],
+ "reservation_state": "reserved",
+ "qa": {
+  "diagnostico": [],
+  "limitacoes_pt": [
+   "sem analise visual multimodal: so metricas objetivas (movimento, brilho, saturacao, nitidez, cortes) + titulo/tags; compreensao do roteiro = plano `visual` escrito pelo Claude",
+   "fonte automatica unica: Mixkit (Coverr bloqueia busca por robots; Pexels exige chave)",
+   "ids legados Coverr/Pexels do E01 sem impressao digital: protegidos so por ID e titulo"
+  ],
+  "roteiro_review": {
+   "status": "APROVADO_AUTOMATICO",
+   "issues": [],
+   "checks": {
+    "cenas": 12,
+    "duracao_estimada_s": 65.8,
+    "palavras": 140,
+    "duracao_final_estimada_s": 66.9,
+    "gancho": "Você sabe para quem esse plano de Deus foi escrito?",
+    "cautela_presente": true,
+    "referencia": "Jeremias 29:11",
+    "texto_biblico_verificado": true,
+    "sobreposicao_lexical_biblia": 0.18,
+    "similaridade_E01": 0.1,
+    "similaridade_E02": 0.1,
+    "similaridade_E03": 0.09,
+    "similaridade_E04": 0.08,
+    "similaridade_E05": 0.1,
+    "similaridade_E06": 0.1
+   }
+  },
+  "vision": "clip-vit-base-patch32 (local, CPU)",
+  "fontes_ativas": [
+   "mixkit",
+   "wikimedia"
+  ],
+  "fontes_com_chave_ausente": [
+   "pexels",
+   "pixabay"
+  ],
+  "clips": 12,
+  "distinct": 12,
+  "sources": [
+   "mixkit"
+  ],
+  "license_all_ok": true,
+  "duracao_total_estimada": 65.88,
+  "aprovacao_estetica_humana": "NAO_VERIFICADA",
+  "manifest_errors": []
+ },
+ "sequence_utility": 35.445,
+ "trace": {
+  "beam": 400,
+  "weights": {
+   "semantic": 1.0,
+   "technical": 0.6,
+   "motion": 0.5,
+   "mood_fit": 0.8,
+   "duration_fit": 0.5,
+   "continuity": 0.7,
+   "variety": 0.9,
+   "clip": 1.2,
+   "originality": 0.3
+  }
+ }
+}
