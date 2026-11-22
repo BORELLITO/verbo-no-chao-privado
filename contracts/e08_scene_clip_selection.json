@@ -25,15 +25,15 @@
   {
    "scene": "S02",
    "source": "mixkit",
-   "id": "20440",
+   "id": "20552",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/rain-drops-after-a-storm-20440/",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-forming-across-the-sky-20552/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 23.6,
-   "note_pt": "clima dark (brilho 97.7), movimento 0.8, palavras-chave 2, interpretacao=claude"
+   "preview_seconds": 24.6,
+   "note_pt": "clima dark (brilho 112.0), movimento 11.67, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S03",
@@ -165,5 +165,6 @@
    "preview_seconds": 29.5,
    "note_pt": "clima bright (brilho 113.6), movimento 3.91, palavras-chave 3, interpretacao=claude"
   }
- ]
+ ],
+ "ajuste_manual_pt": "S02 trocado de 20440 (arame farpado em close) para 20552 (nuvens de tempestade) por direcao visual; demais cenas pela curadoria run 45044614626"
 }
