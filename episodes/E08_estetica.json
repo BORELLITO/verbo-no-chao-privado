@@ -1,0 +1,156 @@
+{
+ "episode": "E08",
+ "video_sha256": "e5db2412e24710db4d8bf9e825a2b475550b4f6703e2aa123bd4cf812f8aa07b",
+ "revisor": "agente-estetico (Claude), quadros reais do mp4 (folha de contato 17 quadros) e capa; audio NAO ouvido, so metricas numericas",
+ "data": "2026-11-22",
+ "cenas": [
+  {
+   "cena": "S01",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "ceu nublado azul-esverdeado com nuvens pesadas em movimento: duvida/pergunta de abertura; sem cidade nem pessoas; legenda legivel"
+  },
+  {
+   "cena": "S02",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens de tempestade cinza escuras: tensao quando alguem e corrigido; legenda branca legivel"
+  },
+  {
+   "cena": "S03",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "mar visto de cima batendo na areia: rigidez/avaliacao e metafora, nao literal; sem pessoas"
+  },
+  {
+   "cena": "S04",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "encosta verde de montanha com prado: alusao ao Sermao do Monte sem afirmar o local; legenda legivel"
+  },
+  {
+   "cena": "S05",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "sol atras de folhas de arvore: detalhe fino (argueiro) de forma sugerida; legenda legivel"
+  },
+  {
+   "cena": "S06",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "floresta com neblina ao amanhecer: nao mostra uma trave literal; sugere peso/obstrucao do olhar; legenda legivel no escuro"
+  },
+  {
+   "cena": "S07",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "sol baixo atraves de floresta com neve: clareza ao ver bem; legenda laranja legivel"
+  },
+  {
+   "cena": "S08",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens de tempestade sobre uma cidade pequena (telhados na parte baixa): sem pessoas, mas o quadro urbano foge ao 'sem cidade'; aceito porque o ceu domina e o clima e de severidade"
+  },
+  {
+   "cena": "S09",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "campo e colinas ao amanhecer em aerea, ceu claro e estourado no topo: discernimento/frutos so por alusao ao campo; legenda legivel"
+  },
+  {
+   "cena": "S10",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "encosta rochosa com arvores em aerea lenta: humildade e firmeza; legenda legivel"
+  },
+  {
+   "cena": "S11",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "colinas nevadas sob nuvens, sem pessoas: examinar o coracao so por calma e silencio; fria, menos que o lago previsto; legenda legivel"
+  },
+  {
+   "cena": "S12",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "mar de nuvens e montanhas ao amanhecer: pergunta final aberta, esperanca; legenda legivel"
+  }
+ ],
+ "final": {
+  "veredito": "APROVADO",
+  "nota": "final E (luz entre nuvens, montanhas ao fundo) com logo, referencia Mateus 7:1-5 e CTA legiveis; ultimo quadro quase preto; contraste so inspecionado visualmente na folha"
+ },
+ "capa": {
+  "veredito": "APROVADO",
+  "nota": "capa do quadro: JULGUEIS cabe dentro da moldura apos o ajuste de fonte; kicker FORA DO CONTEXTO EPISODIO 3, frase e referencia legiveis; fundo escuro e desfocado"
+ },
+ "ritmo_e_transicoes": {
+  "veredito": "APROVADO",
+  "nota": "12 cenas, 68,25 s; fades suaves; karaoke laranja legivel em todas as cenas da folha"
+ },
+ "audio_voz_e_trilha": {
+  "veredito": "APROVADO_COM_RESSALVA",
+  "nota": "voz Johnes 58,75 s e trilha Piano Reflections (Mixkit) passaram nas metricas; NAO VERIFICADO: escuta humana e Content ID da trilha"
+ }
+}
