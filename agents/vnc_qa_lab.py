@@ -9,12 +9,13 @@ ROOT = Path(__file__).resolve().parents[1]
 RUINS = {  # id Mixkit -> motivo (revisao do agente no E08, 2026-11-22)
     "12025": "cidade a noite com predios iluminados", "20440": "arame farpado em close", "41877": "ciclista em rua de parque/cidade",
     "34945": "vila com telhados sob nuvens", "4107": "ruinas de pedra (templo)"}
-POS = ["a cinematic nature video frame", "a cinematic landscape video frame of sky, mountains, forest or water"]
+POS = ["a cinematic nature video frame", "a cinematic landscape video frame of sky, mountains, forest or water", "pure wild nature with no buildings, roads, people or man-made objects"]
 NEG_ATUAL = None  # vem de vnc_vision.NEG
 NEG_NOVO_EXTRA = {
     "city": ["houses and rooftops of a small town seen from above", "a person riding a bicycle on a road", "an urban skyline at night with lit buildings", "a paved street or highway with markings"],
     "ruins": ["ancient stone ruins or a temple", "an old stone wall of a building"],
     "fence": ["barbed wire or a metal fence in close-up"],
+    "manmade": ["buildings, rooftops or a town", "a road, street or path with markings", "a fence, wire, ruins or other man-made structure", "a person, a bicycle or a vehicle"],
 }
 
 
