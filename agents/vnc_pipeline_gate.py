@@ -45,7 +45,7 @@ def render_posting(cfg):
     return {
         "tiktok": f"{hook} {p['resumo']} {p['pergunta']} {tags}",
         "instagram": f"{hook}\n\n{p['resumo']}\n\n{p['pergunta']} Conte nos comentários.\n\n💬 Comente\n📩 Envie para alguém que está esperando\n🔖 Salve para voltar depois\n\n{tags}",
-        "youtube_titulo": f"{p.get('titulo_curto') or hook.rstrip('?')} | {ref}",
+        "youtube_titulo": f"{p.get('titulo_curto') or hook.rstrip('?')} | {ref}".upper(),   # decisao do dono (2026-11-22): titulos em MAIUSCULAS
         "youtube_descricao": f"{ref}: {p['resumo']}\n\n{p['pergunta']} Conte nos comentários e inscreva-se no canal.\n\n{tags} #Shorts",
     }
 
