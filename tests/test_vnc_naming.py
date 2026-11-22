@@ -36,3 +36,9 @@ class Numeracao(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_karaoke_por_quadro():
+    reg = N.load()
+    assert reg["quadros"]["FORA"]["karaoke"] == "laranja" and reg["quadros"]["DORES"]["karaoke"] == "lilas"
+    assert N.check() == []

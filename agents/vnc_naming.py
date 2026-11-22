@@ -45,6 +45,9 @@ def next_number(quadro, root=ROOT):
     return (max(ns) if ns else 0) + 1
 
 
+KARAOKE_LARANJA = "&H0066B3FF"   # quadro FORA DO CONTEXTO (decisao do dono 2026-11-22); DORES DA VIDA = lilas travado do vnc_style
+
+
 def check(root=ROOT):
     errs, reg = [], load(root)
     ids = [e["id"] for e in reg["episodios"]]
@@ -71,6 +74,9 @@ def check_episode(ep, root=ROOT):
     if not p.exists(): return [f"NUMERACAO: falta episodes/{ep}.json"]
     cfg, errs = json.loads(p.read_text(encoding="utf8")), []
     if cfg.get("reference") != e["referencia"]: errs.append(f"NUMERACAO {ep}: referencia '{cfg.get('reference')}' != registro '{e['referencia']}'")
+    kar = load(root)["quadros"][e["quadro"]].get("karaoke")
+    if kar == "laranja" and cfg.get("karaoke_color") != KARAOKE_LARANJA: errs.append(f"NUMERACAO {ep}: quadro {e['quadro']} exige karaoke laranja {KARAOKE_LARANJA}, episodio tem {cfg.get('karaoke_color')}")
+    if kar == "lilas" and cfg.get("karaoke_color"): errs.append(f"NUMERACAO {ep}: quadro {e['quadro']} usa o lilas travado; remova karaoke_color ({cfg.get('karaoke_color')})")
     if cfg.get("cover_style") == "quadro":
         if e["quadro"] != "FORA": errs.append(f"NUMERACAO {ep}: capa de quadro mas registro diz {e['quadro']}")
         k = (cfg.get("cover_quadro") or {}).get("kicker", "")

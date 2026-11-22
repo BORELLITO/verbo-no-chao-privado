@@ -37,7 +37,7 @@ jobs:
           print("episode=" + c["episode"]); print("selection=" + c.get("selection", "")); print("stages=" + ",".join(c["stages"])); print("timing_override=" + c.get("timing_override", "")); print("ending_force=" + c.get("ending_force", ""))
           PY
       - name: Testes das travas
-        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py tests/test_vnc_pipeline_gate.py tests/test_vnc_script_review.py tests/test_vnc_cover_gate.py tests/test_vnc_endings.py tests/test_vnc_theology_gate.py tests/test_vnc_drive.py tests/test_vnc_naming.py
+        run: python -m pytest -q -p no:cacheprovider tests/test_vnc_gates.py tests/test_vnc_align.py tests/test_vnc_style.py tests/test_vnc_pipeline_gate.py tests/test_vnc_script_review.py tests/test_vnc_cover_gate.py tests/test_vnc_endings.py tests/test_vnc_theology_gate.py tests/test_vnc_drive.py tests/test_vnc_naming.py tests/test_vnc_audio_qa.py
       - name: Preflight (clipes, trilha, workflows, proibicoes)
         run: |
           MUSIC="$(python -c 'import json;print(json.load(open("run/runflow.json")).get("music",""))')"
@@ -65,6 +65,8 @@ jobs:
           VNC_ENDING_FORCE="${{ needs.gates.outputs.ending_force }}" VNC_TIMING_OVERRIDE="${{ needs.gates.outputs.timing_override }}" VNC_EPISODE="${{ needs.gates.outputs.episode }}" VNC_FINAL=1 VNC_SELECTION="${{ needs.gates.outputs.selection }}" python -m agents.vnc_master_build
       - name: Agente-mestre (video, legenda, musica, postagem)
         run: python -m agents.vnc_pipeline_gate post "${{ needs.gates.outputs.episode }}" /tmp/master/report.json
+      - name: QA de audio por maquina (loudness, pico, clipping, silencio, balanco voz x trilha)
+        run: python -m agents.vnc_audio_qa /tmp/master/master.mp4 "assets/voice/${{ needs.gates.outputs.episode }}.mp3"
       - name: Guardar arquivos finais (artefato privado, 3 dias)
         continue-on-error: true
         run: |

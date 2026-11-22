@@ -2,13 +2,19 @@
 e balanco voz x trilha. A conferencia voz == roteiro ja e feita pelo Whisper na montagem (VNC_TIMING).
 Uso: python -m agents.vnc_audio_qa <video.mp4> [voz.mp3]   -> imprime VNC_AUDIO_QA {...} e VNC_AUDIO_QA_STATUS APROVADO|REPROVADO
 Limites (Shorts/Reels/TikTok): -19 a -12 LUFS integrado, true peak <= -0.5 dBTP, sem clipping, silencio <= 1.6 s no meio."""
-import json, re, subprocess, sys
+import json, re, shutil, subprocess, sys
+
+
+def _bin():
+    if shutil.which("ffmpeg"): return "ffmpeg"
+    import imageio_ffmpeg
+    return imageio_ffmpeg.get_ffmpeg_exe()
 
 LUFS = (-19.0, -12.0); TP_MAX = -0.5; SIL_MAX = 1.6
 
 
 def _ff(args):
-    return subprocess.run(["ffmpeg", "-hide_banner", "-nostats", *args], capture_output=True, text=True).stderr
+    return subprocess.run([_bin(), "-hide_banner", "-nostats", *args], capture_output=True, text=True).stderr
 
 
 def medir(path):

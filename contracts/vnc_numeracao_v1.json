@@ -4,11 +4,13 @@
  "quadros": {
   "DORES": {
    "nome": "QUADRO - DORES DA VIDA",
-   "curto": "Dores da Vida"
+   "curto": "Dores da Vida",
+   "karaoke": "lilas"
   },
   "FORA": {
    "nome": "QUADRO - FORA DO CONTEXTO",
-   "curto": "Fora do Contexto"
+   "curto": "Fora do Contexto",
+   "karaoke": "laranja"
   }
  },
  "episodios": [
@@ -68,5 +70,6 @@
    "titulo": "NÃO JULGUEIS",
    "referencia": "Mateus 7:1–5"
   }
- ]
+ ],
+ "decisao_karaoke": "Definido pelo dono em 2026-11-22: karaoke LARANJA no quadro FORA DO CONTEXTO (&H0066B3FF) e LILAS no quadro DORES DA VIDA (padrao travado &H00F2B0C4, sem karaoke_color no episodio)."
 }
