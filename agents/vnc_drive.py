@@ -1,5 +1,5 @@
 """VNC -> Google Drive (runner only). Envia os arquivos FINAIS de um episodio para a pasta certa do Drive do dono.
-- Pastas: VERBO NO CHAO / (Dores da Vida | Fora do Contexto) / pasta do episodio. Cria o que faltar; reenvio sobrescreve pelo nome (sem duplicar).
+- Pastas: VERBO NO CHÃO / (QUADRO - DORES DA VIDA | QUADRO - FORA DO CONTEXTO) / EPISÓDIO N - TITULO. Cria o que faltar; reenvio sobrescreve pelo nome (sem duplicar).
 - Acesso OAuth restrito (escopo drive.file): o app so enxerga o que ele mesmo criou. Nada e publicado; o link devolvido e privado (so o dono abre).
 - Segredos (GitHub): GDRIVE_CLIENT_ID, GDRIVE_CLIENT_SECRET, GDRIVE_REFRESH_TOKEN. Sem eles: DRIVE_NAO_CONFIGURADO e sai sem erro.
 - DRIVE_DRY_RUN=1: so imprime o plano (nenhuma chamada ao Drive)."""
@@ -7,7 +7,7 @@ import json, os, re, subprocess, sys
 from pathlib import Path
 
 ROOT_NAME = "VERBO NO CHÃO"
-QUADRO_DORES, QUADRO_FORA = "Dores da Vida", "Fora do Contexto"
+QUADRO_DORES, QUADRO_FORA = "QUADRO - DORES DA VIDA", "QUADRO - FORA DO CONTEXTO"
 
 
 def _cap(t):
@@ -16,27 +16,25 @@ def _cap(t):
 
 
 def plan(cfg):
-    """Nomes de pasta/arquivos a partir do episodes/<EP>.json (funcao pura, testada)."""
+    """Nomes de pasta/arquivos a partir do episodes/<EP>.json (funcao pura, testada).
+    Padrao do dono: QUADRO - <NOME> / EPISÓDIO <N> - <TITULO EM MAIUSCULAS> / <mesmo nome>.mp4|.srt| - CAPA.jpg| - LEGENDAS DE POSTAGEM.txt"""
     ref = cfg["reference"]
+    title = cfg.get("drive_titulo") or " ".join(cfg["title_lines"]).upper()
     if cfg.get("cover_style") == "quadro":
-        n = int(re.search(r"#\s*(\d+)", cfg["cover_quadro"]["kicker"]).group(1))
-        short = cfg["posting"].get("titulo_curto", " ".join(cfg["title_lines"]))
-        title = _cap(short.split(":", 1)[1] if ":" in short else short)
-        quadro, folder, base = QUADRO_FORA, f"#{n} – {title} ({ref})", f"Fora do Contexto {n} - {title}"
-        label = f"FORA DO CONTEXTO #{n}"
+        n = int(re.search(r"(?:#|EPIS[ÓO]DIO)\s*(\d+)", cfg["cover_quadro"]["kicker"]).group(1))
+        quadro, label = QUADRO_FORA, f"EPISÓDIO {n}"
     else:
         n = int(cfg.get("cover_number", cfg["number"]))
-        title = _cap(" ".join(cfg["title_lines"]))
-        quadro, folder, base = QUADRO_DORES, f"EP {n:02d} – {title}", f"EP {n:02d} - {title}"
-        label = f"EP {n:02d}"
-    return {"quadro": quadro, "folder": folder, "base": base, "label": label, "title": title, "ref": ref,
-            "files": {"video": f"{base}.mp4", "srt": f"{base}.srt", "cover": f"{base} - capa.jpg", "posting": f"{base} - legendas de postagem.txt"}}
+        quadro, label = QUADRO_DORES, f"EPISÓDIO {n}"
+    base = f"EPISÓDIO {n} - {title}"
+    return {"quadro": quadro, "folder": base, "base": base, "label": label, "title": title, "ref": ref,
+            "files": {"video": f"{base}.mp4", "srt": f"{base}.srt", "cover": f"{base} - CAPA.jpg", "posting": f"{base} - LEGENDAS DE POSTAGEM.txt"}}
 
 
 def posting_text(cfg, p):
     from agents.vnc_pipeline_gate import render_posting
     t = render_posting(cfg)
-    return (f'VERBO NO CHÃO — {p["label"]} "{p["title"]}" — {p["ref"]}\nLEGENDAS DE POSTAGEM POR PLATAFORMA (publicar é decisão do dono)\n\n'
+    return (f'VERBO NO CHÃO — {p["quadro"]} — {p["label"]} "{p["title"]}" — {p["ref"]}\nLEGENDAS DE POSTAGEM POR PLATAFORMA (publicar é decisão do dono)\n\n'
             f'=== TIKTOK ({len(t["tiktok"])} caracteres) ===\n{t["tiktok"]}\n\n=== INSTAGRAM REELS ===\n{t["instagram"]}\n\n'
             f'=== YOUTUBE SHORTS ===\nTítulo ({len(t["youtube_titulo"])} caracteres):\n{t["youtube_titulo"]}\n\nDescrição:\n{t["youtube_descricao"]}\n')
 

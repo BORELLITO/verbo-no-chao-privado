@@ -2,6 +2,7 @@
  "_instrucoes": "Roteiro E06 (quadro Fora do Contexto #1) escrito pelo Claude em 2026-11-21 (formato C). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Episodio novo; nao altera E01-E05.",
  "id": "E06",
  "number": 6,
+ "drive_titulo": "TUDO POSSO",
  "title_lines": [
   "Fora do",
   "contexto:",
@@ -384,7 +385,7 @@
  ],
  "posting": {
   "hook": "Você leu o versículo do tudo posso ao contrário?",
-  "resumo": "Fora do Contexto #1: Filipenses 4:13 vai além de frase de conquista. Paulo escreve preso, aprende a viver com fartura e com falta e diz que a força vem de Cristo.",
+  "resumo": "Fora do Contexto, episódio 1: Filipenses 4:13 vai além de frase de conquista. Paulo escreve preso, aprende a viver com fartura e com falta e diz que a força vem de Cristo.",
   "pergunta": "Para você, esse versículo sempre foi sobre vencer ou sobre aguentar? Responda A ou B nos comentários.",
   "hashtags": [
    "#fé",
@@ -393,12 +394,12 @@
    "#foradocontexto",
    "#reflexão"
   ],
-  "titulo_curto": "Fora do Contexto #1: o tudo posso"
+  "titulo_curto": "Fora do Contexto, ep. 1: tudo posso"
  },
  "karaoke_color": "&H0066B3FF",
  "cover_style": "quadro",
  "cover_quadro": {
-  "kicker": "FORA DO CONTEXTO #1",
+  "kicker": "FORA DO CONTEXTO · EPISÓDIO 1",
   "big": [
    "TUDO",
    "POSSO"

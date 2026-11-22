@@ -11,7 +11,7 @@ def _bg(v=120):
 
 class CapaQuadro(unittest.TestCase):
     def test_gera_1080x1920_e_passa(self):
-        img, met = Q.build(_bg(), Q.load_logo(380), "FORA DO CONTEXTO #1", ["TUDO", "POSSO"], "...e o que vem antes?", "Filipenses 4:10-13")
+        img, met = Q.build(_bg(), Q.load_logo(380), "FORA DO CONTEXTO · EPISÓDIO 1", ["TUDO", "POSSO"], "...e o que vem antes?", "Filipenses 4:10-13")
         self.assertEqual(img.size, (1080, 1920)); self.assertEqual(Q.check(img, met), [])
 
     def test_fundo_liso_reprova_por_nitidez(self):

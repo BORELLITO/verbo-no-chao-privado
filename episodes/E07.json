@@ -2,6 +2,7 @@
  "_instrucoes": "Roteiro E07 (quadro Fora do Contexto #2) escrito pelo Claude em 2026-11-22 (formato D). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Episodio novo; nao altera E01-E06.",
  "id": "E07",
  "number": 7,
+ "drive_titulo": "PLANO DE PAZ",
  "title_lines": [
   "Fora do",
   "contexto:",
@@ -466,7 +467,7 @@
  ],
  "posting": {
   "hook": "Você sabe para quem esse plano de Deus foi escrito?",
-  "resumo": "Fora do Contexto #2: Jeremias 29:11 vem numa carta a exilados na Babilônia. Era uma palavra a um povo inteiro, dada para o longo prazo, com esperança paciente.",
+  "resumo": "Fora do Contexto, episódio 2: Jeremias 29:11 vem numa carta a exilados na Babilônia. Era uma palavra a um povo inteiro, dada para o longo prazo, com esperança paciente.",
   "pergunta": "Para você, esse versículo sempre foi sobre pressa ou sobre espera? Responda A ou B nos comentários.",
   "hashtags": [
    "#fé",
@@ -475,12 +476,12 @@
    "#foradocontexto",
    "#reflexão"
   ],
-  "titulo_curto": "Fora do Contexto #2: planos de paz"
+  "titulo_curto": "Fora do Contexto, ep. 2: planos de paz"
  },
  "karaoke_color": "&H0066B3FF",
  "cover_style": "quadro",
  "cover_quadro": {
-  "kicker": "FORA DO CONTEXTO #2",
+  "kicker": "FORA DO CONTEXTO · EPISÓDIO 2",
   "big": [
    "PLANOS",
    "DE PAZ"
