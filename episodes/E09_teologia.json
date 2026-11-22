@@ -1,0 +1,409 @@
+{
+ "episode": "E09",
+ "referencia": "Mateus 18:15–20",
+ "pesquisado_em": "2026-11-22",
+ "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "posicoes_adotadas": {
+  "autoria": "Roteiro diz 'Jesus' falando em Mateus; sem nomear o evangelista.",
+  "quadro": "Quadro 'Fora do Contexto': mostra o uso popular e o contexto original; não diz que quem usa o versículo peca nem que a oração em grupo seja inútil.",
+  "limite": "Sem promessa de êxito, cura ou prosperidade; não afirma que orar em grupo tenha mais poder; não dá método de disciplina eclesiástica."
+ },
+ "alegacoes": [
+  {
+   "id": "F00",
+   "cenas": [
+    "S01"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "O versículo 'onde dois ou três' é muito citado como promessa para oração em grupo.",
+   "versiculos": [
+    "Mateus 18:20"
+   ],
+   "palavras_chave_no_texto": [
+    "dois ou três"
+   ],
+   "fontes": [
+    {
+     "titulo": "Stand to Reason, Prayers of Two or Three",
+     "url": "https://www.str.org/w/are-the-prayers-of-two-or-three-people-more-powerful-than-the-prayers-of-one-",
+     "tipo": "comentario",
+     "nota": "o versículo é citado em reuniões de oração; o contexto trata de disciplina"
+    },
+    {
+     "titulo": "Ligonier, What Does It Mean That Jesus Is Where Two or Three Are Gathered",
+     "url": "https://learn.ligonier.org/podcasts/ask-ligonier/what-does-it-mean-that-jesus-is-where-two-or-three-are-gathered-in-his-name",
+     "tipo": "comentario",
+     "nota": "diz que o versículo costuma indicar a presença de Deus entre seu povo reunido"
+    }
+   ],
+   "risco": "medio: o gancho é pergunta sobre uso comum, sem acusar.",
+   "mitigacao": "S01 pergunta em vez de afirmar erro; S09 e S10 mantêm a presença de Jesus e o valor da oração em grupo."
+  },
+  {
+   "id": "F01",
+   "cenas": [
+    "S02"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO",
+   "texto": "O versículo é usado quando poucas pessoas se reúnem para orar.",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Stand to Reason, Prayers of Two or Three",
+     "url": "https://www.str.org/w/are-the-prayers-of-two-or-three-people-more-powerful-than-the-prayers-of-one-",
+     "tipo": "comentario",
+     "nota": "quem cresceu na igreja já o ouviu em reuniões de oração"
+    },
+    {
+     "titulo": "GotQuestions, where two or three are gathered",
+     "url": "https://www.gotquestions.org/where-two-or-three-are-gathered.html",
+     "tipo": "comentario",
+     "nota": "o versículo é usado para legitimar pequenas reuniões de oração ou culto"
+    }
+   ],
+   "risco": "baixo: observação de uso comum, sem número nem acusação.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F02",
+   "cenas": [
+    "S03"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "Muitos entendem o versículo como resumo do poder de um pequeno encontro.",
+   "versiculos": [
+    "Mateus 18:20"
+   ],
+   "palavras_chave_no_texto": [
+    "dois ou três"
+   ],
+   "fontes": [
+    {
+     "titulo": "Crosswalk, Why the context of Matthew 18:20 is so important",
+     "url": "https://www.crosswalk.com/faith/bible-study/why-the-context-of-matthew-18-20-is-important.html",
+     "tipo": "comentario",
+     "nota": "afirma que, lido sozinho, o versículo leva a essa conclusão"
+    },
+    {
+     "titulo": "Christianity.com, Is it true where two or three are gathered",
+     "url": "https://www.christianity.com/church/is-it-true-where-two-or-three-are-gathered-jesus-is-there-with-them.html",
+     "tipo": "comentario",
+     "nota": "idem: lido isolado, a maioria chegaria a essa leitura"
+    }
+   ],
+   "risco": "baixo: descreve entendimento popular, sem atribuir a ninguém.",
+   "mitigacao": "Texto diz 'muitos entendem', não 'todos'; não afirma que quem pensa assim peca."
+  },
+  {
+   "id": "F03",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "Mateus 18:20 fecha o trecho sobre o irmão que errou (18:15-20), antes da parábola do servo que não perdoa.",
+   "versiculos": [
+    "Mateus 18:15",
+    "Mateus 18:20"
+   ],
+   "palavras_chave_no_texto": [
+    "irmão",
+    "dois ou três"
+   ],
+   "fontes": [
+    {
+     "titulo": "Christianity.com, Is it true where two or three are gathered",
+     "url": "https://www.christianity.com/church/is-it-true-where-two-or-three-are-gathered-jesus-is-there-with-them.html",
+     "tipo": "comentario",
+     "nota": "o versículo está no último parágrafo antes de 18:21-35; deve-se ler 18:15-20"
+    },
+    {
+     "titulo": "Psephizo, Being responsible for one another in Matthew 18",
+     "url": "https://www.psephizo.com/biblical-studies/being-responsible-for-one-another-in-matthew-18/",
+     "tipo": "comentario",
+     "nota": "o trecho integra o quarto grande discurso de Mateus"
+    }
+   ],
+   "risco": "baixo: ordem do texto verificável na Bíblia.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F04",
+   "cenas": [
+    "S05"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "Jesus manda procurar o irmão que errou e conversar a sós (18:15).",
+   "versiculos": [
+    "Mateus 18:15"
+   ],
+   "palavras_chave_no_texto": [
+    "irmão"
+   ],
+   "fontes": [
+    {
+     "titulo": "Working Preacher, Commentary on Matthew 18:15-20",
+     "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-23/commentary-on-matthew-1815-20-7",
+     "tipo": "comentario",
+     "nota": "cita 18:15: ir e apontar a falta a sós, entre os dois"
+    },
+    {
+     "titulo": "Psephizo, Being responsible for one another in Matthew 18",
+     "url": "https://www.psephizo.com/biblical-studies/being-responsible-for-one-another-in-matthew-18/",
+     "tipo": "comentario",
+     "nota": "descreve o primeiro passo como discreto, entre os dois"
+    }
+   ],
+   "risco": "baixo: texto direto.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F05",
+   "cenas": [
+    "S06"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "Se o irmão não ouvir, Jesus manda levar uma ou duas pessoas como testemunhas (18:16).",
+   "versiculos": [
+    "Mateus 18:16"
+   ],
+   "palavras_chave_no_texto": [
+    "testemunhas"
+   ],
+   "fontes": [
+    {
+     "titulo": "Working Preacher, Commentary on Matthew 18:15-20",
+     "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-23/commentary-on-matthew-1815-20-7",
+     "tipo": "comentario",
+     "nota": "descreve o segundo passo com testemunhas"
+    },
+    {
+     "titulo": "Psephizo, Being responsible for one another in Matthew 18",
+     "url": "https://www.psephizo.com/biblical-studies/being-responsible-for-one-another-in-matthew-18/",
+     "tipo": "comentario",
+     "nota": "o segundo passo mantém o caso discreto, com uma ou duas pessoas"
+    }
+   ],
+   "risco": "baixo: texto direto.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F06",
+   "cenas": [
+    "S07"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "A regra de duas ou três testemunhas vem da Lei (Dt 19:15), citada em Mt 18:16.",
+   "versiculos": [
+    "Mateus 18:16",
+    "Deuteronômio 19:15"
+   ],
+   "palavras_chave_no_texto": [
+    "testemunhas",
+    "duas ou três"
+   ],
+   "fontes": [
+    {
+     "titulo": "Psephizo, Being responsible for one another in Matthew 18",
+     "url": "https://www.psephizo.com/biblical-studies/being-responsible-for-one-another-in-matthew-18/",
+     "tipo": "comentario",
+     "nota": "o princípio vem de Dt 19:15, citado quase literalmente em Mt 18:16"
+    },
+    {
+     "titulo": "Working Preacher, Commentary on Matthew 18:15-20",
+     "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-23/commentary-on-matthew-1815-20-7",
+     "tipo": "comentario",
+     "nota": "Jesus segue o precedente deuteronomista ao pedir testemunhas"
+    }
+   ],
+   "risco": "baixo: citação interna da Bíblia.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F07",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "interpretativa",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "Muitos estudiosos ligam o versículo 20 ao processo de correção e reconciliação.",
+   "versiculos": [
+    "Mateus 18:15",
+    "Mateus 18:20"
+   ],
+   "palavras_chave_no_texto": [
+    "irmão",
+    "dois ou três"
+   ],
+   "fontes": [
+    {
+     "titulo": "GotQuestions, where two or three are gathered",
+     "url": "https://www.gotquestions.org/where-two-or-three-are-gathered.html",
+     "tipo": "comentario",
+     "nota": "o contexto de 18:20 é disciplina e confronto do irmão; o 'dois ou três' ecoa a regra"
+    },
+    {
+     "titulo": "Crosswalk, Why the context of Matthew 18:20 is so important",
+     "url": "https://www.crosswalk.com/faith/bible-study/why-the-context-of-matthew-18-20-is-important.html",
+     "tipo": "comentario",
+     "nota": "o versículo deve ser lido dentro de 18:15-20, sobre o irmão que peca"
+    }
+   ],
+   "risco": "medio: há leituras que veem o versículo como promessa mais ampla de presença.",
+   "mitigacao": "Texto diz 'muitos estudiosos', não 'todos'; S09 e S10 reconhecem a presença de Jesus e a oração em grupo."
+  },
+  {
+   "id": "F08",
+   "cenas": [
+    "S09"
+   ],
+   "tipo": "interpretativa",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "Jesus promete estar presente quando discípulos se reúnem em seu nome.",
+   "versiculos": [
+    "Mateus 18:20"
+   ],
+   "palavras_chave_no_texto": [
+    "nome"
+   ],
+   "fontes": [
+    {
+     "titulo": "IVP New Testament Commentary, Jesus Himself Is the Presence of God (18:20)",
+     "url": "https://www.biblegateway.com/resources/ivp-nt/Jesus-Himself-Is-Presence-God",
+     "tipo": "comentario",
+     "nota": "Jesus assume o lugar da presença de Deus entre os reunidos em seu nome"
+    },
+    {
+     "titulo": "Working Preacher, Matthew 18:15-20 (ordinary 23)",
+     "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-23/commentary-on-matthew-1815-20",
+     "tipo": "comentario",
+     "nota": "ele está presente onde dois ou três se reúnem em seu nome (Emanuel)"
+    }
+   ],
+   "risco": "medio: a promessa é do versículo, mas o foco imediato é o contexto de reconciliação.",
+   "mitigacao": "Texto afirma a presença como parte do versículo, sem prometer resultado específico, cura ou êxito."
+  },
+  {
+   "id": "F09",
+   "cenas": [
+    "S10"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "Ler o contexto não diminui a oração em grupo pequeno; mostra o foco do texto.",
+   "versiculos": [
+    "Mateus 18:20"
+   ],
+   "palavras_chave_no_texto": [
+    "dois ou três"
+   ],
+   "fontes": [
+    {
+     "titulo": "Ligonier, What Does It Mean That Jesus Is Where Two or Three Are Gathered",
+     "url": "https://learn.ligonier.org/podcasts/ask-ligonier/what-does-it-mean-that-jesus-is-where-two-or-three-are-gathered-in-his-name",
+     "tipo": "comentario",
+     "nota": "reconhece que o versículo é usado para indicar a presença de Deus no povo reunido"
+    },
+    {
+     "titulo": "Stand to Reason, Prayers of Two or Three",
+     "url": "https://www.str.org/w/are-the-prayers-of-two-or-three-people-more-powerful-than-the-prayers-of-one-",
+     "tipo": "comentario",
+     "nota": "distingue o foco do texto de usos devocionais"
+    }
+   ],
+   "risco": "medio: a afirmação sobre o valor da oração em grupo vem de outros textos bíblicos, não deste.",
+   "mitigacao": "Texto não nega a oração em grupo; só aponta o foco de 18:15-20. Não promete que orar em grupo obtenha resultado."
+  },
+  {
+   "id": "F10",
+   "cenas": [
+    "S11"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO",
+   "texto": "Vale ler o que vem antes de repetir um versículo.",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Crosswalk, Why the context of Matthew 18:20 is so important",
+     "url": "https://www.crosswalk.com/faith/bible-study/why-the-context-of-matthew-18-20-is-important.html",
+     "tipo": "comentario",
+     "nota": "o objetivo é olhar com atenção o contexto de versículos mal usados"
+    }
+   ],
+   "risco": "baixo: convite à leitura, sem acusação.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F11",
+   "cenas": [
+    "S12"
+   ],
+   "tipo": "interpretativa",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "O versículo pode ser lido como consolo ou como chamado à reconciliação.",
+   "versiculos": [
+    "Mateus 18:20"
+   ],
+   "palavras_chave_no_texto": [
+    "dois ou três"
+   ],
+   "fontes": [
+    {
+     "titulo": "Ligonier, What Does It Mean That Jesus Is Where Two or Three Are Gathered",
+     "url": "https://learn.ligonier.org/podcasts/ask-ligonier/what-does-it-mean-that-jesus-is-where-two-or-three-are-gathered-in-his-name",
+     "tipo": "comentario",
+     "nota": "leitura de presença e consolo para o povo reunido"
+    },
+    {
+     "titulo": "GotQuestions, where two or three are gathered",
+     "url": "https://www.gotquestions.org/where-two-or-three-are-gathered.html",
+     "tipo": "comentario",
+     "nota": "leitura ligada ao confronto e reconciliação do irmão"
+    }
+   ],
+   "risco": "baixo: pergunta de engajamento A ou B.",
+   "mitigacao": "S12 pergunta em vez de afirmar; não opõe as leituras de forma excludente."
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "Mt 18:17 (tratar como gentio e publicano) e Mt 18:18 (ligar e desligar) e o debate sobre autoridade da igreja",
+   "decisao": "aceitavel",
+   "justificativa": "O episódio de 60 s não trata de disciplina formal nem de 18:18; nenhuma cena nega esses versículos."
+  },
+  {
+   "item": "Leitura de que o versículo 20 também afirma a presença de Cristo em qualquer reunião de discípulos (IVP, Working Preacher)",
+   "decisao": "incluir",
+   "justificativa": "S09 e S10 incluem essa leitura: Jesus promete presença, e a oração em grupo pequeno não é diminuída."
+  },
+  {
+   "item": "Mt 28:20 e outros textos sobre a presença de Jesus com os discípulos",
+   "decisao": "aceitavel",
+   "justificativa": "Fora do escopo do vídeo; nada no roteiro limita a presença de Jesus a reuniões de duas ou três pessoas."
+  }
+ ],
+ "parecer": "APROVADO",
+ "cenas_hash": {
+  "S01": "029e866fcca8599d",
+  "S02": "ee0e76679042e97b",
+  "S03": "3129182335acb614",
+  "S04": "23c70201f2a345ad",
+  "S05": "e10d4d9442861290",
+  "S06": "eba8b49f0ea36f5a",
+  "S07": "98206279df31060b",
+  "S08": "de1b9e342dbd890e",
+  "S09": "3d0d694c4b542e4c",
+  "S10": "bb3ba8100c57ab25",
+  "S11": "9089d7f03888713c",
+  "S12": "952d8e5da0c5cd6d"
+ }
+}

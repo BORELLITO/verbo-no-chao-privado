@@ -1,0 +1,30 @@
+{
+ "episode": "E09",
+ "status": "APROVADO_AUTOMATICO",
+ "issues": [],
+ "avisos": [],
+ "checks": {
+  "cenas": 12,
+  "duracao_estimada_s": 66.6,
+  "palavras": 142,
+  "duracao_final_estimada_s": 67.7,
+  "gancho": "Você cita onde dois ou três como promessa para oração em grupo?",
+  "cautela_presente": true,
+  "referencia": "Mateus 18:15–20",
+  "texto_biblico_verificado": true,
+  "sobreposicao_lexical_biblia": 0.32,
+  "similaridade_E01": 0.04,
+  "similaridade_E02": 0.06,
+  "similaridade_E03": 0.05,
+  "similaridade_E04": 0.07,
+  "similaridade_E05": 0.04,
+  "similaridade_E06": 0.09,
+  "similaridade_E07": 0.11,
+  "similaridade_E08": 0.15
+ },
+ "limitacoes": [
+  "validacao AUTOMATICA de regras do canal + vinculo lexical com o texto biblico; NAO e revisao teologica independente",
+  "parafrase fiel exige leitura humana/teologica: o agente so detecta ausencia de vinculo, promessas, tom e repeticao",
+  "voz e publicacao seguem dependendo do pedido/autorizacao do dono"
+ ]
+}

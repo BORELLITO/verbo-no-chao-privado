@@ -69,6 +69,13 @@
    "numero": 3,
    "titulo": "NÃO JULGUEIS",
    "referencia": "Mateus 7:1–5"
+  },
+  {
+   "id": "E09",
+   "quadro": "FORA",
+   "numero": 4,
+   "titulo": "DOIS OU TRÊS",
+   "referencia": "Mateus 18:15–20"
   }
  ],
  "decisao_karaoke": "Definido pelo dono em 2026-11-22: karaoke LARANJA no quadro FORA DO CONTEXTO (&H0066B3FF) e LILAS no quadro DORES DA VIDA (padrao travado &H00F2B0C4, sem karaoke_color no episodio)."
