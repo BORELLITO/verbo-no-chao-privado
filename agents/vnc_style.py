@@ -173,3 +173,11 @@ def check_logo(d, adur, T, lock=None, tol_px=1, tol_mean=1.0):
         if any(abs(a - b) > tol_px for a, b in zip(g[:4], w[:4])) or abs(g[4] - w[4]) > tol_mean:
             return ["logo: posicao/tamanho/opacidade das camadas diferem do padrao"]
     return []
+
+
+def apply_quadro_color(at, color):
+    """Cor propria do destaque karaoke para um QUADRO (ex.: Fora do Contexto). Chamar DEPOIS de check_final_ass (o lock continua valendo para o padrao).
+    So troca a tag de destaque das legendas; estilos CTA/Credito e demais episodios (sem 'karaoke_color') nao mudam."""
+    if not color: return at
+    if not re.fullmatch(r"&H00[0-9A-F]{6}", color) or color == KARAOKE_HIGHLIGHT: raise ValueError("karaoke_color invalida: use &H00BBGGRR diferente do lilas")
+    return at.replace("{\\1c" + KARAOKE_HIGHLIGHT + "&}", "{\\1c" + color + "&}")

@@ -209,6 +209,7 @@ def main(ep=None):
     at = ST.finalize_ass(at, adur, T, cfg["reference"], cfg["cta"], CAP_LEAD, os.environ.get("VNC_FINAL") == "1")
     report["final_mode"] = os.environ.get("VNC_FINAL") == "1"
     lock_errs = ST.check_constants() + ST.check_final_ass(at, adur, T)
+    at = ST.apply_quadro_color(at, cfg.get("karaoke_color")); report["karaoke_color"] = cfg.get("karaoke_color") or ST.KARAOKE_HIGHLIGHT   # so quadros com cor propria; padrao intacto
     ass_path.write_text(at, encoding="utf8")
     t0 = adur + 0.5
     make_logo_layers(adur, T, t0, WORK / "logo_frames")
