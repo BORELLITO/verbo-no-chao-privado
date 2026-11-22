@@ -4,7 +4,7 @@
  "episode_id": "E08",
  "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
  "engine_version": "vnc-curadoria-2.0",
- "run_id": "45043726532",
+ "run_id": "45044614626",
  "publication_authorized": false,
  "master_approved": false,
  "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
@@ -12,28 +12,28 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "2193",
+   "id": "21576",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/drops-of-rainwater-2193/",
+   "page": "https://mixkit.co/free-stock-video/cloudy-sky-covered-with-thick-clouds-moving-with-the-wind-21576/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 19.9,
-   "note_pt": "clima dark (brilho 110.9), movimento 1.23, palavras-chave 2, interpretacao=claude"
+   "preview_seconds": 13.0,
+   "note_pt": "clima dark (brilho 96.2), movimento 5.56, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S02",
    "source": "mixkit",
-   "id": "20552",
+   "id": "20440",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/storm-clouds-forming-across-the-sky-20552/",
+   "page": "https://mixkit.co/free-stock-video/rain-drops-after-a-storm-20440/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 24.6,
-   "note_pt": "clima dark (brilho 112.0), movimento 11.67, palavras-chave 2, interpretacao=claude"
+   "preview_seconds": 23.6,
+   "note_pt": "clima dark (brilho 97.7), movimento 0.8, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S03",
@@ -142,15 +142,15 @@
   {
    "scene": "S11",
    "source": "mixkit",
-   "id": "41877",
+   "id": "3371",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/aerial-walk-along-a-path-in-a-sunny-park-41877/",
+   "page": "https://mixkit.co/free-stock-video/snowy-hills-with-clouds-3371/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 15.8,
-   "note_pt": "clima bright (brilho 118.5), movimento 18.49, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 20.7,
+   "note_pt": "clima bright (brilho 146.9), movimento 12.24, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S12",

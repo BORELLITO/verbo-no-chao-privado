@@ -1,6 +1,6 @@
 {
  "episode": "E08",
- "run_id": "45043726532",
+ "run_id": "45044614626",
  "engine_version": "vnc-curadoria-2.0",
  "dry_run": false,
  "status": "OK",
@@ -70,7 +70,11 @@
     "barbed",
     "car",
     "traffic",
-    "lights"
+    "lights",
+    "drops",
+    "rainwater",
+    "raindrops",
+    "droplets"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -753,7 +757,13 @@
     "barbed",
     "car",
     "traffic",
-    "lights"
+    "lights",
+    "path",
+    "park",
+    "walk",
+    "walking",
+    "trail",
+    "aerial walk"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -840,11 +850,11 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "2193",
-   "title": "drops of rainwater",
-   "page": "https://mixkit.co/free-stock-video/drops-of-rainwater-2193/",
-   "preview_url": "https://assets.mixkit.co/videos/2193/2193-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/2193/2193-1080.mp4",
+   "id": "21576",
+   "title": "cloudy sky covered with thick clouds moving with the wind",
+   "page": "https://mixkit.co/free-stock-video/cloudy-sky-covered-with-thick-clouds-moving-with-the-wind-21576/",
+   "preview_url": "https://assets.mixkit.co/videos/21576/21576-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/21576/21576-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -852,12 +862,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 19.9,
-   "sha256": "89daab6a22c3ad3cdc013e2c2d4bae78e892d4f4cc0e4cdc062c2e41d1491f43",
+   "clip_seconds": 13.0,
+   "sha256": "9a286a68cc90b4729bccfa58b51f78a3c0141e98daebd4f8fa2e4d8333e5cbd6",
    "phashes": [
-    2529636070893057686,
-    1376855303774566038,
-    2529785604474565270
+    4503172965105278076,
+    507602038056095518,
+    1225266101505245455
    ],
    "segment": {
     "start": 0.0,
@@ -865,42 +875,41 @@
     "emotion": "dúvida",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 110.9), movimento 1.23, palavras-chave 2, interpretacao=claude",
+   "justification": "clima dark (brilho 96.2), movimento 5.56, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 2.634,
-    "clip_sem": 0.0021
+    "unary": 2.911,
+    "clip_sem": 0.0004
    },
    "vision": {
-    "sem": 0.0021,
+    "sem": 0.0004,
     "neg": {
-     "people": 0.2233,
-     "city": 0.0032,
-     "indoor": 0.557,
-     "text": 0.0038,
-     "cgi": 0.2105
+     "people": 0.0959,
+     "city": 0.002,
+     "indoor": 0.6542,
+     "text": 0.0008,
+     "cgi": 0.2467
     }
    },
    "metrics": {
-    "brightness": 110.9,
-    "cut_ratio": 1.07,
-    "motion": 1.23,
-    "saturation": 34.0,
-    "sharp": 3.29
+    "brightness": 96.2,
+    "cut_ratio": 1.86,
+    "motion": 5.56,
+    "saturation": 146.6,
+    "sharp": 4.39
    },
    "alternatives": [
-    "mixkit:7098",
-    "mixkit:21130",
+    "mixkit:4423",
     "mixkit:20761"
    ]
   },
   {
    "scene": "S02",
    "source": "mixkit",
-   "id": "20552",
-   "title": "storm clouds forming across the sky",
-   "page": "https://mixkit.co/free-stock-video/storm-clouds-forming-across-the-sky-20552/",
-   "preview_url": "https://assets.mixkit.co/videos/20552/20552-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/20552/20552-720.mp4",
+   "id": "20440",
+   "title": "rain drops after a storm",
+   "page": "https://mixkit.co/free-stock-video/rain-drops-after-a-storm-20440/",
+   "preview_url": "https://assets.mixkit.co/videos/20440/20440-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/20440/20440-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -908,12 +917,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 24.6,
-   "sha256": "8f25a3fd85ae3fcdd46ca7a7631334cfc3cef7b621abedaf0e144edabfd5cc3f",
+   "clip_seconds": 23.6,
+   "sha256": "d123f919232e0cf0a48dfea913a16f82ca92037613d02b6538efb5d10b72507b",
    "phashes": [
-    7475869655778445769,
-    18121425204174701258,
-    15335306422059581650
+    17646174781398169526,
+    17646192373584213942,
+    17637167582143559606
    ],
    "segment": {
     "start": 5.23,
@@ -921,30 +930,30 @@
     "emotion": "tensão",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 112.0), movimento 11.67, palavras-chave 2, interpretacao=claude",
+   "justification": "clima dark (brilho 97.7), movimento 0.8, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 2.674,
-    "clip_sem": 0.0387
+    "unary": 2.787,
+    "clip_sem": 0.0158
    },
    "vision": {
-    "sem": 0.0387,
+    "sem": 0.0158,
     "neg": {
-     "people": 0.1204,
-     "city": 0.025,
-     "indoor": 0.7275,
-     "text": 0.0006,
-     "cgi": 0.0878
+     "people": 0.0757,
+     "city": 0.0364,
+     "indoor": 0.6267,
+     "text": 0.0013,
+     "cgi": 0.2441
     }
    },
    "metrics": {
-    "brightness": 112.0,
-    "cut_ratio": 1.13,
-    "motion": 11.67,
-    "saturation": 66.9,
-    "sharp": 6.99
+    "brightness": 97.7,
+    "cut_ratio": 1.11,
+    "motion": 0.8,
+    "saturation": 183.7,
+    "sharp": 18.23
    },
    "alternatives": [
-    "mixkit:20440",
+    "mixkit:20552",
     "mixkit:20761"
    ]
   },
@@ -993,9 +1002,9 @@
    },
    "metrics": {
     "brightness": 96.0,
-    "saturation": 88.5,
-    "motion": 12.93,
     "cut_ratio": 1.5,
+    "motion": 12.93,
+    "saturation": 88.5,
     "sharp": 17.23
    },
    "alternatives": [
@@ -1403,11 +1412,11 @@
   {
    "scene": "S11",
    "source": "mixkit",
-   "id": "41877",
-   "title": "aerial walk along a path in a sunny park",
-   "page": "https://mixkit.co/free-stock-video/aerial-walk-along-a-path-in-a-sunny-park-41877/",
-   "preview_url": "https://assets.mixkit.co/videos/41877/41877-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/41877/41877-1080.mp4",
+   "id": "3371",
+   "title": "snowy hills with clouds",
+   "page": "https://mixkit.co/free-stock-video/snowy-hills-with-clouds-3371/",
+   "preview_url": "https://assets.mixkit.co/videos/3371/3371-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/3371/3371-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1415,12 +1424,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 15.8,
-   "sha256": "a8c1d58410763829e3a1571ec7c7b0962248592d330619c29f872049aeb7d107",
+   "clip_seconds": 20.7,
+   "sha256": "0349bf92a06a967745e274c0c19a0a8f03da101e2f8331edf02b4df1d4f0c6e9",
    "phashes": [
-    18301214281490467082,
-    17613851288847224586,
-    8462378516355992330
+    18374400945697120482,
+    18374401478307930344,
+    18374401220744242404
    ],
    "segment": {
     "start": 57.29,
@@ -1428,32 +1437,32 @@
     "emotion": "exame",
     "interpretation": "claude"
    },
-   "justification": "clima bright (brilho 118.5), movimento 18.49, palavras-chave 1, interpretacao=claude",
+   "justification": "clima bright (brilho 146.9), movimento 12.24, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 3.062,
-    "clip_sem": 0.1026
+    "unary": 3.058,
+    "clip_sem": 0.0024
    },
    "vision": {
-    "sem": 0.1026,
+    "sem": 0.0024,
     "neg": {
-     "people": 0.2,
-     "city": 0.0522,
-     "indoor": 0.5529,
-     "text": 0.001,
-     "cgi": 0.0913
+     "people": 0.0515,
+     "city": 0.0085,
+     "indoor": 0.6405,
+     "text": 0.0005,
+     "cgi": 0.2967
     }
    },
    "metrics": {
-    "brightness": 118.5,
-    "cut_ratio": 1.11,
-    "motion": 18.49,
-    "saturation": 33.2,
-    "sharp": 26.29
+    "brightness": 146.9,
+    "cut_ratio": 1.31,
+    "motion": 12.24,
+    "saturation": 36.3,
+    "sharp": 21.62
    },
    "alternatives": [
-    "mixkit:29413",
-    "mixkit:36186",
-    "mixkit:49695"
+    "mixkit:3414",
+    "mixkit:42490",
+    "mixkit:25096"
    ]
   },
   {
@@ -1563,7 +1572,7 @@
   "aprovacao_estetica_humana": "NAO_VERIFICADA",
   "manifest_errors": []
  },
- "sequence_utility": 35.615,
+ "sequence_utility": 35.619,
  "trace": {
   "beam": 400,
   "weights": {
