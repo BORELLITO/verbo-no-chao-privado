@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E09",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "45053721897",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "7098",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/raindrops-on-a-leaf-7098/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 18.0,
+   "note_pt": "clima dark (brilho 58.4), movimento 6.32, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "20317",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/low-fog-between-hills-20317/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 8.7,
+   "note_pt": "clima dark (brilho 113.3), movimento 3.79, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "32173",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-the-waves-in-the-ocean-32173/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 16.1,
+   "note_pt": "clima dark (brilho 83.5), movimento 4.85, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "26103",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/landscape-of-a-mountain-range-seen-from-the-top-of-26103/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 20.0,
+   "note_pt": "clima mid (brilho 115.8), movimento 0.82, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "28338",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/tree-at-the-center-of-a-meadow-in-a-cloud-28338/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 15.1,
+   "note_pt": "clima mid (brilho 123.0), movimento 5.73, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "34856",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/fog-covering-an-autumnal-forest-time-lapse-34856/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 20.1,
+   "note_pt": "clima mid (brilho 139.5), movimento 11.04, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "515",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sun-rays-over-forest-treetops-515/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 70.9,
+   "note_pt": "clima mid (brilho 128.0), movimento 3.98, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "9615",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/water-flowing-down-the-river-between-black-rocks-9615/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 25.0,
+   "note_pt": "clima mid (brilho 126.2), movimento 5.85, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "7444",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sunbeams-through-the-clouds-in-the-sunset-7444/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 20.2,
+   "note_pt": "clima bright (brilho 132.6), movimento 5.77, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "52012",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/flying-over-a-landscape-of-sun-soaked-desert-land-with-52012/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 13.7,
+   "note_pt": "clima bright (brilho 150.3), movimento 5.06, palavras-chave 0, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "36186",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/path-through-a-snowy-forest-of-dry-trees-36186/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 58.3,
+   "note_pt": "clima bright (brilho 130.1), movimento 19.49, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "30342",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/beautiful-winter-mountains-landscape-at-sunrise-30342/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 29.9,
+   "note_pt": "clima bright (brilho 124.2), movimento 4.15, palavras-chave 3, interpretacao=claude"
+  }
+ ]
+}

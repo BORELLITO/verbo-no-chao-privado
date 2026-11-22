@@ -1,0 +1,1580 @@
+{
+ "episode": "E09",
+ "run_id": "45053721897",
+ "engine_version": "vnc-curadoria-2.0",
+ "dry_run": false,
+ "status": "OK",
+ "segments": [
+  {
+   "scene": "S01",
+   "block": "opening",
+   "text": "Você cita onde dois ou três como promessa para oração em grupo?",
+   "start": 0.0,
+   "end": 5.62,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "nuvens escuras no céu",
+   "emotion": "arco_padrao",
+   "mood": "dark",
+   "queries": [
+    "dark clouds sky timelapse",
+    "storm clouds moving",
+    "gray clouds mountains",
+    "rain",
+    "raindrops",
+    "rainy-day",
+    "night",
+    "water-drops",
+    "rain-on-window",
+    "dark-clouds"
+   ],
+   "prefer": [
+    "clouds",
+    "sky",
+    "dark",
+    "window",
+    "rain",
+    "drops",
+    "night"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S02",
+   "block": "connection",
+   "text": "Muita gente usa esse versículo quando poucas pessoas se reúnem para orar.",
+   "start": 5.62,
+   "end": 11.24,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "vale com névoa",
+   "emotion": "arco_padrao",
+   "mood": "dark",
+   "queries": [
+    "misty valley morning",
+    "fog over hills",
+    "foggy forest morning",
+    "storm",
+    "thunderstorm",
+    "clouds",
+    "dark-clouds",
+    "stormy-sky"
+   ],
+   "prefer": [
+    "fog",
+    "mist",
+    "valley",
+    "storm",
+    "dark",
+    "clouds",
+    "rain"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S03",
+   "block": "connection",
+   "text": "Muitos entendem que ele resume o poder de um pequeno encontro.",
+   "start": 11.24,
+   "end": 16.47,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "mar agitado",
+   "emotion": "arco_padrao",
+   "mood": "dark",
+   "queries": [
+    "ocean waves aerial",
+    "sea horizon gray",
+    "calm sea water",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "sea",
+    "waves",
+    "water",
+    "stormy",
+    "crashing"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S04",
+   "block": "connection",
+   "text": "Mas Mateus dezoito traz esse versículo no fim de uma instrução maior.",
+   "start": 16.47,
+   "end": 22.09,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "encosta de monte",
+   "emotion": "arco_padrao",
+   "mood": "mid",
+   "queries": [
+    "green mountain slope",
+    "hillside clouds",
+    "mountain meadow clouds",
+    "candle",
+    "candles",
+    "fire",
+    "fireplace",
+    "flame",
+    "campfire",
+    "bonfire",
+    "lantern"
+   ],
+   "prefer": [
+    "mountain",
+    "hillside",
+    "green",
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S05",
+   "block": "biblical_reference",
+   "text": "Antes dele, Jesus fala do irmão que errou: primeiro, converse a sós.",
+   "start": 22.09,
+   "end": 27.71,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "árvore solitária no campo",
+   "emotion": "arco_padrao",
+   "mood": "mid",
+   "queries": [
+    "lone tree meadow",
+    "tree field wind",
+    "single tree hill",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "morning-fog"
+   ],
+   "prefer": [
+    "tree",
+    "meadow",
+    "wind",
+    "fog",
+    "mist"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S06",
+   "block": "biblical_reference",
+   "text": "Se ele não ouvir, leve uma ou duas pessoas, como testemunhas.",
+   "start": 27.71,
+   "end": 32.94,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "folhas e galhos ao vento",
+   "emotion": "arco_padrao",
+   "mood": "mid",
+   "queries": [
+    "tree branch leaves wind",
+    "leaves close up wind",
+    "forest canopy wind",
+    "forest",
+    "trees",
+    "fog"
+   ],
+   "prefer": [
+    "leaves",
+    "branch",
+    "wind",
+    "forest",
+    "mist",
+    "fog"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S07",
+   "block": "biblical_reference",
+   "text": "Essa ideia vem da Lei, que pedia duas ou três testemunhas.",
+   "start": 32.94,
+   "end": 38.17,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "luz atravessando a floresta",
+   "emotion": "arco_padrao",
+   "mood": "mid",
+   "queries": [
+    "sunlight through forest",
+    "sun rays forest",
+    "forest light morning",
+    "mountains",
+    "mountain",
+    "hills"
+   ],
+   "prefer": [
+    "sunlight",
+    "forest",
+    "rays",
+    "mountain",
+    "cliff",
+    "peak"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 10.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S08",
+   "block": "reflection",
+   "text": "Por isso, muitos estudiosos ligam o versículo vinte à reconciliação.",
+   "start": 38.17,
+   "end": 43.02,
+   "duration": 4.85,
+   "duration_source": "estimativa_palavras",
+   "meaning": "riacho na floresta",
+   "emotion": "arco_padrao",
+   "mood": "mid",
+   "queries": [
+    "stream flowing forest",
+    "creek water forest",
+    "river rocks flowing",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "prefer": [
+    "stream",
+    "water",
+    "forest",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S09",
+   "block": "reflection",
+   "text": "Jesus promete estar presente quando seus discípulos se reúnem em nome dele.",
+   "start": 43.02,
+   "end": 48.64,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "raios de sol entre nuvens",
+   "emotion": "arco_padrao",
+   "mood": "bright",
+   "queries": [
+    "sun rays through clouds",
+    "clouds opening sunlight",
+    "sunbeams clouds",
+    "sunrise",
+    "sunset",
+    "sun",
+    "dawn",
+    "sunlight",
+    "sunbeams"
+   ],
+   "prefer": [
+    "sun",
+    "rays",
+    "clouds",
+    "sunrise",
+    "sunlight",
+    "dawn"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S10",
+   "block": "application",
+   "text": "Isso não diminui a oração em grupo, mas mostra o foco do texto.",
+   "start": 48.64,
+   "end": 54.64,
+   "duration": 6.0,
+   "duration_source": "estimativa_palavras",
+   "meaning": "vale com luz do sol",
+   "emotion": "arco_padrao",
+   "mood": "bright",
+   "queries": [
+    "sunlight valley",
+    "mountains sunlight",
+    "green hills sunlight",
+    "hands",
+    "hand",
+    "praying",
+    "holding"
+   ],
+   "prefer": [
+    "sunlight",
+    "valley",
+    "hills",
+    "hands",
+    "holding",
+    "hand",
+    "glass",
+    "water"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S11",
+   "block": "application",
+   "text": "Antes de repetir o versículo, vale ler o que vem antes dele.",
+   "start": 54.64,
+   "end": 60.26,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "lago calmo refletindo",
+   "emotion": "arco_padrao",
+   "mood": "bright",
+   "queries": [
+    "calm lake reflection",
+    "still water hills",
+    "lake mountains morning",
+    "trail",
+    "path",
+    "hills",
+    "road",
+    "meadow",
+    "field",
+    "nature",
+    "countryside"
+   ],
+   "prefer": [
+    "lake",
+    "calm",
+    "reflection",
+    "trail",
+    "path",
+    "hills"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S12",
+   "block": "conclusion",
+   "text": "Para você, esse versículo foi consolo ou chamado à reconciliação? Responda A ou B.",
+   "start": 60.26,
+   "end": 66.64,
+   "duration": 6.38,
+   "duration_source": "estimativa_palavras",
+   "meaning": "amanhecer sobre montanhas",
+   "emotion": "agitacao",
+   "mood": "bright",
+   "queries": [
+    "sunrise over mountains",
+    "golden hour mountains",
+    "sunrise mist mountains",
+    "lake",
+    "valley",
+    "river",
+    "mountain-lake",
+    "lagoon",
+    "reflection",
+    "waves",
+    "sea",
+    "ocean",
+    "candle",
+    "candles"
+   ],
+   "prefer": [
+    "sunrise",
+    "mountains",
+    "golden",
+    "lake",
+    "mountain",
+    "valley",
+    "waves",
+    "stormy",
+    "sea",
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "party",
+    "camp",
+    "fire",
+    "road",
+    "street",
+    "highway",
+    "bicycle",
+    "bike",
+    "cyclist",
+    "building",
+    "buildings",
+    "skyline",
+    "urban",
+    "ruins",
+    "temple",
+    "pyramid",
+    "castle",
+    "wire",
+    "fence",
+    "barbed",
+    "car",
+    "traffic",
+    "lights"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 14.0,
+   "interpretation": "claude"
+  }
+ ],
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "7098",
+   "title": "raindrops on a leaf",
+   "page": "https://mixkit.co/free-stock-video/raindrops-on-a-leaf-7098/",
+   "preview_url": "https://assets.mixkit.co/videos/7098/7098-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/7098/7098-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 18.0,
+   "sha256": "60c23951ba40829b4c1775c36a2fa04c95728c2e1a9e1c6ce0d38fdc2c001ceb",
+   "phashes": [
+    16701476832570058278,
+    16701476832572155430,
+    16701547201297458726
+   ],
+   "segment": {
+    "start": 0.0,
+    "end": 5.62,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 58.4), movimento 6.32, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 2.958,
+    "clip_sem": 0.0018
+   },
+   "vision": {
+    "sem": 0.0018,
+    "neg": {
+     "people": 0.0279,
+     "city": 0.0319,
+     "indoor": 0.5478,
+     "text": 0.0021,
+     "cgi": 0.3884
+    }
+   },
+   "metrics": {
+    "brightness": 58.4,
+    "cut_ratio": 1.72,
+    "motion": 6.32,
+    "saturation": 175.8,
+    "sharp": 9.03
+   },
+   "alternatives": [
+    "mixkit:21130"
+   ]
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "20317",
+   "title": "low fog between hills",
+   "page": "https://mixkit.co/free-stock-video/low-fog-between-hills-20317/",
+   "preview_url": "https://assets.mixkit.co/videos/20317/20317-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/20317/20317-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 8.7,
+   "sha256": "2626d81e9f109025640523dd6d97a8187b005a7e1591642f0511afe1ccac839d",
+   "phashes": [
+    4882957677608239880,
+    4882957540167713544,
+    271271659247436585
+   ],
+   "segment": {
+    "start": 5.62,
+    "end": 11.24,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 113.3), movimento 3.79, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.336,
+    "clip_sem": 0.4465
+   },
+   "vision": {
+    "sem": 0.4465,
+    "neg": {
+     "people": 0.0311,
+     "city": 0.0191,
+     "indoor": 0.3569,
+     "text": 0.0001,
+     "cgi": 0.1464
+    }
+   },
+   "metrics": {
+    "brightness": 113.3,
+    "saturation": 74.4,
+    "motion": 3.79,
+    "cut_ratio": 1.08,
+    "sharp": 6.81
+   },
+   "alternatives": [
+    "mixkit:21148",
+    "mixkit:3386",
+    "mixkit:8662",
+    "mixkit:20761"
+   ]
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "32173",
+   "title": "aerial view of the waves in the ocean",
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-the-waves-in-the-ocean-32173/",
+   "preview_url": "https://assets.mixkit.co/videos/32173/32173-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/32173/32173-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 16.1,
+   "sha256": "229f1ba5fa942996cf14d421786b06152d7b457640c990d2e788286bc4080605",
+   "phashes": [
+    225013296480378893,
+    5622524708758382848,
+    5559193438281038093
+   ],
+   "segment": {
+    "start": 11.24,
+    "end": 16.47,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 83.5), movimento 4.85, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 2.961,
+    "clip_sem": 0.0152
+   },
+   "vision": {
+    "sem": 0.0152,
+    "neg": {
+     "people": 0.5182,
+     "city": 0.3624,
+     "indoor": 0.0807,
+     "text": 0.0062,
+     "cgi": 0.0173
+    }
+   },
+   "metrics": {
+    "brightness": 83.5,
+    "saturation": 76.0,
+    "motion": 4.85,
+    "cut_ratio": 0.96,
+    "sharp": 12.41
+   },
+   "alternatives": [
+    "mixkit:16126",
+    "mixkit:1080",
+    "mixkit:1070"
+   ]
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "26103",
+   "title": "landscape of a mountain range seen from the top of",
+   "page": "https://mixkit.co/free-stock-video/landscape-of-a-mountain-range-seen-from-the-top-of-26103/",
+   "preview_url": "https://assets.mixkit.co/videos/26103/26103-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/26103/26103-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 20.0,
+   "sha256": "4e3bd998f766afe498222201793a736369e88cb4151a808d3c821a51b27e88c0",
+   "phashes": [
+    18296150287800860954,
+    18296150287800337241,
+    18224092659385893721
+   ],
+   "segment": {
+    "start": 16.47,
+    "end": 22.09,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 115.8), movimento 0.82, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 2.43,
+    "clip_sem": 0.0027
+   },
+   "vision": {
+    "sem": 0.0027,
+    "neg": {
+     "people": 0.2097,
+     "city": 0.0052,
+     "indoor": 0.2749,
+     "text": 0.0003,
+     "cgi": 0.5072
+    }
+   },
+   "metrics": {
+    "brightness": 115.8,
+    "cut_ratio": 1.3,
+    "motion": 0.82,
+    "saturation": 53.6,
+    "sharp": 5.53
+   },
+   "alternatives": []
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "28338",
+   "title": "tree at the center of a meadow in a cloud",
+   "page": "https://mixkit.co/free-stock-video/tree-at-the-center-of-a-meadow-in-a-cloud-28338/",
+   "preview_url": "https://assets.mixkit.co/videos/28338/28338-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/28338/28338-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 15.1,
+   "sha256": "7f9e8a35be3e3ab15c7f72e08e31c8e3cc6b8bb13177182c735cc2cb1c3af95c",
+   "phashes": [
+    16279086504701918776,
+    17431445059361627542,
+    17361634875441872894
+   ],
+   "segment": {
+    "start": 22.09,
+    "end": 27.71,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 123.0), movimento 5.73, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.341,
+    "clip_sem": 0.0262
+   },
+   "vision": {
+    "sem": 0.0262,
+    "neg": {
+     "people": 0.4394,
+     "city": 0.0187,
+     "indoor": 0.2824,
+     "text": 0.0009,
+     "cgi": 0.2324
+    }
+   },
+   "metrics": {
+    "brightness": 123.0,
+    "saturation": 36.4,
+    "motion": 5.73,
+    "cut_ratio": 2.16,
+    "sharp": 6.84
+   },
+   "alternatives": [
+    "mixkit:28340",
+    "mixkit:34959",
+    "mixkit:28342",
+    "mixkit:28343"
+   ]
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "34856",
+   "title": "fog covering an autumnal forest time lapse",
+   "page": "https://mixkit.co/free-stock-video/fog-covering-an-autumnal-forest-time-lapse-34856/",
+   "preview_url": "https://assets.mixkit.co/videos/34856/34856-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/34856/34856-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 20.1,
+   "sha256": "d333b7805f20359202ec642f0f05519bf4a5e35f4aaf26c55cef6b9fb1ab1659",
+   "phashes": [
+    4307957412735100912,
+    7263427106058940400,
+    5687167215004428272
+   ],
+   "segment": {
+    "start": 27.71,
+    "end": 32.94,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 139.5), movimento 11.04, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.028,
+    "clip_sem": 0.0021
+   },
+   "vision": {
+    "sem": 0.0021,
+    "neg": {
+     "people": 0.0683,
+     "city": 0.0325,
+     "indoor": 0.6019,
+     "text": 0.001,
+     "cgi": 0.2942
+    }
+   },
+   "metrics": {
+    "brightness": 139.5,
+    "cut_ratio": 3.13,
+    "motion": 11.04,
+    "saturation": 81.0,
+    "sharp": 13.43
+   },
+   "alternatives": [
+    "mixkit:2213",
+    "mixkit:18308",
+    "mixkit:28342",
+    "mixkit:28343"
+   ]
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "515",
+   "title": "sun rays over forest treetops",
+   "page": "https://mixkit.co/free-stock-video/sun-rays-over-forest-treetops-515/",
+   "preview_url": "https://assets.mixkit.co/videos/515/515-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/515/515-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    10.0
+   ],
+   "clip_seconds": 70.9,
+   "sha256": "0ad7e273857fb40da8b5cb7965144904c697a36f6bb69c464013cac8296a6039",
+   "phashes": [
+    14988244542182882686,
+    14988244542182866505,
+    14988253338280013375
+   ],
+   "segment": {
+    "start": 32.94,
+    "end": 38.17,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 128.0), movimento 3.98, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.164,
+    "clip_sem": 0.0033
+   },
+   "vision": {
+    "sem": 0.0033,
+    "neg": {
+     "people": 0.0829,
+     "city": 0.0075,
+     "indoor": 0.7518,
+     "text": 0.0036,
+     "cgi": 0.1508
+    }
+   },
+   "metrics": {
+    "brightness": 128.0,
+    "cut_ratio": 1.07,
+    "motion": 3.98,
+    "saturation": 51.0,
+    "sharp": 6.87
+   },
+   "alternatives": [
+    "mixkit:3006",
+    "mixkit:3008",
+    "mixkit:3370",
+    "mixkit:51581"
+   ]
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "9615",
+   "title": "water flowing down the river between black rocks",
+   "page": "https://mixkit.co/free-stock-video/water-flowing-down-the-river-between-black-rocks-9615/",
+   "preview_url": "https://assets.mixkit.co/videos/9615/9615-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/9615/9615-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 25.0,
+   "sha256": "4c18001416b5f0f4ca2d95ebd8bca2598a6e8a69ce9be6724059364847826507",
+   "phashes": [
+    13902665671835707632,
+    13902806409056150776,
+    9291120388481801464
+   ],
+   "segment": {
+    "start": 38.17,
+    "end": 43.02,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 126.2), movimento 5.85, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.192,
+    "clip_sem": 0.003
+   },
+   "vision": {
+    "sem": 0.003,
+    "neg": {
+     "people": 0.1474,
+     "city": 0.0323,
+     "indoor": 0.7246,
+     "text": 0.0,
+     "cgi": 0.0927
+    }
+   },
+   "metrics": {
+    "brightness": 126.2,
+    "cut_ratio": 0.98,
+    "motion": 5.85,
+    "saturation": 5.5,
+    "sharp": 17.2
+   },
+   "alternatives": [
+    "mixkit:2408",
+    "mixkit:51598",
+    "mixkit:44637",
+    "mixkit:4695"
+   ]
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "7444",
+   "title": "sunbeams through the clouds in the sunset",
+   "page": "https://mixkit.co/free-stock-video/sunbeams-through-the-clouds-in-the-sunset-7444/",
+   "preview_url": "https://assets.mixkit.co/videos/7444/7444-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/7444/7444-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 20.2,
+   "sha256": "002e5a926b56876e80a14825df062f5046135089b6148d48b14dabca7a0983a3",
+   "phashes": [
+    10127613150489526272,
+    14522858105950208128,
+    14070238644669513728
+   ],
+   "segment": {
+    "start": 43.02,
+    "end": 48.64,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 132.6), movimento 5.77, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.197,
+    "clip_sem": 0.0054
+   },
+   "vision": {
+    "sem": 0.0054,
+    "neg": {
+     "people": 0.2274,
+     "city": 0.0146,
+     "indoor": 0.6787,
+     "text": 0.001,
+     "cgi": 0.0729
+    }
+   },
+   "metrics": {
+    "brightness": 132.6,
+    "saturation": 62.5,
+    "motion": 5.77,
+    "cut_ratio": 1.63,
+    "sharp": 8.32
+   },
+   "alternatives": [
+    "mixkit:51106",
+    "mixkit:27028"
+   ]
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "52012",
+   "title": "flying over a landscape of sun soaked desert land with",
+   "page": "https://mixkit.co/free-stock-video/flying-over-a-landscape-of-sun-soaked-desert-land-with-52012/",
+   "preview_url": "https://assets.mixkit.co/videos/52012/52012-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/52012/52012-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 13.7,
+   "sha256": "b3630289f2446134e23b58103a83cb60a2e1267c48f72017d6b87aa42bf6ce18",
+   "phashes": [
+    4574946771359513726,
+    9186632789791226998,
+    9186632514644899380
+   ],
+   "segment": {
+    "start": 48.64,
+    "end": 54.64,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 150.3), movimento 5.06, palavras-chave 0, interpretacao=claude",
+   "scores": {
+    "unary": 2.836,
+    "clip_sem": 0.0103
+   },
+   "vision": {
+    "sem": 0.0103,
+    "neg": {
+     "people": 0.7408,
+     "city": 0.0399,
+     "indoor": 0.145,
+     "text": 0.0017,
+     "cgi": 0.0622
+    }
+   },
+   "metrics": {
+    "brightness": 150.3,
+    "cut_ratio": 1.01,
+    "motion": 5.06,
+    "saturation": 84.3,
+    "sharp": 12.0
+   },
+   "alternatives": [
+    "mixkit:25064",
+    "mixkit:41386",
+    "mixkit:17723"
+   ]
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "36186",
+   "title": "path through a snowy forest of dry trees",
+   "page": "https://mixkit.co/free-stock-video/path-through-a-snowy-forest-of-dry-trees-36186/",
+   "preview_url": "https://assets.mixkit.co/videos/36186/36186-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/36186/36186-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 58.3,
+   "sha256": "81aeaccf22bd6d27df89651eb8fe3db2c9e8455ea45e8f26ec78b1d7b61b773c",
+   "phashes": [
+    8102106154367657925,
+    17505552636485445443,
+    18048230894041993763
+   ],
+   "segment": {
+    "start": 54.64,
+    "end": 60.26,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 130.1), movimento 19.49, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 2.738,
+    "clip_sem": 0.0668
+   },
+   "vision": {
+    "sem": 0.0668,
+    "neg": {
+     "people": 0.5809,
+     "city": 0.0293,
+     "indoor": 0.1958,
+     "text": 0.0003,
+     "cgi": 0.1268
+    }
+   },
+   "metrics": {
+    "brightness": 130.1,
+    "cut_ratio": 1.36,
+    "motion": 19.49,
+    "saturation": 45.1,
+    "sharp": 33.5
+   },
+   "alternatives": [
+    "mixkit:29413",
+    "mixkit:25096",
+    "mixkit:49695"
+   ]
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "30342",
+   "title": "beautiful winter mountains landscape at sunrise",
+   "page": "https://mixkit.co/free-stock-video/beautiful-winter-mountains-landscape-at-sunrise-30342/",
+   "preview_url": "https://assets.mixkit.co/videos/30342/30342-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/30342/30342-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    14.0
+   ],
+   "clip_seconds": 29.9,
+   "sha256": "5708c7102c198b0db29e2633e90a077dbf8969b74b1f6b19ce875877f884cec8",
+   "phashes": [
+    17933598461209404476,
+    17933580113107010156,
+    15634493361656741955
+   ],
+   "segment": {
+    "start": 60.26,
+    "end": 66.64,
+    "emotion": "agitacao",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 124.2), movimento 4.15, palavras-chave 3, interpretacao=claude",
+   "scores": {
+    "unary": 2.972,
+    "clip_sem": 0.0464
+   },
+   "vision": {
+    "sem": 0.0464,
+    "neg": {
+     "people": 0.1313,
+     "city": 0.0347,
+     "indoor": 0.5206,
+     "text": 0.0003,
+     "cgi": 0.2667
+    }
+   },
+   "metrics": {
+    "brightness": 124.2,
+    "cut_ratio": 2.44,
+    "motion": 4.15,
+    "saturation": 84.6,
+    "sharp": 9.93
+   },
+   "alternatives": [
+    "mixkit:17825",
+    "mixkit:48483",
+    "mixkit:9972",
+    "mixkit:42490"
+   ]
+  }
+ ],
+ "reservation_state": "reserved",
+ "qa": {
+  "diagnostico": [],
+  "limitacoes_pt": [
+   "sem analise visual multimodal: so metricas objetivas (movimento, brilho, saturacao, nitidez, cortes) + titulo/tags; compreensao do roteiro = plano `visual` escrito pelo Claude",
+   "fonte automatica unica: Mixkit (Coverr bloqueia busca por robots; Pexels exige chave)",
+   "ids legados Coverr/Pexels do E01 sem impressao digital: protegidos so por ID e titulo"
+  ],
+  "roteiro_review": {
+   "status": "APROVADO_AUTOMATICO",
+   "issues": [],
+   "checks": {
+    "cenas": 12,
+    "duracao_estimada_s": 66.6,
+    "palavras": 142,
+    "duracao_final_estimada_s": 67.7,
+    "gancho": "Você cita onde dois ou três como promessa para oração em grupo?",
+    "cautela_presente": true,
+    "referencia": "Mateus 18:15–20",
+    "texto_biblico_verificado": true,
+    "sobreposicao_lexical_biblia": 0.32,
+    "similaridade_E01": 0.04,
+    "similaridade_E02": 0.06,
+    "similaridade_E03": 0.05,
+    "similaridade_E04": 0.07,
+    "similaridade_E05": 0.04,
+    "similaridade_E06": 0.09,
+    "similaridade_E07": 0.11,
+    "similaridade_E08": 0.15
+   }
+  },
+  "vision": "clip-vit-base-patch32 (local, CPU)",
+  "fontes_ativas": [
+   "mixkit",
+   "wikimedia"
+  ],
+  "fontes_com_chave_ausente": [
+   "pexels",
+   "pixabay"
+  ],
+  "clips": 12,
+  "distinct": 12,
+  "sources": [
+   "mixkit"
+  ],
+  "license_all_ok": true,
+  "duracao_total_estimada": 66.64,
+  "aprovacao_estetica_humana": "NAO_VERIFICADA",
+  "manifest_errors": []
+ },
+ "sequence_utility": 34.22,
+ "trace": {
+  "beam": 400,
+  "weights": {
+   "semantic": 1.0,
+   "technical": 0.6,
+   "motion": 0.5,
+   "mood_fit": 0.8,
+   "duration_fit": 0.5,
+   "continuity": 0.7,
+   "variety": 0.9,
+   "clip": 1.2,
+   "originality": 0.3
+  }
+ }
+}
