@@ -69,7 +69,11 @@
      "barbed",
      "car",
      "traffic",
-     "lights"
+     "lights",
+     "drops",
+     "rainwater",
+     "raindrops",
+     "droplets"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -631,7 +635,13 @@
      "barbed",
      "car",
      "traffic",
-     "lights"
+     "lights",
+     "path",
+     "park",
+     "walk",
+     "walking",
+     "trail",
+     "aerial walk"
     ],
     "shot": "paisagem, movimento lento"
    }
