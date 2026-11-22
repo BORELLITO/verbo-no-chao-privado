@@ -610,13 +610,13 @@
     15110513344537410490
    ],
    "reserved_at": "2026-11-22T11:21:12Z",
-   "run_id": "45016035389",
+   "run_id": "45017086120",
    "scene": "S09",
    "sha256": "c57279e4a7e4523ec5473fcc5c020fe71cba2899cc63e8a0c69d2078307406c3",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "sunlight through a tree",
-   "updated_at": "2026-11-22T11:23:06Z"
+   "updated_at": "2026-11-22T11:32:03Z"
   },
   "mixkit:17547": {
    "dur": 11.4,
@@ -768,6 +768,31 @@
    "title": "tower of 100 dollars being burned with a flame",
    "updated_at": "2026-11-21T23:56:43Z"
   },
+  "mixkit:18312": {
+   "dur": 15.0,
+   "episode": "E07",
+   "id": "18312",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/rain-falling-on-the-water-of-a-lake-seen-up-18312/",
+   "phashes": [
+    9259542192362850179,
+    9259546590413570951,
+    9547772499526668163
+   ],
+   "reserved_at": "2026-11-22T11:32:03Z",
+   "run_id": "45017086120",
+   "scene": "S04",
+   "sha256": "5153a6cf1fb720fd2ab4ba0c30657167faf1e6916101d7c0abe4657b488f0cba",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "rain falling on the water of a lake seen up",
+   "updated_at": "2026-11-22T11:32:03Z"
+  },
   "mixkit:1925": {
    "dur": 30.0,
    "episode": "E05",
@@ -892,6 +917,31 @@
    "state": "reserved",
    "title": "raindrops on a clay rooftop",
    "updated_at": "2026-11-21T22:21:36Z"
+  },
+  "mixkit:20749": {
+   "dur": 25.9,
+   "episode": "E07",
+   "id": "20749",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/dark-storm-clouds-and-rain-20749/",
+   "phashes": [
+    8174298176894907252,
+    17361500537238971492,
+    3544809653628060748
+   ],
+   "reserved_at": "2026-11-22T11:32:03Z",
+   "run_id": "45017086120",
+   "scene": "S02",
+   "sha256": "a7e7a4248a69009c898b93d3598465f44454144de763a5d7be691af81ea5008e",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "dark storm clouds and rain",
+   "updated_at": "2026-11-22T11:32:03Z"
   },
   "mixkit:21575": {
    "dur": 12.0,
@@ -1018,6 +1068,31 @@
    "title": "mirror foggy forest",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:26963": {
+   "dur": 15.0,
+   "episode": "E07",
+   "id": "26963",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/going-through-the-clouds-on-a-night-flight-26963/",
+   "phashes": [
+    506134951826988703,
+    506135052742760199,
+    9782878060122900098
+   ],
+   "reserved_at": "2026-11-22T11:32:03Z",
+   "run_id": "45017086120",
+   "scene": "S01",
+   "sha256": "0b3afb933859cd0cfa182beed66bb23d7d8d0147f56e68e5643cc23b4cefe025",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "going through the clouds on a night flight",
+   "updated_at": "2026-11-22T11:32:03Z"
+  },
   "mixkit:26978": {
    "dur": 30.0,
    "episode": "E06",
@@ -1110,13 +1185,13 @@
     17325832224922379992
    ],
    "reserved_at": "2026-11-22T11:21:12Z",
-   "run_id": "45016035389",
+   "run_id": "45017086120",
    "scene": "S11",
    "sha256": "a15495644c37993e8890ebabdfa88248f52d6ca72aea1dfd4be37d79e22d0337",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "meadow grass hills and pine forests",
-   "updated_at": "2026-11-22T11:23:06Z"
+   "updated_at": "2026-11-22T11:32:03Z"
   },
   "mixkit:27378": {
    "dur": 14.2,
@@ -1385,13 +1460,13 @@
     7274708630760650956
    ],
    "reserved_at": "2026-11-22T11:21:12Z",
-   "run_id": "45016035389",
+   "run_id": "45017086120",
    "scene": "S06",
    "sha256": "e7fa1cc23cf3aa9f8f0119e61409b21843e43907c1aed088f2489dc7331b41d1",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "moon in the sky a snowy forest",
-   "updated_at": "2026-11-22T11:23:06Z"
+   "updated_at": "2026-11-22T11:32:03Z"
   },
   "mixkit:3359": {
    "dur": 12.2,
@@ -1410,13 +1485,13 @@
     18446741848728551327
    ],
    "reserved_at": "2026-11-22T11:21:12Z",
-   "run_id": "45016035389",
+   "run_id": "45017086120",
    "scene": "S10",
    "sha256": "8140a3b50cb8c5a76c5a288fa64f176ad1124686494c69787315ab783f1540b6",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "relief on top of a snowy mountain in canada",
-   "updated_at": "2026-11-22T11:23:06Z"
+   "updated_at": "2026-11-22T11:32:03Z"
   },
   "mixkit:34045": {
    "dur": 15.0,
@@ -1518,6 +1593,31 @@
    "title": "landscape with illuminated clouds at night",
    "updated_at": "2026-11-22T00:04:59Z"
   },
+  "mixkit:35013": {
+   "dur": 13.2,
+   "episode": "E07",
+   "id": "35013",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/foggy-autumn-forest-in-the-morning-35013/",
+   "phashes": [
+    12682122519547715487,
+    9186470773586374590,
+    4466989172581666589
+   ],
+   "reserved_at": "2026-11-22T11:32:03Z",
+   "run_id": "45017086120",
+   "scene": "S05",
+   "sha256": "09b8dd38f39ec8dabccf06cfa6ddaa6d419d866f159ef9aff4fab534ef19e7de",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "foggy autumn forest in the morning",
+   "updated_at": "2026-11-22T11:32:03Z"
+  },
   "mixkit:35063": {
    "dur": 30.0,
    "episode": "E05",
@@ -1610,13 +1710,13 @@
     14886915682765693132
    ],
    "reserved_at": "2026-11-22T11:21:12Z",
-   "run_id": "45016035389",
+   "run_id": "45017086120",
    "scene": "S08",
    "sha256": "bbeea652efe28f4a4b68fb59af5dc2e1fd97c15ac0d84c36b0617271b0517e35",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "valley time lapse",
-   "updated_at": "2026-11-22T11:23:06Z"
+   "updated_at": "2026-11-22T11:32:03Z"
   },
   "mixkit:41545": {
    "dur": 23.6,
@@ -1929,13 +2029,13 @@
     16195103519438586080
    ],
    "reserved_at": "2026-11-22T11:21:12Z",
-   "run_id": "45016035389",
+   "run_id": "45017086120",
    "scene": "S07",
    "sha256": "e1981268f63dacb991391dc3c8bc83842b91d2f6feaa7d236961918593415262",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "beautiful sunset on a calm lake",
-   "updated_at": "2026-11-22T11:23:06Z"
+   "updated_at": "2026-11-22T11:32:03Z"
   },
   "mixkit:5044": {
    "dur": 13.2,
@@ -2254,13 +2354,13 @@
     17933439750774317552
    ],
    "reserved_at": "2026-11-22T11:21:12Z",
-   "run_id": "45016035389",
+   "run_id": "45017086120",
    "scene": "S03",
    "sha256": "763c844c77b081ea01c6727f4d07360388c1ff53f44e575057e1cee3762b2d7b",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "sea waves breaking on the rocks front view",
-   "updated_at": "2026-11-22T11:23:06Z"
+   "updated_at": "2026-11-22T11:32:03Z"
   },
   "mixkit:9590": {
    "dur": 20.8,
@@ -2454,13 +2554,13 @@
     10131465796115201774
    ],
    "reserved_at": "2026-11-22T11:21:12Z",
-   "run_id": "45016035389",
+   "run_id": "45017086120",
    "scene": "S12",
    "sha256": "9d06c8c0583f79c868772165d3583d758847cca965e0186d435a8270391799ed",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "flight in the rocky mountains and a valley with a",
-   "updated_at": "2026-11-22T11:23:06Z"
+   "updated_at": "2026-11-22T11:32:03Z"
   }
  },
  "project": "verbo-no-chao",

@@ -4,7 +4,7 @@
  "episode_id": "E07",
  "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
  "engine_version": "vnc-curadoria-2.0",
- "run_id": "45016035389",
+ "run_id": "45017086120",
  "publication_authorized": false,
  "master_approved": false,
  "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
@@ -12,28 +12,28 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "6887",
+   "id": "26963",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/closeup-of-raindrops-falling-from-the-roof-6887/",
+   "page": "https://mixkit.co/free-stock-video/going-through-the-clouds-on-a-night-flight-26963/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 16.0,
-   "note_pt": "clima dark (brilho 42.8), movimento 4.36, palavras-chave 2, interpretacao=claude"
+   "preview_seconds": 15.0,
+   "note_pt": "clima dark (brilho 64.4), movimento 9.94, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S02",
    "source": "mixkit",
-   "id": "18229",
+   "id": "20749",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/dark-clouds-in-the-sky-18229/",
+   "page": "https://mixkit.co/free-stock-video/dark-storm-clouds-and-rain-20749/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 9.7,
-   "note_pt": "clima dark (brilho 26.4), movimento 6.66, palavras-chave 2, interpretacao=claude"
+   "preview_seconds": 25.9,
+   "note_pt": "clima dark (brilho 106.3), movimento 14.26, palavras-chave 4, interpretacao=claude"
   },
   {
    "scene": "S03",
@@ -51,28 +51,28 @@
   {
    "scene": "S04",
    "source": "mixkit",
-   "id": "22730",
+   "id": "18312",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/campfire-burning-wood-logs-in-the-dark-22730/",
+   "page": "https://mixkit.co/free-stock-video/rain-falling-on-the-water-of-a-lake-seen-up-18312/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 10.2,
-   "note_pt": "clima dark (brilho 53.0), movimento 16.84, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 15.0,
+   "note_pt": "clima dark (brilho 105.7), movimento 21.44, palavras-chave 0, interpretacao=claude"
   },
   {
    "scene": "S05",
    "source": "mixkit",
-   "id": "28816",
+   "id": "35013",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/sunrise-in-a-foggy-mountain-28816/",
+   "page": "https://mixkit.co/free-stock-video/foggy-autumn-forest-in-the-morning-35013/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 30.3,
-   "note_pt": "clima mid (brilho 93.0), movimento 6.56, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 13.2,
+   "note_pt": "clima mid (brilho 114.6), movimento 7.79, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S06",

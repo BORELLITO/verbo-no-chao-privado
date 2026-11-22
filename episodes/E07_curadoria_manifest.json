@@ -1,6 +1,6 @@
 {
  "episode": "E07",
- "run_id": "45016035389",
+ "run_id": "45017086120",
  "engine_version": "vnc-curadoria-2.0",
  "dry_run": false,
  "status": "OK",
@@ -48,7 +48,11 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "roof",
+    "window",
+    "house",
+    "rain"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -194,7 +198,16 @@
     "family",
     "party",
     "camp",
-    "fire"
+    "fire",
+    "campfire",
+    "bonfire",
+    "flame",
+    "burning",
+    "logs",
+    "candle",
+    "fireplace",
+    "wood",
+    "relaxing"
    ],
    "allow": [
     "hands"
@@ -211,23 +224,23 @@
    "end": 27.32,
    "duration": 6.77,
    "duration_source": "estimativa_palavras",
-   "meaning": "brotos crescendo no campo",
+   "meaning": "amanhecer brumoso, recomeço paciente",
    "emotion": "construção paciente",
    "mood": "mid",
    "queries": [
+    "foggy sunrise valley",
+    "sunrise fog hills",
+    "misty mountain morning",
     "seedlings growing",
-    "green sprouts soil",
-    "young plants field",
     "fog",
     "mist",
     "foggy-forest",
     "morning-fog"
    ],
    "prefer": [
-    "plants",
-    "growing",
-    "field",
+    "sunrise",
     "fog",
+    "hills",
     "mist",
     "tree"
    ],
@@ -607,11 +620,11 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "6887",
-   "title": "closeup of raindrops falling from the roof",
-   "page": "https://mixkit.co/free-stock-video/closeup-of-raindrops-falling-from-the-roof-6887/",
-   "preview_url": "https://assets.mixkit.co/videos/6887/6887-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/6887/6887-720.mp4",
+   "id": "26963",
+   "title": "going through the clouds on a night flight",
+   "page": "https://mixkit.co/free-stock-video/going-through-the-clouds-on-a-night-flight-26963/",
+   "preview_url": "https://assets.mixkit.co/videos/26963/26963-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/26963/26963-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -619,12 +632,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 16.0,
-   "sha256": "ed99f1550adf41bc1dc1fa807a07c1af2c7ed97c8e520d3f2588b342a7eb4915",
+   "clip_seconds": 15.0,
+   "sha256": "0b3afb933859cd0cfa182beed66bb23d7d8d0147f56e68e5643cc23b4cefe025",
    "phashes": [
-    6223601867034303644,
-    6659958449612790426,
-    14766367410674545330
+    506134951826988703,
+    506135052742760199,
+    9782878060122900098
    ],
    "segment": {
     "start": 0.0,
@@ -632,43 +645,43 @@
     "emotion": "dúvida",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 42.8), movimento 4.36, palavras-chave 2, interpretacao=claude",
+   "justification": "clima dark (brilho 64.4), movimento 9.94, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 3.275,
-    "clip_sem": 0.0008
+    "unary": 2.983,
+    "clip_sem": 0.0006
    },
    "vision": {
-    "sem": 0.0008,
+    "sem": 0.0006,
     "neg": {
-     "people": 0.0766,
-     "city": 0.0056,
-     "indoor": 0.6243,
-     "text": 0.0006,
-     "cgi": 0.2922
+     "people": 0.0849,
+     "city": 0.0059,
+     "indoor": 0.7276,
+     "text": 0.0018,
+     "cgi": 0.1792
     }
    },
    "metrics": {
-    "brightness": 42.8,
-    "cut_ratio": 1.28,
-    "motion": 4.36,
-    "saturation": 109.5,
-    "sharp": 10.23
+    "brightness": 64.4,
+    "cut_ratio": 1.82,
+    "motion": 9.94,
+    "saturation": 109.6,
+    "sharp": 6.64
    },
    "alternatives": [
     "mixkit:48000",
-    "mixkit:26963",
     "mixkit:7098",
-    "mixkit:12025"
+    "mixkit:12025",
+    "mixkit:30586"
    ]
   },
   {
    "scene": "S02",
    "source": "mixkit",
-   "id": "18229",
-   "title": "dark clouds in the sky",
-   "page": "https://mixkit.co/free-stock-video/dark-clouds-in-the-sky-18229/",
-   "preview_url": "https://assets.mixkit.co/videos/18229/18229-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/18229/18229-720.mp4",
+   "id": "20749",
+   "title": "dark storm clouds and rain",
+   "page": "https://mixkit.co/free-stock-video/dark-storm-clouds-and-rain-20749/",
+   "preview_url": "https://assets.mixkit.co/videos/20749/20749-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/20749/20749-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -676,12 +689,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 9.7,
-   "sha256": "c7a6f8d97f8a38f795df89588319f5287ca5b4a3fdce9f8a6a01786b8f87fdb4",
+   "clip_seconds": 25.9,
+   "sha256": "a7e7a4248a69009c898b93d3598465f44454144de763a5d7be691af81ea5008e",
    "phashes": [
-    5513979649058872071,
-    567306089135548199,
-    18181139326561093407
+    8174298176894907252,
+    17361500537238971492,
+    3544809653628060748
    ],
    "segment": {
     "start": 4.85,
@@ -689,30 +702,30 @@
     "emotion": "expectativa",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 26.4), movimento 6.66, palavras-chave 2, interpretacao=claude",
+   "justification": "clima dark (brilho 106.3), movimento 14.26, palavras-chave 4, interpretacao=claude",
    "scores": {
-    "unary": 2.563,
-    "clip_sem": 0.001
+    "unary": 2.579,
+    "clip_sem": 0.0156
    },
    "vision": {
-    "sem": 0.001,
+    "sem": 0.0156,
     "neg": {
-     "people": 0.1414,
-     "city": 0.0036,
-     "indoor": 0.7603,
-     "text": 0.0001,
-     "cgi": 0.0937
+     "people": 0.1425,
+     "city": 0.0312,
+     "indoor": 0.6898,
+     "text": 0.0002,
+     "cgi": 0.1208
     }
    },
    "metrics": {
-    "brightness": 26.4,
-    "cut_ratio": 1.24,
-    "motion": 6.66,
-    "saturation": 185.1,
-    "sharp": 5.16
+    "brightness": 106.3,
+    "cut_ratio": 1.9,
+    "motion": 14.26,
+    "saturation": 32.5,
+    "sharp": 6.48
    },
    "alternatives": [
-    "mixkit:20749",
+    "mixkit:18229",
     "mixkit:20761"
    ]
   },
@@ -773,11 +786,11 @@
   {
    "scene": "S04",
    "source": "mixkit",
-   "id": "22730",
-   "title": "campfire burning wood logs in the dark",
-   "page": "https://mixkit.co/free-stock-video/campfire-burning-wood-logs-in-the-dark-22730/",
-   "preview_url": "https://assets.mixkit.co/videos/22730/22730-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/22730/22730-1080.mp4",
+   "id": "18312",
+   "title": "rain falling on the water of a lake seen up",
+   "page": "https://mixkit.co/free-stock-video/rain-falling-on-the-water-of-a-lake-seen-up-18312/",
+   "preview_url": "https://assets.mixkit.co/videos/18312/18312-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/18312/18312-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -785,12 +798,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 10.2,
-   "sha256": "0428b2d7f3ea99c97f9a7be5effd6dd60f322694dd3850112a7d456f8bf993a3",
+   "clip_seconds": 15.0,
+   "sha256": "5153a6cf1fb720fd2ab4ba0c30657167faf1e6916101d7c0abe4657b488f0cba",
    "phashes": [
-    14325603848465596608,
-    14325639032837554368,
-    14620598385825071296
+    9259542192362850179,
+    9259546590413570951,
+    9547772499526668163
    ],
    "segment": {
     "start": 15.7,
@@ -798,41 +811,40 @@
     "emotion": "exílio",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 53.0), movimento 16.84, palavras-chave 1, interpretacao=claude",
+   "justification": "clima dark (brilho 105.7), movimento 21.44, palavras-chave 0, interpretacao=claude",
    "scores": {
-    "unary": 2.851,
-    "clip_sem": 0.0369
+    "unary": 2.354,
+    "clip_sem": 0.0116
    },
    "vision": {
-    "sem": 0.0369,
+    "sem": 0.0116,
     "neg": {
-     "people": 0.1574,
-     "city": 0.0125,
-     "indoor": 0.6809,
-     "text": 0.0004,
-     "cgi": 0.1119
+     "people": 0.1043,
+     "city": 0.098,
+     "indoor": 0.6061,
+     "text": 0.0005,
+     "cgi": 0.1795
     }
    },
    "metrics": {
-    "brightness": 53.0,
-    "cut_ratio": 1.21,
-    "motion": 16.84,
-    "saturation": 136.7,
-    "sharp": 9.28
+    "brightness": 105.7,
+    "cut_ratio": 1.07,
+    "motion": 21.44,
+    "saturation": 89.8,
+    "sharp": 21.57
    },
    "alternatives": [
-    "mixkit:47818",
-    "mixkit:51633"
+    "mixkit:21612"
    ]
   },
   {
    "scene": "S05",
    "source": "mixkit",
-   "id": "28816",
-   "title": "sunrise in a foggy mountain",
-   "page": "https://mixkit.co/free-stock-video/sunrise-in-a-foggy-mountain-28816/",
-   "preview_url": "https://assets.mixkit.co/videos/28816/28816-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/28816/28816-720.mp4",
+   "id": "35013",
+   "title": "foggy autumn forest in the morning",
+   "page": "https://mixkit.co/free-stock-video/foggy-autumn-forest-in-the-morning-35013/",
+   "preview_url": "https://assets.mixkit.co/videos/35013/35013-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/35013/35013-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -840,12 +852,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 30.3,
-   "sha256": "825b843cd488f7a7192746961eb5e73860328c046973d1442ecbbec6acb37df5",
+   "clip_seconds": 13.2,
+   "sha256": "09b8dd38f39ec8dabccf06cfa6ddaa6d419d866f159ef9aff4fab534ef19e7de",
    "phashes": [
-    18373773475861378679,
-    13617989865704928887,
-    13617937084984992951
+    12682122519547715487,
+    9186470773586374590,
+    4466989172581666589
    ],
    "segment": {
     "start": 20.55,
@@ -853,33 +865,33 @@
     "emotion": "construção paciente",
     "interpretation": "claude"
    },
-   "justification": "clima mid (brilho 93.0), movimento 6.56, palavras-chave 1, interpretacao=claude",
+   "justification": "clima mid (brilho 114.6), movimento 7.79, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 3.153,
-    "clip_sem": 0.0008
+    "unary": 3.352,
+    "clip_sem": 0.0114
    },
    "vision": {
-    "sem": 0.0008,
+    "sem": 0.0114,
     "neg": {
-     "people": 0.0327,
-     "city": 0.0197,
-     "indoor": 0.3535,
-     "text": 0.0043,
-     "cgi": 0.5891
+     "people": 0.0304,
+     "city": 0.0098,
+     "indoor": 0.7983,
+     "text": 0.0001,
+     "cgi": 0.1501
     }
    },
    "metrics": {
-    "brightness": 93.0,
-    "cut_ratio": 1.06,
-    "motion": 6.56,
-    "saturation": 157.5,
-    "sharp": 21.75
+    "brightness": 114.6,
+    "cut_ratio": 1.24,
+    "motion": 7.79,
+    "saturation": 84.8,
+    "sharp": 8.86
    },
    "alternatives": [
-    "mixkit:34856",
+    "mixkit:50871",
     "mixkit:28339",
-    "mixkit:28342",
-    "mixkit:28343"
+    "mixkit:28850",
+    "mixkit:28816"
    ]
   },
   {
@@ -1041,9 +1053,9 @@
    },
    "metrics": {
     "brightness": 102.2,
-    "saturation": 115.4,
-    "motion": 5.07,
     "cut_ratio": 1.4,
+    "motion": 5.07,
+    "saturation": 115.4,
     "sharp": 20.64
    },
    "alternatives": [
@@ -1155,9 +1167,9 @@
    },
    "metrics": {
     "brightness": 113.4,
-    "saturation": 103.8,
-    "motion": 5.32,
     "cut_ratio": 1.02,
+    "motion": 5.32,
+    "saturation": 103.8,
     "sharp": 16.0
    },
    "alternatives": [
@@ -1212,9 +1224,9 @@
    },
    "metrics": {
     "brightness": 127.9,
-    "saturation": 80.9,
-    "motion": 4.56,
     "cut_ratio": 1.04,
+    "motion": 4.56,
+    "saturation": 80.9,
     "sharp": 12.4
    },
    "alternatives": [
@@ -1328,7 +1340,7 @@
   "aprovacao_estetica_humana": "NAO_VERIFICADA",
   "manifest_errors": []
  },
- "sequence_utility": 35.445,
+ "sequence_utility": 35.684,
  "trace": {
   "beam": 400,
   "weights": {
