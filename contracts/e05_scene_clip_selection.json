@@ -4,7 +4,7 @@
  "episode_id": "E05",
  "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
  "engine_version": "vnc-curadoria-2.0",
- "run_id": "44963369129",
+ "run_id": "44964238886",
  "publication_authorized": false,
  "master_approved": false,
  "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
@@ -51,15 +51,15 @@
   {
    "scene": "S04",
    "source": "mixkit",
-   "id": "18303",
+   "id": "5044",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/tower-of-100-dollars-being-burned-with-a-flame-18303/",
+   "page": "https://mixkit.co/free-stock-video/panorama-of-a-village-between-hills-full-of-mist-5044/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 11.7,
-   "note_pt": "clima dark (brilho 87.7), movimento 14.68, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 13.2,
+   "note_pt": "clima dark (brilho 115.7), movimento 0.65, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S05",

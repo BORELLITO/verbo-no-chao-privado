@@ -1,6 +1,6 @@
 {
  "episode": "E05",
- "run_id": "44963369129",
+ "run_id": "44964238886",
  "engine_version": "vnc-curadoria-2.0",
  "dry_run": false,
  "status": "OK",
@@ -540,9 +540,9 @@
    },
    "metrics": {
     "brightness": 85.1,
-    "saturation": 102.2,
-    "motion": 5.39,
     "cut_ratio": 1.31,
+    "motion": 5.39,
+    "saturation": 102.2,
     "sharp": 10.36
    },
    "alternatives": [
@@ -667,11 +667,11 @@
   {
    "scene": "S04",
    "source": "mixkit",
-   "id": "18303",
-   "title": "tower of 100 dollars being burned with a flame",
-   "page": "https://mixkit.co/free-stock-video/tower-of-100-dollars-being-burned-with-a-flame-18303/",
-   "preview_url": "https://assets.mixkit.co/videos/18303/18303-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/18303/18303-1080.mp4",
+   "id": "5044",
+   "title": "panorama of a village between hills full of mist",
+   "page": "https://mixkit.co/free-stock-video/panorama-of-a-village-between-hills-full-of-mist-5044/",
+   "preview_url": "https://assets.mixkit.co/videos/5044/5044-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/5044/5044-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -679,12 +679,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 11.7,
-   "sha256": "a09a3e4097a5954975f7eff7134ea816536b2a755ef16b5058136f7d46261a2c",
+   "clip_seconds": 13.2,
+   "sha256": "af1c57208d93c96c6164e85ce32726ccf91fb14a527578bf371a75736e93d84c",
    "phashes": [
-    16248786625408523035,
-    6213395014871402779,
-    14297061676952295705
+    9259542123273820288,
+    9259542123273787521,
+    9259542121126303745
    ],
    "segment": {
     "start": 17.23,
@@ -692,33 +692,33 @@
     "emotion": "consolo",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 87.7), movimento 14.68, palavras-chave 1, interpretacao=claude",
+   "justification": "clima dark (brilho 115.7), movimento 0.65, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 3.122,
-    "clip_sem": 0.0422
+    "unary": 3.116,
+    "clip_sem": 0.3875
    },
    "vision": {
-    "sem": 0.0422,
+    "sem": 0.3875,
     "neg": {
-     "people": 0.0647,
-     "city": 0.0171,
-     "indoor": 0.6945,
-     "text": 0.0015,
-     "cgi": 0.18
+     "people": 0.0314,
+     "city": 0.0065,
+     "indoor": 0.5478,
+     "text": 0.0001,
+     "cgi": 0.0267
     }
    },
    "metrics": {
-    "brightness": 87.7,
-    "cut_ratio": 1.21,
-    "motion": 14.68,
-    "saturation": 101.4,
-    "sharp": 22.6
+    "brightness": 115.7,
+    "cut_ratio": 0.82,
+    "motion": 0.65,
+    "saturation": 46.6,
+    "sharp": 3.1
    },
    "alternatives": [
-    "mixkit:5044",
     "mixkit:22730",
     "mixkit:2709",
-    "mixkit:567"
+    "mixkit:567",
+    "mixkit:3767"
    ]
   },
   {
@@ -937,9 +937,9 @@
    },
    "metrics": {
     "brightness": 101.9,
-    "saturation": 62.1,
-    "motion": 4.76,
     "cut_ratio": 1.21,
+    "motion": 4.76,
+    "saturation": 62.1,
     "sharp": 23.98
    },
    "alternatives": [
@@ -1051,9 +1051,9 @@
    },
    "metrics": {
     "brightness": 106.1,
-    "saturation": 74.8,
-    "motion": 3.28,
     "cut_ratio": 1.2,
+    "motion": 3.28,
+    "saturation": 74.8,
     "sharp": 28.36
    },
    "alternatives": [
@@ -1224,7 +1224,7 @@
   "aprovacao_estetica_humana": "NAO_VERIFICADA",
   "manifest_errors": []
  },
- "sequence_utility": 37.809,
+ "sequence_utility": 37.628,
  "trace": {
   "beam": 400,
   "weights": {
