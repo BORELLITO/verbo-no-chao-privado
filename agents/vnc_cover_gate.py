@@ -57,7 +57,7 @@ def check(cfg, img, metrics, reg=None, strict=True):
     if img.size != (W, H): errs.append(f"formato {img.size} != {W}x{H}")
     if metrics["y_top"] < SAFE_Y[0] or metrics["y_bottom"] > SAFE_Y[1]: errs.append(f"texto fora da area segura (y {metrics['y_top']:.0f}-{metrics['y_bottom']:.0f}; seguro {SAFE_Y})")
     if max(metrics["widths"]) > 0.88 * W: errs.append(f"linha de texto larga demais ({max(metrics['widths']):.0f}px > {0.88 * W:.0f})")
-    if metrics["kicker"] != f"EPISÓDIO {cfg['number']:02d}": errs.append("kicker nao confere com o numero do episodio")
+    if metrics["kicker"] != f"EPISÓDIO {cfg.get('cover_number', cfg['number']):02d}": errs.append("kicker nao confere com o numero do episodio")
     if metrics["lines"] != 3: errs.append(f"titulo com {metrics['lines']} linhas (exige 3)")
     cw, cg = contrast(WHITE_LUM, metrics["band_lum"]), contrast(GOLD_LUM, metrics["band_lum"])
     if cw < MIN_CONTRAST_WHITE or cg < MIN_CONTRAST_GOLD: errs.append(f"contraste baixo atras do titulo (branco {cw:.1f}, dourado {cg:.1f})")

@@ -26,3 +26,15 @@ class CapaQuadro(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CoverNumber(unittest.TestCase):
+    def test_kicker_usa_cover_number_sem_mudar_number(self):
+        from agents import vnc_cover_gate as CG
+        cfg = {"id": "E05", "number": 5, "cover_number": 3}
+        m = {"y_top": 880, "y_bottom": 1437, "widths": [500], "kicker": "EPISÓDIO 03", "lines": 3, "band_lum": 0.05, "cover_ids": ["1", "2"]}
+        img = Image.new("RGB", (1080, 1920), (20, 20, 20))
+        errs = CG.check(cfg, img, m, reg={"covers": {}}, strict=False)
+        self.assertFalse([e for e in errs if "kicker" in e])
+        m["kicker"] = "EPISÓDIO 05"
+        self.assertTrue([e for e in errs + CG.check(cfg, img, m, reg={"covers": {}}, strict=False) if "kicker" in e])

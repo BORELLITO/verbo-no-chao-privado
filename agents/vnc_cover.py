@@ -11,7 +11,7 @@ import json, os
 CFG = json.loads(Path(f"episodes/{os.environ.get('VNC_EPISODE', 'E01')}.json").read_text(encoding="utf8"))
 TOP, BOT = tuple(CFG["cover"]["top"]), tuple(CFG["cover"]["bottom"])   # tristeza -> luz
 TITLE, REF = CFG["title_lines"], CFG["reference"]
-KICKER = f"EPISÓDIO {CFG['number']:02d}"
+KICKER = f"EPISÓDIO {CFG.get('cover_number', CFG['number']):02d}"   # cover_number = ordem de publicacao mostrada na capa; 'number' interno (final, portoes) nao muda
 
 
 def _selection_clip(cid):
