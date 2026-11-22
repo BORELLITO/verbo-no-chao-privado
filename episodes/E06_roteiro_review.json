@@ -1,0 +1,27 @@
+{
+ "episode": "E06",
+ "status": "APROVADO_AUTOMATICO",
+ "issues": [],
+ "avisos": [],
+ "checks": {
+  "cenas": 12,
+  "duracao_estimada_s": 68.5,
+  "palavras": 147,
+  "duracao_final_estimada_s": 69.8,
+  "gancho": "Você leu o versículo do tudo posso ao contrário?",
+  "cautela_presente": true,
+  "referencia": "Filipenses 4:10–13",
+  "texto_biblico_verificado": true,
+  "sobreposicao_lexical_biblia": 0.21,
+  "similaridade_E01": 0.04,
+  "similaridade_E02": 0.06,
+  "similaridade_E03": 0.08,
+  "similaridade_E04": 0.05,
+  "similaridade_E05": 0.05
+ },
+ "limitacoes": [
+  "validacao AUTOMATICA de regras do canal + vinculo lexical com o texto biblico; NAO e revisao teologica independente",
+  "parafrase fiel exige leitura humana/teologica: o agente so detecta ausencia de vinculo, promessas, tom e repeticao",
+  "voz e publicacao seguem dependendo do pedido/autorizacao do dono"
+ ]
+}

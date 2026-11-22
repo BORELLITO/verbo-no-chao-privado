@@ -1,0 +1,444 @@
+{
+ "episode": "E06",
+ "referencia": "Filipenses 4:10–13",
+ "pesquisado_em": "2026-11-21",
+ "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "posicoes_adotadas": {
+  "autoria": "Roteiro diz 'atribuida a Paulo' (autoria paulina quase unanime; ressalva de tradicao); nao nomeia cidade nem data da prisao (Roma, Cesareia e Efeso sao debatidas).",
+  "destinatario": "Igreja de Filipos, que enviou ajuda a Paulo na prisao (2:25; 4:10-18); aplicacao hoje e apresentada como leitura de contexto e reflexao.",
+  "quadro": "Quadro 'Fora do Contexto': mostra o uso popular do versiculo e o contexto original; nao afirma que a leitura popular seja pecado, nem que a leitura de contexto esgote o sentido.",
+  "limite": "Sem promessa de exito, vitoria ou prosperidade; sem ordenar aguentar situacao de abuso; incentivo implicito a comunidade e ajuda ja presente no texto (ajuda enviada)."
+ },
+ "alegacoes": [
+  {
+   "id": "F00",
+   "cenas": [
+    "S01"
+   ],
+   "tipo": "interpretativa",
+   "texto": "A leitura popular do 'tudo posso' como frase de conquista difere do contexto de Filipenses 4:10-13.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Filipenses 4:13"
+   ],
+   "palavras_chave_no_texto": [
+    "posso"
+   ],
+   "fontes": [
+    {
+     "titulo": "Patheos, Philippians 4:13 in context",
+     "url": "https://www.patheos.com/blogs/livinginthelight/?p=1976",
+     "tipo": "comentario",
+     "nota": "verso aparece em canecas, camisetas, cartoes de formatura; Paulo enfrentou fome, perda e incerteza porque Cristo o sustentava"
+    },
+    {
+     "titulo": "Goodreads (blog), Do You Misuse Philippians 4:13?",
+     "url": "https://www.goodreads.com/author_blog_posts/21435251-do-you-misuse-philippians-4-13",
+     "tipo": "comentario",
+     "nota": "verso visto em canecas, camisetas e quadros de parede; frequentemente tirado do contexto"
+    },
+    {
+     "titulo": "Crossway, What Does Philippians 4:13 Mean?",
+     "url": "https://crossway.org/articles/what-does-philippians-413-mean",
+     "tipo": "comentario",
+     "nota": "verso muito citado e frequentemente mal compreendido e mal aplicado"
+    },
+    {
+     "titulo": "Christian Century, Why I hate the most popular verse on Twitter",
+     "url": "https://www.christiancentury.org/blogs/archive/2015-05/why-i-hate-most-popular-verse-twitter-philippians-413",
+     "tipo": "comentario",
+     "nota": "uso comum como incentivo a conquista e vitoria"
+    }
+   ],
+   "risco": "medio: 'ao contrario' e um gancho retorico; nem todo uso popular e erro e o contexto nao esgota o sentido do verso.",
+   "mitigacao": "O gancho e uma pergunta, nao afirma que o ouvinte errou; S06-S08 mostram o contexto e S08 diz que o verso nao e diminuido."
+  },
+  {
+   "id": "F01",
+   "cenas": [
+    "S02"
+   ],
+   "tipo": "interpretativa",
+   "texto": "O versiculo aparece em camisas, quadros e metas pessoais.",
+   "veredito": "SUPORTADO",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Patheos, Philippians 4:13 in context",
+     "url": "https://www.patheos.com/blogs/livinginthelight/?p=1976",
+     "tipo": "comentario",
+     "nota": "verso aparece em canecas, camisetas, cartoes de formatura; Paulo enfrentou fome, perda e incerteza porque Cristo o sustentava"
+    },
+    {
+     "titulo": "Goodreads (blog), Do You Misuse Philippians 4:13?",
+     "url": "https://www.goodreads.com/author_blog_posts/21435251-do-you-misuse-philippians-4-13",
+     "tipo": "comentario",
+     "nota": "verso visto em canecas, camisetas e quadros de parede; frequentemente tirado do contexto"
+    },
+    {
+     "titulo": "Crosswalk, Context of Philippians 4:13",
+     "url": "https://www.crosswalk.com/11838657/",
+     "tipo": "comentario",
+     "nota": "verso usado por atletas e para metas e sonhos pessoais; contexto e de circunstancias mais duras"
+    }
+   ],
+   "risco": "baixo: varias fontes descrevem o uso em camisetas, quadros de parede e metas e sonhos pessoais.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F02",
+   "cenas": [
+    "S03"
+   ],
+   "tipo": "historica",
+   "texto": "A carta aos Filipenses foi escrita por alguem preso, sem certeza do que viria.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Filipenses 1:7",
+    "Filipenses 1:13"
+   ],
+   "palavras_chave_no_texto": [
+    "prisoes"
+   ],
+   "fontes": [
+    {
+     "titulo": "The Gospel Coalition, Philippians commentary",
+     "url": "https://thegospelcoalition.org/commentary/philippians",
+     "tipo": "comentario",
+     "nota": "escrita da prisao (1:7); autor indiscutivelmente Paulo; risco real de morte, com confianca de libertacao (1:19-26)"
+    },
+    {
+     "titulo": "USCCB, Introduction to Philippians",
+     "url": "https://bible.usccb.org/bible/philippians/0",
+     "tipo": "academico",
+     "nota": "escrita numa prisao (1:7,13,14,17), em perigo de morte (1:20-23); local da prisao e data incertos (Roma, Cesareia, Efeso)"
+    },
+    {
+     "titulo": "Encyclopedia of the Bible, Letter to the Philippians",
+     "url": "https://search.biblegateway.com/resources/encyclopedia-of-the-bible/Letter-Philippians",
+     "tipo": "enciclopedia",
+     "nota": "carta pessoal de Paulo; espera veredito favoravel (1:25; 2:23-24) mas sabia que seria final (1:20-24)"
+    }
+   ],
+   "risco": "medio: o local e a data da prisao sao debatidos; o roteiro nao nomeia cidade nem data.",
+   "mitigacao": "O roteiro diz apenas 'preso' e 'sem certeza do que viria', baseado em 1:19-26 (risco de morte e esperanca de libertacao); nao nomeia cidade nem ano."
+  },
+  {
+   "id": "F03",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "historica",
+   "texto": "A carta, atribuida a Paulo, agradece a ajuda enviada pela igreja a prisao.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Filipenses 4:14",
+    "Filipenses 4:18"
+   ],
+   "palavras_chave_no_texto": [
+    "epafrodito"
+   ],
+   "fontes": [
+    {
+     "titulo": "Faithlife Study Bible, Introduction to Philippians",
+     "url": "https://biblia.com/books/fsb/article/SIDEBAR.INTRODUCTIONTOPHILIPPIANS",
+     "tipo": "comentario",
+     "nota": "filipenses enviaram Epafrodito com ajuda a Paulo na prisao (2:25; 4:18); agradecimento em 4:10-20"
+    },
+    {
+     "titulo": "Zondervan Academic, Why Did the Philippians Send Paul a Gift?",
+     "url": "https://zondervanacademic.com/blog/philippians-gift",
+     "tipo": "academico",
+     "nota": "Paulo agradece o presente da igreja em 4:15-18; Epafrodito entregou e cuidou de Paulo na prisao"
+    },
+    {
+     "titulo": "The Gospel Coalition, Philippians commentary",
+     "url": "https://thegospelcoalition.org/commentary/philippians",
+     "tipo": "comentario",
+     "nota": "escrita da prisao (1:7); autor indiscutivelmente Paulo; risco real de morte, com confianca de libertacao (1:19-26)"
+    }
+   ],
+   "risco": "baixo: autoria paulina e quase unanime ('atribuida' mantem a ressalva de tradicao) e a ajuda via Epafrodito esta em 4:18 e 2:25.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F04",
+   "cenas": [
+    "S05"
+   ],
+   "tipo": "textual",
+   "texto": "No capitulo quatro, pouco antes, o autor conta que aprendeu a viver com fartura e com falta.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Filipenses 4:11",
+    "Filipenses 4:12"
+   ],
+   "palavras_chave_no_texto": [
+    "aprendi",
+    "fartura",
+    "necessidade"
+   ],
+   "fontes": [
+    {
+     "titulo": "Crossway, What Does Philippians 4:13 Mean?",
+     "url": "https://crossway.org/articles/what-does-philippians-413-mean",
+     "tipo": "comentario",
+     "nota": "verso 12 da o contexto; o segredo e contentamento; circunstancias nao determinam o contentamento; verso muito citado e frequentemente mal aplicado"
+    },
+    {
+     "titulo": "ChurchLeaders, Philippians 4:13 Meaning",
+     "url": "https://churchleaders.com/pastors/pastor-articles/341416-viral-verses-read-wrong.html",
+     "tipo": "comentario",
+     "nota": "'todas as coisas' remete a lista do v.12: necessidade, fartura, fome, bem-estar; cobre cela e espera"
+    }
+   ],
+   "risco": "baixo: 4:11-12 traz 'aprendi' e os pares fartura/fome e abundancia/necessidade.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F05",
+   "cenas": [
+    "S06"
+   ],
+   "tipo": "interpretativa",
+   "texto": "O 'tudo posso' aparece no contexto de suportar a fome e a falta.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Filipenses 4:12",
+    "Filipenses 4:13"
+   ],
+   "palavras_chave_no_texto": [
+    "fome",
+    "posso",
+    "cristo"
+   ],
+   "fontes": [
+    {
+     "titulo": "Crossway, What Does Philippians 4:13 Mean?",
+     "url": "https://crossway.org/articles/what-does-philippians-413-mean",
+     "tipo": "comentario",
+     "nota": "verso 12 da o contexto; o segredo e contentamento; circunstancias nao determinam o contentamento; verso muito citado e frequentemente mal aplicado"
+    },
+    {
+     "titulo": "Ligonier, What Does Philippians 4:13 Mean?",
+     "url": "https://learn.ligonier.org/articles/what-does-philippians-4-13-mean",
+     "tipo": "comentario",
+     "nota": "'todas as coisas' e definido pelos extremos de abundancia e necessidade (4:11-12); nao e promessa de alcancar qualquer sonho"
+    },
+    {
+     "titulo": "Reformation Study Bible, Philippians 4:13",
+     "url": "https://www.biblegateway.com/resources/reformation-study-bible/Phil.4.13",
+     "tipo": "comentario",
+     "nota": "Paulo enfrenta todas as circunstancias com contentamento apoiado no poder de Cristo; quer ensinar o mesmo aos leitores"
+    }
+   ],
+   "risco": "medio: ha leitura mais ampla (forca de Cristo tambem para servir e cumprir o chamado), defendida por parte dos comentaristas; o roteiro diz 'o contexto fala de', nao 'so significa'.",
+   "mitigacao": "Redacao 'o contexto fala de suportar a fome e a falta' (nao exclusiva); a S07 usa 'inclui'. O dossie registra a leitura mais ampla (GTY: forca para suportar todo sofrimento por Cristo)."
+  },
+  {
+   "id": "F06",
+   "cenas": [
+    "S07"
+   ],
+   "tipo": "interpretativa",
+   "texto": "O 'tudo' do autor inclui permanecer de pe, mesmo na falta.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Filipenses 4:12",
+    "Filipenses 4:13"
+   ],
+   "palavras_chave_no_texto": [
+    "necessidade",
+    "posso"
+   ],
+   "fontes": [
+    {
+     "titulo": "ChurchLeaders, Philippians 4:13 Meaning",
+     "url": "https://churchleaders.com/pastors/pastor-articles/341416-viral-verses-read-wrong.html",
+     "tipo": "comentario",
+     "nota": "'todas as coisas' remete a lista do v.12: necessidade, fartura, fome, bem-estar; cobre cela e espera"
+    },
+    {
+     "titulo": "Grace to You, Philippians 4:13",
+     "url": "https://gty.org/library/blog/B160219",
+     "tipo": "comentario",
+     "nota": "o verso nao perde relevancia: promessa da forca de Cristo para suportar o sofrimento"
+    },
+    {
+     "titulo": "Patheos, Philippians 4:13 in context",
+     "url": "https://www.patheos.com/blogs/livinginthelight/?p=1976",
+     "tipo": "comentario",
+     "nota": "verso aparece em canecas, camisetas, cartoes de formatura; Paulo enfrentou fome, perda e incerteza porque Cristo o sustentava"
+    }
+   ],
+   "risco": "medio: 'inclui' evita restringir o sentido de 'todas as coisas' apenas a aguentar.",
+   "mitigacao": "Verbo 'inclui' (nao 'e apenas'); a leitura de contentamento e a mais citada por comentaristas (Crossway, Ligonier, ChurchLeaders)."
+  },
+  {
+   "id": "F07",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Ler o versiculo no contexto de aguentar nao o diminui; o torna mais honesto.",
+   "veredito": "SUPORTADO",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Grace to You, Philippians 4:13",
+     "url": "https://gty.org/library/blog/B160219",
+     "tipo": "comentario",
+     "nota": "o verso nao perde relevancia: promessa da forca de Cristo para suportar o sofrimento"
+    },
+    {
+     "titulo": "Patheos, Philippians 4:13 in context",
+     "url": "https://www.patheos.com/blogs/livinginthelight/?p=1976",
+     "tipo": "comentario",
+     "nota": "verso aparece em canecas, camisetas, cartoes de formatura; Paulo enfrentou fome, perda e incerteza porque Cristo o sustentava"
+    }
+   ],
+   "risco": "baixo: afirmacao de reflexao, apoiada na tese de comentaristas de que o verso continua relevante quando lido no contexto.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F08",
+   "cenas": [
+    "S09"
+   ],
+   "tipo": "textual",
+   "texto": "O proprio texto diz de onde vinha a forca: de Cristo.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Filipenses 4:13"
+   ],
+   "palavras_chave_no_texto": [
+    "cristo",
+    "fortalece"
+   ],
+   "fontes": [
+    {
+     "titulo": "Reformation Study Bible, Philippians 4:13",
+     "url": "https://www.biblegateway.com/resources/reformation-study-bible/Phil.4.13",
+     "tipo": "comentario",
+     "nota": "Paulo enfrenta todas as circunstancias com contentamento apoiado no poder de Cristo; quer ensinar o mesmo aos leitores"
+    },
+    {
+     "titulo": "Crossway, What Does Philippians 4:13 Mean?",
+     "url": "https://crossway.org/articles/what-does-philippians-413-mean",
+     "tipo": "comentario",
+     "nota": "verso 12 da o contexto; o segredo e contentamento; circunstancias nao determinam o contentamento; verso muito citado e frequentemente mal aplicado"
+    }
+   ],
+   "risco": "baixo: 4:13 identifica a fonte da forca como Cristo.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F09",
+   "cenas": [
+    "S10"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Ao reler o versiculo, pensar na cela (prisao) e nao no trofeu (conquista).",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Filipenses 1:13"
+   ],
+   "palavras_chave_no_texto": [
+    "prisoes"
+   ],
+   "fontes": [
+    {
+     "titulo": "The Master's Seminary blog, I Can Do All Things",
+     "url": "https://blog.tms.edu/i-can-do-all-things",
+     "tipo": "comentario",
+     "nota": "fora do contexto vira promessa de cheque em branco; no contexto trata de contentamento, nao de metas cumpridas"
+    },
+    {
+     "titulo": "Christian Century, Why I hate the most popular verse on Twitter",
+     "url": "https://www.christiancentury.org/blogs/archive/2015-05/why-i-hate-most-popular-verse-twitter-philippians-413",
+     "tipo": "comentario",
+     "nota": "uso comum como incentivo a conquista e vitoria; virou lema motivacional"
+    }
+   ],
+   "risco": "baixo: contraste entre leitura de conquista (comum) e o contexto de prisao; imagem retorica, sem afirmar que conquistas sejam ma.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F10",
+   "cenas": [
+    "S11",
+    "S12"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Pode haver coisas que nao se vencem esta semana e as vezes so da para aguentar; pergunta final convida a refletir.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Filipenses 4:12"
+   ],
+   "palavras_chave_no_texto": [
+    "necessidade"
+   ],
+   "fontes": [
+    {
+     "titulo": "Crossway, What Does Philippians 4:13 Mean?",
+     "url": "https://crossway.org/articles/what-does-philippians-413-mean",
+     "tipo": "comentario",
+     "nota": "verso 12 da o contexto; o segredo e contentamento; circunstancias nao determinam o contentamento; verso muito citado e frequentemente mal aplicado"
+    },
+    {
+     "titulo": "Grace to You, Philippians 4:13",
+     "url": "https://gty.org/library/blog/B160219",
+     "tipo": "comentario",
+     "nota": "o verso nao perde relevancia: promessa da forca de Cristo para suportar o sofrimento"
+    },
+    {
+     "titulo": "Athletes in Action, Why Philippians 4:13 Doesn't Mean What You Think",
+     "url": "https://athletesinaction.org/?p=3170",
+     "tipo": "comentario",
+     "nota": "verso muito citado por atletas, frequentemente mal compreendido"
+    }
+   ],
+   "risco": "medio: 'aguentar' pode soar como resignacao a injustica ou como desencorajamento; 'sempre' na pergunta final e retorico.",
+   "mitigacao": "Uso de 'talvez' e 'as vezes', sem mandar ninguem permanecer em situacao de abuso ou dispensar ajuda; pergunta final e aberta (A ou B), sem resposta certa imposta."
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "Local e data da prisao de Paulo (Roma, Cesareia ou Efeso) sao debatidos",
+   "decisao": "aceitavel",
+   "justificativa": "O roteiro diz apenas 'alguem preso'; nao nomeia cidade nem ano, entao nao toma partido no debate."
+  },
+  {
+   "item": "Leitura mais ampla de 'todas as coisas': forca de Cristo tambem para servir e cumprir o chamado",
+   "decisao": "ressalvar",
+   "justificativa": "S06 diz 'o contexto fala de' e S07 usa 'inclui', sem afirmar que o verso so trate de aguentar."
+  },
+  {
+   "item": "Risco de ler 'aguentar' como resignacao diante de injustica ou abuso",
+   "decisao": "ressalvar",
+   "justificativa": "S11 usa 'talvez' e 'as vezes' e nao manda permanecer em sofrimento; o episodio nao orienta a evitar ajuda ou mudanca."
+  },
+  {
+   "item": "Autoria paulina e unanime na pesquisa, mas o gate pede ressalva de tradicao",
+   "decisao": "aceitavel",
+   "justificativa": "'Atribuida a Paulo' e verdadeira e suficiente; nao ha debate relevante sobre a autoria de Filipenses."
+  }
+ ],
+ "parecer": "APROVADO",
+ "cenas_hash": {
+  "S01": "c5262e93e9bf602a",
+  "S02": "8e330bc7eafecb00",
+  "S03": "a6b1243c6db2565a",
+  "S04": "c7b6b027a2832fe3",
+  "S05": "13cacc7fe7c090c3",
+  "S06": "e5847284602ca64b",
+  "S07": "94a9b7345324e408",
+  "S08": "91d7d27d49bd3f2a",
+  "S09": "2a44436ffbb72f5d",
+  "S10": "c490e6ada9492e8b",
+  "S11": "6802d454e7053015",
+  "S12": "2b8fc78c9e01f031"
+ }
+}
