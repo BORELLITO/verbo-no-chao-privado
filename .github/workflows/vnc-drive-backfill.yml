@@ -1,0 +1,24 @@
+name: VNC Drive recarga unica (privado)
+# Manual. Rode com --ref <branch de recarga>. Envia backfill/** para o Drive do dono; nao publica nada nas redes.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: vnc-drive
+  cancel-in-progress: false
+jobs:
+  backfill:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq rclone
+      - name: Enviar ao Drive
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+        run: python -m agents.vnc_drive_backfill backfill
