@@ -1,0 +1,24 @@
+name: VNC Testes (suite completa)
+# Roda TODA a suite a cada push que mexe em codigo, testes, contratos ou workflows. Sem segredos, sem rede de provedores, sem gasto.
+on:
+  push:
+    branches: ["main"]
+    paths: ["agents/**", "tests/**", "contracts/**", "episodes/**", ".github/workflows/**", "engine/**"]
+permissions:
+  contents: read
+concurrency:
+  group: vnc-tests
+  cancel-in-progress: true
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check pytest pillow numpy opencv-python-headless "imageio-ffmpeg==0.6.0" pyyaml
+      - run: python -m pytest -q -p no:cacheprovider tests

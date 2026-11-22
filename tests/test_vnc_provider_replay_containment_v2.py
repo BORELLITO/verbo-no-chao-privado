@@ -39,9 +39,17 @@ def on_block(source: str) -> str:
     return m.group(1)
 
 
+def present(name: str) -> bool:
+    return (ROOT / name).is_file()
+
+
+PRESENT_TARGETS = tuple(n for n in TARGETS if present(n))   # no repo privado os 4 foram aposentados (ausentes = fail-closed); se voltarem, passam por todas as checagens abaixo
+ONE_SHOT = ".github/workflows/verbo-no-chao-e01-s01-v2-probe.yml"
+
+
 class VNCProviderReplayContainmentTests(unittest.TestCase):
     def test_workflows_are_scoped_to_vnc_and_cannot_be_manual_replayed(self):
-        for name in TARGETS:
+        for name in PRESENT_TARGETS:
             with self.subTest(workflow=name):
                 text = workflow_text(name)
                 block = on_block(text)
@@ -53,7 +61,7 @@ class VNCProviderReplayContainmentTests(unittest.TestCase):
                 self.assertIn("push:", block)
 
     def test_retired_workflows_are_no_network_zero_gpu_only(self):
-        for name in TARGETS:
+        for name in PRESENT_TARGETS:
             with self.subTest(workflow=name):
                 text = workflow_text(name)
                 self.assertIn("offline-only:", text)
@@ -77,7 +85,7 @@ class VNCProviderReplayContainmentTests(unittest.TestCase):
                     self.assertNotIn(token, body, (name, token))
 
     def test_no_alternate_project_identity_or_release_side_effects(self):
-        for name in TARGETS:
+        for name in PRESENT_TARGETS:
             source = workflow_text(name)
             self.assertTrue(Path(name).name.startswith("verbo-no-chao-"))
             self.assertNotIn("publisher/", source)
@@ -88,7 +96,7 @@ class VNCProviderReplayContainmentTests(unittest.TestCase):
             self.assertNotIn("gh release create", source)
 
     def test_workflow_is_self_limited_without_legacy_provider_trigger(self):
-        for name in TARGETS:
+        for name in PRESENT_TARGETS:
             source = workflow_text(name)
             triggers = on_block(source)
             self.assertIn('"' + name + '"', triggers)
@@ -97,10 +105,10 @@ class VNCProviderReplayContainmentTests(unittest.TestCase):
             self.assertNotIn("agents/e01_ltx23_public_probe.py", triggers)
 
     def test_voice_scripts_never_run_browser_synthesis_in_retired_workflows(self):
-        for name in (
+        for name in (n for n in (
             ".github/workflows/verbo-no-chao-e01-v2-voice.yml",
             ".github/workflows/verbo-no-chao-e01-voice-preview.yml",
-        ):
+        ) if present(n)):
             with self.subTest(workflow=name):
                 content = workflow_text(name)
                 run_lines = "\\n".join(
@@ -124,7 +132,9 @@ class VNCProviderReplayContainmentTests(unittest.TestCase):
 
     def test_current_one_shot_nonce_workflow_is_not_changed_or_reopened(self):
         # This workflow has a separate spent-nonce trigger and was not edited.
-        p = ROOT / ".github/workflows/verbo-no-chao-e01-s01-v2-probe.yml"
+        p = ROOT / ONE_SHOT
+        if not p.is_file():
+            self.skipTest("workflow aposentado e ausente do repo privado (fail-closed)")
         src = p.read_text(encoding="utf-8")
         self.assertIn("nonce", src)
         block = on_block(src)
