@@ -487,5 +487,15 @@
   ],
   "tagline": "…para quem foi escrito?"
  },
- "audio_sha256": "995cf09ffb3cd337fcc6b01a71269d2c319c2be798ebc35e9c36220ba225abaf"
+ "audio_sha256": "995cf09ffb3cd337fcc6b01a71269d2c319c2be798ebc35e9c36220ba225abaf",
+ "cover": {
+  "top": [
+   "9969",
+   5.0
+  ],
+  "bottom": [
+   "9969",
+   5.0
+  ]
+ }
 }
