@@ -518,6 +518,31 @@
    "title": "misty hills and rice fields",
    "updated_at": "2026-11-21T16:13:07Z"
   },
+  "mixkit:12025": {
+   "dur": 17.4,
+   "episode": "E08",
+   "id": "12025",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/timelapse-of-clouds-at-night-12025/",
+   "phashes": [
+    8282243515486521416,
+    3545403945350023752,
+    9693733321306753608
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S01",
+   "sha256": "f13b7cab4f59df785a40e4c9d3dddac31d1804495b0c474aa1df4132c26d3a5f",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "timelapse of clouds at night",
+   "updated_at": "2026-11-22T15:52:29Z"
+  },
   "mixkit:1243": {
    "dur": 13.2,
    "episode": "E04",
@@ -893,6 +918,31 @@
    "title": "dark clouds in the tropics",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:20440": {
+   "dur": 23.6,
+   "episode": "E08",
+   "id": "20440",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/rain-drops-after-a-storm-20440/",
+   "phashes": [
+    17646174781398169526,
+    17646192373584213942,
+    17637167582143559606
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S02",
+   "sha256": "d123f919232e0cf0a48dfea913a16f82ca92037613d02b6538efb5d10b72507b",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "rain drops after a storm",
+   "updated_at": "2026-11-22T15:52:29Z"
+  },
   "mixkit:20487": {
    "dur": 21.9,
    "episode": "E04",
@@ -1242,6 +1292,31 @@
    "state": "reserved",
    "title": "mountain covered by a large forest seen from above",
    "updated_at": "2026-11-22T00:04:59Z"
+  },
+  "mixkit:28339": {
+   "dur": 30.1,
+   "episode": "E08",
+   "id": "28339",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/forest-covered-by-mist-at-sunrise-from-the-heights-28339/",
+   "phashes": [
+    22685280142394504,
+    58716286418814466,
+    22687351943893891
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S06",
+   "sha256": "31c6ea01b497f13c690996df24b1be423bbac72a6eb5910e2743880b2df77df8",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "forest covered by mist at sunrise from the heights",
+   "updated_at": "2026-11-22T15:52:29Z"
   },
   "mixkit:28816": {
    "dur": 30.3,
@@ -1643,6 +1718,31 @@
    "title": "snowy path in a winter mountain",
    "updated_at": "2026-11-22T00:04:59Z"
   },
+  "mixkit:35070": {
+   "dur": 23.7,
+   "episode": "E08",
+   "id": "35070",
+   "interval": [
+    0,
+    10.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sunset-sunlight-glaring-in-a-wintry-forest-35070/",
+   "phashes": [
+    17363901938786691268,
+    17363901938786687168,
+    17652132349297610969
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S07",
+   "sha256": "5047d730bb797126fba39f768a8374c70f863b7b5c730149139bf886ffaf9ce7",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sunset sunlight glaring in a wintry forest",
+   "updated_at": "2026-11-22T15:52:29Z"
+  },
   "mixkit:35513": {
    "dur": 13.2,
    "episode": "E05",
@@ -1693,6 +1793,56 @@
    "title": "sun flare on the top of a foggy winter forest",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:3871": {
+   "dur": 11.6,
+   "episode": "E08",
+   "id": "3871",
+   "interval": [
+    0,
+    8.1
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sunrise-in-the-countryside-aerial-shot-3871/",
+   "phashes": [
+    17361641480726882073,
+    17361641480602021287,
+    17361641481136793965
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S09",
+   "sha256": "55828cccb52d7589aa57ca489192605aa4f6cbb71b9b7482afaa288afe5d0b28",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sunrise in the countryside aerial shot",
+   "updated_at": "2026-11-22T15:52:29Z"
+  },
+  "mixkit:3976": {
+   "dur": 10.3,
+   "episode": "E08",
+   "id": "3976",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sun-seen-through-the-leaves-of-a-tree-3976/",
+   "phashes": [
+    17352600891226599536,
+    17361606166334058544,
+    17361641480599540378
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S05",
+   "sha256": "7a54d328be77b934dafc145c6b21ef7e5190ff1c128c6d2b51db4d10e898665c",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sun seen through the leaves of a tree",
+   "updated_at": "2026-11-22T15:52:29Z"
+  },
   "mixkit:4028": {
    "dur": 16.6,
    "episode": "E07",
@@ -1717,6 +1867,31 @@
    "state": "reserved",
    "title": "valley time lapse",
    "updated_at": "2026-11-22T11:32:03Z"
+  },
+  "mixkit:4107": {
+   "dur": 9.4,
+   "episode": "E08",
+   "id": "4107",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/mayan-ruins-and-the-sky-4107/",
+   "phashes": [
+    36240747427318860,
+    141306786270284,
+    72058163335842892
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S08",
+   "sha256": "ba9f48b6556c79959d87099777c53a0e0a60cbdcd4942855bfed4cfdf4035233",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "mayan ruins and the sky",
+   "updated_at": "2026-11-22T15:52:29Z"
   },
   "mixkit:41545": {
    "dur": 23.6,
@@ -1765,6 +1940,31 @@
    "title": "",
    "updated_at": "2026-11-21T12:33:56Z"
   },
+  "mixkit:41877": {
+   "dur": 15.8,
+   "episode": "E08",
+   "id": "41877",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/aerial-walk-along-a-path-in-a-sunny-park-41877/",
+   "phashes": [
+    18301214281490467082,
+    17613851288847224586,
+    8462378516355992330
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S11",
+   "sha256": "a8c1d58410763829e3a1571ec7c7b0962248592d330619c29f872049aeb7d107",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "aerial walk along a path in a sunny park",
+   "updated_at": "2026-11-22T15:52:29Z"
+  },
   "mixkit:4331": {
    "dur": 14.9,
    "episode": "E01",
@@ -1811,6 +2011,31 @@
    "state": "reserved",
    "title": "landscape of a mountain range",
    "updated_at": "2026-11-22T09:08:57Z"
+  },
+  "mixkit:44372": {
+   "dur": 25.0,
+   "episode": "E08",
+   "id": "44372",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sea-water-texture-waving-44372/",
+   "phashes": [
+    17937942932264448152,
+    7779639656003572617,
+    7388352911388553408
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S03",
+   "sha256": "3179eb810106aed2d9192fdad58fa3896e1e8b62b428efe478d209a10e9e37c2",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sea water texture waving",
+   "updated_at": "2026-11-22T15:52:29Z"
   },
   "mixkit:44392": {
    "dur": 25.7,
@@ -2036,6 +2261,31 @@
    "state": "reserved",
    "title": "beautiful sunset on a calm lake",
    "updated_at": "2026-11-22T11:32:03Z"
+  },
+  "mixkit:49749": {
+   "dur": 14.1,
+   "episode": "E08",
+   "id": "49749",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/slow-aerial-tour-between-two-mountains-in-the-savannah-49749/",
+   "phashes": [
+    9566848556148013594,
+    14042860889018546457,
+    14007183892771249564
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S10",
+   "sha256": "d42c072c1091330436bea11ed973a3fb18a8bcb6eec89b616160553b75fb362a",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "slow aerial tour between two mountains in the savannah",
+   "updated_at": "2026-11-22T15:52:29Z"
   },
   "mixkit:5044": {
    "dur": 13.2,
@@ -2437,6 +2687,31 @@
    "title": "storm clouds moving in the sky",
    "updated_at": "2026-11-22T09:08:57Z"
   },
+  "mixkit:9779": {
+   "dur": 29.5,
+   "episode": "E08",
+   "id": "9779",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/mountains-and-clouds-in-the-sunrise-9779/",
+   "phashes": [
+    16204198743663212792,
+    16204216327260655713,
+    16204216307949039856
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S12",
+   "sha256": "c2843c116924c3af1ff5224e236bec2fa21ecd9365ac1ad8e8276aaee950bc20",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "mountains and clouds in the sunrise",
+   "updated_at": "2026-11-22T15:52:29Z"
+  },
   "mixkit:9810": {
    "dur": 12.4,
    "episode": "E02",
@@ -2486,6 +2761,31 @@
    "state": "reserved",
    "title": "valley in the mountains with a cloudy sky",
    "updated_at": "2026-11-22T00:04:59Z"
+  },
+  "mixkit:9869": {
+   "dur": 10.0,
+   "episode": "E08",
+   "id": "9869",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/gorgeous-forest-and-mountain-and-a-meadow-with-yellow-flowers-9869/",
+   "phashes": [
+    11290221645757664962,
+    11281108966804807618,
+    11299193669230256066
+   ],
+   "reserved_at": "2026-11-22T15:52:29Z",
+   "run_id": "45039831224",
+   "scene": "S04",
+   "sha256": "6baa60c4778dabc4bf0e7a43537ef22d05bc07e5df396c21d2eb7c132ef013dd",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "gorgeous forest and mountain and a meadow with yellow flowers",
+   "updated_at": "2026-11-22T15:52:29Z"
   },
   "mixkit:9917": {
    "dur": 13.4,

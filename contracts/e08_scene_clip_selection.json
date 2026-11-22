@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E08",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "45039831224",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "12025",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/timelapse-of-clouds-at-night-12025/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 17.4,
+   "note_pt": "clima dark (brilho 48.6), movimento 10.74, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "20440",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/rain-drops-after-a-storm-20440/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 23.6,
+   "note_pt": "clima dark (brilho 97.7), movimento 0.8, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "44372",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sea-water-texture-waving-44372/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 25.0,
+   "note_pt": "clima dark (brilho 44.3), movimento 10.05, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "9869",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/gorgeous-forest-and-mountain-and-a-meadow-with-yellow-flowers-9869/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 10.0,
+   "note_pt": "clima mid (brilho 88.2), movimento 1.67, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "3976",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sun-seen-through-the-leaves-of-a-tree-3976/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 10.3,
+   "note_pt": "clima mid (brilho 110.5), movimento 13.78, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "28339",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/forest-covered-by-mist-at-sunrise-from-the-heights-28339/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 30.1,
+   "note_pt": "clima mid (brilho 117.3), movimento 2.19, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "35070",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sunset-sunlight-glaring-in-a-wintry-forest-35070/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 23.7,
+   "note_pt": "clima mid (brilho 120.6), movimento 3.31, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "4107",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/mayan-ruins-and-the-sky-4107/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 9.4,
+   "note_pt": "clima mid (brilho 120.3), movimento 7.48, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "3871",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sunrise-in-the-countryside-aerial-shot-3871/",
+   "interval": [
+    0,
+    8.1
+   ],
+   "preview_seconds": 11.6,
+   "note_pt": "clima mid (brilho 135.4), movimento 3.65, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "49749",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/slow-aerial-tour-between-two-mountains-in-the-savannah-49749/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 14.1,
+   "note_pt": "clima bright (brilho 111.0), movimento 11.33, palavras-chave 0, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "41877",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/aerial-walk-along-a-path-in-a-sunny-park-41877/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 15.8,
+   "note_pt": "clima bright (brilho 118.5), movimento 18.49, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "9779",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/mountains-and-clouds-in-the-sunrise-9779/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 29.5,
+   "note_pt": "clima bright (brilho 113.6), movimento 3.91, palavras-chave 3, interpretacao=claude"
+  }
+ ]
+}
