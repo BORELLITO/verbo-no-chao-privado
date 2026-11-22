@@ -1,0 +1,156 @@
+{
+ "episode": "E09",
+ "video_sha256": "fca14a1b883fd1dddfad177d7fb13bdb6c61a4991747c416f35abff496f7c092",
+ "revisor": "agente-estetico (Claude), quadros reais do mp4 (folha de contato 17 quadros) e capa; audio NAO ouvido, so metricas numericas",
+ "data": "2026-11-22",
+ "cenas": [
+  {
+   "cena": "S01",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens pesadas sobre vale verde com lago: duvida da pergunta de abertura; sem pessoas; legenda laranja/branca legivel"
+  },
+  {
+   "cena": "S02",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens baixas sobre cordilheira escura: tensao do uso comum; sem telhados nem construcoes (clipe 48109 trocou o de vila); legenda legivel"
+  },
+  {
+   "cena": "S03",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "mar verde com ondas: movimento sem pessoas; legenda legivel"
+  },
+  {
+   "cena": "S04",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "cordilheira em luz bege suave e nevoa: contexto maior; sem construcoes"
+  },
+  {
+   "cena": "S05",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "campo aberto com arvore ao fundo e nevoa: irmao que errou, conversa a sos; legivel"
+  },
+  {
+   "cena": "S06",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "mata com nevoa e folhagem: testemunhas; sem pessoas; legenda legivel"
+  },
+  {
+   "cena": "S07",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "copas de floresta com sol: a Lei; luz crescendo no arco"
+  },
+  {
+   "cena": "S08",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "correnteza forte entre rochas escuras: reconciliacao como movimento; forte mas sem pessoas nem marcas"
+  },
+  {
+   "cena": "S09",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "raios de sol entre nuvens ao entardecer: presenca de Jesus; luz em subida"
+  },
+  {
+   "cena": "S10",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "encosta verde iluminada com mata: oracao em grupo preservada; claro e legivel"
+  },
+  {
+   "cena": "S11",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "lago calmo entre capim dourado: ler com calma; luz suave"
+  },
+  {
+   "cena": "S12",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "vale com nevoa e montanhas azuis ao amanhecer, sem neve (clipe 34746); ressalva: cabana minuscula (~15 px) no canto inferior direito, ilegivel como construcao; luz de amanhecer coerente com o arco"
+  }
+ ],
+ "final": {
+  "veredito": "APROVADO",
+  "nota": "final com logo, referencia Mateus 18:15-20 e CTA legiveis; ultimo quadro quase preto; contraste so inspecionado visualmente na folha"
+ },
+ "capa": {
+  "veredito": "APROVADO",
+  "nota": "capa do quadro: DOIS OU / TRES dentro da moldura; kicker FORA DO CONTEXTO EPISODIO 4, frase e referencia legiveis; fundo escuro de mar desfocado"
+ },
+ "ritmo_e_transicoes": {
+  "veredito": "APROVADO",
+  "nota": "12 cenas, 68,83 s; fades suaves; karaoke laranja legivel em todas as cenas da folha. Final omitido pelo ASR ('ou B') agora com tempo MEDIDO na energia do mp3 (agents.vnc_align.refine_trailing: ou 58,68-58,89 s, B. 58,89-59,05 s), sem estimativa"
+ },
+ "audio_voz_e_trilha": {
+  "veredito": "APROVADO_COM_RESSALVA",
+  "nota": "QA por maquina (agents.vnc_audio_qa, rodando dentro do Runflow): mix -17.1 LUFS, true peak -0.9 dB, sem clipping, sem silencio longo, mix 4.3 LU acima da voz sozinha (trilha nao encobre). Content ID: so o YouTube detecta no upload; trilha Mixkit Fhloston Paradise Arrival (id 156) com licenca registrada; risco residual declarado, nao e pendencia do dono"
+ }
+}
