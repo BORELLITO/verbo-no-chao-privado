@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E06",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "44973703440",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "6890",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/forest-under-a-tropical-rain-6890/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 22.1,
+   "note_pt": "clima dark (brilho 108.5), movimento 4.2, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "9624",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-moving-in-the-sky-9624/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 35.0,
+   "note_pt": "clima dark (brilho 113.5), movimento 7.34, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "44400",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/waves-on-the-sand-of-a-sunny-beach-44400/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 20.3,
+   "note_pt": "clima dark (brilho 111.9), movimento 9.52, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "2709",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/closeup-view-of-a-fireplace-2709/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 14.3,
+   "note_pt": "clima dark (brilho 55.7), movimento 16.21, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "50870",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/the-wind-gently-moves-the-forests-lush-vegetation-on-a-50870/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 18.5,
+   "note_pt": "clima mid (brilho 98.4), movimento 3.4, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "34045",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/piano-under-a-tree-with-dry-leaves-falling-34045/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 15.0,
+   "note_pt": "clima mid (brilho 125.8), movimento 6.16, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "4366",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/landscape-of-a-mountain-range-4366/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 12.0,
+   "note_pt": "clima mid (brilho 113.3), movimento 6.97, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "44392",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/flying-low-over-the-sea-of-a-beach-44392/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 25.7,
+   "note_pt": "clima mid (brilho 130.8), movimento 5.55, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "10266",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/twilight-before-sunrise-over-the-clouds-landscape-10266/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 20.0,
+   "note_pt": "clima mid (brilho 131.2), movimento 4.92, palavras-chave 4, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "28915",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/flying-between-mountain-ranges-28915/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 37.1,
+   "note_pt": "clima bright (brilho 130.4), movimento 12.71, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "3319",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/snowy-path-in-the-forest-3319/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 10.7,
+   "note_pt": "clima bright (brilho 126.1), movimento 6.62, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "26978",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/flying-over-the-seashore-over-the-beach-at-sunrise-26978/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 30.0,
+   "note_pt": "clima bright (brilho 114.3), movimento 9.29, palavras-chave 2, interpretacao=claude"
+  }
+ ]
+}

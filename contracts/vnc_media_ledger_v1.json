@@ -418,6 +418,31 @@
    "title": "tree in the mist",
    "updated_at": "2026-11-21T12:33:56Z"
   },
+  "mixkit:10266": {
+   "dur": 20.0,
+   "episode": "E06",
+   "id": "10266",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/twilight-before-sunrise-over-the-clouds-landscape-10266/",
+   "phashes": [
+    8662885955325214980,
+    9803457814047801473,
+    13891055052656009412
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S09",
+   "sha256": "d90ff9e8ff7af0b62fca2b96242f62e50a7aa45a5a6923991606cf4c7663f8e7",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "twilight before sunrise over the clouds landscape",
+   "updated_at": "2026-11-22T02:06:11Z"
+  },
   "mixkit:1082": {
    "dur": 19.9,
    "episode": "E03",
@@ -893,6 +918,56 @@
    "title": "mirror foggy forest",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:26978": {
+   "dur": 30.0,
+   "episode": "E06",
+   "id": "26978",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/flying-over-the-seashore-over-the-beach-at-sunrise-26978/",
+   "phashes": [
+    18446742755135702723,
+    18446742832190430919,
+    18446743797983310236
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S12",
+   "sha256": "863765ee7dfecc62c0d4316ac2601ab5e45311fa44df2937dc13aa1907874686",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "flying over the seashore over the beach at sunrise",
+   "updated_at": "2026-11-22T02:06:11Z"
+  },
+  "mixkit:2709": {
+   "dur": 14.3,
+   "episode": "E06",
+   "id": "2709",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/closeup-view-of-a-fireplace-2709/",
+   "phashes": [
+    1026305367594932298,
+    5491108779826090010,
+    11348040366082569397
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S04",
+   "sha256": "2b97c7342e434c1f307d74495cf400074c6fced7b3e1ff746251918dc8d59093",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "closeup view of a fireplace",
+   "updated_at": "2026-11-22T02:06:11Z"
+  },
   "mixkit:27196": {
    "dur": 30.0,
    "episode": "E02",
@@ -968,6 +1043,31 @@
    "title": "mountain covered by a large forest seen from above",
    "updated_at": "2026-11-22T00:04:59Z"
   },
+  "mixkit:28915": {
+   "dur": 37.1,
+   "episode": "E06",
+   "id": "28915",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/flying-between-mountain-ranges-28915/",
+   "phashes": [
+    16195160745179636163,
+    16195160747395369153,
+    16195160747324246208
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S10",
+   "sha256": "8a027731d83e31c5909781180a414a6b07dfdf63260e83e7ec4179efd8e9ca3c",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "flying between mountain ranges",
+   "updated_at": "2026-11-22T02:06:11Z"
+  },
   "mixkit:30910": {
    "dur": 19.9,
    "episode": "E02",
@@ -1042,6 +1142,56 @@
    "state": "reserved",
    "title": "aerial view of a mountain village by the lake",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:3319": {
+   "dur": 10.7,
+   "episode": "E06",
+   "id": "3319",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/snowy-path-in-the-forest-3319/",
+   "phashes": [
+    17470153412035469760,
+    17542492481016558016,
+    17542492481050112449
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S11",
+   "sha256": "ef945b6c3ee1bf7f69d51f54a251b188dcb9cff67c8cdab7b1a05b4754860b82",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "snowy path in the forest",
+   "updated_at": "2026-11-22T02:06:11Z"
+  },
+  "mixkit:34045": {
+   "dur": 15.0,
+   "episode": "E06",
+   "id": "34045",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/piano-under-a-tree-with-dry-leaves-falling-34045/",
+   "phashes": [
+    4557429776359321471,
+    4557429776283840399,
+    1098665262463256327
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S06",
+   "sha256": "475fb255f969b268019b129d6d2a6f3d1e2862fbe28218fd78e931a1add1b999",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "piano under a tree with dry leaves falling",
+   "updated_at": "2026-11-22T02:06:11Z"
   },
   "mixkit:34783": {
    "dur": 30.0,
@@ -1262,6 +1412,81 @@
    "title": "",
    "updated_at": "2026-11-21T12:33:59Z"
   },
+  "mixkit:4366": {
+   "dur": 12.0,
+   "episode": "E06",
+   "id": "4366",
+   "interval": [
+    0,
+    10.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/landscape-of-a-mountain-range-4366/",
+   "phashes": [
+    1676433708981462574,
+    1083084756571431982,
+    506516080313017390
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S07",
+   "sha256": "92fbab999749536e83386d8167a62c3343064a04d942af64a00bfbb39c000110",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "landscape of a mountain range",
+   "updated_at": "2026-11-22T02:06:11Z"
+  },
+  "mixkit:44392": {
+   "dur": 25.7,
+   "episode": "E06",
+   "id": "44392",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/flying-low-over-the-sea-of-a-beach-44392/",
+   "phashes": [
+    226089411689778951,
+    536837923417300767,
+    536906093138231071
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S08",
+   "sha256": "72ed9727285a8261f810a1a90b665b5ad9c56e4330d3103d74327fc834fc6f82",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "flying low over the sea of a beach",
+   "updated_at": "2026-11-22T02:06:11Z"
+  },
+  "mixkit:44400": {
+   "dur": 20.3,
+   "episode": "E06",
+   "id": "44400",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/waves-on-the-sand-of-a-sunny-beach-44400/",
+   "phashes": [
+    11501327515719141327,
+    14981216450946866971,
+    16695862651594934023
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S03",
+   "sha256": "3685240c70a5c881a9f72c3ed6143e708023c27fe4625e768c5fbd6b11f3acd6",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "waves on the sand of a sunny beach",
+   "updated_at": "2026-11-22T02:06:11Z"
+  },
   "mixkit:45263": {
    "dur": 25.2,
    "episode": "E03",
@@ -1387,6 +1612,31 @@
    "title": "panorama of a village between hills full of mist",
    "updated_at": "2026-11-22T00:04:59Z"
   },
+  "mixkit:50870": {
+   "dur": 18.5,
+   "episode": "E06",
+   "id": "50870",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/the-wind-gently-moves-the-forests-lush-vegetation-on-a-50870/",
+   "phashes": [
+    8667398829555343444,
+    8667397661155942516,
+    8667397661156470868
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S05",
+   "sha256": "652fc6e64db704a937d0f10755027b2d9a5852e9cad7c264e26251cf25d4e58a",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "the wind gently moves the forests lush vegetation on a",
+   "updated_at": "2026-11-22T02:06:11Z"
+  },
   "mixkit:51433": {
    "dur": 11.7,
    "episode": "E03",
@@ -1461,6 +1711,31 @@
    "state": "confirmed",
    "title": "mesmerizing timelapse of clouds moving avobe the forest canopy",
    "updated_at": "2026-11-21T16:13:07Z"
+  },
+  "mixkit:6890": {
+   "dur": 22.1,
+   "episode": "E06",
+   "id": "6890",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/forest-under-a-tropical-rain-6890/",
+   "phashes": [
+    18126643832507511526,
+    8903271795652735718,
+    8907784191373193958
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S01",
+   "sha256": "fba1bb3706bac7e0128faf4cc41f6cf5a32c923d3b5c42537580b6b84fe74c13",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "forest under a tropical rain",
+   "updated_at": "2026-11-22T02:06:11Z"
   },
   "mixkit:7277": {
    "dur": 20.0,
@@ -1586,6 +1861,31 @@
    "state": "reserved",
    "title": "dark storm clouds",
    "updated_at": "2026-11-21T22:21:36Z"
+  },
+  "mixkit:9624": {
+   "dur": 35.0,
+   "episode": "E06",
+   "id": "9624",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-moving-in-the-sky-9624/",
+   "phashes": [
+    16052608841494036928,
+    4004423971563635136,
+    2491249537308299712
+   ],
+   "reserved_at": "2026-11-22T02:06:11Z",
+   "run_id": "44973703440",
+   "scene": "S02",
+   "sha256": "f62c42d59f37c729042b7a36c905fc218c06f7f015326293a959a1fc72c0de6b",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "storm clouds moving in the sky",
+   "updated_at": "2026-11-22T02:06:11Z"
   },
   "mixkit:9810": {
    "dur": 12.4,

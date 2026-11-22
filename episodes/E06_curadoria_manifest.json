@@ -1,0 +1,1242 @@
+{
+ "episode": "E06",
+ "run_id": "44973703440",
+ "engine_version": "vnc-curadoria-2.0",
+ "dry_run": false,
+ "status": "OK",
+ "segments": [
+  {
+   "scene": "S01",
+   "block": "opening",
+   "text": "Você leu o versículo do tudo posso ao contrário?",
+   "start": 0.0,
+   "end": 4.46,
+   "duration": 4.46,
+   "duration_source": "estimativa_palavras",
+   "meaning": "estrada vazia na névoa à noite",
+   "emotion": "medo",
+   "mood": "dark",
+   "queries": [
+    "foggy road night",
+    "empty road fog",
+    "dark road mist",
+    "rain",
+    "raindrops",
+    "rainy-day",
+    "night",
+    "water-drops",
+    "rain-on-window",
+    "dark-clouds"
+   ],
+   "prefer": [
+    "road",
+    "fog",
+    "night",
+    "window",
+    "rain",
+    "drops",
+    "dark"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S02",
+   "block": "connection",
+   "text": "Ele aparece em camisas, quadros e metas pessoais.",
+   "start": 4.46,
+   "end": 8.54,
+   "duration": 4.08,
+   "duration_source": "estimativa_palavras",
+   "meaning": "estrada longa ao entardecer",
+   "emotion": "ambição",
+   "mood": "dark",
+   "queries": [
+    "winding road dusk",
+    "empty highway sunset",
+    "long road clouds",
+    "storm",
+    "thunderstorm",
+    "clouds",
+    "dark-clouds",
+    "stormy-sky"
+   ],
+   "prefer": [
+    "road",
+    "dusk",
+    "clouds",
+    "storm",
+    "dark",
+    "rain"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S03",
+   "block": "connection",
+   "text": "Mas a carta aos Filipenses foi escrita por alguém preso, sem certeza do que viria.",
+   "start": 8.54,
+   "end": 15.31,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "parede de pedra e luz fraca",
+   "emotion": "cárcere",
+   "mood": "dark",
+   "queries": [
+    "stone window light",
+    "old stone wall light",
+    "dark window sunbeam",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "stone",
+    "window",
+    "light",
+    "waves",
+    "stormy",
+    "crashing",
+    "sea"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S04",
+   "block": "connection",
+   "text": "A carta, atribuída a Paulo, agradece a ajuda enviada pela igreja à prisão.",
+   "start": 15.31,
+   "end": 21.31,
+   "duration": 6.0,
+   "duration_source": "estimativa_palavras",
+   "meaning": "mar ao entardecer, distância",
+   "emotion": "ajuda distante",
+   "mood": "dark",
+   "queries": [
+    "ocean horizon dusk",
+    "sea waves evening",
+    "ocean clouds evening",
+    "candle",
+    "candles",
+    "fire",
+    "fireplace",
+    "flame",
+    "campfire",
+    "bonfire",
+    "lantern"
+   ],
+   "prefer": [
+    "ocean",
+    "horizon",
+    "dusk",
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S05",
+   "block": "biblical_reference",
+   "text": "No capítulo quatro, pouco antes, o autor conta que aprendeu a viver com fartura e com falta.",
+   "start": 21.31,
+   "end": 28.85,
+   "duration": 7.54,
+   "duration_source": "estimativa_palavras",
+   "meaning": "campo de trigo ao vento",
+   "emotion": "fartura e falta",
+   "mood": "mid",
+   "queries": [
+    "wheat field wind",
+    "golden field breeze",
+    "dry grass field",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "morning-fog"
+   ],
+   "prefer": [
+    "field",
+    "wheat",
+    "wind",
+    "fog",
+    "mist",
+    "tree"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S06",
+   "block": "biblical_reference",
+   "text": "Aí vem o tudo posso. O contexto fala de suportar a fome e a falta.",
+   "start": 28.85,
+   "end": 35.62,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "terra seca e rachada",
+   "emotion": "falta",
+   "mood": "mid",
+   "queries": [
+    "dry cracked earth",
+    "drought soil",
+    "dry land",
+    "forest",
+    "trees",
+    "fog"
+   ],
+   "prefer": [
+    "dry",
+    "earth",
+    "cracked",
+    "forest",
+    "mist",
+    "fog"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S07",
+   "block": "biblical_reference",
+   "text": "O tudo dele inclui permanecer de pé, mesmo na falta.",
+   "start": 35.62,
+   "end": 40.47,
+   "duration": 4.85,
+   "duration_source": "estimativa_palavras",
+   "meaning": "árvore sozinha firme no vento",
+   "emotion": "firmeza",
+   "mood": "mid",
+   "queries": [
+    "lone tree wind",
+    "single tree hill",
+    "tree field storm",
+    "mountains",
+    "mountain",
+    "hills"
+   ],
+   "prefer": [
+    "tree",
+    "lone",
+    "wind",
+    "mountain",
+    "cliff",
+    "peak"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 10.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S08",
+   "block": "reflection",
+   "text": "Isso não diminui o versículo. Deixa ele mais honesto.",
+   "start": 40.47,
+   "end": 44.93,
+   "duration": 4.46,
+   "duration_source": "estimativa_palavras",
+   "meaning": "luz suave sobre colinas",
+   "emotion": "honestidade",
+   "mood": "mid",
+   "queries": [
+    "hills soft light",
+    "misty hills sunrise",
+    "hills morning haze",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "prefer": [
+    "hills",
+    "light",
+    "mist",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S09",
+   "block": "reflection",
+   "text": "O próprio texto diz de onde vinha a força: de Cristo.",
+   "start": 44.93,
+   "end": 50.16,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "luz rompendo nuvens",
+   "emotion": "fonte da força",
+   "mood": "mid",
+   "queries": [
+    "clouds breaking light",
+    "sun rays clouds",
+    "light through clouds",
+    "sunrise",
+    "sunset",
+    "sun",
+    "dawn",
+    "sunlight",
+    "sunbeams",
+    "mountains",
+    "mountain",
+    "hills",
+    "trail"
+   ],
+   "prefer": [
+    "light",
+    "clouds",
+    "rays",
+    "sunrise",
+    "sunlight",
+    "sun",
+    "dawn",
+    "mountain",
+    "trail",
+    "peak"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S10",
+   "block": "application",
+   "text": "Da próxima vez que ler, pense na cela, não no troféu.",
+   "start": 50.16,
+   "end": 55.39,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "trilha na montanha ao sol",
+   "emotion": "perspectiva",
+   "mood": "bright",
+   "queries": [
+    "mountain trail sunlight",
+    "mountain path sun",
+    "hiking trail ridge",
+    "hands",
+    "hand",
+    "praying",
+    "holding"
+   ],
+   "prefer": [
+    "mountain",
+    "trail",
+    "sun",
+    "hands",
+    "holding",
+    "hand",
+    "glass",
+    "water"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S11",
+   "block": "application",
+   "text": "Há coisas que você talvez não vença esta semana. Às vezes, só dá para aguentar.",
+   "start": 55.39,
+   "end": 62.16,
+   "duration": 6.77,
+   "duration_source": "estimativa_palavras",
+   "meaning": "rio calmo pela manhã",
+   "emotion": "aguentar",
+   "mood": "bright",
+   "queries": [
+    "calm river morning",
+    "river mist sunrise",
+    "still river dawn",
+    "trail",
+    "path",
+    "hills",
+    "road",
+    "meadow",
+    "field",
+    "nature",
+    "countryside"
+   ],
+   "prefer": [
+    "river",
+    "calm",
+    "morning",
+    "trail",
+    "path",
+    "hills"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S12",
+   "block": "conclusion",
+   "text": "Para você, esse versículo sempre foi sobre vencer ou aguentar? Responda A ou B.",
+   "start": 62.16,
+   "end": 68.54,
+   "duration": 6.38,
+   "duration_source": "estimativa_palavras",
+   "meaning": "sol nascendo no horizonte",
+   "emotion": "pergunta aberta",
+   "mood": "bright",
+   "queries": [
+    "sunrise horizon",
+    "golden sunrise clouds",
+    "sunrise sea",
+    "lake",
+    "valley",
+    "river",
+    "mountain-lake",
+    "lagoon",
+    "reflection",
+    "waves",
+    "sea",
+    "ocean"
+   ],
+   "prefer": [
+    "sunrise",
+    "horizon",
+    "golden",
+    "lake",
+    "mountain",
+    "valley",
+    "waves",
+    "stormy",
+    "sea"
+   ],
+   "avoid": [
+    "people",
+    "city",
+    "indoor"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 14.0,
+   "interpretation": "claude"
+  }
+ ],
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "6890",
+   "title": "forest under a tropical rain",
+   "page": "https://mixkit.co/free-stock-video/forest-under-a-tropical-rain-6890/",
+   "preview_url": "https://assets.mixkit.co/videos/6890/6890-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/6890/6890-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 22.1,
+   "sha256": "fba1bb3706bac7e0128faf4cc41f6cf5a32c923d3b5c42537580b6b84fe74c13",
+   "phashes": [
+    18126643832507511526,
+    8903271795652735718,
+    8907784191373193958
+   ],
+   "segment": {
+    "start": 0.0,
+    "end": 4.46,
+    "emotion": "medo",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 108.5), movimento 4.2, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.58,
+    "clip_sem": 0.2583
+   },
+   "vision": {
+    "sem": 0.2583,
+    "neg": {
+     "people": 0.0671,
+     "city": 0.0694,
+     "indoor": 0.3102,
+     "text": 0.0015,
+     "cgi": 0.2935
+    }
+   },
+   "metrics": {
+    "brightness": 108.5,
+    "cut_ratio": 1.18,
+    "motion": 4.2,
+    "saturation": 78.2,
+    "sharp": 13.61
+   },
+   "alternatives": [
+    "mixkit:6782",
+    "mixkit:2716",
+    "mixkit:6887",
+    "mixkit:7098"
+   ]
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "9624",
+   "title": "storm clouds moving in the sky",
+   "page": "https://mixkit.co/free-stock-video/storm-clouds-moving-in-the-sky-9624/",
+   "preview_url": "https://assets.mixkit.co/videos/9624/9624-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/9624/9624-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 35.0,
+   "sha256": "f62c42d59f37c729042b7a36c905fc218c06f7f015326293a959a1fc72c0de6b",
+   "phashes": [
+    16052608841494036928,
+    4004423971563635136,
+    2491249537308299712
+   ],
+   "segment": {
+    "start": 4.46,
+    "end": 8.54,
+    "emotion": "ambição",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 113.5), movimento 7.34, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.147,
+    "clip_sem": 0.0076
+   },
+   "vision": {
+    "sem": 0.0076,
+    "neg": {
+     "people": 0.1568,
+     "city": 0.199,
+     "indoor": 0.2774,
+     "text": 0.0001,
+     "cgi": 0.3591
+    }
+   },
+   "metrics": {
+    "brightness": 113.5,
+    "cut_ratio": 1.12,
+    "motion": 7.34,
+    "saturation": 21.1,
+    "sharp": 15.51
+   },
+   "alternatives": [
+    "mixkit:20749",
+    "mixkit:18229",
+    "mixkit:20761"
+   ]
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "44400",
+   "title": "waves on the sand of a sunny beach",
+   "page": "https://mixkit.co/free-stock-video/waves-on-the-sand-of-a-sunny-beach-44400/",
+   "preview_url": "https://assets.mixkit.co/videos/44400/44400-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/44400/44400-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 20.3,
+   "sha256": "3685240c70a5c881a9f72c3ed6143e708023c27fe4625e768c5fbd6b11f3acd6",
+   "phashes": [
+    11501327515719141327,
+    14981216450946866971,
+    16695862651594934023
+   ],
+   "segment": {
+    "start": 8.54,
+    "end": 15.31,
+    "emotion": "cárcere",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 111.9), movimento 9.52, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.126,
+    "clip_sem": 0.1039
+   },
+   "vision": {
+    "sem": 0.1039,
+    "neg": {
+     "people": 0.2134,
+     "city": 0.0827,
+     "indoor": 0.5717,
+     "text": 0.0007,
+     "cgi": 0.0275
+    }
+   },
+   "metrics": {
+    "brightness": 111.9,
+    "cut_ratio": 1.51,
+    "motion": 9.52,
+    "saturation": 28.3,
+    "sharp": 9.77
+   },
+   "alternatives": [
+    "mixkit:9294",
+    "mixkit:7194"
+   ]
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "2709",
+   "title": "closeup view of a fireplace",
+   "page": "https://mixkit.co/free-stock-video/closeup-view-of-a-fireplace-2709/",
+   "preview_url": "https://assets.mixkit.co/videos/2709/2709-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/2709/2709-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 14.3,
+   "sha256": "2b97c7342e434c1f307d74495cf400074c6fced7b3e1ff746251918dc8d59093",
+   "phashes": [
+    1026305367594932298,
+    5491108779826090010,
+    11348040366082569397
+   ],
+   "segment": {
+    "start": 15.31,
+    "end": 21.31,
+    "emotion": "ajuda distante",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 55.7), movimento 16.21, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 2.807,
+    "clip_sem": 0.0089
+   },
+   "vision": {
+    "sem": 0.0089,
+    "neg": {
+     "people": 0.2215,
+     "city": 0.0242,
+     "indoor": 0.5922,
+     "text": 0.0011,
+     "cgi": 0.152
+    }
+   },
+   "metrics": {
+    "brightness": 55.7,
+    "cut_ratio": 1.17,
+    "motion": 16.21,
+    "saturation": 109.5,
+    "sharp": 19.01
+   },
+   "alternatives": [
+    "mixkit:22730",
+    "mixkit:567"
+   ]
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "50870",
+   "title": "the wind gently moves the forests lush vegetation on a",
+   "page": "https://mixkit.co/free-stock-video/the-wind-gently-moves-the-forests-lush-vegetation-on-a-50870/",
+   "preview_url": "https://assets.mixkit.co/videos/50870/50870-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/50870/50870-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 18.5,
+   "sha256": "652fc6e64db704a937d0f10755027b2d9a5852e9cad7c264e26251cf25d4e58a",
+   "phashes": [
+    8667398829555343444,
+    8667397661155942516,
+    8667397661156470868
+   ],
+   "segment": {
+    "start": 21.31,
+    "end": 28.85,
+    "emotion": "fartura e falta",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 98.4), movimento 3.4, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.53,
+    "clip_sem": 0.0059
+   },
+   "vision": {
+    "sem": 0.0059,
+    "neg": {
+     "people": 0.1342,
+     "city": 0.0304,
+     "indoor": 0.2875,
+     "text": 0.0046,
+     "cgi": 0.5374
+    }
+   },
+   "metrics": {
+    "brightness": 98.4,
+    "cut_ratio": 1.27,
+    "motion": 3.4,
+    "saturation": 54.4,
+    "sharp": 35.49
+   },
+   "alternatives": [
+    "mixkit:7860",
+    "mixkit:28816",
+    "mixkit:47816",
+    "mixkit:28342"
+   ]
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "34045",
+   "title": "piano under a tree with dry leaves falling",
+   "page": "https://mixkit.co/free-stock-video/piano-under-a-tree-with-dry-leaves-falling-34045/",
+   "preview_url": "https://assets.mixkit.co/videos/34045/34045-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/34045/34045-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 15.0,
+   "sha256": "475fb255f969b268019b129d6d2a6f3d1e2862fbe28218fd78e931a1add1b999",
+   "phashes": [
+    4557429776359321471,
+    4557429776283840399,
+    1098665262463256327
+   ],
+   "segment": {
+    "start": 28.85,
+    "end": 35.62,
+    "emotion": "falta",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 125.8), movimento 6.16, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.525,
+    "clip_sem": 0.0027
+   },
+   "vision": {
+    "sem": 0.0027,
+    "neg": {
+     "people": 0.1271,
+     "city": 0.0176,
+     "indoor": 0.6538,
+     "text": 0.0017,
+     "cgi": 0.1971
+    }
+   },
+   "metrics": {
+    "brightness": 125.8,
+    "saturation": 71.5,
+    "motion": 6.16,
+    "cut_ratio": 1.14,
+    "sharp": 13.15
+   },
+   "alternatives": [
+    "mixkit:2213",
+    "mixkit:3350",
+    "mixkit:50867",
+    "mixkit:34856"
+   ]
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "4366",
+   "title": "landscape of a mountain range",
+   "page": "https://mixkit.co/free-stock-video/landscape-of-a-mountain-range-4366/",
+   "preview_url": "https://assets.mixkit.co/videos/4366/4366-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/4366/4366-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    10.0
+   ],
+   "clip_seconds": 12.0,
+   "sha256": "92fbab999749536e83386d8167a62c3343064a04d942af64a00bfbb39c000110",
+   "phashes": [
+    1676433708981462574,
+    1083084756571431982,
+    506516080313017390
+   ],
+   "segment": {
+    "start": 35.62,
+    "end": 40.47,
+    "emotion": "firmeza",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 113.3), movimento 6.97, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.257,
+    "clip_sem": 0.002
+   },
+   "vision": {
+    "sem": 0.002,
+    "neg": {
+     "people": 0.2015,
+     "city": 0.0435,
+     "indoor": 0.627,
+     "text": 0.0004,
+     "cgi": 0.1257
+    }
+   },
+   "metrics": {
+    "brightness": 113.3,
+    "cut_ratio": 1.74,
+    "motion": 6.97,
+    "saturation": 62.6,
+    "sharp": 16.76
+   },
+   "alternatives": [
+    "mixkit:3378",
+    "mixkit:4695",
+    "mixkit:3384",
+    "mixkit:51689"
+   ]
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "44392",
+   "title": "flying low over the sea of a beach",
+   "page": "https://mixkit.co/free-stock-video/flying-low-over-the-sea-of-a-beach-44392/",
+   "preview_url": "https://assets.mixkit.co/videos/44392/44392-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/44392/44392-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 25.7,
+   "sha256": "72ed9727285a8261f810a1a90b665b5ad9c56e4330d3103d74327fc834fc6f82",
+   "phashes": [
+    226089411689778951,
+    536837923417300767,
+    536906093138231071
+   ],
+   "segment": {
+    "start": 40.47,
+    "end": 44.93,
+    "emotion": "honestidade",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 130.8), movimento 5.55, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.505,
+    "clip_sem": 0.182
+   },
+   "vision": {
+    "sem": 0.182,
+    "neg": {
+     "people": 0.4029,
+     "city": 0.0051,
+     "indoor": 0.3215,
+     "text": 0.0021,
+     "cgi": 0.0864
+    }
+   },
+   "metrics": {
+    "brightness": 130.8,
+    "cut_ratio": 1.67,
+    "motion": 5.55,
+    "saturation": 62.6,
+    "sharp": 9.19
+   },
+   "alternatives": [
+    "mixkit:1704",
+    "mixkit:3350",
+    "mixkit:4368",
+    "mixkit:4303"
+   ]
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "10266",
+   "title": "twilight before sunrise over the clouds landscape",
+   "page": "https://mixkit.co/free-stock-video/twilight-before-sunrise-over-the-clouds-landscape-10266/",
+   "preview_url": "https://assets.mixkit.co/videos/10266/10266-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/10266/10266-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 20.0,
+   "sha256": "d90ff9e8ff7af0b62fca2b96242f62e50a7aa45a5a6923991606cf4c7663f8e7",
+   "phashes": [
+    8662885955325214980,
+    9803457814047801473,
+    13891055052656009412
+   ],
+   "segment": {
+    "start": 44.93,
+    "end": 50.16,
+    "emotion": "fonte da força",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 131.2), movimento 4.92, palavras-chave 4, interpretacao=claude",
+   "scores": {
+    "unary": 2.928,
+    "clip_sem": 0.0031
+   },
+   "vision": {
+    "sem": 0.0031,
+    "neg": {
+     "people": 0.1102,
+     "city": 0.0211,
+     "indoor": 0.6648,
+     "text": 0.0002,
+     "cgi": 0.2008
+    }
+   },
+   "metrics": {
+    "brightness": 131.2,
+    "cut_ratio": 0.94,
+    "motion": 4.92,
+    "saturation": 50.1,
+    "sharp": 7.41
+   },
+   "alternatives": [
+    "mixkit:16399",
+    "mixkit:30976",
+    "mixkit:27028",
+    "mixkit:13001"
+   ]
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "28915",
+   "title": "flying between mountain ranges",
+   "page": "https://mixkit.co/free-stock-video/flying-between-mountain-ranges-28915/",
+   "preview_url": "https://assets.mixkit.co/videos/28915/28915-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/28915/28915-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 37.1,
+   "sha256": "8a027731d83e31c5909781180a414a6b07dfdf63260e83e7ec4179efd8e9ca3c",
+   "phashes": [
+    16195160745179636163,
+    16195160747395369153,
+    16195160747324246208
+   ],
+   "segment": {
+    "start": 50.16,
+    "end": 55.39,
+    "emotion": "perspectiva",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 130.4), movimento 12.71, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.316,
+    "clip_sem": 0.3236
+   },
+   "vision": {
+    "sem": 0.3236,
+    "neg": {
+     "people": 0.1659,
+     "city": 0.0433,
+     "indoor": 0.32,
+     "text": 0.0002,
+     "cgi": 0.1471
+    }
+   },
+   "metrics": {
+    "brightness": 130.4,
+    "saturation": 49.1,
+    "motion": 12.71,
+    "cut_ratio": 1.05,
+    "sharp": 21.84
+   },
+   "alternatives": [
+    "mixkit:9969",
+    "mixkit:5009",
+    "mixkit:48483",
+    "mixkit:50198"
+   ]
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "3319",
+   "title": "snowy path in the forest",
+   "page": "https://mixkit.co/free-stock-video/snowy-path-in-the-forest-3319/",
+   "preview_url": "https://assets.mixkit.co/videos/3319/3319-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/3319/3319-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    8.0
+   ],
+   "clip_seconds": 10.7,
+   "sha256": "ef945b6c3ee1bf7f69d51f54a251b188dcb9cff67c8cdab7b1a05b4754860b82",
+   "phashes": [
+    17470153412035469760,
+    17542492481016558016,
+    17542492481050112449
+   ],
+   "segment": {
+    "start": 55.39,
+    "end": 62.16,
+    "emotion": "aguentar",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 126.1), movimento 6.62, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 3.405,
+    "clip_sem": 0.0179
+   },
+   "vision": {
+    "sem": 0.0179,
+    "neg": {
+     "people": 0.2034,
+     "city": 0.0088,
+     "indoor": 0.3003,
+     "text": 0.0004,
+     "cgi": 0.4691
+    }
+   },
+   "metrics": {
+    "brightness": 126.1,
+    "cut_ratio": 1.25,
+    "motion": 6.62,
+    "saturation": 31.2,
+    "sharp": 27.76
+   },
+   "alternatives": [
+    "mixkit:51451",
+    "mixkit:41877",
+    "mixkit:29413",
+    "mixkit:36186"
+   ]
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "26978",
+   "title": "flying over the seashore over the beach at sunrise",
+   "page": "https://mixkit.co/free-stock-video/flying-over-the-seashore-over-the-beach-at-sunrise-26978/",
+   "preview_url": "https://assets.mixkit.co/videos/26978/26978-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/26978/26978-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    14.0
+   ],
+   "clip_seconds": 30.0,
+   "sha256": "863765ee7dfecc62c0d4316ac2601ab5e45311fa44df2937dc13aa1907874686",
+   "phashes": [
+    18446742755135702723,
+    18446742832190430919,
+    18446743797983310236
+   ],
+   "segment": {
+    "start": 62.16,
+    "end": 68.54,
+    "emotion": "pergunta aberta",
+    "interpretation": "claude"
+   },
+   "justification": "clima bright (brilho 114.3), movimento 9.29, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 3.084,
+    "clip_sem": 0.052
+   },
+   "vision": {
+    "sem": 0.052,
+    "neg": {
+     "people": 0.2076,
+     "city": 0.0782,
+     "indoor": 0.6047,
+     "text": 0.0009,
+     "cgi": 0.0566
+    }
+   },
+   "metrics": {
+    "brightness": 114.3,
+    "cut_ratio": 1.16,
+    "motion": 9.29,
+    "saturation": 67.1,
+    "sharp": 11.5
+   },
+   "alternatives": [
+    "mixkit:9968",
+    "mixkit:9969",
+    "mixkit:31746",
+    "mixkit:20297"
+   ]
+  }
+ ],
+ "reservation_state": "reserved",
+ "qa": {
+  "diagnostico": [],
+  "limitacoes_pt": [
+   "sem analise visual multimodal: so metricas objetivas (movimento, brilho, saturacao, nitidez, cortes) + titulo/tags; compreensao do roteiro = plano `visual` escrito pelo Claude",
+   "fonte automatica unica: Mixkit (Coverr bloqueia busca por robots; Pexels exige chave)",
+   "ids legados Coverr/Pexels do E01 sem impressao digital: protegidos so por ID e titulo"
+  ],
+  "roteiro_review": {
+   "status": "APROVADO_AUTOMATICO",
+   "issues": [],
+   "checks": {
+    "cenas": 12,
+    "duracao_estimada_s": 68.5,
+    "palavras": 147,
+    "duracao_final_estimada_s": 69.8,
+    "gancho": "Você leu o versículo do tudo posso ao contrário?",
+    "cautela_presente": true,
+    "referencia": "Filipenses 4:10–13",
+    "texto_biblico_verificado": true,
+    "sobreposicao_lexical_biblia": 0.21,
+    "similaridade_E01": 0.04,
+    "similaridade_E02": 0.06,
+    "similaridade_E03": 0.08,
+    "similaridade_E04": 0.05,
+    "similaridade_E05": 0.05
+   }
+  },
+  "vision": "clip-vit-base-patch32 (local, CPU)",
+  "fontes_ativas": [
+   "mixkit",
+   "wikimedia"
+  ],
+  "fontes_com_chave_ausente": [
+   "pexels",
+   "pixabay"
+  ],
+  "clips": 12,
+  "distinct": 12,
+  "sources": [
+   "mixkit"
+  ],
+  "license_all_ok": true,
+  "duracao_total_estimada": 68.54,
+  "aprovacao_estetica_humana": "NAO_VERIFICADA",
+  "manifest_errors": []
+ },
+ "sequence_utility": 37.682,
+ "trace": {
+  "beam": 400,
+  "weights": {
+   "semantic": 1.0,
+   "technical": 0.6,
+   "motion": 0.5,
+   "mood_fit": 0.8,
+   "duration_fit": 0.5,
+   "continuity": 0.7,
+   "variety": 0.9,
+   "clip": 1.2,
+   "originality": 0.3
+  }
+ }
+}

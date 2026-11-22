@@ -500,6 +500,83 @@
     }
    ],
    "discarded_versions": {}
+  },
+  "E06": {
+   "used": [
+    {
+     "source": "mixkit",
+     "id": "6890",
+     "scene": "S01",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "9624",
+     "scene": "S02",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "44400",
+     "scene": "S03",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "2709",
+     "scene": "S04",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "50870",
+     "scene": "S05",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "34045",
+     "scene": "S06",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "4366",
+     "scene": "S07",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "44392",
+     "scene": "S08",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "10266",
+     "scene": "S09",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "28915",
+     "scene": "S10",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "3319",
+     "scene": "S11",
+     "version": "v1"
+    },
+    {
+     "source": "mixkit",
+     "id": "26978",
+     "scene": "S12",
+     "version": "v1"
+    }
+   ],
+   "discarded_versions": {}
   }
  },
  "music_used": [
