@@ -87,28 +87,30 @@
    "block": "connection",
    "text": "Mas a carta aos Filipenses foi escrita por alguém preso, sem certeza do que viria.",
    "visual": {
-    "meaning": "parede de pedra antiga com luz fraca",
-    "meaning_en": "old stone wall dim light",
+    "meaning": "rochas e penhasco escuros, isolamento",
+    "meaning_en": "dark rocky cliff isolation",
     "emotion": "cárcere",
     "mood": "dark",
     "queries": [
-     "old stone wall",
-     "stone wall shadow",
-     "castle wall light",
-     "rock cave light"
+     "dark rocky cliff",
+     "rocks dark water",
+     "mountain fog dark",
+     "cliff storm clouds",
+     "dark forest fog"
     ],
     "prefer": [
-     "stone",
-     "wall",
-     "rock"
+     "rock",
+     "cliff",
+     "dark",
+     "fog"
     ],
     "avoid": [
      "people",
      "city",
      "beach",
      "wave",
-     "sea",
-     "fire"
+     "fire",
+     "indoor"
     ],
     "shot": "paisagem, movimento lento"
    }
