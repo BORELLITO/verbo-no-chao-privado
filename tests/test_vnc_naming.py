@@ -6,7 +6,10 @@ class Numeracao(unittest.TestCase):
     def test_registro_confere_com_episodios(self):
         self.assertEqual(N.check(), [])
     def test_quadros_numerados_do_1_ao_n(self):
-        self.assertEqual(N.next_number("DORES"), 6); self.assertEqual(N.next_number("FORA"), 3)
+        for q in ("DORES", "FORA"):
+            nums = sorted(e["numero"] for e in N.load()["episodios"] if e["quadro"] == q)
+            self.assertEqual(nums, list(range(1, len(nums) + 1)))
+            self.assertEqual(N.next_number(q), len(nums) + 1)
     def test_nomes_oficiais(self):
         self.assertEqual(N.label("E05"), "QUADRO - DORES DA VIDA · EPISÓDIO 3 — MEDO E UMA MÃO FIRME")
         self.assertEqual(N.label("E07"), "QUADRO - FORA DO CONTEXTO · EPISÓDIO 2 — PLANO DE PAZ")
