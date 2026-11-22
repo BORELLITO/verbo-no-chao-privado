@@ -87,24 +87,28 @@
    "block": "connection",
    "text": "Mas a carta aos Filipenses foi escrita por alguém preso, sem certeza do que viria.",
    "visual": {
-    "meaning": "parede de pedra e luz fraca",
-    "meaning_en": "old stone wall dim light window",
+    "meaning": "parede de pedra antiga com luz fraca",
+    "meaning_en": "old stone wall dim light",
     "emotion": "cárcere",
     "mood": "dark",
     "queries": [
-     "stone window light",
-     "old stone wall light",
-     "dark window sunbeam"
+     "old stone wall",
+     "stone wall shadow",
+     "castle wall light",
+     "rock cave light"
     ],
     "prefer": [
      "stone",
-     "window",
-     "light"
+     "wall",
+     "rock"
     ],
     "avoid": [
      "people",
      "city",
-     "indoor"
+     "beach",
+     "wave",
+     "sea",
+     "fire"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -114,24 +118,30 @@
    "block": "connection",
    "text": "A carta, atribuída a Paulo, agradece a ajuda enviada pela igreja à prisão.",
    "visual": {
-    "meaning": "mar ao entardecer, distância",
-    "meaning_en": "ocean horizon dusk",
+    "meaning": "mar escuro ao entardecer, horizonte distante",
+    "meaning_en": "dark sea horizon dusk",
     "emotion": "ajuda distante",
     "mood": "dark",
     "queries": [
-     "ocean horizon dusk",
-     "sea waves evening",
-     "ocean clouds evening"
+     "sea horizon dusk",
+     "ocean sunset clouds",
+     "sea evening gray",
+     "ocean twilight"
     ],
     "prefer": [
-     "ocean",
+     "sea",
      "horizon",
      "dusk"
     ],
     "avoid": [
      "people",
      "city",
-     "indoor"
+     "fire",
+     "flame",
+     "candle",
+     "fireplace",
+     "bonfire",
+     "beach"
     ],
     "shot": "paisagem, movimento lento"
    }
@@ -168,24 +178,29 @@
    "block": "biblical_reference",
    "text": "Aí vem o tudo posso. O contexto fala de suportar a fome e a falta.",
    "visual": {
-    "meaning": "terra seca e rachada",
-    "meaning_en": "dry cracked earth",
+    "meaning": "terra seca e rachada, deserto",
+    "meaning_en": "dry cracked earth desert",
     "emotion": "falta",
     "mood": "mid",
     "queries": [
-     "dry cracked earth",
+     "cracked dry earth",
      "drought soil",
-     "dry land"
+     "desert sand wind",
+     "arid land"
     ],
     "prefer": [
      "dry",
-     "earth",
-     "cracked"
+     "desert",
+     "earth"
     ],
     "avoid": [
      "people",
      "city",
-     "indoor"
+     "piano",
+     "autumn",
+     "leaves",
+     "tree",
+     "garden"
     ],
     "shot": "paisagem, movimento lento"
    }
