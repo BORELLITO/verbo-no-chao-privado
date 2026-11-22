@@ -631,6 +631,16 @@
    "license": "Mixkit Music Free License",
    "content_id_checked": false,
    "rule_pt": "não repetir a mesma trilha em outro episódio"
+  },
+  {
+   "episode": "E06",
+   "title": "Free Relaxation 07 Stock Music",
+   "provider": "mixkit",
+   "mixkit_id": "760",
+   "page": "https://mixkit.co/free-stock-music/relaxation-07/",
+   "license": "Mixkit Music Free License",
+   "content_id_checked": false,
+   "rule_pt": "não repetir a mesma trilha em outro episódio"
   }
  ]
 }
