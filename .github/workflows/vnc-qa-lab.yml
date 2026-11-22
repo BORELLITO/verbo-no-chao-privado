@@ -1,0 +1,43 @@
+name: VNC Laboratorio de QA (somente leitura)
+# Entrada: run/qa.json {"task":"vision_calibrate|audio_audit","nonce":"x"}. Mede e imprime; NAO escreve no repo, NAO publica, NAO gasta.
+on:
+  push:
+    branches: ["main"]
+    paths: ["run/qa.json"]
+permissions:
+  contents: read
+concurrency:
+  group: vnc-qa-lab
+  cancel-in-progress: false
+jobs:
+  lab:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: cfg
+        run: echo "task=$(python -c "import json;print(json.load(open('run/qa.json'))['task'])")" >> "$GITHUB_OUTPUT"
+      - name: Visao (CLIP, CPU) - calibrar limiares
+        if: steps.cfg.outputs.task == 'vision_calibrate'
+        run: |
+          python -m pip install --disable-pip-version-check numpy pillow "imageio-ffmpeg==0.6.0"
+          python -m pip install --disable-pip-version-check torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install --disable-pip-version-check transformers
+          python -m agents.vnc_qa_lab vision_calibrate
+      - name: Branch de backfill (videos finais)
+        if: steps.cfg.outputs.task == 'audio_audit'
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: vnc/backfill-drive-20261122
+          path: bf
+          persist-credentials: false
+      - name: Auditoria de audio E01..E08
+        if: steps.cfg.outputs.task == 'audio_audit'
+        run: |
+          python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0"
+          python -m agents.vnc_qa_lab audio_audit bf
