@@ -1,0 +1,477 @@
+{
+ "_instrucoes": "Roteiro E08 (quadro Fora do Contexto, episódio 3) escrito pelo Claude em 2026-11-22 (formato E). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Episodio novo; nao altera E01-E07.",
+ "id": "E08",
+ "number": 8,
+ "title_lines": [
+  "Fora do",
+  "contexto:",
+  "não julgueis"
+ ],
+ "reference": "Mateus 7:1–5",
+ "timing": "whisper",
+ "audio_link_file": "run/audio_link_E08.txt",
+ "music_page": "https://mixkit.co/free-stock-music/piano-reflections/",
+ "cta": [
+  "Curta, compartilhe\\Ne inscreva-se no canal",
+  "E você, já se sentiu assim?\\NConte nos comentários."
+ ],
+ "selection": "contracts/e08_scene_clip_selection.json",
+ "scenes": [
+  {
+   "id": "S01",
+   "block": "opening",
+   "text": "Você acha que Jesus proibiu qualquer correção ao dizer: não julgueis?",
+   "visual": {
+    "meaning": "céu escuro e incerto",
+    "meaning_en": "dark stormy sky",
+    "emotion": "dúvida",
+    "mood": "dark",
+    "queries": [
+     "dark stormy sky",
+     "night clouds",
+     "foggy forest night"
+    ],
+    "prefer": [
+     "dark",
+     "clouds",
+     "night"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire",
+     "rain"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S02",
+   "block": "connection",
+   "text": "Muita gente usa essa frase quando alguém é corrigido.",
+   "visual": {
+    "meaning": "manhã cinzenta e brumosa",
+    "meaning_en": "gray foggy morning",
+    "emotion": "tensão",
+    "mood": "dark",
+    "queries": [
+     "foggy morning hills",
+     "gray mist valley",
+     "misty forest morning"
+    ],
+    "prefer": [
+     "fog",
+     "mist",
+     "gray"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S03",
+   "block": "connection",
+   "text": "Muitos entendem que ela proíbe qualquer avaliação sobre o que é certo ou errado.",
+   "visual": {
+    "meaning": "estrada reta no campo",
+    "meaning_en": "empty road field",
+    "emotion": "rigidez",
+    "mood": "dark",
+    "queries": [
+     "empty road field",
+     "long road evening",
+     "road through field dusk"
+    ],
+    "prefer": [
+     "road",
+     "field",
+     "dusk"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S04",
+   "block": "connection",
+   "text": "Mas a frase está no Sermão do Monte, e o contexto muda a leitura.",
+   "visual": {
+    "meaning": "encosta de monte verde",
+    "meaning_en": "green mountain slope",
+    "emotion": "contexto",
+    "mood": "mid",
+    "queries": [
+     "green mountain slope",
+     "hillside clouds",
+     "mountain meadow clouds"
+    ],
+    "prefer": [
+     "mountain",
+     "hillside",
+     "green"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S05",
+   "block": "biblical_reference",
+   "text": "No capítulo sete de Mateus, Jesus fala do argueiro no olho do irmão.",
+   "visual": {
+    "meaning": "galho fino com folhas",
+    "meaning_en": "small branch leaves",
+    "emotion": "detalhe",
+    "mood": "mid",
+    "queries": [
+     "tree branch leaves wind",
+     "leaves close up wind",
+     "small branch forest"
+    ],
+    "prefer": [
+     "branch",
+     "leaves",
+     "wind"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S06",
+   "block": "biblical_reference",
+   "text": "E mostra uma trave no olho de quem aponta o erro.",
+   "visual": {
+    "meaning": "tronco grande de árvore",
+    "meaning_en": "large tree trunk",
+    "emotion": "peso",
+    "mood": "mid",
+    "queries": [
+     "large tree trunk forest",
+     "old tree forest",
+     "fallen tree trunk forest"
+    ],
+    "prefer": [
+     "tree",
+     "trunk",
+     "forest"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S07",
+   "block": "biblical_reference",
+   "text": "Ele manda tirar a trave primeiro, para então ver bem e ajudar o irmão.",
+   "visual": {
+    "meaning": "luz atravessando a floresta",
+    "meaning_en": "sunlight through forest",
+    "emotion": "clareza",
+    "mood": "mid",
+    "queries": [
+     "sunlight through forest",
+     "sun rays forest",
+     "forest light trees"
+    ],
+    "prefer": [
+     "sunlight",
+     "forest",
+     "rays"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S08",
+   "block": "reflection",
+   "text": "O alerta é contra o juízo hipócrita e condenador.",
+   "visual": {
+    "meaning": "nuvens carregadas passando",
+    "meaning_en": "heavy clouds moving",
+    "emotion": "severidade",
+    "mood": "mid",
+    "queries": [
+     "clouds moving timelapse",
+     "dark clouds sky timelapse",
+     "sky timelapse clouds"
+    ],
+    "prefer": [
+     "clouds",
+     "timelapse",
+     "sky"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S09",
+   "block": "reflection",
+   "text": "Tanto que, no mesmo capítulo, Jesus manda se guardar dos falsos profetas e reconhecê-los pelos frutos.",
+   "visual": {
+    "meaning": "pomar de árvores",
+    "meaning_en": "orchard trees",
+    "emotion": "discernimento",
+    "mood": "mid",
+    "queries": [
+     "orchard trees",
+     "apple orchard",
+     "fruit trees field"
+    ],
+    "prefer": [
+     "orchard",
+     "trees",
+     "fruit"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S10",
+   "block": "application",
+   "text": "Então corrigir com humildade nem sempre é o mesmo que condenar.",
+   "visual": {
+    "meaning": "vale com luz do sol",
+    "meaning_en": "sunlight valley",
+    "emotion": "humildade",
+    "mood": "bright",
+    "queries": [
+     "sunlight valley",
+     "mountains sunlight",
+     "sun over hills"
+    ],
+    "prefer": [
+     "sunlight",
+     "valley",
+     "hills"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S11",
+   "block": "application",
+   "text": "Antes de apontar o erro do outro, vale examinar o próprio coração.",
+   "visual": {
+    "meaning": "lago calmo refletindo",
+    "meaning_en": "calm lake reflection",
+    "emotion": "exame",
+    "mood": "bright",
+    "queries": [
+     "calm lake reflection",
+     "still water hills",
+     "lake morning calm"
+    ],
+    "prefer": [
+     "lake",
+     "calm",
+     "reflection"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  },
+  {
+   "id": "S12",
+   "block": "conclusion",
+   "text": "Para você, esse versículo sempre foi um escudo ou um espelho? Responda A ou B.",
+   "visual": {
+    "meaning": "amanhecer sobre montanhas",
+    "meaning_en": "sunrise over mountains",
+    "emotion": "esperança",
+    "mood": "bright",
+    "queries": [
+     "sunrise over mountains",
+     "golden hour mountains",
+     "sun rays mountains"
+    ],
+    "prefer": [
+     "sunrise",
+     "mountains",
+     "golden"
+    ],
+    "avoid": [
+     "people",
+     "city",
+     "indoor",
+     "friend",
+     "friends",
+     "group",
+     "young",
+     "couple",
+     "family",
+     "party",
+     "camp",
+     "fire"
+    ],
+    "shot": "paisagem, movimento lento"
+   }
+  }
+ ],
+ "posting": {
+  "hook": "Você acha que Jesus proibiu qualquer correção ao dizer: não julgueis?",
+  "resumo": "Fora do Contexto, episódio 3: Mateus 7 não proíbe toda correção. Jesus condena o juízo hipócrita, pede que se tire a trave primeiro e manda reconhecer pelos frutos.",
+  "pergunta": "Para você, esse versículo sempre foi um escudo ou um espelho? Responda A ou B nos comentários.",
+  "hashtags": [
+   "#fé",
+   "#palavradedeus",
+   "#mateus",
+   "#foradocontexto",
+   "#reflexão"
+  ],
+  "titulo_curto": "Fora do Contexto, ep. 3: não julgueis"
+ },
+ "karaoke_color": "&H0066B3FF",
+ "cover_style": "quadro",
+ "cover_quadro": {
+  "kicker": "FORA DO CONTEXTO · EPISÓDIO 3",
+  "big": [
+   "NÃO",
+   "JULGUEIS"
+  ],
+  "tagline": "…isso proíbe corrigir?"
+ }
+}

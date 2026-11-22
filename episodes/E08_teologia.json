@@ -1,0 +1,436 @@
+{
+ "episode": "E08",
+ "referencia": "Mateus 7:1–5",
+ "pesquisado_em": "2026-11-22",
+ "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "posicoes_adotadas": {
+  "autoria": "Roteiro diz 'Jesus' falando no Sermão do Monte; sem nomear o evangelista.",
+  "quadro": "Quadro 'Fora do Contexto': mostra o uso popular e o contexto original; não diz que quem usa a frase peca nem que corrigir seja sempre obrigatório.",
+  "limite": "Sem promessa de êxito, cura ou prosperidade; não afirma que toda correção seja bem-vinda; não dá método de correção fraterna."
+ },
+ "alegacoes": [
+  {
+   "id": "F00",
+   "cenas": [
+    "S01"
+   ],
+   "tipo": "interpretativa",
+   "texto": "A frase 'Não julgueis' é muitas vezes lida como proibição de qualquer correção; o contexto mostra que o alvo é o juízo hipócrita.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 7:1"
+   ],
+   "palavras_chave_no_texto": [
+    "julgueis"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word, Matthew 7",
+     "url": "https://enduringword.com/?p=787",
+     "tipo": "comentario",
+     "nota": "Jesus não proíbe todo juízo, só o injusto, hipócrita ou cego a si mesmo"
+    },
+    {
+     "titulo": "Christ-Centered Exposition, To Judge or Not to Judge",
+     "url": "https://www.biblestudytools.com/commentaries/christ-centered-exposition/sermonmount/to-judge-or-not-to-judge-an160important-question.html",
+     "tipo": "comentario",
+     "nota": "julgar sem examinar a si mesmo é hipócrita; discernir é bíblico"
+    }
+   ],
+   "risco": "medio: o gancho é uma pergunta e há leitores que veem proibição ampla.",
+   "mitigacao": "S01 pergunta em vez de acusar; S08 a S11 mantêm o alerta contra o juízo hipócrita e a humildade."
+  },
+  {
+   "id": "F01",
+   "cenas": [
+    "S02"
+   ],
+   "tipo": "aplicacao",
+   "texto": "A frase é usada com frequência quando alguém é corrigido.",
+   "veredito": "SUPORTADO",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Servants of Grace, Judge Not or Judge Rightly",
+     "url": "https://servantsofgrace.org/judge-not-or-judge-rightly-matthew-7/",
+     "tipo": "comentario",
+     "nota": "autora admite usar a frase como resposta pronta a correções"
+    },
+    {
+     "titulo": "Covenant Presbyterian, Specks, Logs, and Good Judgment",
+     "url": "https://s3.amazonaws.com/cov-pres.org/wp-content/uploads/2025/08/01153020/13-Specks-Logs-and-Good-Judgment-Matthew-7_1-6.pdf",
+     "tipo": "comentario",
+     "nota": "distingue discernimento de hipocrisia usada como martelo"
+    }
+   ],
+   "risco": "baixo: observação de uso comum, sem número nem acusação.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F02",
+   "cenas": [
+    "S03"
+   ],
+   "tipo": "interpretativa",
+   "texto": "Há quem leia a frase como proibição de toda avaliação sobre certo e errado.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 7:1"
+   ],
+   "palavras_chave_no_texto": [
+    "julgueis"
+   ],
+   "fontes": [
+    {
+     "titulo": "Servants of Grace, Judge Not or Judge Rightly",
+     "url": "https://servantsofgrace.org/judge-not-or-judge-rightly-matthew-7/",
+     "tipo": "comentario",
+     "nota": "trata a frase como mal usada fora do contexto"
+    },
+    {
+     "titulo": "Enduring Word, Matthew 7",
+     "url": "https://enduringword.com/?p=787",
+     "tipo": "comentario",
+     "nota": "descreve a leitura de que todo juízo é proibido como equívoco"
+    }
+   ],
+   "risco": "baixo: descreve uma leitura popular sem atribuí-la a um grupo.",
+   "mitigacao": "S03 diz 'muitos entendem', sem generalizar a todos."
+  },
+  {
+   "id": "F03",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "historica",
+   "texto": "Mateus 7 pertence ao Sermão do Monte (Mt 5 a 7), e o contexto muda a leitura.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 7:1"
+   ],
+   "palavras_chave_no_texto": [
+    "julgueis"
+   ],
+   "fontes": [
+    {
+     "titulo": "BibleHub, Matthew 7 (Sermao do Monte)",
+     "url": "https://biblehub.com/study/chapters/matthew/7.htm",
+     "tipo": "enciclopedia",
+     "nota": "Mt 7 conclui o Sermão do Monte (Mt 5 a 7)"
+    },
+    {
+     "titulo": "IVP New Testament Commentary, Appropriate Judgment (Mt 7)",
+     "url": "https://beta.biblegateway.com/resources/ivp-nt/Appropriate-Judgment",
+     "tipo": "comentario",
+     "nota": "7:1-5 inserido na seção de ética do Reino e de juízo apropriado"
+    }
+   ],
+   "risco": "baixo: estrutura do evangelho amplamente aceita.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F04",
+   "cenas": [
+    "S05"
+   ],
+   "tipo": "textual",
+   "texto": "No capítulo 7 de Mateus, Jesus fala do argueiro no olho do irmão.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 7:3"
+   ],
+   "palavras_chave_no_texto": [
+    "argueiro",
+    "irmão"
+   ],
+   "fontes": [
+    {
+     "titulo": "IVP New Testament Commentary, Appropriate Judgment (Mt 7)",
+     "url": "https://beta.biblegateway.com/resources/ivp-nt/Appropriate-Judgment",
+     "tipo": "comentario",
+     "nota": "7:3-5: cegamos a nós mesmos ao racionalizar a culpa"
+    },
+    {
+     "titulo": "Theology of Work, Mt 7:1-5",
+     "url": "https://www.biblegateway.com/resources/theology-of-work/do-not-judge-so-that-you-may-not-be-judged-matthew-7-1-5",
+     "tipo": "comentario",
+     "nota": "Jesus chama ao realismo sobre si mesmo antes de julgar o outro"
+    }
+   ],
+   "risco": "baixo: texto direto de Mt 7:3.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F05",
+   "cenas": [
+    "S06"
+   ],
+   "tipo": "textual",
+   "texto": "Jesus mostra uma trave no olho de quem aponta o erro.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 7:3",
+    "Mateus 7:4"
+   ],
+   "palavras_chave_no_texto": [
+    "trave"
+   ],
+   "fontes": [
+    {
+     "titulo": "Christ-Centered Exposition, To Judge or Not to Judge",
+     "url": "https://www.biblestudytools.com/commentaries/christ-centered-exposition/sermonmount/to-judge-or-not-to-judge-an160important-question.html",
+     "tipo": "comentario",
+     "nota": "a trave ilustra o orgulho de quem julga sem se examinar"
+    },
+    {
+     "titulo": "Theology of Work, Mt 7:1-5",
+     "url": "https://www.biblegateway.com/resources/theology-of-work/do-not-judge-so-that-you-may-not-be-judged-matthew-7-1-5",
+     "tipo": "comentario",
+     "nota": "a imagem expõe a incoerência de quem julga o outro"
+    }
+   ],
+   "risco": "baixo: texto direto de Mt 7:3-4.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F06",
+   "cenas": [
+    "S07"
+   ],
+   "tipo": "textual",
+   "texto": "Jesus manda tirar primeiro a trave para então ver bem e tirar o argueiro do irmão.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 7:5"
+   ],
+   "palavras_chave_no_texto": [
+    "trave",
+    "argueiro",
+    "irmão"
+   ],
+   "fontes": [
+    {
+     "titulo": "Christ-Centered Exposition, To Judge or Not to Judge",
+     "url": "https://www.biblestudytools.com/commentaries/christ-centered-exposition/sermonmount/to-judge-or-not-to-judge-an160important-question.html",
+     "tipo": "comentario",
+     "nota": "a ordem de 7:5 é corrigir a si mesmo para depois ajudar o outro"
+    },
+    {
+     "titulo": "Covenant Presbyterian, Specks, Logs, and Good Judgment",
+     "url": "https://s3.amazonaws.com/cov-pres.org/wp-content/uploads/2025/08/01153020/13-Specks-Logs-and-Good-Judgment-Matthew-7_1-6.pdf",
+     "tipo": "comentario",
+     "nota": "amor e discernimento caminham juntos; hipocrisia é o problema"
+    }
+   ],
+   "risco": "baixo: Mt 7:5 diz que então se verá bem para tirar o argueiro do irmão.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F07",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "interpretativa",
+   "texto": "O alerta de Mt 7:1-5 é contra o juízo hipócrita e condenador, não contra toda correção.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 7:5"
+   ],
+   "palavras_chave_no_texto": [
+    "hipócrita"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word, Matthew 7",
+     "url": "https://enduringword.com/?p=787",
+     "tipo": "comentario",
+     "nota": "Jesus condena o juízo injusto, hipócrita ou cego a si mesmo"
+    },
+    {
+     "titulo": "Christ-Centered Exposition, To Judge or Not to Judge",
+     "url": "https://www.biblestudytools.com/commentaries/christ-centered-exposition/sermonmount/to-judge-or-not-to-judge-an160important-question.html",
+     "tipo": "comentario",
+     "nota": "julgar sem se corrigir é hipócrita, mas julgar com discernimento é sábio"
+    },
+    {
+     "titulo": "Covenant Presbyterian, Specks, Logs, and Good Judgment",
+     "url": "https://s3.amazonaws.com/cov-pres.org/wp-content/uploads/2025/08/01153020/13-Specks-Logs-and-Good-Judgment-Matthew-7_1-6.pdf",
+     "tipo": "comentario",
+     "nota": "hipocrisia transforma discernimento em martelo"
+    }
+   ],
+   "risco": "medio: leitura majoritária, mas há quem enfatize 'não imponha a verdade' (7:6).",
+   "mitigacao": "S08 usa 'o alerta é contra o juízo hipócrita', sem dizer que a correção é sempre obrigatória."
+  },
+  {
+   "id": "F08",
+   "cenas": [
+    "S09"
+   ],
+   "tipo": "textual",
+   "texto": "No mesmo capítulo (7:15-20), Jesus manda se guardar dos falsos profetas e reconhecê-los pelos frutos.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 7:15",
+    "Mateus 7:16"
+   ],
+   "palavras_chave_no_texto": [
+    "falsos profetas",
+    "frutos"
+   ],
+   "fontes": [
+    {
+     "titulo": "Matthew Henry, Mt 7:15-20",
+     "url": "https://search.biblegateway.com/resources/matthew-henry/Matt.7.15-Matt.7.20",
+     "tipo": "comentario",
+     "nota": "avaliar falsos mestres pelos frutos de palavras e ações"
+    },
+    {
+     "titulo": "Blue Letter Bible, Mt 7:15-20",
+     "url": "https://www.blueletterbible.org/comm/tbs/meaning/mat-7-v15-20.cfm",
+     "tipo": "comentario",
+     "nota": "Jesus não se contradiz ao pedir discernimento sobre mestres"
+    },
+    {
+     "titulo": "IVP NT Commentary, Evaluate Prophets by Their Fruits",
+     "url": "https://www.biblegateway.com/resources/ivp-nt/Evaluate-Prophets-Their-Fruits",
+     "tipo": "comentario",
+     "nota": "7:15-20 trata do reconhecimento de profetas pelos frutos"
+    }
+   ],
+   "risco": "baixo: 7:15-20 está no mesmo capítulo; 'frutos' refere-se a obras e vida, não a aparência.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F09",
+   "cenas": [
+    "S10"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Corrigir com humildade nem sempre é o mesmo que condenar.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 7:5"
+   ],
+   "palavras_chave_no_texto": [
+    "irmão"
+   ],
+   "fontes": [
+    {
+     "titulo": "Covenant Presbyterian, Specks, Logs, and Good Judgment",
+     "url": "https://s3.amazonaws.com/cov-pres.org/wp-content/uploads/2025/08/01153020/13-Specks-Logs-and-Good-Judgment-Matthew-7_1-6.pdf",
+     "tipo": "comentario",
+     "nota": "amor genuíno é discernente e discernimento piedoso é amoroso"
+    },
+    {
+     "titulo": "Theology of Work, Mt 7:1-5",
+     "url": "https://www.biblegateway.com/resources/theology-of-work/do-not-judge-so-that-you-may-not-be-judged-matthew-7-1-5",
+     "tipo": "comentario",
+     "nota": "o texto aponta para realismo sobre si mesmo; Mt 18:15-17 trata da correção"
+    }
+   ],
+   "risco": "medio: aplicação, não afirma que toda correção seja bem-vinda ou obrigatória.",
+   "mitigacao": "Texto usa 'nem sempre'; não prescreve método de correção."
+  },
+  {
+   "id": "F10",
+   "cenas": [
+    "S11"
+   ],
+   "tipo": "aplicacao",
+   "texto": "Antes de apontar o erro do outro, vale examinar o próprio coração.",
+   "veredito": "SUPORTADO",
+   "versiculos": [
+    "Mateus 7:5"
+   ],
+   "palavras_chave_no_texto": [
+    "trave"
+   ],
+   "fontes": [
+    {
+     "titulo": "Theology of Work, Mt 7:1-5",
+     "url": "https://www.biblegateway.com/resources/theology-of-work/do-not-judge-so-that-you-may-not-be-judged-matthew-7-1-5",
+     "tipo": "comentario",
+     "nota": "Jesus chama a um realismo sobre nós mesmos"
+    },
+    {
+     "titulo": "Christ-Centered Exposition, To Judge or Not to Judge",
+     "url": "https://www.biblestudytools.com/commentaries/christ-centered-exposition/sermonmount/to-judge-or-not-to-judge-an160important-question.html",
+     "tipo": "comentario",
+     "nota": "inspecionar o próprio coração antes de julgar"
+    }
+   ],
+   "risco": "baixo: aplicação direta de 7:3-5.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F11",
+   "cenas": [
+    "S12"
+   ],
+   "tipo": "interpretativa",
+   "texto": "A pergunta final (escudo ou espelho) convida à reflexão sem afirmar que a frase sempre significou uma coisa.",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [
+    "Mateus 7:1"
+   ],
+   "palavras_chave_no_texto": [
+    "julgueis"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word, Matthew 7",
+     "url": "https://enduringword.com/?p=787",
+     "tipo": "comentario",
+     "nota": "a frase exige humildade, mas não cancela o discernimento"
+    },
+    {
+     "titulo": "Servants of Grace, Judge Not or Judge Rightly",
+     "url": "https://servantsofgrace.org/judge-not-or-judge-rightly-matthew-7/",
+     "tipo": "comentario",
+     "nota": "mal usada como escudo fora do contexto"
+    }
+   ],
+   "risco": "baixo: pergunta aberta, 'sempre' aparece só como pergunta ao espectador.",
+   "mitigacao": "S12 é pergunta A ou B, sem veredito sobre o espectador."
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "Mt 7:6 ('não deis o que é santo aos cães') e o debate sobre discernir quem recebe a verdade",
+   "decisao": "aceitavel",
+   "justificativa": "O episódio de 60 s não trata de 7:6; nenhuma cena nega que haja discernimento sobre pessoas."
+  },
+  {
+   "item": "Mt 7:2: com o juízo que julgardes sereis julgados",
+   "decisao": "aceitavel",
+   "justificativa": "S08 resume o alerta contra o juízo condenador sem negar 7:2; o tempo do vídeo não comporta o versículo."
+  },
+  {
+   "item": "Texto paralelo em Lc 6:37-42 e correção em Mt 18:15-17",
+   "decisao": "aceitavel",
+   "justificativa": "Fora do escopo do vídeo; nada no roteiro contradiz esses textos sobre correção fraterna."
+  },
+  {
+   "item": "Julgar como ato do Juiz final (Deus) e não do crente",
+   "decisao": "ressalvar",
+   "justificativa": "S08 e S10 falam do juízo hipócrita e condenador; não dizem que o crente possa condenar em lugar de Deus."
+  }
+ ],
+ "parecer": "APROVADO",
+ "cenas_hash": {
+  "S01": "02728f888a88f7d7",
+  "S02": "434e6ba88e649105",
+  "S03": "3df979345986939a",
+  "S04": "d46cb7df284c1994",
+  "S05": "4a3ae019123ff3a2",
+  "S06": "dca3d86d3fb6bc4c",
+  "S07": "b5040fbe9f190e9c",
+  "S08": "8ff78bf6dfae91b1",
+  "S09": "82b4c7261c592ebf",
+  "S10": "2a6b9f48ee4305c2",
+  "S11": "2a38b1b6eccf7b45",
+  "S12": "8595aa229a68fa4c"
+ }
+}

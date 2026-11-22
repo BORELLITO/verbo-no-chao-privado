@@ -22,8 +22,9 @@ Próximo: EPISÓDIO 6
 |---|---|---|---|
 | EPISÓDIO 1 | TUDO POSSO | Filipenses 4:10–13 | E06 |
 | EPISÓDIO 2 | PLANO DE PAZ | Jeremias 29:11 | E07 |
+| EPISÓDIO 3 | NÃO JULGUEIS | Mateus 7:1–5 | E08 |
 
-Próximo: EPISÓDIO 3
+Próximo: EPISÓDIO 4
 
 ## Padrão de nomes no Drive
 
