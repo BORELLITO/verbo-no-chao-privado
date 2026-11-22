@@ -1,6 +1,6 @@
 {
  "episode": "E06",
- "run_id": "45004465866",
+ "run_id": "45005354115",
  "engine_version": "vnc-curadoria-2.0",
  "dry_run": false,
  "status": "OK",
@@ -171,7 +171,16 @@
     "candle",
     "fireplace",
     "bonfire",
-    "beach"
+    "beach",
+    "friend",
+    "friends",
+    "group",
+    "young",
+    "couple",
+    "family",
+    "relaxing",
+    "party",
+    "camp"
    ],
    "allow": [
     "hands"
@@ -253,7 +262,10 @@
     "autumn",
     "leaves",
     "tree",
-    "garden"
+    "garden",
+    "forest",
+    "morning",
+    "woods"
    ],
    "allow": [],
    "shot": "paisagem, movimento lento",
@@ -686,11 +698,11 @@
   {
    "scene": "S04",
    "source": "mixkit",
-   "id": "45481",
-   "title": "young group of friend relaxing and laughing around a campfire",
-   "page": "https://mixkit.co/free-stock-video/young-group-of-friend-relaxing-and-laughing-around-a-campfire-45481/",
-   "preview_url": "https://assets.mixkit.co/videos/45481/45481-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/45481/45481-720.mp4",
+   "id": "22023",
+   "title": "cooking soup on a campfire",
+   "page": "https://mixkit.co/free-stock-video/cooking-soup-on-a-campfire-22023/",
+   "preview_url": "https://assets.mixkit.co/videos/22023/22023-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/22023/22023-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -698,12 +710,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 9.5,
-   "sha256": "90dc29916d04ac7faf957e33821ce4eada8725c953411e83fb82da728ce21de4",
+   "clip_seconds": 18.0,
+   "sha256": "17af0266b61676730ece94c2955f8890d60467851ad6cd64238cfe4b10504f48",
    "phashes": [
-    16282190411416825149,
-    16282194809463597496,
-    16283815489603718008
+    9503524358187654169,
+    4711728434157198409,
+    14115174091657600281
    ],
    "segment": {
     "start": 15.31,
@@ -711,33 +723,33 @@
     "emotion": "ajuda distante",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 77.7), movimento 7.43, palavras-chave 1, interpretacao=claude",
+   "justification": "clima dark (brilho 49.1), movimento 12.01, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 3.388,
-    "clip_sem": 0.0014
+    "unary": 3.124,
+    "clip_sem": 0.0121
    },
    "vision": {
-    "sem": 0.0014,
+    "sem": 0.0121,
     "neg": {
-     "people": 0.2266,
-     "city": 0.0101,
-     "indoor": 0.5497,
-     "text": 0.0061,
-     "cgi": 0.2061
+     "people": 0.1386,
+     "city": 0.0057,
+     "indoor": 0.4514,
+     "text": 0.0006,
+     "cgi": 0.3915
     }
    },
    "metrics": {
-    "brightness": 77.7,
-    "cut_ratio": 1.08,
-    "motion": 7.43,
-    "saturation": 131.2,
-    "sharp": 17.22
+    "brightness": 49.1,
+    "cut_ratio": 1.29,
+    "motion": 12.01,
+    "saturation": 51.8,
+    "sharp": 17.85
    },
    "alternatives": [
-    "mixkit:22023",
     "mixkit:47818",
     "mixkit:51633",
-    "mixkit:22730"
+    "mixkit:22730",
+    "mixkit:11405"
    ]
   },
   {
@@ -800,11 +812,11 @@
   {
    "scene": "S06",
    "source": "mixkit",
-   "id": "50867",
-   "title": "a tranquil forest amids the morning mist",
-   "page": "https://mixkit.co/free-stock-video/a-tranquil-forest-amids-the-morning-mist-50867/",
-   "preview_url": "https://assets.mixkit.co/videos/50867/50867-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/50867/50867-1080.mp4",
+   "id": "44616",
+   "title": "flying over a misty mountain",
+   "page": "https://mixkit.co/free-stock-video/flying-over-a-misty-mountain-44616/",
+   "preview_url": "https://assets.mixkit.co/videos/44616/44616-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/44616/44616-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -812,12 +824,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 17.6,
-   "sha256": "54a363149cb1c545f107e3fe6fe3bd1007bbff274bb65ac4f119c5f0be67ad3d",
+   "clip_seconds": 20.4,
+   "sha256": "1087993e533afc819f77f8ff7c262d2441a9d11d7e2825a242896240e1612540",
    "phashes": [
-    15922740848296136988,
-    7847645978940772636,
-    7847777920069767318
+    72764038882931234,
+    706436288746532,
+    2757420063527
    ],
    "segment": {
     "start": 28.85,
@@ -825,33 +837,31 @@
     "emotion": "falta",
     "interpretation": "claude"
    },
-   "justification": "clima mid (brilho 97.2), movimento 10.46, palavras-chave 2, interpretacao=claude",
+   "justification": "clima mid (brilho 135.9), movimento 7.28, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 3.279,
-    "clip_sem": 0.0045
+    "unary": 3.216,
+    "clip_sem": 0.004
    },
    "vision": {
-    "sem": 0.0045,
+    "sem": 0.004,
     "neg": {
-     "people": 0.0528,
-     "city": 0.0225,
-     "indoor": 0.7923,
-     "text": 0.0007,
-     "cgi": 0.1272
+     "people": 0.0747,
+     "city": 0.0132,
+     "indoor": 0.7806,
+     "text": 0.0002,
+     "cgi": 0.1273
     }
    },
    "metrics": {
-    "brightness": 97.2,
-    "cut_ratio": 1.18,
-    "motion": 10.46,
-    "saturation": 61.4,
-    "sharp": 26.79
+    "brightness": 135.9,
+    "cut_ratio": 1.07,
+    "motion": 7.28,
+    "saturation": 43.0,
+    "sharp": 10.53
    },
    "alternatives": [
-    "mixkit:50870",
-    "mixkit:2213",
-    "mixkit:3350",
-    "mixkit:34856"
+    "mixkit:28816",
+    "mixkit:35055"
    ]
   },
   {
@@ -1244,7 +1254,7 @@
   "aprovacao_estetica_humana": "NAO_VERIFICADA",
   "manifest_errors": []
  },
- "sequence_utility": 38.452,
+ "sequence_utility": 37.801,
  "trace": {
   "beam": 400,
   "weights": {
