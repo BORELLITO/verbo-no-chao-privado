@@ -23,11 +23,9 @@ def plan(cfg):
 
 
 def posting_text(cfg, p):
-    from agents.vnc_pipeline_gate import render_posting
-    t = render_posting(cfg)
-    return (f'VERBO NO CHÃO — {p["quadro"]} — {p["label"]} "{p["title"]}" — {p["ref"]}\nLEGENDAS DE POSTAGEM POR PLATAFORMA (publicar é decisão do dono)\n\n'
-            f'=== TIKTOK ({len(t["tiktok"])} caracteres) ===\n{t["tiktok"]}\n\n=== INSTAGRAM REELS ===\n{t["instagram"]}\n\n'
-            f'=== YOUTUBE SHORTS ===\nTítulo ({len(t["youtube_titulo"])} caracteres):\n{t["youtube_titulo"]}\n\nDescrição:\n{t["youtube_descricao"]}\n')
+    """Fonte unica: o mesmo arquivo que o agente-mestre imprime no chat (vnc_pipeline_gate.render_posting_file)."""
+    from agents.vnc_pipeline_gate import render_posting_file
+    return render_posting_file(cfg["id"], cfg)
 
 
 def rclone_env(env=None):
