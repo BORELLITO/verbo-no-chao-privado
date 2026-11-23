@@ -1,7 +1,7 @@
 """VNC -> hospedagem publica da midia (Cloudinary, plano gratis) para o Buffer buscar o mp4.
 Unico modulo que fala com api.cloudinary.com / res.cloudinary.com. NAO publica nada em rede social.
 Entrada: run/media.json {"mode": "check|upload", "episodes": ["E03", ...], "nonce": "..."}.
-Fonte dos mp4: pasta indicada em VNC_MEDIA_SRC (padrao fonte/backfill; no workflow e a branch de recarga ou o artefato vnc-build).
+Fonte dos mp4: artefato vnc-build do run indicado em "runs" ({"E08": <run_id>}; vale 3 dias) ou, sem run, pasta indicada em VNC_MEDIA_SRC (padrao fonte/backfill; no workflow e a branch de recarga ou o artefato vnc-build).
 Credenciais: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET (segredos do repo); o segredo nunca e impresso.
 public_id = vnc/<quadro><numero>-<10 primeiros hex do sha256>: estavel, repetivel e nao adivinhavel."""
 import hashlib, json, os, sys, time, urllib.request, urllib.error
@@ -23,7 +23,13 @@ def episodio(ep_id):
     raise MediaError(f"episodio desconhecido: {ep_id}")
 
 
-def localizar(ep_id, raiz):
+def localizar(ep_id, raiz, art=None):
+    """Artefato do Runflow (art/<id>/**/*.mp4, quando o episodio tem run indicado) tem prioridade; senao pasta de recarga."""
+    if art and (Path(art) / ep_id).is_dir():
+        achados = sorted((Path(art) / ep_id).rglob("*.mp4"))
+        if len(achados) != 1:
+            raise MediaError(f"{ep_id}: esperado 1 mp4 no artefato, achei {len(achados)}")
+        return achados[0]
     e, nome_quadro = episodio(ep_id)
     d = Path(raiz) / nome_quadro / f"EPISÓDIO {e['numero']} - {e['titulo']}"
     mp4 = d / f"EPISÓDIO {e['numero']} - {e['titulo']}.mp4"
@@ -90,7 +96,7 @@ def main(argv):
         raise MediaError("credenciais Cloudinary ausentes")
     out = []
     for ep in cfg["episodes"]:
-        mp4 = localizar(ep, raiz)
+        mp4 = localizar(ep, raiz, os.environ.get("VNC_MEDIA_ART", "art"))
         tam = mp4.stat().st_size
         if tam > LIMITE_BYTES:
             raise MediaError(f"{ep}: {tam} bytes acima do limite do plano gratis")
