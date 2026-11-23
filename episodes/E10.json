@@ -595,19 +595,21 @@
    "block": "application",
    "text": "Chama Deus de sua força e fala de pés firmes como os da corça.",
    "visual": {
-    "meaning": "crista de montanha com luz",
-    "meaning_en": "mountain ridge sunlight",
+    "meaning": "colinas verdes com luz",
+    "meaning_en": "green hills sunlight",
     "emotion": "",
-    "mood": "bright",
+    "mood": "mid",
     "queries": [
-     "mountain ridge sunlight",
-     "green hills sunlight clouds",
-     "meadow hills morning"
+     "sunlight over hills",
+     "green meadow sunshine",
+     "hills clouds sunlight",
+     "mountain meadow sunlight"
     ],
     "prefer": [
-     "mountain",
-     "ridge",
-     "sunlight"
+     "hills",
+     "meadow",
+     "sunlight",
+     "green"
     ],
     "avoid": [
      "people",
