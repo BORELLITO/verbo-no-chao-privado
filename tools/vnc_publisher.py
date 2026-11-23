@@ -47,9 +47,9 @@ def main():
                "sem_pacote": pend, "episodios": pacote},
               open(out / "pacote_v1.json", "w"), ensure_ascii=False, indent=1)
     with open(out / "calendario_v1.csv", "w", newline="") as f:
-        w = csv.writer(f); w.writerow(["data_hora_brt", "episodio", "quadro", "titulo", "TikTok", "YouTube", "Instagram"])
+        w = csv.writer(f); w.writerow(["Data e hora (Brasília)", "Quadro e episódio", "Título", "TikTok (marcar)", "YouTube (marcar)", "Instagram (marcar)"])
         for x in pacote:
-            w.writerow([x["sugestao_horario_brt"], x["id"], f"{x['quadro']} {x['numero']}", x["titulo"], "", "", ""])
+            w.writerow([x["sugestao_horario_brt"], f"{x['quadro']} {x['numero']}", x["titulo"], "", "", ""])
     print(len(pacote), "episodios;", "pendentes:", pend)
 
 if __name__ == "__main__":
