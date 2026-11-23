@@ -14,6 +14,7 @@ ENDPOINT = "https://api.buffer.com"
 BRT = ZoneInfo("America/Sao_Paulo")
 # DECISAO DO DONO PENDENTE: a voz e sintetica (ElevenLabs). True = rotula como conteudo com IA nas 3 redes (padrao conservador). Imagens sao filmagens reais.
 ROTULO_IA = True
+YOUTUBE_CATEGORIA = "22"  # People & Blogs (Buffer exige categoria no YouTube)
 SERVICOS = {"tiktok": "tiktok", "instagram": "instagram", "youtube": "youtube"}
 
 
@@ -145,7 +146,7 @@ def due_utc(brt_str):
 
 def metadados(rede, titulo_youtube):
     if rede == "youtube":
-        return {"youtube": {"title": titulo_youtube, "privacy": "public", "madeForKids": False, "notifySubscribers": True, "isAiGenerated": ROTULO_IA}}
+        return {"youtube": {"title": titulo_youtube, "categoryId": YOUTUBE_CATEGORIA, "privacy": "public", "madeForKids": False, "notifySubscribers": True, "isAiGenerated": ROTULO_IA}}
     if rede == "instagram":
         return {"instagram": {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": ROTULO_IA}}
     return {"tiktok": {"isAiGenerated": ROTULO_IA}}
