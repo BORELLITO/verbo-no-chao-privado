@@ -304,10 +304,10 @@ def run(ep, mode=None):
                     h = get(f"https://mixkit.co/free-stock-music/mood/{clima}/{pg}" if clima in ("sad", "relaxing", "cinematic", "sleepy", "reflective") else f"https://mixkit.co/free-stock-music/{clima}/{pg}", binary=False)
                 except Exception as e:
                     print("VNC_MUSIC_LIST_ERRO", clima, pg, str(e)[:80]); continue
-                for slug in re.findall(r'href="/free-stock-music/([a-z0-9-]+)/"', h):
-                    if slug in vistos or slug in ("mood", "genres", "page", "tag", "search"): continue
-                    vistos.add(slug)
-                    print("VNC_MUSIC_CAND", clima, slug)
+                for slug, mid in re.findall(r"assets\.mixkit\.co/music/(?:preview/)?mixkit-([a-z0-9-]*?)-(\d+)\.mp3", h):
+                    if mid in vistos: continue
+                    vistos.add(mid)
+                    print("VNC_MUSIC_CAND", clima, mid, slug, "USADA" if mid in usadas else "livre", f"https://mixkit.co/free-stock-music/{slug}/")
         print("VNC_MUSIC_USADAS", sorted(usadas))
         return 0
     if mode == "review":
