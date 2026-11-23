@@ -299,18 +299,18 @@ def main(argv):
             raise BufferError("schedule exige liberado_pelo_dono=true no run/buffer.json")
         cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", "")
         midia = json.loads((ROOT / "publicacao/midia_v1.json").read_text(encoding="utf8"))
-        pids, capas = midia["public_ids"], midia.get("capas", {})
+        pids = midia["public_ids"]
         if not cloud or not eps <= set(pids):
             raise BufferError("midia publica ausente para algum episodio (rode vnc-media upload)")
-        if not eps <= set(capas):
-            raise BufferError("capa publica ausente para algum episodio (rode vnc-media upload_capa); sem capa nao agenda")
+        # Buffer RECUSA thumbnailUrl (verificado 2026-11-23, TikTok e Instagram: "social networks do not accept custom video thumbnail images").
+        # A capa de marca so aparece se for um quadro do proprio video (metadata.thumbnailOffset, so Instagram/TikTok).
         pk = json.loads((ROOT / "publicacao/pacote_v1.json").read_text(encoding="utf8"))
         pk["episodios"] = [e for e in pk["episodios"] if e["id"] in eps]
         redes = set(cfg.get("redes") or SERVICOS)
         canais = {r: c for r, c in canais_por_rede(key).items() if r in redes}
         ja = existentes(key, com_rascunho=(mode == "draft"))
         pedidos = [p for p in montar_pedidos(pk, canais, lambda ep: f"https://res.cloudinary.com/{cloud}/video/upload/{pids[ep]}.mp4",
-                                   lambda ep: f"https://res.cloudinary.com/{cloud}/image/upload/{capas[ep]}.jpg")
+                                   None)
                    if (p["rede"], p["input"]["dueAt"]) not in ja]
         print(f"VNC_BUFFER_PLANO modo={mode} pedidos={len(pedidos)} ja_existentes={len(ja)}")
         print("VNC_BUFFER_CRIADOS " + json.dumps(agendar(key, pedidos, rascunho=(mode == "draft")), ensure_ascii=False))
