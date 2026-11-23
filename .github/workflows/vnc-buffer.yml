@@ -1,0 +1,26 @@
+name: VNC Buffer (leitura/dry-run; agendamento bloqueado)
+# Entrada: run/buffer.json {"mode":"probe|introspect|dry","nonce":"..."}. Unico workflow com BUFFER_API_KEY. Sem cron.
+on:
+  push:
+    branches: ["main"]
+    paths: ["run/buffer.json"]
+permissions:
+  contents: read
+concurrency:
+  group: vnc-buffer
+  cancel-in-progress: false
+jobs:
+  buffer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Buffer
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: |
+          MODE="$(python3 -c 'import json;m=json.load(open("run/buffer.json")).get("mode","probe");assert m in ("probe","introspect","dry");print(m)')"
+          python3 -m agents.vnc_buffer "$MODE"

@@ -7,9 +7,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WF = ROOT / ".github" / "workflows"
-PERMITIDOS = {"vnc-curate.yml", "vnc-drive-backfill.yml", "vnc-drive.yml", "vnc-ingest-voice.yml", "vnc-overlays.yml", "vnc-runflow.yml", "vnc-voice.yml", "vnc-tests.yml", "vnc-qa-lab.yml"}
+PERMITIDOS = {"vnc-curate.yml", "vnc-drive-backfill.yml", "vnc-drive.yml", "vnc-ingest-voice.yml", "vnc-overlays.yml", "vnc-runflow.yml", "vnc-voice.yml", "vnc-buffer.yml", "vnc-tests.yml", "vnc-qa-lab.yml"}
 DISPATCH_OK = {"vnc-drive-backfill.yml", "vnc-drive.yml"}
-SEGREDOS_OK = {"ELEVENLABS_API_KEY", "GDRIVE_CLIENT_ID", "GDRIVE_CLIENT_SECRET", "GDRIVE_REFRESH_TOKEN", "COVERR_API_KEY", "PEXELS_API_KEY", "PIXABAY_API_KEY", "GITHUB_TOKEN"}
+SEGREDOS_OK = {"ELEVENLABS_API_KEY", "GDRIVE_CLIENT_ID", "GDRIVE_CLIENT_SECRET", "GDRIVE_REFRESH_TOKEN", "COVERR_API_KEY", "PEXELS_API_KEY", "PIXABAY_API_KEY", "GITHUB_TOKEN", "BUFFER_API_KEY"}
 PROVEDORES_PROIBIDOS = ("gradio_client", "huggingface_hub", "generate_video", "ltx", "zerogpu")
 
 
