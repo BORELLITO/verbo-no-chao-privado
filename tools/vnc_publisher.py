@@ -43,7 +43,7 @@ def main():
             "plataformas": {x: {"estado": pub.get(e["id"], {}).get(x, "nao_agendado"), "link": None} for x in PLAT},
             "aprovacao_publicacao": "PENDENTE_DO_DONO"})
     out = R / "publicacao"; out.mkdir(exist_ok=True)
-    json.dump({"versao": 1, "aviso": "Horarios sao sugestao. Nada publicado/agendado por esta ferramenta.",
+    json.dump({"versao": 1, "aviso": "Horarios 12:00 e 19:00 BRT confirmados pelo dono em 2026-11-22. Nada publicado/agendado por esta ferramenta.",
                "sem_pacote": pend, "episodios": pacote},
               open(out / "pacote_v1.json", "w"), ensure_ascii=False, indent=1)
     with open(out / "calendario_v1.csv", "w", newline="") as f:
