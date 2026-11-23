@@ -418,6 +418,28 @@
    "title": "tree in the mist",
    "updated_at": "2026-11-21T12:33:56Z"
   },
+  "mixkit:10098": {
+   "dur": 32.0,
+   "episode": "E09",
+   "id": "10098",
+   "interval": null,
+   "license": null,
+   "origin_id": null,
+   "page": "",
+   "phashes": [
+    9001821109323231944,
+    9001821108265851441,
+    17069880683753950875
+   ],
+   "reserved_at": "2026-11-23T09:01:24Z",
+   "run_id": "backfill",
+   "scene": null,
+   "sha256": "3dfe27c9decb5822a3f4b969e60e44c4a454410e93a6b83d0a6425f699ab813d",
+   "source": "mixkit",
+   "state": "legacy",
+   "title": "",
+   "updated_at": "2026-11-23T09:01:24Z"
+  },
   "mixkit:10219": {
    "dur": 20.4,
    "episode": "E09",
@@ -1868,6 +1890,28 @@
    "title": "piano under a tree with dry leaves falling",
    "updated_at": "2026-11-22T08:37:54Z"
   },
+  "mixkit:34746": {
+   "dur": 23.9,
+   "episode": "E09",
+   "id": "34746",
+   "interval": null,
+   "license": null,
+   "origin_id": null,
+   "page": "",
+   "phashes": [
+    16210977286386409668,
+    17940360642805948612,
+    17940356245298659524
+   ],
+   "reserved_at": "2026-11-23T09:01:24Z",
+   "run_id": "backfill",
+   "scene": null,
+   "sha256": "218cbba6428d4bef9e934bb4961436c9f740ba65f1cac5ab5fabf741b5a406b4",
+   "source": "mixkit",
+   "state": "legacy",
+   "title": "",
+   "updated_at": "2026-11-23T09:01:24Z"
+  },
   "mixkit:34783": {
    "dur": 30.0,
    "episode": "E04",
@@ -2637,6 +2681,28 @@
    "title": "beautiful sunset on a calm lake",
    "updated_at": "2026-11-22T11:32:03Z"
   },
+  "mixkit:48109": {
+   "dur": 27.6,
+   "episode": "E09",
+   "id": "48109",
+   "interval": null,
+   "license": null,
+   "origin_id": null,
+   "page": "",
+   "phashes": [
+    13980230844218966224,
+    16267568935269016992,
+    16204446805438587877
+   ],
+   "reserved_at": "2026-11-23T09:01:23Z",
+   "run_id": "backfill",
+   "scene": null,
+   "sha256": "224d71105b19d4982bd5833126affc1ac152f4551f27d9edc3ceffd2fc19eb7a",
+   "source": "mixkit",
+   "state": "legacy",
+   "title": "",
+   "updated_at": "2026-11-23T09:01:23Z"
+  },
   "mixkit:49749": {
    "dur": 14.1,
    "episode": "E08",
@@ -3261,6 +3327,28 @@
    "state": "reserved",
    "title": "mountains and clouds in the sunrise",
    "updated_at": "2026-11-22T16:42:58Z"
+  },
+  "mixkit:9809": {
+   "dur": 18.1,
+   "episode": "E09",
+   "id": "9809",
+   "interval": null,
+   "license": null,
+   "origin_id": null,
+   "page": "",
+   "phashes": [
+    16059800946139256984,
+    18437313829818653848,
+    18301476590962982040
+   ],
+   "reserved_at": "2026-11-23T09:01:23Z",
+   "run_id": "backfill",
+   "scene": null,
+   "sha256": "dc25550b469fb318e850a09325c008feefaf2fe1b30eefab3a3c8106b1ef46af",
+   "source": "mixkit",
+   "state": "legacy",
+   "title": "",
+   "updated_at": "2026-11-23T09:01:23Z"
   },
   "mixkit:9810": {
    "dur": 12.4,
