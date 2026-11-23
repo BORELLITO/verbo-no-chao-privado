@@ -1,0 +1,156 @@
+{
+ "episode": "E10",
+ "video_sha256": "c86cdc29dd4cd98f0ef0097c79d85994d40edd60efe3d19b928946fd18aa938b",
+ "revisor": "agente-estetico (Claude), quadros reais do mp4 (folha de contato de 17 quadros) e capa; audio NAO ouvido, so metricas numericas",
+ "data": "2026-11-23",
+ "cenas": [
+  {
+   "cena": "S01",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "pinheiro isolado em campo sob ceu cinza: a pergunta da colheita que nao vem; sem pessoas; legenda legivel"
+  },
+  {
+   "cena": "S02",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "sol baixo atras de nuvens escuras: tensao e perda; sem construcoes; legenda legivel"
+  },
+  {
+   "cena": "S03",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nevoa clara sobre colinas: figueira/campo sem fruto, vazio; sem pessoas"
+  },
+  {
+   "cena": "S04",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nuvens carregadas sobre silhueta de arvores: a violencia/injustica que o profeta viu; legivel"
+  },
+  {
+   "cena": "S05",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "mata escura sob nevoa: ameaca real e fome; sem pessoas"
+  },
+  {
+   "cena": "S06",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "floresta com nevoa e troncos: labios que tremeram; sem pessoas; legenda legivel"
+  },
+  {
+   "cena": "S07",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "nevoa subindo da mata: mesmo assim, alegrar-se; luz comeca a crescer"
+  },
+  {
+   "cena": "S08",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "rio claro sobre pedras: a alegria nao nega a perda, segue fluindo; sem pessoas"
+  },
+  {
+   "cena": "S09",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "raios de sol entre galhos: texto nao promete colheita, mostra onde ele se apoia; sem pessoas"
+  },
+  {
+   "cena": "S10",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "campo ao amanhecer com colinas: Deus como forca, pes firmes; sem construcoes"
+  },
+  {
+   "cena": "S11",
+   "veredito": "APROVADO",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "colinas verdes com luz e pedras: continuar andando com o campo vazio; sem pessoas"
+  },
+  {
+   "cena": "S12",
+   "veredito": "APROVADO_COM_RESSALVA",
+   "criterios": {
+    "coerencia_texto_imagem": true,
+    "luz_no_arco": true,
+    "legenda_legivel": true,
+    "sem_pessoas_ou_marcas": true
+   },
+   "nota": "lago com nuvens e vegetacao; um telhado pequeno no canto inferior direito, abaixo da legenda, sem pessoas nem marcas: ressalva leve"
+  }
+ ],
+ "final": {
+  "veredito": "APROVADO",
+  "nota": "final chuva de ouro com logo, referencia Habacuque 3:17-19 e CTA legiveis; ultimo quadro quase preto; contraste so inspecionado visualmente na folha"
+ },
+ "capa": {
+  "veredito": "APROVADO",
+  "nota": "capa vertical: EPISODIO 06, MESMO / SEM / COLHEITA em 3 linhas, referencia legivel; topo de nuvens escuras e base de nevoa, tristeza para luz"
+ },
+ "ritmo_e_transicoes": {
+  "veredito": "APROVADO",
+  "nota": "12 cenas, 67,54 s; fades suaves; karaoke lilas legivel nas cenas da folha; arco do escuro (chuva, nuvens) ao claro (colinas verdes, lago)"
+ },
+ "audio_voz_e_trilha": {
+  "veredito": "APROVADO_COM_RESSALVA",
+  "nota": "QA por maquina (agents.vnc_audio_qa): mix -17.3 LUFS, true peak -0.9 dB, sem silencio no meio, voz 4.8 LU acima do mix (trilha nao encobre). Trilha Mixkit Skyline (id 601), licenca registrada. Content ID: so o YouTube detecta no upload; risco residual declarado, nao e pendencia do dono"
+ }
+}
