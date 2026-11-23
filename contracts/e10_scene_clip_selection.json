@@ -4,7 +4,7 @@
  "episode_id": "E10",
  "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
  "engine_version": "vnc-curadoria-2.0",
- "run_id": "45146375917",
+ "run_id": "45148109479",
  "publication_authorized": false,
  "master_approved": false,
  "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
@@ -12,93 +12,93 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "22728",
+   "id": "2207",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/raining-in-a-cloud-forest-full-of-tall-trees-22728/",
+   "page": "https://mixkit.co/free-stock-video/tree-in-a-forest-on-a-rainy-day-2207/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 11.5,
-   "note_pt": "clima dark (brilho 33.8), movimento 2.41, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 13.1,
+   "note_pt": "clima dark (brilho 88.9), movimento 2.96, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S02",
    "source": "mixkit",
-   "id": "8662",
+   "id": "21148",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/hills-with-fog-over-the-coast-landscape-8662/",
+   "page": "https://mixkit.co/free-stock-video/burning-sun-and-dark-clouds-21148/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 31.2,
-   "note_pt": "clima dark (brilho 53.7), movimento 2.9, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 50.3,
+   "note_pt": "clima dark (brilho 62.6), movimento 2.49, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S03",
    "source": "mixkit",
-   "id": "1926",
+   "id": "44271",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/seabird-flying-over-water-1926/",
+   "page": "https://mixkit.co/free-stock-video/fog-covered-hill-in-an-aerial-shot-44271/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 10.0,
-   "note_pt": "clima mid (brilho 121.2), movimento 8.61, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 28.4,
+   "note_pt": "clima mid (brilho 125.6), movimento 6.01, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S04",
    "source": "mixkit",
-   "id": "32463",
+   "id": "20233",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/clouds-moving-before-the-storm-32463/",
+   "page": "https://mixkit.co/free-stock-video/dark-clouds-passing-over-a-forest-20233/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 17.9,
-   "note_pt": "clima mid (brilho 136.6), movimento 12.6, palavras-chave 2, interpretacao=claude"
+   "preview_seconds": 15.0,
+   "note_pt": "clima mid (brilho 124.7), movimento 8.51, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S05",
+   "source": "mixkit",
+   "id": "28343",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/forest-covered-by-a-mist-seen-from-the-air-28343/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 15.3,
+   "note_pt": "clima dark (brilho 74.5), movimento 2.88, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "47655",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/cold-and-foggy-forest-landscape-view-47655/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 14.2,
+   "note_pt": "clima mid (brilho 87.3), movimento 16.13, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
    "source": "mixkit",
    "id": "28342",
    "license": "Mixkit Stock Video Free License",
    "page": "https://mixkit.co/free-stock-video/slow-aerial-tour-through-a-mist-covered-forest-28342/",
    "interval": [
     0,
-    9.0
-   ],
-   "preview_seconds": 15.4,
-   "note_pt": "clima dark (brilho 77.2), movimento 2.73, palavras-chave 1, interpretacao=claude"
-  },
-  {
-   "scene": "S06",
-   "source": "mixkit",
-   "id": "2213",
-   "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/waterfall-in-forest-2213/",
-   "interval": [
-    0,
-    9.0
-   ],
-   "preview_seconds": 15.0,
-   "note_pt": "clima mid (brilho 86.6), movimento 7.48, palavras-chave 1, interpretacao=claude"
-  },
-  {
-   "scene": "S07",
-   "source": "mixkit",
-   "id": "4695",
-   "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/clouds-covering-the-mountains-4695/",
-   "interval": [
-    0,
     10.0
    ],
-   "preview_seconds": 22.0,
-   "note_pt": "clima mid (brilho 81.0), movimento 4.0, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 15.4,
+   "note_pt": "clima mid (brilho 77.2), movimento 2.73, palavras-chave 1, interpretacao=claude"
   },
   {
    "scene": "S08",
@@ -116,15 +116,15 @@
   {
    "scene": "S09",
    "source": "mixkit",
-   "id": "21143",
+   "id": "51106",
    "license": "Mixkit Stock Video Free License",
-   "page": "https://mixkit.co/free-stock-video/gentle-breeze-as-the-day-dawns-21143/",
+   "page": "https://mixkit.co/free-stock-video/rays-of-the-sun-passing-through-the-branches-of-a-51106/",
    "interval": [
     0,
     8.0
    ],
-   "preview_seconds": 10.8,
-   "note_pt": "clima bright (brilho 124.1), movimento 6.39, palavras-chave 1, interpretacao=claude"
+   "preview_seconds": 10.9,
+   "note_pt": "clima bright (brilho 143.8), movimento 17.25, palavras-chave 2, interpretacao=claude"
   },
   {
    "scene": "S10",

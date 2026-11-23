@@ -961,9 +961,9 @@
    "scene": "S03",
    "sha256": "2f57462a1996946b366972dc7a04276669eeff85d4e0dd432dd97f2ff653fbaf",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "seabird flying over water",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:1934": {
    "dur": 10.0,
@@ -1057,13 +1057,13 @@
     16786320969804201626
    ],
    "reserved_at": "2026-11-23T09:20:55Z",
-   "run_id": "45144702192",
+   "run_id": "45148109479",
    "scene": "S04",
    "sha256": "cbd02f5690f75caf16b528db9d266935a51e5be8bcff53127477c4ee9f31dbee",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "dark clouds passing over a forest",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:20297": {
    "dur": 16.5,
@@ -1082,13 +1082,13 @@
     10344504354135987505
    ],
    "reserved_at": "2026-11-23T09:32:02Z",
-   "run_id": "45146375917",
+   "run_id": "45148109479",
    "scene": "S12",
    "sha256": "6266138c52883ac71a4d9612ba028cb6d27adc62ede75ba77dedd8bd5307c6b3",
    "source": "mixkit",
    "state": "reserved",
    "title": "beautiful mountain lake",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:20317": {
    "dur": 8.7,
@@ -1236,9 +1236,34 @@
    "scene": "S09",
    "sha256": "22781d7c6769bd1fd8a83fc32e8659c51cbbe4c678182c58a94a0af2e8931a55",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "gentle breeze as the day dawns",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
+  },
+  "mixkit:21148": {
+   "dur": 50.3,
+   "episode": "E10",
+   "id": "21148",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/burning-sun-and-dark-clouds-21148/",
+   "phashes": [
+    4882113933430108400,
+    14898119508980150769,
+    14754004312383037617
+   ],
+   "reserved_at": "2026-11-23T09:42:46Z",
+   "run_id": "45148109479",
+   "scene": "S02",
+   "sha256": "8644b814d250f5cf2e1362b3260152a61dcc9a2a734a89c39299fc52e50393b0",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "burning sun and dark clouds",
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:21575": {
    "dur": 12.0,
@@ -1357,13 +1382,13 @@
     1193676610571143718
    ],
    "reserved_at": "2026-11-23T09:20:55Z",
-   "run_id": "45144702192",
+   "run_id": "45148109479",
    "scene": "S01",
    "sha256": "425292289dd8d33040ca66df0e89cbd83c5ac876fb88403a007eba862b4a5d4c",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "tree in a forest on a rainy day",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:2213": {
    "dur": 15.0,
@@ -1386,9 +1411,9 @@
    "scene": "S06",
    "sha256": "fae57ae2939fb8ad255d082affa4dae474ee3d6e23fe384aaf10978bdd6ecdc5",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "waterfall in forest",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:22728": {
    "dur": 11.5,
@@ -1411,9 +1436,9 @@
    "scene": "S01",
    "sha256": "a169b372f24456d2c080157e9b71340e6722b2d5b91816488b9436bfa7995b08",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "raining in a cloud forest full of tall trees",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:22729": {
    "dur": 11.3,
@@ -1782,13 +1807,13 @@
     13890501448748555974
    ],
    "reserved_at": "2026-11-23T09:20:55Z",
-   "run_id": "45146375917",
+   "run_id": "45148109479",
    "scene": "S10",
    "sha256": "d5dd8bbe890d5b979eddef295d5b8355c4f796232b588853410a8073e65dfca2",
    "source": "mixkit",
    "state": "reserved",
    "title": "tree on a meadow in a cloud forest at sunrise",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:28342": {
    "dur": 15.4,
@@ -1796,7 +1821,7 @@
    "id": "28342",
    "interval": [
     0,
-    9.0
+    10.0
    ],
    "license": "Mixkit Stock Video Free License",
    "origin_id": null,
@@ -1807,13 +1832,38 @@
     16200277959673704944
    ],
    "reserved_at": "2026-11-23T09:20:55Z",
-   "run_id": "45146375917",
-   "scene": "S05",
+   "run_id": "45148109479",
+   "scene": "S07",
    "sha256": "05b5002b84bb08f19777ec18cd0c2a6770ade30a9c886a36a5a07865f97f7a9f",
    "source": "mixkit",
    "state": "reserved",
    "title": "slow aerial tour through a mist covered forest",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
+  },
+  "mixkit:28343": {
+   "dur": 15.3,
+   "episode": "E10",
+   "id": "28343",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/forest-covered-by-a-mist-seen-from-the-air-28343/",
+   "phashes": [
+    16779225721041061890,
+    16778706735449098713,
+    16202215196820825027
+   ],
+   "reserved_at": "2026-11-23T09:42:46Z",
+   "run_id": "45148109479",
+   "scene": "S05",
+   "sha256": "400d7f3b812f4ee5edc913f543313343cd77e653231d61e75bfc892a3148a74d",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "forest covered by a mist seen from the air",
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:28816": {
    "dur": 30.3,
@@ -2036,9 +2086,9 @@
    "scene": "S04",
    "sha256": "5f1ac6867815668ab407562c404127964feabf8e87c62493c2d5c0438b39069b",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "clouds moving before the storm",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:3306": {
    "dur": 12.7,
@@ -2679,13 +2729,13 @@
     1415239525754777746
    ],
    "reserved_at": "2026-11-23T09:32:02Z",
-   "run_id": "45146375917",
+   "run_id": "45148109479",
    "scene": "S11",
    "sha256": "417becc63b8716839574f33fd099fa49ecf59ba4de251337d293e756707d85d8",
    "source": "mixkit",
    "state": "reserved",
    "title": "aerial tour of a large meadow covered with vegetation",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:41739": {
    "dur": 12.1,
@@ -2780,6 +2830,31 @@
    "state": "reserved",
    "title": "landscape of a mountain range",
    "updated_at": "2026-11-22T09:08:57Z"
+  },
+  "mixkit:44271": {
+   "dur": 28.4,
+   "episode": "E10",
+   "id": "44271",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/fog-covered-hill-in-an-aerial-shot-44271/",
+   "phashes": [
+    17939777715873254429,
+    17650953326484539608,
+    17645323844341772312
+   ],
+   "reserved_at": "2026-11-23T09:42:46Z",
+   "run_id": "45148109479",
+   "scene": "S03",
+   "sha256": "11694ab6f526bd92949ab485bae4ff25ed9b89573b1625d2be87ec6589b50b4b",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "fog covered hill in an aerial shot",
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:44372": {
    "dur": 25.0,
@@ -3052,9 +3127,34 @@
    "scene": "S07",
    "sha256": "0a10f8ba5dfdc38a4a74ad39d76cfeeb516f498dc405ca036113e2033f82dc95",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "clouds covering the mountains",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
+  },
+  "mixkit:47655": {
+   "dur": 14.2,
+   "episode": "E10",
+   "id": "47655",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/cold-and-foggy-forest-landscape-view-47655/",
+   "phashes": [
+    10512894447171063012,
+    13324407252045449376,
+    13315116091245648297
+   ],
+   "reserved_at": "2026-11-23T09:42:46Z",
+   "run_id": "45148109479",
+   "scene": "S06",
+   "sha256": "e5a36438cffa8f5ac1bdfca25558767a0c3ecd61ffe002e1102637c85828248e",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "cold and foggy forest landscape view",
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:48109": {
    "dur": 27.6,
@@ -3284,7 +3384,7 @@
    "id": "51106",
    "interval": [
     0,
-    10.0
+    8.0
    ],
    "license": "Mixkit Stock Video Free License",
    "origin_id": null,
@@ -3295,13 +3395,13 @@
     16204198595569003564
    ],
    "reserved_at": "2026-11-23T09:20:55Z",
-   "run_id": "45144702192",
-   "scene": "S07",
+   "run_id": "45148109479",
+   "scene": "S09",
    "sha256": "6ac9fb706f1c3f1ee35a392647c2a0a860b019533f9e2e3dfa0d75378e932cff",
    "source": "mixkit",
-   "state": "released",
+   "state": "reserved",
    "title": "rays of the sun passing through the branches of a",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:51433": {
    "dur": 11.7,
@@ -3445,13 +3545,13 @@
     7923086188408786029
    ],
    "reserved_at": "2026-11-23T09:32:02Z",
-   "run_id": "45146375917",
+   "run_id": "45148109479",
    "scene": "S08",
    "sha256": "01710fc74bf0ddce3108d88b28aece176f43c2bb5bfb97205ec784af08348f52",
    "source": "mixkit",
    "state": "reserved",
    "title": "a crystal clear river water flowing with prominent rocks over",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:52012": {
    "dur": 13.7,
@@ -3699,9 +3799,9 @@
    "scene": "S02",
    "sha256": "20919191a33e507fc414a3c5a75e6df0bc9150aab7b81ccc304603d1caf00b72",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "hills with fog over the coast landscape",
-   "updated_at": "2026-11-23T09:32:02Z"
+   "updated_at": "2026-11-23T09:42:46Z"
   },
   "mixkit:9294": {
    "dur": 16.0,

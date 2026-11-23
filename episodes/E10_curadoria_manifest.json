@@ -1,6 +1,6 @@
 {
  "episode": "E10",
- "run_id": "45146375917",
+ "run_id": "45148109479",
  "engine_version": "vnc-curadoria-2.0",
  "dry_run": false,
  "status": "OK",
@@ -242,6 +242,8 @@
     "beach",
     "bicycle",
     "bike",
+    "bird",
+    "birds",
     "boat",
     "bridge",
     "building",
@@ -259,6 +261,7 @@
     "family",
     "fence",
     "fire",
+    "flying",
     "friend",
     "friends",
     "frozen",
@@ -282,16 +285,19 @@
     "ruins",
     "sand",
     "sea",
+    "seabird",
     "ship",
     "skyline",
     "snow",
     "snowy",
     "street",
+    "sunset",
     "temple",
     "tower",
     "traffic",
     "trail",
     "urban",
+    "water",
     "wave",
     "waves",
     "window",
@@ -590,6 +596,8 @@
     "traffic",
     "trail",
     "urban",
+    "waterfall",
+    "waterfalls",
     "wave",
     "waves",
     "window",
@@ -644,10 +652,12 @@
     "castle",
     "city",
     "couple",
+    "covering",
     "cyclist",
     "desert",
     "droplets",
     "drops",
+    "dusk",
     "dust",
     "family",
     "fence",
@@ -663,6 +673,7 @@
     "ice",
     "indoor",
     "lights",
+    "night",
     "ocean",
     "party",
     "path",
@@ -680,10 +691,12 @@
     "snow",
     "snowy",
     "street",
+    "sunset",
     "temple",
     "tower",
     "traffic",
     "trail",
+    "twilight",
     "urban",
     "wave",
     "waves",
@@ -829,6 +842,7 @@
     "bicycle",
     "bike",
     "boat",
+    "breeze",
     "bridge",
     "building",
     "buildings",
@@ -838,6 +852,7 @@
     "city",
     "couple",
     "cyclist",
+    "dawns",
     "desert",
     "droplets",
     "drops",
@@ -1207,11 +1222,11 @@
   {
    "scene": "S01",
    "source": "mixkit",
-   "id": "22728",
-   "title": "raining in a cloud forest full of tall trees",
-   "page": "https://mixkit.co/free-stock-video/raining-in-a-cloud-forest-full-of-tall-trees-22728/",
-   "preview_url": "https://assets.mixkit.co/videos/22728/22728-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/22728/22728-1080.mp4",
+   "id": "2207",
+   "title": "tree in a forest on a rainy day",
+   "page": "https://mixkit.co/free-stock-video/tree-in-a-forest-on-a-rainy-day-2207/",
+   "preview_url": "https://assets.mixkit.co/videos/2207/2207-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/2207/2207-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1219,12 +1234,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 11.5,
-   "sha256": "a169b372f24456d2c080157e9b71340e6722b2d5b91816488b9436bfa7995b08",
+   "clip_seconds": 13.1,
+   "sha256": "425292289dd8d33040ca66df0e89cbd83c5ac876fb88403a007eba862b4a5d4c",
    "phashes": [
-    10562022873136585566,
-    10561741122208258902,
-    10562018474016332630
+    9565686618162761474,
+    10718966842749979398,
+    1193676610571143718
    ],
    "segment": {
     "start": 0.0,
@@ -1232,41 +1247,41 @@
     "emotion": "arco_padrao",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 33.8), movimento 2.41, palavras-chave 1, interpretacao=claude",
+   "justification": "clima dark (brilho 88.9), movimento 2.96, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 2.879,
-    "clip_sem": 0.0125
+    "unary": 2.927,
+    "clip_sem": 0.011
    },
    "vision": {
-    "sem": 0.0125,
+    "sem": 0.011,
     "neg": {
-     "people": 0.1172,
-     "city": 0.0099,
-     "indoor": 0.2777,
-     "text": 0.0012,
-     "cgi": 0.5815
+     "people": 0.2503,
+     "city": 0.0058,
+     "indoor": 0.5116,
+     "text": 0.0172,
+     "cgi": 0.2042
     }
    },
    "metrics": {
-    "brightness": 33.8,
-    "cut_ratio": 1.49,
-    "motion": 2.41,
-    "saturation": 84.8,
-    "sharp": 8.79
+    "brightness": 88.9,
+    "cut_ratio": 0.91,
+    "motion": 2.96,
+    "saturation": 82.3,
+    "sharp": 6.57
    },
    "alternatives": [
-    "mixkit:2207",
+    "mixkit:22728",
     "mixkit:20761"
    ]
   },
   {
    "scene": "S02",
    "source": "mixkit",
-   "id": "8662",
-   "title": "hills with fog over the coast landscape",
-   "page": "https://mixkit.co/free-stock-video/hills-with-fog-over-the-coast-landscape-8662/",
-   "preview_url": "https://assets.mixkit.co/videos/8662/8662-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/8662/8662-720.mp4",
+   "id": "21148",
+   "title": "burning sun and dark clouds",
+   "page": "https://mixkit.co/free-stock-video/burning-sun-and-dark-clouds-21148/",
+   "preview_url": "https://assets.mixkit.co/videos/21148/21148-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/21148/21148-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1274,12 +1289,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 31.2,
-   "sha256": "20919191a33e507fc414a3c5a75e6df0bc9150aab7b81ccc304603d1caf00b72",
+   "clip_seconds": 50.3,
+   "sha256": "8644b814d250f5cf2e1362b3260152a61dcc9a2a734a89c39299fc52e50393b0",
    "phashes": [
-    2449959361478332175,
-    15142792996103719691,
-    252863693036324360
+    4882113933430108400,
+    14898119508980150769,
+    14754004312383037617
    ],
    "segment": {
     "start": 4.85,
@@ -1287,41 +1302,41 @@
     "emotion": "arco_padrao",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 53.7), movimento 2.9, palavras-chave 1, interpretacao=claude",
+   "justification": "clima dark (brilho 62.6), movimento 2.49, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 2.604,
-    "clip_sem": 0.2244
+    "unary": 2.722,
+    "clip_sem": 0.0401
    },
    "vision": {
-    "sem": 0.2244,
+    "sem": 0.0401,
     "neg": {
-     "people": 0.2097,
-     "city": 0.0432,
-     "indoor": 0.3726,
-     "text": 0.0001,
-     "cgi": 0.1501
+     "people": 0.0422,
+     "city": 0.0103,
+     "indoor": 0.7968,
+     "text": 0.0005,
+     "cgi": 0.1101
     }
    },
    "metrics": {
-    "brightness": 53.7,
-    "cut_ratio": 1.09,
-    "motion": 2.9,
-    "saturation": 47.8,
-    "sharp": 2.69
+    "brightness": 62.6,
+    "cut_ratio": 0.88,
+    "motion": 2.49,
+    "saturation": 195.8,
+    "sharp": 6.27
    },
    "alternatives": [
-    "mixkit:21148",
+    "mixkit:8662",
     "mixkit:20761"
    ]
   },
   {
    "scene": "S03",
    "source": "mixkit",
-   "id": "1926",
-   "title": "seabird flying over water",
-   "page": "https://mixkit.co/free-stock-video/seabird-flying-over-water-1926/",
-   "preview_url": "https://assets.mixkit.co/videos/1926/1926-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/1926/1926-1080.mp4",
+   "id": "44271",
+   "title": "fog covered hill in an aerial shot",
+   "page": "https://mixkit.co/free-stock-video/fog-covered-hill-in-an-aerial-shot-44271/",
+   "preview_url": "https://assets.mixkit.co/videos/44271/44271-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/44271/44271-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1329,12 +1344,12 @@
     0,
     9.0
    ],
-   "clip_seconds": 10.0,
-   "sha256": "2f57462a1996946b366972dc7a04276669eeff85d4e0dd432dd97f2ff653fbaf",
+   "clip_seconds": 28.4,
+   "sha256": "11694ab6f526bd92949ab485bae4ff25ed9b89573b1625d2be87ec6589b50b4b",
    "phashes": [
-    17437782033373982905,
-    1743166662929027120,
-    9657548013064683520
+    17939777715873254429,
+    17650953326484539608,
+    17645323844341772312
    ],
    "segment": {
     "start": 10.47,
@@ -1342,43 +1357,42 @@
     "emotion": "arco_padrao",
     "interpretation": "claude"
    },
-   "justification": "clima mid (brilho 121.2), movimento 8.61, palavras-chave 1, interpretacao=claude",
+   "justification": "clima mid (brilho 125.6), movimento 6.01, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 3.372,
-    "clip_sem": 0.2808
+    "unary": 3.14,
+    "clip_sem": 0.0094
    },
    "vision": {
-    "sem": 0.2808,
+    "sem": 0.0094,
     "neg": {
-     "people": 0.3842,
-     "city": 0.0172,
-     "indoor": 0.2638,
-     "text": 0.0007,
-     "cgi": 0.0532
+     "people": 0.0787,
+     "city": 0.0407,
+     "indoor": 0.7196,
+     "text": 0.0002,
+     "cgi": 0.1513
     }
    },
    "metrics": {
-    "brightness": 121.2,
-    "cut_ratio": 1.29,
-    "motion": 8.61,
-    "saturation": 83.6,
-    "sharp": 9.7
+    "brightness": 125.6,
+    "cut_ratio": 1.04,
+    "motion": 6.01,
+    "saturation": 55.8,
+    "sharp": 5.91
    },
    "alternatives": [
-    "mixkit:44271",
-    "mixkit:44268",
     "mixkit:4266",
-    "mixkit:521"
+    "mixkit:21577",
+    "mixkit:4466"
    ]
   },
   {
    "scene": "S04",
    "source": "mixkit",
-   "id": "32463",
-   "title": "clouds moving before the storm",
-   "page": "https://mixkit.co/free-stock-video/clouds-moving-before-the-storm-32463/",
-   "preview_url": "https://assets.mixkit.co/videos/32463/32463-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/32463/32463-720.mp4",
+   "id": "20233",
+   "title": "dark clouds passing over a forest",
+   "page": "https://mixkit.co/free-stock-video/dark-clouds-passing-over-a-forest-20233/",
+   "preview_url": "https://assets.mixkit.co/videos/20233/20233-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/20233/20233-720.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1386,12 +1400,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 17.9,
-   "sha256": "5f1ac6867815668ab407562c404127964feabf8e87c62493c2d5c0438b39069b",
+   "clip_seconds": 15.0,
+   "sha256": "cbd02f5690f75caf16b528db9d266935a51e5be8bcff53127477c4ee9f31dbee",
    "phashes": [
-    18228558021052086425,
-    18157384486112777372,
-    17938111909026654382
+    18077120035528737208,
+    15634486753904101048,
+    16786320969804201626
    ],
    "segment": {
     "start": 15.7,
@@ -1399,35 +1413,148 @@
     "emotion": "angustia",
     "interpretation": "claude"
    },
-   "justification": "clima mid (brilho 136.6), movimento 12.6, palavras-chave 2, interpretacao=claude",
+   "justification": "clima mid (brilho 124.7), movimento 8.51, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 2.904,
-    "clip_sem": 0.0215
+    "unary": 3.238,
+    "clip_sem": 0.0044
    },
    "vision": {
-    "sem": 0.0215,
+    "sem": 0.0044,
     "neg": {
-     "people": 0.1961,
-     "city": 0.0178,
-     "indoor": 0.5914,
-     "text": 0.0007,
-     "cgi": 0.1725
+     "people": 0.0912,
+     "city": 0.0152,
+     "indoor": 0.7282,
+     "text": 0.0002,
+     "cgi": 0.1608
     }
    },
    "metrics": {
-    "brightness": 136.6,
-    "cut_ratio": 1.07,
-    "motion": 12.6,
-    "saturation": 47.5,
-    "sharp": 8.61
+    "brightness": 124.7,
+    "cut_ratio": 1.08,
+    "motion": 8.51,
+    "saturation": 46.7,
+    "sharp": 9.0
    },
    "alternatives": [
-    "mixkit:20233",
+    "mixkit:32463",
     "mixkit:18736"
    ]
   },
   {
    "scene": "S05",
+   "source": "mixkit",
+   "id": "28343",
+   "title": "forest covered by a mist seen from the air",
+   "page": "https://mixkit.co/free-stock-video/forest-covered-by-a-mist-seen-from-the-air-28343/",
+   "preview_url": "https://assets.mixkit.co/videos/28343/28343-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/28343/28343-1080.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 15.3,
+   "sha256": "400d7f3b812f4ee5edc913f543313343cd77e653231d61e75bfc892a3148a74d",
+   "phashes": [
+    16779225721041061890,
+    16778706735449098713,
+    16202215196820825027
+   ],
+   "segment": {
+    "start": 22.08,
+    "end": 26.93,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima dark (brilho 74.5), movimento 2.88, palavras-chave 1, interpretacao=claude",
+   "scores": {
+    "unary": 2.885,
+    "clip_sem": 0.0064
+   },
+   "vision": {
+    "sem": 0.0064,
+    "neg": {
+     "people": 0.1789,
+     "city": 0.0213,
+     "indoor": 0.6782,
+     "text": 0.0007,
+     "cgi": 0.1145
+    }
+   },
+   "metrics": {
+    "brightness": 74.5,
+    "cut_ratio": 0.98,
+    "motion": 2.88,
+    "saturation": 41.8,
+    "sharp": 5.85
+   },
+   "alternatives": [
+    "mixkit:28342",
+    "mixkit:22728",
+    "mixkit:47655"
+   ]
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "47655",
+   "title": "cold and foggy forest landscape view",
+   "page": "https://mixkit.co/free-stock-video/cold-and-foggy-forest-landscape-view-47655/",
+   "preview_url": "https://assets.mixkit.co/videos/47655/47655-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/47655/47655-720.mp4",
+   "license": "Mixkit Stock Video Free License",
+   "license_ok": true,
+   "license_evidence": "pagina cita 'Stock Video Free License'",
+   "interval": [
+    0,
+    9.0
+   ],
+   "clip_seconds": 14.2,
+   "sha256": "e5a36438cffa8f5ac1bdfca25558767a0c3ecd61ffe002e1102637c85828248e",
+   "phashes": [
+    10512894447171063012,
+    13324407252045449376,
+    13315116091245648297
+   ],
+   "segment": {
+    "start": 26.93,
+    "end": 32.16,
+    "emotion": "arco_padrao",
+    "interpretation": "claude"
+   },
+   "justification": "clima mid (brilho 87.3), movimento 16.13, palavras-chave 2, interpretacao=claude",
+   "scores": {
+    "unary": 2.75,
+    "clip_sem": 0.0013
+   },
+   "vision": {
+    "sem": 0.0013,
+    "neg": {
+     "people": 0.2198,
+     "city": 0.0036,
+     "indoor": 0.3715,
+     "text": 0.0049,
+     "cgi": 0.399
+    }
+   },
+   "metrics": {
+    "brightness": 87.3,
+    "cut_ratio": 1.13,
+    "motion": 16.13,
+    "saturation": 68.4,
+    "sharp": 27.95
+   },
+   "alternatives": [
+    "mixkit:28342",
+    "mixkit:28343",
+    "mixkit:34856",
+    "mixkit:51447"
+   ]
+  },
+  {
+   "scene": "S07",
    "source": "mixkit",
    "id": "28342",
    "title": "slow aerial tour through a mist covered forest",
@@ -1439,7 +1566,7 @@
    "license_evidence": "pagina cita 'Stock Video Free License'",
    "interval": [
     0,
-    9.0
+    10.0
    ],
    "clip_seconds": 15.4,
    "sha256": "05b5002b84bb08f19777ec18cd0c2a6770ade30a9c886a36a5a07865f97f7a9f",
@@ -1449,24 +1576,24 @@
     16200277959673704944
    ],
    "segment": {
-    "start": 22.08,
-    "end": 26.93,
+    "start": 32.16,
+    "end": 38.16,
     "emotion": "arco_padrao",
     "interpretation": "claude"
    },
-   "justification": "clima dark (brilho 77.2), movimento 2.73, palavras-chave 1, interpretacao=claude",
+   "justification": "clima mid (brilho 77.2), movimento 2.73, palavras-chave 1, interpretacao=claude",
    "scores": {
-    "unary": 2.871,
-    "clip_sem": 0.0073
+    "unary": 2.804,
+    "clip_sem": 0.0063
    },
    "vision": {
-    "sem": 0.0073,
+    "sem": 0.0063,
     "neg": {
      "people": 0.0317,
      "city": 0.0307,
-     "indoor": 0.7764,
+     "indoor": 0.7772,
      "text": 0.0005,
-     "cgi": 0.1534
+     "cgi": 0.1536
     }
    },
    "metrics": {
@@ -1475,119 +1602,6 @@
     "motion": 2.73,
     "saturation": 47.5,
     "sharp": 6.13
-   },
-   "alternatives": [
-    "mixkit:28343",
-    "mixkit:22728",
-    "mixkit:47655"
-   ]
-  },
-  {
-   "scene": "S06",
-   "source": "mixkit",
-   "id": "2213",
-   "title": "waterfall in forest",
-   "page": "https://mixkit.co/free-stock-video/waterfall-in-forest-2213/",
-   "preview_url": "https://assets.mixkit.co/videos/2213/2213-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/2213/2213-1080.mp4",
-   "license": "Mixkit Stock Video Free License",
-   "license_ok": true,
-   "license_evidence": "pagina cita 'Stock Video Free License'",
-   "interval": [
-    0,
-    9.0
-   ],
-   "clip_seconds": 15.0,
-   "sha256": "fae57ae2939fb8ad255d082affa4dae474ee3d6e23fe384aaf10978bdd6ecdc5",
-   "phashes": [
-    7125507020489285792,
-    7125507016213180592,
-    6945928180078260400
-   ],
-   "segment": {
-    "start": 26.93,
-    "end": 32.16,
-    "emotion": "arco_padrao",
-    "interpretation": "claude"
-   },
-   "justification": "clima mid (brilho 86.6), movimento 7.48, palavras-chave 1, interpretacao=claude",
-   "scores": {
-    "unary": 3.257,
-    "clip_sem": 0.0985
-   },
-   "vision": {
-    "sem": 0.0985,
-    "neg": {
-     "people": 0.1316,
-     "city": 0.1126,
-     "indoor": 0.3623,
-     "text": 0.0002,
-     "cgi": 0.2947
-    }
-   },
-   "metrics": {
-    "brightness": 86.6,
-    "cut_ratio": 1.21,
-    "motion": 7.48,
-    "saturation": 36.3,
-    "sharp": 13.67
-   },
-   "alternatives": [
-    "mixkit:28342",
-    "mixkit:28343",
-    "mixkit:34856",
-    "mixkit:47655"
-   ]
-  },
-  {
-   "scene": "S07",
-   "source": "mixkit",
-   "id": "4695",
-   "title": "clouds covering the mountains",
-   "page": "https://mixkit.co/free-stock-video/clouds-covering-the-mountains-4695/",
-   "preview_url": "https://assets.mixkit.co/videos/4695/4695-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/4695/4695-1080.mp4",
-   "license": "Mixkit Stock Video Free License",
-   "license_ok": true,
-   "license_evidence": "pagina cita 'Stock Video Free License'",
-   "interval": [
-    0,
-    10.0
-   ],
-   "clip_seconds": 22.0,
-   "sha256": "0a10f8ba5dfdc38a4a74ad39d76cfeeb516f498dc405ca036113e2033f82dc95",
-   "phashes": [
-    13889347784597201152,
-    13898355396070154240,
-    13898355396103577600
-   ],
-   "segment": {
-    "start": 32.16,
-    "end": 38.16,
-    "emotion": "arco_padrao",
-    "interpretation": "claude"
-   },
-   "justification": "clima mid (brilho 81.0), movimento 4.0, palavras-chave 1, interpretacao=claude",
-   "scores": {
-    "unary": 2.796,
-    "clip_sem": 0.0018
-   },
-   "vision": {
-    "sem": 0.0018,
-    "neg": {
-     "people": 0.4343,
-     "city": 0.0039,
-     "indoor": 0.3056,
-     "text": 0.0001,
-     "cgi": 0.2542
-    }
-   },
-   "metrics": {
-    "brightness": 81.0,
-    "cut_ratio": 1.13,
-    "motion": 4.0,
-    "saturation": 78.5,
-    "sharp": 5.99
    },
    "alternatives": [
     "mixkit:3006",
@@ -1656,11 +1670,11 @@
   {
    "scene": "S09",
    "source": "mixkit",
-   "id": "21143",
-   "title": "gentle breeze as the day dawns",
-   "page": "https://mixkit.co/free-stock-video/gentle-breeze-as-the-day-dawns-21143/",
-   "preview_url": "https://assets.mixkit.co/videos/21143/21143-360.mp4",
-   "hd_url": "https://assets.mixkit.co/videos/21143/21143-720.mp4",
+   "id": "51106",
+   "title": "rays of the sun passing through the branches of a",
+   "page": "https://mixkit.co/free-stock-video/rays-of-the-sun-passing-through-the-branches-of-a-51106/",
+   "preview_url": "https://assets.mixkit.co/videos/51106/51106-360.mp4",
+   "hd_url": "https://assets.mixkit.co/videos/51106/51106-1080.mp4",
    "license": "Mixkit Stock Video Free License",
    "license_ok": true,
    "license_evidence": "pagina cita 'Stock Video Free License'",
@@ -1668,12 +1682,12 @@
     0,
     8.0
    ],
-   "clip_seconds": 10.8,
-   "sha256": "22781d7c6769bd1fd8a83fc32e8659c51cbbe4c678182c58a94a0af2e8931a55",
+   "clip_seconds": 10.9,
+   "sha256": "6ac9fb706f1c3f1ee35a392647c2a0a860b019533f9e2e3dfa0d75378e932cff",
    "phashes": [
-    14115064985929572576,
-    14115073575864033504,
-    15186367607790952680
+    16206463726526751788,
+    16204225189436695596,
+    16204198595569003564
    ],
    "segment": {
     "start": 44.16,
@@ -1681,31 +1695,30 @@
     "emotion": "arco_padrao",
     "interpretation": "claude"
    },
-   "justification": "clima bright (brilho 124.1), movimento 6.39, palavras-chave 1, interpretacao=claude",
+   "justification": "clima bright (brilho 143.8), movimento 17.25, palavras-chave 2, interpretacao=claude",
    "scores": {
-    "unary": 3.144,
-    "clip_sem": 0.0072
+    "unary": 3.092,
+    "clip_sem": 0.0021
    },
    "vision": {
-    "sem": 0.0072,
+    "sem": 0.0021,
     "neg": {
-     "people": 0.2448,
-     "city": 0.0128,
-     "indoor": 0.456,
-     "text": 0.0004,
-     "cgi": 0.2788
+     "people": 0.2202,
+     "city": 0.0304,
+     "indoor": 0.5933,
+     "text": 0.001,
+     "cgi": 0.1529
     }
    },
    "metrics": {
-    "brightness": 124.1,
-    "cut_ratio": 0.99,
-    "motion": 6.39,
-    "saturation": 95.4,
-    "sharp": 18.67
+    "brightness": 143.8,
+    "cut_ratio": 2.71,
+    "motion": 17.25,
+    "saturation": 51.0,
+    "sharp": 25.15
    },
    "alternatives": [
     "mixkit:5372",
-    "mixkit:51106",
     "mixkit:27028"
    ]
   },
@@ -1806,9 +1819,9 @@
    },
    "metrics": {
     "brightness": 117.8,
-    "saturation": 105.1,
-    "motion": 4.43,
     "cut_ratio": 0.99,
+    "motion": 4.43,
+    "saturation": 105.1,
     "sharp": 11.02
    },
    "alternatives": [
@@ -1923,7 +1936,7 @@
   "aprovacao_estetica_humana": "NAO_VERIFICADA",
   "manifest_errors": []
  },
- "sequence_utility": 33.888,
+ "sequence_utility": 33.307,
  "trace": {
   "beam": 400,
   "weights": {
