@@ -75,6 +75,26 @@ def url_capa(cloud, pid):
     return f"https://res.cloudinary.com/{cloud}/image/upload/{pid}.jpg"
 
 
+def public_id_seguro(ep_id, sha):
+    e, _ = episodio(ep_id)
+    return f"vnc/{e['quadro'].lower()}{e['numero']}-seguro-{sha[:10]}"
+
+
+def ffmpeg_seguro(src, dst):
+    """Copia de PUBLICACAO (o master nao muda): video copiado sem recodificar; audio estereo (mono duplicado), pico limitado a ~-3 dBFS, AAC 192k.
+    Motivo: audio estourado/robotico nos 3 canais quando o Buffer processa o mp4 (23/11); os posts nativos anteriores ficaram bons."""
+    return ["ffmpeg", "-y", "-v", "error", "-i", str(src), "-map", "0:v", "-map", "0:a", "-c:v", "copy",
+            "-af", "pan=stereo|c0=c0|c1=c0,alimiter=limit=0.708:level=disabled,aresample=48000",
+            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(dst)]
+
+
+def medir_audio(arq):
+    import subprocess, re
+    r = subprocess.run(["ffmpeg", "-nostats", "-hide_banner", "-i", str(arq), "-vn", "-af", "ebur128=peak=true:framelog=quiet", "-f", "null", "-"], capture_output=True, text=True).stderr
+    r = r[r.rfind("Summary"):]
+    return {"lufs": re.search(r"I:\s+(-?[\d.]+) LUFS", r).group(1), "pico_dbfs": re.search(r"Peak:\s+(-?[\d.]+) dBFS", r).group(1)}
+
+
 def url_publica(cloud, pid):
     return f"https://res.cloudinary.com/{cloud}/video/upload/{pid}.mp4"
 
@@ -134,12 +154,12 @@ def conferir_url(url, tamanho):
 def main(argv):
     cfg = json.loads((ROOT / "run/media.json").read_text(encoding="utf8"))
     mode = argv[0] if argv else cfg.get("mode", "check")
-    if mode not in ("check", "upload", "check_capa", "upload_capa", "verify_remoto"):
+    if mode not in ("check", "upload", "check_capa", "upload_capa", "verify_remoto", "upload_seguro"):
         raise MediaError(f"modo invalido: {mode}")
     raiz = os.environ.get("VNC_MEDIA_SRC", "fonte/backfill")
     cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", "")
     key, secret = os.environ.get("CLOUDINARY_API_KEY", ""), os.environ.get("CLOUDINARY_API_SECRET", "")
-    if mode in ("upload", "upload_capa") and not (cloud and key and secret):
+    if mode in ("upload", "upload_capa", "upload_seguro") and not (cloud and key and secret):
         raise MediaError("credenciais Cloudinary ausentes")
     out = []
     for ep in cfg["episodes"]:
@@ -162,6 +182,21 @@ def main(argv):
         sha = sha256(mp4)
         pid = public_id(ep, sha)
         item = {"id": ep, "bytes": tam, "sha256": sha, "public_id": pid}
+        if mode == "upload_seguro":
+            import subprocess, tempfile
+            with tempfile.TemporaryDirectory() as t:
+                dst = Path(t) / "seguro.mp4"
+                subprocess.run(ffmpeg_seguro(mp4, dst), check=True)
+                sha_s, tam_s = sha256(dst), dst.stat().st_size
+                if tam_s > LIMITE_BYTES:
+                    raise MediaError(f"{ep}: copia segura {tam_s} bytes acima do limite")
+                pid_s = public_id_seguro(ep, sha_s)
+                item = {"id": ep, "original_sha256": sha, "original_audio": medir_audio(mp4), "seguro_bytes": tam_s, "seguro_sha256": sha_s, "seguro_audio": medir_audio(dst), "public_id_seguro": pid_s}
+                enviar(dst, pid_s, cloud, key, secret)
+                item["url_ok"] = verificar_remoto(url_publica(cloud, pid_s), sha_s)
+            out.append(item)
+            print("VNC_MEDIA_SEGURO " + json.dumps(item, ensure_ascii=False), flush=True)
+            continue
         if mode == "verify_remoto":
             item["url_ok"] = verificar_remoto(url_publica(cloud, pid), sha)
         if mode == "upload":

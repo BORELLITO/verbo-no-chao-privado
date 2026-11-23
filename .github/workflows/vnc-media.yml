@@ -1,5 +1,5 @@
 name: VNC Midia publica (Cloudinary)
-# Entrada: run/media.json {"mode":"check|upload|check_capa|upload_capa|verify_remoto","episodes":["E03",...],"nonce":"..."}. Envia o mp4 final a hospedagem gratuita para o agendador buscar. Nao publica nada em rede social. Sem cron.
+# Entrada: run/media.json {"mode":"check|upload|check_capa|upload_capa|verify_remoto|upload_seguro","episodes":["E03",...],"nonce":"..."}. Envia o mp4 final a hospedagem gratuita para o agendador buscar. Nao publica nada em rede social. Sem cron.
 on:
   push:
     branches: ["main"]
@@ -47,5 +47,5 @@ jobs:
           VNC_MEDIA_SRC: fonte/backfill
           VNC_MEDIA_ART: art
         run: |
-          MODE="$(python3 -c 'import json;m=json.load(open("run/media.json")).get("mode","check");assert m in ("check","upload","check_capa","upload_capa","verify_remoto");print(m)')"
+          MODE="$(python3 -c 'import json;m=json.load(open("run/media.json")).get("mode","check");assert m in ("check","upload","check_capa","upload_capa","verify_remoto","upload_seguro");print(m)')"
           python3 -m agents.vnc_media "$MODE"

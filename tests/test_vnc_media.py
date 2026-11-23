@@ -63,3 +63,9 @@ if __name__ == "__main__":
 def test_todo_episodio_hospedado_tem_capa_hospedada():
     m = json.loads((ROOT / "publicacao/midia_v1.json").read_text(encoding="utf8"))
     assert set(m["public_ids"]) <= set(m["capas"])
+
+
+def test_copia_segura_nao_recodifica_video_e_limita_pico():
+    a = M.ffmpeg_seguro("a.mp4", "b.mp4")
+    assert a[a.index("-c:v") + 1] == "copy" and "alimiter=limit=0.708" in a[a.index("-af") + 1] and "pan=stereo" in a[a.index("-af") + 1]
+    assert M.public_id_seguro("E03", "ab" * 32).startswith("vnc/dores4-seguro-")
