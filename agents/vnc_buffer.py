@@ -182,10 +182,10 @@ def canais_por_rede(key, opener=urllib.request.urlopen):
     return {r: res[r] for r in SERVICOS if r in res}
 
 
-def existentes(key, opener=urllib.request.urlopen):
+def existentes(key, opener=urllib.request.urlopen, com_rascunho=True):
     """(rede, dueAt) de posts ja criados (agendados, rascunhos, enviados): evita duplicar ao repetir um run."""
-    q = ("query($o:OrganizationId!,$a:String){ posts(first:100, after:$a, input:{organizationId:$o, filter:{status:[scheduled,draft,needs_approval,sending,sent]}}){ "
-         "edges{ node{ channelService dueAt } } pageInfo{ hasNextPage endCursor } } }")
+    q = ("query($o:OrganizationId!,$a:String){ posts(first:100, after:$a, input:{organizationId:$o, filter:{status:[%s]}}){ "
+         "edges{ node{ channelService dueAt } } pageInfo{ hasNextPage endCursor } } }") % ("scheduled,draft,needs_approval,sending,sent" if com_rascunho else "scheduled,needs_approval,sending,sent")
     vistos = set()
     for org in probe(key, opener):
         after = None
@@ -248,7 +248,7 @@ def main(argv):
         pk["episodios"] = [e for e in pk["episodios"] if e["id"] in eps]
         redes = set(cfg.get("redes") or SERVICOS)
         canais = {r: c for r, c in canais_por_rede(key).items() if r in redes}
-        ja = existentes(key)
+        ja = existentes(key, com_rascunho=(mode == "draft"))
         pedidos = [p for p in montar_pedidos(pk, canais, lambda ep: f"https://res.cloudinary.com/{cloud}/video/upload/{pids[ep]}.mp4")
                    if (p["rede"], p["input"]["dueAt"]) not in ja]
         print(f"VNC_BUFFER_PLANO modo={mode} pedidos={len(pedidos)} ja_existentes={len(ja)}")
