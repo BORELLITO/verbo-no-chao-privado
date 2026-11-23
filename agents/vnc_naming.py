@@ -27,8 +27,22 @@ def quadro_nome(ep, root=ROOT):
     return load(root)["quadros"][entry(ep, root)["quadro"]]["nome"]
 
 
+def rotulo(ep, root=ROOT):
+    """Nome curto que o dono ve: 'DORES DA VIDA 4'. Quadro + numero do quadro, nunca o id interno."""
+    e = entry(ep, root); return f"{load(root)['quadros'][e['quadro']]['curto'].upper()} {e['numero']}"
+
+
+def kicker(ep, root=ROOT):
+    """Linha pequena da capa: 'DORES DA VIDA · EPISÓDIO 4' (sem zero a esquerda; mesmo padrao nos dois quadros)."""
+    e = entry(ep, root); return f"{load(root)['quadros'][e['quadro']]['curto'].upper()} · EPISÓDIO {e['numero']}"
+
+
+def horario(quadro, root=ROOT):
+    return load(root)["quadros"][quadro]["horario"]
+
+
 def base(ep, root=ROOT):
-    e = entry(ep, root); return f"EPISÓDIO {e['numero']} - {e['titulo']}"
+    e = entry(ep, root); return f"{rotulo(ep, root)} - {e['titulo']}"
 
 
 def files(ep, root=ROOT):
@@ -37,7 +51,7 @@ def files(ep, root=ROOT):
 
 
 def label(ep, root=ROOT):
-    e = entry(ep, root); return f"{quadro_nome(ep, root)} · EPISÓDIO {e['numero']} — {e['titulo']}"
+    e = entry(ep, root); return f"{rotulo(ep, root)} — {e['titulo']}"
 
 
 def next_number(quadro, root=ROOT):
@@ -80,12 +94,38 @@ def check_episode(ep, root=ROOT):
     if cfg.get("cover_style") == "quadro":
         if e["quadro"] != "FORA": errs.append(f"NUMERACAO {ep}: capa de quadro mas registro diz {e['quadro']}")
         k = (cfg.get("cover_quadro") or {}).get("kicker", "")
-        want = f"{load(root)['quadros'][e['quadro']]['curto'].upper()} · EPISÓDIO {e['numero']}"
+        want = kicker(ep, root)
         if k != want: errs.append(f"NUMERACAO {ep}: kicker da capa '{k}' != '{want}'")
+        big = " ".join((cfg.get("cover_quadro") or {}).get("big", []))
+        ok_big = (load(root).get("excecoes", {}).get(ep) or {}).get("capa_big", e["titulo"])
+        if big != ok_big: errs.append(f"NUMERACAO {ep}: titulo grande da capa '{big}' != titulo oficial '{e['titulo']}'")
     else:
         shown = cfg.get("cover_number", cfg.get("number"))
         if shown != e["numero"]: errs.append(f"NUMERACAO {ep}: numero na capa {shown} != numero do quadro {e['numero']}")
         if e["quadro"] != "DORES": errs.append(f"NUMERACAO {ep}: capa padrao e so do quadro DORES (registro diz {e['quadro']})")
+    if "titulo_curto" in (cfg.get("posting") or {}): errs.append(f"NUMERACAO {ep}: posting.titulo_curto e proibido (nome so pelo registro: {rotulo(ep, root)} - {e['titulo']})")
+    return errs
+
+
+def check_publicacao(root=ROOT):
+    """Pacote/calendario: horario fixo por quadro (12:00 DORES, 19:00 FORA), um episodio por dia por quadro, em ordem, sem buracos."""
+    reg, errs = load(root), []
+    pk = json.loads((root / "publicacao" / "pacote_v1.json").read_text(encoding="utf8"))
+    por_quadro = {}
+    for x in pk["episodios"]:
+        q = next(k for k, v in reg["quadros"].items() if v["nome"] == x["quadro"])
+        dia, hora = x["sugestao_horario_brt"].split(" ")
+        if hora != reg["quadros"][q]["horario"]: errs.append(f"PUBLICACAO {rotulo(x['id'], root)}: horario {hora} != {reg['quadros'][q]['horario']} do quadro")
+        por_quadro.setdefault(q, []).append((x["numero"], dia))
+    import datetime as dt
+    for q, itens in por_quadro.items():
+        itens.sort()
+        for (n1, d1), (n2, d2) in zip(itens, itens[1:]):
+            if n2 != n1 + 1 or dt.date.fromisoformat(d2) - dt.date.fromisoformat(d1) != dt.timedelta(days=1):
+                errs.append(f"PUBLICACAO {q}: {n1}({d1}) -> {n2}({d2}) fora de ordem ou com buraco")
+    with open(root / "publicacao" / "calendario_v1.csv", encoding="utf8") as f:
+        for linha in f.read().splitlines()[1:]:
+            if "QUADRO -" in linha: errs.append(f"PUBLICACAO calendario: prefixo 'QUADRO -' no rotulo: {linha}")
     return errs
 
 
@@ -96,9 +136,9 @@ def doc(root=ROOT):
     for q, qi in reg["quadros"].items():
         out += [f"## {qi['nome']}", "", "| Nº | Título | Referência | id interno |", "|---|---|---|---|"]
         for e in sorted((x for x in reg["episodios"] if x["quadro"] == q), key=lambda x: x["numero"]):
-            out.append(f"| EPISÓDIO {e['numero']} | {e['titulo']} | {e['referencia']} | {e['id']} |")
-        out += ["", f"Próximo: EPISÓDIO {next_number(q, root)}", ""]
-    out += ["## Padrão de nomes no Drive", "", "`VERBO NO CHÃO / QUADRO - <NOME> / EPISÓDIO <N> - <TÍTULO> /` com `<mesmo nome>.mp4`, `.srt`, ` - CAPA.jpg` e ` - LEGENDAS DE POSTAGEM.txt`.", ""]
+            out.append(f"| {rotulo(e['id'], root)} | {e['titulo']} | {e['referencia']} | {e['id']} |")
+        out += ["", f"Próximo: {qi['curto'].upper()} {next_number(q, root)} (horário fixo {qi['horario']} BRT)", ""]
+    out += ["## Padrão de nomes no Drive", "", "`VERBO NO CHÃO / QUADRO - <NOME> / <QUADRO> <N> - <TÍTULO> /` (ex.: `DORES DA VIDA 4 - ESPERANÇA ENTRE RUÍNAS`) com `<mesmo nome>.mp4`, `.srt`, ` - CAPA.jpg` e ` - LEGENDAS DE POSTAGEM.txt`. Capa: kicker `<QUADRO> · EPISÓDIO <N>` sem zero à esquerda. Horário fixo: 12:00 DORES DA VIDA, 19:00 FORA DO CONTEXTO.", ""]
     return "\n".join(out)
 
 
@@ -107,7 +147,7 @@ def main(argv):
     if cmd == "list":
         for e in load()["episodios"]: print(label(e["id"]), f"(id interno {e['id']})")
     elif cmd == "check":
-        errs = check()
+        errs = check() + check_publicacao()
         for e in errs: print("VNC_NUMERACAO_FAIL", e)
         print("VNC_NUMERACAO_OK" if not errs else f"VNC_NUMERACAO_BLOCKED {len(errs)}"); return 1 if errs else 0
     elif cmd == "label": print(label(argv[1]))

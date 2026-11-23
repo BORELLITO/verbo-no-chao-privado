@@ -11,9 +11,9 @@ class Numeracao(unittest.TestCase):
             self.assertEqual(nums, list(range(1, len(nums) + 1)))
             self.assertEqual(N.next_number(q), len(nums) + 1)
     def test_nomes_oficiais(self):
-        self.assertEqual(N.label("E05"), "QUADRO - DORES DA VIDA · EPISÓDIO 3 — MEDO E UMA MÃO FIRME")
-        self.assertEqual(N.label("E07"), "QUADRO - FORA DO CONTEXTO · EPISÓDIO 2 — PLANO DE PAZ")
-        self.assertEqual(N.files("E04")["cover"], "EPISÓDIO 5 - DESCANSO PRA QUEM ESTÁ CANSADO - CAPA.jpg")
+        self.assertEqual(N.label("E05"), "DORES DA VIDA 3 — MEDO E UMA MÃO FIRME")
+        self.assertEqual(N.label("E07"), "FORA DO CONTEXTO 2 — PLANO DE PAZ")
+        self.assertEqual(N.files("E04")["cover"], "DORES DA VIDA 5 - DESCANSO PRA QUEM ESTÁ CANSADO - CAPA.jpg")
     def test_episodio_fora_do_registro_trava(self):
         self.assertTrue(N.check_episode("E99"))
     def _clone(self):
@@ -42,3 +42,29 @@ def test_karaoke_por_quadro():
     reg = N.load()
     assert reg["quadros"]["FORA"]["karaoke"] == "laranja" and reg["quadros"]["DORES"]["karaoke"] == "lilas"
     assert N.check() == []
+
+
+class Padrao(unittest.TestCase):
+    def test_kicker_igual_nos_dois_quadros_sem_zero(self):
+        self.assertEqual(N.kicker("E03"), "DORES DA VIDA · EPISÓDIO 4")
+        self.assertEqual(N.kicker("E08"), "FORA DO CONTEXTO · EPISÓDIO 3")
+
+    def test_horario_fixo_por_quadro(self):
+        self.assertEqual((N.horario("DORES"), N.horario("FORA")), ("12:00", "19:00"))
+
+    def test_pacote_e_calendario_respeitam_o_padrao(self):
+        self.assertEqual(N.check_publicacao(), [])
+
+    def test_repositorio_inteiro_no_padrao(self):
+        self.assertEqual(N.check(), [])
+
+    def test_titulo_curto_proibido_e_titulo_da_capa_igual_ao_oficial(self):
+        import json, tempfile, shutil
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as t:
+            r = Path(t); shutil.copytree(N.ROOT / "contracts", r / "contracts"); shutil.copytree(N.ROOT / "episodes", r / "episodes")
+            p = r / "episodes" / "E08.json"; c = json.loads(p.read_text(encoding="utf8"))
+            c["posting"]["titulo_curto"] = "x"; c["cover_quadro"]["big"] = ["NÃO", "JULGAR"]
+            p.write_text(json.dumps(c, ensure_ascii=False), encoding="utf8")
+            errs = N.check_episode("E08", r)
+            self.assertTrue(any("titulo_curto" in e for e in errs)); self.assertTrue(any("titulo grande da capa" in e for e in errs))

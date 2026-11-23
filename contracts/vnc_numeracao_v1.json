@@ -5,12 +5,14 @@
   "DORES": {
    "nome": "QUADRO - DORES DA VIDA",
    "curto": "Dores da Vida",
-   "karaoke": "lilas"
+   "karaoke": "lilas",
+   "horario": "12:00"
   },
   "FORA": {
    "nome": "QUADRO - FORA DO CONTEXTO",
    "curto": "Fora do Contexto",
-   "karaoke": "laranja"
+   "karaoke": "laranja",
+   "horario": "19:00"
   }
  },
  "episodios": [
@@ -85,5 +87,12 @@
    "referencia": "Habacuque 3:17–19"
   }
  ],
- "decisao_karaoke": "Definido pelo dono em 2026-11-22: karaoke LARANJA no quadro FORA DO CONTEXTO (&H0066B3FF) e LILAS no quadro DORES DA VIDA (padrao travado &H00F2B0C4, sem karaoke_color no episodio)."
+ "decisao_karaoke": "Definido pelo dono em 2026-11-22: karaoke LARANJA no quadro FORA DO CONTEXTO (&H0066B3FF) e LILAS no quadro DORES DA VIDA (padrao travado &H00F2B0C4, sem karaoke_color no episodio).",
+ "padrao_exibicao": "<QUADRO CURTO EM MAIUSCULAS> <numero> - <TITULO>, ex.: DORES DA VIDA 4 - ESPERANCA ENTRE RUINAS. Kicker da capa: <QUADRO CURTO> · EPISODIO <numero> (sem zero a esquerda). Horario fixo por quadro (12:00 DORES, 19:00 FORA). Nunca mostrar id interno.",
+ "excecoes": {
+  "E07": {
+   "capa_big": "PLANOS DE PAZ",
+   "motivo": "capa aprovada antes do padrao; titulo oficial permanece PLANO DE PAZ; nao vai para as redes"
+  }
+ }
 }

@@ -8,26 +8,26 @@ O **id interno** (`E01`…) é só a chave estável de arquivos, hashes e regist
 
 | Nº | Título | Referência | id interno |
 |---|---|---|---|
-| EPISÓDIO 1 | QUANDO VOCÊ PERGUNTA E NADA MUDA | Habacuque 1:2–4 | E01 |
-| EPISÓDIO 2 | QUANDO A RESPOSTA DEMORA | Habacuque 2:1–3 | E02 |
-| EPISÓDIO 3 | MEDO E UMA MÃO FIRME | Isaías 41:10–13 | E05 |
-| EPISÓDIO 4 | ESPERANÇA ENTRE RUÍNAS | Lamentações 3:21–26 | E03 |
-| EPISÓDIO 5 | DESCANSO PRA QUEM ESTÁ CANSADO | Mateus 11:28–30 | E04 |
-| EPISÓDIO 6 | MESMO SEM COLHEITA | Habacuque 3:17–19 | E10 |
+| DORES DA VIDA 1 | QUANDO VOCÊ PERGUNTA E NADA MUDA | Habacuque 1:2–4 | E01 |
+| DORES DA VIDA 2 | QUANDO A RESPOSTA DEMORA | Habacuque 2:1–3 | E02 |
+| DORES DA VIDA 3 | MEDO E UMA MÃO FIRME | Isaías 41:10–13 | E05 |
+| DORES DA VIDA 4 | ESPERANÇA ENTRE RUÍNAS | Lamentações 3:21–26 | E03 |
+| DORES DA VIDA 5 | DESCANSO PRA QUEM ESTÁ CANSADO | Mateus 11:28–30 | E04 |
+| DORES DA VIDA 6 | MESMO SEM COLHEITA | Habacuque 3:17–19 | E10 |
 
-Próximo: EPISÓDIO 7
+Próximo: DORES DA VIDA 7 (horário fixo 12:00 BRT)
 
 ## QUADRO - FORA DO CONTEXTO
 
 | Nº | Título | Referência | id interno |
 |---|---|---|---|
-| EPISÓDIO 1 | TUDO POSSO | Filipenses 4:10–13 | E06 |
-| EPISÓDIO 2 | PLANO DE PAZ | Jeremias 29:11 | E07 |
-| EPISÓDIO 3 | NÃO JULGUEIS | Mateus 7:1–5 | E08 |
-| EPISÓDIO 4 | DOIS OU TRÊS | Mateus 18:15–20 | E09 |
+| FORA DO CONTEXTO 1 | TUDO POSSO | Filipenses 4:10–13 | E06 |
+| FORA DO CONTEXTO 2 | PLANO DE PAZ | Jeremias 29:11 | E07 |
+| FORA DO CONTEXTO 3 | NÃO JULGUEIS | Mateus 7:1–5 | E08 |
+| FORA DO CONTEXTO 4 | DOIS OU TRÊS | Mateus 18:15–20 | E09 |
 
-Próximo: EPISÓDIO 5
+Próximo: FORA DO CONTEXTO 5 (horário fixo 19:00 BRT)
 
 ## Padrão de nomes no Drive
 
-`VERBO NO CHÃO / QUADRO - <NOME> / EPISÓDIO <N> - <TÍTULO> /` com `<mesmo nome>.mp4`, `.srt`, ` - CAPA.jpg` e ` - LEGENDAS DE POSTAGEM.txt`.
+`VERBO NO CHÃO / QUADRO - <NOME> / <QUADRO> <N> - <TÍTULO> /` (ex.: `DORES DA VIDA 4 - ESPERANÇA ENTRE RUÍNAS`) com `<mesmo nome>.mp4`, `.srt`, ` - CAPA.jpg` e ` - LEGENDAS DE POSTAGEM.txt`. Capa: kicker `<QUADRO> · EPISÓDIO <N>` sem zero à esquerda. Horário fixo: 12:00 DORES DA VIDA, 19:00 FORA DO CONTEXTO.

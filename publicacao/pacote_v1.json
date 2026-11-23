@@ -5,6 +5,7 @@
  "episodios": [
   {
    "id": "E03",
+   "rotulo": "DORES DA VIDA 4",
    "quadro": "QUADRO - DORES DA VIDA",
    "numero": 4,
    "titulo": "ESPERANÇA ENTRE RUÍNAS",
@@ -45,6 +46,7 @@
   },
   {
    "id": "E06",
+   "rotulo": "FORA DO CONTEXTO 1",
    "quadro": "QUADRO - FORA DO CONTEXTO",
    "numero": 1,
    "titulo": "TUDO POSSO",
@@ -85,6 +87,7 @@
   },
   {
    "id": "E04",
+   "rotulo": "DORES DA VIDA 5",
    "quadro": "QUADRO - DORES DA VIDA",
    "numero": 5,
    "titulo": "DESCANSO PRA QUEM ESTÁ CANSADO",
@@ -125,6 +128,7 @@
   },
   {
    "id": "E07",
+   "rotulo": "FORA DO CONTEXTO 2",
    "quadro": "QUADRO - FORA DO CONTEXTO",
    "numero": 2,
    "titulo": "PLANO DE PAZ",
@@ -165,6 +169,7 @@
   },
   {
    "id": "E10",
+   "rotulo": "DORES DA VIDA 6",
    "quadro": "QUADRO - DORES DA VIDA",
    "numero": 6,
    "titulo": "MESMO SEM COLHEITA",
@@ -205,6 +210,7 @@
   },
   {
    "id": "E08",
+   "rotulo": "FORA DO CONTEXTO 3",
    "quadro": "QUADRO - FORA DO CONTEXTO",
    "numero": 3,
    "titulo": "NÃO JULGUEIS",
@@ -245,6 +251,7 @@
   },
   {
    "id": "E09",
+   "rotulo": "FORA DO CONTEXTO 4",
    "quadro": "QUADRO - FORA DO CONTEXTO",
    "numero": 4,
    "titulo": "DOIS OU TRÊS",
@@ -266,7 +273,7 @@
     "youtube_descricao": "Fora do Contexto, episódio 4.\n\nMateus 18:20 está num trecho sobre procurar o irmão que errou, com testemunhas e reconciliação. O contexto não anula a oração em grupo.\n\nMateus 18:15–20\n\nPara você, foi consolo ou chamado à reconciliação? Responda A ou B. Conte nos comentários.\n\nInscreva-se no canal para o próximo episódio.\n\n#fé #palavradedeus #mateus #foradocontexto #reflexão #Shorts"
    },
    "arquivos": "NAO VERIFICADO: link da pasta no Drive nao registrado aqui (esta no indice do Drive)",
-   "sugestao_horario_brt": "2026-11-26 12:00",
+   "sugestao_horario_brt": "2026-11-26 19:00",
    "plataformas": {
     "tiktok": {
      "estado": "nao_agendado",

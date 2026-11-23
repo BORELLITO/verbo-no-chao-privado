@@ -3,7 +3,7 @@ from pathlib import Path
 from unittest import mock
 from agents import vnc_pipeline_gate as G, vnc_voice as V
 
-POST = {"hook": "Você já esperou demais?", "resumo": "Resumo curto.", "pergunta": "E você?", "hashtags": ["#fé"], "titulo_curto": "Espera?"}
+POST = {"hook": "Você já esperou demais?", "resumo": "Resumo curto.", "pergunta": "E você?", "hashtags": ["#fé"]}
 REP = {"errors": [], "style_lock_errors": [], "final": {"w": 1080, "h": 1920, "seconds": 68.0},
        "align": {"words": 150, "interpolated": 1, "cross_check": {"median_abs_start_diff": 0.02, "n_gt_300ms": 2, "total": 150}}, "music": {"seconds": 120},
        "ending": {"variant": "C", "contract_sha256": None, "layers": [{"id": "18111", "license": "Mixkit Stock Video Free License"}, {"id": "48494", "license": "Mixkit Stock Video Free License"}, {"id": "46316", "license": "Mixkit Stock Video Free License"}],
