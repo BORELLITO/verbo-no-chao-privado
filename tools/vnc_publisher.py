@@ -16,14 +16,17 @@ def main():
     pend, pacote, k = [], [], 0
     # Estrutura 2 quadros: cada quadro tem uma fila na ordem definida pelo dono;
     # o calendario intercala (slot 1 = DORES, slot 2 = FORA); se uma fila acaba, a outra segue.
+    pub = json.load(open(R / "contracts/vnc_publicados_v1.json"))["publicados"]
+    ja = lambda e: all(pub.get(e["id"], {}).get(x) == "publicado" for x in PLAT)
     tem = lambda e: json.load(open(R / f"episodes/{e['id']}.json")).get("posting")
-    filas = {q: [e for e in num["episodios"] if e["quadro"] == q and tem(e)] for q in num["quadros"]}
+    tem_ou_pub = lambda e: tem(e) or ja(e)
+    filas = {q: [e for e in num["episodios"] if e["quadro"] == q and tem_ou_pub(e) and not ja(e)] for q in num["quadros"]}
     ordem, ult = [], None
     while any(filas.values()):
         for q in ("DORES", "FORA"):
             if filas[q]: ordem.append(filas[q].pop(0))
     for e in num["episodios"]:
-        if not tem(e): pend.append(f"{e['id']} {num['quadros'][e['quadro']]['nome']} {e['numero']}: sem bloco posting")
+        if not tem(e) and not ja(e): pend.append(f"{e['id']} {num['quadros'][e['quadro']]['nome']} {e['numero']}: sem bloco posting")
     for e in ordem:
         p = json.load(open(R / f"episodes/{e['id']}.json")).get("posting")
         nome = num["quadros"][e["quadro"]]["nome"]
@@ -34,7 +37,7 @@ def main():
             "pergunta": p["pergunta"], "hashtags": p["hashtags"],
             "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
             "sugestao_horario_brt": f"{d.isoformat()} {hh}",
-            "plataformas": {x: {"estado": "nao_agendado", "link": None} for x in PLAT},
+            "plataformas": {x: {"estado": pub.get(e["id"], {}).get(x, "nao_agendado"), "link": None} for x in PLAT},
             "aprovacao_publicacao": "PENDENTE_DO_DONO"})
     out = R / "publicacao"; out.mkdir(exist_ok=True)
     json.dump({"versao": 1, "aviso": "Horarios sao sugestao. Nada publicado/agendado por esta ferramenta.",

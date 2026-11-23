@@ -1,25 +1,22 @@
 {
  "versao": 1,
  "aviso": "Horarios sao sugestao. Nada publicado/agendado por esta ferramenta.",
- "sem_pacote": [
-  "E01 QUADRO - DORES DA VIDA 1: sem bloco posting",
-  "E02 QUADRO - DORES DA VIDA 2: sem bloco posting"
- ],
+ "sem_pacote": [],
  "episodios": [
   {
-   "id": "E05",
+   "id": "E03",
    "quadro": "QUADRO - DORES DA VIDA",
-   "numero": 3,
-   "titulo": "MEDO E UMA MÃO FIRME",
-   "referencia": "Isaías 41:10–13",
-   "hook": "Qual medo você nunca contou para ninguém?",
-   "resumo": "Em Isaías 41:10–13, Deus diz a um povo no exílio: não temas, eu sou contigo. Uma palavra dita a Israel, lida hoje com cuidado, sem prometer uma vida sem perigo.",
-   "pergunta": "Qual medo você precisa parar de carregar em silêncio?",
+   "numero": 4,
+   "titulo": "ESPERANÇA ENTRE RUÍNAS",
+   "referencia": "Lamentações 3:21–26",
+   "hook": "Onde você acharia esperança no meio de uma cidade destruída?",
+   "resumo": "Lamentações 3 nasceu entre as ruínas de Jerusalém. Um texto antigo que ensina a esperar lembrando, sem negar a dor.",
+   "pergunta": "Qual lembrança te ajuda a esperar quando o dia está difícil?",
    "hashtags": [
     "#fé",
     "#palavradedeus",
-    "#isaías41",
-    "#medo",
+    "#lamentações",
+    "#esperança",
     "#reflexão"
    ],
    "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
@@ -75,19 +72,19 @@
    "aprovacao_publicacao": "PENDENTE_DO_DONO"
   },
   {
-   "id": "E03",
+   "id": "E04",
    "quadro": "QUADRO - DORES DA VIDA",
-   "numero": 4,
-   "titulo": "ESPERANÇA ENTRE RUÍNAS",
-   "referencia": "Lamentações 3:21–26",
-   "hook": "Onde você acharia esperança no meio de uma cidade destruída?",
-   "resumo": "Lamentações 3 nasceu entre as ruínas de Jerusalém. Um texto antigo que ensina a esperar lembrando, sem negar a dor.",
-   "pergunta": "Qual lembrança te ajuda a esperar quando o dia está difícil?",
+   "numero": 5,
+   "titulo": "DESCANSO PRA QUEM ESTÁ CANSADO",
+   "referencia": "Mateus 11:28–30",
+   "hook": "Quanto peso você carrega sem contar para ninguém?",
+   "resumo": "Em Mateus 11:28–30, Jesus convida os cansados e sobrecarregados a aprender com ele. Um convite de descanso para a alma, sem prometer uma vida sem peso.",
+   "pergunta": "Que peso você precisa parar de carregar sozinho?",
    "hashtags": [
     "#fé",
     "#palavradedeus",
-    "#lamentações",
-    "#esperança",
+    "#mateus11",
+    "#descanso",
     "#reflexão"
    ],
    "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
@@ -143,40 +140,6 @@
    "aprovacao_publicacao": "PENDENTE_DO_DONO"
   },
   {
-   "id": "E04",
-   "quadro": "QUADRO - DORES DA VIDA",
-   "numero": 5,
-   "titulo": "DESCANSO PRA QUEM ESTÁ CANSADO",
-   "referencia": "Mateus 11:28–30",
-   "hook": "Quanto peso você carrega sem contar para ninguém?",
-   "resumo": "Em Mateus 11:28–30, Jesus convida os cansados e sobrecarregados a aprender com ele. Um convite de descanso para a alma, sem prometer uma vida sem peso.",
-   "pergunta": "Que peso você precisa parar de carregar sozinho?",
-   "hashtags": [
-    "#fé",
-    "#palavradedeus",
-    "#mateus11",
-    "#descanso",
-    "#reflexão"
-   ],
-   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
-   "sugestao_horario_brt": "2026-11-25 12:00",
-   "plataformas": {
-    "tiktok": {
-     "estado": "nao_agendado",
-     "link": null
-    },
-    "youtube": {
-     "estado": "nao_agendado",
-     "link": null
-    },
-    "instagram": {
-     "estado": "nao_agendado",
-     "link": null
-    }
-   },
-   "aprovacao_publicacao": "PENDENTE_DO_DONO"
-  },
-  {
    "id": "E08",
    "quadro": "QUADRO - FORA DO CONTEXTO",
    "numero": 3,
@@ -193,7 +156,7 @@
     "#reflexão"
    ],
    "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
-   "sugestao_horario_brt": "2026-11-25 19:00",
+   "sugestao_horario_brt": "2026-11-25 12:00",
    "plataformas": {
     "tiktok": {
      "estado": "nao_agendado",
@@ -227,7 +190,7 @@
     "#reflexão"
    ],
    "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
-   "sugestao_horario_brt": "2026-11-26 12:00",
+   "sugestao_horario_brt": "2026-11-25 19:00",
    "plataformas": {
     "tiktok": {
      "estado": "nao_agendado",

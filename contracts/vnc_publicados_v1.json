@@ -1,0 +1,13 @@
+{
+ "versao": 1,
+ "fonte": "prints enviados pelo dono em 2026-11-22 21:12 (BRT). Links nao informados; datas de postagem nao informadas.",
+ "publicados": {
+  "E01": {"tiktok": "publicado", "youtube": "publicado", "instagram": "publicado", "views_print": {"tiktok": 304, "youtube": 5}},
+  "E02": {"tiktok": "publicado", "youtube": "publicado", "instagram": "publicado", "views_print": {"tiktok": 250, "youtube": 4}},
+  "E05": {"tiktok": "publicado", "youtube": "publicado", "instagram": "publicado", "views_print": {"tiktok": 75, "youtube": 4}}
+ },
+ "institucional": [
+  {"titulo": "A fe nao precisa fugir das perguntas dificeis (card de valores)", "tiktok": "publicado", "instagram": "publicado", "youtube": "nao_visto", "views_print": {"tiktok": 212}}
+ ],
+ "contas": {"instagram": "@verbonochao (4 posts, 3 seguidores)", "tiktok": "@verbonochao (12 seguidores)", "youtube": "@verbonochao (3 videos, 1 inscrito)"}
+}
