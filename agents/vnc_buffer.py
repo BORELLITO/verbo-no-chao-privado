@@ -84,12 +84,12 @@ def introspect_deep(key, raiz=("PostInputMetaData", "ShareMode", "SchedulingType
     return out
 
 
-def introspect_query(key, opener=urllib.request.urlopen):
+def introspect_query(key, opener=urllib.request.urlopen, nomes=("PostsResults", "PostMetric", "PostsFiltersInput", "PostsInput")):
     """Somente leitura: campos da raiz Query (com argumentos) e dos tipos Post/PostsInput, para montar a leitura da fila."""
     q = ("query($n:String!){ __type(name:$n){ kind name fields{ name args{ name type{ name kind ofType{ name kind ofType{ name kind } } } } "
-         "type{ name kind ofType{ name kind ofType{ name kind } } } } inputFields{ name type{ name kind ofType{ name kind } } } enumValues{name} } }")
+         "type{ name kind ofType{ name kind ofType{ name kind } } } } inputFields{ name type{ name kind ofType{ name kind } } } enumValues{name} possibleTypes{ name } } }")
     out = {}
-    for n in ("PostsResults", "PostMetric", "PostsFiltersInput", "PostsInput"):
+    for n in nomes:
         t = gql(q, key, {"n": n}, opener)["__type"]
         if not t:
             continue
@@ -99,6 +99,8 @@ def introspect_query(key, opener=urllib.request.urlopen):
             out[n] = {f["name"]: _unwrap(f["type"]).get("name") for f in t["inputFields"]}
         elif t.get("enumValues"):
             out[n] = [v["name"] for v in t["enumValues"]]
+        elif t.get("possibleTypes"):
+            out[n] = {"uniao": [v["name"] for v in t["possibleTypes"]]}
     return out
 
 
@@ -181,7 +183,8 @@ def main(argv):
     elif mode == "introspect_deep":
         print("VNC_BUFFER_SCHEMA_DEEP " + json.dumps(introspect_deep(key), ensure_ascii=False))
     elif mode == "introspect_query":
-        print("VNC_BUFFER_SCHEMA_QUERY " + json.dumps(introspect_query(key), ensure_ascii=False))
+        nomes = json.loads((ROOT / "run/buffer.json").read_text(encoding="utf8")).get("tipos") or ["PostsResults"]
+        print("VNC_BUFFER_SCHEMA_QUERY " + json.dumps(introspect_query(key, nomes=tuple(nomes)), ensure_ascii=False))
     elif mode == "fila":
         print("VNC_BUFFER_FILA " + json.dumps(fila(key), ensure_ascii=False))
     elif mode == "dry":
