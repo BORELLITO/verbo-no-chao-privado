@@ -1,0 +1,248 @@
+{
+ "versao": 1,
+ "aviso": "Horarios sao sugestao. Nada publicado/agendado por esta ferramenta.",
+ "sem_pacote": [
+  "E01 QUADRO - DORES DA VIDA 1: sem bloco posting",
+  "E02 QUADRO - DORES DA VIDA 2: sem bloco posting"
+ ],
+ "episodios": [
+  {
+   "id": "E05",
+   "quadro": "QUADRO - DORES DA VIDA",
+   "numero": 3,
+   "titulo": "MEDO E UMA MÃO FIRME",
+   "referencia": "Isaías 41:10–13",
+   "hook": "Qual medo você nunca contou para ninguém?",
+   "resumo": "Em Isaías 41:10–13, Deus diz a um povo no exílio: não temas, eu sou contigo. Uma palavra dita a Israel, lida hoje com cuidado, sem prometer uma vida sem perigo.",
+   "pergunta": "Qual medo você precisa parar de carregar em silêncio?",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#isaías41",
+    "#medo",
+    "#reflexão"
+   ],
+   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
+   "sugestao_horario_brt": "2026-11-23 12:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  },
+  {
+   "id": "E03",
+   "quadro": "QUADRO - DORES DA VIDA",
+   "numero": 4,
+   "titulo": "ESPERANÇA ENTRE RUÍNAS",
+   "referencia": "Lamentações 3:21–26",
+   "hook": "Onde você acharia esperança no meio de uma cidade destruída?",
+   "resumo": "Lamentações 3 nasceu entre as ruínas de Jerusalém. Um texto antigo que ensina a esperar lembrando, sem negar a dor.",
+   "pergunta": "Qual lembrança te ajuda a esperar quando o dia está difícil?",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#lamentações",
+    "#esperança",
+    "#reflexão"
+   ],
+   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
+   "sugestao_horario_brt": "2026-11-23 19:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  },
+  {
+   "id": "E04",
+   "quadro": "QUADRO - DORES DA VIDA",
+   "numero": 5,
+   "titulo": "DESCANSO PRA QUEM ESTÁ CANSADO",
+   "referencia": "Mateus 11:28–30",
+   "hook": "Quanto peso você carrega sem contar para ninguém?",
+   "resumo": "Em Mateus 11:28–30, Jesus convida os cansados e sobrecarregados a aprender com ele. Um convite de descanso para a alma, sem prometer uma vida sem peso.",
+   "pergunta": "Que peso você precisa parar de carregar sozinho?",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#mateus11",
+    "#descanso",
+    "#reflexão"
+   ],
+   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
+   "sugestao_horario_brt": "2026-11-24 12:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  },
+  {
+   "id": "E06",
+   "quadro": "QUADRO - FORA DO CONTEXTO",
+   "numero": 1,
+   "titulo": "TUDO POSSO",
+   "referencia": "Filipenses 4:10–13",
+   "hook": "Você leu o versículo do tudo posso ao contrário?",
+   "resumo": "Fora do Contexto, episódio 1: Filipenses 4:13 vai além de frase de conquista. Paulo escreve preso, aprende a viver com fartura e com falta e diz que a força vem de Cristo.",
+   "pergunta": "Para você, esse versículo sempre foi sobre vencer ou sobre aguentar? Responda A ou B nos comentários.",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#filipenses",
+    "#foradocontexto",
+    "#reflexão"
+   ],
+   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
+   "sugestao_horario_brt": "2026-11-24 19:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  },
+  {
+   "id": "E07",
+   "quadro": "QUADRO - FORA DO CONTEXTO",
+   "numero": 2,
+   "titulo": "PLANO DE PAZ",
+   "referencia": "Jeremias 29:11",
+   "hook": "Você sabe para quem esse plano de Deus foi escrito?",
+   "resumo": "Fora do Contexto, episódio 2: Jeremias 29:11 vem numa carta a exilados na Babilônia. Era uma palavra a um povo inteiro, dada para o longo prazo, com esperança paciente.",
+   "pergunta": "Para você, esse versículo sempre foi sobre pressa ou sobre espera? Responda A ou B nos comentários.",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#jeremias",
+    "#foradocontexto",
+    "#reflexão"
+   ],
+   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
+   "sugestao_horario_brt": "2026-11-25 12:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  },
+  {
+   "id": "E08",
+   "quadro": "QUADRO - FORA DO CONTEXTO",
+   "numero": 3,
+   "titulo": "NÃO JULGUEIS",
+   "referencia": "Mateus 7:1–5",
+   "hook": "Você acha que Jesus proibiu qualquer correção ao dizer: não julgueis?",
+   "resumo": "Fora do Contexto, episódio 3: Mateus 7 não proíbe toda correção. Jesus condena o juízo hipócrita, pede que se tire a trave primeiro e manda reconhecer pelos frutos.",
+   "pergunta": "Para você, esse versículo sempre foi um escudo ou um espelho? Responda A ou B nos comentários.",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#mateus",
+    "#foradocontexto",
+    "#reflexão"
+   ],
+   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
+   "sugestao_horario_brt": "2026-11-25 19:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  },
+  {
+   "id": "E09",
+   "quadro": "QUADRO - FORA DO CONTEXTO",
+   "numero": 4,
+   "titulo": "DOIS OU TRÊS",
+   "referencia": "Mateus 18:15–20",
+   "hook": "Você cita onde dois ou três como promessa para oração em grupo?",
+   "resumo": "Fora do Contexto, episódio 4: Mateus 18:20 está num trecho sobre procurar o irmão que errou, com testemunhas e reconciliação. O contexto não anula a oração em grupo.",
+   "pergunta": "Para você, foi consolo ou chamado à reconciliação? Responda A ou B.",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#mateus",
+    "#foradocontexto",
+    "#reflexão"
+   ],
+   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
+   "sugestao_horario_brt": "2026-11-26 12:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  }
+ ]
+}
