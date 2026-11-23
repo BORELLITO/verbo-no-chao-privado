@@ -152,7 +152,15 @@ def metadados(rede, titulo_youtube):
     return {"tiktok": {"isAiGenerated": ROTULO_IA}}
 
 
-def montar_pedidos(pacote, canais, media_url_de):
+def _asset(video_url, capa_url=None):
+    """Video + capa vertical (VideoAssetInput.thumbnailUrl no Buffer). Sem capa so no modo dry de teste."""
+    v = {"url": video_url}
+    if capa_url:
+        v["thumbnailUrl"] = capa_url
+    return {"video": v}
+
+
+def montar_pedidos(pacote, canais, media_url_de, capa_url_de=None):
     """Um pedido por episodio x rede. canais: {'tiktok': channelId, ...}. media_url_de(ep_id)->URL publica do mp4."""
     out = []
     for e in pacote["episodios"]:
@@ -165,7 +173,7 @@ def montar_pedidos(pacote, canais, media_url_de):
                 "text": texto, "channelId": cid, "schedulingType": "automatic", "mode": "customScheduled", "needsApproval": False,
                 "dueAt": due_utc(e["sugestao_horario_brt"]),
                 "metadata": metadados(rede, leg["youtube_titulo"]),
-                "assets": [{"video": {"url": media_url_de(e["id"])}}]},
+                "assets": [_asset(media_url_de(e["id"]), capa_url_de(e["id"]) if capa_url_de else None)]},
                 })
     return out
 
@@ -280,7 +288,7 @@ def main(argv):
     elif mode == "dry":
         pk = json.loads((ROOT / "publicacao/pacote_v1.json").read_text(encoding="utf8"))
         canais = {r: f"<channelId {r}>" for r in SERVICOS}
-        for p in montar_pedidos(pk, canais, lambda ep: f"<URL publica do mp4 {ep}>"):
+        for p in montar_pedidos(pk, canais, lambda ep: f"<URL publica do mp4 {ep}>", lambda ep: f"<URL publica da capa {ep}>"):
             print("VNC_BUFFER_DRY " + json.dumps(p, ensure_ascii=False))
     elif mode in ("draft", "schedule"):
         cfg = json.loads((ROOT / "run/buffer.json").read_text(encoding="utf8"))
@@ -290,15 +298,19 @@ def main(argv):
         if mode == "schedule" and cfg.get("liberado_pelo_dono") is not True:
             raise BufferError("schedule exige liberado_pelo_dono=true no run/buffer.json")
         cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", "")
-        pids = json.loads((ROOT / "publicacao/midia_v1.json").read_text(encoding="utf8"))["public_ids"]
+        midia = json.loads((ROOT / "publicacao/midia_v1.json").read_text(encoding="utf8"))
+        pids, capas = midia["public_ids"], midia.get("capas", {})
         if not cloud or not eps <= set(pids):
             raise BufferError("midia publica ausente para algum episodio (rode vnc-media upload)")
+        if not eps <= set(capas):
+            raise BufferError("capa publica ausente para algum episodio (rode vnc-media upload_capa); sem capa nao agenda")
         pk = json.loads((ROOT / "publicacao/pacote_v1.json").read_text(encoding="utf8"))
         pk["episodios"] = [e for e in pk["episodios"] if e["id"] in eps]
         redes = set(cfg.get("redes") or SERVICOS)
         canais = {r: c for r, c in canais_por_rede(key).items() if r in redes}
         ja = existentes(key, com_rascunho=(mode == "draft"))
-        pedidos = [p for p in montar_pedidos(pk, canais, lambda ep: f"https://res.cloudinary.com/{cloud}/video/upload/{pids[ep]}.mp4")
+        pedidos = [p for p in montar_pedidos(pk, canais, lambda ep: f"https://res.cloudinary.com/{cloud}/video/upload/{pids[ep]}.mp4",
+                                   lambda ep: f"https://res.cloudinary.com/{cloud}/image/upload/{capas[ep]}.jpg")
                    if (p["rede"], p["input"]["dueAt"]) not in ja]
         print(f"VNC_BUFFER_PLANO modo={mode} pedidos={len(pedidos)} ja_existentes={len(ja)}")
         print("VNC_BUFFER_CRIADOS " + json.dumps(agendar(key, pedidos, rascunho=(mode == "draft")), ensure_ascii=False))

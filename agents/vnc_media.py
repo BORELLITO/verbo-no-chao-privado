@@ -1,6 +1,6 @@
 """VNC -> hospedagem publica da midia (Cloudinary, plano gratis) para o Buffer buscar o mp4.
 Unico modulo que fala com api.cloudinary.com / res.cloudinary.com. NAO publica nada em rede social.
-Entrada: run/media.json {"mode": "check|upload", "episodes": ["E03", ...], "nonce": "..."}.
+Entrada: run/media.json {"mode": "check|upload|check_capa|upload_capa", "episodes": ["E03", ...], "nonce": "..."}.
 Fonte dos mp4: artefato vnc-build do run indicado em "runs" ({"E08": <run_id>}; vale 3 dias) ou, sem run, pasta indicada em VNC_MEDIA_SRC (padrao fonte/backfill; no workflow e a branch de recarga ou o artefato vnc-build).
 Credenciais: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET (segredos do repo); o segredo nunca e impresso.
 public_id = vnc/<quadro><numero>-<10 primeiros hex do sha256>: estavel, repetivel e nao adivinhavel."""
@@ -38,6 +38,21 @@ def localizar(ep_id, raiz, art=None):
     return mp4
 
 
+def localizar_capa(ep_id, raiz, art=None):
+    """Capa vertical (jpg). Artefato vnc-cover do run (art/<id>-capa/**/*.jpg) tem prioridade; senao CAPA.jpg da pasta de recarga."""
+    if art and (Path(art) / f"{ep_id}-capa").is_dir():
+        achados = sorted((Path(art) / f"{ep_id}-capa").rglob("*.jpg"))
+        if len(achados) != 1:
+            raise MediaError(f"{ep_id}: esperado 1 jpg de capa no artefato, achei {len(achados)}")
+        return achados[0]
+    e, nome_quadro = episodio(ep_id)
+    d = Path(raiz) / nome_quadro / f"EPISÓDIO {e['numero']} - {e['titulo']}"
+    jpg = d / f"EPISÓDIO {e['numero']} - {e['titulo']} - CAPA.jpg"
+    if not jpg.is_file():
+        raise MediaError(f"capa nao encontrada para {ep_id}: {jpg}")
+    return jpg
+
+
 def sha256(p):
     h = hashlib.sha256()
     with open(p, "rb") as f:
@@ -49,6 +64,15 @@ def sha256(p):
 def public_id(ep_id, sha):
     e, _ = episodio(ep_id)
     return f"vnc/{e['quadro'].lower()}{e['numero']}-{sha[:10]}"
+
+
+def public_id_capa(ep_id, sha):
+    e, _ = episodio(ep_id)
+    return f"vnc/{e['quadro'].lower()}{e['numero']}-capa-{sha[:10]}"
+
+
+def url_capa(cloud, pid):
+    return f"https://res.cloudinary.com/{cloud}/image/upload/{pid}.jpg"
 
 
 def url_publica(cloud, pid):
@@ -73,6 +97,19 @@ def enviar(mp4, pid, cloud, key, secret, agora=None):
     return r.json()
 
 
+def enviar_capa(jpg, pid, cloud, key, secret, agora=None):
+    import requests  # instalado no workflow
+    ts = int(agora or time.time())
+    params = {"public_id": pid, "timestamp": ts}
+    with open(jpg, "rb") as f:
+        r = requests.post(f"https://api.cloudinary.com/v1_1/{cloud}/image/upload",
+                          data={**params, "api_key": key, "signature": assinar(params, secret)},
+                          files={"file": (Path(jpg).name, f, "image/jpeg")}, timeout=120)
+    if r.status_code != 200:
+        raise MediaError(f"upload da capa falhou HTTP {r.status_code}: {r.text[:300]}")
+    return r.json()
+
+
 def conferir_url(url, tamanho):
     """HEAD publico: tem que responder 200, video/mp4 e o mesmo tamanho do arquivo local."""
     req = urllib.request.Request(url, method="HEAD")
@@ -87,15 +124,27 @@ def conferir_url(url, tamanho):
 def main(argv):
     cfg = json.loads((ROOT / "run/media.json").read_text(encoding="utf8"))
     mode = argv[0] if argv else cfg.get("mode", "check")
-    if mode not in ("check", "upload"):
+    if mode not in ("check", "upload", "check_capa", "upload_capa"):
         raise MediaError(f"modo invalido: {mode}")
     raiz = os.environ.get("VNC_MEDIA_SRC", "fonte/backfill")
     cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", "")
     key, secret = os.environ.get("CLOUDINARY_API_KEY", ""), os.environ.get("CLOUDINARY_API_SECRET", "")
-    if mode == "upload" and not (cloud and key and secret):
+    if mode in ("upload", "upload_capa") and not (cloud and key and secret):
         raise MediaError("credenciais Cloudinary ausentes")
     out = []
     for ep in cfg["episodes"]:
+        if mode.endswith("_capa"):
+            jpg = localizar_capa(ep, raiz, os.environ.get("VNC_MEDIA_ART", "art"))
+            sha = sha256(jpg)
+            pid = public_id_capa(ep, sha)
+            item = {"id": ep, "capa_bytes": jpg.stat().st_size, "sha256": sha, "public_id_capa": pid}
+            if mode == "upload_capa":
+                enviar_capa(jpg, pid, cloud, key, secret)
+                item["url"] = url_capa(cloud, pid)
+                item["conferencia"] = conferir_url(item["url"], jpg.stat().st_size)
+            out.append(item)
+            print("VNC_MEDIA_CAPA " + json.dumps(item, ensure_ascii=False), flush=True)
+            continue
         mp4 = localizar(ep, raiz, os.environ.get("VNC_MEDIA_ART", "art"))
         tam = mp4.stat().st_size
         if tam > LIMITE_BYTES:

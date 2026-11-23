@@ -177,3 +177,9 @@ def test_cancelar_agendados_so_apaga_scheduled():
         else: d = {"posts": {"edges": [{"node": {"id": "1", "status": "sent", "channelService": "tiktok", "dueAt": "x"}}, {"node": {"id": "2", "status": "scheduled", "channelService": "youtube", "dueAt": "d"}}]}}
         return R(_j.dumps({"data": d}).encode())
     assert b.cancelar_agendados("k", opener) == ["2|youtube|d"]
+
+
+def test_pedido_leva_capa_como_thumbnail():
+    pk = json.load(open(B.ROOT / "publicacao/pacote_v1.json", encoding="utf8"))
+    ped = B.montar_pedidos(pk, {"tiktok": "c"}, lambda e: "v.mp4", lambda e: "c.jpg")
+    assert ped and all(p["input"]["assets"] == [{"video": {"url": "v.mp4", "thumbnailUrl": "c.jpg"}}] for p in ped)

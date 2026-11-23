@@ -1,5 +1,5 @@
 name: VNC Midia publica (Cloudinary)
-# Entrada: run/media.json {"mode":"check|upload","episodes":["E03",...],"nonce":"..."}. Envia o mp4 final a hospedagem gratuita para o agendador buscar. Nao publica nada em rede social. Sem cron.
+# Entrada: run/media.json {"mode":"check|upload|check_capa|upload_capa","episodes":["E03",...],"nonce":"..."}. Envia o mp4 final a hospedagem gratuita para o agendador buscar. Nao publica nada em rede social. Sem cron.
 on:
   push:
     branches: ["main"]
@@ -35,6 +35,8 @@ jobs:
           for ep, run in json.load(open("run/media.json")).get("runs", {}).items():
               assert ep.startswith("E") and str(run).isdigit()
               subprocess.run(["gh", "run", "download", str(run), "-R", "${{ github.repository }}", "-n", "vnc-build", "-D", f"art/{ep}"], check=True)
+              if json.load(open("run/media.json")).get("mode", "").endswith("_capa"):
+                  subprocess.run(["gh", "run", "download", str(run), "-R", "${{ github.repository }}", "-n", "vnc-cover", "-D", f"art/{ep}-capa"], check=True)
           PY
       - run: python -m pip install --disable-pip-version-check requests
       - name: Midia
@@ -45,5 +47,5 @@ jobs:
           VNC_MEDIA_SRC: fonte/backfill
           VNC_MEDIA_ART: art
         run: |
-          MODE="$(python3 -c 'import json;m=json.load(open("run/media.json")).get("mode","check");assert m in ("check","upload");print(m)')"
+          MODE="$(python3 -c 'import json;m=json.load(open("run/media.json")).get("mode","check");assert m in ("check","upload","check_capa","upload_capa");print(m)')"
           python3 -m agents.vnc_media "$MODE"

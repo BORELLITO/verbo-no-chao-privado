@@ -17,6 +17,21 @@ class Media(unittest.TestCase):
         self.assertEqual(a, "vnc/dores4-abababababab"[:len("vnc/dores4-") + 10])
         self.assertNotIn("E03", a)
 
+    def test_capa_public_id_e_url(self):
+        self.assertEqual(M.public_id_capa("E03", "ab" * 32), "vnc/dores4-capa-abababababab"[:len("vnc/dores4-capa-") + 10])
+        self.assertEqual(M.url_capa("c", "vnc/x"), "https://res.cloudinary.com/c/image/upload/vnc/x.jpg")
+
+    def test_localizar_capa_pasta_do_quadro(self):
+        e, nome = M.episodio("E03")
+        with tempfile.TemporaryDirectory() as t:
+            d = Path(t) / nome / f"EPISÓDIO {e['numero']} - {e['titulo']}"
+            d.mkdir(parents=True)
+            f = d / f"EPISÓDIO {e['numero']} - {e['titulo']} - CAPA.jpg"
+            f.write_bytes(b"x")
+            self.assertEqual(M.localizar_capa("E03", t), f)
+            with self.assertRaises(M.MediaError):
+                M.localizar_capa("E04", t)
+
     def test_url_publica(self):
         self.assertEqual(M.url_publica("c", "vnc/x"), "https://res.cloudinary.com/c/video/upload/vnc/x.mp4")
 
