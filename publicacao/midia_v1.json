@@ -1,0 +1,11 @@
+{
+ "fonte": "Cloudinary (plano gratis); upload verificado em run real do GitHub 2026-11-23: HTTP 200, video/mp4, tamanho igual ao arquivo local. URL = https://res.cloudinary.com/<CLOUDINARY_CLOUD_NAME>/video/upload/<public_id>.mp4",
+ "public_ids": {
+  "E03": "vnc/dores4-8ee9e6c5c4",
+  "E04": "vnc/dores5-2a001e9279",
+  "E06": "vnc/fora1-1173142e0e",
+  "E07": "vnc/fora2-4633536940",
+  "E08": "vnc/fora3-36853dd0fa",
+  "E09": "vnc/fora4-fca14a1b88"
+ }
+}

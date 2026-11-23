@@ -169,8 +169,48 @@ def montar_pedidos(pacote, canais, media_url_de):
     return out
 
 
-def agendar(*a, **k):
-    raise BufferError("schedule BLOQUEADO: falta hospedagem publica da midia e liberacao explicita do dono")
+CRIAR = ("mutation($i: CreatePostInput!){ createPost(input:$i){ __typename "
+         "... on PostActionSuccess { post { id status dueAt channelService } } ... on MutationError { message } } }")
+
+
+def canais_por_rede(key, opener=urllib.request.urlopen):
+    res = {}
+    for org in probe(key, opener):
+        for c in org["canais"]:
+            res[str(c["service"]).lower()] = c["id"]
+    return {r: res[r] for r in SERVICOS if r in res}
+
+
+def existentes(key, opener=urllib.request.urlopen):
+    """(rede, dueAt) de posts ja criados (agendados, rascunhos, enviados): evita duplicar ao repetir um run."""
+    q = ("query($o:OrganizationId!,$a:String){ posts(first:100, after:$a, input:{organizationId:$o, filter:{status:[scheduled,draft,needs_approval,sending,sent]}}){ "
+         "edges{ node{ channelService dueAt } } pageInfo{ hasNextPage endCursor } } }")
+    vistos = set()
+    for org in probe(key, opener):
+        after = None
+        for _ in range(10):
+            r = gql(q, key, {"o": org["organizationId"], "a": after}, opener)["posts"]
+            vistos |= {(str(e["node"]["channelService"]).lower(), e["node"]["dueAt"]) for e in r["edges"]}
+            if not r["pageInfo"]["hasNextPage"]:
+                break
+            after = r["pageInfo"]["endCursor"]
+    return vistos
+
+
+def agendar(key, pedidos, rascunho, opener=urllib.request.urlopen):
+    """Cria os posts no Buffer. rascunho=True -> saveToDraft (nada sera publicado). Para no primeiro erro; devolve o que foi criado."""
+    if not key:
+        raise BufferError("BUFFER_API_KEY ausente")
+    feitos = []
+    for p in pedidos:
+        entrada = dict(p["input"])
+        if rascunho:
+            entrada["saveToDraft"] = True
+        r = gql(CRIAR, key, {"i": entrada}, opener)["createPost"]
+        if r.get("__typename") != "PostActionSuccess":
+            raise BufferError(f"createPost recusado ({p['episodio']}/{p['rede']}): {r.get('message') or r}")
+        feitos.append({"episodio": p["episodio"], "rede": p["rede"], "post": r["post"]})
+    return feitos
 
 
 def main(argv):
@@ -192,8 +232,26 @@ def main(argv):
         canais = {r: f"<channelId {r}>" for r in SERVICOS}
         for p in montar_pedidos(pk, canais, lambda ep: f"<URL publica do mp4 {ep}>"):
             print("VNC_BUFFER_DRY " + json.dumps(p, ensure_ascii=False))
-    elif mode == "schedule":
-        agendar()
+    elif mode in ("draft", "schedule"):
+        cfg = json.loads((ROOT / "run/buffer.json").read_text(encoding="utf8"))
+        eps = set(cfg.get("episodes") or [])
+        if not eps:
+            raise BufferError(f"{mode}: lista 'episodes' obrigatoria")
+        if mode == "schedule" and cfg.get("liberado_pelo_dono") is not True:
+            raise BufferError("schedule exige liberado_pelo_dono=true no run/buffer.json")
+        cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", "")
+        pids = json.loads((ROOT / "publicacao/midia_v1.json").read_text(encoding="utf8"))["public_ids"]
+        if not cloud or not eps <= set(pids):
+            raise BufferError("midia publica ausente para algum episodio (rode vnc-media upload)")
+        pk = json.loads((ROOT / "publicacao/pacote_v1.json").read_text(encoding="utf8"))
+        pk["episodios"] = [e for e in pk["episodios"] if e["id"] in eps]
+        redes = set(cfg.get("redes") or SERVICOS)
+        canais = {r: c for r, c in canais_por_rede(key).items() if r in redes}
+        ja = existentes(key)
+        pedidos = [p for p in montar_pedidos(pk, canais, lambda ep: f"https://res.cloudinary.com/{cloud}/video/upload/{pids[ep]}.mp4")
+                   if (p["rede"], p["input"]["dueAt"]) not in ja]
+        print(f"VNC_BUFFER_PLANO modo={mode} pedidos={len(pedidos)} ja_existentes={len(ja)}")
+        print("VNC_BUFFER_CRIADOS " + json.dumps(agendar(key, pedidos, rascunho=(mode == "draft")), ensure_ascii=False))
     else:
         raise BufferError(f"modo invalido: {mode}")
 

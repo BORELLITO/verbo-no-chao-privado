@@ -63,15 +63,15 @@ class Buffer(unittest.TestCase):
             if p["rede"] == "instagram": self.assertEqual(m["instagram"]["type"], "reel")
             self.assertEqual(list(m), [p["rede"]])
 
-    def test_schedule_bloqueado(self):
-        with self.assertRaises(B.BufferError): B.agendar()
+    def test_agendar_exige_chave_e_para_no_primeiro_erro(self):
+        with self.assertRaises(B.BufferError): B.agendar("", [], True)
 
     def test_trava_do_motor_so_libera_este_modulo(self):
         self.assertEqual(G.scan_forbidden(), [])
         self.assertEqual(G.check_workflows(), [])
         wf = (B.ROOT / ".github/workflows/vnc-buffer.yml").read_text(encoding="utf8")
-        self.assertNotIn("schedule", wf.replace("agendamento", ""))
-        self.assertIn('"probe","introspect","introspect_deep","introspect_query","fila","dry"', wf)
+        self.assertNotRegex(wf, r"(?m)^\s*(schedule:|- cron:|workflow_dispatch)")
+        self.assertIn('"probe","introspect","introspect_deep","introspect_query","fila","dry","draft","schedule"', wf)
         self.assertNotIn("api.buffer.com", wf)
 
 if __name__ == "__main__":
@@ -120,3 +120,23 @@ def test_fila_resume_estoque_e_metricas():
     r = b.fila("k", agora=agora, opener=opener)
     assert r["tiktok"]["agendados"] == 1 and r["tiktok"]["dias_de_estoque"] == 3.0
     assert r["tiktok"]["enviados_detalhe"][0]["metricas"] == {"views": 5.0}
+
+
+def test_agendar_rascunho_e_recusa():
+    import io, json as _j
+    from agents import vnc_buffer as b
+    corpos = []
+
+    def opener(req, *a, **k):
+        corpos.append(_j.loads(req.data.decode()))
+        class R(io.BytesIO):
+            def __enter__(self): return self
+            def __exit__(self, *x): return False
+        n = len(corpos)
+        d = {"createPost": {"__typename": "PostActionSuccess", "post": {"id": "p", "status": "draft"}}} if n == 1 else {"createPost": {"__typename": "MutationError", "message": "x"}}
+        return R(_j.dumps({"data": d}).encode())
+    ped = [{"episodio": "E03", "rede": "tiktok", "input": {"text": "t"}}, {"episodio": "E03", "rede": "youtube", "input": {"text": "t"}}]
+    import pytest
+    with pytest.raises(b.BufferError):
+        b.agendar("k", ped, True, opener)
+    assert corpos[0]["variables"]["i"]["saveToDraft"] is True and len(corpos) == 2
