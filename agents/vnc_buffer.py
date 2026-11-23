@@ -232,12 +232,13 @@ def conferir_posts(key, opener=urllib.request.urlopen):
     """Somente leitura: texto e configuracoes (metadata) dos posts enviados e agendados, para conferir o que foi realmente enviado."""
     q = ("query($o:OrganizationId!){ posts(first:30, input:{organizationId:$o, filter:{status:[sent, scheduled]}}){ edges{ node{ id status channelService dueAt sentAt text "
          "metadata{ __typename ... on YoutubePostMetadata{ title privacy madeForKids notifySubscribers isAiGenerated type } "
-         "... on InstagramPostMetadata{ type shouldShareToFeed isAiGenerated firstComment } } } } } }")
+         "... on InstagramPostMetadata{ type shouldShareToFeed isAiGenerated firstComment } } "
+         "assets{ __typename mimeType source ... on VideoAsset{ video{ audioCodec containerFormat durationMs fileSize frameRate width height isTranscodingRequired videoBitRate videoCodec } } } } } } }")
     saida = []
     for org in probe(key, opener):
         for e in gql(q, key, {"o": org["organizationId"]}, opener)["posts"]["edges"]:
             n = e["node"]
-            saida.append({"rede": str(n.get("channelService")).lower(), "status": n.get("status"), "dueAt": n.get("dueAt"), "sentAt": n.get("sentAt"), "texto": n.get("text"), "meta": n.get("metadata")})
+            saida.append({"rede": str(n.get("channelService")).lower(), "status": n.get("status"), "dueAt": n.get("dueAt"), "sentAt": n.get("sentAt"), "texto": n.get("text"), "meta": n.get("metadata"), "assets": n.get("assets")})
     return saida
 
 
