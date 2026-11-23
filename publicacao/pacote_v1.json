@@ -41,19 +41,19 @@
    "aprovacao_publicacao": "PENDENTE_DO_DONO"
   },
   {
-   "id": "E03",
-   "quadro": "QUADRO - DORES DA VIDA",
-   "numero": 4,
-   "titulo": "ESPERANÇA ENTRE RUÍNAS",
-   "referencia": "Lamentações 3:21–26",
-   "hook": "Onde você acharia esperança no meio de uma cidade destruída?",
-   "resumo": "Lamentações 3 nasceu entre as ruínas de Jerusalém. Um texto antigo que ensina a esperar lembrando, sem negar a dor.",
-   "pergunta": "Qual lembrança te ajuda a esperar quando o dia está difícil?",
+   "id": "E06",
+   "quadro": "QUADRO - FORA DO CONTEXTO",
+   "numero": 1,
+   "titulo": "TUDO POSSO",
+   "referencia": "Filipenses 4:10–13",
+   "hook": "Você leu o versículo do tudo posso ao contrário?",
+   "resumo": "Fora do Contexto, episódio 1: Filipenses 4:13 vai além de frase de conquista. Paulo escreve preso, aprende a viver com fartura e com falta e diz que a força vem de Cristo.",
+   "pergunta": "Para você, esse versículo sempre foi sobre vencer ou sobre aguentar? Responda A ou B nos comentários.",
    "hashtags": [
     "#fé",
     "#palavradedeus",
-    "#lamentações",
-    "#esperança",
+    "#filipenses",
+    "#foradocontexto",
     "#reflexão"
    ],
    "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
@@ -75,57 +75,23 @@
    "aprovacao_publicacao": "PENDENTE_DO_DONO"
   },
   {
-   "id": "E04",
+   "id": "E03",
    "quadro": "QUADRO - DORES DA VIDA",
-   "numero": 5,
-   "titulo": "DESCANSO PRA QUEM ESTÁ CANSADO",
-   "referencia": "Mateus 11:28–30",
-   "hook": "Quanto peso você carrega sem contar para ninguém?",
-   "resumo": "Em Mateus 11:28–30, Jesus convida os cansados e sobrecarregados a aprender com ele. Um convite de descanso para a alma, sem prometer uma vida sem peso.",
-   "pergunta": "Que peso você precisa parar de carregar sozinho?",
+   "numero": 4,
+   "titulo": "ESPERANÇA ENTRE RUÍNAS",
+   "referencia": "Lamentações 3:21–26",
+   "hook": "Onde você acharia esperança no meio de uma cidade destruída?",
+   "resumo": "Lamentações 3 nasceu entre as ruínas de Jerusalém. Um texto antigo que ensina a esperar lembrando, sem negar a dor.",
+   "pergunta": "Qual lembrança te ajuda a esperar quando o dia está difícil?",
    "hashtags": [
     "#fé",
     "#palavradedeus",
-    "#mateus11",
-    "#descanso",
+    "#lamentações",
+    "#esperança",
     "#reflexão"
    ],
    "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
    "sugestao_horario_brt": "2026-11-24 12:00",
-   "plataformas": {
-    "tiktok": {
-     "estado": "nao_agendado",
-     "link": null
-    },
-    "youtube": {
-     "estado": "nao_agendado",
-     "link": null
-    },
-    "instagram": {
-     "estado": "nao_agendado",
-     "link": null
-    }
-   },
-   "aprovacao_publicacao": "PENDENTE_DO_DONO"
-  },
-  {
-   "id": "E06",
-   "quadro": "QUADRO - FORA DO CONTEXTO",
-   "numero": 1,
-   "titulo": "TUDO POSSO",
-   "referencia": "Filipenses 4:10–13",
-   "hook": "Você leu o versículo do tudo posso ao contrário?",
-   "resumo": "Fora do Contexto, episódio 1: Filipenses 4:13 vai além de frase de conquista. Paulo escreve preso, aprende a viver com fartura e com falta e diz que a força vem de Cristo.",
-   "pergunta": "Para você, esse versículo sempre foi sobre vencer ou sobre aguentar? Responda A ou B nos comentários.",
-   "hashtags": [
-    "#fé",
-    "#palavradedeus",
-    "#filipenses",
-    "#foradocontexto",
-    "#reflexão"
-   ],
-   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
-   "sugestao_horario_brt": "2026-11-24 19:00",
    "plataformas": {
     "tiktok": {
      "estado": "nao_agendado",
@@ -156,6 +122,40 @@
     "#palavradedeus",
     "#jeremias",
     "#foradocontexto",
+    "#reflexão"
+   ],
+   "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
+   "sugestao_horario_brt": "2026-11-24 19:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  },
+  {
+   "id": "E04",
+   "quadro": "QUADRO - DORES DA VIDA",
+   "numero": 5,
+   "titulo": "DESCANSO PRA QUEM ESTÁ CANSADO",
+   "referencia": "Mateus 11:28–30",
+   "hook": "Quanto peso você carrega sem contar para ninguém?",
+   "resumo": "Em Mateus 11:28–30, Jesus convida os cansados e sobrecarregados a aprender com ele. Um convite de descanso para a alma, sem prometer uma vida sem peso.",
+   "pergunta": "Que peso você precisa parar de carregar sozinho?",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#mateus11",
+    "#descanso",
     "#reflexão"
    ],
    "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",

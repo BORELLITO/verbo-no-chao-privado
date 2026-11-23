@@ -14,12 +14,19 @@ def main():
     slots = a.slots.split(","); dia = dt.date.fromisoformat(a.inicio)
     num = json.load(open(R / "contracts/vnc_numeracao_v1.json"))
     pend, pacote, k = [], [], 0
+    # Estrutura 2 quadros: cada quadro tem uma fila na ordem definida pelo dono;
+    # o calendario intercala (slot 1 = DORES, slot 2 = FORA); se uma fila acaba, a outra segue.
+    tem = lambda e: json.load(open(R / f"episodes/{e['id']}.json")).get("posting")
+    filas = {q: [e for e in num["episodios"] if e["quadro"] == q and tem(e)] for q in num["quadros"]}
+    ordem, ult = [], None
+    while any(filas.values()):
+        for q in ("DORES", "FORA"):
+            if filas[q]: ordem.append(filas[q].pop(0))
     for e in num["episodios"]:
+        if not tem(e): pend.append(f"{e['id']} {num['quadros'][e['quadro']]['nome']} {e['numero']}: sem bloco posting")
+    for e in ordem:
         p = json.load(open(R / f"episodes/{e['id']}.json")).get("posting")
         nome = num["quadros"][e["quadro"]]["nome"]
-        if not p:
-            pend.append(f"{e['id']} {nome} {e['numero']}: sem bloco posting")
-            continue
         d = dia + dt.timedelta(days=k // len(slots)); hh = slots[k % len(slots)]; k += 1
         pacote.append({
             "id": e["id"], "quadro": nome, "numero": e["numero"], "titulo": e["titulo"],
