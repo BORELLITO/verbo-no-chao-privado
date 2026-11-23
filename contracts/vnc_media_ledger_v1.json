@@ -886,9 +886,9 @@
    "scene": "S06",
    "sha256": "68ed0293e6c8c3e570e129295786e772a863d779cd2ce72f1fb9701b43f18b98",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "drawing a heart on a foggy window on a rainy",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:18312": {
    "dur": 15.0,
@@ -939,6 +939,31 @@
    "state": "reserved",
    "title": "waves reaching the shore",
    "updated_at": "2026-11-22T00:04:59Z"
+  },
+  "mixkit:1926": {
+   "dur": 10.0,
+   "episode": "E10",
+   "id": "1926",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/seabird-flying-over-water-1926/",
+   "phashes": [
+    17437782033373982905,
+    1743166662929027120,
+    9657548013064683520
+   ],
+   "reserved_at": "2026-11-23T09:32:02Z",
+   "run_id": "45146375917",
+   "scene": "S03",
+   "sha256": "2f57462a1996946b366972dc7a04276669eeff85d4e0dd432dd97f2ff653fbaf",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "seabird flying over water",
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:1934": {
    "dur": 10.0,
@@ -1036,9 +1061,34 @@
    "scene": "S04",
    "sha256": "cbd02f5690f75caf16b528db9d266935a51e5be8bcff53127477c4ee9f31dbee",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "dark clouds passing over a forest",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
+  },
+  "mixkit:20297": {
+   "dur": 16.5,
+   "episode": "E10",
+   "id": "20297",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/beautiful-mountain-lake-20297/",
+   "phashes": [
+    2968232584028476725,
+    15895626198395508017,
+    10344504354135987505
+   ],
+   "reserved_at": "2026-11-23T09:32:02Z",
+   "run_id": "45146375917",
+   "scene": "S12",
+   "sha256": "6266138c52883ac71a4d9612ba028cb6d27adc62ede75ba77dedd8bd5307c6b3",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "beautiful mountain lake",
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:20317": {
    "dur": 8.7,
@@ -1182,13 +1232,13 @@
     15186367607790952680
    ],
    "reserved_at": "2026-11-23T09:20:55Z",
-   "run_id": "45144702192",
+   "run_id": "45146375917",
    "scene": "S09",
    "sha256": "22781d7c6769bd1fd8a83fc32e8659c51cbbe4c678182c58a94a0af2e8931a55",
    "source": "mixkit",
    "state": "reserved",
    "title": "gentle breeze as the day dawns",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:21575": {
    "dur": 12.0,
@@ -1311,9 +1361,59 @@
    "scene": "S01",
    "sha256": "425292289dd8d33040ca66df0e89cbd83c5ac876fb88403a007eba862b4a5d4c",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "tree in a forest on a rainy day",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
+  },
+  "mixkit:2213": {
+   "dur": 15.0,
+   "episode": "E10",
+   "id": "2213",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/waterfall-in-forest-2213/",
+   "phashes": [
+    7125507020489285792,
+    7125507016213180592,
+    6945928180078260400
+   ],
+   "reserved_at": "2026-11-23T09:32:02Z",
+   "run_id": "45146375917",
+   "scene": "S06",
+   "sha256": "fae57ae2939fb8ad255d082affa4dae474ee3d6e23fe384aaf10978bdd6ecdc5",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "waterfall in forest",
+   "updated_at": "2026-11-23T09:32:02Z"
+  },
+  "mixkit:22728": {
+   "dur": 11.5,
+   "episode": "E10",
+   "id": "22728",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/raining-in-a-cloud-forest-full-of-tall-trees-22728/",
+   "phashes": [
+    10562022873136585566,
+    10561741122208258902,
+    10562018474016332630
+   ],
+   "reserved_at": "2026-11-23T09:32:02Z",
+   "run_id": "45146375917",
+   "scene": "S01",
+   "sha256": "a169b372f24456d2c080157e9b71340e6722b2d5b91816488b9436bfa7995b08",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "raining in a cloud forest full of tall trees",
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:22729": {
    "dur": 11.3,
@@ -1411,9 +1511,9 @@
    "scene": "S08",
    "sha256": "83e32b106bb874f06e211577d24b9f58c73fa812ec1edf4dee773cac4467ed07",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "clouds and blue sky background",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:26103": {
    "dur": 20.0,
@@ -1682,13 +1782,13 @@
     13890501448748555974
    ],
    "reserved_at": "2026-11-23T09:20:55Z",
-   "run_id": "45144702192",
+   "run_id": "45146375917",
    "scene": "S10",
    "sha256": "d5dd8bbe890d5b979eddef295d5b8355c4f796232b588853410a8073e65dfca2",
    "source": "mixkit",
    "state": "reserved",
    "title": "tree on a meadow in a cloud forest at sunrise",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:28342": {
    "dur": 15.4,
@@ -1707,13 +1807,13 @@
     16200277959673704944
    ],
    "reserved_at": "2026-11-23T09:20:55Z",
-   "run_id": "45144702192",
+   "run_id": "45146375917",
    "scene": "S05",
    "sha256": "05b5002b84bb08f19777ec18cd0c2a6770ade30a9c886a36a5a07865f97f7a9f",
    "source": "mixkit",
    "state": "reserved",
    "title": "slow aerial tour through a mist covered forest",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:28816": {
    "dur": 30.3,
@@ -1915,6 +2015,31 @@
    "title": "aerial view of a mountain village by the lake",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:32463": {
+   "dur": 17.9,
+   "episode": "E10",
+   "id": "32463",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/clouds-moving-before-the-storm-32463/",
+   "phashes": [
+    18228558021052086425,
+    18157384486112777372,
+    17938111909026654382
+   ],
+   "reserved_at": "2026-11-23T09:32:02Z",
+   "run_id": "45146375917",
+   "scene": "S04",
+   "sha256": "5f1ac6867815668ab407562c404127964feabf8e87c62493c2d5c0438b39069b",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "clouds moving before the storm",
+   "updated_at": "2026-11-23T09:32:02Z"
+  },
   "mixkit:3306": {
    "dur": 12.7,
    "episode": "E06",
@@ -2061,9 +2186,9 @@
    "scene": "S02",
    "sha256": "b85742190bf813a8ad8ee3774db9ba4f34ffa7cdd4d372075b1224fca2bc2096",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "landscape of snowy mountains covered by mist",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:34045": {
    "dur": 15.0,
@@ -2537,6 +2662,31 @@
    "title": "flying over tree covered mountains",
    "updated_at": "2026-11-21T22:21:36Z"
   },
+  "mixkit:41550": {
+   "dur": 20.1,
+   "episode": "E10",
+   "id": "41550",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/aerial-tour-of-a-large-meadow-covered-with-vegetation-41550/",
+   "phashes": [
+    1379210727786163684,
+    1415239526956177870,
+    1415239525754777746
+   ],
+   "reserved_at": "2026-11-23T09:32:02Z",
+   "run_id": "45146375917",
+   "scene": "S11",
+   "sha256": "417becc63b8716839574f33fd099fa49ecf59ba4de251337d293e756707d85d8",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "aerial tour of a large meadow covered with vegetation",
+   "updated_at": "2026-11-23T09:32:02Z"
+  },
   "mixkit:41739": {
    "dur": 12.1,
    "episode": "E01",
@@ -2881,6 +3031,31 @@
    "title": "beautiful sunset on a calm lake",
    "updated_at": "2026-11-22T11:32:03Z"
   },
+  "mixkit:4695": {
+   "dur": 22.0,
+   "episode": "E10",
+   "id": "4695",
+   "interval": [
+    0,
+    10.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/clouds-covering-the-mountains-4695/",
+   "phashes": [
+    13889347784597201152,
+    13898355396070154240,
+    13898355396103577600
+   ],
+   "reserved_at": "2026-11-23T09:32:02Z",
+   "run_id": "45146375917",
+   "scene": "S07",
+   "sha256": "0a10f8ba5dfdc38a4a74ad39d76cfeeb516f498dc405ca036113e2033f82dc95",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "clouds covering the mountains",
+   "updated_at": "2026-11-23T09:32:02Z"
+  },
   "mixkit:48109": {
    "dur": 27.6,
    "episode": "E09",
@@ -2924,9 +3099,9 @@
    "scene": "S12",
    "sha256": "970013685d7949ae882410968b224b43e8b091aeb0d2d4ae5cedc71f1e097e71",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "aerial view of clouds in a valley beneath snowy mountains",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:49695": {
    "dur": 12.3,
@@ -2949,9 +3124,9 @@
    "scene": "S11",
    "sha256": "2a1472e6dfbeda4e58dea0e3b0e4bdf12ca553a9c3daed33122e50f2ee6307ac",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "point of view traveling on a path in nature",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:49749": {
    "dur": 14.1,
@@ -3124,9 +3299,9 @@
    "scene": "S07",
    "sha256": "6ac9fb706f1c3f1ee35a392647c2a0a860b019533f9e2e3dfa0d75378e932cff",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "rays of the sun passing through the branches of a",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:51433": {
    "dur": 11.7,
@@ -3253,6 +3428,31 @@
    "title": "mesmerizing timelapse of clouds moving avobe the forest canopy",
    "updated_at": "2026-11-21T16:13:07Z"
   },
+  "mixkit:51598": {
+   "dur": 15.0,
+   "episode": "E10",
+   "id": "51598",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/a-crystal-clear-river-water-flowing-with-prominent-rocks-over-51598/",
+   "phashes": [
+    7923085604293200997,
+    7616818837251968109,
+    7923086188408786029
+   ],
+   "reserved_at": "2026-11-23T09:32:02Z",
+   "run_id": "45146375917",
+   "scene": "S08",
+   "sha256": "01710fc74bf0ddce3108d88b28aece176f43c2bb5bfb97205ec784af08348f52",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "a crystal clear river water flowing with prominent rocks over",
+   "updated_at": "2026-11-23T09:32:02Z"
+  },
   "mixkit:52012": {
    "dur": 13.7,
    "episode": "E09",
@@ -3374,9 +3574,9 @@
    "scene": "S03",
    "sha256": "24a84cbe0a8c40e6e69d1ab69f16be0438299e2c676c836cfa692450adb5803d",
    "source": "mixkit",
-   "state": "reserved",
+   "state": "released",
    "title": "big wave crashing",
-   "updated_at": "2026-11-23T09:20:55Z"
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:7277": {
    "dur": 20.0,
@@ -3477,6 +3677,31 @@
    "state": "reserved",
    "title": "sunlight moving between mountains",
    "updated_at": "2026-11-21T22:21:36Z"
+  },
+  "mixkit:8662": {
+   "dur": 31.2,
+   "episode": "E10",
+   "id": "8662",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/hills-with-fog-over-the-coast-landscape-8662/",
+   "phashes": [
+    2449959361478332175,
+    15142792996103719691,
+    252863693036324360
+   ],
+   "reserved_at": "2026-11-23T09:32:02Z",
+   "run_id": "45146375917",
+   "scene": "S02",
+   "sha256": "20919191a33e507fc414a3c5a75e6df0bc9150aab7b81ccc304603d1caf00b72",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "hills with fog over the coast landscape",
+   "updated_at": "2026-11-23T09:32:02Z"
   },
   "mixkit:9294": {
    "dur": 16.0,
