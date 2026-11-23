@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E10",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "45144702192",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "2207",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/tree-in-a-forest-on-a-rainy-day-2207/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 13.1,
+   "note_pt": "clima dark (brilho 88.9), movimento 2.96, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "3386",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/landscape-of-snowy-mountains-covered-by-mist-3386/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 20.1,
+   "note_pt": "clima dark (brilho 89.8), movimento 14.36, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "7194",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/big-wave-crashing-7194/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 15.1,
+   "note_pt": "clima dark (brilho 109.0), movimento 13.99, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "20233",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/dark-clouds-passing-over-a-forest-20233/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 15.0,
+   "note_pt": "clima mid (brilho 124.7), movimento 8.51, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "28342",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/slow-aerial-tour-through-a-mist-covered-forest-28342/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 15.4,
+   "note_pt": "clima dark (brilho 77.2), movimento 2.73, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "18308",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/drawing-a-heart-on-a-foggy-window-on-a-rainy-18308/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 20.0,
+   "note_pt": "clima mid (brilho 142.9), movimento 8.4, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "51106",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/rays-of-the-sun-passing-through-the-branches-of-a-51106/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 10.9,
+   "note_pt": "clima mid (brilho 143.8), movimento 17.25, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "2408",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/clouds-and-blue-sky-background-2408/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 18.1,
+   "note_pt": "clima mid (brilho 142.3), movimento 4.61, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "21143",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/gentle-breeze-as-the-day-dawns-21143/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 10.8,
+   "note_pt": "clima bright (brilho 124.1), movimento 6.39, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "28340",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/tree-on-a-meadow-in-a-cloud-forest-at-sunrise-28340/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 25.1,
+   "note_pt": "clima mid (brilho 96.9), movimento 2.19, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "49695",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/point-of-view-traveling-on-a-path-in-nature-49695/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 12.3,
+   "note_pt": "clima bright (brilho 107.9), movimento 21.16, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "48483",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-clouds-in-a-valley-beneath-snowy-mountains-48483/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 25.6,
+   "note_pt": "clima bright (brilho 104.8), movimento 6.2, palavras-chave 3, interpretacao=claude"
+  }
+ ]
+}

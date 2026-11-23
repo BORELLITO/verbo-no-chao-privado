@@ -865,6 +865,31 @@
    "title": "tower of 100 dollars being burned with a flame",
    "updated_at": "2026-11-21T23:56:43Z"
   },
+  "mixkit:18308": {
+   "dur": 20.0,
+   "episode": "E10",
+   "id": "18308",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/drawing-a-heart-on-a-foggy-window-on-a-rainy-18308/",
+   "phashes": [
+    17939225916539326158,
+    17940358414053726428,
+    17939234504054446232
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S06",
+   "sha256": "68ed0293e6c8c3e570e129295786e772a863d779cd2ce72f1fb9701b43f18b98",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "drawing a heart on a foggy window on a rainy",
+   "updated_at": "2026-11-23T09:20:55Z"
+  },
   "mixkit:18312": {
    "dur": 15.0,
    "episode": "E07",
@@ -989,6 +1014,31 @@
    "state": "reserved",
    "title": "dark clouds in the tropics",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:20233": {
+   "dur": 15.0,
+   "episode": "E10",
+   "id": "20233",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/dark-clouds-passing-over-a-forest-20233/",
+   "phashes": [
+    18077120035528737208,
+    15634486753904101048,
+    16786320969804201626
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S04",
+   "sha256": "cbd02f5690f75caf16b528db9d266935a51e5be8bcff53127477c4ee9f31dbee",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "dark clouds passing over a forest",
+   "updated_at": "2026-11-23T09:20:55Z"
   },
   "mixkit:20317": {
    "dur": 8.7,
@@ -1115,6 +1165,31 @@
    "title": "dark storm clouds and rain",
    "updated_at": "2026-11-22T11:32:03Z"
   },
+  "mixkit:21143": {
+   "dur": 10.8,
+   "episode": "E10",
+   "id": "21143",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/gentle-breeze-as-the-day-dawns-21143/",
+   "phashes": [
+    14115064985929572576,
+    14115073575864033504,
+    15186367607790952680
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S09",
+   "sha256": "22781d7c6769bd1fd8a83fc32e8659c51cbbe4c678182c58a94a0af2e8931a55",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "gentle breeze as the day dawns",
+   "updated_at": "2026-11-23T09:20:55Z"
+  },
   "mixkit:21575": {
    "dur": 12.0,
    "episode": "E02",
@@ -1215,6 +1290,31 @@
    "title": "cooking soup on a campfire",
    "updated_at": "2026-11-22T09:08:57Z"
   },
+  "mixkit:2207": {
+   "dur": 13.1,
+   "episode": "E10",
+   "id": "2207",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/tree-in-a-forest-on-a-rainy-day-2207/",
+   "phashes": [
+    9565686618162761474,
+    10718966842749979398,
+    1193676610571143718
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S01",
+   "sha256": "425292289dd8d33040ca66df0e89cbd83c5ac876fb88403a007eba862b4a5d4c",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "tree in a forest on a rainy day",
+   "updated_at": "2026-11-23T09:20:55Z"
+  },
   "mixkit:22729": {
    "dur": 11.3,
    "episode": "E05",
@@ -1289,6 +1389,31 @@
    "state": "reserved",
    "title": "mirror foggy forest",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:2408": {
+   "dur": 18.1,
+   "episode": "E10",
+   "id": "2408",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/clouds-and-blue-sky-background-2408/",
+   "phashes": [
+    16298261666126641203,
+    16296151153623472153,
+    17449072662365904028
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S08",
+   "sha256": "83e32b106bb874f06e211577d24b9f58c73fa812ec1edf4dee773cac4467ed07",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "clouds and blue sky background",
+   "updated_at": "2026-11-23T09:20:55Z"
   },
   "mixkit:26103": {
    "dur": 20.0,
@@ -1539,6 +1664,56 @@
    "state": "reserved",
    "title": "forest covered by mist at sunrise from the heights",
    "updated_at": "2026-11-22T16:42:58Z"
+  },
+  "mixkit:28340": {
+   "dur": 25.1,
+   "episode": "E10",
+   "id": "28340",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/tree-on-a-meadow-in-a-cloud-forest-at-sunrise-28340/",
+   "phashes": [
+    15045620684097643460,
+    13890447106942350241,
+    13890501448748555974
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S10",
+   "sha256": "d5dd8bbe890d5b979eddef295d5b8355c4f796232b588853410a8073e65dfca2",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "tree on a meadow in a cloud forest at sunrise",
+   "updated_at": "2026-11-23T09:20:55Z"
+  },
+  "mixkit:28342": {
+   "dur": 15.4,
+   "episode": "E10",
+   "id": "28342",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/slow-aerial-tour-through-a-mist-covered-forest-28342/",
+   "phashes": [
+    16776177927616776392,
+    16776739816756917412,
+    16200277959673704944
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S05",
+   "sha256": "05b5002b84bb08f19777ec18cd0c2a6770ade30a9c886a36a5a07865f97f7a9f",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "slow aerial tour through a mist covered forest",
+   "updated_at": "2026-11-23T09:20:55Z"
   },
   "mixkit:28816": {
    "dur": 30.3,
@@ -1864,6 +2039,31 @@
    "state": "reserved",
    "title": "snowy hills with clouds",
    "updated_at": "2026-11-22T16:42:58Z"
+  },
+  "mixkit:3386": {
+   "dur": 20.1,
+   "episode": "E10",
+   "id": "3386",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/landscape-of-snowy-mountains-covered-by-mist-3386/",
+   "phashes": [
+    14812268363716765465,
+    15694357227866953734,
+    18147762186088953880
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S02",
+   "sha256": "b85742190bf813a8ad8ee3774db9ba4f34ffa7cdd4d372075b1224fca2bc2096",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "landscape of snowy mountains covered by mist",
+   "updated_at": "2026-11-23T09:20:55Z"
   },
   "mixkit:34045": {
    "dur": 15.0,
@@ -2703,6 +2903,56 @@
    "title": "",
    "updated_at": "2026-11-23T09:01:23Z"
   },
+  "mixkit:48483": {
+   "dur": 25.6,
+   "episode": "E10",
+   "id": "48483",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-clouds-in-a-valley-beneath-snowy-mountains-48483/",
+   "phashes": [
+    2551028538893414576,
+    2551029639481049312,
+    2551027440457793760
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S12",
+   "sha256": "970013685d7949ae882410968b224b43e8b091aeb0d2d4ae5cedc71f1e097e71",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "aerial view of clouds in a valley beneath snowy mountains",
+   "updated_at": "2026-11-23T09:20:55Z"
+  },
+  "mixkit:49695": {
+   "dur": 12.3,
+   "episode": "E10",
+   "id": "49695",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/point-of-view-traveling-on-a-path-in-nature-49695/",
+   "phashes": [
+    17397530115848335865,
+    4114346249092921593,
+    8679770941825087720
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S11",
+   "sha256": "2a1472e6dfbeda4e58dea0e3b0e4bdf12ca553a9c3daed33122e50f2ee6307ac",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "point of view traveling on a path in nature",
+   "updated_at": "2026-11-23T09:20:55Z"
+  },
   "mixkit:49749": {
    "dur": 14.1,
    "episode": "E08",
@@ -2852,6 +3102,31 @@
    "state": "reserved",
    "title": "the wind gently moves the forests lush vegetation on a",
    "updated_at": "2026-11-22T09:08:57Z"
+  },
+  "mixkit:51106": {
+   "dur": 10.9,
+   "episode": "E10",
+   "id": "51106",
+   "interval": [
+    0,
+    10.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/rays-of-the-sun-passing-through-the-branches-of-a-51106/",
+   "phashes": [
+    16206463726526751788,
+    16204225189436695596,
+    16204198595569003564
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S07",
+   "sha256": "6ac9fb706f1c3f1ee35a392647c2a0a860b019533f9e2e3dfa0d75378e932cff",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "rays of the sun passing through the branches of a",
+   "updated_at": "2026-11-23T09:20:55Z"
   },
   "mixkit:51433": {
    "dur": 11.7,
@@ -3077,6 +3352,31 @@
    "state": "released",
    "title": "raindrops on a leaf",
    "updated_at": "2026-11-22T18:32:32Z"
+  },
+  "mixkit:7194": {
+   "dur": 15.1,
+   "episode": "E10",
+   "id": "7194",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/big-wave-crashing-7194/",
+   "phashes": [
+    16208963240390355070,
+    16781537894273447165,
+    16209017992492663137
+   ],
+   "reserved_at": "2026-11-23T09:20:55Z",
+   "run_id": "45144702192",
+   "scene": "S03",
+   "sha256": "24a84cbe0a8c40e6e69d1ab69f16be0438299e2c676c836cfa692450adb5803d",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "big wave crashing",
+   "updated_at": "2026-11-23T09:20:55Z"
   },
   "mixkit:7277": {
    "dur": 20.0,
