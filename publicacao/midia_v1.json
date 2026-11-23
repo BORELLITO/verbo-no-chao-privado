@@ -8,5 +8,15 @@
   "E08": "vnc/fora3-36853dd0fa",
   "E09": "vnc/fora4-fca14a1b88",
   "E10": "vnc/dores6-c86cdc29dd"
- }
+ },
+ "capas": {
+  "E03": "vnc/dores4-capa-8442b5ba2d",
+  "E04": "vnc/dores5-capa-80f61c5994",
+  "E06": "vnc/fora1-capa-7c62f42b55",
+  "E07": "vnc/fora2-capa-ee35c3b802",
+  "E08": "vnc/fora3-capa-0e17f26a5d",
+  "E09": "vnc/fora4-capa-3baa9c7376",
+  "E10": "vnc/dores6-capa-a49f8dd13f"
+ },
+ "fonte_capas": "Cloudinary image/upload, verificado em run real 2026-11-23: HTTP 200, image/jpeg, tamanho igual. URL = https://res.cloudinary.com/<cloud>/image/upload/<id>.jpg; enviada ao Buffer em VideoAssetInput.thumbnailUrl"
 }

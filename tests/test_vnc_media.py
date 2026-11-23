@@ -58,3 +58,8 @@ class Media(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_todo_episodio_hospedado_tem_capa_hospedada():
+    m = json.loads((ROOT / "publicacao/midia_v1.json").read_text(encoding="utf8"))
+    assert set(m["public_ids"]) <= set(m["capas"])
