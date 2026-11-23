@@ -198,20 +198,31 @@ def existentes(key, opener=urllib.request.urlopen, com_rascunho=True):
     return vistos
 
 
-def limpar_rascunhos(key, opener=urllib.request.urlopen):
-    """Apaga SOMENTE posts com status draft (rascunhos de teste). Agendados e enviados nunca sao tocados."""
-    q = ("query($o:OrganizationId!){ posts(first:100, input:{organizationId:$o, filter:{status:[draft]}}){ edges{ node{ id status } } } }")
+def _apagar_por_status(key, status, opener=urllib.request.urlopen):
+    """Apaga SOMENTE posts com o status pedido (draft ou scheduled). Enviados e em envio nunca sao tocados."""
+    assert status in ("draft", "scheduled")
+    q = ("query($o:OrganizationId!){ posts(first:100, input:{organizationId:$o, filter:{status:[%s]}}){ edges{ node{ id status channelService dueAt } } } }") % status
     apagados = []
     for org in probe(key, opener):
         for e in gql(q, key, {"o": org["organizationId"]}, opener)["posts"]["edges"]:
             n = e["node"]
-            if n["status"] != "draft":
+            if n["status"] != status:
                 continue
             r = gql("mutation($i: DeletePostInput!){ deletePost(input:$i){ __typename ... on VoidMutationError { message } } }", key, {"i": {"id": n["id"]}}, opener)["deletePost"]
             if r.get("__typename") != "DeletePostSuccess":
                 raise BufferError(f"deletePost recusado: {r.get('message') or r}")
-            apagados.append(n["id"])
+            apagados.append(f"{n['id']}|{str(n.get('channelService')).lower()}|{n.get('dueAt')}" if status == "scheduled" else n["id"])
     return apagados
+
+
+def limpar_rascunhos(key, opener=urllib.request.urlopen):
+    """Apaga SOMENTE rascunhos (draft)."""
+    return _apagar_por_status(key, "draft", opener)
+
+
+def cancelar_agendados(key, opener=urllib.request.urlopen):
+    """Apaga SOMENTE posts agendados (scheduled). Exige liberacao do dono no modo principal."""
+    return _apagar_por_status(key, "scheduled", opener)
 
 
 def agendar(key, pedidos, rascunho, opener=urllib.request.urlopen):
@@ -244,6 +255,11 @@ def main(argv):
         print("VNC_BUFFER_SCHEMA_QUERY " + json.dumps(introspect_query(key, nomes=tuple(nomes)), ensure_ascii=False))
     elif mode == "limpar_rascunhos":
         print("VNC_BUFFER_APAGADOS " + json.dumps(limpar_rascunhos(key)))
+    elif mode == "cancelar_agendados":
+        cfg = json.loads((ROOT / "run/buffer.json").read_text(encoding="utf8"))
+        if cfg.get("liberado_pelo_dono") is not True:
+            raise BufferError("cancelar_agendados exige liberado_pelo_dono=true no run/buffer.json")
+        print("VNC_BUFFER_CANCELADOS " + json.dumps(cancelar_agendados(key)))
     elif mode == "fila":
         print("VNC_BUFFER_FILA " + json.dumps(fila(key), ensure_ascii=False))
     elif mode == "dry":

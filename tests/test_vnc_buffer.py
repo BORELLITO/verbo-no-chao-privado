@@ -71,7 +71,7 @@ class Buffer(unittest.TestCase):
         self.assertEqual(G.check_workflows(), [])
         wf = (B.ROOT / ".github/workflows/vnc-buffer.yml").read_text(encoding="utf8")
         self.assertNotRegex(wf, r"(?m)^\s*(schedule:|- cron:|workflow_dispatch)")
-        self.assertIn('"probe","introspect","introspect_deep","introspect_query","fila","dry","draft","schedule","limpar_rascunhos"', wf)
+        self.assertIn('"probe","introspect","introspect_deep","introspect_query","fila","dry","draft","schedule","limpar_rascunhos","cancelar_agendados"', wf)
         self.assertNotIn("api.buffer.com", wf)
 
 if __name__ == "__main__":
@@ -159,3 +159,21 @@ def test_limpar_rascunhos_so_apaga_draft():
         else: d = {"posts": {"edges": [{"node": {"id": "1", "status": "draft"}}, {"node": {"id": "2", "status": "scheduled"}}]}}
         return R(_j.dumps({"data": d}).encode())
     assert b.limpar_rascunhos("k", opener) == ["1"]
+
+
+def test_cancelar_agendados_so_apaga_scheduled():
+    import io, json as _j
+    from agents import vnc_buffer as b
+
+    def opener(req, *a, **k):
+        corpo = _j.loads(req.data.decode())
+        class R(io.BytesIO):
+            def __enter__(self): return self
+            def __exit__(self, *x): return False
+        q = corpo["query"]
+        if "organizations" in q: d = {"account": {"organizations": [{"id": "o", "name": "x"}]}}
+        elif "channels(" in q: d = {"channels": []}
+        elif "deletePost" in q: d = {"deletePost": {"__typename": "DeletePostSuccess"}}
+        else: d = {"posts": {"edges": [{"node": {"id": "1", "status": "sent", "channelService": "tiktok", "dueAt": "x"}}, {"node": {"id": "2", "status": "scheduled", "channelService": "youtube", "dueAt": "d"}}]}}
+        return R(_j.dumps({"data": d}).encode())
+    assert b.cancelar_agendados("k", opener) == ["2|youtube|d"]
