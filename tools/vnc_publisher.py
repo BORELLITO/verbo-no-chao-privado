@@ -2,8 +2,10 @@
 Uso: python tools/vnc_publisher.py [--inicio AAAA-MM-DD] [--slots 12:00,19:00]
 Gera publicacao/pacote_v1.json e publicacao/calendario_v1.csv.
 Estados por plataforma: nao_agendado -> agendado -> publicado (preenchidos SO pelo dono)."""
-import argparse, csv, json, datetime as dt, pathlib
+import argparse, csv, json, sys, datetime as dt, pathlib
 R = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(R))
+from agents.vnc_pipeline_gate import render_posting  # gerador unico das legendas por plataforma
 PLAT = ("tiktok", "youtube", "instagram")
 
 def main():
@@ -21,21 +23,22 @@ def main():
     tem = lambda e: json.load(open(R / f"episodes/{e['id']}.json")).get("posting")
     tem_ou_pub = lambda e: tem(e) or ja(e)
     filas = {q: [e for e in num["episodios"] if e["quadro"] == q and tem_ou_pub(e) and not ja(e)] for q in num["quadros"]}
-    ordem, ult = [], None
+    ordem = []
     while any(filas.values()):
         for q in ("DORES", "FORA"):
             if filas[q]: ordem.append(filas[q].pop(0))
     for e in num["episodios"]:
         if not tem(e) and not ja(e): pend.append(f"{e['id']} {num['quadros'][e['quadro']]['nome']} {e['numero']}: sem bloco posting")
     for e in ordem:
-        p = json.load(open(R / f"episodes/{e['id']}.json")).get("posting")
+        cfg = json.load(open(R / f"episodes/{e['id']}.json")); p = cfg.get("posting"); leg = render_posting(cfg)
         nome = num["quadros"][e["quadro"]]["nome"]
         d = dia + dt.timedelta(days=k // len(slots)); hh = slots[k % len(slots)]; k += 1
         pacote.append({
             "id": e["id"], "quadro": nome, "numero": e["numero"], "titulo": e["titulo"],
             "referencia": e["referencia"], "hook": p["hook"], "resumo": p["resumo"],
             "pergunta": p["pergunta"], "hashtags": p["hashtags"],
-            "arquivos": "Drive: pasta do episodio (mp4, srt, capa vertical, legendas txt)",
+            "legendas": {"tiktok": leg["tiktok"], "instagram": leg["instagram"], "youtube_titulo": leg["youtube_titulo"], "youtube_descricao": leg["youtube_descricao"]},
+            "arquivos": "NAO VERIFICADO: link da pasta no Drive nao registrado aqui (esta no indice do Drive)",
             "sugestao_horario_brt": f"{d.isoformat()} {hh}",
             "plataformas": {x: {"estado": pub.get(e["id"], {}).get(x, "nao_agendado"), "link": None} for x in PLAT},
             "aprovacao_publicacao": "PENDENTE_DO_DONO"})
