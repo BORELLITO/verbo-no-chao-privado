@@ -89,7 +89,7 @@ def introspect_query(key, opener=urllib.request.urlopen):
     q = ("query($n:String!){ __type(name:$n){ kind name fields{ name args{ name type{ name kind ofType{ name kind ofType{ name kind } } } } "
          "type{ name kind ofType{ name kind ofType{ name kind } } } } inputFields{ name type{ name kind ofType{ name kind } } } enumValues{name} } }")
     out = {}
-    for n in ("Query", "Post", "PostsInput", "PostsFiltersInput", "PostStatus"):
+    for n in ("PostsResults", "PostMetric", "PostsFiltersInput", "PostsInput"):
         t = gql(q, key, {"n": n}, opener)["__type"]
         if not t:
             continue
