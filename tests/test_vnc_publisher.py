@@ -31,7 +31,7 @@ class Publisher(unittest.TestCase):
         for x in self.pk["episodios"]:
             l = x["legendas"]
             self.assertLessEqual(len(l["tiktok"]), 400, x["id"])
-            self.assertLessEqual(len(l["youtube_titulo"]), 60, x["id"])
+            self.assertLessEqual(len(l["youtube_titulo"]), 100, x["id"])
             self.assertLessEqual(len(re.findall(r"#\w+", l["tiktok"])), 5, x["id"])
 
     def test_ordem_por_quadro_respeita_numeracao_do_dono(self):

@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TAIL_S = 9.5
 BAND = (62.0, 72.0)
-PLAT_LIMITS = {"tiktok": 400, "youtube_titulo": 60, "youtube_descricao": 5000, "instagram": 2200}   # modelo E01 aprovado: TikTok ~340, titulo YouTube <=60
+PLAT_LIMITS = {"tiktok": 400, "youtube_titulo": 100, "youtube_descricao": 5000, "instagram": 2200}   # modelo E01 aprovado: TikTok ~340, titulo YouTube <=100
 MAX_HASHTAGS = 5
 
 
@@ -39,14 +39,42 @@ def bloco_postagem(cfg):
     return errs
 
 
+EMOJIS = ("👀", "📖", "🙏", "🕊️")   # decisao do dono (2026-11-23): 1 emoji por post, no fim do gancho; 👀 provocativo, 📖 contexto, 🙏 dor/esperanca, 🕊️ consolo
+_PREFIXO_EP = None
+
+
+def _rotulo_episodio(cfg):
+    """'Fora do Contexto, episodio 3' a partir do registro de numeracao (fonte unica); '' se nao achar."""
+    try:
+        num = json.loads((ROOT / "contracts" / "vnc_numeracao_v1.json").read_text(encoding="utf8"))
+        e = next(x for x in num["episodios"] if x["id"] == cfg.get("id"))
+        return f"{num['quadros'][e['quadro']]['curto']}, episódio {e['numero']}"
+    except Exception:
+        return ""
+
+
+def _emoji(p):
+    e = p.get("emoji") or ""
+    return f" {e}" if e else ""
+
+
 def render_posting(cfg):
-    p, ref, title = cfg["posting"], cfg["reference"], " ".join(cfg["title_lines"])
-    tags = " ".join(p["hashtags"]); hook = p["hook"].upper()
+    """Modelo de legendas aprovado pelo dono em 2026-11-23: TikTok/Instagram curtos (gancho+emoji, pergunta, hashtags);
+    YouTube completo (titulo = GANCHO em maiusculas + emoji; nome do episodio so na descricao). Linhas em branco entre blocos, sem frases repetidas."""
+    import re
+    p, ref = cfg["posting"], cfg["reference"]
+    gancho = p["hook"].upper() + _emoji(p)
+    resumo = re.sub(r"^(?:Fora do Contexto|Dores da Vida), epis[óo]dio \d+:\s*", "", p["resumo"])
+    pergunta = p["pergunta"] if "coment" in p["pergunta"].lower() else p["pergunta"] + " Conte nos comentários."
+    tags = list(p["hashtags"])
+    tags_tt = tags[:2] + tags[3:] if len(tags) == 5 else tags   # TikTok: sem a hashtag do livro biblico (3a), 4 no total
+    rot = _rotulo_episodio(cfg)
+    topo = f"{rot}.\n\n" if rot else ""
     return {
-        "tiktok": f"{hook} {p['resumo']} {p['pergunta']} {tags}",
-        "instagram": f"{hook}\n\n{p['resumo']}\n\n{p['pergunta']} Conte nos comentários.\n\n💬 Comente\n📩 Envie para alguém que está esperando\n🔖 Salve para voltar depois\n\n{tags}",
-        "youtube_titulo": f"{p.get('titulo_curto') or hook.rstrip('?')} | {ref}".upper(),   # decisao do dono (2026-11-22): titulos em MAIUSCULAS
-        "youtube_descricao": f"{ref}: {p['resumo']}\n\n{p['pergunta']} Conte nos comentários e inscreva-se no canal.\n\n{tags} #Shorts",
+        "tiktok": f"{gancho}\n\n{pergunta}\n\n{' '.join(tags_tt)}",
+        "instagram": f"{gancho}\n\n{pergunta}\n\n{' '.join(tags)}",
+        "youtube_titulo": gancho,
+        "youtube_descricao": f"{topo}{resumo}\n\n{ref}\n\n{pergunta}\n\nInscreva-se no canal para o próximo episódio.\n\n{' '.join(tags)} #Shorts",
     }
 
 

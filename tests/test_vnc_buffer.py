@@ -59,7 +59,7 @@ class Buffer(unittest.TestCase):
         for p in B.montar_pedidos(pk, {r: "c" for r in B.SERVICOS}, lambda e: "u"):
             m = p["input"]["metadata"]
             if p["rede"] == "youtube":
-                self.assertLessEqual(len(m["youtube"]["title"]), 60); self.assertFalse(m["youtube"]["madeForKids"])
+                self.assertLessEqual(len(m["youtube"]["title"]), 100); self.assertFalse(m["youtube"]["madeForKids"])
             if p["rede"] == "instagram": self.assertEqual(m["instagram"]["type"], "reel")
             self.assertEqual(list(m), [p["rede"]])
 

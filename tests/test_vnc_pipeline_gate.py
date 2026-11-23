@@ -62,7 +62,7 @@ class T(unittest.TestCase):
         e = G.pre("E03", d, review=bad, seconds=lambda p: 58.0); self.assertTrue(any("ROTEIRO" in x for x in e) and any("POSTAGEM" in x for x in e))
 
     def test_posting_limits_and_render(self):
-        d, c = mk(); self.assertIn("TIKTOK", G.render_posting_file("E03", c)); c["posting"]["resumo"] = "x" * 3000
+        d, c = mk(); self.assertIn("TIKTOK", G.render_posting_file("E03", c)); c["posting"]["pergunta"] = "x" * 3000
         self.assertTrue(any("tiktok" in x for x in G.bloco_postagem(c)))
 
 
@@ -84,7 +84,7 @@ if __name__ == "__main__": unittest.main()
 
 class ExtraT(unittest.TestCase):
     def test_youtube_title_60_and_hashtags(self):
-        d, c = mk(); c["posting"]["titulo_curto"] = "x" * 70; self.assertTrue(any("youtube_titulo" in e for e in G.bloco_postagem(c)))
+        d, c = mk(); c["posting"]["hook"] = "x" * 110; self.assertTrue(any("youtube_titulo" in e for e in G.bloco_postagem(c)))
         d, c = mk(); c["posting"]["hashtags"] = ["#a"] * 6; self.assertTrue(any("hashtags" in e for e in G.bloco_postagem(c)))
 
     def test_pre_voice_blocks_without_selection_and_voice_generate_spends_nothing(self):

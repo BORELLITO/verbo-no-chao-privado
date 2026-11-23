@@ -17,7 +17,7 @@ class Plan(unittest.TestCase):
         self.assertEqual(D.plan(cfg("E01"))["folder"], "EPISÓDIO 1 - QUANDO VOCÊ PERGUNTA E NADA MUDA")
         self.assertEqual(D.plan(cfg("E02"))["folder"], "EPISÓDIO 2 - QUANDO A RESPOSTA DEMORA")
     def test_postagem_tem_titulo_em_maiusculas(self):
-        t = D.posting_text(cfg("E07"), D.plan(cfg("E07"))); self.assertIn("FORA DO CONTEXTO, EP. 2: PLANOS DE PAZ | JEREMIAS 29:11", t); self.assertIn("EPISÓDIO 3", D.posting_text(cfg("E05"), D.plan(cfg("E05"))))
+        t = D.posting_text(cfg("E07"), D.plan(cfg("E07"))); self.assertIn("VOCÊ SABE PARA QUEM ESSE PLANO DE DEUS FOI ESCRITO? 📖", t); self.assertIn("Fora do Contexto, episódio 2.", t); self.assertIn("EPISÓDIO 3", D.posting_text(cfg("E05"), D.plan(cfg("E05"))))
     def test_env_rclone(self):
         e = D.rclone_env({"GDRIVE_CLIENT_ID": "i", "GDRIVE_CLIENT_SECRET": "s", "GDRIVE_REFRESH_TOKEN": "r"})
         self.assertEqual(e["RCLONE_CONFIG_GD_SCOPE"], "drive.file"); self.assertIn('"refresh_token": "r"', e["RCLONE_CONFIG_GD_TOKEN"])
