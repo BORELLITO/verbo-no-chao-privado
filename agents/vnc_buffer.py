@@ -146,7 +146,7 @@ def due_utc(brt_str):
 
 def metadados(rede, titulo_youtube):
     if rede == "youtube":
-        return {"youtube": {"title": titulo_youtube, "categoryId": YOUTUBE_CATEGORIA, "privacy": "public", "madeForKids": False, "notifySubscribers": True, "isAiGenerated": ROTULO_IA}}
+        return {"youtube": {"title": titulo_youtube, "categoryId": YOUTUBE_CATEGORIA, "privacy": "public", "madeForKids": False, "notifySubscribers": False, "isAiGenerated": ROTULO_IA}}
     if rede == "instagram":
         return {"instagram": {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": ROTULO_IA}}
     return {"tiktok": {"isAiGenerated": ROTULO_IA}}
