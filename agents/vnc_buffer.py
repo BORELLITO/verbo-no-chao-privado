@@ -52,6 +52,36 @@ def introspect(key, opener=urllib.request.urlopen):
     return gql(q, key, opener=opener)
 
 
+def _unwrap(t):
+    while t and t.get("ofType"):
+        t = t["ofType"]
+    return t or {}
+
+
+def introspect_deep(key, raiz=("PostInputMetaData", "ShareMode", "SchedulingType"), opener=urllib.request.urlopen, max_tipos=40):
+    """Le (so leitura) os tipos de entrada a partir de 'raiz', seguindo INPUT_OBJECT aninhados; enums trazem os valores."""
+    q = ("query($n:String!){ __type(name:$n){ kind name enumValues{name} "
+         "inputFields{ name type{ name kind ofType{ name kind ofType{ name kind ofType{ name kind } } } } } } }")
+    fila, vistos, out = list(raiz), set(), {}
+    while fila and len(out) < max_tipos:
+        n = fila.pop(0)
+        if n in vistos:
+            continue
+        vistos.add(n)
+        t = gql(q, key, {"n": n}, opener)["__type"]
+        if not t:
+            continue
+        if t["kind"] == "ENUM":
+            out[n] = [v["name"] for v in t["enumValues"]]
+        elif t["kind"] == "INPUT_OBJECT":
+            out[n] = {}
+            for f in t["inputFields"]:
+                u = _unwrap(f["type"]); out[n][f["name"]] = u.get("name")
+                if u.get("kind") in ("INPUT_OBJECT", "ENUM"):
+                    fila.append(u["name"])
+    return out
+
+
 def due_utc(brt_str):
     """'2026-11-23 12:00' (Brasilia) -> '2026-11-23T15:00:00.000Z'."""
     d = dt.datetime.strptime(brt_str, "%Y-%m-%d %H:%M").replace(tzinfo=BRT)
@@ -68,7 +98,7 @@ def montar_pedidos(pacote, canais, media_url_de):
             leg = e["legendas"]
             texto = {"tiktok": leg["tiktok"], "instagram": leg["instagram"], "youtube": leg["youtube_descricao"]}[rede]
             out.append({"episodio": e["id"], "rede": rede, "input": {
-                "text": texto, "channelId": cid, "schedulingType": "automatic", "mode": "customScheduled",
+                "text": texto, "channelId": cid, "schedulingType": "automatic", "mode": "customScheduled", "needsApproval": False,
                 "dueAt": due_utc(e["sugestao_horario_brt"]),
                 "assets": [{"video": {"url": media_url_de(e["id"])}}]},
                 "youtube_titulo_a_confirmar": leg["youtube_titulo"] if rede == "youtube" else None})
@@ -86,6 +116,8 @@ def main(argv):
         print("VNC_BUFFER_PROBE " + json.dumps(probe(key), ensure_ascii=False))
     elif mode == "introspect":
         print("VNC_BUFFER_SCHEMA " + json.dumps(introspect(key), ensure_ascii=False))
+    elif mode == "introspect_deep":
+        print("VNC_BUFFER_SCHEMA_DEEP " + json.dumps(introspect_deep(key), ensure_ascii=False))
     elif mode == "dry":
         pk = json.loads((ROOT / "publicacao/pacote_v1.json").read_text(encoding="utf8"))
         canais = {r: f"<channelId {r}>" for r in SERVICOS}

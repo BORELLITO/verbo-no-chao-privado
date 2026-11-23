@@ -38,6 +38,22 @@ class Buffer(unittest.TestCase):
         pk["episodios"][0]["plataformas"]["tiktok"]["estado"] = "agendado"
         self.assertEqual(len(B.montar_pedidos(pk, {"tiktok": "c"}, lambda e: "u")), len(pk["episodios"]) - 1)
 
+    def test_needs_approval_obrigatorio_no_pedido(self):
+        pk = json.load(open(B.ROOT / "publicacao/pacote_v1.json", encoding="utf8"))
+        for p in B.montar_pedidos(pk, {"tiktok": "c"}, lambda e: "u"):
+            self.assertIs(p["input"]["needsApproval"], False)
+
+    def test_introspect_deep_segue_tipos_aninhados(self):
+        resp = {"PostInputMetaData": {"kind": "INPUT_OBJECT", "name": "PostInputMetaData", "enumValues": None, "inputFields": [
+                    {"name": "youtube", "type": {"name": "YT", "kind": "INPUT_OBJECT", "ofType": None}}]},
+                "YT": {"kind": "INPUT_OBJECT", "name": "YT", "enumValues": None, "inputFields": [
+                    {"name": "title", "type": {"name": None, "kind": "NON_NULL", "ofType": {"name": "String", "kind": "SCALAR", "ofType": None}}}]}}
+        def op(req, timeout=0):
+            n = json.loads(req.data)["variables"]["n"]
+            return FakeResp(json.dumps({"data": {"__type": resp.get(n)}}).encode())
+        out = B.introspect_deep("K", raiz=("PostInputMetaData",), opener=op)
+        self.assertEqual(out["YT"]["title"], "String")
+
     def test_schedule_bloqueado(self):
         with self.assertRaises(B.BufferError): B.agendar()
 
@@ -46,7 +62,7 @@ class Buffer(unittest.TestCase):
         self.assertEqual(G.check_workflows(), [])
         wf = (B.ROOT / ".github/workflows/vnc-buffer.yml").read_text(encoding="utf8")
         self.assertNotIn("schedule", wf.replace("agendamento", ""))
-        self.assertIn('"probe","introspect","dry"', wf)
+        self.assertIn('"probe","introspect","introspect_deep","dry"', wf)
         self.assertNotIn("api.buffer.com", wf)
 
 if __name__ == "__main__":
