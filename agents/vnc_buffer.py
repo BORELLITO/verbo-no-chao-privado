@@ -198,6 +198,22 @@ def existentes(key, opener=urllib.request.urlopen, com_rascunho=True):
     return vistos
 
 
+def limpar_rascunhos(key, opener=urllib.request.urlopen):
+    """Apaga SOMENTE posts com status draft (rascunhos de teste). Agendados e enviados nunca sao tocados."""
+    q = ("query($o:OrganizationId!){ posts(first:100, input:{organizationId:$o, filter:{status:[draft]}}){ edges{ node{ id status } } } }")
+    apagados = []
+    for org in probe(key, opener):
+        for e in gql(q, key, {"o": org["organizationId"]}, opener)["posts"]["edges"]:
+            n = e["node"]
+            if n["status"] != "draft":
+                continue
+            r = gql("mutation($i: DeletePostInput!){ deletePost(input:$i){ __typename ... on VoidMutationError { message } } }", key, {"i": {"id": n["id"]}}, opener)["deletePost"]
+            if r.get("__typename") != "DeletePostSuccess":
+                raise BufferError(f"deletePost recusado: {r.get('message') or r}")
+            apagados.append(n["id"])
+    return apagados
+
+
 def agendar(key, pedidos, rascunho, opener=urllib.request.urlopen):
     """Cria os posts no Buffer. rascunho=True -> saveToDraft (nada sera publicado). Para no primeiro erro; devolve o que foi criado."""
     if not key:
@@ -226,6 +242,8 @@ def main(argv):
     elif mode == "introspect_query":
         nomes = json.loads((ROOT / "run/buffer.json").read_text(encoding="utf8")).get("tipos") or ["PostsResults"]
         print("VNC_BUFFER_SCHEMA_QUERY " + json.dumps(introspect_query(key, nomes=tuple(nomes)), ensure_ascii=False))
+    elif mode == "limpar_rascunhos":
+        print("VNC_BUFFER_APAGADOS " + json.dumps(limpar_rascunhos(key)))
     elif mode == "fila":
         print("VNC_BUFFER_FILA " + json.dumps(fila(key), ensure_ascii=False))
     elif mode == "dry":
