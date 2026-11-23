@@ -220,6 +220,19 @@ def limpar_rascunhos(key, opener=urllib.request.urlopen):
     return _apagar_por_status(key, "draft", opener)
 
 
+def conferir_posts(key, opener=urllib.request.urlopen):
+    """Somente leitura: texto e configuracoes (metadata) dos posts enviados e agendados, para conferir o que foi realmente enviado."""
+    q = ("query($o:OrganizationId!){ posts(first:30, input:{organizationId:$o, filter:{status:[sent, scheduled]}}){ edges{ node{ id status channelService dueAt sentAt text "
+         "metadata{ __typename ... on YoutubePostMetadata{ title category privacy madeForKids notifySubscribers isAiGenerated type } "
+         "... on InstagramPostMetadata{ type shouldShareToFeed isAiGenerated firstComment } } } } } }")
+    saida = []
+    for org in probe(key, opener):
+        for e in gql(q, key, {"o": org["organizationId"]}, opener)["posts"]["edges"]:
+            n = e["node"]
+            saida.append({"rede": str(n.get("channelService")).lower(), "status": n.get("status"), "dueAt": n.get("dueAt"), "sentAt": n.get("sentAt"), "texto": n.get("text"), "meta": n.get("metadata")})
+    return saida
+
+
 def cancelar_agendados(key, opener=urllib.request.urlopen):
     """Apaga SOMENTE posts agendados (scheduled). Exige liberacao do dono no modo principal."""
     return _apagar_por_status(key, "scheduled", opener)
@@ -255,6 +268,8 @@ def main(argv):
         print("VNC_BUFFER_SCHEMA_QUERY " + json.dumps(introspect_query(key, nomes=tuple(nomes)), ensure_ascii=False))
     elif mode == "limpar_rascunhos":
         print("VNC_BUFFER_APAGADOS " + json.dumps(limpar_rascunhos(key)))
+    elif mode == "conferir_posts":
+        print("VNC_BUFFER_CONFERIR " + json.dumps(conferir_posts(key), ensure_ascii=False))
     elif mode == "cancelar_agendados":
         cfg = json.loads((ROOT / "run/buffer.json").read_text(encoding="utf8"))
         if cfg.get("liberado_pelo_dono") is not True:

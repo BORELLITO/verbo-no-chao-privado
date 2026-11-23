@@ -1,5 +1,5 @@
 name: VNC Buffer (leitura, rascunho e agendamento com liberacao)
-# Entrada: run/buffer.json {"mode":"probe|introspect|introspect_deep|introspect_query|fila|dry|draft|schedule|limpar_rascunhos|cancelar_agendados","nonce":"..."}. Unico workflow com BUFFER_API_KEY. Sem cron.
+# Entrada: run/buffer.json {"mode":"probe|introspect|introspect_deep|introspect_query|fila|dry|draft|schedule|limpar_rascunhos|cancelar_agendados|conferir_posts","nonce":"..."}. Unico workflow com BUFFER_API_KEY. Sem cron.
 on:
   push:
     branches: ["main"]
@@ -23,5 +23,5 @@ jobs:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
         run: |
-          MODE="$(python3 -c 'import json;m=json.load(open("run/buffer.json")).get("mode","probe");assert m in ("probe","introspect","introspect_deep","introspect_query","fila","dry","draft","schedule","limpar_rascunhos","cancelar_agendados");print(m)')"
+          MODE="$(python3 -c 'import json;m=json.load(open("run/buffer.json")).get("mode","probe");assert m in ("probe","introspect","introspect_deep","introspect_query","fila","dry","draft","schedule","limpar_rascunhos","cancelar_agendados","conferir_posts");print(m)')"
           python3 -m agents.vnc_buffer "$MODE"

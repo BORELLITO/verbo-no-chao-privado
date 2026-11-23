@@ -71,7 +71,7 @@ class Buffer(unittest.TestCase):
         self.assertEqual(G.check_workflows(), [])
         wf = (B.ROOT / ".github/workflows/vnc-buffer.yml").read_text(encoding="utf8")
         self.assertNotRegex(wf, r"(?m)^\s*(schedule:|- cron:|workflow_dispatch)")
-        self.assertIn('"probe","introspect","introspect_deep","introspect_query","fila","dry","draft","schedule","limpar_rascunhos","cancelar_agendados"', wf)
+        self.assertIn('"probe","introspect","introspect_deep","introspect_query","fila","dry","draft","schedule","limpar_rascunhos","cancelar_agendados","conferir_posts"', wf)
         self.assertNotIn("api.buffer.com", wf)
 
 if __name__ == "__main__":
