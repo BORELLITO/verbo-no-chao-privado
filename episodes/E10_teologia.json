@@ -1,0 +1,393 @@
+{
+ "episode": "E10",
+ "referencia": "Habacuque 3:17–19",
+ "pesquisado_em": "2026-11-23",
+ "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "posicoes_adotadas": {
+  "autoria": "Roteiro diz 'o profeta', sem nomear o autor.",
+  "quadro": "Quadro Dores da Vida: contexto de injustica coletiva em Juda e ameaca de invasao; alegria do profeta apresentada depois da lamentacao, nunca como negacao da perda.",
+  "limite": "Sem promessa de colheita, cura ou prosperidade; nao afirma que a fe resolve a perda; nao culpa quem nao sente alegria."
+ },
+ "alegacoes": [
+  {
+   "id": "F00",
+   "cenas": [
+    "S02"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO",
+   "texto": "O trecho de Habacuque 3:17 a 19 e lembrado quando falta aquilo que sustentava a vida.",
+   "versiculos": [
+    "Habacuque 3:17"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Bible Hub, Habakkuk 3",
+     "url": "https://biblehub.com/habakkuk/3.htm",
+     "tipo": "comentario",
+     "nota": "vv. 17-19: figueira, vinha, oliveira, campo, rebanho falham; ainda assim exultara no Senhor"
+    },
+    {
+     "titulo": "Christianity.com, Habakkuk 3:17-19",
+     "url": "https://www.christianity.com/bible/niv/habakkuk/3-17-19",
+     "tipo": "comentario",
+     "nota": "texto dos vv. 17 a 19 e comentario de Matthew Henry"
+    }
+   ],
+   "risco": "baixo: observacao de uso comum, sem numero nem acusacao.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F01",
+   "cenas": [
+    "S03"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "O texto lista figueira sem fruto, campo sem alimento e curral vazio.",
+   "versiculos": [
+    "Habacuque 3:17"
+   ],
+   "palavras_chave_no_texto": [
+    "figueira",
+    "campos",
+    "currais"
+   ],
+   "fontes": [
+    {
+     "titulo": "Christianity.com, Habakkuk 3:17-19",
+     "url": "https://www.christianity.com/bible/niv/habakkuk/3-17-19",
+     "tipo": "comentario",
+     "nota": "texto dos vv. 17 a 19 e comentario de Matthew Henry"
+    },
+    {
+     "titulo": "Bible Hub, Habakkuk 3",
+     "url": "https://biblehub.com/habakkuk/3.htm",
+     "tipo": "comentario",
+     "nota": "vv. 17-19: figueira, vinha, oliveira, campo, rebanho falham; ainda assim exultara no Senhor"
+    }
+   ],
+   "risco": "baixo: leitura direta do versiculo 17.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F02",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "historica",
+   "veredito": "SUPORTADO",
+   "texto": "Habacuque 3 fecha o livro de um profeta que viu violencia e injustica na sociedade de Juda.",
+   "versiculos": [
+    "Habacuque 1:2-4"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Tyndale, The Book of Habakkuk",
+     "url": "https://www.tyndale.com/sites/thewaybible/?p=660",
+     "tipo": "enciclopedia",
+     "nota": "violencia e injustica na sociedade de Juda; Habacuque vê maldade ao redor (1:2-4)"
+    },
+    {
+     "titulo": "Asbury Bible Commentary, Habakkuk",
+     "url": "https://classic.biblegateway.com/resources/asbury-bible-commentary/ii-structure-and-content",
+     "tipo": "comentario",
+     "nota": "primeira queixa: sociedade de Juda sem lei e corrupta, violencia e injustica social"
+    },
+    {
+     "titulo": "The Gospel Coalition, Habakkuk",
+     "url": "https://www.thegospelcoalition.org/commentary/habakkuk/",
+     "tipo": "comentario",
+     "nota": "Habacuque reflete sobre os problemas internos de Juda e a ameaca de Babilonia"
+    }
+   ],
+   "risco": "baixo: consenso dos comentarios; sem data nem autoria nomeada.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F03",
+   "cenas": [
+    "S05"
+   ],
+   "tipo": "historica",
+   "veredito": "SUPORTADO",
+   "texto": "O texto olha para a invasao e a desolacao que ela costuma trazer, incluindo a falta de alimento.",
+   "versiculos": [
+    "Habacuque 3:16"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "CSB Study Bible, Introduction to Habakkuk",
+     "url": "https://www.biblestudytools.com/commentaries/csb-study-bible/habakkuk-intro.html",
+     "tipo": "enciclopedia",
+     "nota": "Habacuque previu a invasao de Juda pelos caldeus (1:6); escreveu antes das devastacoes"
+    },
+    {
+     "titulo": "EBSCO, Habakkuk",
+     "url": "https://www.ebsco.com/research-starters/literature-and-writing/habakkuk",
+     "tipo": "enciclopedia",
+     "nota": "Habacuque aparece diante da ameaca crescente dos caldeus sobre Juda"
+    },
+    {
+     "titulo": "Bible Hub, comentarios a Habacuque 3:17",
+     "url": "https://biblehub.com/commentaries/habakkuk/3-17.htm",
+     "tipo": "comentario",
+     "nota": "invasao costuma trazer desolacao e fome; o profeta repete sua confianca em Deus sabendo que a esperanca humana falha"
+    }
+   ],
+   "risco": "baixo: o roteiro diz que a fome era ameaca real; os comentarios ligam o v. 17 a invasao e desolacao.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F04",
+   "cenas": [
+    "S06"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "No versiculo 16 o profeta diz que os labios tremeram e que a podridao entrou nos ossos.",
+   "versiculos": [
+    "Habacuque 3:16"
+   ],
+   "palavras_chave_no_texto": [
+    "labios",
+    "ossos"
+   ],
+   "fontes": [
+    {
+     "titulo": "Bible Hub, Habacuque 3:16",
+     "url": "https://biblehub.com/habakkuk/3-16.htm",
+     "tipo": "comentario",
+     "nota": "labios tremem, podridao nos ossos, tremor no lugar em que esta"
+    },
+    {
+     "titulo": "Bible Study Tools, Habakkuk 3:16",
+     "url": "https://www.biblestudytools.com/esv/habakkuk/3-16.html",
+     "tipo": "comentario",
+     "nota": "tradução ESV: lábios tremem, podridão nos ossos, pernas tremem"
+    }
+   ],
+   "risco": "baixo: fraqueza nos ossos e imagem de fragilidade; o roteiro usa 'fraquejaram', sem diagnosticar nada.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F05",
+   "cenas": [
+    "S07"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "O profeta diz que se alegrara no Senhor e exultara no Deus da sua salvacao.",
+   "versiculos": [
+    "Habacuque 3:18"
+   ],
+   "palavras_chave_no_texto": [
+    "senhor",
+    "salvação"
+   ],
+   "fontes": [
+    {
+     "titulo": "Christianity.com, Habakkuk 3:17-19",
+     "url": "https://www.christianity.com/bible/niv/habakkuk/3-17-19",
+     "tipo": "comentario",
+     "nota": "texto dos vv. 17 a 19 e comentario de Matthew Henry"
+    },
+    {
+     "titulo": "Bible Hub, Habakkuk 3",
+     "url": "https://biblehub.com/habakkuk/3.htm",
+     "tipo": "comentario",
+     "nota": "vv. 17-19: figueira, vinha, oliveira, campo, rebanho falham; ainda assim exultara no Senhor"
+    }
+   ],
+   "risco": "baixo: leitura direta do versiculo 18.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F06",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "interpretativa",
+   "veredito": "SUPORTADO",
+   "texto": "A alegria do profeta nao nega a perda: ele descreve a desolacao antes de dizer que se alegra.",
+   "versiculos": [
+    "Habacuque 3:17",
+    "Habacuque 3:18"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word, Habakkuk 3",
+     "url": "https://enduringword.com/bible-commentary/habakkuk-3",
+     "tipo": "comentario",
+     "nota": "Habacuque via a terra desolada e ainda assim se alegra; nao praticou pensamento positivo, viu os problemas como eram"
+    },
+    {
+     "titulo": "Bible Hub, comentarios a Habacuque 3:17",
+     "url": "https://biblehub.com/commentaries/habakkuk/3-17.htm",
+     "tipo": "comentario",
+     "nota": "invasao costuma trazer desolacao e fome; o profeta repete sua confianca em Deus sabendo que a esperanca humana falha"
+    }
+   ],
+   "risco": "medio: leitura de comentario; o roteiro nao afirma que a dor passa.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F07",
+   "cenas": [
+    "S09"
+   ],
+   "tipo": "interpretativa",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "Nos versiculos 17 a 19 o profeta nao promete que a colheita volta; o texto diz em que ele se apoia.",
+   "versiculos": [
+    "Habacuque 3:19"
+   ],
+   "palavras_chave_no_texto": [
+    "força"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word, Habakkuk 3",
+     "url": "https://enduringword.com/bible-commentary/habakkuk-3",
+     "tipo": "comentario",
+     "nota": "Habacuque via a terra desolada e ainda assim se alegra; nao praticou pensamento positivo, viu os problemas como eram"
+    },
+    {
+     "titulo": "Matthew Henry, Habacuque 3:16-19 (BibleGateway)",
+     "url": "https://search.biblegateway.com/resources/matthew-henry/Hab.3.16-Hab.3.19",
+     "tipo": "comentario",
+     "nota": "o profeta triunfa em Deus: o Senhor Deus e a minha forca"
+    }
+   ],
+   "risco": "medio: afirmacao por ausencia de promessa nos versiculos; nao fala do futuro do povo alem do cap. 3.",
+   "mitigacao": "Evitar qualquer sugestao de que a fe garante colheita ou reversao; o roteiro afirma o contrario e a cena S11 usa 'talvez'."
+  },
+  {
+   "id": "F08",
+   "cenas": [
+    "S10"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "O profeta chama o Senhor Deus de sua forca e fala de pes como os da cerva.",
+   "versiculos": [
+    "Habacuque 3:19"
+   ],
+   "palavras_chave_no_texto": [
+    "força",
+    "pés",
+    "cervas"
+   ],
+   "fontes": [
+    {
+     "titulo": "Christianity.com, Habakkuk 3:17-19",
+     "url": "https://www.christianity.com/bible/niv/habakkuk/3-17-19",
+     "tipo": "comentario",
+     "nota": "texto dos vv. 17 a 19 e comentario de Matthew Henry"
+    },
+    {
+     "titulo": "Bible Hub, Habakkuk 3",
+     "url": "https://biblehub.com/habakkuk/3.htm",
+     "tipo": "comentario",
+     "nota": "vv. 17-19: figueira, vinha, oliveira, campo, rebanho falham; ainda assim exultara no Senhor"
+    }
+   ],
+   "risco": "baixo: leitura direta do v. 19; 'firmes' vem do sentido da imagem (comentarios).",
+   "mitigacao": ""
+  },
+  {
+   "id": "F09",
+   "cenas": [
+    "S11"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "A fe do profeta e vista por comentarios como confianca que continua andando mesmo com a terra vazia.",
+   "versiculos": [
+    "Habacuque 3:19"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word, Habakkuk 3",
+     "url": "https://enduringword.com/bible-commentary/habakkuk-3",
+     "tipo": "comentario",
+     "nota": "Habacuque via a terra desolada e ainda assim se alegra; nao praticou pensamento positivo, viu os problemas como eram"
+    },
+    {
+     "titulo": "Desiring God, From Protest to Praise",
+     "url": "https://www.desiringgod.org/articles/from-protest-to-praise",
+     "tipo": "comentario",
+     "nota": "os versiculos 17 a 19 como resposta do profeta depois do protesto"
+    }
+   ],
+   "risco": "medio: aplicacao pessoal ao ouvinte.",
+   "mitigacao": "A cena usa 'talvez' e nao afirma que o ouvinte receba o mesmo resultado; sem promessa de recuperacao."
+  },
+  {
+   "id": "F10",
+   "cenas": [
+    "S12"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO",
+   "texto": "O livro modela um lamento sincero seguido de confianca, um convite a nomear a propria perda.",
+   "versiculos": [
+    "Habacuque 1:2-4"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Bible Hub, Habakkuk overview",
+     "url": "https://biblehub.com/habakkuk",
+     "tipo": "enciclopedia",
+     "nota": "lamento sincero seguido de confianca firme como modelo para quem enfrenta sofrimento e injustica"
+    },
+    {
+     "titulo": "EBSCO, Habakkuk",
+     "url": "https://www.ebsco.com/research-starters/literature-and-writing/habakkuk",
+     "tipo": "enciclopedia",
+     "nota": "Habacuque aparece diante da ameaca crescente dos caldeus sobre Juda"
+    }
+   ],
+   "risco": "baixo: pergunta aberta de comentario, sem culpabilizacao.",
+   "mitigacao": ""
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "Hab 3:1-15 (a vinda de Deus em poder) e o contexto do juizo sobre Babilonia",
+   "decisao": "aceitavel",
+   "justificativa": "O episodio de 60 s foca nos versiculos 16 a 19; nenhuma cena nega o restante do capitulo."
+  },
+  {
+   "item": "Leitura de que a alegria e submissao ao plano de Deus (Desiring God)",
+   "decisao": "aceitavel",
+   "justificativa": "O roteiro evita linguagem de soberania e apresenta a alegria como resposta honesta, sem impor sentimento ao ouvinte."
+  },
+  {
+   "item": "Risco de ler o trecho como pensamento positivo ou promessa de prosperidade",
+   "decisao": "ressalvar",
+   "justificativa": "S09 diz que o texto nao promete que a colheita volta e S11 usa 'talvez'; nada sugere que a fe garante resultado."
+  }
+ ],
+ "parecer": "APROVADO",
+ "cenas_hash": {
+  "S01": "e0d2c04e77744bb4",
+  "S02": "27518fbb343bcedd",
+  "S03": "c0b3fb29219f1ef9",
+  "S04": "b3ab1d75b62f969e",
+  "S05": "2e0fc084d76956d6",
+  "S06": "53fdac3ec4ee4f57",
+  "S07": "90d47919bbe67679",
+  "S08": "ce912761418a3d5d",
+  "S09": "beabc5d4cbb3b348",
+  "S10": "b66c2dd7ec01ffda",
+  "S11": "eafbbe3c8f5626c1",
+  "S12": "c36c19734e449f2e"
+ }
+}

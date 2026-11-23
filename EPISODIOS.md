@@ -13,8 +13,9 @@ O **id interno** (`E01`…) é só a chave estável de arquivos, hashes e regist
 | EPISÓDIO 3 | MEDO E UMA MÃO FIRME | Isaías 41:10–13 | E05 |
 | EPISÓDIO 4 | ESPERANÇA ENTRE RUÍNAS | Lamentações 3:21–26 | E03 |
 | EPISÓDIO 5 | DESCANSO PRA QUEM ESTÁ CANSADO | Mateus 11:28–30 | E04 |
+| EPISÓDIO 6 | MESMO SEM COLHEITA | Habacuque 3:17–19 | E10 |
 
-Próximo: EPISÓDIO 6
+Próximo: EPISÓDIO 7
 
 ## QUADRO - FORA DO CONTEXTO
 

@@ -76,6 +76,13 @@
    "numero": 4,
    "titulo": "DOIS OU TRÊS",
    "referencia": "Mateus 18:15–20"
+  },
+  {
+   "id": "E10",
+   "quadro": "DORES",
+   "numero": 6,
+   "titulo": "MESMO SEM COLHEITA",
+   "referencia": "Habacuque 3:17–19"
   }
  ],
  "decisao_karaoke": "Definido pelo dono em 2026-11-22: karaoke LARANJA no quadro FORA DO CONTEXTO (&H0066B3FF) e LILAS no quadro DORES DA VIDA (padrao travado &H00F2B0C4, sem karaoke_color no episodio)."
