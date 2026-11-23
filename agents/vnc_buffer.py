@@ -84,6 +84,24 @@ def introspect_deep(key, raiz=("PostInputMetaData", "ShareMode", "SchedulingType
     return out
 
 
+def introspect_query(key, opener=urllib.request.urlopen):
+    """Somente leitura: campos da raiz Query (com argumentos) e dos tipos Post/PostsInput, para montar a leitura da fila."""
+    q = ("query($n:String!){ __type(name:$n){ kind name fields{ name args{ name type{ name kind ofType{ name kind ofType{ name kind } } } } "
+         "type{ name kind ofType{ name kind ofType{ name kind } } } } inputFields{ name type{ name kind ofType{ name kind } } } enumValues{name} } }")
+    out = {}
+    for n in ("Query", "Post", "PostsInput", "PostsFiltersInput", "PostStatus"):
+        t = gql(q, key, {"n": n}, opener)["__type"]
+        if not t:
+            continue
+        if t.get("fields"):
+            out[n] = {f["name"]: {"args": {a["name"]: _unwrap(a["type"]).get("name") for a in f["args"]}, "tipo": _unwrap(f["type"]).get("name")} for f in t["fields"]}
+        elif t.get("inputFields"):
+            out[n] = {f["name"]: _unwrap(f["type"]).get("name") for f in t["inputFields"]}
+        elif t.get("enumValues"):
+            out[n] = [v["name"] for v in t["enumValues"]]
+    return out
+
+
 def due_utc(brt_str):
     """'2026-11-23 12:00' (Brasilia) -> '2026-11-23T15:00:00.000Z'."""
     d = dt.datetime.strptime(brt_str, "%Y-%m-%d %H:%M").replace(tzinfo=BRT)
@@ -129,6 +147,8 @@ def main(argv):
         print("VNC_BUFFER_SCHEMA " + json.dumps(introspect(key), ensure_ascii=False))
     elif mode == "introspect_deep":
         print("VNC_BUFFER_SCHEMA_DEEP " + json.dumps(introspect_deep(key), ensure_ascii=False))
+    elif mode == "introspect_query":
+        print("VNC_BUFFER_SCHEMA_QUERY " + json.dumps(introspect_query(key), ensure_ascii=False))
     elif mode == "dry":
         pk = json.loads((ROOT / "publicacao/pacote_v1.json").read_text(encoding="utf8"))
         canais = {r: f"<channelId {r}>" for r in SERVICOS}

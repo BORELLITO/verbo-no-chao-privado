@@ -71,8 +71,26 @@ class Buffer(unittest.TestCase):
         self.assertEqual(G.check_workflows(), [])
         wf = (B.ROOT / ".github/workflows/vnc-buffer.yml").read_text(encoding="utf8")
         self.assertNotIn("schedule", wf.replace("agendamento", ""))
-        self.assertIn('"probe","introspect","introspect_deep","dry"', wf)
+        self.assertIn('"probe","introspect","introspect_deep","introspect_query","dry"', wf)
         self.assertNotIn("api.buffer.com", wf)
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_introspect_query_somente_leitura():
+    from agents import vnc_buffer as b
+    chamadas = []
+
+    def opener(req, *a, **k):
+        chamadas.append(req.data.decode())
+        import io, json as _j
+        class R(io.BytesIO):
+            def __enter__(self): return self
+            def __exit__(self, *x): return False
+        return R(_j.dumps({"data": {"__type": {"kind": "OBJECT", "name": "Query", "fields": [
+            {"name": "posts", "args": [{"name": "input", "type": {"name": "PostsInput", "kind": "INPUT_OBJECT", "ofType": None}}],
+             "type": {"name": "PostConnection", "kind": "OBJECT", "ofType": None}}]}}}).encode())
+    out = b.introspect_query("k", opener=opener)
+    assert out["Query"]["posts"]["args"] == {"input": "PostsInput"}
+    assert all("mutation" not in c.lower() for c in chamadas)
