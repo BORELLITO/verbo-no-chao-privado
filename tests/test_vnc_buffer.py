@@ -54,6 +54,15 @@ class Buffer(unittest.TestCase):
         out = B.introspect_deep("K", raiz=("PostInputMetaData",), opener=op)
         self.assertEqual(out["YT"]["title"], "String")
 
+    def test_metadados_por_rede_e_titulo_youtube(self):
+        pk = json.load(open(B.ROOT / "publicacao/pacote_v1.json", encoding="utf8"))
+        for p in B.montar_pedidos(pk, {r: "c" for r in B.SERVICOS}, lambda e: "u"):
+            m = p["input"]["metadata"]
+            if p["rede"] == "youtube":
+                self.assertLessEqual(len(m["youtube"]["title"]), 60); self.assertFalse(m["youtube"]["madeForKids"])
+            if p["rede"] == "instagram": self.assertEqual(m["instagram"]["type"], "reel")
+            self.assertEqual(list(m), [p["rede"]])
+
     def test_schedule_bloqueado(self):
         with self.assertRaises(B.BufferError): B.agendar()
 

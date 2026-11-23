@@ -12,6 +12,8 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[1]
 ENDPOINT = "https://api.buffer.com"
 BRT = ZoneInfo("America/Sao_Paulo")
+# DECISAO DO DONO PENDENTE: a voz e sintetica (ElevenLabs). True = rotula como conteudo com IA nas 3 redes (padrao conservador). Imagens sao filmagens reais.
+ROTULO_IA = True
 SERVICOS = {"tiktok": "tiktok", "instagram": "instagram", "youtube": "youtube"}
 
 
@@ -88,6 +90,14 @@ def due_utc(brt_str):
     return d.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
 
+def metadados(rede, titulo_youtube):
+    if rede == "youtube":
+        return {"youtube": {"title": titulo_youtube, "privacy": "public", "madeForKids": False, "notifySubscribers": True, "isAiGenerated": ROTULO_IA}}
+    if rede == "instagram":
+        return {"instagram": {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": ROTULO_IA}}
+    return {"tiktok": {"isAiGenerated": ROTULO_IA}}
+
+
 def montar_pedidos(pacote, canais, media_url_de):
     """Um pedido por episodio x rede. canais: {'tiktok': channelId, ...}. media_url_de(ep_id)->URL publica do mp4."""
     out = []
@@ -100,8 +110,9 @@ def montar_pedidos(pacote, canais, media_url_de):
             out.append({"episodio": e["id"], "rede": rede, "input": {
                 "text": texto, "channelId": cid, "schedulingType": "automatic", "mode": "customScheduled", "needsApproval": False,
                 "dueAt": due_utc(e["sugestao_horario_brt"]),
+                "metadata": metadados(rede, leg["youtube_titulo"]),
                 "assets": [{"video": {"url": media_url_de(e["id"])}}]},
-                "youtube_titulo_a_confirmar": leg["youtube_titulo"] if rede == "youtube" else None})
+                })
     return out
 
 
