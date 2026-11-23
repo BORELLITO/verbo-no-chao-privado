@@ -110,6 +110,16 @@ def enviar_capa(jpg, pid, cloud, key, secret, agora=None):
     return r.json()
 
 
+def verificar_remoto(url, sha_local):
+    """GET publico do que o Buffer realmente baixa: sha256 do corpo entregue x sha256 do arquivo local (prova byte a byte)."""
+    import requests  # instalado no workflow
+    h, n = hashlib.sha256(), 0
+    with requests.get(url, stream=True, timeout=600) as r:
+        for b in r.iter_content(1 << 20):
+            h.update(b); n += len(b)
+        return {"http": r.status_code, "content_type": r.headers.get("Content-Type", ""), "bytes": n, "sha256_remoto": h.hexdigest(), "identico": h.hexdigest() == sha_local}
+
+
 def conferir_url(url, tamanho):
     """HEAD publico: tem que responder 200, video/mp4 e o mesmo tamanho do arquivo local."""
     req = urllib.request.Request(url, method="HEAD")
@@ -124,7 +134,7 @@ def conferir_url(url, tamanho):
 def main(argv):
     cfg = json.loads((ROOT / "run/media.json").read_text(encoding="utf8"))
     mode = argv[0] if argv else cfg.get("mode", "check")
-    if mode not in ("check", "upload", "check_capa", "upload_capa"):
+    if mode not in ("check", "upload", "check_capa", "upload_capa", "verify_remoto"):
         raise MediaError(f"modo invalido: {mode}")
     raiz = os.environ.get("VNC_MEDIA_SRC", "fonte/backfill")
     cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", "")
@@ -152,6 +162,8 @@ def main(argv):
         sha = sha256(mp4)
         pid = public_id(ep, sha)
         item = {"id": ep, "bytes": tam, "sha256": sha, "public_id": pid}
+        if mode == "verify_remoto":
+            item["url_ok"] = verificar_remoto(url_publica(cloud, pid), sha)
         if mode == "upload":
             enviar(mp4, pid, cloud, key, secret)
             item["url"] = url_publica(cloud, pid)
