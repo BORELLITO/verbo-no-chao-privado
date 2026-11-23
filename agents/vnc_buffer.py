@@ -102,6 +102,39 @@ def introspect_query(key, opener=urllib.request.urlopen):
     return out
 
 
+def fila(key, agora=None, opener=urllib.request.urlopen):
+    """Somente leitura: posts do Buffer por rede e estado, estoque agendado (dias a frente) e metricas dos enviados."""
+    agora = agora or dt.datetime.now(dt.timezone.utc)
+    q = ("query($o:OrganizationId!,$a:String){ posts(first:100, after:$a, input:{organizationId:$o, filter:{status:[scheduled,sent,error,needs_approval,draft]}}){ "
+         "edges{ node{ id status channelService dueAt sentAt externalLink metrics{ name value } error{ message } } } pageInfo{ hasNextPage endCursor } } }")
+    res = {}
+    for org in probe(key, opener):
+        after = None
+        for _ in range(10):
+            r = gql(q, key, {"o": org["organizationId"], "a": after}, opener)["posts"]
+            for e in r["edges"]:
+                n = e["node"]
+                x = res.setdefault(n["channelService"], {"agendados": 0, "enviados": 0, "erros": 0, "rascunhos": 0, "ultimo_agendado": None, "enviados_detalhe": []})
+                if n["status"] == "scheduled":
+                    x["agendados"] += 1
+                    if n["dueAt"] and (x["ultimo_agendado"] is None or n["dueAt"] > x["ultimo_agendado"]):
+                        x["ultimo_agendado"] = n["dueAt"]
+                elif n["status"] == "sent":
+                    x["enviados"] += 1
+                    x["enviados_detalhe"].append({"sentAt": n["sentAt"], "link": n["externalLink"], "metricas": {m["name"]: m["value"] for m in (n["metrics"] or [])}})
+                elif n["status"] == "error":
+                    x["erros"] += 1
+                else:
+                    x["rascunhos"] += 1
+            if not r["pageInfo"]["hasNextPage"]:
+                break
+            after = r["pageInfo"]["endCursor"]
+    for x in res.values():
+        u = x["ultimo_agendado"]
+        x["dias_de_estoque"] = round(max(0.0, (dt.datetime.fromisoformat(u.replace("Z", "+00:00")) - agora).total_seconds() / 86400), 1) if u else 0.0
+    return res
+
+
 def due_utc(brt_str):
     """'2026-11-23 12:00' (Brasilia) -> '2026-11-23T15:00:00.000Z'."""
     d = dt.datetime.strptime(brt_str, "%Y-%m-%d %H:%M").replace(tzinfo=BRT)
@@ -149,6 +182,8 @@ def main(argv):
         print("VNC_BUFFER_SCHEMA_DEEP " + json.dumps(introspect_deep(key), ensure_ascii=False))
     elif mode == "introspect_query":
         print("VNC_BUFFER_SCHEMA_QUERY " + json.dumps(introspect_query(key), ensure_ascii=False))
+    elif mode == "fila":
+        print("VNC_BUFFER_FILA " + json.dumps(fila(key), ensure_ascii=False))
     elif mode == "dry":
         pk = json.loads((ROOT / "publicacao/pacote_v1.json").read_text(encoding="utf8"))
         canais = {r: f"<channelId {r}>" for r in SERVICOS}
