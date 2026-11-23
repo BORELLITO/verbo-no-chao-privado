@@ -294,6 +294,22 @@ def run(ep, mode=None):
             reg.setdefault("music_used", []).append({"episode": ep, "title": title, "provider": "mixkit", "mixkit_id": mid, "page": cfg["music_page"], "license": "Mixkit Music Free License", "content_id_checked": False, "rule_pt": "não repetir a mesma trilha em outro episódio"})
             regp.write_text(json.dumps(reg, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
         print("VNC_MUSIC_OK", ep, mid, title); return 0
+    if mode == "music_list":   # lista paginas de trilhas do Mixkit por clima (so leitura): imprime slug, ids e se ja foi usada
+        reg = json.loads((ROOT / "contracts" / "vnc_clip_registry_v1.json").read_text(encoding="utf8"))
+        usadas = {str(u.get("mixkit_id") or u.get("id")) for u in reg.get("music_used", [])}
+        vistos = set()
+        for clima in ("sad", "relaxing", "cinematic", "piano", "sleepy", "ambient", "reflective"):
+            for pg in ("", "page/2/"):
+                try:
+                    h = get(f"https://mixkit.co/free-stock-music/mood/{clima}/{pg}" if clima in ("sad", "relaxing", "cinematic", "sleepy", "reflective") else f"https://mixkit.co/free-stock-music/{clima}/{pg}", binary=False)
+                except Exception as e:
+                    print("VNC_MUSIC_LIST_ERRO", clima, pg, str(e)[:80]); continue
+                for slug in re.findall(r'href="/free-stock-music/([a-z0-9-]+)/"', h):
+                    if slug in vistos or slug in ("mood", "genres", "page", "tag", "search"): continue
+                    vistos.add(slug)
+                    print("VNC_MUSIC_CAND", clima, slug)
+        print("VNC_MUSIC_USADAS", sorted(usadas))
+        return 0
     if mode == "review":
         from agents import vnc_script_review as RV
         return RV.main(ep)
