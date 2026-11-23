@@ -1159,6 +1159,16 @@
    "license": "Mixkit Music Free License",
    "content_id_checked": false,
    "rule_pt": "não repetir a mesma trilha em outro episódio"
+  },
+  {
+   "episode": "E10",
+   "title": "Free Skyline Stock Music",
+   "provider": "mixkit",
+   "mixkit_id": "601",
+   "page": "https://mixkit.co/free-stock-music/skyline/",
+   "license": "Mixkit Music Free License",
+   "content_id_checked": false,
+   "rule_pt": "não repetir a mesma trilha em outro episódio"
   }
  ]
 }
