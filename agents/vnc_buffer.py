@@ -223,7 +223,7 @@ def limpar_rascunhos(key, opener=urllib.request.urlopen):
 def conferir_posts(key, opener=urllib.request.urlopen):
     """Somente leitura: texto e configuracoes (metadata) dos posts enviados e agendados, para conferir o que foi realmente enviado."""
     q = ("query($o:OrganizationId!){ posts(first:30, input:{organizationId:$o, filter:{status:[sent, scheduled]}}){ edges{ node{ id status channelService dueAt sentAt text "
-         "metadata{ __typename ... on YoutubePostMetadata{ title category privacy madeForKids notifySubscribers isAiGenerated type } "
+         "metadata{ __typename ... on YoutubePostMetadata{ title privacy madeForKids notifySubscribers isAiGenerated type } "
          "... on InstagramPostMetadata{ type shouldShareToFeed isAiGenerated firstComment } } } } } }")
     saida = []
     for org in probe(key, opener):
