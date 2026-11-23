@@ -9,6 +9,8 @@
  ],
  "reference": "Habacuque 3:17–19",
  "timing": "whisper",
+ "audio_link_file": "run/audio_link_E10.txt",
+ "selection": "contracts/e10_scene_clip_selection.json",
  "cta": [
   "Curta, compartilhe\\Ne inscreva-se no canal",
   "E você, já se sentiu assim?\\NConte nos comentários."
