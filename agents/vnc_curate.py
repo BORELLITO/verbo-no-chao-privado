@@ -304,19 +304,11 @@ def run(ep, mode=None):
                     h = get(f"https://mixkit.co/free-stock-music/mood/{clima}/{pg}" if clima in ("sad", "relaxing", "cinematic", "sleepy", "reflective") else f"https://mixkit.co/free-stock-music/{clima}/{pg}", binary=False)
                 except Exception as e:
                     print("VNC_MUSIC_LIST_ERRO", clima, pg, str(e)[:80]); continue
-                for slug, mid in re.findall(r"assets\.mixkit\.co/music/(?:preview/)?mixkit-([a-z0-9-]*?)-(\d+)\.mp3", h):
+                for nome, gen, dur, mid in re.findall(r'"name":"([^"]+)","genre":"([^"]*)","byArtist":"[^"]*","duration":"([^"]+)","url":"https://assets\.mixkit\.co/music/(\d+)/', h):
                     if mid in vistos: continue
                     vistos.add(mid)
-                    print("VNC_MUSIC_CAND", clima, mid, slug, "USADA" if mid in usadas else "livre", f"https://mixkit.co/free-stock-music/{slug}/")
-        try:
-            h = get("https://mixkit.co/free-stock-music/mood/sad/", binary=False)
-            print("VNC_MUSIC_DEBUG len", len(h), "assets", h.count("assets.mixkit.co"), "mp3", h.count(".mp3"))
-            for m in list(re.finditer(r"\.mp3", h))[:3]:
-                print("VNC_MUSIC_DEBUG", h[max(0, m.start() - 160):m.end() + 20].replace("\n", " "))
-            for m in list(re.finditer(r"data-algolia-analytics-item-id|item-grid__item|music-player", h))[:2]:
-                print("VNC_MUSIC_DEBUG", h[m.start():m.start() + 400].replace("\n", " "))
-        except Exception as e:
-            print("VNC_MUSIC_DEBUG erro", str(e)[:80])
+                    slug = re.sub(r"[^a-z0-9]+", "-", nome.lower()).strip("-")
+                    print("VNC_MUSIC_CAND", clima, mid, nome, "|", gen, dur, "USADA" if mid in usadas else "livre", f"https://mixkit.co/free-stock-music/{slug}/")
         print("VNC_MUSIC_USADAS", sorted(usadas))
         return 0
     if mode == "review":
