@@ -7,7 +7,8 @@
   "autoria": "Roteiro diz 'atribuida a Paulo' (autoria paulina quase unanime; ressalva de tradicao); nao nomeia cidade nem data da prisao (Roma, Cesareia e Efeso sao debatidas).",
   "destinatario": "Igreja de Filipos, que enviou ajuda a Paulo na prisao (2:25; 4:10-18); aplicacao hoje e apresentada como leitura de contexto e reflexao.",
   "quadro": "Quadro 'Fora do Contexto': mostra o uso popular do versiculo e o contexto original; nao afirma que a leitura popular seja pecado, nem que a leitura de contexto esgote o sentido.",
-  "limite": "Sem promessa de exito, vitoria ou prosperidade; sem ordenar aguentar situacao de abuso; incentivo implicito a comunidade e ajuda ja presente no texto (ajuda enviada)."
+  "limite": "Sem promessa de exito, vitoria ou prosperidade; sem ordenar aguentar situacao de abuso; incentivo implicito a comunidade e ajuda ja presente no texto (ajuda enviada).",
+  "traducao": "Frase-ancora citada na ARA ('Tudo posso naquele que me fortalece'), a redacao que o publico conhece; texto biblico conferido tambem na ACF (Posso todas as coisas em Cristo que me fortalece). O roteiro usa a ARA e diz isso na descricao."
  },
  "alegacoes": [
   {
@@ -16,7 +17,7 @@
     "S01"
    ],
    "tipo": "interpretativa",
-   "texto": "A leitura popular do 'tudo posso' como frase de conquista difere do contexto de Filipenses 4:10-13.",
+   "texto": "A frase 'Tudo posso naquele que me fortalece' (Filipenses 4:13, ARA) e muito usada como frase de conquista; o contexto de Filipenses 4:10-13 e outro.",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Filipenses 4:13"
@@ -59,7 +60,7 @@
     "S02"
    ],
    "tipo": "interpretativa",
-   "texto": "O versiculo aparece em camisas, quadros e metas pessoais.",
+   "texto": "A frase aparece em camisetas, quadros e metas de conquista.",
    "veredito": "SUPORTADO",
    "versiculos": [],
    "palavras_chave_no_texto": [],
@@ -202,7 +203,7 @@
     "S06"
    ],
    "tipo": "interpretativa",
-   "texto": "O 'tudo posso' aparece no contexto de suportar a fome e a falta.",
+   "texto": "A frase 'tudo posso naquele que me fortalece' vem logo apos o relato de viver com fartura e com falta (Fp 4:11-12).",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Filipenses 4:12",
@@ -242,7 +243,7 @@
     "S07"
    ],
    "tipo": "interpretativa",
-   "texto": "O 'tudo' do autor inclui permanecer de pe, mesmo na falta.",
+   "texto": "Nesse trecho, a frase fala de situacoes: ter muito e ter pouco.",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Filipenses 4:12",
@@ -340,7 +341,7 @@
     "S10"
    ],
    "tipo": "aplicacao",
-   "texto": "Ao reler o versiculo, pensar na cela (prisao) e nao no trofeu (conquista).",
+   "texto": "Ao reler o versiculo, lembrar tambem da cela (prisao) e nao so do trofeu (conquista).",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Filipenses 1:13"
@@ -428,17 +429,18 @@
  ],
  "parecer": "APROVADO",
  "cenas_hash": {
-  "S01": "c5262e93e9bf602a",
-  "S02": "8e330bc7eafecb00",
-  "S03": "a6b1243c6db2565a",
-  "S04": "c7b6b027a2832fe3",
-  "S05": "13cacc7fe7c090c3",
-  "S06": "e5847284602ca64b",
-  "S07": "94a9b7345324e408",
-  "S08": "91d7d27d49bd3f2a",
+  "S01": "b579ace6e61cde57",
+  "S02": "295c68b074f5e302",
+  "S03": "91859e5f699a1951",
+  "S04": "f668bbda037d36d3",
+  "S05": "82aa3df96f67904e",
+  "S06": "39a64ccf73c64ff2",
+  "S07": "0b9097194199ce7e",
+  "S08": "d8cc92bacf1002d9",
   "S09": "2a44436ffbb72f5d",
-  "S10": "c490e6ada9492e8b",
-  "S11": "6802d454e7053015",
-  "S12": "2b8fc78c9e01f031"
- }
+  "S10": "bac9532be08f288a",
+  "S11": "4f05958a7034e30f",
+  "S12": "b7ebbbe715861e2e"
+ },
+ "refeito_em": "2026-11-23: roteiro refeito apos erro no episodio publicado (versiculo-ancora nao era dito por inteiro; gancho afirmava 'ao contrario' sem prova)."
 }

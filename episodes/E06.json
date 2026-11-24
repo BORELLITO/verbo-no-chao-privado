@@ -1,5 +1,5 @@
 {
- "_instrucoes": "Roteiro E06 (quadro Fora do Contexto, episódio 1) escrito pelo Claude em 2026-11-21 (formato C). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Episodio novo; nao altera E01-E05.",
+ "_instrucoes": "Roteiro E06 (quadro Fora do Contexto, episódio 1) escrito pelo Claude em 2026-11-21 (formato C). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Episodio novo; nao altera E01-E05. REFEITO em 2026-11-23: versiculo-ancora dito por inteiro (ARA), sem 'ao contrario'; audio_sha256 do roteiro antigo removido (voz a refazer).",
  "id": "E06",
  "number": 6,
  "title_lines": [
@@ -10,7 +10,6 @@
  "reference": "Filipenses 4:10–13",
  "timing": "whisper",
  "audio_link_file": "run/audio_link_E06.txt",
- "audio_sha256": "2c55a8d54981c79a7161ef3476c9836e38433bf2a220e1ac2b1b286c3cbb7d7b",
  "music_page": "https://mixkit.co/free-stock-music/relaxation-07/",
  "cta": [
   "Curta, compartilhe\\Ne inscreva-se no canal",
@@ -31,7 +30,7 @@
   {
    "id": "S01",
    "block": "opening",
-   "text": "Você leu o versículo do tudo posso ao contrário?",
+   "text": "Tudo posso naquele que me fortalece: você sabe onde isso foi escrito?",
    "visual": {
     "meaning": "estrada vazia na névoa à noite",
     "meaning_en": "empty road fog night",
@@ -58,7 +57,7 @@
   {
    "id": "S02",
    "block": "connection",
-   "text": "Ele aparece em camisas, quadros e metas pessoais.",
+   "text": "Essa frase está em camisetas, quadros e metas de conquista.",
    "visual": {
     "meaning": "estrada longa ao entardecer",
     "meaning_en": "long winding road dusk",
@@ -85,7 +84,7 @@
   {
    "id": "S03",
    "block": "connection",
-   "text": "Mas a carta aos Filipenses foi escrita por alguém preso, sem certeza do que viria.",
+   "text": "Mas a carta aos Filipenses foi escrita por alguém preso.",
    "visual": {
     "meaning": "rochas e penhasco escuros, isolamento",
     "meaning_en": "dark rocky cliff isolation",
@@ -118,7 +117,7 @@
   {
    "id": "S04",
    "block": "connection",
-   "text": "A carta, atribuída a Paulo, agradece a ajuda enviada pela igreja à prisão.",
+   "text": "A carta, atribuída a Paulo, agradece a ajuda enviada pela igreja.",
    "visual": {
     "meaning": "mar escuro ao entardecer, horizonte distante",
     "meaning_en": "dark sea horizon dusk",
@@ -160,7 +159,7 @@
   {
    "id": "S05",
    "block": "biblical_reference",
-   "text": "No capítulo quatro, pouco antes, o autor conta que aprendeu a viver com fartura e com falta.",
+   "text": "No capítulo quatro, o autor diz que aprendeu a viver com fartura e com falta.",
    "visual": {
     "meaning": "campo de trigo ao vento",
     "meaning_en": "wheat field wind",
@@ -187,7 +186,7 @@
   {
    "id": "S06",
    "block": "biblical_reference",
-   "text": "Aí vem o tudo posso. O contexto fala de suportar a fome e a falta.",
+   "text": "E é aí que vem a frase: tudo posso naquele que me fortalece.",
    "visual": {
     "meaning": "terra seca e rachada, deserto",
     "meaning_en": "dry cracked earth desert",
@@ -222,7 +221,7 @@
   {
    "id": "S07",
    "block": "biblical_reference",
-   "text": "O tudo dele inclui permanecer de pé, mesmo na falta.",
+   "text": "Ali, ela fala de situações: ter muito e ter pouco.",
    "visual": {
     "meaning": "árvore sozinha firme no vento",
     "meaning_en": "lone tree standing in wind",
@@ -249,7 +248,7 @@
   {
    "id": "S08",
    "block": "reflection",
-   "text": "Isso não diminui o versículo. Deixa ele mais honesto.",
+   "text": "Isso não diminui o versículo. Mostra de onde ele nasceu.",
    "visual": {
     "meaning": "luz suave sobre colinas",
     "meaning_en": "soft light over hills",
@@ -303,7 +302,7 @@
   {
    "id": "S10",
    "block": "application",
-   "text": "Da próxima vez que ler, pense na cela, não no troféu.",
+   "text": "Da próxima vez, lembre também da cela, e não só do troféu.",
    "visual": {
     "meaning": "trilha na montanha ao sol",
     "meaning_en": "mountain trail sunlight",
@@ -330,7 +329,7 @@
   {
    "id": "S11",
    "block": "application",
-   "text": "Há coisas que você talvez não vença esta semana. Às vezes, só dá para aguentar.",
+   "text": "Talvez haja coisas que você não vença esta semana. Às vezes, só dá para aguentar.",
    "visual": {
     "meaning": "rio calmo pela manhã",
     "meaning_en": "calm river morning",
@@ -357,7 +356,7 @@
   {
    "id": "S12",
    "block": "conclusion",
-   "text": "Para você, esse versículo sempre foi sobre vencer ou aguentar? Responda A ou B.",
+   "text": "Para você, essa frase sempre foi sobre vencer ou sobre aguentar? Responda A ou B.",
    "visual": {
     "meaning": "sol nascendo no horizonte",
     "meaning_en": "sunrise horizon",
@@ -383,9 +382,9 @@
   }
  ],
  "posting": {
-  "hook": "Você leu o versículo do tudo posso ao contrário?",
-  "resumo": "Fora do Contexto, episódio 1: Filipenses 4:13 vai além de frase de conquista. Paulo escreve preso, aprende a viver com fartura e com falta e diz que a força vem de Cristo.",
-  "pergunta": "Para você, esse versículo sempre foi sobre vencer ou sobre aguentar? Responda A ou B nos comentários.",
+  "hook": "Tudo posso naquele que me fortalece: você sabe onde isso foi escrito?",
+  "resumo": "Filipenses 4:13 aparece em camisetas e quadros, mas foi escrito por alguém preso, que aprendeu a viver com fartura e com falta e diz que a força vem de Cristo.",
+  "pergunta": "Para você, essa frase sempre foi sobre vencer ou sobre aguentar? Responda A ou B nos comentários.",
   "hashtags": [
    "#fé",
    "#palavradedeus",
@@ -400,9 +399,15 @@
  "cover_quadro": {
   "kicker": "FORA DO CONTEXTO · EPISÓDIO 1",
   "big": [
-   "TUDO",
-   "POSSO"
+   "TUDO POSSO",
+   "NAQUELE QUE",
+   "ME FORTALECE"
   ],
   "tagline": "…e o que vem antes?"
+ },
+ "anchor_verse": {
+  "ref": "Filipenses 4:13",
+  "texto": "Tudo posso naquele que me fortalece",
+  "traducao": "ARA"
  }
 }

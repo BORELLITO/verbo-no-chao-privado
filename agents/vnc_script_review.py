@@ -1,6 +1,6 @@
 """Agente de VALIDACAO DE ROTEIRO (VNC). Automatico, sem custo, deterministico + conferencia do texto biblico em fonte publica.
 Entrada: episodes/<EP>.json. Saida: episodes/<EP>_roteiro_review.json {status, issues[], checks{}, limitacoes}.
-Status: APROVADO_AUTOMATICO | REPROVADO | (nunca "aprovado final": aprovacao editorial/teologica final = dono).
+Status: APROVADO_AUTOMATICO | PENDENTE_REVISAO_INDEPENDENTE (episodios com versiculo-ancora) | REPROVADO | (nunca "aprovado final": aprovacao editorial/teologica final = dono).
 Regras travadas do canal: tom cristao sobrio, zero promessa milagrosa/prosperidade, Habacuque c/ injustica coletiva (quando for o livro), 12 cenas,
 sem repeticao de roteiro/referencia entre episodios, texto de cada cena pronto para narrar (pt-BR), plano visual por cena.
 """
@@ -84,6 +84,86 @@ def fetch_verses(r, getter=None, errors=None):
     except Exception as e:  # noqa
         errors.append("acf: " + repr(e)[:80])
     return None
+
+
+ANCORA_JSON = ROOT / "contracts" / "versiculos_ancora.json"
+FRACOS_BASE = r"\b(ao contrario|errad[oa]s?|mentira|engano|enganad[oa]s?)\b"       # afirmacao forte no gancho sem lastro no episodio
+PRONOME_ABRE = r"^(ele|ela|eles|elas|isso|aquilo|esse|essa|este|esta|aquele|aquela)\b"
+
+
+def sha_roteiro(cfg):
+    import hashlib
+    a = cfg.get("anchor_verse") or {}
+    base = "|".join(s.get("text", "") for s in cfg.get("scenes", [])) + "||" + str(a.get("texto", "")) + "|" + "|".join(cfg.get("title_lines") or [])
+    return hashlib.sha256(base.encode("utf8")).hexdigest()[:16]
+
+
+def is_fora_do_contexto(cfg):
+    tl = " ".join(cfg.get("title_lines") or [])
+    return norm(tl).startswith("fora do contexto")
+
+
+def anchor_checks(ep, cfg, sc, bad, checks, root=ROOT):
+    """Gate do VERSICULO-ANCORA (criado apos o erro do FORA DO CONTEXTO 1, 'tudo posso'): o versiculo que da nome ao episodio
+    precisa ser DITO por inteiro, na redacao conhecida, nos primeiros 3 trechos; gancho nao pode afirmar o que o episodio nao prova;
+    nenhum pedaco do versiculo pode virar substantivo ('o tudo posso'); cena 2 nao pode abrir com pronome sem referente."""
+    a = cfg.get("anchor_verse")
+    if not a:
+        if is_fora_do_contexto(cfg):
+            bad("ANCORA", "episodio Fora do Contexto exige anchor_verse {ref, texto, traducao}: o versiculo que da nome ao episodio")
+        return None
+    ref, txt, tr = a.get("ref"), (a.get("texto") or "").strip(), a.get("traducao")
+    if not (ref and txt and tr):
+        bad("ANCORA", "anchor_verse incompleto (ref, texto, traducao)"); return None
+    if ref.replace("–", "-").split("-")[0].strip() not in (cfg.get("reference") or "").replace("–", "-") and norm(ref.split(":")[0]) != norm((cfg.get("reference") or "").split(":")[0]):
+        bad("ANCORA", f"anchor_verse ({ref}) fora da referencia do episodio ({cfg.get('reference')})")
+    try:
+        known = json.loads(ANCORA_JSON.read_text(encoding="utf8")).get(ref, {})
+    except Exception:  # noqa
+        known = {}
+    if known:
+        want = known.get(tr)
+        if want is None: bad("ANCORA", f"traducao '{tr}' sem texto conferido em contracts/versiculos_ancora.json para {ref}")
+        elif norm(want) != norm(txt): bad("ANCORA", f"texto do versiculo difere da redacao conferida ({tr}): esperado '{want}'")
+        checks["ancora_texto_conferido"] = want is not None and norm(want) == norm(txt)
+    else:
+        checks["ancora_texto_conferido"] = False
+        checks["ancora_nota"] = "NAO VERIFICADO: referencia fora de contracts/versiculos_ancora.json (conferir na fonte biblica antes de aprovar)"
+    nt = norm(txt)
+    first3 = norm(" ".join((s.get("text") or "") for s in sc[:3]))
+    alltxt_n = norm(" ".join((s.get("text") or "") for s in sc))
+    checks["ancora_citada_nos_3_primeiros"] = nt in first3
+    if nt not in alltxt_n: bad("ANCORA", f"o versiculo-ancora nao e dito por inteiro no roteiro: '{txt}'")
+    elif nt not in first3: bad("ANCORA", "o versiculo-ancora deve ser dito por inteiro ja nas 3 primeiras cenas (quem assiste precisa reconhecer o versiculo)", "S01")
+    for s in sc:
+        t = norm(s.get("text", ""))
+        w = nt.split()
+        for n in (2, 3):
+            frag = " ".join(w[:n])
+            if frag and re.search(rf"\b(o|do|no|ao|um|esse|este|desse|deste)\s+{re.escape(frag)}\b", t) and nt not in t:
+                bad("ANCORA", f"pedaco do versiculo usado como substantivo ('{frag}'): cite a frase inteira ou diga 'o versiculo'", s.get("id")); break
+        if w and re.search(rf"\b(o|do|no|ao|um)\s+{re.escape(w[0])}\b", t) and w[0] in ("tudo", "nada", "todo", "nenhum") and nt not in t:
+            bad("ANCORA", f"'{w[0]}' usado como substantivo solto (ex.: 'o {w[0]} dele'): ambiguo na narracao", s.get("id"))
+    if sc:
+        h = norm(sc[0].get("text", ""))
+        if re.search(FRACOS_BASE, h): bad("GANCHO", "gancho afirma erro/inversao ('ao contrario', 'errado'...) sem prova no episodio: pergunte citando o versiculo", "S01")
+        if len(sc) > 1 and re.match(PRONOME_ABRE, norm(sc[1].get("text", ""))) and nt not in h:
+            bad("REFERENTE", "S02 abre com pronome sem referente claro (o gancho nao diz o versiculo)", "S02")
+    return {"ref": ref, "traducao": tr}
+
+
+def revisao_independente(ep, cfg, root=ROOT):
+    """Segundo olhar: arquivo episodes/<EP>_revisao_independente.json de um revisor que NAO escreveu o roteiro, atrelado ao hash do roteiro."""
+    p = root / "episodes" / f"{ep}_revisao_independente.json"
+    if not p.exists(): return False, "ausente"
+    try:
+        d = json.loads(p.read_text(encoding="utf8"))
+    except Exception:  # noqa
+        return False, "ilegivel"
+    if d.get("roteiro_sha") != sha_roteiro(cfg): return False, "roteiro mudou depois da revisao (hash)"
+    if d.get("veredito") != "APROVADO": return False, f"veredito {d.get('veredito')}"
+    if not d.get("revisor_independente"): return False, "sem identificacao do revisor independente"
+    return True, "ok"
 
 
 def other_episodes(ep):
@@ -180,6 +260,9 @@ def review(ep, cfg=None, getter=None, others=None, offline=False):
         else:
             checks["nota_biblia"] = "NAO VERIFICADO: fonte biblica inacessivel (nao inventado)"; checks["erros_fonte_biblica"] = errs
         if r["book"] == "habacuque" and "injusti" not in alltxt: bad("BIBLIA", "Habacuque exige o contexto de injustica coletiva")
+    # 4b versiculo-ancora (episodios Fora do Contexto)
+    anchor = anchor_checks(ep, cfg, sc, bad, checks)
+    checks["roteiro_sha"] = sha_roteiro(cfg)
     # 5 repeticao entre episodios
     for oep, o in (others if others is not None else other_episodes(ep)).items():
         if o.get("reference") == cfg.get("reference"): bad("REPETICAO", f"mesma referencia de {oep}")
@@ -198,6 +281,10 @@ def review(ep, cfg=None, getter=None, others=None, offline=False):
     warn = WARN | ({"DURACAO", "GANCHO"} if (cfg.get("number") or 99) <= 2 else set())   # E01 e E02 (anteriores a regra, valida a partir do E03): so aviso
     avisos = [i for i in issues if i["code"] in warn]; issues = [i for i in issues if i["code"] not in warn]   # VISUAL ausente: o motor cai no lexico (aviso, nao bloqueio)
     status = "REPROVADO" if issues else "APROVADO_AUTOMATICO"
+    if status == "APROVADO_AUTOMATICO" and anchor is not None:
+        ok, why = revisao_independente(ep, cfg)
+        checks["revisao_independente"] = why
+        if not ok: status = "PENDENTE_REVISAO_INDEPENDENTE"
     return {"episode": ep, "status": status, "issues": issues, "avisos": avisos, "checks": checks,
             "limitacoes": ["validacao AUTOMATICA de regras do canal + vinculo lexical com o texto biblico; NAO e revisao teologica independente",
                            "parafrase fiel exige leitura humana/teologica: o agente so detecta ausencia de vinculo, promessas, tom e repeticao",
@@ -211,7 +298,7 @@ def main(ep):
     print("VNC_ROTEIRO_STATUS", rep["status"], "issues", len(rep["issues"]))
     for i in rep["issues"]: print("VNC_ROTEIRO_ISSUE", i["cena"], i["code"], i["msg"])
     print("VNC_ROTEIRO_CHECKS", json.dumps(rep["checks"], ensure_ascii=False))
-    return 0 if rep["status"] != "REPROVADO" else 5
+    return 0 if rep["status"] == "APROVADO_AUTOMATICO" else (6 if rep["status"] == "PENDENTE_REVISAO_INDEPENDENTE" else 5)
 
 
 if __name__ == "__main__":

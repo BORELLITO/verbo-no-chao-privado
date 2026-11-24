@@ -25,6 +25,7 @@ FORBIDDEN_PATTERNS = {
 }
 WRITE_WORKFLOWS = {"vnc-ingest-voice.yml", "vnc-curate.yml", "vnc-voice.yml"}  # unico com escrita: grava a voz aprovada
 SKIP_SCAN = {"vnc_gates.py", "test_vnc_gates.py"}
+INSTAGRAM_ALLOWED = {"vnc_instagram.py"}  # unico modulo que fala com a API oficial da Meta (dono autorizou em 23/11/2026: "VAMOS PRA API OFICIAL DA META"); publica so com liberado_pelo_dono=true no run/instagram.json
 BUFFER_ALLOWED = {"vnc_buffer.py"}  # unico modulo que fala com a Buffer (dono autorizou em 22/11/2026); schedule segue bloqueado no codigo
 VOICE_ALLOWED = {"vnc_voice.py", "vnc-voice.yml"}  # unicos pontos autorizados a chamar o text-to-speech (dono autorizou em 21/11/2026)
 
@@ -168,6 +169,8 @@ def scan_forbidden(root=ROOT):
                     if rule == "R4_voz_nova" and "text-to-speech" in pat and p.name in VOICE_ALLOWED:
                         continue
                     if rule == "publicacao" and "buffer" in pat and p.name in BUFFER_ALLOWED:
+                        continue
+                    if rule == "publicacao" and "graph" in pat and p.name in INSTAGRAM_ALLOWED:
                         continue
                     if re.search(pat, t):
                         errs.append(f"{rule}: {p.relative_to(root)} casa {pat}")
