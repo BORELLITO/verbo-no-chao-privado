@@ -53,7 +53,7 @@ def align(canon, asr, duration, strict=True):
     if not strict:  # modelo de conferencia: palavras nao reconhecidas ficam sem tempo e saem da comparacao
         return out, {"words": len(out), "unmatched": missing}
     if missing > max(2, int(MAX_UNMATCHED_RATIO * len(canon))):
-        raise AlignError(f"muitas palavras sem correspondencia no ASR: {missing}/{len(canon)}")
+        raise AlignError(f"muitas palavras sem correspondencia no ASR: {missing}/{len(canon)} -> " + ", ".join(f"{o['scene']}:{o['text']}" for o in out if o["start"] is None))
     edge = 0; trail = 0
     for i, w in enumerate(out):
         if w["start"] is not None:
