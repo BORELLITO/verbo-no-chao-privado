@@ -10,6 +10,9 @@ on:
       run_id:
         description: "ID do run do Runflow (artefatos duram 3 dias)"
         required: true
+      seguro:
+        description: "1 = enviar so a copia de publicacao (audio seguro) do video"
+        required: false
 permissions:
   contents: read
   actions: read
@@ -49,10 +52,11 @@ jobs:
       - name: Instalar dependencias
         run: |
           python -m pip install --disable-pip-version-check "imageio-ffmpeg==0.6.0" "pillow==12.3.0" numpy opencv-python-headless
-          sudo apt-get update -qq && sudo apt-get install -y -qq rclone
+          sudo apt-get update -qq && sudo apt-get install -y -qq rclone ffmpeg
       - name: Enviar ao Drive
         env:
           GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
           GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
           GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+          VNC_DRIVE_SEGURO: ${{ github.event.inputs.seguro }}
         run: python -m agents.vnc_drive "${{ steps.ep.outputs.episode }}" art/build art/cover

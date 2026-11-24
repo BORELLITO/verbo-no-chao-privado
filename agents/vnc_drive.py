@@ -55,6 +55,14 @@ def main(ep, build_dir, cover_dir):
         print("VNC_DRIVE_NAO_CONFIGURADO: faltam os segredos GDRIVE_*; nada enviado"); return 0
     env = rclone_env(); sent = []
     rc(["mkdir", f"gd:{path}"], env)
+    if os.environ.get("VNC_DRIVE_SEGURO") == "1":
+        # so a copia de PUBLICACAO (audio estereo, pico limitado), mesma regra do upload_seguro do Cloudinary; nao toca nos demais arquivos
+        from agents import vnc_media
+        dst = Path("/tmp/seguro.mp4")
+        subprocess.run(vnc_media.ffmpeg_seguro(src["video"], dst), check=True)
+        nome = p["files"]["video"].rsplit(".", 1)[0] + " - SEGURO.mp4"
+        rc(["copyto", str(dst), f"gd:{path}/{nome}"], env)
+        print("VNC_DRIVE_SEGURO_OK", json.dumps({"enviado": nome, "bytes": dst.stat().st_size}, ensure_ascii=False)); return 0
     for k, f in src.items():
         if f.exists() and f.stat().st_size > 0:
             rc(["copyto", str(f), f"gd:{path}/{p['files'][k]}"], env); sent.append(p["files"][k])
