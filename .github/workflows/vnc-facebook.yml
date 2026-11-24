@@ -1,5 +1,5 @@
 name: VNC Facebook (API oficial da Meta; agenda so com liberacao do dono)
-# Entrada: run/facebook.json {"mode":"probe|listar|agendar","nonce":"..."}. Usa IG_TOKEN. Sem cron.
+# Entrada: run/facebook.json {"mode":"probe|listar|agendar|capas","nonce":"..."}. Usa IG_TOKEN. Sem cron.
 on:
   push:
     branches: ["main"]
@@ -23,5 +23,5 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
         run: |
-          MODE="$(python3 -c 'import json;m=json.load(open("run/facebook.json")).get("mode","probe");assert m in ("probe","listar","agendar");print(m)')"
+          MODE="$(python3 -c 'import json;m=json.load(open("run/facebook.json")).get("mode","probe");assert m in ("probe","listar","agendar","capas");print(m)')"
           python3 -m agents.vnc_facebook "$MODE"
