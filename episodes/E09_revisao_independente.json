@@ -1,0 +1,15 @@
+{
+ "episode": "E09",
+ "roteiro_sha": "a10ba88f6d78668f",
+ "veredito": "APROVADO",
+ "revisor_independente": "subagente de revisao editorial-teologica (nao escreveu o roteiro); parecer APROVADO_COM_RESSALVAS, todas aplicadas: S01 troca 'Deus' por 'Jesus' (gancho restritivo), S03 suavizada ('com carinho', 'na igreja'), S04 'esse versiculo termina', S08 'relacionam', S10 'mostra sobre o que o texto fala', S12 sem cobranca ('Se quiser'). LIMITE: o revisor leu Mt 18:15 e 18:20 (ARA) literais em bibliaonline; vv.16-19 so em resumo; nao reverificou os comentaristas do dossie. O texto de 18:20 foi conferido tambem por mim (bibliaonline.com.br/ara/mt/18/15-20).",
+ "ajustes_aplicados": [
+  "S01 Jesus",
+  "S03 com carinho",
+  "S04 termina",
+  "S08 relacionam",
+  "S10",
+  "S12 sem cobranca"
+ ],
+ "verso_ara_conferido": true
+}

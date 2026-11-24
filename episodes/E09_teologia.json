@@ -1,8 +1,8 @@
 {
  "episode": "E09",
  "referencia": "Mateus 18:15–20",
- "pesquisado_em": "2026-11-22",
- "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "pesquisado_em": "2026-11-24",
+ "revisor": "Claude (autor do roteiro) + revisor independente a registrar em E09_revisao_independente.json. Texto ARA de Mt 18:20 conferido em bibliaonline.com.br/ara/mt/18/15-20 em 2026-11-24; fontes herdadas do dossiê anterior (mesma passagem).",
  "posicoes_adotadas": {
   "autoria": "Roteiro diz 'Jesus' falando em Mateus; sem nomear o evangelista.",
   "quadro": "Quadro 'Fora do Contexto': mostra o uso popular e o contexto original; não diz que quem usa o versículo peca nem que a oração em grupo seja inútil.",
@@ -16,7 +16,7 @@
    ],
    "tipo": "aplicacao",
    "veredito": "SUPORTADO_COM_CAUTELA",
-   "texto": "O versículo 'onde dois ou três' é muito citado como promessa para oração em grupo.",
+   "texto": "Mt 18:20 é muito citado como promessa de presença em grupo pequeno; a pergunta de S01 provoca o uso restritivo ('só onde') e o vídeo resolve em S09/S10.",
    "versiculos": [
     "Mateus 18:20"
    ],
@@ -47,7 +47,7 @@
    ],
    "tipo": "aplicacao",
    "veredito": "SUPORTADO",
-   "texto": "O versículo é usado quando poucas pessoas se reúnem para orar.",
+   "texto": "Mateus 18:20 (ARA): 'Porque, onde estiverem dois ou três reunidos em meu nome, ali estou no meio deles.'",
    "versiculos": [],
    "palavras_chave_no_texto": [],
    "fontes": [
@@ -74,7 +74,7 @@
    ],
    "tipo": "aplicacao",
    "veredito": "SUPORTADO_COM_CAUTELA",
-   "texto": "Muitos entendem o versículo como resumo do poder de um pequeno encontro.",
+   "texto": "O versículo é repetido para consolar quando a igreja está vazia e poucos oram juntos.",
    "versiculos": [
     "Mateus 18:20"
    ],
@@ -105,7 +105,7 @@
    ],
    "tipo": "textual",
    "veredito": "SUPORTADO",
-   "texto": "Mateus 18:20 fecha o trecho sobre o irmão que errou (18:15-20), antes da parábola do servo que não perdoa.",
+   "texto": "Mateus 18:20 fecha o trecho sobre o irmão que errou (18:15-20); Jesus a instrui a começar por uma dor: o pecado de um irmão.",
    "versiculos": [
     "Mateus 18:15",
     "Mateus 18:20"
@@ -138,7 +138,7 @@
    ],
    "tipo": "textual",
    "veredito": "SUPORTADO",
-   "texto": "Jesus manda procurar o irmão que errou e conversar a sós (18:15).",
+   "texto": "Em Mateus 18, Jesus manda procurar o irmão que errou e conversar a sós (18:15).",
    "versiculos": [
     "Mateus 18:15"
    ],
@@ -200,7 +200,7 @@
    ],
    "tipo": "textual",
    "veredito": "SUPORTADO",
-   "texto": "A regra de duas ou três testemunhas vem da Lei (Dt 19:15), citada em Mt 18:16.",
+   "texto": "A regra de duas ou três testemunhas já vinha da Lei (Dt 19:15), citada em Mt 18:16.",
    "versiculos": [
     "Mateus 18:16",
     "Deuteronômio 19:15"
@@ -233,7 +233,7 @@
    ],
    "tipo": "interpretativa",
    "veredito": "SUPORTADO_COM_CAUTELA",
-   "texto": "Muitos estudiosos ligam o versículo 20 ao processo de correção e reconciliação.",
+   "texto": "Muitos estudiosos relacionam o versículo 20 ao processo de correção e reconciliação.",
    "versiculos": [
     "Mateus 18:15",
     "Mateus 18:20"
@@ -266,7 +266,7 @@
    ],
    "tipo": "interpretativa",
    "veredito": "SUPORTADO_COM_CAUTELA",
-   "texto": "Jesus promete estar presente quando discípulos se reúnem em seu nome.",
+   "texto": "Jesus promete estar presente onde discípulos se reúnem em seu nome.",
    "versiculos": [
     "Mateus 18:20"
    ],
@@ -297,7 +297,7 @@
    ],
    "tipo": "aplicacao",
    "veredito": "SUPORTADO_COM_CAUTELA",
-   "texto": "Ler o contexto não diminui a oração em grupo pequeno; mostra o foco do texto.",
+   "texto": "Ler o contexto não diminui a oração em grupo; mostra o foco do texto.",
    "versiculos": [
     "Mateus 18:20"
    ],
@@ -328,7 +328,7 @@
    ],
    "tipo": "aplicacao",
    "veredito": "SUPORTADO",
-   "texto": "Vale ler o que vem antes de repetir um versículo.",
+   "texto": "Vale ler o que vem antes de repetir um versículo; o contexto aponta para procurar o irmão.",
    "versiculos": [],
    "palavras_chave_no_texto": [],
    "fontes": [
@@ -347,9 +347,9 @@
    "cenas": [
     "S12"
    ],
-   "tipo": "interpretativa",
+   "tipo": "aplicacao",
    "veredito": "SUPORTADO_COM_CAUTELA",
-   "texto": "O versículo pode ser lido como consolo ou como chamado à reconciliação.",
+   "texto": "A pergunta final convida, sem cobrança, a pensar em quem se gostaria de procurar para reconciliar.",
    "versiculos": [
     "Mateus 18:20"
    ],
@@ -393,17 +393,17 @@
  ],
  "parecer": "APROVADO",
  "cenas_hash": {
-  "S01": "029e866fcca8599d",
-  "S02": "ee0e76679042e97b",
-  "S03": "3129182335acb614",
-  "S04": "23c70201f2a345ad",
-  "S05": "e10d4d9442861290",
-  "S06": "eba8b49f0ea36f5a",
-  "S07": "98206279df31060b",
-  "S08": "de1b9e342dbd890e",
-  "S09": "3d0d694c4b542e4c",
-  "S10": "bb3ba8100c57ab25",
-  "S11": "9089d7f03888713c",
-  "S12": "952d8e5da0c5cd6d"
+  "S01": "faf7f1feb9fb1771",
+  "S02": "aff768388c5b38b3",
+  "S03": "b407d0a6a57c65c4",
+  "S04": "dd223d97f5928b9b",
+  "S05": "ab6497664241fa38",
+  "S06": "d068505ecefec39e",
+  "S07": "6ad2652dbd2869d7",
+  "S08": "83ba7a0c0b82dc45",
+  "S09": "7528742d150253fa",
+  "S10": "8d28817b9b1b1142",
+  "S11": "dbe62e45c7b340b4",
+  "S12": "16976ed57d0a235b"
  }
 }

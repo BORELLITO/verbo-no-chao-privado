@@ -20,7 +20,7 @@
   {
    "id": "S01",
    "block": "opening",
-   "text": "Você cita onde dois ou três como promessa para oração em grupo?",
+   "text": "Você acha que Jesus só está onde dois ou três se reúnem?",
    "visual": {
     "meaning": "nuvens escuras no céu",
     "meaning_en": "dark clouds sky",
@@ -85,7 +85,7 @@
   {
    "id": "S02",
    "block": "connection",
-   "text": "Muita gente usa esse versículo quando poucas pessoas se reúnem para orar.",
+   "text": "Porque, onde estiverem dois ou três reunidos em meu nome, ali estou no meio deles.",
    "visual": {
     "meaning": "vale com névoa",
     "meaning_en": "misty valley morning",
@@ -147,7 +147,7 @@
   {
    "id": "S03",
    "block": "connection",
-   "text": "Muitos entendem que ele resume o poder de um pequeno encontro.",
+   "text": "Muita gente repete isso, com carinho, quando poucos oram juntos na igreja.",
    "visual": {
     "meaning": "mar agitado",
     "meaning_en": "calm sea waves",
@@ -203,7 +203,7 @@
   {
    "id": "S04",
    "block": "connection",
-   "text": "Mas Mateus dezoito traz esse versículo no fim de uma instrução maior.",
+   "text": "Mas esse versículo termina uma instrução de Jesus que começa com uma dor.",
    "visual": {
     "meaning": "encosta de monte",
     "meaning_en": "hillside clouds",
@@ -259,7 +259,7 @@
   {
    "id": "S05",
    "block": "biblical_reference",
-   "text": "Antes dele, Jesus fala do irmão que errou: primeiro, converse a sós.",
+   "text": "Em Mateus dezoito, Jesus fala do irmão que errou: procure-o a sós.",
    "visual": {
     "meaning": "árvore solitária no campo",
     "meaning_en": "lone tree meadow",
@@ -315,7 +315,7 @@
   {
    "id": "S06",
    "block": "biblical_reference",
-   "text": "Se ele não ouvir, leve uma ou duas pessoas, como testemunhas.",
+   "text": "Se ele não ouvir, leve uma ou duas pessoas como testemunhas.",
    "visual": {
     "meaning": "folhas e galhos ao vento",
     "meaning_en": "leaves branches wind",
@@ -371,7 +371,7 @@
   {
    "id": "S07",
    "block": "biblical_reference",
-   "text": "Essa ideia vem da Lei, que pedia duas ou três testemunhas.",
+   "text": "Essa regra de duas ou três testemunhas já vinha da Lei.",
    "visual": {
     "meaning": "luz atravessando a floresta",
     "meaning_en": "sunlight through forest",
@@ -427,7 +427,7 @@
   {
    "id": "S08",
    "block": "reflection",
-   "text": "Por isso, muitos estudiosos ligam o versículo vinte à reconciliação.",
+   "text": "Por isso muitos relacionam o versículo vinte à reconciliação.",
    "visual": {
     "meaning": "riacho na floresta",
     "meaning_en": "stream forest flowing",
@@ -483,7 +483,7 @@
   {
    "id": "S09",
    "block": "reflection",
-   "text": "Jesus promete estar presente quando seus discípulos se reúnem em nome dele.",
+   "text": "Mesmo assim, a promessa é real: Jesus está onde se reúnem em seu nome.",
    "visual": {
     "meaning": "raios de sol entre nuvens",
     "meaning_en": "sun rays through clouds",
@@ -539,7 +539,7 @@
   {
    "id": "S10",
    "block": "application",
-   "text": "Isso não diminui a oração em grupo, mas mostra o foco do texto.",
+   "text": "Isso não diminui a oração em grupo; mostra sobre o que o texto fala.",
    "visual": {
     "meaning": "vale com luz do sol",
     "meaning_en": "sunlight valley",
@@ -603,7 +603,7 @@
   {
    "id": "S11",
    "block": "application",
-   "text": "Antes de repetir o versículo, vale ler o que vem antes dele.",
+   "text": "Antes de repetir o versículo, leia o que vem antes: talvez haja alguém a procurar.",
    "visual": {
     "meaning": "lago calmo refletindo",
     "meaning_en": "calm lake reflection",
@@ -670,7 +670,7 @@
   {
    "id": "S12",
    "block": "conclusion",
-   "text": "Para você, esse versículo foi consolo ou chamado à reconciliação? Responda A ou B.",
+   "text": "Há alguém que você gostaria de procurar? Se quiser, conte nos comentários.",
    "visual": {
     "meaning": "amanhecer sobre montanhas",
     "meaning_en": "sunrise over mountains",
@@ -725,9 +725,9 @@
   }
  ],
  "posting": {
-  "hook": "Você cita onde dois ou três como promessa para oração em grupo?",
-  "resumo": "Fora do Contexto, episódio 4: Mateus 18:20 está num trecho sobre procurar o irmão que errou, com testemunhas e reconciliação. O contexto não anula a oração em grupo.",
-  "pergunta": "Para você, foi consolo ou chamado à reconciliação? Responda A ou B.",
+  "hook": "Você acha que Jesus só está onde dois ou três se reúnem?",
+  "resumo": "Onde dois ou três é uma das frases mais usadas para consolar grupos pequenos. Em Mateus 18, Jesus a diz no fim de uma instrução sobre procurar o irmão que errou, com conversa a sós e testemunhas (as duas ou três testemunhas vêm de Deuteronômio 19:15). A promessa da presença de Jesus é real, e o contexto a liga à reconciliação, sem diminuir a oração em grupo.",
+  "pergunta": "Há alguém que você gostaria de procurar? Se quiser, conte nos comentários.",
   "hashtags": [
    "#fé",
    "#palavradedeus",
@@ -735,7 +735,7 @@
    "#foradocontexto",
    "#reflexão"
   ],
-  "emoji": "📖"
+  "emoji": "🙏"
  },
  "karaoke_color": "&H0066B3FF",
  "cover_style": "quadro",
@@ -745,9 +745,8 @@
    "DOIS OU",
    "TRÊS"
   ],
-  "tagline": "…só vale para oração?"
+  "tagline": "…e o que vem antes?"
  },
- "audio_sha256": "d74b0b956be775f0fbc2e84794f36d1cabd99d467a8298aad08749d4ca811d71",
  "cover": {
   "top": [
    "32173",
@@ -757,5 +756,10 @@
    "7444",
    5.0
   ]
+ },
+ "anchor_verse": {
+  "ref": "Mateus 18:20",
+  "texto": "Porque, onde estiverem dois ou três reunidos em meu nome, ali estou no meio deles.",
+  "traducao": "ARA"
  }
 }
