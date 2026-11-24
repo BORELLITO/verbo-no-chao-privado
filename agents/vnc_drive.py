@@ -59,7 +59,9 @@ def main(ep, build_dir, cover_dir):
         # so a copia de PUBLICACAO (audio estereo, pico limitado), mesma regra do upload_seguro do Cloudinary; nao toca nos demais arquivos
         from agents import vnc_media
         dst = Path("/tmp/seguro.mp4")
-        subprocess.run(vnc_media.ffmpeg_seguro(src["video"], dst), check=True)
+        import imageio_ffmpeg
+        cmd = vnc_media.ffmpeg_seguro(src["video"], dst); cmd[0] = imageio_ffmpeg.get_ffmpeg_exe()
+        subprocess.run(cmd, check=True)
         nome = p["files"]["video"].rsplit(".", 1)[0] + " - SEGURO.mp4"
         rc(["copyto", str(dst), f"gd:{path}/{nome}"], env)
         print("VNC_DRIVE_SEGURO_OK", json.dumps({"enviado": nome, "bytes": dst.stat().st_size}, ensure_ascii=False)); return 0
