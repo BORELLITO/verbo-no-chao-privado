@@ -55,7 +55,7 @@ def build(bg, logo, kicker, big, tagline, ref):
     for (cx, cy, sx, sy) in ((x0, y0, 1, 1), (x1, y0, -1, 1), (x0, y1, 1, -1), (x1, y1, -1, -1)):
         dm.line([(cx, cy), (cx + sx * L, cy)], fill=ORANGE, width=T); dm.line([(cx, cy), (cx, cy + sy * L)], fill=ORANGE, width=T)
     # frase famosa dentro do recorte
-    lh = 200; ty = y0 + (y1 - y0 - lh * len(big)) / 2 - 12; widths = []
+    lh = min(200, int(fb.size * 0.98)) if len(big) > 2 else 200; ty = y0 + (y1 - y0 - lh * len(big)) / 2 - 12; widths = []
     for i, ln in enumerate(big):
         w = ds.textlength(ln, font=fb); widths.append(w); x = (W - w) / 2
         ds.text((x, ty + 6), ln, font=fb, fill=(0, 0, 0, 215)); dm.text((x, ty), ln, font=fb, fill=ORANGE if i == len(big) - 1 else WHITE); ty += lh

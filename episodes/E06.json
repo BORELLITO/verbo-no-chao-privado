@@ -1,413 +1,413 @@
 {
- "_instrucoes": "Roteiro E06 (quadro Fora do Contexto, episódio 1) escrito pelo Claude em 2026-11-21 (formato C). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Episodio novo; nao altera E01-E05. REFEITO em 2026-11-23: versiculo-ancora dito por inteiro (ARA), sem 'ao contrario'; audio_sha256 do roteiro antigo removido (voz a refazer).",
- "id": "E06",
- "number": 6,
- "title_lines": [
-  "Fora do",
-  "contexto:",
-  "tudo posso"
- ],
- "reference": "Filipenses 4:10–13",
- "timing": "whisper",
- "audio_link_file": "run/audio_link_E06.txt",
- "music_page": "https://mixkit.co/free-stock-music/relaxation-07/",
- "cta": [
-  "Curta, compartilhe\\Ne inscreva-se no canal",
-  "E você, já se sentiu assim?\\NConte nos comentários."
- ],
- "selection": "contracts/e06_scene_clip_selection.json",
- "cover": {
-  "top": [
-   "28915",
-   5.0
+  "_instrucoes": "Roteiro E06 (quadro Fora do Contexto, episódio 1) escrito pelo Claude em 2026-11-21 (formato C). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Episodio novo; nao altera E01-E05. REFEITO em 2026-11-23: versiculo-ancora dito por inteiro (ARA), sem 'ao contrario'; audio_sha256 do roteiro antigo removido (voz a refazer).",
+  "id": "E06",
+  "number": 6,
+  "title_lines": [
+    "Fora do",
+    "contexto:",
+    "tudo posso"
   ],
-  "bottom": [
-   "28915",
-   5.0
-  ]
- },
- "scenes": [
-  {
-   "id": "S01",
-   "block": "opening",
-   "text": "Tudo posso naquele que me fortalece: você sabe onde isso foi escrito?",
-   "visual": {
-    "meaning": "estrada vazia na névoa à noite",
-    "meaning_en": "empty road fog night",
-    "emotion": "medo",
-    "mood": "dark",
-    "queries": [
-     "foggy road night",
-     "empty road fog",
-     "dark road mist"
+  "reference": "Filipenses 4:10–13",
+  "timing": "whisper",
+  "audio_link_file": "run/audio_link_E06.txt",
+  "music_page": "https://mixkit.co/free-stock-music/relaxation-07/",
+  "cta": [
+    "Curta, compartilhe\\Ne inscreva-se no canal",
+    "E você, já se sentiu assim?\\NConte nos comentários."
+  ],
+  "selection": "contracts/e06_scene_clip_selection.json",
+  "cover": {
+    "top": [
+      "28915",
+      5.0
     ],
-    "prefer": [
-     "road",
-     "fog",
-     "night"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
+    "bottom": [
+      "28915",
+      5.0
+    ]
   },
-  {
-   "id": "S02",
-   "block": "connection",
-   "text": "Essa frase está em camisetas, quadros e metas de conquista.",
-   "visual": {
-    "meaning": "estrada longa ao entardecer",
-    "meaning_en": "long winding road dusk",
-    "emotion": "ambição",
-    "mood": "dark",
-    "queries": [
-     "winding road dusk",
-     "empty highway sunset",
-     "long road clouds"
+  "scenes": [
+    {
+      "id": "S01",
+      "block": "opening",
+      "text": "Tudo posso naquele que me fortalece: você sabe onde isso foi escrito?",
+      "visual": {
+        "meaning": "estrada vazia na névoa à noite",
+        "meaning_en": "empty road fog night",
+        "emotion": "medo",
+        "mood": "dark",
+        "queries": [
+          "foggy road night",
+          "empty road fog",
+          "dark road mist"
+        ],
+        "prefer": [
+          "road",
+          "fog",
+          "night"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S02",
+      "block": "connection",
+      "text": "Essa frase está em camisetas, quadros e frases de motivação.",
+      "visual": {
+        "meaning": "estrada longa ao entardecer",
+        "meaning_en": "long winding road dusk",
+        "emotion": "ambição",
+        "mood": "dark",
+        "queries": [
+          "winding road dusk",
+          "empty highway sunset",
+          "long road clouds"
+        ],
+        "prefer": [
+          "road",
+          "dusk",
+          "clouds"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S03",
+      "block": "connection",
+      "text": "Mas Paulo escreveu a carta aos Filipenses preso.",
+      "visual": {
+        "meaning": "rochas e penhasco escuros, isolamento",
+        "meaning_en": "dark rocky cliff isolation",
+        "emotion": "cárcere",
+        "mood": "dark",
+        "queries": [
+          "dark rocky cliff",
+          "rocks dark water",
+          "mountain fog dark",
+          "cliff storm clouds",
+          "dark forest fog"
+        ],
+        "prefer": [
+          "rock",
+          "cliff",
+          "dark",
+          "fog"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "beach",
+          "wave",
+          "fire",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S04",
+      "block": "connection",
+      "text": "Nela, Paulo agradece a ajuda que a igreja de Filipos mandou.",
+      "visual": {
+        "meaning": "mar escuro ao entardecer, horizonte distante",
+        "meaning_en": "dark sea horizon dusk",
+        "emotion": "ajuda distante",
+        "mood": "dark",
+        "queries": [
+          "sea horizon dusk",
+          "ocean sunset clouds",
+          "sea evening gray",
+          "ocean twilight"
+        ],
+        "prefer": [
+          "sea",
+          "horizon",
+          "dusk"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "fire",
+          "flame",
+          "candle",
+          "fireplace",
+          "bonfire",
+          "beach",
+          "friend",
+          "friends",
+          "group",
+          "young",
+          "couple",
+          "family",
+          "relaxing",
+          "party",
+          "camp"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S05",
+      "block": "biblical_reference",
+      "text": "No capítulo quatro, ele diz que aprendeu a viver contente, tendo muito ou tendo pouco.",
+      "visual": {
+        "meaning": "campo de trigo ao vento",
+        "meaning_en": "wheat field wind",
+        "emotion": "fartura e falta",
+        "mood": "mid",
+        "queries": [
+          "wheat field wind",
+          "golden field breeze",
+          "dry grass field"
+        ],
+        "prefer": [
+          "field",
+          "wheat",
+          "wind"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S06",
+      "block": "biblical_reference",
+      "text": "E logo depois vem a frase: tudo posso naquele que me fortalece.",
+      "visual": {
+        "meaning": "terra seca e rachada, deserto",
+        "meaning_en": "dry cracked earth desert",
+        "emotion": "falta",
+        "mood": "mid",
+        "queries": [
+          "cracked dry earth",
+          "drought soil",
+          "desert sand wind",
+          "arid land"
+        ],
+        "prefer": [
+          "dry",
+          "desert",
+          "earth"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "piano",
+          "autumn",
+          "leaves",
+          "tree",
+          "garden",
+          "forest",
+          "morning",
+          "woods"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S07",
+      "block": "biblical_reference",
+      "text": "Aqui, ela fala de ter muito e de ter pouco.",
+      "visual": {
+        "meaning": "árvore sozinha firme no vento",
+        "meaning_en": "lone tree standing in wind",
+        "emotion": "firmeza",
+        "mood": "mid",
+        "queries": [
+          "lone tree wind",
+          "single tree hill",
+          "tree field storm"
+        ],
+        "prefer": [
+          "tree",
+          "lone",
+          "wind"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S08",
+      "block": "reflection",
+      "text": "Ler assim não enfraquece o versículo. Mostra de onde ele veio.",
+      "visual": {
+        "meaning": "luz suave sobre colinas",
+        "meaning_en": "soft light over hills",
+        "emotion": "honestidade",
+        "mood": "mid",
+        "queries": [
+          "hills soft light",
+          "misty hills sunrise",
+          "hills morning haze"
+        ],
+        "prefer": [
+          "hills",
+          "light",
+          "mist"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S09",
+      "block": "reflection",
+      "text": "Para Paulo, essa força vinha de Cristo.",
+      "visual": {
+        "meaning": "luz rompendo nuvens",
+        "meaning_en": "light breaking through clouds",
+        "emotion": "fonte da força",
+        "mood": "mid",
+        "queries": [
+          "clouds breaking light",
+          "sun rays clouds",
+          "light through clouds"
+        ],
+        "prefer": [
+          "light",
+          "clouds",
+          "rays"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S10",
+      "block": "application",
+      "text": "Da próxima vez, lembre também da prisão de onde ele escreveu, e não só do troféu.",
+      "visual": {
+        "meaning": "trilha na montanha ao sol",
+        "meaning_en": "mountain trail sunlight",
+        "emotion": "perspectiva",
+        "mood": "bright",
+        "queries": [
+          "mountain trail sunlight",
+          "mountain path sun",
+          "hiking trail ridge"
+        ],
+        "prefer": [
+          "mountain",
+          "trail",
+          "sun"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S11",
+      "block": "application",
+      "text": "Nem toda situação muda esta semana, e a falta dói. Se houver abuso, procure ajuda.",
+      "visual": {
+        "meaning": "rio calmo pela manhã",
+        "meaning_en": "calm river morning",
+        "emotion": "aguentar",
+        "mood": "bright",
+        "queries": [
+          "calm river morning",
+          "river mist sunrise",
+          "still river dawn"
+        ],
+        "prefer": [
+          "river",
+          "calm",
+          "morning"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    },
+    {
+      "id": "S12",
+      "block": "conclusion",
+      "text": "Você sempre ouviu essa frase como força para vencer, letra A, ou para atravessar a dificuldade, letra B?",
+      "visual": {
+        "meaning": "sol nascendo no horizonte",
+        "meaning_en": "sunrise horizon",
+        "emotion": "pergunta aberta",
+        "mood": "bright",
+        "queries": [
+          "sunrise horizon",
+          "golden sunrise clouds",
+          "sunrise sea"
+        ],
+        "prefer": [
+          "sunrise",
+          "horizon",
+          "golden"
+        ],
+        "avoid": [
+          "people",
+          "city",
+          "indoor"
+        ],
+        "shot": "paisagem, movimento lento"
+      }
+    }
+  ],
+  "posting": {
+    "hook": "Tudo posso naquele que me fortalece: você sabe onde isso foi escrito?",
+    "resumo": "Filipenses 4:13 aparece em camisetas e quadros, mas Paulo escreveu a carta preso e diz que aprendeu a viver contente com muito ou com pouco, com a força vindo de Cristo.",
+    "pergunta": "Você sempre ouviu essa frase como força para vencer (A) ou para atravessar a dificuldade (B)?",
+    "hashtags": [
+      "#fé",
+      "#palavradedeus",
+      "#filipenses",
+      "#foradocontexto",
+      "#reflexão"
     ],
-    "prefer": [
-     "road",
-     "dusk",
-     "clouds"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
+    "emoji": "👀"
   },
-  {
-   "id": "S03",
-   "block": "connection",
-   "text": "Mas a carta aos Filipenses foi escrita por alguém preso.",
-   "visual": {
-    "meaning": "rochas e penhasco escuros, isolamento",
-    "meaning_en": "dark rocky cliff isolation",
-    "emotion": "cárcere",
-    "mood": "dark",
-    "queries": [
-     "dark rocky cliff",
-     "rocks dark water",
-     "mountain fog dark",
-     "cliff storm clouds",
-     "dark forest fog"
+  "karaoke_color": "&H0066B3FF",
+  "cover_style": "quadro",
+  "cover_quadro": {
+    "kicker": "FORA DO CONTEXTO · EPISÓDIO 1",
+    "big": [
+      "TUDO POSSO",
+      "NAQUELE QUE",
+      "ME FORTALECE"
     ],
-    "prefer": [
-     "rock",
-     "cliff",
-     "dark",
-     "fog"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "beach",
-     "wave",
-     "fire",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
+    "tagline": "…e o que vem antes?"
   },
-  {
-   "id": "S04",
-   "block": "connection",
-   "text": "A carta, atribuída a Paulo, agradece a ajuda enviada pela igreja.",
-   "visual": {
-    "meaning": "mar escuro ao entardecer, horizonte distante",
-    "meaning_en": "dark sea horizon dusk",
-    "emotion": "ajuda distante",
-    "mood": "dark",
-    "queries": [
-     "sea horizon dusk",
-     "ocean sunset clouds",
-     "sea evening gray",
-     "ocean twilight"
-    ],
-    "prefer": [
-     "sea",
-     "horizon",
-     "dusk"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "fire",
-     "flame",
-     "candle",
-     "fireplace",
-     "bonfire",
-     "beach",
-     "friend",
-     "friends",
-     "group",
-     "young",
-     "couple",
-     "family",
-     "relaxing",
-     "party",
-     "camp"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
-  },
-  {
-   "id": "S05",
-   "block": "biblical_reference",
-   "text": "No capítulo quatro, o autor diz que aprendeu a viver com fartura e com falta.",
-   "visual": {
-    "meaning": "campo de trigo ao vento",
-    "meaning_en": "wheat field wind",
-    "emotion": "fartura e falta",
-    "mood": "mid",
-    "queries": [
-     "wheat field wind",
-     "golden field breeze",
-     "dry grass field"
-    ],
-    "prefer": [
-     "field",
-     "wheat",
-     "wind"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
-  },
-  {
-   "id": "S06",
-   "block": "biblical_reference",
-   "text": "E é aí que vem a frase: tudo posso naquele que me fortalece.",
-   "visual": {
-    "meaning": "terra seca e rachada, deserto",
-    "meaning_en": "dry cracked earth desert",
-    "emotion": "falta",
-    "mood": "mid",
-    "queries": [
-     "cracked dry earth",
-     "drought soil",
-     "desert sand wind",
-     "arid land"
-    ],
-    "prefer": [
-     "dry",
-     "desert",
-     "earth"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "piano",
-     "autumn",
-     "leaves",
-     "tree",
-     "garden",
-     "forest",
-     "morning",
-     "woods"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
-  },
-  {
-   "id": "S07",
-   "block": "biblical_reference",
-   "text": "Ali, ela fala de situações: ter muito e ter pouco.",
-   "visual": {
-    "meaning": "árvore sozinha firme no vento",
-    "meaning_en": "lone tree standing in wind",
-    "emotion": "firmeza",
-    "mood": "mid",
-    "queries": [
-     "lone tree wind",
-     "single tree hill",
-     "tree field storm"
-    ],
-    "prefer": [
-     "tree",
-     "lone",
-     "wind"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
-  },
-  {
-   "id": "S08",
-   "block": "reflection",
-   "text": "Isso não diminui o versículo. Mostra de onde ele nasceu.",
-   "visual": {
-    "meaning": "luz suave sobre colinas",
-    "meaning_en": "soft light over hills",
-    "emotion": "honestidade",
-    "mood": "mid",
-    "queries": [
-     "hills soft light",
-     "misty hills sunrise",
-     "hills morning haze"
-    ],
-    "prefer": [
-     "hills",
-     "light",
-     "mist"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
-  },
-  {
-   "id": "S09",
-   "block": "reflection",
-   "text": "O próprio texto diz de onde vinha a força: de Cristo.",
-   "visual": {
-    "meaning": "luz rompendo nuvens",
-    "meaning_en": "light breaking through clouds",
-    "emotion": "fonte da força",
-    "mood": "mid",
-    "queries": [
-     "clouds breaking light",
-     "sun rays clouds",
-     "light through clouds"
-    ],
-    "prefer": [
-     "light",
-     "clouds",
-     "rays"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
-  },
-  {
-   "id": "S10",
-   "block": "application",
-   "text": "Da próxima vez, lembre também da cela, e não só do troféu.",
-   "visual": {
-    "meaning": "trilha na montanha ao sol",
-    "meaning_en": "mountain trail sunlight",
-    "emotion": "perspectiva",
-    "mood": "bright",
-    "queries": [
-     "mountain trail sunlight",
-     "mountain path sun",
-     "hiking trail ridge"
-    ],
-    "prefer": [
-     "mountain",
-     "trail",
-     "sun"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
-  },
-  {
-   "id": "S11",
-   "block": "application",
-   "text": "Talvez haja coisas que você não vença esta semana. Às vezes, só dá para aguentar.",
-   "visual": {
-    "meaning": "rio calmo pela manhã",
-    "meaning_en": "calm river morning",
-    "emotion": "aguentar",
-    "mood": "bright",
-    "queries": [
-     "calm river morning",
-     "river mist sunrise",
-     "still river dawn"
-    ],
-    "prefer": [
-     "river",
-     "calm",
-     "morning"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
-  },
-  {
-   "id": "S12",
-   "block": "conclusion",
-   "text": "Para você, essa frase sempre foi sobre vencer ou sobre aguentar? Responda A ou B.",
-   "visual": {
-    "meaning": "sol nascendo no horizonte",
-    "meaning_en": "sunrise horizon",
-    "emotion": "pergunta aberta",
-    "mood": "bright",
-    "queries": [
-     "sunrise horizon",
-     "golden sunrise clouds",
-     "sunrise sea"
-    ],
-    "prefer": [
-     "sunrise",
-     "horizon",
-     "golden"
-    ],
-    "avoid": [
-     "people",
-     "city",
-     "indoor"
-    ],
-    "shot": "paisagem, movimento lento"
-   }
+  "anchor_verse": {
+    "ref": "Filipenses 4:13",
+    "texto": "Tudo posso naquele que me fortalece",
+    "traducao": "ARA"
   }
- ],
- "posting": {
-  "hook": "Tudo posso naquele que me fortalece: você sabe onde isso foi escrito?",
-  "resumo": "Filipenses 4:13 aparece em camisetas e quadros, mas foi escrito por alguém preso, que aprendeu a viver com fartura e com falta e diz que a força vem de Cristo.",
-  "pergunta": "Para você, essa frase sempre foi sobre vencer ou sobre aguentar? Responda A ou B nos comentários.",
-  "hashtags": [
-   "#fé",
-   "#palavradedeus",
-   "#filipenses",
-   "#foradocontexto",
-   "#reflexão"
-  ],
-  "emoji": "👀"
- },
- "karaoke_color": "&H0066B3FF",
- "cover_style": "quadro",
- "cover_quadro": {
-  "kicker": "FORA DO CONTEXTO · EPISÓDIO 1",
-  "big": [
-   "TUDO POSSO",
-   "NAQUELE QUE",
-   "ME FORTALECE"
-  ],
-  "tagline": "…e o que vem antes?"
- },
- "anchor_verse": {
-  "ref": "Filipenses 4:13",
-  "texto": "Tudo posso naquele que me fortalece",
-  "traducao": "ARA"
- }
 }

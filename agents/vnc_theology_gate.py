@@ -53,7 +53,9 @@ def check_theology(ep, root=ROOT, verses=None):
         t = norm(s["text"])
         if s["block"] in ("connection", "biblical_reference", "reflection", "conclusion") and s["id"] not in covered:
             errs.append(f"{s['id']}: cena de conteudo sem alegacao pesquisada")
-        if re.search(AUTORES, t) and not any(h in t for h in HEDGE_AUTOR): errs.append(f"{s['id']}: nomeia autor sem ressalva de tradicao/autoria")
+        consenso = {norm(x) for x in (d.get("autoria_consenso") or [])}   # autoria de consenso academico, declarada e selada no dossie
+        nomes = {m.group(1) for m in re.finditer(AUTORES, t)}
+        if nomes and not nomes <= consenso and not any(h in t for h in HEDGE_AUTOR): errs.append(f"{s['id']}: nomeia autor sem ressalva de tradicao/autoria")
         if re.search(r"\b\d{3,4}\b|seculo", t) and not any(a.get("tipo") == "historica" and s["id"] in a.get("cenas", []) for a in claims):
             errs.append(f"{s['id']}: data/periodo historico sem alegacao 'historica' fontada")
         for pat in SCAN_ABSOLUTO:

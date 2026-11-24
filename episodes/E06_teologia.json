@@ -2,9 +2,9 @@
  "episode": "E06",
  "referencia": "Filipenses 4:10–13",
  "pesquisado_em": "2026-11-21",
- "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "revisor": "agente-teologico + revisor independente (parecer REPROVADO v1 aplicado: S11 reescrita com ressalva de abuso; Paulo nomeado; 'contente' incluído). Texto bíblico NÃO conferido na web nesta rodada (acesso não aprovado); conferir ARA 4:10-13 antes de publicar.",
  "posicoes_adotadas": {
-  "autoria": "Roteiro diz 'atribuida a Paulo' (autoria paulina quase unanime; ressalva de tradicao); nao nomeia cidade nem data da prisao (Roma, Cesareia e Efeso sao debatidas).",
+  "autoria": "Paulo como autor de Filipenses (consenso); o roteiro não usa 'atribuída'. Não nomeia cidade nem data da prisão.",
   "destinatario": "Igreja de Filipos, que enviou ajuda a Paulo na prisao (2:25; 4:10-18); aplicacao hoje e apresentada como leitura de contexto e reflexao.",
   "quadro": "Quadro 'Fora do Contexto': mostra o uso popular do versiculo e o contexto original; nao afirma que a leitura popular seja pecado, nem que a leitura de contexto esgote o sentido.",
   "limite": "Sem promessa de exito, vitoria ou prosperidade; sem ordenar aguentar situacao de abuso; incentivo implicito a comunidade e ajuda ja presente no texto (ajuda enviada).",
@@ -60,7 +60,7 @@
     "S02"
    ],
    "tipo": "interpretativa",
-   "texto": "A frase aparece em camisetas, quadros e metas de conquista.",
+   "texto": "A frase aparece em camisetas, quadros e frases de motivação.",
    "veredito": "SUPORTADO",
    "versiculos": [],
    "palavras_chave_no_texto": [],
@@ -93,7 +93,7 @@
     "S03"
    ],
    "tipo": "historica",
-   "texto": "A carta aos Filipenses foi escrita por alguem preso, sem certeza do que viria.",
+   "texto": "Paulo escreveu a carta aos Filipenses preso, sem o roteiro nomear cidade nem data da prisão.",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Filipenses 1:7",
@@ -131,7 +131,7 @@
     "S04"
    ],
    "tipo": "historica",
-   "texto": "A carta, atribuida a Paulo, agradece a ajuda enviada pela igreja a prisao.",
+   "texto": "Na carta, Paulo agradece a ajuda que a igreja de Filipos enviou (Fp 4:10, 14-18).",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Filipenses 4:14",
@@ -169,7 +169,7 @@
     "S05"
    ],
    "tipo": "textual",
-   "texto": "No capitulo quatro, pouco antes, o autor conta que aprendeu a viver com fartura e com falta.",
+   "texto": "No capítulo quatro, Paulo diz que aprendeu a viver contente, com muito ou com pouco (Fp 4:11-12).",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Filipenses 4:11",
@@ -203,7 +203,7 @@
     "S06"
    ],
    "tipo": "interpretativa",
-   "texto": "A frase 'tudo posso naquele que me fortalece' vem logo apos o relato de viver com fartura e com falta (Fp 4:11-12).",
+   "texto": "A frase 'tudo posso naquele que me fortalece' vem logo depois desse relato (Fp 4:13).",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Filipenses 4:12",
@@ -243,7 +243,7 @@
     "S07"
    ],
    "tipo": "interpretativa",
-   "texto": "Nesse trecho, a frase fala de situacoes: ter muito e ter pouco.",
+   "texto": "Nesse trecho, a frase fala de ter muito e de ter pouco.",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Filipenses 4:12",
@@ -282,7 +282,7 @@
     "S08"
    ],
    "tipo": "aplicacao",
-   "texto": "Ler o versiculo no contexto de aguentar nao o diminui; o torna mais honesto.",
+   "texto": "Ler o versículo no contexto não o diminui; mostra de onde ele veio.",
    "veredito": "SUPORTADO",
    "versiculos": [],
    "palavras_chave_no_texto": [],
@@ -309,7 +309,7 @@
     "S09"
    ],
    "tipo": "textual",
-   "texto": "O proprio texto diz de onde vinha a forca: de Cristo.",
+   "texto": "Para Paulo, essa força vinha de Cristo (Fp 4:13 na tradição cristã e Fp 4:19, 'em Cristo Jesus').",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Filipenses 4:13"
@@ -341,7 +341,7 @@
     "S10"
    ],
    "tipo": "aplicacao",
-   "texto": "Ao reler o versiculo, lembrar tambem da cela (prisao) e nao so do trofeu (conquista).",
+   "texto": "Ao reler o versículo, lembrar também da prisão de onde Paulo escreveu e não só da conquista.",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Filipenses 1:13"
@@ -373,7 +373,7 @@
     "S12"
    ],
    "tipo": "aplicacao",
-   "texto": "Pode haver coisas que nao se vencem esta semana e as vezes so da para aguentar; pergunta final convida a refletir.",
+   "texto": "Nem toda situação muda esta semana e a falta dói; havendo abuso, procurar ajuda. A pergunta final convida à reflexão (A vencer, B atravessar).",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Filipenses 4:12"
@@ -430,17 +430,20 @@
  "parecer": "APROVADO",
  "cenas_hash": {
   "S01": "b579ace6e61cde57",
-  "S02": "295c68b074f5e302",
-  "S03": "91859e5f699a1951",
-  "S04": "f668bbda037d36d3",
-  "S05": "82aa3df96f67904e",
-  "S06": "39a64ccf73c64ff2",
-  "S07": "0b9097194199ce7e",
-  "S08": "d8cc92bacf1002d9",
-  "S09": "2a44436ffbb72f5d",
-  "S10": "bac9532be08f288a",
-  "S11": "4f05958a7034e30f",
-  "S12": "b7ebbbe715861e2e"
+  "S02": "0a3a5cf5991525ec",
+  "S03": "6d04b2bddcaffd5d",
+  "S04": "47984348d79cc3fc",
+  "S05": "a1501accd43e2be6",
+  "S06": "760ba5795212f53a",
+  "S07": "67f0a245e0b968eb",
+  "S08": "f57a7a9ad8e3de30",
+  "S09": "3de6a14ecc776921",
+  "S10": "01ec91dddb6d3d7d",
+  "S11": "f8e4e1f4629b4839",
+  "S12": "6ebf8f1d6cd4e7f6"
  },
- "refeito_em": "2026-11-23: roteiro refeito apos erro no episodio publicado (versiculo-ancora nao era dito por inteiro; gancho afirmava 'ao contrario' sem prova)."
+ "refeito_em": "2026-11-23: roteiro refeito apos erro no episodio publicado (versiculo-ancora nao era dito por inteiro; gancho afirmava 'ao contrario' sem prova).",
+ "autoria_consenso": [
+  "Paulo"
+ ]
 }
