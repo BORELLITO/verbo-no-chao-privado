@@ -4,7 +4,8 @@
  "publicados": {
   "E01": {"tiktok": "publicado", "youtube": "publicado", "instagram": "publicado", "views_print": {"tiktok": 304, "youtube": 5}},
   "E02": {"tiktok": "publicado", "youtube": "publicado", "instagram": "publicado", "views_print": {"tiktok": 250, "youtube": 4}},
-  "E05": {"tiktok": "publicado", "youtube": "publicado", "instagram": "publicado", "views_print": {"tiktok": 75, "youtube": 4}}
+  "E05": {"tiktok": "publicado", "youtube": "publicado", "instagram": "publicado", "views_print": {"tiktok": 75, "youtube": 4}, "facebook": "publicado"},
+  "E06": {"tiktok": "publicado", "youtube": "publicado", "instagram": "publicado", "facebook": "publicado", "nota": "FORA 1 refeito, postado em 23-24/11 nas 4 redes, com capa e selo de IA"}
  },
  "institucional": [
   {"titulo": "A fe nao precisa fugir das perguntas dificeis (card de valores)", "tiktok": "publicado", "instagram": "publicado", "youtube": "nao_visto", "views_print": {"tiktok": 212}}

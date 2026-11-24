@@ -22,7 +22,7 @@ Próximo: DORES DA VIDA 7 (horário fixo 12:00 BRT)
 | Nº | Título | Referência | id interno |
 |---|---|---|---|
 | FORA DO CONTEXTO 1 | TUDO POSSO | Filipenses 4:10–13 | E06 |
-| FORA DO CONTEXTO 2 | PLANO DE PAZ | Jeremias 29:11 | E07 |
+| FORA DO CONTEXTO 2 | PLANO DE PAZ | Jeremias 29:4–11 | E07 |
 | FORA DO CONTEXTO 3 | NÃO JULGUEIS | Mateus 7:1–5 | E08 |
 | FORA DO CONTEXTO 4 | DOIS OU TRÊS | Mateus 18:15–20 | E09 |
 

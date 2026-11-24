@@ -1,5 +1,5 @@
 {
- "_instrucoes": "Roteiro E07 (quadro Fora do Contexto, episódio 2) escrito pelo Claude em 2026-11-22 (formato D). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Episodio novo; nao altera E01-E06.",
+ "_instrucoes": "Roteiro E07 (quadro Fora do Contexto, episódio 2) REFEITO em 2026-11-24 a pedido do dono: versículo-âncora dito por inteiro (NAA) nas 3 primeiras cenas, gancho emocional com a frase que o público usa ('Deus tem um plano pra você'), contexto da carta aos exilados sem promessa de pressa. Roteiro antigo (formato D) arquivado no histórico do git; voz antiga removida.",
  "id": "E07",
  "number": 7,
  "title_lines": [
@@ -7,7 +7,7 @@
   "contexto:",
   "planos de paz"
  ],
- "reference": "Jeremias 29:11",
+ "reference": "Jeremias 29:4–11",
  "timing": "whisper",
  "audio_link_file": "run/audio_link_E07.txt",
  "music_page": "https://mixkit.co/free-stock-music/staring-at-the-night-sky/",
@@ -20,7 +20,7 @@
   {
    "id": "S01",
    "block": "opening",
-   "text": "Você sabe para quem esse plano de Deus foi escrito?",
+   "text": "Alguém já te disse: calma, Deus tem um plano pra você?",
    "visual": {
     "meaning": "céu escuro e incerto",
     "meaning_en": "dark stormy sky",
@@ -60,7 +60,7 @@
   {
    "id": "S02",
    "block": "connection",
-   "text": "Está em cartões de formatura e em quadros de sala.",
+   "text": "Eu é que sei que pensamentos tenho a respeito de vocês, diz o Senhor.",
    "visual": {
     "meaning": "entardecer sobre colinas",
     "meaning_en": "dusk over hills",
@@ -96,7 +96,7 @@
   {
    "id": "S03",
    "block": "connection",
-   "text": "Muita gente lê como uma promessa de sucesso pessoal e de vitória rápida.",
+   "text": "São pensamentos de paz e não de mal, para dar-lhes um futuro e uma esperança.",
    "visual": {
     "meaning": "estrada reta ao entardecer",
     "meaning_en": "straight road dusk",
@@ -132,7 +132,7 @@
   {
    "id": "S04",
    "block": "connection",
-   "text": "Mas o versículo vem numa carta a exilados na Babilônia.",
+   "text": "Isso foi escrito numa carta a um povo levado à força para a Babilônia.",
    "visual": {
     "meaning": "rio escuro e distante",
     "meaning_en": "dark river dusk",
@@ -177,7 +177,7 @@
   {
    "id": "S05",
    "block": "biblical_reference",
-   "text": "No capítulo vinte e nove, o profeta manda construir casas, plantar e orar pela cidade.",
+   "text": "Gente exilada, ouvindo de profetas falsos que tudo passaria em dois anos.",
    "visual": {
     "meaning": "amanhecer brumoso, recomeço paciente",
     "meaning_en": "foggy sunrise valley",
@@ -214,7 +214,7 @@
   {
    "id": "S06",
    "block": "biblical_reference",
-   "text": "E diz que o exílio duraria setenta anos.",
+   "text": "Mas, um versículo antes, Deus fala em setenta anos de exílio.",
    "visual": {
     "meaning": "nuvens passando devagar",
     "meaning_en": "clouds moving timelapse",
@@ -250,7 +250,7 @@
   {
    "id": "S07",
    "block": "biblical_reference",
-   "text": "Só depois vem o versículo: pensamentos de paz, e não de mal.",
+   "text": "E manda esse povo ferido construir casas, plantar jardins e orar pela cidade.",
    "visual": {
     "meaning": "lago calmo",
     "meaning_en": "calm lake reflection",
@@ -286,7 +286,7 @@
   {
    "id": "S08",
    "block": "reflection",
-   "text": "Era uma palavra a um povo inteiro, dada para o longo prazo.",
+   "text": "A esperança era real, mas era longa: um futuro para um povo inteiro.",
    "visual": {
     "meaning": "vale amplo",
     "meaning_en": "wide green valley",
@@ -322,7 +322,7 @@
   {
    "id": "S09",
    "block": "reflection",
-   "text": "Isso não apaga o versículo. Mostra que a esperança dele é paciente.",
+   "text": "Isso não apaga o versículo: mostra que ele consola quem espera.",
    "visual": {
     "meaning": "campo de grama ao vento",
     "meaning_en": "grass field wind",
@@ -358,7 +358,7 @@
   {
    "id": "S10",
    "block": "application",
-   "text": "Hoje ele ainda consola, mas sem prometer o caminho mais curto.",
+   "text": "Se hoje você vive um exílio seu, essa carta pode falar com você.",
    "visual": {
     "meaning": "vale com luz do sol",
     "meaning_en": "sunlight valley",
@@ -394,7 +394,7 @@
   {
    "id": "S11",
    "block": "application",
-   "text": "Há esperas que duram anos, e Deus pode estar presente nelas também.",
+   "text": "Há esperas que duram anos. Esperança e pressa não são a mesma coisa.",
    "visual": {
     "meaning": "cachoeira na floresta",
     "meaning_en": "waterfall forest",
@@ -430,7 +430,7 @@
   {
    "id": "S12",
    "block": "conclusion",
-   "text": "Para você, esse versículo sempre foi sobre pressa ou sobre espera? Responda A ou B.",
+   "text": "Qual espera você ainda carrega sem entender? Conte nos comentários.",
    "visual": {
     "meaning": "amanhecer sobre montanhas",
     "meaning_en": "sunrise over mountains",
@@ -465,9 +465,9 @@
   }
  ],
  "posting": {
-  "hook": "Você sabe para quem esse plano de Deus foi escrito?",
-  "resumo": "Fora do Contexto, episódio 2: Jeremias 29:11 vem numa carta a exilados na Babilônia. Era uma palavra a um povo inteiro, dada para o longo prazo, com esperança paciente.",
-  "pergunta": "Para você, esse versículo sempre foi sobre pressa ou sobre espera? Responda A ou B nos comentários.",
+  "hook": "Alguém já te disse: calma, Deus tem um plano pra você?",
+  "resumo": "Jeremias 29:11 é uma das frases mais ditas para consolar, mas nasceu numa carta a exilados na Babilônia, que ouviam de profetas falsos que tudo passaria em dois anos. A carta falava em setenta anos e mandava construir, plantar e orar pela cidade.",
+  "pergunta": "Qual espera você ainda carrega sem entender? Conte nos comentários, sem pressa.",
   "hashtags": [
    "#fé",
    "#palavradedeus",
@@ -475,7 +475,7 @@
    "#foradocontexto",
    "#reflexão"
   ],
-  "emoji": "📖"
+  "emoji": "🙏"
  },
  "karaoke_color": "&H0066B3FF",
  "cover_style": "quadro",
@@ -485,9 +485,8 @@
    "PLANOS",
    "DE PAZ"
   ],
-  "tagline": "…para quem foi escrito?"
+  "tagline": "…e a carta inteira?"
  },
- "audio_sha256": "995cf09ffb3cd337fcc6b01a71269d2c319c2be798ebc35e9c36220ba225abaf",
  "cover": {
   "top": [
    "9969",
@@ -497,5 +496,10 @@
    "9969",
    5.0
   ]
+ },
+ "anchor_verse": {
+  "ref": "Jeremias 29:11",
+  "texto": "Eu é que sei que pensamentos tenho a respeito de vocês, diz o Senhor. São pensamentos de paz e não de mal, para dar-lhes um futuro e uma esperança.",
+  "traducao": "NAA"
  }
 }
