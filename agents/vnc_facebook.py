@@ -2,6 +2,7 @@
 Modos (run/facebook.json {"mode": ..., "nonce": ...}):
   probe     leitura: permissoes do token, Pagina visivel, se existe token de Pagina (sem imprimir nenhum token).
   listar    leitura: Reels/videos agendados e publicados recentes da Pagina.
+  capas     envia a capa (Cloudinary) como thumbnail preferida de reels ja criados. itens: [{episodio, video_id}].
   agendar   agenda Reels na Pagina. Exige "liberado_pelo_dono": true e "itens": [{"episodio": "E01", "quando": "2026-11-24T05:00:00-03:00"}].
             Opcional por item: "video_public_id". Nada e publicado sem liberacao explicita; agendar != publicar.
 Legenda do Facebook = legenda curta do Instagram sem hashtags extras alem das 5 do pacote (ver legenda())."""
@@ -124,6 +125,41 @@ def agendar(token, cfg, opener=urllib.request.urlopen):
     return [agendar_um(ptoken, it, opener) for it in itens]
 
 
+def _multipart(campos, arquivo_nome, arquivo_bytes):
+    b = "----vnc" + str(int(time.time() * 1000))
+    corpo = b""
+    for k, v in campos.items():
+        corpo += f"--{b}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode()
+    corpo += (f"--{b}\r\nContent-Disposition: form-data; name=\"source\"; filename=\"{arquivo_nome}\"\r\n"
+              "Content-Type: image/jpeg\r\n\r\n").encode() + arquivo_bytes + f"\r\n--{b}--\r\n".encode()
+    return corpo, f"multipart/form-data; boundary={b}"
+
+
+def capas(token, cfg, opener=urllib.request.urlopen):
+    """itens: [{"episodio":"E01","video_id":"<id do reel>"}]. Envia a capa do Cloudinary como thumbnail preferida."""
+    if cfg.get("liberado_pelo_dono") is not True:
+        raise FBError("BLOQUEADO: falta liberado_pelo_dono=true")
+    _, _, ptoken, _ = token_da_pagina(token, opener)
+    if not ptoken:
+        raise FBError("sem token de Pagina")
+    out = []
+    for it in cfg.get("itens") or []:
+        _, capa = montar_urls(it["episodio"], {})
+        if not capa:
+            out.append({"episodio": it["episodio"], "erro": "sem capa no midia_v1"}); continue
+        with opener(urllib.request.Request(capa), timeout=60) as r:
+            img = r.read()
+        corpo, ct = _multipart({"is_preferred": "true"}, "capa.jpg", img)
+        req = urllib.request.Request(f"{GRAPH}/{it['video_id']}/thumbnails", data=corpo, method="POST",
+                                     headers={"Authorization": f"Bearer {ptoken}", "Content-Type": ct})
+        try:
+            with opener(req, timeout=120) as r:
+                out.append({"episodio": it["episodio"], "video_id": it["video_id"], "resposta": json.loads(r.read().decode() or "{}"), "bytes": len(img)})
+        except urllib.error.HTTPError as e:
+            out.append({"episodio": it["episodio"], "video_id": it["video_id"], "erro": f"HTTP {e.code} " + e.read().decode("utf8", "ignore")[:300]})
+    return out
+
+
 def listar(token, opener=urllib.request.urlopen):
     _, _, ptoken, _ = token_da_pagina(token, opener)
     if not ptoken:
@@ -141,7 +177,7 @@ def main(argv=None):
     if not token:
         print("IG_TOKEN ausente"); return 2
     try:
-        fn = {"probe": lambda: probe(token), "listar": lambda: listar(token), "agendar": lambda: agendar(token, cfg)}.get(mode)
+        fn = {"probe": lambda: probe(token), "listar": lambda: listar(token), "agendar": lambda: agendar(token, cfg), "capas": lambda: capas(token, cfg)}.get(mode)
         if fn is None:
             print("modo desconhecido"); return 2
         print(json.dumps(fn(), ensure_ascii=False, indent=1))
