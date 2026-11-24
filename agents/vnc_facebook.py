@@ -144,7 +144,7 @@ def capas(token, cfg, opener=urllib.request.urlopen):
         raise FBError("sem token de Pagina")
     out = []
     for it in cfg.get("itens") or []:
-        _, capa = montar_urls(it["episodio"], {})
+        _, capa = montar_urls(it["episodio"], {"video_public_id": "x"})
         if not capa:
             out.append({"episodio": it["episodio"], "erro": "sem capa no midia_v1"}); continue
         with opener(urllib.request.Request(capa), timeout=60) as r:
