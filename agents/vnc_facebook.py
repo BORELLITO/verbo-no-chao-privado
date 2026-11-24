@@ -3,6 +3,7 @@ Modos (run/facebook.json {"mode": ..., "nonce": ...}):
   probe     leitura: permissoes do token, Pagina visivel, se existe token de Pagina (sem imprimir nenhum token).
   listar    leitura: Reels/videos agendados e publicados recentes da Pagina.
   capas     envia a capa (Cloudinary) como thumbnail preferida de reels ja criados. itens: [{episodio, video_id}].
+  cancelar  apaga posts agendados ainda nao publicados (itens: [{post_id}]).
   agendar   agenda Reels na Pagina. Exige "liberado_pelo_dono": true e "itens": [{"episodio": "E01", "quando": "2026-11-24T05:00:00-03:00"}].
             Opcional por item: "video_public_id". Nada e publicado sem liberacao explicita; agendar != publicar.
 Legenda do Facebook = legenda curta do Instagram sem hashtags extras alem das 5 do pacote (ver legenda())."""
@@ -160,6 +161,23 @@ def capas(token, cfg, opener=urllib.request.urlopen):
     return out
 
 
+def cancelar(token, cfg, opener=urllib.request.urlopen):
+    """Cancela (apaga) posts AGENDADOS e ainda nao publicados. itens: [{"post_id": "<id de scheduled_posts>"}]. Reversivel so re-agendando."""
+    if cfg.get("liberado_pelo_dono") is not True:
+        raise FBError("BLOQUEADO: falta liberado_pelo_dono=true")
+    _, _, ptoken, _ = token_da_pagina(token, opener)
+    if not ptoken:
+        raise FBError("sem token de Pagina")
+    ag = {p["id"]: p for p in _call("GET", f"{PAGE_ID}/scheduled_posts", ptoken, {"fields": "id,scheduled_publish_time,is_published", "limit": "50"}, opener).get("data", [])}
+    out = []
+    for it in cfg.get("itens") or []:
+        pid = it["post_id"]
+        if pid not in ag:
+            out.append({"post_id": pid, "erro": "nao esta entre os agendados (ja publicado ou inexistente): nada feito"}); continue
+        out.append({"post_id": pid, "resposta": _call("DELETE", pid, ptoken, {}, opener)})
+    return out
+
+
 def listar(token, opener=urllib.request.urlopen):
     _, _, ptoken, _ = token_da_pagina(token, opener)
     if not ptoken:
@@ -177,7 +195,7 @@ def main(argv=None):
     if not token:
         print("IG_TOKEN ausente"); return 2
     try:
-        fn = {"probe": lambda: probe(token), "listar": lambda: listar(token), "agendar": lambda: agendar(token, cfg), "capas": lambda: capas(token, cfg)}.get(mode)
+        fn = {"probe": lambda: probe(token), "listar": lambda: listar(token), "agendar": lambda: agendar(token, cfg), "capas": lambda: capas(token, cfg), "cancelar": lambda: cancelar(token, cfg)}.get(mode)
         if fn is None:
             print("modo desconhecido"); return 2
         print(json.dumps(fn(), ensure_ascii=False, indent=1))
