@@ -12,14 +12,14 @@ TXT = ["Tudo posso naquele que me fortalece: você sabe onde isso foi escrito?",
 
 
 def cfg():
-    return {"id": "E06", "number": 6, "title_lines": ["Fora do", "contexto:", "tudo posso"], "reference": "Filipenses 4:10–13", "cta": ["x", "y"],
+    return {"id": "E99", "number": 99, "title_lines": ["Fora do", "contexto:", "tudo posso"], "reference": "Filipenses 4:10–13", "cta": ["x", "y"],
             "anchor_verse": {"ref": "Filipenses 4:13", "texto": "Tudo posso naquele que me fortalece", "traducao": "ARA"},
             "scenes": [{"id": f"S{i+1:02d}", "block": BLK[i], "text": TXT[i], "visual": {"queries": ["fog"], "mood": "dark", "meaning": "paisagem"}} for i in range(12)]}
 
 
 class Anchor(unittest.TestCase):
     def rv(self, c):
-        return R.review("E06", c, others={}, offline=True)
+        return R.review("E99", c, others={}, offline=True)
 
     def codes(self, r):
         return {i["code"] for i in r["issues"]}
