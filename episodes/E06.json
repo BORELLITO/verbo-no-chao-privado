@@ -302,7 +302,7 @@
     {
       "id": "S10",
       "block": "application",
-      "text": "Da próxima vez, lembre também da prisão de onde ele escreveu, e não só do troféu.",
+      "text": "Da próxima vez, lembre também da prisão de onde ele escreveu, e não só da camiseta.",
       "visual": {
         "meaning": "trilha na montanha ao sol",
         "meaning_en": "mountain trail sunlight",
@@ -329,7 +329,7 @@
     {
       "id": "S11",
       "block": "application",
-      "text": "Nem toda situação muda esta semana, e a falta dói. Se houver abuso, procure ajuda.",
+      "text": "Nem toda situação muda logo, e a falta dói. Paulo recebeu ajuda; se houver abuso, procure alguém de confiança.",
       "visual": {
         "meaning": "rio calmo pela manhã",
         "meaning_en": "calm river morning",
@@ -356,7 +356,7 @@
     {
       "id": "S12",
       "block": "conclusion",
-      "text": "Você sempre ouviu essa frase como força para vencer, letra A, ou para atravessar a dificuldade, letra B?",
+      "text": "Letra A: força para vencer. Letra B: força para atravessar a dificuldade. Qual você costuma ouvir?",
       "visual": {
         "meaning": "sol nascendo no horizonte",
         "meaning_en": "sunrise horizon",
@@ -384,7 +384,7 @@
   "posting": {
     "hook": "Tudo posso naquele que me fortalece: você sabe onde isso foi escrito?",
     "resumo": "Filipenses 4:13 aparece em camisetas e quadros, mas Paulo escreveu a carta preso e diz que aprendeu a viver contente com muito ou com pouco, com a força vindo de Cristo.",
-    "pergunta": "Você sempre ouviu essa frase como força para vencer (A) ou para atravessar a dificuldade (B)?",
+    "pergunta": "Qual você costuma ouvir: A, força para vencer, ou B, força para atravessar a dificuldade?",
     "hashtags": [
       "#fé",
       "#palavradedeus",

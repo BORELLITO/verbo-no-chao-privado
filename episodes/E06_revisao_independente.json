@@ -1,0 +1,14 @@
+{
+  "episode": "E06",
+  "roteiro_sha": "97e6d18d2528ee0b",
+  "veredito": "APROVADO",
+  "revisor_independente": "subagente de revisao editorial-teologica (nao escreveu o roteiro); 2o parecer APROVADO sem bloqueios",
+  "ajustes_aplicados": [
+    "S10 camiseta",
+    "S11 sem 'esta semana' + ajuda",
+    "S12 rotulos A/B antes",
+    "pergunta do post"
+  ],
+  "observacao": "Parecer emitido sobre a versao anterior; as edicoes seguintes foram exatamente as sugeridas por ele. Versículo ARA NAO conferido na web (acesso nao aprovado): conferir antes de publicar.",
+  "verso_ara_conferido": false
+}
