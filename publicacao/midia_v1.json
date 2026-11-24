@@ -1,25 +1,28 @@
 {
-  "fonte": "Cloudinary (plano gratis); upload verificado em run real do GitHub 2026-11-23: HTTP 200, video/mp4, tamanho igual ao arquivo local. URL = https://res.cloudinary.com/<CLOUDINARY_CLOUD_NAME>/video/upload/<public_id>.mp4",
-  "public_ids": {
-    "E03": "vnc/dores4-8ee9e6c5c4",
-    "E04": "vnc/dores5-2a001e9279",
-    "E06": "vnc/fora1-1173142e0e",
-    "E07": "vnc/fora2-4633536940",
-    "E08": "vnc/fora3-36853dd0fa",
-    "E09": "vnc/fora4-fca14a1b88",
-    "E10": "vnc/dores6-c86cdc29dd"
-  },
-  "capas": {
-    "E03": "vnc/dores4-capa-8442b5ba2d",
-    "E04": "vnc/dores5-capa-80f61c5994",
-    "E06": "vnc/fora1-capa-fe6d11832b",
-    "E07": "vnc/fora2-capa-ee35c3b802",
-    "E08": "vnc/fora3-capa-0e17f26a5d",
-    "E09": "vnc/fora4-capa-3baa9c7376",
-    "E10": "vnc/dores6-capa-a49f8dd13f"
-  },
-  "fonte_capas": "Cloudinary image/upload, verificado em run real 2026-11-23: HTTP 200, image/jpeg, tamanho igual. URL = https://res.cloudinary.com/<cloud>/image/upload/<id>.jpg; enviada ao Buffer em VideoAssetInput.thumbnailUrl",
-  "seguro": {
-    "E06": "vnc/fora1-seguro-939e863f78"
-  }
+ "fonte": "Cloudinary (plano gratis); upload verificado em run real do GitHub 2026-11-23: HTTP 200, video/mp4, tamanho igual ao arquivo local. URL = https://res.cloudinary.com/<CLOUDINARY_CLOUD_NAME>/video/upload/<public_id>.mp4",
+ "public_ids": {
+  "E03": "vnc/dores4-8ee9e6c5c4",
+  "E04": "vnc/dores5-2a001e9279",
+  "E06": "vnc/fora1-1173142e0e",
+  "E07": "vnc/fora2-4633536940",
+  "E08": "vnc/fora3-36853dd0fa",
+  "E09": "vnc/fora4-fca14a1b88",
+  "E10": "vnc/dores6-c86cdc29dd"
+ },
+ "capas": {
+  "E03": "vnc/dores4-capa-8442b5ba2d",
+  "E04": "vnc/dores5-capa-80f61c5994",
+  "E06": "vnc/fora1-capa-fe6d11832b",
+  "E07": "vnc/fora2-capa-ee35c3b802",
+  "E08": "vnc/fora3-capa-0e17f26a5d",
+  "E09": "vnc/fora4-capa-3baa9c7376",
+  "E10": "vnc/dores6-capa-a49f8dd13f"
+ },
+ "fonte_capas": "Cloudinary image/upload, verificado em run real 2026-11-23: HTTP 200, image/jpeg, tamanho igual. URL = https://res.cloudinary.com/<cloud>/image/upload/<id>.jpg; enviada ao Buffer em VideoAssetInput.thumbnailUrl",
+ "seguro": {
+  "E06": "vnc/fora1-seguro-939e863f78",
+  "E01": "vnc/dores1-seguro-d5e1c948aa",
+  "E02": "vnc/dores2-seguro-6e9ab792ee",
+  "E05": "vnc/dores3-seguro-654d353fd2"
+ }
 }

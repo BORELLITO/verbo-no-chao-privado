@@ -77,6 +77,11 @@ def montar_urls(ep, item):
 
 
 def legenda(ep):
+    fb = ROOT / "publicacao/facebook_legendas_v1.json"
+    if fb.exists():
+        d = json.load(open(fb, encoding="utf8"))
+        if ep in d:
+            return d[ep]["legenda"], "", d[ep]["titulo"]
     pac = json.load(open(ROOT / "publicacao/pacote_v1.json", encoding="utf8"))
     for e in pac["episodios"]:
         if e["id"] == ep:
