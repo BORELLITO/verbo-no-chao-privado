@@ -1,1 +1,5 @@
-{"mode":"probe","nonce":"fb-repouso-1"}
+{"mode":"agendar","nonce":"fb-agenda-2","liberado_pelo_dono":true,"itens":[
+{"episodio":"E01","quando":"2026-11-24T05:00:00-03:00","video_public_id":"vnc/dores1-seguro-d5e1c948aa"},
+{"episodio":"E02","quando":"2026-11-24T06:00:00-03:00","video_public_id":"vnc/dores2-seguro-6e9ab792ee"},
+{"episodio":"E05","quando":"2026-11-24T07:00:00-03:00","video_public_id":"vnc/dores3-seguro-654d353fd2"},
+{"episodio":"E06","quando":"2026-11-24T08:00:00-03:00","video_public_id":"vnc/fora1-seguro-939e863f78"}]}
