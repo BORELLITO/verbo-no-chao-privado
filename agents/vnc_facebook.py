@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 GRAPH = "https://graph.facebook.com/v21.0"
-PAGE_ID = "61596729336939"
+PAGE_ID = "1388285187712035"
 
 
 class FBError(RuntimeError):
