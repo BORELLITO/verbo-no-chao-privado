@@ -1,0 +1,27 @@
+name: VNC Facebook (API oficial da Meta; agenda so com liberacao do dono)
+# Entrada: run/facebook.json {"mode":"probe|listar|agendar","nonce":"..."}. Usa IG_TOKEN. Sem cron.
+on:
+  push:
+    branches: ["main"]
+    paths: ["run/facebook.json"]
+permissions:
+  contents: read
+concurrency:
+  group: vnc-facebook
+  cancel-in-progress: false
+jobs:
+  facebook:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Facebook
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+        run: |
+          MODE="$(python3 -c 'import json;m=json.load(open("run/facebook.json")).get("mode","probe");assert m in ("probe","listar","agendar");print(m)')"
+          python3 -m agents.vnc_facebook "$MODE"
