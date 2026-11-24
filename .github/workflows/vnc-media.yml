@@ -32,10 +32,14 @@ jobs:
         run: |
           python3 - <<'PY'
           import json, subprocess
-          for ep, run in json.load(open("run/media.json")).get("runs", {}).items():
+          cfg = json.load(open("run/media.json"))
+          for ep, run in cfg.get("runs", {}).items():
               assert ep.startswith("E") and str(run).isdigit()
               subprocess.run(["gh", "run", "download", str(run), "-R", "${{ github.repository }}", "-n", "vnc-build", "-D", f"art/{ep}"], check=True)
-              if json.load(open("run/media.json")).get("mode", "").endswith("_capa"):
+          if cfg.get("mode", "").endswith("_capa"):
+              # capa pode vir de outro run (ex.: run so de capa): "runs_capa"; senao, do mesmo run do video
+              for ep, run in (cfg.get("runs_capa") or cfg.get("runs", {})).items():
+                  assert ep.startswith("E") and str(run).isdigit()
                   subprocess.run(["gh", "run", "download", str(run), "-R", "${{ github.repository }}", "-n", "vnc-cover", "-D", f"art/{ep}-capa"], check=True)
           PY
       - name: ffmpeg (so para a copia segura de audio)
