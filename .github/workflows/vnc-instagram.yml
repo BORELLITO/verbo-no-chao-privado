@@ -1,0 +1,27 @@
+name: VNC Instagram (API oficial da Meta; publica so com liberacao do dono)
+# Entrada: run/instagram.json {"mode":"probe|publish","nonce":"..."}. Unico workflow com IG_TOKEN. Sem cron.
+on:
+  push:
+    branches: ["main"]
+    paths: ["run/instagram.json"]
+permissions:
+  contents: read
+concurrency:
+  group: vnc-instagram
+  cancel-in-progress: false
+jobs:
+  instagram:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instagram
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+        run: |
+          MODE="$(python3 -c 'import json;m=json.load(open("run/instagram.json")).get("mode","probe");assert m in ("probe","publish");print(m)')"
+          python3 -m agents.vnc_instagram "$MODE"
