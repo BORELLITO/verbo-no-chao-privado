@@ -15,7 +15,7 @@
   "E06": "vnc/fora1-capa-fe6d11832b",
   "E07": "vnc/fora2-capa-37c5834039",
   "E08": "vnc/fora3-capa-657c29902e",
-  "E09": "vnc/fora4-capa-3baa9c7376",
+  "E09": "vnc/fora4-capa-89a6c7216c",
   "E10": "vnc/dores6-capa-a49f8dd13f",
   "E01": "vnc/dores1-capa-c0da8e8f50",
   "E02": "vnc/dores2-capa-8face83c5c",
@@ -28,6 +28,7 @@
   "E02": "vnc/dores2-seguro-6e9ab792ee",
   "E05": "vnc/dores3-seguro-654d353fd2",
   "E07": "vnc/fora2-seguro-02c682668b",
-  "E08": "vnc/fora3-seguro-7849bcd43d"
+  "E08": "vnc/fora3-seguro-7849bcd43d",
+  "E09": "vnc/fora4-seguro-3432a4df88"
  }
 }
