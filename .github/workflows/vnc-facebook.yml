@@ -23,5 +23,5 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
         run: |
-          MODE="$(python3 -c 'import json;m=json.load(open("run/facebook.json")).get("mode","probe");assert m in ("probe","listar","agendar","capas","cancelar");print(m)')"
+          MODE="$(python3 -c 'import json;m=json.load(open("run/facebook.json")).get("mode","probe");from agents.vnc_facebook import MODOS;assert m in MODOS;print(m)')"
           python3 -m agents.vnc_facebook "$MODE"

@@ -187,6 +187,9 @@ def listar(token, opener=urllib.request.urlopen):
     return {"agendados": ag.get("data", []), "reels": rd.get("data", [])}
 
 
+MODOS = ("probe", "listar", "agendar", "capas", "cancelar")  # fonte unica dos modos (o workflow le daqui)
+
+
 def main(argv=None):
     argv = argv or sys.argv[1:]
     cfg = json.load(open(ROOT / "run/facebook.json", encoding="utf8"))
