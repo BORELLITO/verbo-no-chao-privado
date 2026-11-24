@@ -1,5 +1,5 @@
 {
- "_instrucoes": "Roteiro E08 (quadro Fora do Contexto, episódio 3) escrito pelo Claude em 2026-11-22 (formato E). Fluxo: dossie teologico -> curadoria -> voz -> Runflow. Episodio novo; nao altera E01-E07.",
+ "_instrucoes": "Roteiro E08 (quadro Fora do Contexto, episódio 3) REFEITO em 2026-11-24 a pedido do dono: gancho emocional com a frase que o público usa ('Quem é você pra me julgar?'), versículo-âncora dito por inteiro (ARA, Mt 7:1) na 2ª cena, contexto do Sermão do Monte (argueiro/trave, frutos), sem promessa. Roteiro anterior no histórico do git; voz antiga removida.",
  "id": "E08",
  "number": 8,
  "title_lines": [
@@ -20,7 +20,7 @@
   {
    "id": "S01",
    "block": "opening",
-   "text": "Você acha que Jesus proibiu qualquer correção ao dizer: não julgueis?",
+   "text": "Quem é você pra me julgar? Já ouviu isso, ou já disse?",
    "visual": {
     "meaning": "céu escuro e incerto",
     "meaning_en": "dark stormy sky",
@@ -81,7 +81,7 @@
   {
    "id": "S02",
    "block": "connection",
-   "text": "Muita gente usa essa frase quando alguém é corrigido.",
+   "text": "Não julgueis, para que não sejais julgados.",
    "visual": {
     "meaning": "manhã cinzenta e brumosa",
     "meaning_en": "gray foggy morning",
@@ -137,7 +137,7 @@
   {
    "id": "S03",
    "block": "connection",
-   "text": "Muitos entendem que ela proíbe qualquer avaliação sobre o que é certo ou errado.",
+   "text": "Muita gente usa essas palavras como escudo contra qualquer correção.",
    "visual": {
     "meaning": "estrada reta no campo",
     "meaning_en": "empty road field",
@@ -193,7 +193,7 @@
   {
    "id": "S04",
    "block": "connection",
-   "text": "Mas a frase está no Sermão do Monte, e o contexto muda a leitura.",
+   "text": "Mas essa frase está no Sermão do Monte, e Jesus explica logo depois.",
    "visual": {
     "meaning": "encosta de monte verde",
     "meaning_en": "green mountain slope",
@@ -249,7 +249,7 @@
   {
    "id": "S05",
    "block": "biblical_reference",
-   "text": "No capítulo sete de Mateus, Jesus fala do argueiro no olho do irmão.",
+   "text": "No capítulo sete de Mateus, Jesus fala do argueiro no olho do irmão e da trave no seu.",
    "visual": {
     "meaning": "galho fino com folhas",
     "meaning_en": "small branch leaves",
@@ -305,7 +305,7 @@
   {
    "id": "S06",
    "block": "biblical_reference",
-   "text": "E mostra uma trave no olho de quem aponta o erro.",
+   "text": "Como tirar o argueiro do outro, com uma trave no seu olho?",
    "visual": {
     "meaning": "tronco grande de árvore",
     "meaning_en": "large tree trunk",
@@ -361,7 +361,7 @@
   {
    "id": "S07",
    "block": "biblical_reference",
-   "text": "Ele manda tirar a trave primeiro, para então ver bem e ajudar o irmão.",
+   "text": "Então manda tirar a trave primeiro, para ver bem e poder ajudar.",
    "visual": {
     "meaning": "luz atravessando a floresta",
     "meaning_en": "sunlight through forest",
@@ -417,7 +417,7 @@
   {
    "id": "S08",
    "block": "reflection",
-   "text": "O alerta é contra o juízo hipócrita e condenador.",
+   "text": "O alerta é contra o juízo hipócrita, que condena sem se olhar.",
    "visual": {
     "meaning": "nuvens carregadas no céu",
     "meaning_en": "heavy clouds moving",
@@ -473,7 +473,7 @@
   {
    "id": "S09",
    "block": "reflection",
-   "text": "Tanto que, no mesmo capítulo, Jesus manda se guardar dos falsos profetas e reconhecê-los pelos frutos.",
+   "text": "No mesmo capítulo, Jesus também pede discernimento: cuidado com falsos profetas, conhecidos pelos frutos.",
    "visual": {
     "meaning": "pomar de árvores",
     "meaning_en": "orchard trees",
@@ -529,7 +529,7 @@
   {
    "id": "S10",
    "block": "application",
-   "text": "Então corrigir com humildade nem sempre é o mesmo que condenar.",
+   "text": "Corrigir com humildade não é o mesmo que condenar.",
    "visual": {
     "meaning": "vale com luz do sol",
     "meaning_en": "sunlight valley",
@@ -585,7 +585,7 @@
   {
    "id": "S11",
    "block": "application",
-   "text": "Antes de apontar o erro do outro, vale examinar o próprio coração.",
+   "text": "Antes de apontar o erro de alguém, comece pela trave que cabe a você.",
    "visual": {
     "meaning": "lago calmo refletindo",
     "meaning_en": "calm lake reflection",
@@ -649,7 +649,7 @@
   {
    "id": "S12",
    "block": "conclusion",
-   "text": "Para você, esse versículo sempre foi um escudo ou um espelho? Responda A ou B.",
+   "text": "Essa frase já foi um escudo ou um espelho na sua vida? Conte nos comentários.",
    "visual": {
     "meaning": "amanhecer sobre montanhas",
     "meaning_en": "sunrise over mountains",
@@ -704,9 +704,9 @@
   }
  ],
  "posting": {
-  "hook": "Você acha que Jesus proibiu qualquer correção ao dizer: não julgueis?",
-  "resumo": "Fora do Contexto, episódio 3: Mateus 7 não proíbe toda correção. Jesus condena o juízo hipócrita, pede que se tire a trave primeiro e manda reconhecer pelos frutos.",
-  "pergunta": "Para você, esse versículo sempre foi um escudo ou um espelho? Responda A ou B nos comentários.",
+  "hook": "Quem é você pra me julgar? Já ouviu isso, ou já disse?",
+  "resumo": "Não julgueis é uma das frases mais usadas para barrar uma correção. No Sermão do Monte, Jesus condena o juízo hipócrita, manda tirar a trave do próprio olho e, no mesmo capítulo, pede discernimento com os falsos profetas. Correção com humildade também aparece em Gálatas 6:1.",
+  "pergunta": "Essa frase já foi um escudo ou um espelho na sua vida? Conte nos comentários.",
   "hashtags": [
    "#fé",
    "#palavradedeus",
@@ -724,9 +724,8 @@
    "NÃO",
    "JULGUEIS"
   ],
-  "tagline": "…isso proíbe corrigir?"
+  "tagline": "…e o resto do capítulo?"
  },
- "audio_sha256": "ed4dc5b4c5c4e44715d4063c85c02428f8a0ecb426c11d8f2a74c6be0b64cc50",
  "cover": {
   "top": [
    "35070",
@@ -736,5 +735,10 @@
    "9779",
    6.0
   ]
+ },
+ "anchor_verse": {
+  "ref": "Mateus 7:1",
+  "texto": "Não julgueis, para que não sejais julgados.",
+  "traducao": "ARA"
  }
 }

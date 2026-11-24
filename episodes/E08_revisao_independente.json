@@ -1,0 +1,12 @@
+{
+ "episode": "E08",
+ "roteiro_sha": "11bed74706346618",
+ "veredito": "APROVADO",
+ "revisor_independente": "subagente de revisao editorial-teologica (nao escreveu o roteiro); parecer APROVADO com ressalvas em S09 (ligacao 'tanto que' com falsos profetas) e S10 (sintese interpretativa, apoio em Gl 6:1/Mt 18:15), ambas aplicadas, e S11 trocada pela sugestao 'comece pela trave'. LIMITE: o revisor nao conseguiu ler o texto biblico na web (conferiu de memoria); o texto ARA de Mt 7:1-5 foi conferido por mim em bible.com/bible/1608 e bibliaonline.",
+ "ajustes_aplicados": [
+  "S09 discernimento",
+  "S10 apoio Gl 6:1 declarado",
+  "S11 trave"
+ ],
+ "verso_ara_conferido": true
+}

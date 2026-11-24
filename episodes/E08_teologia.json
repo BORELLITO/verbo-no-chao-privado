@@ -1,8 +1,8 @@
 {
  "episode": "E08",
  "referencia": "Mateus 7:1–5",
- "pesquisado_em": "2026-11-22",
- "revisor": "agente-teologico (Claude), pesquisa na web; texto biblico conferido em ACF",
+ "pesquisado_em": "2026-11-24",
+ "revisor": "Claude (autor do roteiro) + revisor independente a registrar em E08_revisao_independente.json. Texto ARA de Mt 7:1-5 conferido na web (bible.com/bible/1608; bibliaonline) em 2026-11-24; fontes herdadas do dossie anterior (mesma passagem) reaproveitadas.",
  "posicoes_adotadas": {
   "autoria": "Roteiro diz 'Jesus' falando no Sermão do Monte; sem nomear o evangelista.",
   "quadro": "Quadro 'Fora do Contexto': mostra o uso popular e o contexto original; não diz que quem usa a frase peca nem que corrigir seja sempre obrigatório.",
@@ -10,19 +10,44 @@
  },
  "alegacoes": [
   {
-   "id": "F00",
+   "id": "G00",
    "cenas": [
     "S01"
    ],
-   "tipo": "interpretativa",
-   "texto": "A frase 'Não julgueis' é muitas vezes lida como proibição de qualquer correção; o contexto mostra que o alvo é o juízo hipócrita.",
+   "tipo": "aplicacao",
+   "texto": "'Quem e voce pra me julgar?' e 'nao julgueis' sao frases usadas com frequencia quando alguem e corrigido.",
    "veredito": "SUPORTADO_COM_CAUTELA",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Servants of Grace, Judge Not or Judge Rightly",
+     "url": "https://servantsofgrace.org/judge-not-or-judge-rightly-matthew-7/",
+     "tipo": "comentario",
+     "nota": "autora admite usar a frase como resposta pronta a correções"
+    },
+    {
+     "titulo": "Covenant Presbyterian, Specks, Logs, and Good Judgment",
+     "url": "https://s3.amazonaws.com/cov-pres.org/wp-content/uploads/2025/08/01153020/13-Specks-Logs-and-Good-Judgment-Matthew-7_1-6.pdf",
+     "tipo": "comentario",
+     "nota": "distingue discernimento de hipocrisia usada como martelo"
+    }
+   ],
+   "risco": "baixo: observação de uso comum, sem número nem acusação.",
+   "mitigacao": "S01 e uma pergunta sobre uso comum; nao afirma que quem usa a frase esteja sempre errado, so introduz o contexto."
+  },
+  {
+   "id": "G01",
+   "cenas": [
+    "S02"
+   ],
+   "tipo": "interpretativa",
+   "texto": "Mateus 7:1 (ARA): 'Nao julgueis, para que nao sejais julgados.'",
+   "veredito": "SUPORTADO",
    "versiculos": [
     "Mateus 7:1"
    ],
-   "palavras_chave_no_texto": [
-    "julgueis"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "Enduring Word, Matthew 7",
@@ -41,46 +66,17 @@
    "mitigacao": "S01 pergunta em vez de acusar; S08 a S11 mantêm o alerta contra o juízo hipócrita e a humildade."
   },
   {
-   "id": "F01",
-   "cenas": [
-    "S02"
-   ],
-   "tipo": "aplicacao",
-   "texto": "A frase é usada com frequência quando alguém é corrigido.",
-   "veredito": "SUPORTADO",
-   "versiculos": [],
-   "palavras_chave_no_texto": [],
-   "fontes": [
-    {
-     "titulo": "Servants of Grace, Judge Not or Judge Rightly",
-     "url": "https://servantsofgrace.org/judge-not-or-judge-rightly-matthew-7/",
-     "tipo": "comentario",
-     "nota": "autora admite usar a frase como resposta pronta a correções"
-    },
-    {
-     "titulo": "Covenant Presbyterian, Specks, Logs, and Good Judgment",
-     "url": "https://s3.amazonaws.com/cov-pres.org/wp-content/uploads/2025/08/01153020/13-Specks-Logs-and-Good-Judgment-Matthew-7_1-6.pdf",
-     "tipo": "comentario",
-     "nota": "distingue discernimento de hipocrisia usada como martelo"
-    }
-   ],
-   "risco": "baixo: observação de uso comum, sem número nem acusação.",
-   "mitigacao": ""
-  },
-  {
-   "id": "F02",
+   "id": "G02",
    "cenas": [
     "S03"
    ],
    "tipo": "interpretativa",
-   "texto": "Há quem leia a frase como proibição de toda avaliação sobre certo e errado.",
+   "texto": "Ha quem use a frase como escudo contra qualquer avaliacao sobre certo e errado.",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Mateus 7:1"
    ],
-   "palavras_chave_no_texto": [
-    "julgueis"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "Servants of Grace, Judge Not or Judge Rightly",
@@ -99,19 +95,17 @@
    "mitigacao": "S03 diz 'muitos entendem', sem generalizar a todos."
   },
   {
-   "id": "F03",
+   "id": "G03",
    "cenas": [
     "S04"
    ],
    "tipo": "historica",
-   "texto": "Mateus 7 pertence ao Sermão do Monte (Mt 5 a 7), e o contexto muda a leitura.",
+   "texto": "Mateus 7 pertence ao Sermao do Monte (Mt 5 a 7), e Jesus explica a frase logo em seguida (7:2-5).",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Mateus 7:1"
    ],
-   "palavras_chave_no_texto": [
-    "julgueis"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "BibleHub, Matthew 7 (Sermao do Monte)",
@@ -130,20 +124,17 @@
    "mitigacao": ""
   },
   {
-   "id": "F04",
+   "id": "G04",
    "cenas": [
     "S05"
    ],
    "tipo": "textual",
-   "texto": "No capítulo 7 de Mateus, Jesus fala do argueiro no olho do irmão.",
+   "texto": "Jesus fala do argueiro no olho do irmao e da trave no proprio olho.",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Mateus 7:3"
    ],
-   "palavras_chave_no_texto": [
-    "argueiro",
-    "irmão"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "IVP New Testament Commentary, Appropriate Judgment (Mt 7)",
@@ -162,20 +153,18 @@
    "mitigacao": ""
   },
   {
-   "id": "F05",
+   "id": "G05",
    "cenas": [
     "S06"
    ],
    "tipo": "textual",
-   "texto": "Jesus mostra uma trave no olho de quem aponta o erro.",
+   "texto": "Jesus pergunta como tirar o argueiro do irmao quando se tem uma trave no proprio olho.",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Mateus 7:3",
     "Mateus 7:4"
    ],
-   "palavras_chave_no_texto": [
-    "trave"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "Christ-Centered Exposition, To Judge or Not to Judge",
@@ -194,21 +183,17 @@
    "mitigacao": ""
   },
   {
-   "id": "F06",
+   "id": "G06",
    "cenas": [
     "S07"
    ],
    "tipo": "textual",
-   "texto": "Jesus manda tirar primeiro a trave para então ver bem e tirar o argueiro do irmão.",
+   "texto": "Jesus manda tirar primeiro a trave para ver bem e poder tirar o argueiro do irmao.",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Mateus 7:5"
    ],
-   "palavras_chave_no_texto": [
-    "trave",
-    "argueiro",
-    "irmão"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "Christ-Centered Exposition, To Judge or Not to Judge",
@@ -227,19 +212,17 @@
    "mitigacao": ""
   },
   {
-   "id": "F07",
+   "id": "G07",
    "cenas": [
     "S08"
    ],
    "tipo": "interpretativa",
-   "texto": "O alerta de Mt 7:1-5 é contra o juízo hipócrita e condenador, não contra toda correção.",
+   "texto": "O alerta de Mt 7:1-5 e contra o juizo hipocrita e condenador, nao contra toda correcao.",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Mateus 7:5"
    ],
-   "palavras_chave_no_texto": [
-    "hipócrita"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "Enduring Word, Matthew 7",
@@ -264,21 +247,18 @@
    "mitigacao": "S08 usa 'o alerta é contra o juízo hipócrita', sem dizer que a correção é sempre obrigatória."
   },
   {
-   "id": "F08",
+   "id": "G08",
    "cenas": [
     "S09"
    ],
    "tipo": "textual",
-   "texto": "No mesmo capítulo (7:15-20), Jesus manda se guardar dos falsos profetas e reconhecê-los pelos frutos.",
+   "texto": "No mesmo capitulo (7:15-20), Jesus tambem pede discernimento: cuidado com falsos profetas, conhecidos pelos frutos.",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Mateus 7:15",
     "Mateus 7:16"
    ],
-   "palavras_chave_no_texto": [
-    "falsos profetas",
-    "frutos"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "Matthew Henry, Mt 7:15-20",
@@ -303,19 +283,17 @@
    "mitigacao": ""
   },
   {
-   "id": "F09",
+   "id": "G09",
    "cenas": [
     "S10"
    ],
    "tipo": "aplicacao",
-   "texto": "Corrigir com humildade nem sempre é o mesmo que condenar.",
+   "texto": "Corrigir com humildade nao e o mesmo que condenar (sintese interpretativa; ver tambem Galatas 6:1 e Mateus 18:15).",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Mateus 7:5"
    ],
-   "palavras_chave_no_texto": [
-    "irmão"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "Covenant Presbyterian, Specks, Logs, and Good Judgment",
@@ -331,22 +309,20 @@
     }
    ],
    "risco": "medio: aplicação, não afirma que toda correção seja bem-vinda ou obrigatória.",
-   "mitigacao": "Texto usa 'nem sempre'; não prescreve método de correção."
+   "mitigacao": "S10 e sintese interpretativa, nao fala literal de Mt 7; apoia-se em Mt 7:5 (tirar a trave para ajudar) e Gl 6:1; a legenda de postagem cita Gl 6:1."
   },
   {
-   "id": "F10",
+   "id": "G10",
    "cenas": [
     "S11"
    ],
    "tipo": "aplicacao",
-   "texto": "Antes de apontar o erro do outro, vale examinar o próprio coração.",
+   "texto": "Antes de apontar o erro de alguem, comece pela trave que cabe a voce (imagem de Mt 7:5).",
    "veredito": "SUPORTADO",
    "versiculos": [
     "Mateus 7:5"
    ],
-   "palavras_chave_no_texto": [
-    "trave"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "Theology of Work, Mt 7:1-5",
@@ -365,19 +341,17 @@
    "mitigacao": ""
   },
   {
-   "id": "F11",
+   "id": "G11",
    "cenas": [
     "S12"
    ],
    "tipo": "interpretativa",
-   "texto": "A pergunta final (escudo ou espelho) convida à reflexão sem afirmar que a frase sempre significou uma coisa.",
+   "texto": "A pergunta final (escudo ou espelho) convida a refletir sem afirmar que a frase sempre significou uma coisa.",
    "veredito": "SUPORTADO_COM_CAUTELA",
    "versiculos": [
     "Mateus 7:1"
    ],
-   "palavras_chave_no_texto": [
-    "julgueis"
-   ],
+   "palavras_chave_no_texto": [],
    "fontes": [
     {
      "titulo": "Enduring Word, Matthew 7",
@@ -420,17 +394,17 @@
  ],
  "parecer": "APROVADO",
  "cenas_hash": {
-  "S01": "02728f888a88f7d7",
-  "S02": "434e6ba88e649105",
-  "S03": "3df979345986939a",
-  "S04": "d46cb7df284c1994",
-  "S05": "4a3ae019123ff3a2",
-  "S06": "dca3d86d3fb6bc4c",
-  "S07": "b5040fbe9f190e9c",
-  "S08": "8ff78bf6dfae91b1",
-  "S09": "82b4c7261c592ebf",
-  "S10": "2a6b9f48ee4305c2",
-  "S11": "2a38b1b6eccf7b45",
-  "S12": "8595aa229a68fa4c"
+  "S01": "2cb92d7b7e698003",
+  "S02": "c03196e137dfb696",
+  "S03": "bba58f1bd54d8ba1",
+  "S04": "e1b96bf957138cd4",
+  "S05": "9e713b4f4b4b81c3",
+  "S06": "73750ddf66c0eea4",
+  "S07": "f7c23837d215796b",
+  "S08": "3da7db51ae5ee7e8",
+  "S09": "19dd2fbc4cf89f4e",
+  "S10": "bdf7f705390aadd1",
+  "S11": "4e788d82364d777b",
+  "S12": "17db4797b6d923dd"
  }
 }
