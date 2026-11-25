@@ -540,6 +540,31 @@
    "title": "dreamlike waterfalls in the forest",
    "updated_at": "2026-11-22T00:04:59Z"
   },
+  "mixkit:11193": {
+   "dur": 12.0,
+   "episode": "E11",
+   "id": "11193",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/clouds-moving-over-a-tea-plantations-11193/",
+   "phashes": [
+    9286669703256801541,
+    9268657488747676037,
+    13893854309277811910
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S08",
+   "sha256": "a8398670a97a8a18cc4b2ee5ba7b99fcad19c6d5a562af73dc8b5176e68765e1",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "clouds moving over a tea plantations",
+   "updated_at": "2026-11-25T18:23:33Z"
+  },
   "mixkit:11291": {
    "dur": 15.0,
    "episode": "E02",
@@ -589,6 +614,31 @@
    "state": "released",
    "title": "timelapse of clouds at night",
    "updated_at": "2026-11-22T16:33:54Z"
+  },
+  "mixkit:1218": {
+   "dur": 20.0,
+   "episode": "E11",
+   "id": "1218",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/raft-going-slowly-down-a-river-1218/",
+   "phashes": [
+    16181013929657413774,
+    16181027124870886046,
+    16181027674626699934
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S06",
+   "sha256": "032ebafb66970510b516bf8a61d77ddf28c4df561d6cd688d3bb6651b42b2c0a",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "raft going slowly down a river",
+   "updated_at": "2026-11-25T18:23:33Z"
   },
   "mixkit:1243": {
    "dur": 13.2,
@@ -739,6 +789,31 @@
    "state": "reserved",
    "title": "wheat field at sunrise",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:1764": {
+   "dur": 13.6,
+   "episode": "E11",
+   "id": "1764",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/forest-in-the-mountains-aerial-view-1764/",
+   "phashes": [
+    18445618171646811965,
+    18445618102931504937,
+    18445618171650924475
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S11",
+   "sha256": "d28aeab581a45f698fb591cdc365456c73f6331313ba4bd825bb06bb617c6fc7",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "forest in the mountains aerial view",
+   "updated_at": "2026-11-25T18:23:33Z"
   },
   "mixkit:17732": {
    "dur": 21.4,
@@ -1039,6 +1114,31 @@
    "state": "reserved",
    "title": "dark clouds in the tropics",
    "updated_at": "2026-11-21T21:29:32Z"
+  },
+  "mixkit:20232": {
+   "dur": 46.9,
+   "episode": "E11",
+   "id": "20232",
+   "interval": [
+    0,
+    8.1
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/storm-passing-by-20232/",
+   "phashes": [
+    17499521987810072088,
+    17325409597853021848,
+    13889318786011056568
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S02",
+   "sha256": "6c84823db47bddae2b72879d2ec73396374d086cefdd16715c51efff5466179f",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "storm passing by",
+   "updated_at": "2026-11-25T18:23:33Z"
   },
   "mixkit:20233": {
    "dur": 15.0,
@@ -1415,6 +1515,31 @@
    "title": "waterfall in forest",
    "updated_at": "2026-11-23T09:42:46Z"
   },
+  "mixkit:2221": {
+   "dur": 20.0,
+   "episode": "E11",
+   "id": "2221",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/forest-disappearing-in-the-fog-2221/",
+   "phashes": [
+    1089056453630834486,
+    904408868908640038,
+    904109801745875718
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S05",
+   "sha256": "374488f2d2e931bfbf66d8f9468792a8381110b3b90a7ed61ab9b3d10f63cd13",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "forest disappearing in the fog",
+   "updated_at": "2026-11-25T18:23:33Z"
+  },
   "mixkit:22728": {
    "dur": 11.5,
    "episode": "E10",
@@ -1539,6 +1664,31 @@
    "state": "released",
    "title": "clouds and blue sky background",
    "updated_at": "2026-11-23T09:32:02Z"
+  },
+  "mixkit:26070": {
+   "dur": 20.0,
+   "episode": "E11",
+   "id": "26070",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/set-of-plateaus-seen-from-the-heights-in-a-sunset-26070/",
+   "phashes": [
+    4503616815763784,
+    4503608359944244,
+    13510811775566016
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S09",
+   "sha256": "f68bd55d99752181b7352640ae62e8bf70420ba73a9f7949c163d51cc0a8b3ef",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "set of plateaus seen from the heights in a sunset",
+   "updated_at": "2026-11-25T18:23:33Z"
   },
   "mixkit:26103": {
    "dur": 20.0,
@@ -2215,6 +2365,31 @@
    "title": "snowy hills with clouds",
    "updated_at": "2026-11-22T16:42:58Z"
   },
+  "mixkit:3378": {
+   "dur": 20.0,
+   "episode": "E11",
+   "id": "3378",
+   "interval": [
+    0,
+    10.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/skiers-going-down-a-canadian-mountain-3378/",
+   "phashes": [
+    3725375714547760380,
+    3684912586672632550,
+    2536495783820442811
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S07",
+   "sha256": "0fd00aa7e3724dc8023508de25e68856dbea510fe54436d10a298febe4945eb1",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "skiers going down a canadian mountain",
+   "updated_at": "2026-11-25T18:23:33Z"
+  },
   "mixkit:3386": {
    "dur": 20.1,
    "episode": "E10",
@@ -2831,6 +3006,31 @@
    "title": "landscape of a mountain range",
    "updated_at": "2026-11-22T09:08:57Z"
   },
+  "mixkit:4410": {
+   "dur": 14.1,
+   "episode": "E11",
+   "id": "4410",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sunset-on-the-coast-of-spain-4410/",
+   "phashes": [
+    9856339718602547426,
+    9223373001089671394,
+    141289406390498
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S10",
+   "sha256": "1368842ca6f66dfe55dbe54e4633cc6af5bbb9fac951f82468ff2254ee7c359e",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sunset on the coast of spain",
+   "updated_at": "2026-11-25T18:23:33Z"
+  },
   "mixkit:44271": {
    "dur": 28.4,
    "episode": "E10",
@@ -2955,6 +3155,31 @@
    "state": "reserved",
    "title": "flying over a misty mountain",
    "updated_at": "2026-11-22T09:08:57Z"
+  },
+  "mixkit:4466": {
+   "dur": 24.7,
+   "episode": "E11",
+   "id": "4466",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/sky-view-from-underwater-4466/",
+   "phashes": [
+    18012708555788791484,
+    15852669584529059516,
+    15707428496529567404
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S03",
+   "sha256": "e6040f7cebd53e8840ef4ae93a790bd715abaa05a3b8f5b3899fc8be0846a2dc",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "sky view from underwater",
+   "updated_at": "2026-11-25T18:23:33Z"
   },
   "mixkit:45263": {
    "dur": 25.2,
@@ -3155,6 +3380,31 @@
    "state": "reserved",
    "title": "cold and foggy forest landscape view",
    "updated_at": "2026-11-23T09:42:46Z"
+  },
+  "mixkit:47818": {
+   "dur": 26.0,
+   "episode": "E11",
+   "id": "47818",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/campfire-in-the-woods-at-night-47818/",
+   "phashes": [
+    3164873741833392896,
+    3164873743980876544,
+    859030732619698944
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S04",
+   "sha256": "2a2fbc759761dd7cccef5156f9a0f6f26bcb49ea773b5c7c83af70f3ae1d6a86",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "campfire in the woods at night",
+   "updated_at": "2026-11-25T18:23:33Z"
   },
   "mixkit:48109": {
    "dur": 27.6,
@@ -4100,6 +4350,31 @@
    "title": "aerial view of the ocean lakes and mountains",
    "updated_at": "2026-11-22T00:04:59Z"
   },
+  "mixkit:9968": {
+   "dur": 30.2,
+   "episode": "E11",
+   "id": "9968",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/a-clear-water-lake-in-the-mountain-9968/",
+   "phashes": [
+    14738188712815709506,
+    14738188712832485700,
+    10279633886406069583
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S12",
+   "sha256": "e268458ca6355db219a277fa0cb6a093e88fe20a42054be198a1b325f182f867",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "a clear water lake in the mountain",
+   "updated_at": "2026-11-25T18:23:33Z"
+  },
   "mixkit:9969": {
    "dur": 16.3,
    "episode": "E07",
@@ -4124,6 +4399,31 @@
    "state": "reserved",
    "title": "flight in the rocky mountains and a valley with a",
    "updated_at": "2026-11-22T11:32:03Z"
+  },
+  "wikimedia:commons-164730437": {
+   "dur": 9.9,
+   "episode": "E11",
+   "id": "commons-164730437",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "CC0/Dominio publico (Wikimedia Commons)",
+   "origin_id": null,
+   "page": "https://commons.wikimedia.org/wiki/File:Fog_fills_the_valleys_of_the_Southeast_U_S_at_night,_then_burns_off_during_the_day_(CIRA_2018-12-17).webm",
+   "phashes": [
+    5565705240293311492,
+    5565989983622740361,
+    228685642680712751
+   ],
+   "reserved_at": "2026-11-25T18:23:33Z",
+   "run_id": "45672803474",
+   "scene": "S01",
+   "sha256": "66ff4cf6b1b32d10dc865a2c989448cf22480f38bf8a2dd097b98463a888f13c",
+   "source": "wikimedia",
+   "state": "reserved",
+   "title": "fog fills the valleys of the southeast u s at night, then burns off during the day (cira 2018-12-17)",
+   "updated_at": "2026-11-25T18:23:33Z"
   }
  },
  "project": "verbo-no-chao",

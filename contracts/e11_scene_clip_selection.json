@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E11",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "45672803474",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "wikimedia",
+   "id": "commons-164730437",
+   "license": "CC0/Dominio publico (Wikimedia Commons)",
+   "page": "https://commons.wikimedia.org/wiki/File:Fog_fills_the_valleys_of_the_Southeast_U_S_at_night,_then_burns_off_during_the_day_(CIRA_2018-12-17).webm",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 9.9,
+   "note_pt": "clima dark (brilho 84.7), movimento 14.45, palavras-chave 3, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "mixkit",
+   "id": "20232",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/storm-passing-by-20232/",
+   "interval": [
+    0,
+    8.1
+   ],
+   "preview_seconds": 46.9,
+   "note_pt": "clima dark (brilho 49.5), movimento 7.3, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "4466",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sky-view-from-underwater-4466/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 24.7,
+   "note_pt": "clima dark (brilho 84.4), movimento 11.37, palavras-chave 0, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "47818",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/campfire-in-the-woods-at-night-47818/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 26.0,
+   "note_pt": "clima dark (brilho 24.1), movimento 5.47, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "2221",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/forest-disappearing-in-the-fog-2221/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 20.0,
+   "note_pt": "clima dark (brilho 113.4), movimento 2.06, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "1218",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/raft-going-slowly-down-a-river-1218/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 20.0,
+   "note_pt": "clima mid (brilho 109.0), movimento 6.61, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "3378",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/skiers-going-down-a-canadian-mountain-3378/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 20.0,
+   "note_pt": "clima mid (brilho 152.6), movimento 9.16, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "11193",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/clouds-moving-over-a-tea-plantations-11193/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 12.0,
+   "note_pt": "clima mid (brilho 153.5), movimento 3.82, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "26070",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/set-of-plateaus-seen-from-the-heights-in-a-sunset-26070/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 20.0,
+   "note_pt": "clima mid (brilho 91.8), movimento 3.31, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "4410",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/sunset-on-the-coast-of-spain-4410/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 14.1,
+   "note_pt": "clima mid (brilho 102.8), movimento 4.76, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "1764",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/forest-in-the-mountains-aerial-view-1764/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 13.6,
+   "note_pt": "clima bright (brilho 128.2), movimento 2.36, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "9968",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/a-clear-water-lake-in-the-mountain-9968/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 30.2,
+   "note_pt": "clima bright (brilho 126.2), movimento 5.43, palavras-chave 2, interpretacao=claude"
+  }
+ ]
+}
