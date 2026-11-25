@@ -44,13 +44,17 @@ def fetch_clip(c, dest):
         urls = sorted(set(re.findall(r'https://assets\.mixkit\.co/[^"\'\s<>]+?\.mp4', page)), key=lambda u: -int(re.search(r"-(\d{3,4})\.mp4", u)[1]) if re.search(r"-(\d{3,4})\.mp4", u) else 0)
     elif s == "coverr":
         urls = [f"https://cdn.coverr.co/videos/{i}/{q}.mp4" for q in ("1080p", "720p", "360p")]
+    elif s == "wikimedia":   # CC0/dominio publico; arquivo pelo nome na pagina do Commons (webm/ogv/ogg: o ffmpeg detecta pelo conteudo)
+        import urllib.parse as _up
+        fn = _up.unquote(c["page"].split("/wiki/File:", 1)[1])
+        urls = ["https://commons.wikimedia.org/wiki/Special:FilePath/" + _up.quote(fn.replace(" ", "_"))]
     else:
         raise RuntimeError("unknown_source")
     last = None
     for u in urls:
         try:
             data = get(u)
-            if len(data) < 100_000 or b"ftyp" not in data[:64]: raise RuntimeError("not_mp4")
+            if len(data) < 100_000 or (s != "wikimedia" and b"ftyp" not in data[:64]): raise RuntimeError("not_mp4")
             dest.write_bytes(data)
             return {"url_host": re.match(r"https://([^/]+)/", u)[1], "bytes": len(data)}
         except Exception as e:
