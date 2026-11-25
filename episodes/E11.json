@@ -274,19 +274,18 @@
    "text": "Atribuído a Davi, que foi pastor de ovelhas antes de ser rei.",
    "visual": {
     "meaning": "colinas de pastoreio ao amanhecer",
-    "meaning_en": "shepherd pasture hills sunny",
+    "meaning_en": "rolling green hills morning",
     "emotion": "",
     "mood": "mid",
     "queries": [
-     "sheep grazing hills",
-     "green pasture hills",
-     "meadow sunlight hills",
-     "grassy hillside sunny"
+     "misty hills morning",
+     "rolling hills clouds",
+     "green hills aerial",
+     "slow clouds hills"
     ],
     "prefer": [
-     "green",
      "hills",
-     "morning"
+     "green"
     ],
     "avoid": [
      "airplane",
@@ -784,18 +783,18 @@
    "text": "Chamar alguém de confiança para caminhar ao seu lado também ajuda.",
    "visual": {
     "meaning": "luz dourada de fim de tarde nas colinas",
-    "meaning_en": "golden hour hills",
+    "meaning_en": "golden light hills",
     "emotion": "",
-    "mood": "bright",
+    "mood": "mid",
     "queries": [
-     "sunset golden hills",
-     "warm light hills",
-     "golden hour meadow"
+     "golden light hills",
+     "sunset hills slow",
+     "sunlight meadow",
+     "warm sunset landscape"
     ],
     "prefer": [
      "sunset",
-     "golden",
-     "hills"
+     "golden"
     ],
     "avoid": [
      "airplane",
