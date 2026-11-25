@@ -7,7 +7,9 @@
   "E07": "vnc/fora2-4633536940",
   "E08": "vnc/fora3-36853dd0fa",
   "E09": "vnc/fora4-fca14a1b88",
-  "E10": "vnc/dores6-c86cdc29dd"
+  "E10": "vnc/dores6-c86cdc29dd",
+  "E11": "vnc/dores7-e8f0c55e5c",
+  "E12": "vnc/fora5-9cc7922808"
  },
  "capas": {
   "E03": "vnc/dores4-capa-8442b5ba2d",
@@ -19,7 +21,9 @@
   "E10": "vnc/dores6-capa-a49f8dd13f",
   "E01": "vnc/dores1-capa-c0da8e8f50",
   "E02": "vnc/dores2-capa-8face83c5c",
-  "E05": "vnc/dores3-capa-603fbe38aa"
+  "E05": "vnc/dores3-capa-603fbe38aa",
+  "E11": "vnc/dores7-capa-b728c61ff5",
+  "E12": "vnc/fora5-capa-c3a558d188"
  },
  "fonte_capas": "Cloudinary image/upload, verificado em run real 2026-11-23: HTTP 200, image/jpeg, tamanho igual. URL = https://res.cloudinary.com/<cloud>/image/upload/<id>.jpg; enviada ao Buffer em VideoAssetInput.thumbnailUrl",
  "seguro": {
