@@ -1,6 +1,6 @@
 {
  "episode": "E12",
- "run_id": "45676364408",
+ "run_id": "45679663930",
  "engine_version": "vnc-curadoria-2.0",
  "dry_run": false,
  "status": "BLOQUEADO",
@@ -416,22 +416,21 @@
    "end": 31.16,
    "duration": 5.23,
    "duration_source": "estimativa_palavras",
-   "meaning": "mar agitado",
+   "meaning": "mar cinzento e névoa",
    "emotion": "arco_padrao",
    "mood": "dark",
    "queries": [
-    "stormy sea waves",
-    "rough ocean waves",
-    "waves crashing rocks",
+    "gray sea fog",
+    "moody ocean clouds",
+    "foggy shore waves",
+    "dark lake rain",
     "fog",
     "mist",
     "foggy-forest",
     "morning-fog"
    ],
    "prefer": [
-    "stormy",
     "sea",
-    "waves",
     "fog",
     "mist",
     "tree"
@@ -1332,7 +1331,7 @@
     ],
     [
      "wikimedia:commons-185509475",
-     "erro/inacessivel"
+     "estatico (parece foto)"
     ],
     [
      "wikimedia:commons-185509490",
@@ -1344,11 +1343,11 @@
     ],
     [
      "wikimedia:commons-151629763",
-     "erro/inacessivel"
+     "tem cortes/saltos"
     ],
     [
      "wikimedia:commons-164188480",
-     "erro/inacessivel"
+     "curto (5.5s < 9.0s)"
     ],
     [
      "mixkit:9706",
@@ -1512,7 +1511,7 @@
     ],
     [
      "wikimedia:commons-185509475",
-     "erro/inacessivel"
+     "estatico (parece foto)"
     ],
     [
      "wikimedia:commons-185509490",
@@ -1528,15 +1527,15 @@
     ],
     [
      "wikimedia:commons-151629763",
-     "erro/inacessivel"
+     "tem cortes/saltos"
     ],
     [
      "wikimedia:commons-164188480",
-     "erro/inacessivel"
+     "curto (5.5s < 9.0s)"
     ],
     [
      "wikimedia:commons-164106394",
-     "erro/inacessivel"
+     "curto (5.5s < 9.0s)"
     ],
     [
      "wikimedia:commons-96123172",
@@ -2627,10 +2626,6 @@
      "antirrepeticao: visual_suspeito_de_mixkit:3350@E07(inconclusivo,d=9)"
     ],
     [
-     "mixkit:48824",
-     "brilho 131.7 fora do clima dark"
-    ],
-    [
      "mixkit:50943",
      "brilho 194.1 fora do clima dark"
     ],
@@ -2767,12 +2762,12 @@
      "brilho 147.2 fora do clima dark"
     ],
     [
-     "mixkit:50871",
-     "antirrepeticao: visual_suspeito_de_mixkit:3350@E07(inconclusivo,d=9)"
+     "mixkit:2221",
+     "antirrepeticao: id_ja_usado_em_E11; id_reserved_em_E11"
     ],
     [
-     "mixkit:48824",
-     "brilho 131.7 fora do clima dark"
+     "mixkit:50871",
+     "antirrepeticao: visual_suspeito_de_mixkit:3350@E07(inconclusivo,d=9)"
     ],
     [
      "mixkit:50943",
@@ -2977,6 +2972,10 @@
     [
      "mixkit:9884",
      "brilho 120.3 fora do clima dark"
+    ],
+    [
+     "mixkit:15536",
+     "brilho 126.9 fora do clima dark"
     ],
     [
      "mixkit:35078",
