@@ -359,19 +359,19 @@
    "block": "biblical_reference",
    "text": "Em Romanos, capítulo oito, Paulo fala de sofrimento: a criação geme.",
    "visual": {
-    "meaning": "mar agitado",
-    "meaning_en": "rough sea waves",
+    "meaning": "mar cinzento e névoa",
+    "meaning_en": "gray sea fog shore",
     "emotion": "",
     "mood": "dark",
     "queries": [
-     "stormy sea waves",
-     "rough ocean waves",
-     "waves crashing rocks"
+     "gray sea fog",
+     "moody ocean clouds",
+     "foggy shore waves",
+     "dark lake rain"
     ],
     "prefer": [
-     "stormy",
      "sea",
-     "waves"
+     "fog"
     ],
     "avoid": [
      "airplane",
