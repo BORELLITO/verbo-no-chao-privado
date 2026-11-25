@@ -14,8 +14,9 @@ O **id interno** (`E01`…) é só a chave estável de arquivos, hashes e regist
 | DORES DA VIDA 4 | ESPERANÇA ENTRE RUÍNAS | Lamentações 3:21–26 | E03 |
 | DORES DA VIDA 5 | DESCANSO PRA QUEM ESTÁ CANSADO | Mateus 11:28–30 | E04 |
 | DORES DA VIDA 6 | MESMO SEM COLHEITA | Habacuque 3:17–19 | E10 |
+| DORES DA VIDA 7 | O VALE QUE VOCÊ ATRAVESSA | Salmos 23:4 | E11 |
 
-Próximo: DORES DA VIDA 7 (horário fixo 12:00 BRT)
+Próximo: DORES DA VIDA 8 (horário fixo 12:00 BRT)
 
 ## QUADRO - FORA DO CONTEXTO
 
@@ -25,8 +26,9 @@ Próximo: DORES DA VIDA 7 (horário fixo 12:00 BRT)
 | FORA DO CONTEXTO 2 | PLANO DE PAZ | Jeremias 29:4–11 | E07 |
 | FORA DO CONTEXTO 3 | NÃO JULGUEIS | Mateus 7:1–5 | E08 |
 | FORA DO CONTEXTO 4 | DOIS OU TRÊS | Mateus 18:15–20 | E09 |
+| FORA DO CONTEXTO 5 | PARA O SEU BEM | Romanos 8:28 | E12 |
 
-Próximo: FORA DO CONTEXTO 5 (horário fixo 19:00 BRT)
+Próximo: FORA DO CONTEXTO 6 (horário fixo 19:00 BRT)
 
 ## Padrão de nomes no Drive
 

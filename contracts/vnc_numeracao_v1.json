@@ -85,6 +85,20 @@
    "numero": 6,
    "titulo": "MESMO SEM COLHEITA",
    "referencia": "Habacuque 3:17–19"
+  },
+  {
+   "id": "E11",
+   "quadro": "DORES",
+   "numero": 7,
+   "titulo": "O VALE QUE VOCÊ ATRAVESSA",
+   "referencia": "Salmos 23:4"
+  },
+  {
+   "id": "E12",
+   "quadro": "FORA",
+   "numero": 5,
+   "titulo": "PARA O SEU BEM",
+   "referencia": "Romanos 8:28"
   }
  ],
  "decisao_karaoke": "Definido pelo dono em 2026-11-22: karaoke LARANJA no quadro FORA DO CONTEXTO (&H0066B3FF) e LILAS no quadro DORES DA VIDA (padrao travado &H00F2B0C4, sem karaoke_color no episodio).",

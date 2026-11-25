@@ -1,0 +1,222 @@
+{
+ "episode": "E12",
+ "referencia": "Romanos 8:28",
+ "pesquisado_em": "2026-11-25",
+ "revisor": "agente-teologico (Claude); UMA fonte conferida na web (Enduring Word); 2a fonte independente PENDENTE onde indicado; ARA 8:28 e 8:29 conferidos em bibliaonline em 2026-11-25",
+ "parecer": "PENDENTE",
+ "posicoes_adotadas": {
+  "autoria": "S05/S06/S10 dizem 'Paulo', autoria paulina de Romanos e consenso academico.",
+  "quadro": "Fora do Contexto: versiculo dito para consolar e lido sem o contexto de sofrimento (8:18-27) e do v.29.",
+  "limite": "Nao diz que a dor e boa nem que o consolador errou por querer consolar; S08 apresenta a leitura mais comum do 'bem' (v.29), com cautela."
+ },
+ "autoria_consenso": [
+  "Paulo"
+ ],
+ "alegacoes": [
+  {
+   "id": "F00",
+   "cenas": [
+    "S01",
+    "S02"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO",
+   "texto": "Romanos 8:28 e uma frase muito usada para consolar na hora da dor.",
+   "versiculos": [
+    "Romanos 8:28"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Romans 8",
+     "url": "https://enduringword.com/bible-commentary/romans-8/",
+     "tipo": "comentario",
+     "nota": "8:28 Deus opera todas as coisas em conjunto, inclusive sofrimentos, sem dizer que tudo e bom; 8:29 conformidade a imagem do Filho; 8:18-25 criacao em dores de parto e esperanca"
+    }
+   ],
+   "risco": "baixo: observacao de uso comum; precisa de fonte especifica de uso popular se for citada como fato estatistico (nao e: o roteiro diz 'uma das frases mais ditas').",
+   "mitigacao": ""
+  },
+  {
+   "id": "F01",
+   "cenas": [
+    "S03"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "Citacao do versiculo ARA: todas as coisas cooperam para o bem daqueles que amam a Deus, chamados segundo o seu proposito.",
+   "versiculos": [
+    "Romanos 8:28"
+   ],
+   "palavras_chave_no_texto": [
+    "bem",
+    "propósito"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Romans 8",
+     "url": "https://enduringword.com/bible-commentary/romans-8/",
+     "tipo": "comentario",
+     "nota": "8:28 Deus opera todas as coisas em conjunto, inclusive sofrimentos, sem dizer que tudo e bom; 8:29 conformidade a imagem do Filho; 8:18-25 criacao em dores de parto e esperanca"
+    }
+   ],
+   "risco": "baixo: citacao literal conferida na ARA.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F02",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO",
+   "texto": "Quem fala assim quer consolar, mas pode ferir quem so queria ser ouvido.",
+   "versiculos": [],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Romans 8",
+     "url": "https://enduringword.com/bible-commentary/romans-8/",
+     "tipo": "comentario",
+     "nota": "8:28 Deus opera todas as coisas em conjunto, inclusive sofrimentos, sem dizer que tudo e bom; 8:29 conformidade a imagem do Filho; 8:18-25 criacao em dores de parto e esperanca"
+    }
+   ],
+   "risco": "baixo: observacao pastoral, sem afirmar culpa de ninguem.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F03",
+   "cenas": [
+    "S05",
+    "S10"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "Em Romanos 8, Paulo fala de sofrimento: a criacao geme (8:22) e os cristaos gemem e esperam (8:23-25).",
+   "versiculos": [
+    "Romanos 8:22",
+    "Romanos 8:23"
+   ],
+   "palavras_chave_no_texto": [
+    "geme",
+    "esperando"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Romans 8",
+     "url": "https://enduringword.com/bible-commentary/romans-8/",
+     "tipo": "comentario",
+     "nota": "8:28 Deus opera todas as coisas em conjunto, inclusive sofrimentos, sem dizer que tudo e bom; 8:29 conformidade a imagem do Filho; 8:18-25 criacao em dores de parto e esperanca"
+    }
+   ],
+   "risco": "baixo: cita 8:18-25; conferir palavras-chave no verso.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F04",
+   "cenas": [
+    "S06",
+    "S07"
+   ],
+   "tipo": "interpretativa",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "O versiculo afirma que Deus coopera todas as coisas para o bem, sem dizer que tudo o que acontece e bom.",
+   "versiculos": [
+    "Romanos 8:28"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Romans 8",
+     "url": "https://enduringword.com/bible-commentary/romans-8/",
+     "tipo": "comentario",
+     "nota": "8:28 Deus opera todas as coisas em conjunto, inclusive sofrimentos, sem dizer que tudo e bom; 8:29 conformidade a imagem do Filho; 8:18-25 criacao em dores de parto e esperanca"
+    }
+   ],
+   "risco": "medio: leitura interpretativa; exige 2a fonte de dominio distinto.",
+   "mitigacao": "S07 afirma so o que o texto nao diz (nao diz 'tudo e bom'); falta 2a fonte."
+  },
+  {
+   "id": "F05",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "interpretativa",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "No versiculo seguinte, o 'bem' e ser conformado a imagem do Filho (8:29), na leitura mais comum.",
+   "versiculos": [
+    "Romanos 8:29"
+   ],
+   "palavras_chave_no_texto": [
+    "imagem",
+    "Filho"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Romans 8",
+     "url": "https://enduringword.com/bible-commentary/romans-8/",
+     "tipo": "comentario",
+     "nota": "8:28 Deus opera todas as coisas em conjunto, inclusive sofrimentos, sem dizer que tudo e bom; 8:29 conformidade a imagem do Filho; 8:18-25 criacao em dores de parto e esperanca"
+    }
+   ],
+   "risco": "medio: o proprio comentario trata a ligacao 28-29 como leitura; exige 2a fonte e ajuste de S08 para 'na leitura mais comum'.",
+   "mitigacao": "Ajustar S08 para marcar leitura (ex.: 'na leitura mais comum'); falta 2a fonte."
+  },
+  {
+   "id": "F06",
+   "cenas": [
+    "S09",
+    "S11",
+    "S12"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO",
+   "texto": "Ninguem precisa fingir que a perda foi boa; a dor e real; pergunta final sem culpa.",
+   "versiculos": [
+    "Romanos 8:23"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Romans 8",
+     "url": "https://enduringword.com/bible-commentary/romans-8/",
+     "tipo": "comentario",
+     "nota": "8:28 Deus opera todas as coisas em conjunto, inclusive sofrimentos, sem dizer que tudo e bom; 8:29 conformidade a imagem do Filho; 8:18-25 criacao em dores de parto e esperanca"
+    }
+   ],
+   "risco": "baixo: aplicacao; alinhada ao gemer e esperar de 8:23-25.",
+   "mitigacao": ""
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "Doutrina da predestinacao/soberania (8:29-30)",
+   "decisao": "aceitavel",
+   "justificativa": "O episodio de 60 s trata do 'bem' como conformidade a Cristo e nao entra no debate sobre predestinacao; nenhuma cena o contradiz."
+  },
+  {
+   "item": "Risco de usar 8:28 para minimizar a dor ou culpar quem sofre",
+   "decisao": "ressalvar",
+   "justificativa": "S07, S09 e S11 afirmam que nem tudo e bom, que ninguem precisa fingir e que a dor continua real."
+  },
+  {
+   "item": "Tradicoes de traducao ('Deus faz cooperar' vs 'todas as coisas cooperam')",
+   "decisao": "aceitavel",
+   "justificativa": "A ARA e citada literalmente em S03; leitura alternativa nao muda a mensagem do episodio."
+  }
+ ],
+ "cenas_hash": {
+  "S01": "38927dab00b25574",
+  "S02": "10067047b617d25d",
+  "S03": "e7756d73cd17eed4",
+  "S04": "dac1a551d3f57e83",
+  "S05": "2094ec9953160f64",
+  "S06": "b57a97d9bfbf5f09",
+  "S07": "a0edf453d4a61182",
+  "S08": "3712cfc8002b2d7f",
+  "S09": "94760e5d272e99c6",
+  "S10": "d4d3d38c273cf4d2",
+  "S11": "64feb352ff844d89",
+  "S12": "539a2d48462ef2be"
+ }
+}

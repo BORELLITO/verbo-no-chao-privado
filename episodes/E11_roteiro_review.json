@@ -1,0 +1,34 @@
+{
+ "episode": "E11",
+ "status": "APROVADO_AUTOMATICO",
+ "issues": [],
+ "avisos": [],
+ "checks": {
+  "cenas": 12,
+  "duracao_estimada_s": 67.8,
+  "palavras": 145,
+  "duracao_final_estimada_s": 68.9,
+  "gancho": "Ninguém sabe o que você sente quando apaga a luz.",
+  "cautela_presente": true,
+  "referencia": "Salmos 23:4",
+  "texto_biblico_verificado": true,
+  "sobreposicao_lexical_biblia": 0.39,
+  "roteiro_sha": "a44f1f1e7ecff708",
+  "similaridade_E01": 0.07,
+  "similaridade_E02": 0.06,
+  "similaridade_E03": 0.08,
+  "similaridade_E04": 0.08,
+  "similaridade_E05": 0.11,
+  "similaridade_E06": 0.06,
+  "similaridade_E07": 0.09,
+  "similaridade_E08": 0.04,
+  "similaridade_E09": 0.06,
+  "similaridade_E10": 0.06,
+  "similaridade_E12": 0.07
+ },
+ "limitacoes": [
+  "validacao AUTOMATICA de regras do canal + vinculo lexical com o texto biblico; NAO e revisao teologica independente",
+  "parafrase fiel exige leitura humana/teologica: o agente so detecta ausencia de vinculo, promessas, tom e repeticao",
+  "voz e publicacao seguem dependendo do pedido/autorizacao do dono"
+ ]
+}

@@ -1,0 +1,217 @@
+{
+ "episode": "E11",
+ "referencia": "Salmos 23:4",
+ "pesquisado_em": "2026-11-25",
+ "revisor": "agente-teologico (Claude); UMA fonte conferida na web (Enduring Word); 2a fonte independente PENDENTE onde indicado; texto ARA conferido em bibliaonline em 2026-11-25",
+ "parecer": "PENDENTE",
+ "posicoes_adotadas": {
+  "autoria": "S04 diz 'Atribuido a Davi' (titulo do salmo), sem afirmar certeza.",
+  "quadro": "Dores da Vida: salmo lido na solidao e no luto; vale e passagem, nao destino.",
+  "limite": "Sem promessa de que o vale some; S09 diz 'pode acompanhar'; sem culpar quem sente medo. 'O vale e caminho, nao endereco' e sintese do verbo 'ande', nao frase do texto."
+ },
+ "alegacoes": [
+  {
+   "id": "F00",
+   "cenas": [
+    "S01",
+    "S02"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO",
+   "texto": "O salmo e lembrado em noites de solidao e perda.",
+   "versiculos": [
+    "Salmos 23:4"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Psalm 23",
+     "url": "https://enduringword.com/bible-commentary/psalm-23/",
+     "tipo": "comentario",
+     "nota": "vale: 'through', nao destino nem morada; 'He' vira 'You' no vale; cajado guia e protege; titulo 'Salmo de Davi', Davi foi pastor"
+    }
+   ],
+   "risco": "baixo: observacao de uso comum, sem numero nem acusacao.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F01",
+   "cenas": [
+    "S03",
+    "S06"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "O verbo 'ande' indica passagem pelo vale, nao permanencia.",
+   "versiculos": [
+    "Salmos 23:4"
+   ],
+   "palavras_chave_no_texto": [
+    "vale"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Psalm 23",
+     "url": "https://enduringword.com/bible-commentary/psalm-23/",
+     "tipo": "comentario",
+     "nota": "vale: 'through', nao destino nem morada; 'He' vira 'You' no vale; cajado guia e protege; titulo 'Salmo de Davi', Davi foi pastor"
+    }
+   ],
+   "risco": "baixo: leitura direta do verbo; a frase 'caminho, nao endereco' e sintese assumida.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F02",
+   "cenas": [
+    "S04"
+   ],
+   "tipo": "historica",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "O salmo traz o titulo 'de Davi', e Davi foi pastor antes de ser rei.",
+   "versiculos": [
+    "1 Samuel 16:11"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Psalm 23",
+     "url": "https://enduringword.com/bible-commentary/psalm-23/",
+     "tipo": "comentario",
+     "nota": "vale: 'through', nao destino nem morada; 'He' vira 'You' no vale; cajado guia e protege; titulo 'Salmo de Davi', Davi foi pastor"
+    }
+   ],
+   "risco": "medio: autoria vem do titulo do salmo; precisa de 2a fonte independente (enciclopedia/comentario) antes do parecer.",
+   "mitigacao": "Texto ja diz 'Atribuido a Davi'; falta 2a fonte de dominio distinto."
+  },
+  {
+   "id": "F03",
+   "cenas": [
+    "S05",
+    "S07"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "Texto: ainda que eu ande pelo vale da sombra da morte, nao temerei mal algum, porque tu estas comigo.",
+   "versiculos": [
+    "Salmos 23:4"
+   ],
+   "palavras_chave_no_texto": [
+    "vale",
+    "sombra",
+    "comigo"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Psalm 23",
+     "url": "https://enduringword.com/bible-commentary/psalm-23/",
+     "tipo": "comentario",
+     "nota": "vale: 'through', nao destino nem morada; 'He' vira 'You' no vale; cajado guia e protege; titulo 'Salmo de Davi', Davi foi pastor"
+    }
+   ],
+   "risco": "baixo: citacao direta do versiculo (ARA conferida).",
+   "mitigacao": ""
+  },
+  {
+   "id": "F04",
+   "cenas": [
+    "S08"
+   ],
+   "tipo": "textual",
+   "veredito": "SUPORTADO",
+   "texto": "Bordao e cajado sao instrumentos do pastor para guiar e proteger o rebanho.",
+   "versiculos": [
+    "Salmos 23:4"
+   ],
+   "palavras_chave_no_texto": [
+    "cajado"
+   ],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Psalm 23",
+     "url": "https://enduringword.com/bible-commentary/psalm-23/",
+     "tipo": "comentario",
+     "nota": "vale: 'through', nao destino nem morada; 'He' vira 'You' no vale; cajado guia e protege; titulo 'Salmo de Davi', Davi foi pastor"
+    }
+   ],
+   "risco": "baixo: comentaristas divergem se sao um ou dois instrumentos; roteiro nao entra nessa discussao.",
+   "mitigacao": ""
+  },
+  {
+   "id": "F05",
+   "cenas": [
+    "S09"
+   ],
+   "tipo": "interpretativa",
+   "veredito": "SUPORTADO_COM_CAUTELA",
+   "texto": "O salmo nao promete que o vale desapareca; afirma a presenca de Deus durante a passagem.",
+   "versiculos": [
+    "Salmos 23:4"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Psalm 23",
+     "url": "https://enduringword.com/bible-commentary/psalm-23/",
+     "tipo": "comentario",
+     "nota": "vale: 'through', nao destino nem morada; 'He' vira 'You' no vale; cajado guia e protege; titulo 'Salmo de Davi', Davi foi pastor"
+    }
+   ],
+   "risco": "medio: leitura interpretativa; exige 2a fonte de dominio distinto.",
+   "mitigacao": "Roteiro usa 'pode acompanhar'; S09 nao promete resultado. Falta 2a fonte."
+  },
+  {
+   "id": "F06",
+   "cenas": [
+    "S12"
+   ],
+   "tipo": "aplicacao",
+   "veredito": "SUPORTADO",
+   "texto": "Para o salmista, havia Alguem presente no vale (a mudanca de 'ele' para 'tu').",
+   "versiculos": [
+    "Salmos 23:4"
+   ],
+   "palavras_chave_no_texto": [],
+   "fontes": [
+    {
+     "titulo": "Enduring Word (Guzik), Psalm 23",
+     "url": "https://enduringword.com/bible-commentary/psalm-23/",
+     "tipo": "comentario",
+     "nota": "vale: 'through', nao destino nem morada; 'He' vira 'You' no vale; cajado guia e protege; titulo 'Salmo de Davi', Davi foi pastor"
+    }
+   ],
+   "risco": "baixo.",
+   "mitigacao": ""
+  }
+ ],
+ "omissoes_de_contexto": [
+  {
+   "item": "Sl 23 inteiro (pastor, pastos, mesa preparada, casa do Senhor)",
+   "decisao": "aceitavel",
+   "justificativa": "O episodio de 60 s foca no versiculo 4; nenhuma cena contradiz o restante do salmo."
+  },
+  {
+   "item": "Leitura 'vale da sombra da morte' como morte literal",
+   "decisao": "ressalvar",
+   "justificativa": "Roteiro usa 'vale' como passagem de dor, sem negar a leitura de morte; S10 recomenda apoio humano e a legenda inclui o CVV 188 (conferir numero em fonte oficial antes de postar)."
+  },
+  {
+   "item": "Risco de conforto raso ou promessa de que o sofrimento acaba",
+   "decisao": "ressalvar",
+   "justificativa": "S09 diz que o salmo nao diz que o vale some; usa 'pode' e 'Alguem ali'."
+  }
+ ],
+ "cenas_hash": {
+  "S01": "a4d0dc57d07f202f",
+  "S02": "5d17e6283d06f5aa",
+  "S03": "a49da2bbb13a6d11",
+  "S04": "5c33c1705fab1373",
+  "S05": "abbbb3a800a2b161",
+  "S06": "25d28397ceffc7d4",
+  "S07": "e53fa767e0d96de8",
+  "S08": "e378243c3cb0227e",
+  "S09": "af29474af60202af",
+  "S10": "1c3d509703b6868f",
+  "S11": "12e97e7a01b00907",
+  "S12": "3c9a078f60ff24ff"
+ }
+}

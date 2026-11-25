@@ -248,6 +248,88 @@
     }
    },
    "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  },
+  {
+   "id": "E11",
+   "rotulo": "DORES DA VIDA 7",
+   "quadro": "QUADRO - DORES DA VIDA",
+   "numero": 7,
+   "titulo": "O VALE QUE VOCÊ ATRAVESSA",
+   "referencia": "Salmos 23:4",
+   "hook": "Ninguém sabe o que você sente quando apaga a luz.",
+   "resumo": "Salmo 23:4: ainda que eu ande pelo vale, o salmista diz que não está sozinho. O texto fala em atravessar o vale, sem prometer que ele desaparece.",
+   "pergunta": "Quem caminhou com você no seu vale mais escuro?",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#salmo23",
+    "#doresdavida",
+    "#esperança"
+   ],
+   "legendas": {
+    "tiktok": "NINGUÉM SABE O QUE VOCÊ SENTE QUANDO APAGA A LUZ. 🕊️\n\nQuem caminhou com você no seu vale mais escuro? Conte nos comentários.\n\n#fé #palavradedeus #doresdavida #esperança",
+    "instagram": "NINGUÉM SABE O QUE VOCÊ SENTE QUANDO APAGA A LUZ. 🕊️\n\nQuem caminhou com você no seu vale mais escuro? Conte nos comentários.\n\n#fé #palavradedeus #salmo23 #doresdavida #esperança",
+    "youtube_titulo": "NINGUÉM SABE O QUE VOCÊ SENTE QUANDO APAGA A LUZ. 🕊️",
+    "youtube_descricao": "Dores da Vida, episódio 7.\n\nSalmo 23:4: ainda que eu ande pelo vale, o salmista diz que não está sozinho. O texto fala em atravessar o vale, sem prometer que ele desaparece.\n\nSalmos 23:4\n\nQuem caminhou com você no seu vale mais escuro? Conte nos comentários.\n\nInscreva-se no canal para o próximo episódio.\n\n#fé #palavradedeus #salmo23 #doresdavida #esperança #Shorts"
+   },
+   "arquivos": "NAO VERIFICADO: link da pasta no Drive nao registrado aqui (esta no indice do Drive)",
+   "sugestao_horario_brt": "2026-11-26 12:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
+  },
+  {
+   "id": "E12",
+   "rotulo": "FORA DO CONTEXTO 5",
+   "quadro": "QUADRO - FORA DO CONTEXTO",
+   "numero": 5,
+   "titulo": "PARA O SEU BEM",
+   "referencia": "Romanos 8:28",
+   "hook": "Alguém te disse que era para o seu bem enquanto você chorava?",
+   "resumo": "Romanos 8:28 é dito para consolar, mas Paulo escreve em meio ao sofrimento e liga esse bem a ser conformado à imagem de Cristo, não a tudo dar certo.",
+   "pergunta": "Que frase de consolo te doeu mais, mesmo vindo com carinho?",
+   "hashtags": [
+    "#fé",
+    "#palavradedeus",
+    "#romanos",
+    "#foradocontexto",
+    "#reflexão"
+   ],
+   "legendas": {
+    "tiktok": "ALGUÉM TE DISSE QUE ERA PARA O SEU BEM ENQUANTO VOCÊ CHORAVA? 📖\n\nQue frase de consolo te doeu mais, mesmo vindo com carinho? Conte nos comentários.\n\n#fé #palavradedeus #foradocontexto #reflexão",
+    "instagram": "ALGUÉM TE DISSE QUE ERA PARA O SEU BEM ENQUANTO VOCÊ CHORAVA? 📖\n\nQue frase de consolo te doeu mais, mesmo vindo com carinho? Conte nos comentários.\n\n#fé #palavradedeus #romanos #foradocontexto #reflexão",
+    "youtube_titulo": "ALGUÉM TE DISSE QUE ERA PARA O SEU BEM ENQUANTO VOCÊ CHORAVA? 📖",
+    "youtube_descricao": "Fora do Contexto, episódio 5.\n\nRomanos 8:28 é dito para consolar, mas Paulo escreve em meio ao sofrimento e liga esse bem a ser conformado à imagem de Cristo, não a tudo dar certo.\n\nRomanos 8:28\n\nQue frase de consolo te doeu mais, mesmo vindo com carinho? Conte nos comentários.\n\nInscreva-se no canal para o próximo episódio.\n\n#fé #palavradedeus #romanos #foradocontexto #reflexão #Shorts"
+   },
+   "arquivos": "NAO VERIFICADO: link da pasta no Drive nao registrado aqui (esta no indice do Drive)",
+   "sugestao_horario_brt": "2026-11-26 19:00",
+   "plataformas": {
+    "tiktok": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "youtube": {
+     "estado": "nao_agendado",
+     "link": null
+    },
+    "instagram": {
+     "estado": "nao_agendado",
+     "link": null
+    }
+   },
+   "aprovacao_publicacao": "PENDENTE_DO_DONO"
   }
  ]
 }
