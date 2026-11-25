@@ -1062,5 +1062,15 @@
  "_instrucoes": "Roteiro E12 (quadro Fora do Contexto, episodio 5) escrito pelo Claude em 2026-11-25 (receita V2); texto APROVADO pelo dono em 2026-11-25 13:46. Sem voz, sem video.",
  "selection": "contracts/e12_scene_clip_selection.json",
  "audio_link_file": "run/audio_link_E12.txt",
- "audio_sha256": "bd760d97497c0469c10240fe1874266bb5f612484dd1e83eebc2b83cac98e2f0"
+ "audio_sha256": "bd760d97497c0469c10240fe1874266bb5f612484dd1e83eebc2b83cac98e2f0",
+ "cover": {
+  "top": [
+   "3129",
+   5.0
+  ],
+  "bottom": [
+   "3129",
+   5.0
+  ]
+ }
 }

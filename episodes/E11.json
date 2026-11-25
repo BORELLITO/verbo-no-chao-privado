@@ -1051,5 +1051,15 @@
  "_instrucoes": "Roteiro E11 (quadro Dores da Vida, episodio 7) escrito pelo Claude em 2026-11-25 (receita V2: gancho emocional, laco aberto, fecho que ecoa o gancho); texto APROVADO pelo dono em 2026-11-25 13:46. Sem voz, sem video.",
  "selection": "contracts/e11_scene_clip_selection.json",
  "audio_link_file": "run/audio_link_E11.txt",
- "audio_sha256": "7e704b7134f41491623d083189e35a9d618b68733d66837bd67523e1b5f25145"
+ "audio_sha256": "7e704b7134f41491623d083189e35a9d618b68733d66837bd67523e1b5f25145",
+ "cover": {
+  "top": [
+   "47818",
+   3.0
+  ],
+  "bottom": [
+   "4466",
+   4.0
+  ]
+ }
 }
