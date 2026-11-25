@@ -1,6 +1,6 @@
 {
  "episode": "E11",
- "run_id": "45666215008",
+ "run_id": "45669451005",
  "engine_version": "vnc-curadoria-2.0",
  "dry_run": false,
  "status": "BLOQUEADO",
@@ -311,10 +311,10 @@
    "emotion": "arco_padrao",
    "mood": "mid",
    "queries": [
-    "sheep grazing hills",
-    "green pasture hills",
-    "meadow sunlight hills",
-    "grassy hillside sunny",
+    "misty hills morning",
+    "rolling hills clouds",
+    "green hills aerial",
+    "slow clouds hills",
     "candle",
     "candles",
     "fire",
@@ -325,9 +325,8 @@
     "lantern"
    ],
    "prefer": [
-    "green",
     "hills",
-    "morning",
+    "green",
     "candle",
     "flame",
     "fire"
@@ -897,11 +896,12 @@
    "duration_source": "estimativa_palavras",
    "meaning": "luz dourada de fim de tarde nas colinas",
    "emotion": "agitacao",
-   "mood": "bright",
+   "mood": "mid",
    "queries": [
-    "sunset golden hills",
-    "warm light hills",
-    "golden hour meadow",
+    "golden light hills",
+    "sunset hills slow",
+    "sunlight meadow",
+    "warm sunset landscape",
     "hands",
     "hand",
     "praying",
@@ -911,13 +911,11 @@
     "ocean",
     "candle",
     "candles",
-    "flame",
-    "campfire"
+    "flame"
    ],
    "prefer": [
     "sunset",
     "golden",
-    "hills",
     "hands",
     "holding",
     "hand",
@@ -1247,20 +1245,12 @@
      "curto (2.4s < 9.0s)"
     ],
     [
-     "wikimedia:commons-164730437",
-     "erro/inacessivel"
-    ],
-    [
-     "wikimedia:commons-164732309",
-     "erro/inacessivel"
-    ],
-    [
      "mixkit:32524",
      "brilho 139.5 fora do clima dark"
     ],
     [
      "wikimedia:commons-180095087",
-     "erro/inacessivel"
+     "brilho 129.2 fora do clima dark"
     ],
     [
      "wikimedia:commons-180094982",
@@ -1349,218 +1339,6 @@
     [
      "mixkit:20231",
      "brilho 119.6 fora do clima dark"
-    ],
-    [
-     "mixkit:1704",
-     "visual: classe vetada 'people' (0.79 > 0.7)"
-    ],
-    [
-     "mixkit:9704",
-     "visual: classe vetada 'indoor' (0.86 > 0.8)"
-    ],
-    [
-     "mixkit:9706",
-     "visual: classe vetada 'indoor' (0.91 > 0.8)"
-    ],
-    [
-     "mixkit:27134",
-     "visual: classe vetada 'indoor' (0.85 > 0.8)"
-    ],
-    [
-     "mixkit:2738",
-     "visual: classe vetada 'indoor' (0.81 > 0.8)"
-    ],
-    [
-     "mixkit:20229",
-     "visual: classe vetada 'indoor' (0.87 > 0.8)"
-    ],
-    [
-     "mixkit:5591",
-     "visual: classe vetada 'indoor' (0.87 > 0.8)"
-    ],
-    [
-     "wikimedia:commons-179545958",
-     "curto (2.4s < 9.0s)"
-    ],
-    [
-     "wikimedia:commons-179545973",
-     "curto (2.4s < 9.0s)"
-    ],
-    [
-     "wikimedia:commons-164730437",
-     "erro/inacessivel"
-    ],
-    [
-     "wikimedia:commons-164732309",
-     "erro/inacessivel"
-    ],
-    [
-     "mixkit:32524",
-     "brilho 139.5 fora do clima dark"
-    ],
-    [
-     "wikimedia:commons-180095087",
-     "erro/inacessivel"
-    ],
-    [
-     "wikimedia:commons-180094982",
-     "brilho 128.2 fora do clima dark"
-    ],
-    [
-     "mixkit:22729",
-     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
-    ],
-    [
-     "mixkit:4422",
-     "brilho 18.5 fora do clima dark"
-    ],
-    [
-     "mixkit:2187",
-     "vertical (padrao e paisagem)"
-    ],
-    [
-     "mixkit:22728",
-     "antirrepeticao: id_ja_usado_em_E10"
-    ],
-    [
-     "mixkit:2844",
-     "brilho 134.2 fora do clima dark"
-    ],
-    [
-     "mixkit:2207",
-     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
-    ],
-    [
-     "mixkit:35548",
-     "antirrepeticao: id_reserved_em_E09"
-    ],
-    [
-     "mixkit:17287",
-     "brilho 198.7 fora do clima dark"
-    ],
-    [
-     "wikimedia:commons-185509475",
-     "erro/inacessivel"
-    ],
-    [
-     "wikimedia:commons-185509490",
-     "erro/inacessivel"
-    ],
-    [
-     "mixkit:4148",
-     "antirrepeticao: visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=8); visual_suspeito_de_mixkit:34999@E05(inconclusivo,d=9)"
-    ],
-    [
-     "mixkit:4064",
-     "movimento frenetico"
-    ],
-    [
-     "mixkit:39770",
-     "vertical (padrao e paisagem)"
-    ],
-    [
-     "mixkit:20233",
-     "brilho 124.7 fora do clima dark"
-    ],
-    [
-     "mixkit:47299",
-     "brilho 3.4 fora do clima dark"
-    ],
-    [
-     "mixkit:9606",
-     "antirrepeticao: id_ja_usado_em_E04; visual_suspeito_de_mixkit:8335@E04(inconclusivo,d=7); id_reserved_em_E04"
-    ],
-    [
-     "mixkit:32592",
-     "movimento frenetico"
-    ],
-    [
-     "mixkit:18736",
-     "brilho 139.4 fora do clima dark"
-    ],
-    [
-     "mixkit:18229",
-     "antirrepeticao: id_ja_usado_em_E07"
-    ],
-    [
-     "mixkit:21148",
-     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
-    ],
-    [
-     "mixkit:20230",
-     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
-    ],
-    [
-     "mixkit:21106",
-     "movimento frenetico"
-    ],
-    [
-     "mixkit:20231",
-     "brilho 119.6 fora do clima dark"
-    ],
-    [
-     "mixkit:20576",
-     "movimento frenetico"
-    ],
-    [
-     "mixkit:17145",
-     "movimento frenetico"
-    ],
-    [
-     "mixkit:18310",
-     "sem correspondencia narrativa minima (tema 'tree' fora de ['cloud', 'dark', 'drop', 'fog', 'mist', 'mountain', 'night', 'rain', 'valley'])"
-    ],
-    [
-     "mixkit:47948",
-     "tem cortes/saltos"
-    ],
-    [
-     "mixkit:118",
-     "antirrepeticao: visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=8); visual_suspeito_de_mixkit:31746@E06(inconclusivo,d=10)"
-    ],
-    [
-     "mixkit:47698",
-     "tem cortes/saltos"
-    ],
-    [
-     "wikimedia:commons-151629763",
-     "erro/inacessivel"
-    ],
-    [
-     "mixkit:4433",
-     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'dark', 'drop', 'fog', 'mist', 'mountain', 'night', 'rain', 'valley'])"
-    ],
-    [
-     "mixkit:4281",
-     "curto (4.4s < 9.0s)"
-    ],
-    [
-     "mixkit:1610",
-     "sem correspondencia narrativa minima (tema 'star' fora de ['cloud', 'dark', 'drop', 'fog', 'mist', 'mountain', 'night', 'rain', 'valley'])"
-    ],
-    [
-     "mixkit:830",
-     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'dark', 'drop', 'fog', 'mist', 'mountain', 'night', 'rain', 'valley'])"
-    ],
-    [
-     "mixkit:4188",
-     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'dark', 'drop', 'fog', 'mist', 'mountain', 'night', 'rain', 'valley'])"
-    ],
-    [
-     "mixkit:4026",
-     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'dark', 'drop', 'fog', 'mist', 'mountain', 'night', 'rain', 'valley'])"
-    ],
-    [
-     "mixkit:44766",
-     "vertical (padrao e paisagem)"
-    ],
-    [
-     "mixkit:3741",
-     "vertical (padrao e paisagem)"
-    ],
-    [
-     "mixkit:3686",
-     "movimento frenetico"
     ],
     [
      "mixkit:1704",
@@ -1686,7 +1464,7 @@
     ],
     [
      "wikimedia:commons-171968662",
-     "erro/inacessivel"
+     "movimento frenetico"
     ],
     [
      "wikimedia:commons-82362515",
@@ -1694,10 +1472,6 @@
     ],
     [
      "wikimedia:commons-171080061",
-     "erro/inacessivel"
-    ],
-    [
-     "wikimedia:commons-144795482",
      "erro/inacessivel"
     ],
     [
@@ -1878,7 +1652,7 @@
     ],
     [
      "wikimedia:commons-171968662",
-     "erro/inacessivel"
+     "movimento frenetico"
     ],
     [
      "wikimedia:commons-82362515",
@@ -1886,10 +1660,6 @@
     ],
     [
      "wikimedia:commons-171080061",
-     "erro/inacessivel"
-    ],
-    [
-     "wikimedia:commons-144795482",
      "erro/inacessivel"
     ],
     [
@@ -2305,6 +2075,14 @@
      "brilho 9.8 fora do clima mid"
     ],
     [
+     "mixkit:11291",
+     "antirrepeticao: id_ja_usado_em_E02; id_confirmed_em_E02"
+    ],
+    [
+     "mixkit:44647",
+     "curto (7.5s < 8.0s)"
+    ],
+    [
      "mixkit:3458",
      "vertical (padrao e paisagem)"
     ],
@@ -2397,14 +2175,6 @@
      "movimento frenetico"
     ],
     [
-     "mixkit:42781",
-     "brilho 45.9 fora do clima mid"
-    ],
-    [
-     "mixkit:52285",
-     "vertical (padrao e paisagem)"
-    ],
-    [
      "wikimedia:commons-165950358",
      "erro/inacessivel"
     ],
@@ -2447,6 +2217,14 @@
     [
      "mixkit:7149",
      "brilho 9.8 fora do clima mid"
+    ],
+    [
+     "mixkit:11291",
+     "antirrepeticao: id_ja_usado_em_E02; id_confirmed_em_E02"
+    ],
+    [
+     "mixkit:44647",
+     "curto (7.5s < 8.0s)"
     ],
     [
      "mixkit:3458",
@@ -2601,19 +2379,7 @@
      "brilho 48.6 fora do clima mid"
     ],
     [
-     "mixkit:47311",
-     "brilho 22.9 fora do clima mid"
-    ],
-    [
-     "mixkit:9258",
-     "brilho 6.3 fora do clima mid"
-    ],
-    [
      "wikimedia:commons-165950358",
-     "erro/inacessivel"
-    ],
-    [
-     "wikimedia:commons-147217308",
      "erro/inacessivel"
     ],
     [
@@ -2626,6 +2392,10 @@
     ],
     [
      "wikimedia:commons-21473974",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-44833308",
      "erro/inacessivel"
     ],
     [
@@ -3689,10 +3459,6 @@
    ],
    "S10": [
     [
-     "mixkit:28035",
-     "brilho 60.9 fora do clima bright"
-    ],
-    [
      "mixkit:8864",
      "movimento frenetico"
     ],
@@ -3718,7 +3484,7 @@
     ],
     [
      "mixkit:48919",
-     "brilho 23.6 fora do clima bright"
+     "brilho 23.6 fora do clima mid"
     ],
     [
      "mixkit:3438",
@@ -3726,7 +3492,7 @@
     ],
     [
      "mixkit:6925",
-     "brilho 20.1 fora do clima bright"
+     "brilho 20.1 fora do clima mid"
     ],
     [
      "mixkit:34467",
@@ -3742,7 +3508,7 @@
     ],
     [
      "mixkit:50775",
-     "brilho 54.7 fora do clima bright"
+     "brilho 54.7 fora do clima mid"
     ],
     [
      "wikimedia:commons-126263576",
@@ -3750,14 +3516,6 @@
     ],
     [
      "wikimedia:commons-126263575",
-     "erro/inacessivel"
-    ],
-    [
-     "mixkit:30257",
-     "brilho 11.2 fora do clima bright"
-    ],
-    [
-     "wikimedia:commons-165930018",
      "erro/inacessivel"
     ],
     [
@@ -3770,7 +3528,7 @@
     ],
     [
      "wikimedia:commons-62305786",
-     "erro/inacessivel"
+     "curto (3.9s < 9.0s)"
     ],
     [
      "wikimedia:commons-195820085",
@@ -3778,15 +3536,11 @@
     ],
     [
      "mixkit:1082",
-     "brilho 77.2 fora do clima bright"
-    ],
-    [
-     "mixkit:1183",
-     "vertical (padrao e paisagem)"
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
     ],
     [
      "mixkit:4466",
-     "brilho 84.4 fora do clima bright"
+     "sem correspondencia narrativa minima (tema 'sky' fora de ['candle', 'fire', 'flame', 'hand', 'hill', 'meadow', 'ocean', 'sea', 'storm', 'sun', 'wave'])"
     ],
     [
      "mixkit:1197",
@@ -3794,7 +3548,7 @@
     ],
     [
      "mixkit:4021",
-     "brilho 68.6 fora do clima bright"
+     "sem correspondencia narrativa minima (tema 'None' fora de ['candle', 'fire', 'flame', 'hand', 'hill', 'meadow', 'ocean', 'sea', 'storm', 'sun', 'wave'])"
     ],
     [
      "mixkit:1774",
@@ -3802,7 +3556,7 @@
     ],
     [
      "mixkit:15209",
-     "brilho 87.3 fora do clima bright"
+     "antirrepeticao: visual_igual_a_coverr:coverr-raindrops-on-the-window-7102@E01(d=6); visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=7); visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=10); visual_suspeito_de_mixkit:28342@E10(inconclusivo,d=8); visual_suspeito_de_mixkit:3976@E08(inconclusivo,d=10); visual_suspeito_de_mixkit:51433@E03(inconclusivo,d=10); visual_suspeito_de_mixkit:9779@E08(inconclusivo,d=7)"
     ],
     [
      "mixkit:3458",
@@ -3814,19 +3568,23 @@
     ],
     [
      "mixkit:3461",
-     "brilho 12.6 fora do clima bright"
+     "brilho 12.6 fora do clima mid"
     ],
     [
      "mixkit:34203",
-     "brilho 24.0 fora do clima bright"
+     "brilho 24.0 fora do clima mid"
     ],
     [
      "mixkit:48498",
-     "brilho 12.4 fora do clima bright"
+     "brilho 12.4 fora do clima mid"
     ],
     [
-     "mixkit:4266",
-     "visual: classe vetada 'indoor' (0.82 > 0.8)"
+     "mixkit:3453",
+     "brilho 13.2 fora do clima mid"
+    ],
+    [
+     "wikimedia:commons-173935900",
+     "erro/inacessivel"
     ],
     [
      "mixkit:17426",
@@ -3834,7 +3592,7 @@
     ],
     [
      "mixkit:28035",
-     "brilho 60.9 fora do clima bright"
+     "visual: classe vetada 'indoor' (0.84 > 0.8)"
     ],
     [
      "mixkit:8864",
@@ -3862,7 +3620,7 @@
     ],
     [
      "mixkit:48919",
-     "brilho 23.6 fora do clima bright"
+     "brilho 23.6 fora do clima mid"
     ],
     [
      "mixkit:3438",
@@ -3870,7 +3628,7 @@
     ],
     [
      "mixkit:6925",
-     "brilho 20.1 fora do clima bright"
+     "brilho 20.1 fora do clima mid"
     ],
     [
      "mixkit:34467",
@@ -3886,7 +3644,7 @@
     ],
     [
      "mixkit:50775",
-     "brilho 54.7 fora do clima bright"
+     "brilho 54.7 fora do clima mid"
     ],
     [
      "wikimedia:commons-126263576",
@@ -3894,14 +3652,6 @@
     ],
     [
      "wikimedia:commons-126263575",
-     "erro/inacessivel"
-    ],
-    [
-     "mixkit:30257",
-     "brilho 11.2 fora do clima bright"
-    ],
-    [
-     "wikimedia:commons-165930018",
      "erro/inacessivel"
     ],
     [
@@ -3914,7 +3664,7 @@
     ],
     [
      "wikimedia:commons-62305786",
-     "erro/inacessivel"
+     "curto (3.9s < 9.0s)"
     ],
     [
      "wikimedia:commons-195820085",
@@ -3922,15 +3672,11 @@
     ],
     [
      "mixkit:1082",
-     "brilho 77.2 fora do clima bright"
-    ],
-    [
-     "mixkit:1183",
-     "vertical (padrao e paisagem)"
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
     ],
     [
      "mixkit:4466",
-     "brilho 84.4 fora do clima bright"
+     "sem correspondencia narrativa minima (tema 'sky' fora de ['candle', 'fire', 'flame', 'hand', 'hill', 'meadow', 'ocean', 'sea', 'storm', 'sun', 'wave'])"
     ],
     [
      "mixkit:1197",
@@ -3938,7 +3684,7 @@
     ],
     [
      "mixkit:4021",
-     "brilho 68.6 fora do clima bright"
+     "sem correspondencia narrativa minima (tema 'None' fora de ['candle', 'fire', 'flame', 'hand', 'hill', 'meadow', 'ocean', 'sea', 'storm', 'sun', 'wave'])"
     ],
     [
      "mixkit:1774",
@@ -3946,7 +3692,7 @@
     ],
     [
      "mixkit:15209",
-     "brilho 87.3 fora do clima bright"
+     "antirrepeticao: visual_igual_a_coverr:coverr-raindrops-on-the-window-7102@E01(d=6); visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=7); visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=10); visual_suspeito_de_mixkit:28342@E10(inconclusivo,d=8); visual_suspeito_de_mixkit:3976@E08(inconclusivo,d=10); visual_suspeito_de_mixkit:51433@E03(inconclusivo,d=10); visual_suspeito_de_mixkit:9779@E08(inconclusivo,d=7)"
     ],
     [
      "mixkit:3458",
@@ -3958,19 +3704,19 @@
     ],
     [
      "mixkit:3461",
-     "brilho 12.6 fora do clima bright"
+     "brilho 12.6 fora do clima mid"
     ],
     [
      "mixkit:34203",
-     "brilho 24.0 fora do clima bright"
+     "brilho 24.0 fora do clima mid"
     ],
     [
      "mixkit:48498",
-     "brilho 12.4 fora do clima bright"
+     "brilho 12.4 fora do clima mid"
     ],
     [
      "mixkit:3453",
-     "brilho 13.2 fora do clima bright"
+     "brilho 13.2 fora do clima mid"
     ],
     [
      "wikimedia:commons-173935900",
@@ -3978,7 +3724,7 @@
     ],
     [
      "wikimedia:commons-91718248",
-     "brilho 5.1 fora do clima bright"
+     "brilho 5.1 fora do clima mid"
     ],
     [
      "mixkit:52284",
@@ -3998,7 +3744,7 @@
     ],
     [
      "mixkit:3767",
-     "brilho 34.9 fora do clima bright"
+     "brilho 34.9 fora do clima mid"
     ],
     [
      "mixkit:52297",
@@ -4006,15 +3752,15 @@
     ],
     [
      "mixkit:52303",
-     "brilho 18.4 fora do clima bright"
+     "brilho 18.4 fora do clima mid"
     ],
     [
      "mixkit:3759",
-     "brilho 8.6 fora do clima bright"
+     "brilho 8.6 fora do clima mid"
     ],
     [
      "mixkit:17776",
-     "brilho 3.7 fora do clima bright"
+     "brilho 3.7 fora do clima mid"
     ],
     [
      "mixkit:3758",
@@ -4037,16 +3783,24 @@
      "vertical (padrao e paisagem)"
     ],
     [
-     "wikimedia:commons-165950358",
+     "mixkit:52314",
+     "movimento frenetico"
+    ],
+    [
+     "wikimedia:commons-184610568",
      "erro/inacessivel"
     ],
     [
-     "mixkit:4266",
-     "visual: classe vetada 'indoor' (0.82 > 0.8)"
+     "wikimedia:commons-89123664",
+     "erro/inacessivel"
     ],
     [
      "mixkit:17426",
      "visual: classe vetada 'indoor' (0.95 > 0.8)"
+    ],
+    [
+     "mixkit:28035",
+     "visual: classe vetada 'indoor' (0.84 > 0.8)"
     ]
    ],
    "S11": [
