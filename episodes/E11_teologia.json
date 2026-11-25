@@ -2,8 +2,8 @@
  "episode": "E11",
  "referencia": "Salmos 23:4",
  "pesquisado_em": "2026-11-25",
- "revisor": "agente-teologico (Claude); UMA fonte conferida na web (Enduring Word); 2a fonte independente PENDENTE onde indicado; texto ARA conferido em bibliaonline em 2026-11-25",
- "parecer": "PENDENTE",
+ "revisor": "agente-teologico (Claude); fontes conferidas na web em 2026-11-25; texto ARA conferido em bibliaonline",
+ "parecer": "APROVADO",
  "posicoes_adotadas": {
   "autoria": "S04 diz 'Atribuido a Davi' (titulo do salmo), sem afirmar certeza.",
   "quadro": "Dores da Vida: salmo lido na solidao e no luto; vale e passagem, nao destino.",
@@ -78,10 +78,16 @@
      "url": "https://enduringword.com/bible-commentary/psalm-23/",
      "tipo": "comentario",
      "nota": "vale: 'through', nao destino nem morada; 'He' vira 'You' no vale; cajado guia e protege; titulo 'Salmo de Davi', Davi foi pastor"
+    },
+    {
+     "titulo": "Cambridge Bible for Schools, Psalm 23 (Bible Hub)",
+     "url": "https://biblehub.com/commentaries/cambridge/psalms/23.htm",
+     "tipo": "comentario",
+     "nota": "titulo 'Salmo de Davi'; figura natural para o rei-pastor; muitos veem vv.1-4 baseados na vida de pastor"
     }
    ],
    "risco": "medio: autoria vem do titulo do salmo; precisa de 2a fonte independente (enciclopedia/comentario) antes do parecer.",
-   "mitigacao": "Texto ja diz 'Atribuido a Davi'; falta 2a fonte de dominio distinto."
+   "mitigacao": "Texto ja diz 'Atribuido a Davi'; 2 fontes de dominios distintos conferidas em 2026-11-25."
   },
   {
    "id": "F03",
@@ -154,10 +160,16 @@
      "url": "https://enduringword.com/bible-commentary/psalm-23/",
      "tipo": "comentario",
      "nota": "vale: 'through', nao destino nem morada; 'He' vira 'You' no vale; cajado guia e protege; titulo 'Salmo de Davi', Davi foi pastor"
+    },
+    {
+     "titulo": "Matthew Henry, Psalm 23 (kingjamesbibleonline.org)",
+     "url": "https://www.kingjamesbibleonline.org/Psalms-23-kjv/",
+     "tipo": "comentario",
+     "nota": "e uma caminhada 'through' o vale: nao se perdem nele"
     }
    ],
    "risco": "medio: leitura interpretativa; exige 2a fonte de dominio distinto.",
-   "mitigacao": "Roteiro usa 'pode acompanhar'; S09 nao promete resultado. Falta 2a fonte."
+   "mitigacao": "Roteiro usa 'pode acompanhar'; S09 nao promete que o vale some; 2 fontes conferidas."
   },
   {
    "id": "F06",

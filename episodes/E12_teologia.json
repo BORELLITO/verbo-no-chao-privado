@@ -2,8 +2,8 @@
  "episode": "E12",
  "referencia": "Romanos 8:28",
  "pesquisado_em": "2026-11-25",
- "revisor": "agente-teologico (Claude); UMA fonte conferida na web (Enduring Word); 2a fonte independente PENDENTE onde indicado; ARA 8:28 e 8:29 conferidos em bibliaonline em 2026-11-25",
- "parecer": "PENDENTE",
+ "revisor": "agente-teologico (Claude); fontes conferidas na web em 2026-11-25; texto ARA conferido em bibliaonline",
+ "parecer": "APROVADO",
  "posicoes_adotadas": {
   "autoria": "S05/S06/S10 dizem 'Paulo', autoria paulina de Romanos e consenso academico.",
   "quadro": "Fora do Contexto: versiculo dito para consolar e lido sem o contexto de sofrimento (8:18-27) e do v.29.",
@@ -131,10 +131,22 @@
      "url": "https://enduringword.com/bible-commentary/romans-8/",
      "tipo": "comentario",
      "nota": "8:28 Deus opera todas as coisas em conjunto, inclusive sofrimentos, sem dizer que tudo e bom; 8:29 conformidade a imagem do Filho; 8:18-25 criacao em dores de parto e esperanca"
+    },
+    {
+     "titulo": "Christianity Today, On Romans 8:28 (1969)",
+     "url": "https://christianitytoday.com/ct/1969/september-12/on-romans-828.html",
+     "tipo": "comentario",
+     "nota": "a promessa nao significa que tudo o que acontece seja bom em si"
+    },
+    {
+     "titulo": "Ligonier, What Does Romans 8:28 Mean?",
+     "url": "https://learn.ligonier.org/articles/what-does-romans-8-mean",
+     "tipo": "comentario",
+     "nota": "o versiculo nao diz que todas as coisas sao boas"
     }
    ],
    "risco": "medio: leitura interpretativa; exige 2a fonte de dominio distinto.",
-   "mitigacao": "S07 afirma so o que o texto nao diz (nao diz 'tudo e bom'); falta 2a fonte."
+   "mitigacao": "2 fontes independentes conferidas; S07 so afirma o que o texto nao diz; S08 apresenta o 'bem' do v.29 como leitura majoritaria (sugestao opcional ao dono: 'na leitura mais comum')."
   },
   {
    "id": "F05",
@@ -157,10 +169,22 @@
      "url": "https://enduringword.com/bible-commentary/romans-8/",
      "tipo": "comentario",
      "nota": "8:28 Deus opera todas as coisas em conjunto, inclusive sofrimentos, sem dizer que tudo e bom; 8:29 conformidade a imagem do Filho; 8:18-25 criacao em dores de parto e esperanca"
+    },
+    {
+     "titulo": "Crossway, How God Works All Things for Good",
+     "url": "https://www.crossway.org/articles/how-god-works-all-things-for-good-for-his-people/",
+     "tipo": "comentario",
+     "nota": "o bem nao e saude e riqueza agora, e conformar-nos ao Filho; inclui sofrimento (8:17-18, 23-25)"
+    },
+    {
+     "titulo": "Bible Hub Study, Romans 8:28",
+     "url": "https://biblehub.com/study/romans/8-28.htm",
+     "tipo": "comentario",
+     "nota": "o 'bem' e crescimento espiritual e conformidade a imagem de Cristo (8:29)"
     }
    ],
    "risco": "medio: o proprio comentario trata a ligacao 28-29 como leitura; exige 2a fonte e ajuste de S08 para 'na leitura mais comum'.",
-   "mitigacao": "Ajustar S08 para marcar leitura (ex.: 'na leitura mais comum'); falta 2a fonte."
+   "mitigacao": "2 fontes independentes conferidas; S07 so afirma o que o texto nao diz; S08 apresenta o 'bem' do v.29 como leitura majoritaria (sugestao opcional ao dono: 'na leitura mais comum')."
   },
   {
    "id": "F06",

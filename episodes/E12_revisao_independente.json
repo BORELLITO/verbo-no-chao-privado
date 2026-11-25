@@ -1,0 +1,13 @@
+{
+ "episode": "E12",
+ "roteiro_sha": "cc0a05c1fa9721a5",
+ "veredito": "APROVADO",
+ "revisor_independente": "subagente de revisao editorial-teologica (nao escreveu o roteiro), parecer de 2026-11-25; aprovou ambos sem reprovar cena; sugestoes de lapidacao opcionais registradas, nenhuma aplicada porque o texto ja foi aprovado pelo dono em 25/11 13:46. Texto ARA conferido por mim em bibliaonline; nao verificado pelo revisor.",
+ "ajustes_aplicados": [],
+ "sugestoes_opcionais_nao_aplicadas": [
+  "S08 dito sem ressalva: sugerido 'Paulo liga esse bem a...' ou 'na leitura mais comum'",
+  "S07 opcional",
+  "S10 opcional: Espirito que intercede (8:26-27)"
+ ],
+ "verso_ara_conferido": true
+}

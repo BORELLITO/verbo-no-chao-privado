@@ -1,0 +1,14 @@
+{
+ "episode": "E11",
+ "roteiro_sha": "a44f1f1e7ecff708",
+ "veredito": "APROVADO",
+ "revisor_independente": "subagente de revisao editorial-teologica (nao escreveu o roteiro), parecer de 2026-11-25; aprovou ambos sem reprovar cena; sugestoes de lapidacao opcionais registradas, nenhuma aplicada porque o texto ja foi aprovado pelo dono em 25/11 13:46. Texto ARA conferido por mim em bibliaonline; nao verificado pelo revisor.",
+ "ajustes_aplicados": [],
+ "sugestoes_opcionais_nao_aplicadas": [
+  "S09 'pode acompanhar' poderia afirmar presenca ('o salmista nao esta sozinho')",
+  "S08 funcao de bordao/cajado e leitura comum",
+  "S10 marcar como aplicacao; CVV 188 na legenda",
+  "locucao de S06 sem sugerir 'seguir andando' sem direito de parar"
+ ],
+ "verso_ara_conferido": true
+}

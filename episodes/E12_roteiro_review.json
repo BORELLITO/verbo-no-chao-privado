@@ -1,6 +1,6 @@
 {
  "episode": "E12",
- "status": "PENDENTE_REVISAO_INDEPENDENTE",
+ "status": "APROVADO_AUTOMATICO",
  "issues": [],
  "avisos": [],
  "checks": {
@@ -27,7 +27,7 @@
   "similaridade_E09": 0.1,
   "similaridade_E10": 0.09,
   "similaridade_E11": 0.07,
-  "revisao_independente": "ausente"
+  "revisao_independente": "ok"
  },
  "limitacoes": [
   "validacao AUTOMATICA de regras do canal + vinculo lexical com o texto biblico; NAO e revisao teologica independente",
