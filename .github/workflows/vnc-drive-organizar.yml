@@ -1,0 +1,32 @@
+name: VNC Drive organizar (ESTOQUE e POSTADOS; so com liberacao do dono)
+# Entrada: run/drive.json {"mode":"listar|organizar","estoque":[...],"postados":[...],"liberado_pelo_dono":true,"nonce":"..."}. Move pastas inteiras de episodio; nao apaga nem publica nada. Sem cron.
+on:
+  push:
+    branches: ["main"]
+    paths: ["run/drive.json"]
+permissions:
+  contents: read
+concurrency:
+  group: vnc-drive-organizar
+  cancel-in-progress: false
+jobs:
+  drive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar rclone
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq rclone
+      - name: Drive
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+        run: |
+          MODE="$(python3 -c 'import json;m=json.load(open("run/drive.json")).get("mode","listar");from agents.vnc_drive_organizar import MODOS;assert m in MODOS;print(m)')"
+          python3 -m agents.vnc_drive_organizar "$MODE"
