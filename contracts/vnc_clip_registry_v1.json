@@ -1333,6 +1333,16 @@
    "license": "Mixkit Music Free License",
    "content_id_checked": false,
    "rule_pt": "não repetir a mesma trilha em outro episódio"
+  },
+  {
+   "episode": "E12",
+   "title": "Free Rebecca On The Shore Stock Music",
+   "provider": "mixkit",
+   "mixkit_id": "545",
+   "page": "https://mixkit.co/free-stock-music/rebecca-on-the-shore/",
+   "license": "Mixkit Music Free License",
+   "content_id_checked": false,
+   "rule_pt": "não repetir a mesma trilha em outro episódio"
   }
  ]
 }
