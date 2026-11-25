@@ -371,6 +371,7 @@ def run(ep, mode=None):
             if time.time() - t0 > 900:
                 break
             for src in sources:
+                if src == "wikimedia" and cfg.get("sem_wikimedia"): continue   # episodio pede so Mixkit (Wikimedia traz satelite/animacao, nao paisagem filmada)
                 for e in list_kw(src, k):
                     ok, hit = title_ok(e["title"], unit.get("allow", ()), unit.get("avoid", ()))
                     pk = f"{e['source']}:{e['id']}"
