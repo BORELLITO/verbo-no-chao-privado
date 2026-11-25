@@ -33,7 +33,7 @@ def plano(cfg, root=ROOT):
             except KeyError as e:
                 raise DriveOrgError(str(e)) from None
             movs.append({"ep": ep, "quadro": quadro, "pasta": pasta, "destino": nome,
-                         "de": f"{D.ROOT_NAME}/{quadro}/{pasta}", "para": f"{D.ROOT_NAME}/{nome}/{quadro}/{pasta}"})
+                         "de": f"{D.ROOT_NAME}/{quadro}/{pasta}", "de_estoque": f"{D.ROOT_NAME}/ESTOQUE/{quadro}/{pasta}", "para": f"{D.ROOT_NAME}/{nome}/{quadro}/{pasta}"})
     if not movs:
         raise DriveOrgError("nada a mover: informe 'estoque' e/ou 'postados'")
     return movs
@@ -67,10 +67,11 @@ def organizar(cfg, env, movs):
     for m in movs:
         if _existe(m["para"], env):
             res.append({**m, "resultado": "ja_estava_no_destino"}); continue
-        if not _existe(m["de"], env):
+        origem = next((o for o in (m["de_estoque"], m["de"]) if _existe(o, env)), None)  # novo (ESTOQUE) ou legado (raiz do quadro)
+        if origem is None:
             res.append({**m, "resultado": "origem_nao_encontrada_pelo_app"}); continue
         D.rc(["mkdir", f"gd:{D.ROOT_NAME}/{m['destino']}/{m['quadro']}"], env)
-        D.rc(["moveto", f"gd:{m['de']}", f"gd:{m['para']}"], env)
+        D.rc(["moveto", f"gd:{origem}", f"gd:{m['para']}"], env)
         res.append({**m, "resultado": "movido"})
     return res
 

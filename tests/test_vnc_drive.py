@@ -22,5 +22,9 @@ class Plan(unittest.TestCase):
         e = D.rclone_env({"GDRIVE_CLIENT_ID": "i", "GDRIVE_CLIENT_SECRET": "s", "GDRIVE_REFRESH_TOKEN": "r"})
         self.assertEqual(e["RCLONE_CONFIG_GD_SCOPE"], "drive.file"); self.assertIn('"refresh_token": "r"', e["RCLONE_CONFIG_GD_TOKEN"])
 
+    def test_episodio_novo_nasce_em_estoque_por_quadro(self):
+        self.assertEqual(D.pasta_episodio(D.plan(cfg("E07"))), "VERBO NO CHÃO/ESTOQUE/QUADRO - FORA DO CONTEXTO/FORA DO CONTEXTO 2 - PLANO DE PAZ")
+        self.assertEqual(D.pasta_episodio(D.plan(cfg("E05"))), "VERBO NO CHÃO/ESTOQUE/QUADRO - DORES DA VIDA/DORES DA VIDA 3 - MEDO E UMA MÃO FIRME")
+
 if __name__ == "__main__":
     unittest.main()

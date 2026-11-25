@@ -1,5 +1,5 @@
 """VNC -> Google Drive (runner only). Envia os arquivos FINAIS de um episodio para a pasta certa do Drive do dono.
-- Pastas: VERBO NO CHÃO / (QUADRO - DORES DA VIDA | QUADRO - FORA DO CONTEXTO) / EPISÓDIO N - TITULO. Cria o que faltar; reenvio sobrescreve pelo nome (sem duplicar).
+- Pastas (desde 25/11): VERBO NO CHÃO / ESTOQUE / (QUADRO - DORES DA VIDA | QUADRO - FORA DO CONTEXTO) / EPISÓDIO N - TITULO. Episodio novo nasce em ESTOQUE; vai para POSTADOS so pelo vnc_drive_organizar, depois de publicado nas 4 redes. Cria o que faltar; reenvio sobrescreve pelo nome (sem duplicar).
 - Acesso OAuth restrito (escopo drive.file): o app so enxerga o que ele mesmo criou. Nada e publicado; o link devolvido e privado (so o dono abre).
 - Segredos (GitHub): GDRIVE_CLIENT_ID, GDRIVE_CLIENT_SECRET, GDRIVE_REFRESH_TOKEN. Sem eles: DRIVE_NAO_CONFIGURADO e sai sem erro.
 - DRIVE_DRY_RUN=1: so imprime o plano (nenhuma chamada ao Drive)."""
@@ -7,6 +7,12 @@ import json, os, re, subprocess, sys
 from pathlib import Path
 
 ROOT_NAME = "VERBO NO CHÃO"
+ESTOQUE = "ESTOQUE"
+
+
+def pasta_episodio(p):
+    """Pasta onde um episodio NOVO e gravado: ESTOQUE/<QUADRO>/<EPISODIO> (pura, testada)."""
+    return f"{ROOT_NAME}/{ESTOQUE}/{p['quadro']}/{p['folder']}"
 
 
 def _cap(t):
@@ -47,7 +53,7 @@ def main(ep, build_dir, cover_dir):
     cfg = json.loads(Path(f"episodes/{ep}.json").read_text(encoding="utf8"))
     p = plan(cfg)
     src = {"video": Path(build_dir) / "master.mp4", "srt": Path(build_dir) / "captions.srt", "cover": Path(cover_dir) / "vertical.jpg"}
-    path = f"{ROOT_NAME}/{p['quadro']}/{p['folder']}"
+    path = pasta_episodio(p)
     print("VNC_DRIVE_PLANO", json.dumps({"pasta": path, "arquivos": p["files"], "presentes": {k: v.exists() for k, v in src.items()}}, ensure_ascii=False))
     if os.environ.get("DRIVE_DRY_RUN") == "1":
         print("VNC_DRIVE_DRY_RUN"); return 0
@@ -70,7 +76,7 @@ def main(ep, build_dir, cover_dir):
             rc(["copyto", str(f), f"gd:{path}/{p['files'][k]}"], env); sent.append(p["files"][k])
     tmp = Path("/tmp/posting.txt"); tmp.write_text(posting_text(cfg, p), encoding="utf8")
     rc(["copyto", str(tmp), f"gd:{path}/{p['files']['posting']}"], env); sent.append(p["files"]["posting"])
-    parent = f"gd:{ROOT_NAME}/{p['quadro']}"
+    parent = f"gd:{ROOT_NAME}/{ESTOQUE}/{p['quadro']}"
     ids = {d["Name"]: d["ID"] for d in json.loads(rc(["lsjson", "--dirs-only", parent], env) or "[]")}
     fid = ids.get(p["folder"])
     print("VNC_DRIVE_OK", json.dumps({"enviados": sent}, ensure_ascii=False))

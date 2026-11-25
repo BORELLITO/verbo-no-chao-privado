@@ -20,5 +20,21 @@ class DriveOrganizar(unittest.TestCase):
         with self.assertRaises(O.DriveOrgError): O.organizar({}, {}, [])
 
 
+    def test_origem_prefere_estoque_e_cai_no_legado(self):
+        chamadas = []
+        orig_ex, orig_rc = O._existe, O.D.rc
+        try:
+            m = O.plano({"postados": ["E03"]})
+            O.D.rc = lambda a, e: chamadas.append(a) or ""
+            O._existe = lambda path, env: path == m[0]["de_estoque"]
+            r = O.organizar({"liberado_pelo_dono": True}, {}, m)
+            self.assertEqual(r[0]["resultado"], "movido")
+            self.assertIn(["moveto", "gd:" + m[0]["de_estoque"], "gd:" + m[0]["para"]], chamadas)
+            chamadas.clear(); O._existe = lambda path, env: path == m[0]["de"]
+            O.organizar({"liberado_pelo_dono": True}, {}, m)
+            self.assertIn(["moveto", "gd:" + m[0]["de"], "gd:" + m[0]["para"]], chamadas)
+        finally:
+            O._existe, O.D.rc = orig_ex, orig_rc
+
 if __name__ == "__main__":
     unittest.main()
