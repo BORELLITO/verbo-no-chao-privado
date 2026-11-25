@@ -273,19 +273,19 @@
    "block": "biblical_reference",
    "text": "Atribuído a Davi, que foi pastor de ovelhas antes de ser rei.",
    "visual": {
-    "meaning": "colinas de pastoreio ao amanhecer",
-    "meaning_en": "rolling green hills morning",
+    "meaning": "colinas sob céu nublado",
+    "meaning_en": "overcast hills dusk",
     "emotion": "",
-    "mood": "mid",
+    "mood": "dark",
     "queries": [
-     "misty hills morning",
-     "rolling hills clouds",
-     "green hills aerial",
-     "slow clouds hills"
+     "overcast hills",
+     "dusk hills clouds",
+     "mountain valley fog",
+     "gray clouds hills"
     ],
     "prefer": [
      "hills",
-     "green"
+     "clouds"
     ],
     "avoid": [
      "airplane",
