@@ -740,6 +740,56 @@
    "title": "mist and rain over a forest",
    "updated_at": "2026-11-21T16:13:07Z"
   },
+  "mixkit:15536": {
+   "dur": 10.0,
+   "episode": "E12",
+   "id": "15536",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/village-fog-in-the-morning-15536/",
+   "phashes": [
+    3495004418145779712,
+    2847123240940208129,
+    4511496872862435332
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S05",
+   "sha256": "76f0d9fc0110dd9ecb4d1ca52d3e42698b0d4a971fe8e851cb17c174c03237a8",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "village fog in the morning",
+   "updated_at": "2026-11-25T19:22:43Z"
+  },
+  "mixkit:16001": {
+   "dur": 30.0,
+   "episode": "E12",
+   "id": "16001",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/zebras-grazing-in-the-meadow-16001/",
+   "phashes": [
+    65639963654382155,
+    65639967951446921,
+    318404492742648329
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S11",
+   "sha256": "74e09558c894729fb89bf5f6cdc8175ade15644f85f254b8f9015fa5cd1fba71",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "zebras grazing in the meadow",
+   "updated_at": "2026-11-25T19:22:43Z"
+  },
   "mixkit:16399": {
    "dur": 88.7,
    "episode": "E07",
@@ -1365,6 +1415,31 @@
    "title": "burning sun and dark clouds",
    "updated_at": "2026-11-23T09:42:46Z"
   },
+  "mixkit:21171": {
+   "dur": 12.3,
+   "episode": "E12",
+   "id": "21171",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/dark-storm-approaching-21171/",
+   "phashes": [
+    18409657130010502156,
+    17831773947937493766,
+    16009236965732460802
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S01",
+   "sha256": "bcd32c9790b08976322b4e9c606da3186a45ce4d51bcceb9e7487f3389a9968b",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "dark storm approaching",
+   "updated_at": "2026-11-25T19:22:43Z"
+  },
   "mixkit:21575": {
    "dur": 12.0,
    "episode": "E02",
@@ -1890,6 +1965,31 @@
    "title": "mountain covered by a large forest seen from above",
    "updated_at": "2026-11-22T00:04:59Z"
   },
+  "mixkit:28336": {
+   "dur": 15.0,
+   "episode": "E12",
+   "id": "28336",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/glowing-light-of-dawn-among-the-trees-of-a-forest-28336/",
+   "phashes": [
+    2602122482853644440,
+    2349076461544573136,
+    4869430481991733408
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S08",
+   "sha256": "09e77dcf06790118852512daeeaf3fce4b8c8381c9392f933b4faf2f801c02bd",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "glowing light of dawn among the trees of a forest",
+   "updated_at": "2026-11-25T19:22:43Z"
+  },
   "mixkit:28338": {
    "dur": 15.1,
    "episode": "E09",
@@ -2140,6 +2240,31 @@
    "title": "snowy mountains with pine trees during sunrise",
    "updated_at": "2026-11-21T21:29:32Z"
   },
+  "mixkit:3129": {
+   "dur": 12.7,
+   "episode": "E12",
+   "id": "3129",
+   "interval": [
+    0,
+    10.1
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/clouds-moving-in-a-blue-sky-3129/",
+   "phashes": [
+    16711291546778860587,
+    11510074126626454821,
+    4609993861173082413
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S03",
+   "sha256": "fba94cac7f253be3d8b370b060c69218f7ae6ce1f57c6481bdbe7b11a734862c",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "clouds moving in a blue sky",
+   "updated_at": "2026-11-25T19:22:43Z"
+  },
   "mixkit:31746": {
    "dur": 30.0,
    "episode": "E06",
@@ -2264,6 +2389,31 @@
    "state": "reserved",
    "title": "rocks in a river in a snowy forest",
    "updated_at": "2026-11-22T09:08:57Z"
+  },
+  "mixkit:3315": {
+   "dur": 11.2,
+   "episode": "E12",
+   "id": "3315",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/river-flowing-during-a-cloudy-day-in-canada-3315/",
+   "phashes": [
+    16207041614064544360,
+    16171012817045580392,
+    16171012817045580392
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S10",
+   "sha256": "819ad6713076b68ebcb8e64128f7dbc2a0c9e1df15d063ae4e8a30c5383c85a7",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "river flowing during a cloudy day in canada",
+   "updated_at": "2026-11-25T19:22:43Z"
   },
   "mixkit:3319": {
    "dur": 10.7,
@@ -2414,6 +2564,31 @@
    "state": "released",
    "title": "landscape of snowy mountains covered by mist",
    "updated_at": "2026-11-23T09:32:02Z"
+  },
+  "mixkit:3387": {
+   "dur": 15.0,
+   "episode": "E12",
+   "id": "3387",
+   "interval": [
+    0,
+    10.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/mountain-for-skiing-seen-from-the-air-3387/",
+   "phashes": [
+    17761858975031305577,
+    18338249357647824265,
+    9114879109053581067
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S07",
+   "sha256": "22fc2e4eae1f6ed055c51b767a4b828c1cdf1f43e064a531761d7631eb8db0e6",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "mountain for skiing seen from the air",
+   "updated_at": "2026-11-25T19:22:43Z"
   },
   "mixkit:34045": {
    "dur": 15.0,
@@ -3381,6 +3556,31 @@
    "title": "cold and foggy forest landscape view",
    "updated_at": "2026-11-23T09:42:46Z"
   },
+  "mixkit:47816": {
+   "dur": 34.1,
+   "episode": "E12",
+   "id": "47816",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/wheat-field-with-grass-blowing-in-the-wind-47816/",
+   "phashes": [
+    14107980571874861874,
+    14107980571866473379,
+    14107980023732810683
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S09",
+   "sha256": "27f49e62385c88cdfaeeb29608861c801c445ca3565fa4b7cd07504471254570",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "wheat field with grass blowing in the wind",
+   "updated_at": "2026-11-25T19:22:43Z"
+  },
   "mixkit:47818": {
    "dur": 26.0,
    "episode": "E11",
@@ -3753,6 +3953,31 @@
    "title": "a small river flowing freely in the wilderness of the",
    "updated_at": "2026-11-21T16:13:07Z"
   },
+  "mixkit:51581": {
+   "dur": 21.6,
+   "episode": "E12",
+   "id": "51581",
+   "interval": [
+    0,
+    9.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/aerial-view-the-canopy-of-the-forest-when-a-cloud-51581/",
+   "phashes": [
+    10186495825448762239,
+    9156869027910089599,
+    1430945997461863423
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S06",
+   "sha256": "702d8bfa0cc075caca4af5eed0b22b979ed7ed8a05b000e1f869f2eaa13b1ec2",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "aerial view the canopy of the forest when a cloud",
+   "updated_at": "2026-11-25T19:22:43Z"
+  },
   "mixkit:51586": {
    "dur": 18.4,
    "episode": "E02",
@@ -3802,6 +4027,31 @@
    "state": "reserved",
    "title": "a crystal clear river water flowing with prominent rocks over",
    "updated_at": "2026-11-23T09:42:46Z"
+  },
+  "mixkit:51633": {
+   "dur": 10.4,
+   "episode": "E12",
+   "id": "51633",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/a-crackling-campfire-iluminates-the-night-51633/",
+   "phashes": [
+    11284906048103964900,
+    2025791922706639076,
+    4078305255937853644
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S04",
+   "sha256": "6259401969770163f3128742bbb3fa2783d2ce72470736fcac0cd9ef0b408a69",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "a crackling campfire iluminates the night",
+   "updated_at": "2026-11-25T19:22:43Z"
   },
   "mixkit:52012": {
    "dur": 13.7,
@@ -4399,6 +4649,56 @@
    "state": "reserved",
    "title": "flight in the rocky mountains and a valley with a",
    "updated_at": "2026-11-22T11:32:03Z"
+  },
+  "mixkit:9972": {
+   "dur": 49.9,
+   "episode": "E12",
+   "id": "9972",
+   "interval": [
+    0,
+    14.0
+   ],
+   "license": "Mixkit Stock Video Free License",
+   "origin_id": null,
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-a-blue-lake-and-mountains-9972/",
+   "phashes": [
+    1082952077313847932,
+    1085102979624013874,
+    508641824666891544
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S12",
+   "sha256": "95d3b2dd54da1cdd1ab8cf08dbb0024c568a55bda986733d5dcfbe22454163e4",
+   "source": "mixkit",
+   "state": "reserved",
+   "title": "aerial view of a blue lake and mountains",
+   "updated_at": "2026-11-25T19:22:43Z"
+  },
+  "wikimedia:commons-144795482": {
+   "dur": 24.8,
+   "episode": "E12",
+   "id": "commons-144795482",
+   "interval": [
+    0,
+    8.0
+   ],
+   "license": "CC0/Dominio publico (Wikimedia Commons)",
+   "origin_id": null,
+   "page": "https://commons.wikimedia.org/wiki/File:Lightning_storm_over_Colorado,_USA.ogg",
+   "phashes": [
+    2024434952337388689,
+    2034554977416957056,
+    4331456775453975680
+   ],
+   "reserved_at": "2026-11-25T19:22:43Z",
+   "run_id": "45682949741",
+   "scene": "S02",
+   "sha256": "6b67ad1c08df58964f196b8423dc7081d5e6a15c32035f26d02b93e78fc155b5",
+   "source": "wikimedia",
+   "state": "reserved",
+   "title": "lightning storm over colorado, usa",
+   "updated_at": "2026-11-25T19:22:43Z"
   },
   "wikimedia:commons-164730437": {
    "dur": 9.9,

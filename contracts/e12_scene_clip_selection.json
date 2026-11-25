@@ -1,0 +1,169 @@
+{
+ "schema_version": "1.0.0",
+ "project": "verbo-no-chao",
+ "episode_id": "E12",
+ "kind": "SCENE_CLIP_SELECTION_CURADORIA_AUTOMATICA",
+ "engine_version": "vnc-curadoria-2.0",
+ "run_id": "45682949741",
+ "publication_authorized": false,
+ "master_approved": false,
+ "scope": "DIRECAO_VISUAL_NAO_MASTER_NAO_PUBLICACAO",
+ "clips": [
+  {
+   "scene": "S01",
+   "source": "mixkit",
+   "id": "21171",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/dark-storm-approaching-21171/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 12.3,
+   "note_pt": "clima dark (brilho 81.4), movimento 8.79, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S02",
+   "source": "wikimedia",
+   "id": "commons-144795482",
+   "license": "CC0/Dominio publico (Wikimedia Commons)",
+   "page": "https://commons.wikimedia.org/wiki/File:Lightning_storm_over_Colorado,_USA.ogg",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 24.8,
+   "note_pt": "clima dark (brilho 39.2), movimento 2.56, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S03",
+   "source": "mixkit",
+   "id": "3129",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/clouds-moving-in-a-blue-sky-3129/",
+   "interval": [
+    0,
+    10.1
+   ],
+   "preview_seconds": 12.7,
+   "note_pt": "clima dark (brilho 100.8), movimento 7.17, palavras-chave 3, interpretacao=claude"
+  },
+  {
+   "scene": "S04",
+   "source": "mixkit",
+   "id": "51633",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/a-crackling-campfire-iluminates-the-night-51633/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 10.4,
+   "note_pt": "clima dark (brilho 48.6), movimento 12.68, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S05",
+   "source": "mixkit",
+   "id": "15536",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/village-fog-in-the-morning-15536/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 10.0,
+   "note_pt": "clima mid (brilho 126.9), movimento 4.51, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S06",
+   "source": "mixkit",
+   "id": "51581",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/aerial-view-the-canopy-of-the-forest-when-a-cloud-51581/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 21.6,
+   "note_pt": "clima mid (brilho 107.3), movimento 6.73, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S07",
+   "source": "mixkit",
+   "id": "3387",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/mountain-for-skiing-seen-from-the-air-3387/",
+   "interval": [
+    0,
+    10.0
+   ],
+   "preview_seconds": 15.0,
+   "note_pt": "clima mid (brilho 122.2), movimento 19.2, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S08",
+   "source": "mixkit",
+   "id": "28336",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/glowing-light-of-dawn-among-the-trees-of-a-forest-28336/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 15.0,
+   "note_pt": "clima mid (brilho 147.2), movimento 12.71, palavras-chave 1, interpretacao=claude"
+  },
+  {
+   "scene": "S09",
+   "source": "mixkit",
+   "id": "47816",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/wheat-field-with-grass-blowing-in-the-wind-47816/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 34.1,
+   "note_pt": "clima mid (brilho 132.8), movimento 7.49, palavras-chave 3, interpretacao=claude"
+  },
+  {
+   "scene": "S10",
+   "source": "mixkit",
+   "id": "3315",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/river-flowing-during-a-cloudy-day-in-canada-3315/",
+   "interval": [
+    0,
+    9.0
+   ],
+   "preview_seconds": 11.2,
+   "note_pt": "clima mid (brilho 140.2), movimento 4.25, palavras-chave 2, interpretacao=claude"
+  },
+  {
+   "scene": "S11",
+   "source": "mixkit",
+   "id": "16001",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/zebras-grazing-in-the-meadow-16001/",
+   "interval": [
+    0,
+    8.0
+   ],
+   "preview_seconds": 30.0,
+   "note_pt": "clima bright (brilho 133.1), movimento 3.89, palavras-chave 0, interpretacao=claude"
+  },
+  {
+   "scene": "S12",
+   "source": "mixkit",
+   "id": "9972",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/aerial-view-of-a-blue-lake-and-mountains-9972/",
+   "interval": [
+    0,
+    14.0
+   ],
+   "preview_seconds": 49.9,
+   "note_pt": "clima bright (brilho 111.8), movimento 7.17, palavras-chave 2, interpretacao=claude"
+  }
+ ]
+}
