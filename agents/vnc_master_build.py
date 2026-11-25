@@ -53,7 +53,17 @@ def fetch_clip(c, dest):
     last = None
     for u in urls:
         try:
-            data = get(u)
+            if s == "wikimedia":   # politica do Commons: UA identificado + espera em 429
+                import time as _t
+                for _w in (0, 25, 60, 120):
+                    _t.sleep(_w)
+                    try:
+                        with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "VerboNoChaoBot/1.0 (https://github.com/BORELLITO/verbo-no-chao-privado; projeto biblico sem fins lucrativos)"}), timeout=180) as r: data = r.read(MAX_BYTES + 1)
+                        break
+                    except Exception as _e:
+                        if "429" not in repr(_e): raise
+                else: raise RuntimeError("wikimedia_429")
+            else: data = get(u)
             if len(data) < 100_000 or (s != "wikimedia" and b"ftyp" not in data[:64]): raise RuntimeError("not_mp4")
             dest.write_bytes(data)
             return {"url_host": re.match(r"https://([^/]+)/", u)[1], "bytes": len(data)}
