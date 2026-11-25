@@ -1,0 +1,4290 @@
+{
+ "episode": "E12",
+ "run_id": "45676364408",
+ "engine_version": "vnc-curadoria-2.0",
+ "dry_run": false,
+ "status": "BLOQUEADO",
+ "segments": [
+  {
+   "scene": "S01",
+   "block": "opening",
+   "text": "Alguém te disse que era para o seu bem enquanto você chorava?",
+   "start": 0.0,
+   "end": 5.62,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "nuvens de tempestade escuras",
+   "emotion": "arco_padrao",
+   "mood": "dark",
+   "queries": [
+    "dark storm clouds",
+    "stormy sky",
+    "heavy clouds sky",
+    "rain",
+    "raindrops",
+    "rainy-day",
+    "night",
+    "water-drops",
+    "rain-on-window",
+    "dark-clouds"
+   ],
+   "prefer": [
+    "dark",
+    "storm",
+    "clouds",
+    "window",
+    "rain",
+    "drops",
+    "night"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S02",
+   "block": "connection",
+   "text": "É uma das frases mais ditas na hora da dor.",
+   "start": 5.62,
+   "end": 10.47,
+   "duration": 4.85,
+   "duration_source": "estimativa_palavras",
+   "meaning": "névoa em floresta, manhã cinza",
+   "emotion": "arco_padrao",
+   "mood": "dark",
+   "queries": [
+    "fog morning forest",
+    "misty trees slow",
+    "gray forest mist",
+    "storm",
+    "thunderstorm",
+    "clouds",
+    "dark-clouds",
+    "stormy-sky"
+   ],
+   "prefer": [
+    "fog",
+    "morning",
+    "forest",
+    "storm",
+    "dark",
+    "clouds",
+    "rain"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S03",
+   "block": "connection",
+   "text": "Sabemos que todas as coisas cooperam para o bem daqueles que amam a Deus, daqueles que são chamados segundo o seu propósito.",
+   "start": 10.47,
+   "end": 19.93,
+   "duration": 9.46,
+   "duration_source": "estimativa_palavras",
+   "meaning": "nuvens se movendo no céu",
+   "emotion": "intimidade",
+   "mood": "dark",
+   "queries": [
+    "clouds moving sky",
+    "cloudscape timelapse",
+    "slow clouds sky",
+    "waves",
+    "sea",
+    "ocean",
+    "candle",
+    "candles",
+    "flame",
+    "campfire"
+   ],
+   "prefer": [
+    "clouds",
+    "moving",
+    "sky",
+    "waves",
+    "stormy",
+    "crashing",
+    "sea",
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 10.1,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S04",
+   "block": "connection",
+   "text": "Quem fala assim quer consolar. Mas naquele dia você só queria ser ouvido.",
+   "start": 19.93,
+   "end": 25.93,
+   "duration": 6.0,
+   "duration_source": "estimativa_palavras",
+   "meaning": "lago calmo e cinza",
+   "emotion": "arco_padrao",
+   "mood": "dark",
+   "queries": [
+    "calm gray lake",
+    "still lake mist",
+    "lake fog morning",
+    "candle",
+    "candles",
+    "fire",
+    "fireplace",
+    "flame",
+    "campfire",
+    "bonfire",
+    "lantern"
+   ],
+   "prefer": [
+    "calm",
+    "gray",
+    "lake",
+    "candle",
+    "flame",
+    "fire"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S05",
+   "block": "biblical_reference",
+   "text": "Em Romanos, capítulo oito, Paulo fala de sofrimento: a criação geme.",
+   "start": 25.93,
+   "end": 31.16,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "mar agitado",
+   "emotion": "arco_padrao",
+   "mood": "dark",
+   "queries": [
+    "stormy sea waves",
+    "rough ocean waves",
+    "waves crashing rocks",
+    "fog",
+    "mist",
+    "foggy-forest",
+    "morning-fog"
+   ],
+   "prefer": [
+    "stormy",
+    "sea",
+    "waves",
+    "fog",
+    "mist",
+    "tree"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S06",
+   "block": "biblical_reference",
+   "text": "Nesse meio, ele escreve: todas as coisas cooperam para o bem.",
+   "start": 31.16,
+   "end": 36.39,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "nuvens abrindo e deixando passar luz",
+   "emotion": "arco_padrao",
+   "mood": "mid",
+   "queries": [
+    "clouds parting light",
+    "sunlight through clouds",
+    "break in clouds",
+    "forest",
+    "trees",
+    "fog"
+   ],
+   "prefer": [
+    "clouds",
+    "parting",
+    "light",
+    "forest",
+    "mist",
+    "fog"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S07",
+   "block": "biblical_reference",
+   "text": "O texto não diz que tudo o que acontece é bom.",
+   "start": 36.39,
+   "end": 41.62,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "árvore solitária em campo nublado",
+   "emotion": "arco_padrao",
+   "mood": "mid",
+   "queries": [
+    "lone tree field cloudy",
+    "single tree hill clouds",
+    "tree alone meadow",
+    "mountains",
+    "mountain",
+    "hills"
+   ],
+   "prefer": [
+    "lone",
+    "tree",
+    "field",
+    "mountain",
+    "cliff",
+    "peak"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 10.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S08",
+   "block": "reflection",
+   "text": "No versículo seguinte, esse bem é ser conforme a imagem de Cristo.",
+   "start": 41.62,
+   "end": 47.24,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "luz atravessando a névoa entre árvores",
+   "emotion": "arco_padrao",
+   "mood": "mid",
+   "queries": [
+    "light through mist trees",
+    "sunbeams misty forest",
+    "morning light forest fog",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "prefer": [
+    "light",
+    "through",
+    "mist",
+    "clouds",
+    "sky",
+    "beach"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S09",
+   "block": "reflection",
+   "text": "Ninguém precisa fingir que a perda foi boa para continuar de pé.",
+   "start": 47.24,
+   "end": 52.86,
+   "duration": 5.62,
+   "duration_source": "estimativa_palavras",
+   "meaning": "grama ao vento",
+   "emotion": "arco_padrao",
+   "mood": "mid",
+   "queries": [
+    "grass blowing wind",
+    "meadow wind slow",
+    "wheat field wind",
+    "sunrise",
+    "sunset",
+    "sun",
+    "dawn",
+    "sunlight",
+    "sunbeams"
+   ],
+   "prefer": [
+    "grass",
+    "blowing",
+    "wind",
+    "sunrise",
+    "sunlight",
+    "sun",
+    "dawn"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S10",
+   "block": "application",
+   "text": "Paulo fala de gemer e esperar: você pode chorar e seguir.",
+   "start": 52.86,
+   "end": 58.09,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "rio fluindo devagar",
+   "emotion": "tristeza",
+   "mood": "mid",
+   "queries": [
+    "river flowing slowly",
+    "calm river forest",
+    "stream slow water",
+    "hands",
+    "hand",
+    "praying",
+    "holding",
+    "rain",
+    "raindrops",
+    "rainy-day",
+    "water-drops",
+    "fog",
+    "mist",
+    "foggy-forest"
+   ],
+   "prefer": [
+    "river",
+    "flowing",
+    "slowly",
+    "hands",
+    "holding",
+    "hand",
+    "glass",
+    "water",
+    "rain",
+    "drops",
+    "window",
+    "fog",
+    "mist",
+    "clouds"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [
+    "hands"
+   ],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 9.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S11",
+   "block": "application",
+   "text": "Se essa frase já doeu, a sua dor continua sendo real.",
+   "start": 58.09,
+   "end": 63.32,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "orvalho na grama ao amanhecer",
+   "emotion": "arco_padrao",
+   "mood": "bright",
+   "queries": [
+    "dew drops grass",
+    "morning dew meadow",
+    "dewy leaves sunrise",
+    "trail",
+    "path",
+    "hills",
+    "road",
+    "meadow",
+    "field",
+    "nature",
+    "countryside"
+   ],
+   "prefer": [
+    "dew",
+    "drops",
+    "grass",
+    "trail",
+    "path",
+    "hills"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 8.0,
+   "interpretation": "claude"
+  },
+  {
+   "scene": "S12",
+   "block": "conclusion",
+   "text": "Que frase de consolo te doeu mais, mesmo vindo com carinho?",
+   "start": 63.32,
+   "end": 68.55,
+   "duration": 5.23,
+   "duration_source": "estimativa_palavras",
+   "meaning": "pôr do sol calmo",
+   "emotion": "arco_padrao",
+   "mood": "bright",
+   "queries": [
+    "calm sunset landscape",
+    "sunset over hills",
+    "soft sunset clouds",
+    "lake",
+    "valley",
+    "river",
+    "mountain-lake",
+    "lagoon",
+    "reflection"
+   ],
+   "prefer": [
+    "calm",
+    "sunset",
+    "landscape",
+    "lake",
+    "mountain",
+    "valley"
+   ],
+   "avoid": [
+    "airplane",
+    "antenna",
+    "barbed",
+    "beach",
+    "bicycle",
+    "bike",
+    "boat",
+    "bridge",
+    "building",
+    "buildings",
+    "camp",
+    "car",
+    "castle",
+    "city",
+    "couple",
+    "cyclist",
+    "desert",
+    "droplets",
+    "drops",
+    "dust",
+    "family",
+    "fence",
+    "fire",
+    "friend",
+    "friends",
+    "frozen",
+    "group",
+    "guardrail",
+    "hand",
+    "hands",
+    "highway",
+    "ice",
+    "indoor",
+    "lights",
+    "ocean",
+    "party",
+    "path",
+    "people",
+    "pole",
+    "pyramid",
+    "rain",
+    "raindrops",
+    "road",
+    "ruins",
+    "sand",
+    "sea",
+    "ship",
+    "skyline",
+    "snow",
+    "snowy",
+    "street",
+    "temple",
+    "tower",
+    "traffic",
+    "trail",
+    "urban",
+    "wave",
+    "waves",
+    "window",
+    "wire",
+    "young"
+   ],
+   "allow": [],
+   "shot": "paisagem, movimento lento",
+   "min_seconds": 14.0,
+   "interpretation": "claude"
+  }
+ ],
+ "clips": [],
+ "reservation_state": "none",
+ "qa": {
+  "diagnostico": [],
+  "limitacoes_pt": [
+   "sem analise visual multimodal: so metricas objetivas (movimento, brilho, saturacao, nitidez, cortes) + titulo/tags; compreensao do roteiro = plano `visual` escrito pelo Claude",
+   "fonte automatica unica: Mixkit (Coverr bloqueia busca por robots; Pexels exige chave)",
+   "ids legados Coverr/Pexels do E01 sem impressao digital: protegidos so por ID e titulo"
+  ],
+  "roteiro_review": {
+   "status": "APROVADO_AUTOMATICO",
+   "issues": [],
+   "checks": {
+    "cenas": 12,
+    "duracao_estimada_s": 68.5,
+    "palavras": 147,
+    "duracao_final_estimada_s": 69.8,
+    "gancho": "Alguém te disse que era para o seu bem enquanto você chorava?",
+    "cautela_presente": true,
+    "referencia": "Romanos 8:28",
+    "texto_biblico_verificado": true,
+    "sobreposicao_lexical_biblia": 0.15,
+    "ancora_texto_conferido": true,
+    "ancora_citada_nos_3_primeiros": true,
+    "roteiro_sha": "cc0a05c1fa9721a5",
+    "similaridade_E01": 0.07,
+    "similaridade_E02": 0.08,
+    "similaridade_E03": 0.07,
+    "similaridade_E04": 0.08,
+    "similaridade_E05": 0.08,
+    "similaridade_E06": 0.1,
+    "similaridade_E07": 0.11,
+    "similaridade_E08": 0.07,
+    "similaridade_E09": 0.1,
+    "similaridade_E10": 0.09,
+    "similaridade_E11": 0.07,
+    "revisao_independente": "ok"
+   }
+  },
+  "bloqueio": "S05: sem candidato valido",
+  "rejeicoes": {
+   "S01": [
+    [
+     "mixkit:9606",
+     "antirrepeticao: id_ja_usado_em_E04; visual_suspeito_de_mixkit:8335@E04(inconclusivo,d=7); id_reserved_em_E04"
+    ],
+    [
+     "mixkit:32278",
+     "brilho 142.3 fora do clima dark"
+    ],
+    [
+     "mixkit:18736",
+     "brilho 139.4 fora do clima dark"
+    ],
+    [
+     "mixkit:32524",
+     "brilho 139.5 fora do clima dark"
+    ],
+    [
+     "mixkit:16199",
+     "curto (7.5s < 9.0s)"
+    ],
+    [
+     "mixkit:20233",
+     "brilho 124.7 fora do clima dark"
+    ],
+    [
+     "mixkit:20230",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "mixkit:9624",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:25004",
+     "estatico (parece foto)"
+    ],
+    [
+     "mixkit:20552",
+     "antirrepeticao: id_ja_usado_em_E08"
+    ],
+    [
+     "mixkit:4422",
+     "brilho 18.5 fora do clima dark"
+    ],
+    [
+     "mixkit:47698",
+     "tem cortes/saltos"
+    ],
+    [
+     "mixkit:47299",
+     "brilho 3.4 fora do clima dark"
+    ],
+    [
+     "mixkit:32592",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:18229",
+     "antirrepeticao: id_ja_usado_em_E07"
+    ],
+    [
+     "mixkit:21148",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:21106",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:20231",
+     "brilho 119.6 fora do clima dark"
+    ],
+    [
+     "mixkit:20576",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:17145",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:21576",
+     "antirrepeticao: id_ja_usado_em_E08; id_reserved_em_E08"
+    ],
+    [
+     "mixkit:31627",
+     "brilho 152.0 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-181285639",
+     "tem cortes/saltos"
+    ],
+    [
+     "wikimedia:commons-185509475",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-185509490",
+     "estatico (parece foto)"
+    ],
+    [
+     "wikimedia:commons-56820388",
+     "estatico (parece foto)"
+    ],
+    [
+     "wikimedia:commons-151629763",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164188480",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:9706",
+     "visual: classe vetada 'indoor' (0.91 > 0.8)"
+    ],
+    [
+     "mixkit:27134",
+     "visual: classe vetada 'indoor' (0.85 > 0.8)"
+    ],
+    [
+     "mixkit:9704",
+     "visual: classe vetada 'indoor' (0.87 > 0.8)"
+    ],
+    [
+     "mixkit:20229",
+     "visual: classe vetada 'indoor' (0.87 > 0.8)"
+    ],
+    [
+     "mixkit:20739",
+     "visual: classe vetada 'indoor' (0.86 > 0.8)"
+    ],
+    [
+     "mixkit:5591",
+     "visual: classe vetada 'indoor' (0.88 > 0.8)"
+    ],
+    [
+     "mixkit:9606",
+     "antirrepeticao: id_ja_usado_em_E04; visual_suspeito_de_mixkit:8335@E04(inconclusivo,d=7); id_reserved_em_E04"
+    ],
+    [
+     "mixkit:32278",
+     "brilho 142.3 fora do clima dark"
+    ],
+    [
+     "mixkit:18736",
+     "brilho 139.4 fora do clima dark"
+    ],
+    [
+     "mixkit:32524",
+     "brilho 139.5 fora do clima dark"
+    ],
+    [
+     "mixkit:16199",
+     "curto (7.5s < 9.0s)"
+    ],
+    [
+     "mixkit:20233",
+     "brilho 124.7 fora do clima dark"
+    ],
+    [
+     "mixkit:20230",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "mixkit:9624",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:25004",
+     "estatico (parece foto)"
+    ],
+    [
+     "mixkit:20552",
+     "antirrepeticao: id_ja_usado_em_E08"
+    ],
+    [
+     "mixkit:4422",
+     "brilho 18.5 fora do clima dark"
+    ],
+    [
+     "mixkit:47698",
+     "tem cortes/saltos"
+    ],
+    [
+     "mixkit:47299",
+     "brilho 3.4 fora do clima dark"
+    ],
+    [
+     "mixkit:32592",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:18229",
+     "antirrepeticao: id_ja_usado_em_E07"
+    ],
+    [
+     "mixkit:21148",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:21106",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:20231",
+     "brilho 119.6 fora do clima dark"
+    ],
+    [
+     "mixkit:20576",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:17145",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:21576",
+     "antirrepeticao: id_ja_usado_em_E08; id_reserved_em_E08"
+    ],
+    [
+     "mixkit:31627",
+     "brilho 152.0 fora do clima dark"
+    ],
+    [
+     "mixkit:21585",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:25081",
+     "estatico (parece foto)"
+    ],
+    [
+     "mixkit:21584",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:4060",
+     "antirrepeticao: visual_igual_a_mixkit:9779@E08(d=6)"
+    ],
+    [
+     "wikimedia:commons-181285639",
+     "tem cortes/saltos"
+    ],
+    [
+     "mixkit:9296",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:22729",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:22728",
+     "antirrepeticao: id_ja_usado_em_E10"
+    ],
+    [
+     "mixkit:2844",
+     "brilho 134.2 fora do clima dark"
+    ],
+    [
+     "mixkit:2207",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:35548",
+     "antirrepeticao: id_reserved_em_E09"
+    ],
+    [
+     "mixkit:17287",
+     "brilho 198.7 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-185509475",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-185509490",
+     "estatico (parece foto)"
+    ],
+    [
+     "mixkit:4148",
+     "antirrepeticao: visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=8); visual_suspeito_de_mixkit:34999@E05(inconclusivo,d=9)"
+    ],
+    [
+     "wikimedia:commons-56820388",
+     "estatico (parece foto)"
+    ],
+    [
+     "wikimedia:commons-151629763",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164188480",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164106394",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-96123172",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-181683477",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:1704",
+     "visual: classe vetada 'people' (0.87 > 0.7)"
+    ],
+    [
+     "mixkit:9706",
+     "visual: classe vetada 'indoor' (0.91 > 0.8)"
+    ],
+    [
+     "mixkit:27134",
+     "visual: classe vetada 'indoor' (0.85 > 0.8)"
+    ],
+    [
+     "mixkit:9704",
+     "visual: classe vetada 'indoor' (0.87 > 0.8)"
+    ],
+    [
+     "mixkit:2738",
+     "visual: classe vetada 'indoor' (0.81 > 0.8)"
+    ],
+    [
+     "mixkit:20229",
+     "visual: classe vetada 'indoor' (0.87 > 0.8)"
+    ],
+    [
+     "mixkit:20739",
+     "visual: classe vetada 'indoor' (0.86 > 0.8)"
+    ],
+    [
+     "mixkit:5591",
+     "visual: classe vetada 'indoor' (0.88 > 0.8)"
+    ]
+   ],
+   "S02": [
+    [
+     "mixkit:32524",
+     "brilho 139.5 fora do clima dark"
+    ],
+    [
+     "mixkit:15453",
+     "brilho 127.8 fora do clima dark"
+    ],
+    [
+     "mixkit:2187",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:50861",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:35013",
+     "antirrepeticao: id_ja_usado_em_E07; id_reserved_em_E07"
+    ],
+    [
+     "mixkit:20233",
+     "brilho 124.7 fora do clima dark"
+    ],
+    [
+     "mixkit:18736",
+     "brilho 139.4 fora do clima dark"
+    ],
+    [
+     "mixkit:9606",
+     "antirrepeticao: id_ja_usado_em_E04; visual_suspeito_de_mixkit:8335@E04(inconclusivo,d=7); id_reserved_em_E04"
+    ],
+    [
+     "mixkit:32278",
+     "brilho 142.3 fora do clima dark"
+    ],
+    [
+     "mixkit:50864",
+     "antirrepeticao: id_ja_usado_em_E09; id_reserved_em_E09"
+    ],
+    [
+     "mixkit:17732",
+     "antirrepeticao: id_ja_usado_em_E04; id_reserved_em_E04"
+    ],
+    [
+     "mixkit:9624",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:47698",
+     "tem cortes/saltos"
+    ],
+    [
+     "mixkit:9810",
+     "brilho 118.9 fora do clima dark"
+    ],
+    [
+     "mixkit:9590",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:48918",
+     "curto (6.9s < 8.0s)"
+    ],
+    [
+     "mixkit:16199",
+     "curto (7.5s < 8.0s)"
+    ],
+    [
+     "mixkit:9311",
+     "brilho 119.1 fora do clima dark"
+    ],
+    [
+     "mixkit:32463",
+     "brilho 136.6 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-151121306",
+     "brilho 158.2 fora do clima dark"
+    ],
+    [
+     "mixkit:47299",
+     "brilho 3.4 fora do clima dark"
+    ],
+    [
+     "mixkit:32592",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:18229",
+     "antirrepeticao: id_ja_usado_em_E07"
+    ],
+    [
+     "mixkit:21148",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:20230",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "wikimedia:commons-164622836",
+     "curto (4.2s < 8.0s)"
+    ],
+    [
+     "wikimedia:commons-171968662",
+     "movimento frenetico"
+    ],
+    [
+     "wikimedia:commons-82362515",
+     "movimento frenetico"
+    ],
+    [
+     "wikimedia:commons-171080061",
+     "curto (6.9s < 8.0s)"
+    ],
+    [
+     "mixkit:9704",
+     "visual: classe vetada 'indoor' (0.87 > 0.8)"
+    ],
+    [
+     "mixkit:21185",
+     "visual: classe vetada 'indoor' (0.89 > 0.8)"
+    ],
+    [
+     "mixkit:20742",
+     "visual: classe vetada 'indoor' (0.85 > 0.8)"
+    ],
+    [
+     "mixkit:20739",
+     "visual: classe vetada 'indoor' (0.86 > 0.8)"
+    ],
+    [
+     "mixkit:5591",
+     "visual: classe vetada 'indoor' (0.88 > 0.8)"
+    ],
+    [
+     "mixkit:32524",
+     "brilho 139.5 fora do clima dark"
+    ],
+    [
+     "mixkit:15453",
+     "brilho 127.8 fora do clima dark"
+    ],
+    [
+     "mixkit:2187",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:50861",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:35013",
+     "antirrepeticao: id_ja_usado_em_E07; id_reserved_em_E07"
+    ],
+    [
+     "mixkit:20233",
+     "brilho 124.7 fora do clima dark"
+    ],
+    [
+     "mixkit:18736",
+     "brilho 139.4 fora do clima dark"
+    ],
+    [
+     "mixkit:9606",
+     "antirrepeticao: id_ja_usado_em_E04; visual_suspeito_de_mixkit:8335@E04(inconclusivo,d=7); id_reserved_em_E04"
+    ],
+    [
+     "mixkit:32278",
+     "brilho 142.3 fora do clima dark"
+    ],
+    [
+     "mixkit:50864",
+     "antirrepeticao: id_ja_usado_em_E09; id_reserved_em_E09"
+    ],
+    [
+     "mixkit:17732",
+     "antirrepeticao: id_ja_usado_em_E04; id_reserved_em_E04"
+    ],
+    [
+     "mixkit:9624",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:47698",
+     "tem cortes/saltos"
+    ],
+    [
+     "mixkit:9810",
+     "brilho 118.9 fora do clima dark"
+    ],
+    [
+     "mixkit:9590",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:48918",
+     "curto (6.9s < 8.0s)"
+    ],
+    [
+     "mixkit:16199",
+     "curto (7.5s < 8.0s)"
+    ],
+    [
+     "mixkit:9311",
+     "brilho 119.1 fora do clima dark"
+    ],
+    [
+     "mixkit:32463",
+     "brilho 136.6 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-151121306",
+     "brilho 158.2 fora do clima dark"
+    ],
+    [
+     "mixkit:47299",
+     "brilho 3.4 fora do clima dark"
+    ],
+    [
+     "mixkit:32592",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:18229",
+     "antirrepeticao: id_ja_usado_em_E07"
+    ],
+    [
+     "mixkit:21148",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:20230",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "mixkit:21106",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:20231",
+     "brilho 119.6 fora do clima dark"
+    ],
+    [
+     "mixkit:20576",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:17145",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:20552",
+     "antirrepeticao: id_ja_usado_em_E08"
+    ],
+    [
+     "mixkit:22729",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:22728",
+     "antirrepeticao: id_ja_usado_em_E10"
+    ],
+    [
+     "mixkit:2207",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:9681",
+     "antirrepeticao: visual_igual_a_mixkit:9590@E05(d=6)"
+    ],
+    [
+     "mixkit:48854",
+     "brilho 139.1 fora do clima dark"
+    ],
+    [
+     "mixkit:4422",
+     "brilho 18.5 fora do clima dark"
+    ],
+    [
+     "mixkit:25004",
+     "estatico (parece foto)"
+    ],
+    [
+     "wikimedia:commons-164622836",
+     "curto (4.2s < 8.0s)"
+    ],
+    [
+     "wikimedia:commons-171968662",
+     "movimento frenetico"
+    ],
+    [
+     "wikimedia:commons-82362515",
+     "movimento frenetico"
+    ],
+    [
+     "wikimedia:commons-171080061",
+     "curto (6.9s < 8.0s)"
+    ],
+    [
+     "wikimedia:commons-164463886",
+     "movimento frenetico"
+    ],
+    [
+     "wikimedia:commons-169682372",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-169682395",
+     "curto (2.3s < 8.0s)"
+    ],
+    [
+     "mixkit:9706",
+     "visual: classe vetada 'indoor' (0.91 > 0.8)"
+    ],
+    [
+     "mixkit:9704",
+     "visual: classe vetada 'indoor' (0.87 > 0.8)"
+    ],
+    [
+     "mixkit:27134",
+     "visual: classe vetada 'indoor' (0.85 > 0.8)"
+    ],
+    [
+     "mixkit:21185",
+     "visual: classe vetada 'indoor' (0.89 > 0.8)"
+    ],
+    [
+     "mixkit:20742",
+     "visual: classe vetada 'indoor' (0.85 > 0.8)"
+    ],
+    [
+     "mixkit:20229",
+     "visual: classe vetada 'indoor' (0.87 > 0.8)"
+    ],
+    [
+     "mixkit:20739",
+     "visual: classe vetada 'indoor' (0.86 > 0.8)"
+    ],
+    [
+     "mixkit:5591",
+     "visual: classe vetada 'indoor' (0.88 > 0.8)"
+    ]
+   ],
+   "S03": [
+    [
+     "mixkit:9624",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:51112",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:1646",
+     "brilho 124.2 fora do clima dark"
+    ],
+    [
+     "mixkit:9442",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:9280",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:9706",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:31427",
+     "brilho 138.2 fora do clima dark"
+    ],
+    [
+     "mixkit:26112",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:31793",
+     "brilho 122.1 fora do clima dark"
+    ],
+    [
+     "mixkit:45272",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:30908",
+     "brilho 127.2 fora do clima dark"
+    ],
+    [
+     "mixkit:31459",
+     "brilho 152.7 fora do clima dark"
+    ],
+    [
+     "mixkit:32278",
+     "brilho 142.3 fora do clima dark"
+    ],
+    [
+     "mixkit:45585",
+     "antirrepeticao: visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=7)"
+    ],
+    [
+     "mixkit:49700",
+     "curto (9.6s < 10.1s)"
+    ],
+    [
+     "mixkit:3438",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:6925",
+     "brilho 20.1 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-126263576",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-126263575",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:30257",
+     "brilho 11.2 fora do clima dark"
+    ],
+    [
+     "mixkit:1082",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "mixkit:4466",
+     "antirrepeticao: id_ja_usado_em_E11; id_reserved_em_E11"
+    ],
+    [
+     "mixkit:3100",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:1926",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:4266",
+     "brilho 150.8 fora do clima dark"
+    ],
+    [
+     "mixkit:15209",
+     "antirrepeticao: visual_igual_a_coverr:coverr-raindrops-on-the-window-7102@E01(d=6); visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=7); visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=10); visual_suspeito_de_mixkit:28342@E10(inconclusivo,d=8); visual_suspeito_de_mixkit:3976@E08(inconclusivo,d=10); visual_suspeito_de_mixkit:51433@E03(inconclusivo,d=10); visual_suspeito_de_mixkit:9779@E08(inconclusivo,d=7)"
+    ],
+    [
+     "mixkit:3458",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "wikimedia:commons-173935900",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-91718248",
+     "brilho 5.1 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-165950358",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-165950916",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:10152",
+     "visual: classe vetada 'indoor' (0.91 > 0.8)"
+    ],
+    [
+     "mixkit:21855",
+     "visual: classe vetada 'indoor' (0.80 > 0.8)"
+    ],
+    [
+     "mixkit:48919",
+     "visual: classe vetada 'indoor' (0.95 > 0.8)"
+    ],
+    [
+     "mixkit:9624",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:51112",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:1646",
+     "brilho 124.2 fora do clima dark"
+    ],
+    [
+     "mixkit:9442",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:9280",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:9706",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:31427",
+     "brilho 138.2 fora do clima dark"
+    ],
+    [
+     "mixkit:26112",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:31793",
+     "brilho 122.1 fora do clima dark"
+    ],
+    [
+     "mixkit:45272",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:30908",
+     "brilho 127.2 fora do clima dark"
+    ],
+    [
+     "mixkit:31459",
+     "brilho 152.7 fora do clima dark"
+    ],
+    [
+     "mixkit:32278",
+     "brilho 142.3 fora do clima dark"
+    ],
+    [
+     "mixkit:21576",
+     "antirrepeticao: id_ja_usado_em_E08; id_reserved_em_E08"
+    ],
+    [
+     "mixkit:45585",
+     "antirrepeticao: visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=7)"
+    ],
+    [
+     "mixkit:49700",
+     "curto (9.6s < 10.1s)"
+    ],
+    [
+     "mixkit:3438",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:6925",
+     "brilho 20.1 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-126263576",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-126263575",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:30257",
+     "brilho 11.2 fora do clima dark"
+    ],
+    [
+     "mixkit:47698",
+     "tem cortes/saltos"
+    ],
+    [
+     "mixkit:4064",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:32592",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:18229",
+     "curto (9.7s < 10.1s)"
+    ],
+    [
+     "mixkit:17145",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:20552",
+     "antirrepeticao: id_ja_usado_em_E08"
+    ],
+    [
+     "mixkit:21585",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:21584",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:1082",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "mixkit:4466",
+     "antirrepeticao: id_ja_usado_em_E11; id_reserved_em_E11"
+    ],
+    [
+     "mixkit:3100",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:1926",
+     "curto (10.0s < 10.1s)"
+    ],
+    [
+     "mixkit:4266",
+     "brilho 150.8 fora do clima dark"
+    ],
+    [
+     "mixkit:15209",
+     "antirrepeticao: visual_igual_a_coverr:coverr-raindrops-on-the-window-7102@E01(d=6); visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=7); visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=10); visual_suspeito_de_mixkit:28342@E10(inconclusivo,d=8); visual_suspeito_de_mixkit:3976@E08(inconclusivo,d=10); visual_suspeito_de_mixkit:51433@E03(inconclusivo,d=10); visual_suspeito_de_mixkit:9779@E08(inconclusivo,d=7)"
+    ],
+    [
+     "mixkit:3458",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:41741",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3461",
+     "brilho 12.6 fora do clima dark"
+    ],
+    [
+     "mixkit:48498",
+     "brilho 12.4 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-173935900",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-91718248",
+     "brilho 5.1 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-165950358",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-181285639",
+     "tem cortes/saltos"
+    ],
+    [
+     "wikimedia:commons-165950916",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-89123664",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-111159649",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:17426",
+     "visual: classe vetada 'indoor' (0.95 > 0.8)"
+    ],
+    [
+     "mixkit:9704",
+     "visual: classe vetada 'indoor' (0.87 > 0.8)"
+    ],
+    [
+     "mixkit:10152",
+     "visual: classe vetada 'indoor' (0.91 > 0.8)"
+    ],
+    [
+     "mixkit:34203",
+     "visual: classe vetada 'indoor' (0.91 > 0.8)"
+    ],
+    [
+     "mixkit:21855",
+     "visual: classe vetada 'indoor' (0.80 > 0.8)"
+    ],
+    [
+     "mixkit:48919",
+     "visual: classe vetada 'indoor' (0.95 > 0.8)"
+    ]
+   ],
+   "S04": [
+    [
+     "mixkit:3438",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:6925",
+     "brilho 20.1 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-126263576",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-126263575",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:30257",
+     "brilho 11.2 fora do clima dark"
+    ],
+    [
+     "mixkit:7091",
+     "brilho 21.2 fora do clima dark"
+    ],
+    [
+     "mixkit:7149",
+     "brilho 9.8 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-147217308",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:3458",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:41741",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3461",
+     "brilho 12.6 fora do clima dark"
+    ],
+    [
+     "mixkit:48498",
+     "brilho 12.4 fora do clima dark"
+    ],
+    [
+     "mixkit:34467",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3453",
+     "brilho 13.2 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-173935900",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-91718248",
+     "brilho 5.1 fora do clima dark"
+    ],
+    [
+     "mixkit:52284",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:52304",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:2709",
+     "antirrepeticao: id_ja_usado_em_E06"
+    ],
+    [
+     "mixkit:52312",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:4064",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:1242",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:3759",
+     "brilho 8.6 fora do clima dark"
+    ],
+    [
+     "mixkit:684",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:3758",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:22730",
+     "antirrepeticao: id_ja_usado_em_E07"
+    ],
+    [
+     "mixkit:25027",
+     "brilho 20.0 fora do clima dark"
+    ],
+    [
+     "mixkit:17158",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:52285",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "wikimedia:commons-165950358",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:42781",
+     "visual: classe vetada 'indoor' (0.85 > 0.8)"
+    ],
+    [
+     "mixkit:17426",
+     "visual: classe vetada 'indoor' (0.95 > 0.8)"
+    ],
+    [
+     "mixkit:34203",
+     "visual: classe vetada 'indoor' (0.89 > 0.8)"
+    ],
+    [
+     "mixkit:30252",
+     "visual: classe vetada 'indoor' (0.88 > 0.8)"
+    ],
+    [
+     "mixkit:48919",
+     "visual: classe vetada 'indoor' (0.93 > 0.8)"
+    ],
+    [
+     "mixkit:3438",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:6925",
+     "brilho 20.1 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-126263576",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-126263575",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:30257",
+     "brilho 11.2 fora do clima dark"
+    ],
+    [
+     "mixkit:7091",
+     "brilho 21.2 fora do clima dark"
+    ],
+    [
+     "mixkit:7149",
+     "brilho 9.8 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-147217308",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:3458",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:41741",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3461",
+     "brilho 12.6 fora do clima dark"
+    ],
+    [
+     "mixkit:48498",
+     "brilho 12.4 fora do clima dark"
+    ],
+    [
+     "mixkit:34467",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3453",
+     "brilho 13.2 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-173935900",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-91718248",
+     "brilho 5.1 fora do clima dark"
+    ],
+    [
+     "mixkit:52284",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:52304",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:2709",
+     "antirrepeticao: id_ja_usado_em_E06"
+    ],
+    [
+     "mixkit:52312",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:4064",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:1242",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:3759",
+     "brilho 8.6 fora do clima dark"
+    ],
+    [
+     "mixkit:684",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:3758",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:22730",
+     "antirrepeticao: id_ja_usado_em_E07"
+    ],
+    [
+     "mixkit:25027",
+     "brilho 20.0 fora do clima dark"
+    ],
+    [
+     "mixkit:17158",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:52285",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:52297",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:52303",
+     "brilho 18.4 fora do clima dark"
+    ],
+    [
+     "mixkit:17776",
+     "brilho 3.7 fora do clima dark"
+    ],
+    [
+     "mixkit:52287",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:52290",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:52289",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3764",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:52314",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:3449",
+     "brilho 22.5 fora do clima dark"
+    ],
+    [
+     "mixkit:47818",
+     "antirrepeticao: id_ja_usado_em_E11; id_reserved_em_E11"
+    ],
+    [
+     "mixkit:31352",
+     "antirrepeticao: visual_suspeito_de_coverr:coverr-raindrops-on-the-window-7102@E01(inconclusivo,d=9); visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=10)"
+    ],
+    [
+     "mixkit:22799",
+     "brilho 13.7 fora do clima dark"
+    ],
+    [
+     "mixkit:47311",
+     "brilho 22.9 fora do clima dark"
+    ],
+    [
+     "mixkit:9258",
+     "brilho 6.3 fora do clima dark"
+    ],
+    [
+     "wikimedia:commons-165950358",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-111159649",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-202332635",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-21473974",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:42781",
+     "visual: classe vetada 'indoor' (0.85 > 0.8)"
+    ],
+    [
+     "mixkit:17426",
+     "visual: classe vetada 'indoor' (0.95 > 0.8)"
+    ],
+    [
+     "mixkit:34203",
+     "visual: classe vetada 'indoor' (0.89 > 0.8)"
+    ],
+    [
+     "mixkit:30252",
+     "visual: classe vetada 'indoor' (0.88 > 0.8)"
+    ],
+    [
+     "mixkit:48919",
+     "visual: classe vetada 'indoor' (0.93 > 0.8)"
+    ]
+   ],
+   "S05": [
+    [
+     "mixkit:50871",
+     "antirrepeticao: visual_suspeito_de_mixkit:3350@E07(inconclusivo,d=9)"
+    ],
+    [
+     "mixkit:48824",
+     "brilho 131.7 fora do clima dark"
+    ],
+    [
+     "mixkit:50943",
+     "brilho 194.1 fora do clima dark"
+    ],
+    [
+     "mixkit:28342",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:22728",
+     "antirrepeticao: id_ja_usado_em_E10"
+    ],
+    [
+     "mixkit:35013",
+     "antirrepeticao: id_ja_usado_em_E07; id_reserved_em_E07"
+    ],
+    [
+     "mixkit:22729",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:50936",
+     "curto (8.6s < 9.0s)"
+    ],
+    [
+     "mixkit:34841",
+     "brilho 122.8 fora do clima dark"
+    ],
+    [
+     "mixkit:50957",
+     "curto (5.8s < 9.0s)"
+    ],
+    [
+     "mixkit:50944",
+     "curto (8.6s < 9.0s)"
+    ],
+    [
+     "mixkit:47655",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:50861",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:50942",
+     "brilho 198.3 fora do clima dark"
+    ],
+    [
+     "mixkit:50863",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:28343",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:50938",
+     "brilho 196.7 fora do clima dark"
+    ],
+    [
+     "mixkit:35513",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:50864",
+     "antirrepeticao: id_ja_usado_em_E09; id_reserved_em_E09"
+    ],
+    [
+     "mixkit:11291",
+     "antirrepeticao: id_ja_usado_em_E02; id_confirmed_em_E02"
+    ],
+    [
+     "mixkit:50939",
+     "curto (7.9s < 9.0s)"
+    ],
+    [
+     "mixkit:28816",
+     "antirrepeticao: id_ja_usado_em_E07"
+    ],
+    [
+     "mixkit:34856",
+     "brilho 139.5 fora do clima dark"
+    ],
+    [
+     "mixkit:50865",
+     "curto (7.6s < 9.0s)"
+    ],
+    [
+     "wikimedia:commons-164559725",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164559743",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164302327",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164228739",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-147217308",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164500274",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:28339",
+     "brilho 117.3 fora do clima dark"
+    ],
+    [
+     "mixkit:50867",
+     "antirrepeticao: id_ja_usado_em_E06"
+    ],
+    [
+     "mixkit:44616",
+     "brilho 135.9 fora do clima dark"
+    ],
+    [
+     "mixkit:28338",
+     "brilho 123.0 fora do clima dark"
+    ],
+    [
+     "mixkit:28340",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:28336",
+     "brilho 147.2 fora do clima dark"
+    ],
+    [
+     "mixkit:50871",
+     "antirrepeticao: visual_suspeito_de_mixkit:3350@E07(inconclusivo,d=9)"
+    ],
+    [
+     "mixkit:48824",
+     "brilho 131.7 fora do clima dark"
+    ],
+    [
+     "mixkit:50943",
+     "brilho 194.1 fora do clima dark"
+    ],
+    [
+     "mixkit:28342",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:22728",
+     "antirrepeticao: id_ja_usado_em_E10"
+    ],
+    [
+     "mixkit:35013",
+     "antirrepeticao: id_ja_usado_em_E07; id_reserved_em_E07"
+    ],
+    [
+     "mixkit:22729",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:50936",
+     "curto (8.6s < 9.0s)"
+    ],
+    [
+     "mixkit:34841",
+     "brilho 122.8 fora do clima dark"
+    ],
+    [
+     "mixkit:50957",
+     "curto (5.8s < 9.0s)"
+    ],
+    [
+     "mixkit:50944",
+     "curto (8.6s < 9.0s)"
+    ],
+    [
+     "mixkit:47655",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:50861",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:50942",
+     "brilho 198.3 fora do clima dark"
+    ],
+    [
+     "mixkit:50863",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:28343",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:50938",
+     "brilho 196.7 fora do clima dark"
+    ],
+    [
+     "mixkit:35513",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:50864",
+     "antirrepeticao: id_ja_usado_em_E09; id_reserved_em_E09"
+    ],
+    [
+     "mixkit:11291",
+     "antirrepeticao: id_ja_usado_em_E02; id_confirmed_em_E02"
+    ],
+    [
+     "mixkit:50939",
+     "curto (7.9s < 9.0s)"
+    ],
+    [
+     "mixkit:28816",
+     "antirrepeticao: id_ja_usado_em_E07"
+    ],
+    [
+     "mixkit:34856",
+     "brilho 139.5 fora do clima dark"
+    ],
+    [
+     "mixkit:50865",
+     "curto (7.6s < 9.0s)"
+    ],
+    [
+     "wikimedia:commons-164559725",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164559743",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164302327",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164228739",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-147217308",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164500274",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164500235",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164493912",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164493957",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:28339",
+     "brilho 117.3 fora do clima dark"
+    ],
+    [
+     "mixkit:50867",
+     "antirrepeticao: id_ja_usado_em_E06"
+    ],
+    [
+     "mixkit:44616",
+     "brilho 135.9 fora do clima dark"
+    ],
+    [
+     "mixkit:28338",
+     "brilho 123.0 fora do clima dark"
+    ],
+    [
+     "mixkit:28340",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:28336",
+     "brilho 147.2 fora do clima dark"
+    ],
+    [
+     "mixkit:2221",
+     "antirrepeticao: id_ja_usado_em_E11; id_reserved_em_E11"
+    ],
+    [
+     "mixkit:35040",
+     "brilho 168.0 fora do clima dark"
+    ],
+    [
+     "mixkit:2362",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "mixkit:35532",
+     "brilho 135.9 fora do clima dark"
+    ],
+    [
+     "mixkit:34893",
+     "brilho 139.4 fora do clima dark"
+    ],
+    [
+     "mixkit:19470",
+     "brilho 168.3 fora do clima dark"
+    ],
+    [
+     "mixkit:2187",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:44610",
+     "brilho 163.9 fora do clima dark"
+    ],
+    [
+     "mixkit:49742",
+     "brilho 170.9 fora do clima dark"
+    ],
+    [
+     "mixkit:30910",
+     "antirrepeticao: id_ja_usado_em_E02; id_confirmed_em_E02"
+    ],
+    [
+     "mixkit:14222",
+     "brilho 163.3 fora do clima dark"
+    ],
+    [
+     "mixkit:35055",
+     "brilho 123.8 fora do clima dark"
+    ],
+    [
+     "mixkit:15453",
+     "brilho 127.8 fora do clima dark"
+    ],
+    [
+     "mixkit:9884",
+     "brilho 120.3 fora do clima dark"
+    ],
+    [
+     "mixkit:35078",
+     "visual: classe vetada 'indoor' (0.89 > 0.8)"
+    ]
+   ],
+   "S06": [
+    [
+     "mixkit:16914",
+     "brilho 172.5 fora do clima mid"
+    ],
+    [
+     "mixkit:28342",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:28339",
+     "antirrepeticao: id_ja_usado_em_E08; id_reserved_em_E08"
+    ],
+    [
+     "mixkit:50867",
+     "antirrepeticao: id_ja_usado_em_E06"
+    ],
+    [
+     "mixkit:50861",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:35013",
+     "antirrepeticao: id_ja_usado_em_E07; id_reserved_em_E07"
+    ],
+    [
+     "mixkit:34841",
+     "antirrepeticao: visual_suspeito_de_coverr:coverr-raindrops-on-the-window-7102@E01(inconclusivo,d=8); visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=9); visual_suspeito_de_mixkit:51433@E03(inconclusivo,d=10)"
+    ],
+    [
+     "mixkit:47655",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:50871",
+     "antirrepeticao: visual_suspeito_de_mixkit:3350@E07(inconclusivo,d=9)"
+    ],
+    [
+     "mixkit:28343",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:50938",
+     "brilho 196.7 fora do clima mid"
+    ],
+    [
+     "mixkit:50864",
+     "antirrepeticao: id_ja_usado_em_E09; id_reserved_em_E09"
+    ],
+    [
+     "mixkit:50939",
+     "curto (7.9s < 9.0s)"
+    ],
+    [
+     "mixkit:47532",
+     "brilho 42.3 fora do clima mid"
+    ],
+    [
+     "mixkit:25006",
+     "brilho 178.6 fora do clima mid"
+    ],
+    [
+     "mixkit:20761",
+     "brilho 36.0 fora do clima mid"
+    ],
+    [
+     "mixkit:8331",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "mixkit:18188",
+     "antirrepeticao: visual_suspeito_de_mixkit:4410@E11(inconclusivo,d=8); visual_suspeito_de_mixkit:5044@E05(inconclusivo,d=9); visual_igual_a_mixkit:8335@E04(d=6); visual_suspeito_de_mixkit:9606@E04(inconclusivo,d=9)"
+    ],
+    [
+     "mixkit:26108",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:2213",
+     "antirrepeticao: id_ja_usado_em_E10"
+    ],
+    [
+     "mixkit:22729",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:22728",
+     "brilho 33.8 fora do clima mid"
+    ],
+    [
+     "mixkit:2788",
+     "brilho 48.3 fora do clima mid"
+    ],
+    [
+     "mixkit:1709",
+     "antirrepeticao: visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=10); visual_igual_a_mixkit:9779@E08(d=6)"
+    ],
+    [
+     "mixkit:50943",
+     "brilho 194.1 fora do clima mid"
+    ],
+    [
+     "wikimedia:commons-164559725",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164559743",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164302327",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164228739",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-147217308",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164500274",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:31628",
+     "visual: classe vetada 'indoor' (0.84 > 0.8)"
+    ]
+   ],
+   "S07": [
+    [
+     "mixkit:41545",
+     "antirrepeticao: id_ja_usado_em_E04; id_reserved_em_E04"
+    ],
+    [
+     "mixkit:51791",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:4695",
+     "antirrepeticao: id_ja_usado_em_E10"
+    ],
+    [
+     "mixkit:4366",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:4281",
+     "curto (4.4s < 10.0s)"
+    ],
+    [
+     "mixkit:3128",
+     "antirrepeticao: visual_suspeito_de_mixkit:8335@E04(inconclusivo,d=7)"
+    ],
+    [
+     "wikimedia:commons-181450395",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-181450411",
+     "curto (4.4s < 10.0s)"
+    ],
+    [
+     "mixkit:40657",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3354",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3378",
+     "antirrepeticao: id_ja_usado_em_E11; id_reserved_em_E11"
+    ],
+    [
+     "mixkit:3385",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:41401",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:5008",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4205",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4422",
+     "brilho 18.5 fora do clima mid"
+    ],
+    [
+     "mixkit:5363",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4148",
+     "brilho 49.3 fora do clima mid"
+    ],
+    [
+     "mixkit:4998",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:28342",
+     "sem correspondencia narrativa minima (tema 'mist' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:1944",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4692",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:28339",
+     "sem correspondencia narrativa minima (tema 'mist' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4040",
+     "sem correspondencia narrativa minima (tema 'dawn' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:5002",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4028",
+     "sem correspondencia narrativa minima (tema 'valley' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:26070",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:1955",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4033",
+     "brilho 46.9 fora do clima mid"
+    ],
+    [
+     "wikimedia:commons-94479022",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:1197",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3980",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "wikimedia:commons-151569526",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:41545",
+     "antirrepeticao: id_ja_usado_em_E04; id_reserved_em_E04"
+    ],
+    [
+     "mixkit:44610",
+     "brilho 163.9 fora do clima mid"
+    ],
+    [
+     "mixkit:51791",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:4695",
+     "antirrepeticao: id_ja_usado_em_E10"
+    ],
+    [
+     "mixkit:4366",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:4281",
+     "curto (4.4s < 10.0s)"
+    ],
+    [
+     "mixkit:3128",
+     "antirrepeticao: visual_suspeito_de_mixkit:8335@E04(inconclusivo,d=7)"
+    ],
+    [
+     "wikimedia:commons-181450395",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-181450411",
+     "curto (4.4s < 10.0s)"
+    ],
+    [
+     "mixkit:40657",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3354",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3378",
+     "antirrepeticao: id_ja_usado_em_E11; id_reserved_em_E11"
+    ],
+    [
+     "mixkit:3385",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:22728",
+     "brilho 33.8 fora do clima mid"
+    ],
+    [
+     "mixkit:22729",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:50871",
+     "antirrepeticao: visual_suspeito_de_mixkit:3350@E07(inconclusivo,d=9)"
+    ],
+    [
+     "mixkit:50863",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:35513",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:11291",
+     "antirrepeticao: id_ja_usado_em_E02; id_confirmed_em_E02"
+    ],
+    [
+     "mixkit:28816",
+     "antirrepeticao: id_ja_usado_em_E07"
+    ],
+    [
+     "mixkit:50865",
+     "curto (7.6s < 10.0s)"
+    ],
+    [
+     "mixkit:44616",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:28338",
+     "antirrepeticao: id_ja_usado_em_E09; id_reserved_em_E09"
+    ],
+    [
+     "mixkit:28340",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:4423",
+     "brilho 25.7 fora do clima mid"
+    ],
+    [
+     "mixkit:41401",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:5008",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4205",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4422",
+     "brilho 18.5 fora do clima mid"
+    ],
+    [
+     "mixkit:5363",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4148",
+     "brilho 49.3 fora do clima mid"
+    ],
+    [
+     "mixkit:4998",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:28342",
+     "sem correspondencia narrativa minima (tema 'mist' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:1944",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4692",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:28339",
+     "sem correspondencia narrativa minima (tema 'mist' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4040",
+     "sem correspondencia narrativa minima (tema 'dawn' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:5002",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4028",
+     "sem correspondencia narrativa minima (tema 'valley' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:26070",
+     "sem correspondencia narrativa minima (tema 'sun' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:1955",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'field', 'hill', 'meadow', 'mountain', 'tree'])"
+    ],
+    [
+     "mixkit:4033",
+     "brilho 46.9 fora do clima mid"
+    ],
+    [
+     "wikimedia:commons-94479022",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-151569526",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164559725",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164559743",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164302327",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164228739",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-147217308",
+     "erro/inacessivel"
+    ]
+   ],
+   "S08": [
+    [
+     "mixkit:51105",
+     "curto (5.6s < 9.0s)"
+    ],
+    [
+     "mixkit:51102",
+     "curto (8.6s < 9.0s)"
+    ],
+    [
+     "mixkit:26112",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:2408",
+     "antirrepeticao: id_ja_usado_em_E10"
+    ],
+    [
+     "mixkit:26108",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:4695",
+     "antirrepeticao: id_ja_usado_em_E10"
+    ],
+    [
+     "mixkit:1706",
+     "antirrepeticao: visual_igual_a_coverr:coverr-mountains-in-lake-tekapo-new-zealand-5006@E01(d=6); visual_suspeito_de_mixkit:26070@E11(inconclusivo,d=10); visual_suspeito_de_mixkit:5044@E05(inconclusivo,d=8)"
+    ],
+    [
+     "mixkit:118",
+     "antirrepeticao: visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=8); visual_suspeito_de_mixkit:31746@E06(inconclusivo,d=10)"
+    ],
+    [
+     "mixkit:4009",
+     "curto (6.5s < 9.0s)"
+    ],
+    [
+     "wikimedia:commons-151121306",
+     "antirrepeticao: visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=8); visual_suspeito_de_mixkit:28342@E10(inconclusivo,d=10); visual_suspeito_de_mixkit:9779@E08(inconclusivo,d=10)"
+    ],
+    [
+     "wikimedia:commons-151121286",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-151121256",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-151121263",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:4064",
+     "movimento frenetico"
+    ],
+    [
+     "wikimedia:commons-24751329",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:28341",
+     "brilho 50.7 fora do clima mid"
+    ],
+    [
+     "mixkit:5005",
+     "sem correspondencia narrativa minima (tema 'lake' fora de ['beach', 'cloud', 'fog', 'forest', 'mist', 'sky', 'sun', 'tree'])"
+    ],
+    [
+     "mixkit:4132",
+     "sem correspondencia narrativa minima (tema 'mountain' fora de ['beach', 'cloud', 'fog', 'forest', 'mist', 'sky', 'sun', 'tree'])"
+    ],
+    [
+     "mixkit:4366",
+     "sem correspondencia narrativa minima (tema 'mountain' fora de ['beach', 'cloud', 'fog', 'forest', 'mist', 'sky', 'sun', 'tree'])"
+    ],
+    [
+     "mixkit:4075",
+     "sem correspondencia narrativa minima (tema 'meadow' fora de ['beach', 'cloud', 'fog', 'forest', 'mist', 'sky', 'sun', 'tree'])"
+    ],
+    [
+     "mixkit:4433",
+     "brilho 23.7 fora do clima mid"
+    ],
+    [
+     "mixkit:4692",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['beach', 'cloud', 'fog', 'forest', 'mist', 'sky', 'sun', 'tree'])"
+    ],
+    [
+     "mixkit:1178",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:4079",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['beach', 'cloud', 'fog', 'forest', 'mist', 'sky', 'sun', 'tree'])"
+    ],
+    [
+     "mixkit:4028",
+     "sem correspondencia narrativa minima (tema 'valley' fora de ['beach', 'cloud', 'fog', 'forest', 'mist', 'sky', 'sun', 'tree'])"
+    ],
+    [
+     "mixkit:1774",
+     "antirrepeticao: visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=7); visual_suspeito_de_mixkit:4410@E11(inconclusivo,d=9); visual_igual_a_mixkit:9779@E08(d=5)"
+    ],
+    [
+     "mixkit:4033",
+     "brilho 46.9 fora do clima mid"
+    ],
+    [
+     "mixkit:3133",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:2789",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['beach', 'cloud', 'fog', 'forest', 'mist', 'sky', 'sun', 'tree'])"
+    ],
+    [
+     "mixkit:45584",
+     "brilho 30.0 fora do clima mid"
+    ],
+    [
+     "wikimedia:commons-197031289",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:1704",
+     "visual: classe vetada 'people' (0.81 > 0.7)"
+    ],
+    [
+     "mixkit:4205",
+     "visual: classe vetada 'indoor' (0.82 > 0.8)"
+    ]
+   ],
+   "S09": [
+    [
+     "mixkit:15366",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['dawn', 'field', 'meadow', 'sun'])"
+    ],
+    [
+     "mixkit:3969",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:20545",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:15202",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['dawn', 'field', 'meadow', 'sun'])"
+    ],
+    [
+     "mixkit:26532",
+     "antirrepeticao: visual_igual_a_mixkit:5044@E05(d=3); visual_suspeito_de_mixkit:7444@E09(inconclusivo,d=9); visual_suspeito_de_mixkit:8335@E04(inconclusivo,d=8)"
+    ],
+    [
+     "mixkit:20425",
+     "antirrepeticao: visual_suspeito_de_coverr:coverr-raindrops-on-the-window-7102@E01(inconclusivo,d=8)"
+    ],
+    [
+     "mixkit:21168",
+     "brilho 52.0 fora do clima mid"
+    ],
+    [
+     "mixkit:31629",
+     "antirrepeticao: visual_suspeito_de_mixkit:34999@E05(inconclusivo,d=9)"
+    ],
+    [
+     "mixkit:17547",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "wikimedia:commons-164624669",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164526404",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164168595",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164129515",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164585567",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-164636042",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:40657",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:1944",
+     "antirrepeticao: visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=9)"
+    ],
+    [
+     "mixkit:28339",
+     "antirrepeticao: id_ja_usado_em_E08; id_reserved_em_E08"
+    ],
+    [
+     "mixkit:1709",
+     "antirrepeticao: visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=10); visual_igual_a_mixkit:9779@E08(d=6)"
+    ],
+    [
+     "mixkit:48494",
+     "curto (6.0s < 8.0s)"
+    ],
+    [
+     "mixkit:10266",
+     "antirrepeticao: id_ja_usado_em_E06; id_reserved_em_E06"
+    ],
+    [
+     "mixkit:18191",
+     "antirrepeticao: visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=8); visual_suspeito_de_mixkit:34999@E05(inconclusivo,d=9); visual_igual_a_mixkit:9779@E08(d=6)"
+    ],
+    [
+     "mixkit:14574",
+     "antirrepeticao: visual_suspeito_de_mixkit:27196@E02(inconclusivo,d=8); visual_suspeito_de_mixkit:34999@E05(inconclusivo,d=9); visual_suspeito_de_mixkit:35532@E03(inconclusivo,d=9); visual_igual_a_mixkit:3871@E08(d=6)"
+    ],
+    [
+     "mixkit:3871",
+     "antirrepeticao: id_ja_usado_em_E08; id_reserved_em_E08"
+    ],
+    [
+     "mixkit:34371",
+     "curto (7.0s < 8.0s)"
+    ],
+    [
+     "mixkit:16399",
+     "antirrepeticao: id_ja_usado_em_E07; id_reserved_em_E07"
+    ],
+    [
+     "mixkit:8335",
+     "antirrepeticao: id_ja_usado_em_E04; id_reserved_em_E04; visual_suspeito_de_mixkit:9606@E04(inconclusivo,d=7)"
+    ],
+    [
+     "mixkit:8617",
+     "antirrepeticao: visual_suspeito_de_mixkit:2362@E03(inconclusivo,d=10); visual_suspeito_de_mixkit:9779@E08(inconclusivo,d=8)"
+    ],
+    [
+     "mixkit:95",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:8582",
+     "brilho 179.3 fora do clima mid"
+    ],
+    [
+     "mixkit:25915",
+     "movimento frenetico"
+    ]
+   ],
+   "S10": [
+    [
+     "mixkit:1346",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:48336",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'drop', 'fog', 'forest', 'hand', 'mist', 'rain', 'river'])"
+    ],
+    [
+     "mixkit:30012",
+     "curto (7.4s < 9.0s)"
+    ],
+    [
+     "mixkit:51081",
+     "curto (8.2s < 9.0s)"
+    ],
+    [
+     "mixkit:50936",
+     "curto (8.6s < 9.0s)"
+    ],
+    [
+     "mixkit:43605",
+     "brilho 54.2 fora do clima mid"
+    ],
+    [
+     "mixkit:43600",
+     "brilho 45.6 fora do clima mid"
+    ],
+    [
+     "mixkit:51595",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'drop', 'fog', 'forest', 'hand', 'mist', 'rain', 'river'])"
+    ],
+    [
+     "mixkit:51968",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:10342",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['cloud', 'drop', 'fog', 'forest', 'hand', 'mist', 'rain', 'river'])"
+    ],
+    [
+     "wikimedia:commons-186473863",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-186473680",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-165969818",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:46762",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:8864",
+     "movimento frenetico"
+    ],
+    [
+     "wikimedia:commons-147570557",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-62305786",
+     "curto (3.9s < 9.0s)"
+    ],
+    [
+     "wikimedia:commons-195820085",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:22729",
+     "antirrepeticao: id_ja_usado_em_E05; id_reserved_em_E05"
+    ],
+    [
+     "mixkit:2187",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:47698",
+     "tem cortes/saltos"
+    ],
+    [
+     "mixkit:22728",
+     "brilho 33.8 fora do clima mid"
+    ],
+    [
+     "mixkit:2207",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:35548",
+     "antirrepeticao: id_reserved_em_E09"
+    ],
+    [
+     "mixkit:17287",
+     "brilho 198.7 fora do clima mid"
+    ],
+    [
+     "mixkit:44766",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3741",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:50943",
+     "brilho 194.1 fora do clima mid"
+    ],
+    [
+     "mixkit:2738",
+     "visual: classe vetada 'indoor' (0.81 > 0.8)"
+    ],
+    [
+     "mixkit:28035",
+     "visual: classe vetada 'indoor' (0.84 > 0.8)"
+    ]
+   ],
+   "S11": [
+    [
+     "mixkit:26408",
+     "brilho 91.6 fora do clima bright"
+    ],
+    [
+     "mixkit:27198",
+     "antirrepeticao: id_ja_usado_em_E07; id_reserved_em_E07"
+    ],
+    [
+     "mixkit:46104",
+     "curto (5.6s < 8.0s)"
+    ],
+    [
+     "mixkit:3980",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:40657",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:34848",
+     "brilho 97.8 fora do clima bright"
+    ],
+    [
+     "mixkit:38440",
+     "brilho 47.2 fora do clima bright"
+    ],
+    [
+     "mixkit:7853",
+     "brilho 90.4 fora do clima bright"
+    ],
+    [
+     "mixkit:44923",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:5030",
+     "sem correspondencia narrativa minima (tema 'lake' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:44363",
+     "curto (7.2s < 8.0s)"
+    ],
+    [
+     "wikimedia:commons-165940724",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:51451",
+     "sem correspondencia narrativa minima (tema 'river' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "wikimedia:commons-182604682",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-182604600",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-182604574",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-188411676",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-82987184",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:1197",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:5012",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:3354",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3378",
+     "sem correspondencia narrativa minima (tema 'mountain' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:3385",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:52454",
+     "sem correspondencia narrativa minima (tema 'river' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:4231",
+     "brilho 76.9 fora do clima bright"
+    ],
+    [
+     "mixkit:51791",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:4600",
+     "brilho 44.6 fora do clima bright"
+    ],
+    [
+     "mixkit:41550",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:33321",
+     "brilho 72.1 fora do clima bright"
+    ],
+    [
+     "mixkit:21577",
+     "brilho 92.9 fora do clima bright"
+    ],
+    [
+     "mixkit:28338",
+     "antirrepeticao: id_ja_usado_em_E09; id_reserved_em_E09"
+    ],
+    [
+     "mixkit:26105",
+     "brilho 38.4 fora do clima bright"
+    ],
+    [
+     "mixkit:19506",
+     "brilho 90.3 fora do clima bright"
+    ],
+    [
+     "mixkit:46191",
+     "visual: classe vetada 'people' (0.75 > 0.7)"
+    ],
+    [
+     "mixkit:26408",
+     "brilho 91.6 fora do clima bright"
+    ],
+    [
+     "mixkit:27198",
+     "antirrepeticao: id_ja_usado_em_E07; id_reserved_em_E07"
+    ],
+    [
+     "mixkit:46104",
+     "curto (5.6s < 8.0s)"
+    ],
+    [
+     "mixkit:3980",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:40657",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:34848",
+     "brilho 97.8 fora do clima bright"
+    ],
+    [
+     "mixkit:38440",
+     "brilho 47.2 fora do clima bright"
+    ],
+    [
+     "mixkit:7853",
+     "brilho 90.4 fora do clima bright"
+    ],
+    [
+     "mixkit:44923",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:5030",
+     "sem correspondencia narrativa minima (tema 'lake' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:11291",
+     "antirrepeticao: id_ja_usado_em_E02; id_confirmed_em_E02"
+    ],
+    [
+     "mixkit:10292",
+     "sem correspondencia narrativa minima (tema 'lake' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:44363",
+     "curto (7.2s < 8.0s)"
+    ],
+    [
+     "wikimedia:commons-165940724",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:51451",
+     "sem correspondencia narrativa minima (tema 'river' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "wikimedia:commons-182604682",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-182604600",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-182604574",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-188411676",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-82987184",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-156432852",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-151641517",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-151641621",
+     "erro/inacessivel"
+    ],
+    [
+     "mixkit:1197",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:5012",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:3354",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:3378",
+     "sem correspondencia narrativa minima (tema 'mountain' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:3385",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:52454",
+     "sem correspondencia narrativa minima (tema 'river' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:4231",
+     "brilho 76.9 fora do clima bright"
+    ],
+    [
+     "mixkit:51791",
+     "vertical (padrao e paisagem)"
+    ],
+    [
+     "mixkit:4600",
+     "brilho 44.6 fora do clima bright"
+    ],
+    [
+     "mixkit:41550",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:33321",
+     "brilho 72.1 fora do clima bright"
+    ],
+    [
+     "mixkit:21577",
+     "brilho 92.9 fora do clima bright"
+    ],
+    [
+     "mixkit:28338",
+     "antirrepeticao: id_ja_usado_em_E09; id_reserved_em_E09"
+    ],
+    [
+     "mixkit:26105",
+     "brilho 38.4 fora do clima bright"
+    ],
+    [
+     "mixkit:19506",
+     "brilho 90.3 fora do clima bright"
+    ],
+    [
+     "mixkit:45330",
+     "curto (5.9s < 8.0s)"
+    ],
+    [
+     "mixkit:27004",
+     "sem correspondencia narrativa minima (tema 'None' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:18742",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:44950",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:25134",
+     "brilho 57.8 fora do clima bright"
+    ],
+    [
+     "mixkit:44951",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:25111",
+     "sem correspondencia narrativa minima (tema 'mountain' fora de ['drop', 'field', 'hill', 'meadow', 'path', 'road', 'sun', 'trail'])"
+    ],
+    [
+     "mixkit:47597",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:15947",
+     "brilho 98.0 fora do clima bright"
+    ],
+    [
+     "mixkit:46191",
+     "visual: classe vetada 'people' (0.75 > 0.7)"
+    ]
+   ],
+   "S12": [
+    [
+     "mixkit:30262",
+     "brilho 39.2 fora do clima bright"
+    ],
+    [
+     "mixkit:5002",
+     "brilho 76.2 fora do clima bright"
+    ],
+    [
+     "mixkit:4998",
+     "brilho 80.5 fora do clima bright"
+    ],
+    [
+     "mixkit:11293",
+     "curto (12.2s < 14.0s)"
+    ],
+    [
+     "mixkit:42491",
+     "brilho 79.9 fora do clima bright"
+    ],
+    [
+     "mixkit:17805",
+     "antirrepeticao: id_ja_usado_em_E04; id_reserved_em_E04"
+    ],
+    [
+     "mixkit:50268",
+     "curto (10.2s < 14.0s)"
+    ],
+    [
+     "mixkit:1704",
+     "curto (12.1s < 14.0s)"
+    ],
+    [
+     "mixkit:34846",
+     "brilho 96.3 fora do clima bright"
+    ],
+    [
+     "mixkit:48485",
+     "movimento frenetico"
+    ],
+    [
+     "mixkit:34746",
+     "antirrepeticao: id_ja_usado_em_E09; id_legacy_em_E09"
+    ],
+    [
+     "mixkit:9839",
+     "curto (13.8s < 14.0s)"
+    ],
+    [
+     "mixkit:19446",
+     "brilho 94.1 fora do clima bright"
+    ],
+    [
+     "mixkit:48109",
+     "brilho 52.1 fora do clima bright"
+    ],
+    [
+     "mixkit:9969",
+     "antirrepeticao: id_ja_usado_em_E07; id_reserved_em_E07"
+    ],
+    [
+     "mixkit:18345",
+     "curto (12.7s < 14.0s)"
+    ],
+    [
+     "mixkit:9691",
+     "curto (9.8s < 14.0s)"
+    ],
+    [
+     "mixkit:3396",
+     "brilho 91.1 fora do clima bright"
+    ],
+    [
+     "mixkit:20297",
+     "antirrepeticao: id_ja_usado_em_E10; id_reserved_em_E10"
+    ],
+    [
+     "mixkit:9790",
+     "brilho 100.4 fora do clima bright"
+    ],
+    [
+     "mixkit:25065",
+     "brilho 60.4 fora do clima bright"
+    ],
+    [
+     "mixkit:26073",
+     "brilho 100.4 fora do clima bright"
+    ],
+    [
+     "mixkit:32309",
+     "antirrepeticao: id_ja_usado_em_E03; id_reserved_em_E03"
+    ],
+    [
+     "mixkit:9968",
+     "antirrepeticao: id_ja_usado_em_E11; id_reserved_em_E11"
+    ],
+    [
+     "mixkit:3100",
+     "curto (10.0s < 14.0s)"
+    ],
+    [
+     "mixkit:8192",
+     "brilho 83.0 fora do clima bright"
+    ],
+    [
+     "wikimedia:commons-165910069",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-178815949",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-187354065",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-165934357",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-165926184",
+     "erro/inacessivel"
+    ],
+    [
+     "wikimedia:commons-150031575",
+     "erro/inacessivel"
+    ]
+   ]
+  }
+ }
+}
