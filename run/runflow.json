@@ -1,1 +1,1 @@
-{"episode": "E12", "selection": "contracts/e12_scene_clip_selection.json", "music": "545", "stages": ["gates"], "nonce": "runflow-repouso-1"}
+{"episode": "E11", "selection": "contracts/e11_scene_clip_selection.json", "music": "520", "stages": ["gates", "build", "cover"], "nonce": "e11-run-v4"}

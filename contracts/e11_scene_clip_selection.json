@@ -11,16 +11,16 @@
  "clips": [
   {
    "scene": "S01",
-   "source": "wikimedia",
-   "id": "commons-164730437",
-   "license": "CC0/Dominio publico (Wikimedia Commons)",
-   "page": "https://commons.wikimedia.org/wiki/File:Fog_fills_the_valleys_of_the_Southeast_U_S_at_night,_then_burns_off_during_the_day_(CIRA_2018-12-17).webm",
+   "source": "mixkit",
+   "id": "46898",
+   "license": "Mixkit Stock Video Free License",
+   "page": "https://mixkit.co/free-stock-video/big-full-moon-on-a-cloudy-night-46898/",
    "interval": [
     0,
     9.0
    ],
-   "preview_seconds": 9.9,
-   "note_pt": "clima dark (brilho 84.7), movimento 14.45, palavras-chave 3, interpretacao=claude"
+   "preview_seconds": 9.0,
+   "note_pt": "troca manual pedida pelo dono 25/11 (S01 anterior era mapa de satelite); lua cheia em noite nublada, clima dark"
   },
   {
    "scene": "S02",
