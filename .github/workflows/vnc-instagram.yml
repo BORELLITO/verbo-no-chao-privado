@@ -1,5 +1,5 @@
 name: VNC Instagram (API oficial da Meta; publica so com liberacao do dono)
-# Entrada: run/instagram.json {"mode":"probe|publish","nonce":"..."}. Unico workflow com IG_TOKEN. Sem cron.
+# Entrada: run/instagram.json {"mode":"probe|publish","nonce":"...", opcional "publicar_em":"AAAA-MM-DDTHH:MM:SSZ" = o job espera e publica no horario}. Unico workflow com IG_TOKEN. Sem cron.
 on:
   push:
     branches: ["main"]
@@ -12,7 +12,7 @@ concurrency:
 jobs:
   instagram:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 375  # cobre a espera ate publicar_em (max 5h30)
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - uses: actions/setup-python@v5

@@ -3,6 +3,9 @@ Modos (run/instagram.json {"mode": ..., "nonce": ...}):
   probe    leitura: confirma o token (sem imprimi-lo), a Pagina e o ID da conta do Instagram ligada.
   publish  publica 1 Reel COM CAPA. Exige "liberado_pelo_dono": true e "episodio" (ex.: "E06").
            Opcional: "video_public_id" (ex.: copia de audio seguro "vnc/fora1-seguro-...").
+           Opcional: "publicar_em" (ISO UTC, ex.: "2026-11-25T15:00:00Z"): o workflow ESPERA ate esse horario e publica sozinho
+           (a API do Instagram nao agenda). Comeca ANTECEDENCIA_S antes para o video terminar de processar. Maximo MAX_ESPERA_S.
+           Opcional: "dry_run": true = espera e valida mas NAO publica (ensaio).
 O token vem de IG_TOKEN (segredo do repo); nunca e impresso. Nada e publicado sem liberacao explicita."""
 import json, os, sys, time, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
@@ -10,6 +13,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 GRAPH = "https://graph.facebook.com/v21.0"
 ROTULO_IA = True  # voz sintetica: rotular como conteudo com IA
+ANTECEDENCIA_S = 150  # cria o container e processa o video antes do horario alvo
+MAX_ESPERA_S = 5 * 3600 + 30 * 60  # o job do Actions tem teto de 6 h
+TOLERANCIA_ATRASO_S = 600  # horario alvo ja passado ha mais que isso = erro (evita publicar velho por engano)
 
 
 class IGError(RuntimeError):
@@ -112,6 +118,27 @@ def publicar(token, cfg, opener=urllib.request.urlopen, sleep=time.sleep):
             "tipo": info.get("media_product_type"), "capa_enviada": capa}
 
 
+def espera_s(cfg, agora=None):
+    """Funcao pura: segundos a esperar antes de publicar (0 = agora). Valida o horario alvo de "publicar_em"."""
+    alvo = cfg.get("publicar_em")
+    if not alvo:
+        return 0
+    from datetime import datetime, timezone
+    try:
+        t = datetime.fromisoformat(str(alvo).replace("Z", "+00:00"))
+    except ValueError:
+        raise IGError(f"publicar_em invalido: {alvo!r}") from None
+    if t.tzinfo is None:
+        raise IGError("publicar_em precisa de fuso (use ...Z)")
+    agora = agora or datetime.now(timezone.utc)
+    falta = (t - agora).total_seconds() - ANTECEDENCIA_S
+    if falta < -TOLERANCIA_ATRASO_S:
+        raise IGError(f"publicar_em ja passou ({alvo}); nada publicado")
+    if falta > MAX_ESPERA_S:
+        raise IGError(f"publicar_em muito distante ({alvo}); empurre o arquivo mais perto do horario")
+    return max(0, int(falta))
+
+
 def main(argv=None):
     argv = argv or sys.argv[1:]
     cfg = json.load(open(ROOT / "run/instagram.json", encoding="utf8"))
@@ -120,6 +147,15 @@ def main(argv=None):
     if not token:
         print("IG_TOKEN ausente"); return 2
     try:
+        if mode == "publish":
+            if cfg.get("liberado_pelo_dono") is not True:
+                raise IGError("BLOQUEADO: falta liberado_pelo_dono=true")
+            esp = espera_s(cfg)  # valida ANTES de dormir
+            if esp:
+                print(f"VNC_IG_AGUARDANDO {esp}s ate publicar_em={cfg['publicar_em']} (antecedencia {ANTECEDENCIA_S}s)", flush=True)
+                time.sleep(esp)
+            if cfg.get("dry_run") is True:  # ensaio: espera e valida, mas NAO publica
+                print("VNC_IG_DRY_RUN_OK espera concluida; nada publicado"); return 0
         out = probe(token) if mode == "probe" else publicar(token, cfg) if mode == "publish" else None
         if out is None:
             print("modo desconhecido"); return 2
